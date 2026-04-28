@@ -3,14 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mohd Faizuddin Ahmed | Faiz</title>
-  <meta name="description" content="Portfolio website of Mohd Faizuddin Ahmed (Faiz), a digital marketing specialist focused on SEO, growth, analytics, and performance marketing.">
+  <title>Mohd Faizuddin Ahmed | Faiz — Digital Marketing Specialist</title>
+  <meta name="description" content="Portfolio of Mohd Faizuddin Ahmed (Faiz) — a digital marketing specialist focused on SEO, growth, analytics, and performance marketing. Based in Hyderabad, India.">
+  <meta name="theme-color" content="#f7f6f2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#161513" media="(prefers-color-scheme: dark)">
   <meta property="og:title" content="Mohd Faizuddin Ahmed | Faiz">
-  <meta property="og:description" content="Digital Marketing Specialist focused on SEO, Growth, Analytics, and Performance Marketing.">
+  <meta property="og:description" content="Digital Marketing Specialist focused on SEO, growth, analytics, and performance marketing.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="./assets/projects/telangana-stride-hub.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=zodiak@400,700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="./assets/projects/telangana-stride-hub.jpg" fetchpriority="high">
   <style>
     :root,[data-theme="light"]{
       --text-xs:clamp(.75rem,.7rem + .25vw,.875rem);
@@ -20,67 +25,214 @@
       --text-xl:clamp(1.5rem,1.15rem + 1.35vw,2.3rem);
       --text-2xl:clamp(2.25rem,1.2rem + 3.8vw,4.8rem);
       --space-1:.25rem;--space-2:.5rem;--space-3:.75rem;--space-4:1rem;--space-5:1.25rem;--space-6:1.5rem;--space-8:2rem;--space-10:2.5rem;--space-12:3rem;--space-16:4rem;--space-20:5rem;--space-24:6rem;
-      --color-bg:#f7f6f2;--color-surface:#f9f8f5;--color-surface-2:#f2efea;--color-surface-3:#ebe7e1;--color-divider:#d9d4cc;--color-border:#d2cec6;--color-text:#26231d;--color-text-muted:#6d6a64;--color-text-faint:#a5a19b;--color-primary:#01696f;--color-primary-hover:#0c4e54;--color-primary-soft:#d7e7e5;--color-inverse:#f9f8f4;
+      --color-bg:#f7f6f2;--color-surface:#f9f8f5;--color-surface-2:#f2efea;--color-surface-3:#ebe7e1;--color-divider:#d9d4cc;--color-border:#d2cec6;--color-text:#26231d;--color-text-muted:#5e5b55;--color-text-faint:#9a9690;--color-primary:#01696f;--color-primary-hover:#0c4e54;--color-primary-soft:#d7e7e5;--color-inverse:#f9f8f4;--color-focus:#01696f;
       --radius-sm:.45rem;--radius-md:.7rem;--radius-lg:1rem;--radius-xl:1.35rem;--radius-full:999px;
       --shadow-sm:0 1px 2px rgba(22,19,12,.05);--shadow-md:0 8px 24px rgba(22,19,12,.08);--shadow-lg:0 18px 44px rgba(22,19,12,.12);
-      --content:1180px;--font-body:'Satoshi', Inter, sans-serif;--font-display:'Zodiak', Georgia, serif;
+      --content:1180px;--font-body:'Satoshi', Inter, system-ui, sans-serif;--font-display:'Zodiak', Georgia, serif;
     }
     [data-theme="dark"]{
-      --color-bg:#161513;--color-surface:#1d1c19;--color-surface-2:#23211e;--color-surface-3:#2b2926;--color-divider:#2d2b28;--color-border:#393733;--color-text:#e5e0d7;--color-text-muted:#aba59c;--color-text-faint:#6f6a63;--color-primary:#57a2ac;--color-primary-hover:#3b838d;--color-primary-soft:#263536;--color-inverse:#23211e;
+      --color-bg:#161513;--color-surface:#1d1c19;--color-surface-2:#23211e;--color-surface-3:#2b2926;--color-divider:#2d2b28;--color-border:#393733;--color-text:#e5e0d7;--color-text-muted:#b6b0a6;--color-text-faint:#6f6a63;--color-primary:#57a2ac;--color-primary-hover:#3b838d;--color-primary-soft:#263536;--color-inverse:#1d1c19;--color-focus:#57a2ac;
       --shadow-sm:0 1px 2px rgba(0,0,0,.25);--shadow-md:0 8px 24px rgba(0,0,0,.3);--shadow-lg:0 18px 44px rgba(0,0,0,.38);
     }
-    *{box-sizing:border-box} html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased} body{margin:0;font-family:var(--font-body);font-size:var(--text-base);line-height:1.65;background:var(--color-bg);color:var(--color-text)} img,svg{display:block;max-width:100%;height:auto} a{text-decoration:none;color:inherit;transition:.18s ease} button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+    body{margin:0;font-family:var(--font-body);font-size:var(--text-base);line-height:1.65;background:var(--color-bg);color:var(--color-text)}
+    img,svg{display:block;max-width:100%;height:auto}
+    a{text-decoration:none;color:inherit;transition:color .18s ease, background .18s ease, border-color .18s ease}
+    a:hover{color:var(--color-primary)}
+    button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+    :focus{outline:none}
+    :focus-visible{outline:2px solid var(--color-focus);outline-offset:3px;border-radius:6px}
     .skip{position:absolute;left:-9999px}.skip:focus{left:1rem;top:1rem;background:var(--color-primary);color:var(--color-inverse);padding:.75rem 1rem;border-radius:var(--radius-md);z-index:100}
     .container{width:min(calc(100% - 2rem), var(--content));margin-inline:auto}
-    .topbar{position:sticky;top:0;z-index:40;background:color-mix(in srgb, var(--color-bg) 88%, transparent);backdrop-filter:blur(12px);border-bottom:1px solid color-mix(in srgb,var(--color-text) 8%, transparent)}
-    .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:76px}.brand{display:flex;align-items:center;gap:.8rem;font-size:var(--text-sm);font-weight:700}.logo{width:38px;height:38px;color:var(--color-primary)}
-    .nav-links{display:flex;align-items:center;gap:1.2rem;color:var(--color-text-muted);font-size:var(--text-sm)} .nav-links a:hover{color:var(--color-text)}
-    .theme-toggle{width:44px;height:44px;display:grid;place-items:center;border:1px solid color-mix(in srgb,var(--color-text) 10%, transparent);border-radius:999px;background:var(--color-surface)}
-    .hero{padding:clamp(3.5rem,8vw,6.5rem) 0 clamp(2rem,6vw,4rem)} .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:var(--space-8);align-items:end}
+
+    .topbar{position:sticky;top:0;z-index:40;background:color-mix(in srgb, var(--color-bg) 88%, transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid color-mix(in srgb,var(--color-text) 8%, transparent)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:76px}
+    .brand{display:flex;align-items:center;gap:.75rem;font-size:var(--text-sm);font-weight:700;color:var(--color-text)}
+    .brand:hover{color:var(--color-text)}
+    .logo{width:36px;height:36px;color:var(--color-primary);flex-shrink:0}
+    .nav-links{display:flex;align-items:center;gap:1.4rem;color:var(--color-text-muted);font-size:var(--text-sm)}
+    .nav-links a:hover{color:var(--color-text)}
+    .nav-tools{display:flex;align-items:center;gap:.5rem}
+    .icon-btn{width:44px;height:44px;display:grid;place-items:center;border:1px solid color-mix(in srgb,var(--color-text) 10%, transparent);border-radius:999px;background:var(--color-surface);color:var(--color-text);transition:background .18s ease, color .18s ease, border-color .18s ease}
+    .icon-btn:hover{background:var(--color-surface-2)}
+    .icon-btn[aria-pressed="true"],.icon-btn.is-active{background:var(--color-primary);color:var(--color-inverse);border-color:transparent}
+    .nav-wa{color:var(--color-primary)}
+    .nav-wa:hover{background:var(--color-primary);color:var(--color-inverse);border-color:transparent}
+    .menu-btn{display:none}
+
+    .mobile-drawer{display:none}
+
+    .hero{padding:clamp(3.5rem,8vw,6.5rem) 0 clamp(2rem,6vw,4rem)}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:var(--space-8);align-items:end}
     .eyebrow{display:inline-block;margin-bottom:var(--space-4);font-size:var(--text-xs);font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--color-primary)}
-    h1,h2{margin:0;font-family:var(--font-display);line-height:1.06} h1{font-size:var(--text-2xl);max-width:10ch} h2{font-size:var(--text-xl);margin-bottom:var(--space-4)} h3{margin:0 0 .7rem;font-size:1.12rem;line-height:1.2} p{margin:0;color:var(--color-text-muted);max-width:68ch}
+    h1,h2{margin:0;font-family:var(--font-display);line-height:1.06}
+    h1{font-size:var(--text-2xl);max-width:12ch}
+    h2{font-size:var(--text-xl);margin-bottom:var(--space-4)}
+    h3{margin:0 0 .7rem;font-size:1.12rem;line-height:1.25}
+    p{margin:0;color:var(--color-text-muted);max-width:68ch}
     .hero-copy p{font-size:var(--text-lg);max-width:34ch;margin-top:var(--space-5)}
-    .name-line{display:flex;flex-wrap:wrap;gap:.55rem;align-items:center;margin-top:var(--space-4);font-size:var(--text-sm);color:var(--color-text-muted)} .name-pill{padding:.35rem .7rem;border-radius:999px;background:var(--color-primary-soft);color:var(--color-primary);font-weight:700}
-    .cta-row{display:flex;flex-wrap:wrap;gap:.85rem;margin-top:var(--space-6)} .btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 1rem;border-radius:999px;font-size:var(--text-sm);font-weight:700;border:1px solid transparent}.btn-primary{background:var(--color-primary);color:var(--color-inverse)} .btn-primary:hover{background:var(--color-primary-hover)} .btn-secondary{background:var(--color-surface);border-color:color-mix(in srgb,var(--color-text) 10%, transparent)} .btn-secondary:hover{background:var(--color-surface-2)}
+    .name-line{display:flex;flex-wrap:wrap;gap:.55rem;align-items:center;margin-top:var(--space-4);font-size:var(--text-sm);color:var(--color-text-muted)}
+    .name-pill{padding:.35rem .7rem;border-radius:999px;background:var(--color-primary-soft);color:var(--color-primary);font-weight:700}
+    .cta-row{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:var(--space-6)}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;justify-content:center;min-height:46px;padding:0 1.05rem;border-radius:999px;font-size:var(--text-sm);font-weight:700;border:1px solid transparent;transition:background .18s ease, border-color .18s ease, color .18s ease, transform .15s ease}
+    .btn:hover{transform:translateY(-1px)}
+    .btn-primary{background:var(--color-primary);color:var(--color-inverse)}
+    .btn-primary:hover{background:var(--color-primary-hover);color:var(--color-inverse)}
+    .btn-secondary{background:var(--color-surface);border-color:color-mix(in srgb,var(--color-text) 12%, transparent);color:var(--color-text)}
+    .btn-secondary:hover{background:var(--color-surface-2);color:var(--color-text)}
+    .btn svg{width:16px;height:16px}
+
     .hero-panel,.panel,.card,.timeline-item,.project-card{background:var(--color-surface);border:1px solid color-mix(in srgb,var(--color-text) 10%, transparent);box-shadow:var(--shadow-sm)}
     .hero-panel{padding:var(--space-6);border-radius:var(--radius-xl)}
-    .metric-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-4);margin-top:var(--space-5)} .metric{padding:var(--space-4);background:var(--color-surface-2);border-radius:var(--radius-lg)} .metric strong{display:block;font-size:var(--text-lg);font-family:var(--font-display);color:var(--color-text)} .metric span{display:block;font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.08em;color:var(--color-text-muted)}
-    section{padding:clamp(2.75rem,7vw,5rem) 0}.section-head{display:grid;grid-template-columns:4fr 8fr;gap:var(--space-8);align-items:start;margin-bottom:var(--space-6)} .kicker{display:inline-block;margin-bottom:var(--space-3);font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.14em;font-weight:700;color:var(--color-primary)}
-    .grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-4)} .grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-4)}
-    .card,.project-card,.timeline-item{padding:var(--space-5);border-radius:var(--radius-lg)} .card ul{margin:0;padding-left:1rem;color:var(--color-text-muted)} .card li+li{margin-top:.45rem}
-    .skills-wrap{display:flex;flex-wrap:wrap;gap:.65rem}.skill{padding:.45rem .8rem;border-radius:999px;background:var(--color-surface-2);border:1px solid color-mix(in srgb,var(--color-text) 6%, transparent);font-size:var(--text-xs);font-weight:700;color:var(--color-text)}
-    .project-card{display:flex;flex-direction:column;gap:var(--space-4)} .project-top{display:flex;justify-content:space-between;gap:1rem;align-items:flex-start}.project-tag{font-size:var(--text-xs);font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--color-primary)} .project-links{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:auto}
-    .mini-link{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:0 .9rem;border-radius:999px;background:var(--color-surface-2);font-size:var(--text-sm);font-weight:700;border:1px solid color-mix(in srgb,var(--color-text) 8%, transparent)} .mini-link:hover{background:var(--color-primary-soft);color:var(--color-primary)}
-    .timeline{display:grid;gap:var(--space-4)} .timeline-meta{font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.08em;color:var(--color-text-faint);margin-bottom:.5rem}
-    .contact-box{padding:var(--space-6);border-radius:var(--radius-xl);background:var(--color-primary);color:var(--color-inverse);box-shadow:var(--shadow-lg)} .contact-box p{color:color-mix(in srgb,var(--color-inverse) 82%, transparent)} .contact-links{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:var(--space-5)} .contact-btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 1rem;border-radius:999px;background:var(--color-inverse);color:var(--color-primary);font-weight:700}
-    footer{padding:var(--space-10) 0;border-top:1px solid color-mix(in srgb,var(--color-text) 8%, transparent);color:var(--color-text-muted);font-size:var(--text-sm)}
-    @media (max-width:980px){.hero-grid,.section-head{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr 1fr}.nav-links{display:none}}
-    @media (max-width:720px){.grid-2,.grid-3,.metric-grid{grid-template-columns:1fr}.container{width:min(calc(100% - 1.25rem), var(--content))}.hero-copy p{font-size:var(--text-base)}}
-    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+    .metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-3);margin-top:var(--space-5)}
+    .metric{padding:var(--space-4);background:var(--color-surface-2);border-radius:var(--radius-lg)}
+    .metric strong{display:block;font-size:1.05rem;font-family:var(--font-display);color:var(--color-text);line-height:1.2}
+    .metric span{display:block;font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.08em;color:var(--color-text-muted);margin-bottom:.35rem}
+
+    section{padding:clamp(2.75rem,7vw,5rem) 0}
+    .section-head{display:grid;grid-template-columns:4fr 8fr;gap:var(--space-8);align-items:start;margin-bottom:var(--space-6)}
+    .kicker{display:inline-block;margin-bottom:var(--space-3);font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.14em;font-weight:700;color:var(--color-primary)}
+
+    .grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-4)}
+    .grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-4)}
+
+    .card,.timeline-item{padding:var(--space-5);border-radius:var(--radius-lg)}
+    .card ul{margin:0;padding-left:1rem;color:var(--color-text-muted)}
+    .card li+li{margin-top:.45rem}
+
+    .skills-wrap{display:flex;flex-wrap:wrap;gap:.55rem}
+    .skill{padding:.45rem .8rem;border-radius:999px;background:var(--color-surface-2);border:1px solid color-mix(in srgb,var(--color-text) 6%, transparent);font-size:var(--text-xs);font-weight:700;color:var(--color-text)}
+
+    .project-card{display:flex;flex-direction:column;border-radius:var(--radius-lg);overflow:hidden}
+    .project-thumb{aspect-ratio:16/10;width:100%;overflow:hidden;background:var(--color-surface-2);border-bottom:1px solid color-mix(in srgb,var(--color-text) 8%, transparent)}
+    .project-thumb img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;transition:transform .5s ease}
+    .project-card:hover .project-thumb img{transform:scale(1.02)}
+    .project-body{padding:var(--space-5);display:flex;flex-direction:column;gap:var(--space-3);flex:1}
+    .project-tag{font-size:var(--text-xs);font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--color-primary);margin-bottom:.35rem}
+    .project-card h3{margin:0}
+    .project-card p{flex:1}
+    .project-links{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.4rem}
+    .mini-link{display:inline-flex;align-items:center;gap:.4rem;justify-content:center;min-height:40px;padding:0 .9rem;border-radius:999px;background:var(--color-surface-2);font-size:var(--text-sm);font-weight:700;color:var(--color-text);border:1px solid color-mix(in srgb,var(--color-text) 8%, transparent)}
+    .mini-link:hover{background:var(--color-primary-soft);color:var(--color-primary);border-color:transparent}
+    .mini-link svg{width:14px;height:14px}
+
+    .timeline{display:grid;gap:var(--space-4)}
+    .timeline-meta{font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.08em;color:var(--color-text-faint);margin-bottom:.5rem}
+
+    .contact-box{padding:clamp(1.6rem,4vw,2.4rem);border-radius:var(--radius-xl);background:var(--color-primary);color:var(--color-inverse);box-shadow:var(--shadow-lg)}
+    .contact-box .kicker{color:color-mix(in srgb,var(--color-inverse) 82%, transparent)}
+    .contact-box h2{color:var(--color-inverse)}
+    .contact-box p{color:color-mix(in srgb,var(--color-inverse) 88%, transparent);max-width:62ch}
+    .contact-links{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:var(--space-5)}
+    .contact-btn{display:inline-flex;align-items:center;gap:.5rem;justify-content:center;min-height:46px;padding:0 1.05rem;border-radius:999px;background:var(--color-inverse);color:var(--color-primary);font-weight:700;font-size:var(--text-sm);border:1px solid transparent;transition:transform .15s ease, background .18s ease}
+    .contact-btn:hover{transform:translateY(-1px);background:#fff;color:var(--color-primary)}
+    .contact-btn svg{width:16px;height:16px}
+    .contact-btn--outline{background:transparent;color:var(--color-inverse);border-color:color-mix(in srgb,var(--color-inverse) 35%, transparent)}
+    .contact-btn--outline:hover{background:color-mix(in srgb,var(--color-inverse) 10%, transparent);color:var(--color-inverse)}
+
+    footer{padding:var(--space-10) 0 var(--space-12);border-top:1px solid color-mix(in srgb,var(--color-text) 8%, transparent);color:var(--color-text-muted);font-size:var(--text-sm)}
+    .footer-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:var(--space-8);align-items:start}
+    .footer-brand{font-family:var(--font-display);color:var(--color-text);font-size:1.1rem;margin-bottom:.4rem}
+    .footer-links{display:flex;flex-wrap:wrap;gap:.5rem}
+    .footer-links a{display:inline-flex;align-items:center;gap:.4rem;padding:.5rem .85rem;border-radius:999px;background:var(--color-surface-2);border:1px solid color-mix(in srgb,var(--color-text) 6%, transparent);color:var(--color-text);font-weight:700;font-size:var(--text-xs)}
+    .footer-links a:hover{background:var(--color-primary-soft);color:var(--color-primary);border-color:transparent}
+    .footer-links svg{width:14px;height:14px}
+    .footer-bottom{margin-top:var(--space-8);padding-top:var(--space-6);border-top:1px solid color-mix(in srgb,var(--color-text) 6%, transparent);font-size:var(--text-xs);color:var(--color-text-faint)}
+
+    @media (max-width:980px){
+      .hero-grid,.section-head,.footer-grid{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:1fr 1fr}
+      .nav-links{display:none}
+      .menu-btn{display:grid}
+      .mobile-drawer{display:block;position:fixed;inset:0;z-index:50;background:color-mix(in srgb, var(--color-bg) 96%, transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding:5.5rem 1.25rem 2rem;transform:translateY(-100%);transition:transform .35s ease;overflow-y:auto}
+      .mobile-drawer[data-open="true"]{transform:translateY(0)}
+      .mobile-drawer nav{display:flex;flex-direction:column;gap:.4rem}
+      .mobile-drawer nav a{padding:1rem 1.1rem;font-family:var(--font-display);font-size:1.6rem;border-radius:var(--radius-md);background:var(--color-surface);border:1px solid color-mix(in srgb,var(--color-text) 8%, transparent);color:var(--color-text)}
+      .mobile-drawer nav a:hover{background:var(--color-surface-2)}
+      .mobile-drawer .drawer-foot{margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:.5rem}
+      .mobile-drawer .drawer-foot a{padding:.65rem 1rem;border-radius:999px;background:var(--color-primary);color:var(--color-inverse);font-size:var(--text-sm);font-weight:700;display:inline-flex;align-items:center;gap:.45rem}
+      .mobile-drawer .drawer-foot a.alt{background:var(--color-surface-2);color:var(--color-text);border:1px solid color-mix(in srgb,var(--color-text) 8%, transparent)}
+    }
+    @media (max-width:720px){
+      .grid-2,.grid-3,.metric-grid{grid-template-columns:1fr}
+      .container{width:min(calc(100% - 1.25rem), var(--content))}
+      .hero-copy p{font-size:var(--text-base)}
+      .nav{min-height:68px}
+      h1{max-width:18ch}
+    }
+    @media (prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important}
+    }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Mohd Faizuddin Ahmed",
+    "alternateName":"Faiz",
+    "jobTitle":"Digital Marketing Specialist",
+    "description":"Digital marketing specialist focused on SEO, growth, analytics, and performance marketing.",
+    "url":"https://fngk.github.io/Mohd-Faizuddin-Ahmed/",
+    "address":{"@type":"PostalAddress","addressLocality":"Hyderabad","addressCountry":"IN"},
+    "email":"mailto:md.faiz.ahmed62@gmail.com",
+    "sameAs":[
+      "https://github.com/FNGK",
+      "https://www.linkedin.com/in/mohd-faizuddin-ahmed-4984a0148"
+    ],
+    "knowsAbout":["SEO","Performance Marketing","Google Analytics","Google Ads","Content Strategy","Conversion Rate Optimization"]
+  }
+  </script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
+
   <header class="topbar">
     <div class="container nav">
-      <div class="brand">
-        <svg class="logo" viewBox="0 0 48 48" fill="none" aria-label="Faiz portfolio logo">
+      <a class="brand" href="#main" aria-label="Mohd Faizuddin Ahmed — home">
+        <svg class="logo" viewBox="0 0 48 48" fill="none" aria-hidden="true" focusable="false">
           <rect x="6" y="6" width="36" height="36" rx="12" stroke="currentColor" stroke-width="2"></rect>
           <path d="M16 32V16h14M16 24h10" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"></path>
         </svg>
         <span>Mohd Faizuddin Ahmed</span>
-      </div>
-      <nav class="nav-links" aria-label="Primary navigation">
+      </a>
+      <nav class="nav-links" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
-      <button class="theme-toggle" id="themeToggle" aria-label="Switch color mode">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-      </button>
+      <div class="nav-tools">
+        <a class="icon-btn nav-wa" href="https://wa.me/916281367104" target="_blank" rel="noopener noreferrer" aria-label="Message me on WhatsApp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+        </a>
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to dark mode">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="4" y1="7" x2="20" y2="7"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="17" x2="20" y2="17"></line></svg>
+        </button>
+      </div>
     </div>
   </header>
+
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <nav aria-label="Mobile">
+      <a href="#about" data-drawer-link>About</a>
+      <a href="#projects" data-drawer-link>Projects</a>
+      <a href="#experience" data-drawer-link>Experience</a>
+      <a href="#contact" data-drawer-link>Contact</a>
+    </nav>
+    <div class="drawer-foot">
+      <a href="https://wa.me/916281367104" target="_blank" rel="noopener noreferrer" data-drawer-link>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+        WhatsApp
+      </a>
+      <a class="alt" href="mailto:md.faiz.ahmed62@gmail.com" data-drawer-link>Email</a>
+      <a class="alt" href="./Mohd-Faizuddin-Ahmed-Resume.pdf" target="_blank" rel="noopener noreferrer" data-drawer-link>Resume</a>
+    </div>
+  </div>
 
   <main id="main">
     <section class="hero">
@@ -92,22 +244,23 @@
             <span>Also go by</span>
             <span class="name-pill">Faiz</span>
           </div>
-          <p>I’m a digital marketing specialist focused on SEO, growth, analytics, and performance marketing. I build structured, execution-ready projects that show how strategy translates into measurable action.</p>
+          <p>I'm a digital marketing specialist focused on SEO, growth, analytics, and performance marketing. I build structured, execution-ready projects that show how strategy translates into measurable action.</p>
           <div class="cta-row">
             <a class="btn btn-primary" href="#projects">View projects</a>
-            <a class="btn btn-secondary" href="https://www.linkedin.com/in/mohd-faizuddin-ahmed-4984a0148" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a class="btn btn-secondary" href="./Mohd-Faizuddin-Ahmed-Resume.pdf" target="_blank" rel="noopener noreferrer">Download resume</a>
-            <a class="btn btn-secondary" href="https://github.com/FNGK" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="btn btn-secondary" href="https://wa.me/916281367104" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              WhatsApp
+            </a>
+            <a class="btn btn-secondary" href="./Mohd-Faizuddin-Ahmed-Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
           </div>
         </div>
-        <aside class="hero-panel">
+        <aside class="hero-panel" aria-label="Focus areas">
           <span class="kicker">Focus areas</span>
           <p>I work best at the intersection of search visibility, conversion thinking, marketing analytics, and clear communication.</p>
           <div class="metric-grid">
-            <div class="metric"><span>Primary skills</span><strong>SEO + Growth</strong></div>
-            <div class="metric"><span>Tools</span><strong>GA4, Ads, GTM</strong></div>
-            <div class="metric"><span>Workflow</span><strong>AI + Human Review</strong></div>
-            <div class="metric"><span>Base</span><strong>Hyderabad, India</strong></div>
+            <div class="metric"><span>Primary</span><strong>SEO + Growth</strong></div>
+            <div class="metric"><span>Stack</span><strong>GA4 · Ads · GTM</strong></div>
+            <div class="metric"><span>Base</span><strong>Hyderabad, IN</strong></div>
           </div>
         </aside>
       </div>
@@ -120,7 +273,7 @@
             <span class="kicker">About</span>
             <h2>Marketing work grounded in structure and performance.</h2>
           </div>
-          <p>I come from a digital marketing background with hands-on experience across SEO, SEM, campaign analysis, content optimization, and reporting. I’m especially interested in growth roles where research, execution, and measurable business impact matter equally.</p>
+          <p>I come from a digital marketing background with hands-on experience across SEO, SEM, campaign analysis, content optimization, and reporting. I'm especially interested in growth roles where research, execution, and measurable business impact matter equally.</p>
         </div>
         <div class="grid-2">
           <article class="card">
@@ -145,14 +298,14 @@
       </div>
     </section>
 
-    <section>
+    <section aria-labelledby="skills-heading">
       <div class="container">
         <div class="section-head">
           <div>
             <span class="kicker">Skills</span>
-            <h2>Tools and capabilities I use often.</h2>
+            <h2 id="skills-heading">Tools and capabilities I use often.</h2>
           </div>
-          <p>This portfolio is designed to showcase practical marketing ability, not just software familiarity. Still, the tools below reflect the environments I’m most comfortable working in.</p>
+          <p>This portfolio is designed to showcase practical marketing ability, not just software familiarity. Still, the tools below reflect the environments I'm most comfortable working in.</p>
         </div>
         <div class="skills-wrap">
           <span class="skill">SEO</span>
@@ -178,85 +331,71 @@
         <div class="section-head">
           <div>
             <span class="kicker">Projects</span>
-            <h2>Selected work and case-study style portfolio pieces.</h2>
+            <h2>Selected case-study work.</h2>
           </div>
-          <p>I’m building this portfolio as a living system. Each project is meant to show how I think through growth, messaging, SEO, and experimentation in a practical way.</p>
+          <p>Each project is built as a public, recruiter-readable artifact — showing how I think through growth, SEO, messaging, and execution rather than describing it.</p>
         </div>
         <div class="grid-3">
+
           <article class="project-card">
-            <div class="project-top">
-              <div>
-                <div class="project-tag">Live now</div>
-                <h3>Growth OS for 100Hires</h3>
+            <div class="project-thumb">
+              <img src="./assets/projects/telangana-stride-hub.jpg" alt="Designed mock-up of the Hyderabad Globe FC website hero section showing a serif headline, a stadium photograph, and a deep teal call-to-action button." width="1280" height="800" loading="eager" decoding="async" fetchpriority="high">
+            </div>
+            <div class="project-body">
+              <span class="project-tag">Live · Web build</span>
+              <h3>Hyderabad Globe FC — Digital Transformation</h3>
+              <p>A high-performance React + Tailwind redesign of a legacy Wix site for a Hyderabad football club, focused on local SEO around the TFA Rahim League and youth coaching camps, AI-search readiness via JSON-LD schema, and 95+ Lighthouse scores.</p>
+              <div class="project-links">
+                <a class="mini-link" href="https://github.com/FNGK/telangana-stride-hub" target="_blank" rel="noopener noreferrer" aria-label="View Hyderabad Globe FC repository on GitHub">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  Repository
+                </a>
               </div>
             </div>
-            <p>A public growth teardown and experiment plan created for the 100Hires application process, covering messaging, audience thinking, lifecycle ideas, SEO opportunities, and prioritized tests.</p>
-            <div class="project-links">
-              <a class="mini-link" href="https://fngk.github.io/100hires-growth-project/" target="_blank" rel="noopener noreferrer">Live project</a>
-              <a class="mini-link" href="https://github.com/FNGK/100hires-growth-project" target="_blank" rel="noopener noreferrer">Repository</a>
-            </div>
           </article>
+
           <article class="project-card">
-            <div class="project-top">
-              <div>
-                <div class="project-tag">Live now</div>
-                <h3>SEO Opportunity Audit · Unstop.com</h3>
+            <div class="project-thumb">
+              <img src="./assets/projects/100hires.png" alt="Screenshot of the Growth OS for 100Hires case study site, showing a large editorial headline 'A practical acquisition and conversion plan for 100Hires.' over a warm cream background." width="820" height="870" loading="lazy" decoding="async">
+            </div>
+            <div class="project-body">
+              <span class="project-tag">Live · Case study</span>
+              <h3>Growth OS for 100Hires</h3>
+              <p>A public growth teardown and experiment plan created for the 100Hires application process — covering messaging, audience thinking, lifecycle ideas, SEO opportunities, and prioritized tests.</p>
+              <div class="project-links">
+                <a class="mini-link" href="https://fngk.github.io/100hires-growth-project/" target="_blank" rel="noopener noreferrer" aria-label="Open the Growth OS for 100Hires live site">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Live site
+                </a>
+                <a class="mini-link" href="https://github.com/FNGK/100hires-growth-project" target="_blank" rel="noopener noreferrer" aria-label="View the Growth OS for 100Hires repository on GitHub">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  Repo
+                </a>
               </div>
             </div>
-            <p>A 10-part case-study SEO audit of Unstop.com covering technical SEO, on-page, content gaps, internal linking, schema, Core Web Vitals, competitor comparison, and a 30-day action plan.</p>
-            <div class="project-links">
-              <a class="mini-link" href="https://fngk.github.io/seo-opportunity-audit/" target="_blank" rel="noopener noreferrer">Live project</a>
-              <a class="mini-link" href="https://github.com/FNGK/seo-opportunity-audit" target="_blank" rel="noopener noreferrer">Repository</a>
-            </div>
           </article>
+
           <article class="project-card">
-            <div class="project-top">
-              <div>
-                <div class="project-tag">Planned</div>
-                <h3>Landing Page Rewrite + CRO Plan</h3>
+            <div class="project-thumb">
+              <img src="./assets/projects/unstop-seo-audit.png" alt="Screenshot of the SEO Opportunity Audit for Unstop.com, with the editorial headline 'A 10-part SEO audit of Unstop.com.' and a deep teal 'See the top 10 fixes' button." width="820" height="870" loading="lazy" decoding="async">
+            </div>
+            <div class="project-body">
+              <span class="project-tag">Live · SEO audit</span>
+              <h3>SEO Opportunity Audit · Unstop.com</h3>
+              <p>A 10-part case-study SEO audit of Unstop.com covering technical SEO, on-page, content gaps, internal linking, schema, Core Web Vitals, competitor comparison, and a 30-day action plan.</p>
+              <div class="project-links">
+                <a class="mini-link" href="https://fngk.github.io/seo-opportunity-audit/" target="_blank" rel="noopener noreferrer" aria-label="Open the Unstop SEO audit live site">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Live site
+                </a>
+                <a class="mini-link" href="https://github.com/FNGK/seo-opportunity-audit" target="_blank" rel="noopener noreferrer" aria-label="View the Unstop SEO audit repository on GitHub">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  Repo
+                </a>
               </div>
             </div>
-            <p>A conversion-focused teardown with rewritten headlines, CTA improvements, structure changes, and experiment ideas for a landing page that underperforms.</p>
-            <div class="project-links">
-              <span class="mini-link">Coming soon</span>
-            </div>
           </article>
-          <article class="project-card">
-            <div class="project-top">
-              <div>
-                <div class="project-tag">Planned</div>
-                <h3>Email Lifecycle Sequence</h3>
-              </div>
-            </div>
-            <p>A welcome, nurture, activation, and re-engagement flow that demonstrates retention thinking and lifecycle communication for a SaaS-style product.</p>
-            <div class="project-links">
-              <span class="mini-link">Coming soon</span>
-            </div>
-          </article>
-          <article class="project-card">
-            <div class="project-top">
-              <div>
-                <div class="project-tag">Planned</div>
-                <h3>GA4 Insights Dashboard</h3>
-              </div>
-            </div>
-            <p>A reporting-focused project that turns traffic and conversion patterns into actionable insights instead of just summarizing metrics.</p>
-            <div class="project-links">
-              <span class="mini-link">Coming soon</span>
-            </div>
-          </article>
-          <article class="project-card">
-            <div class="project-top">
-              <div>
-                <div class="project-tag">Planned</div>
-                <h3>Paid Campaign Mock Build</h3>
-              </div>
-            </div>
-            <p>A structured ad campaign concept with targeting, messaging, landing page alignment, and budget logic for a realistic performance marketing scenario.</p>
-            <div class="project-links">
-              <span class="mini-link">Coming soon</span>
-            </div>
-          </article>
+
         </div>
       </div>
     </section>
@@ -266,7 +405,7 @@
         <div class="section-head">
           <div>
             <span class="kicker">Experience</span>
-            <h2>Roles that shaped my approach to growth and digital marketing.</h2>
+            <h2>Roles that shaped my approach to growth.</h2>
           </div>
           <p>My background spans digital marketing, performance execution, analytics, process improvement, and client-facing commercial roles. That mix helps me approach growth work with both creative and operational discipline.</p>
         </div>
@@ -298,14 +437,21 @@
     <section id="contact">
       <div class="container">
         <div class="contact-box">
-          <span class="kicker" style="color:rgba(249,248,244,.82)">Contact</span>
-          <h2 style="margin-bottom:.5rem">Open to digital marketing, growth, and performance-focused roles.</h2>
-          <p>If you’re hiring for SEO, growth marketing, performance marketing, or analytics-driven digital roles, I’d be happy to connect and share more detailed work samples.</p>
+          <span class="kicker">Contact</span>
+          <h2 style="margin-bottom:.5rem">Open to digital marketing, growth, and performance roles.</h2>
+          <p>If you're hiring for SEO, growth marketing, performance marketing, or analytics-driven digital roles, I'd be happy to connect and share more detailed work samples. WhatsApp is the fastest way to reach me.</p>
           <div class="contact-links">
-            <a class="contact-btn" href="mailto:md.faiz.ahmed62@gmail.com">Email me</a>
-            <a class="contact-btn" href="https://github.com/FNGK" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a class="contact-btn" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a class="btn btn-secondary" href="./Mohd-Faizuddin-Ahmed-Resume.pdf" target="_blank" rel="noopener noreferrer">Download resume</a>
+            <a class="contact-btn" href="https://wa.me/916281367104" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              WhatsApp me
+            </a>
+            <a class="contact-btn" href="mailto:md.faiz.ahmed62@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              Email
+            </a>
+            <a class="contact-btn contact-btn--outline" href="https://www.linkedin.com/in/mohd-faizuddin-ahmed-4984a0148" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="contact-btn contact-btn--outline" href="https://github.com/FNGK" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="contact-btn contact-btn--outline" href="./Mohd-Faizuddin-Ahmed-Resume.pdf" target="_blank" rel="noopener noreferrer">Download resume</a>
           </div>
         </div>
       </div>
@@ -314,22 +460,82 @@
 
   <footer>
     <div class="container">
-      <p>© Mohd Faizuddin Ahmed · Faiz · Built as a public portfolio website to showcase profile, projects, and ongoing marketing work.</p>
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Mohd Faizuddin Ahmed · Faiz</div>
+          <p>A public portfolio website to showcase profile, projects, and ongoing marketing work. Built as a single, fast, accessible HTML page.</p>
+        </div>
+        <nav class="footer-links" aria-label="Contact">
+          <a href="https://wa.me/916281367104" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            WhatsApp
+          </a>
+          <a href="mailto:md.faiz.ahmed62@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            Email
+          </a>
+          <a href="https://www.linkedin.com/in/mohd-faizuddin-ahmed-4984a0148" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/FNGK" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Mohd Faizuddin Ahmed · Hyderabad, India</p>
+      </div>
     </div>
   </footer>
 
   <script>
     (function(){
-      const root=document.documentElement;
-      const btn=document.getElementById('themeToggle');
-      let theme=window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      function icon(){
-        btn.innerHTML = theme==='dark'
-          ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>'
-          : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
+      const root = document.documentElement;
+      const themeBtn = document.getElementById('themeToggle');
+      const sunIcon = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>';
+      const moonIcon = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
+
+      const stored = (function(){ try { return localStorage.getItem('theme'); } catch(_){ return null; } })();
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      let theme = stored || (prefersDark ? 'dark' : 'light');
+
+      function applyTheme(){
+        root.setAttribute('data-theme', theme);
+        themeBtn.innerHTML = theme === 'dark' ? sunIcon : moonIcon;
+        themeBtn.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
       }
-      root.setAttribute('data-theme', theme); icon();
-      btn.addEventListener('click', function(){ theme = theme==='dark' ? 'light' : 'dark'; root.setAttribute('data-theme', theme); icon(); });
+      applyTheme();
+      themeBtn.addEventListener('click', function(){
+        theme = theme === 'dark' ? 'light' : 'dark';
+        try { localStorage.setItem('theme', theme); } catch(_){}
+        applyTheme();
+      });
+
+      const menuBtn = document.getElementById('menuBtn');
+      const drawer = document.getElementById('mobileDrawer');
+      function setDrawer(open){
+        drawer.dataset.open = open ? 'true' : 'false';
+        drawer.setAttribute('aria-hidden', open ? 'false' : 'true');
+        menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      setDrawer(false);
+      menuBtn.addEventListener('click', function(){
+        const open = drawer.dataset.open !== 'true';
+        setDrawer(open);
+      });
+      document.querySelectorAll('[data-drawer-link]').forEach(function(a){
+        a.addEventListener('click', function(){ setDrawer(false); });
+      });
+      document.addEventListener('keydown', function(e){
+        if (e.key === 'Escape' && drawer.dataset.open === 'true') {
+          setDrawer(false);
+          menuBtn.focus();
+        }
+      });
+      window.addEventListener('resize', function(){
+        if (window.innerWidth > 980 && drawer.dataset.open === 'true') setDrawer(false);
+      });
+
+      const yearEl = document.getElementById('year');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
     })();
   </script>
 </body>
