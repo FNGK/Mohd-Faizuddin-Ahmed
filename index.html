@@ -9,12 +9,24 @@
   <meta name="theme-color" content="#161513" media="(prefers-color-scheme: dark)">
   <link rel="canonical" href="https://fngk.github.io/Mohd-Faizuddin-Ahmed/">
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQZ72RK5LM"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-LQZ72RK5LM');
+    function loadAnalytics(){
+      if (window.__gaLoaded) return;
+      window.__gaLoaded = true;
+      var gaScript = document.createElement('script');
+      gaScript.async = true;
+      gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-LQZ72RK5LM';
+      document.head.appendChild(gaScript);
+      gtag('js', new Date());
+      gtag('config', 'G-LQZ72RK5LM');
+    }
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(loadAnalytics, { timeout: 4000 });
+    } else {
+      window.addEventListener('load', loadAnalytics, { once: true });
+    }
   </script>
   <meta property="og:title" content="Mohd Faizuddin Ahmed (Faiz) | SEO Audit & Growth Marketing Specialist">
   <meta property="og:description" content="SEO audits, local SEO, and growth marketing support from Hyderabad for small businesses and founders.">
@@ -25,13 +37,6 @@
   <meta name="twitter:title" content="Mohd Faizuddin Ahmed (Faiz) | SEO Audit & Growth Marketing Specialist">
   <meta name="twitter:description" content="SEO audits, local SEO, and growth marketing support from Hyderabad for small businesses and founders.">
   <meta name="twitter:image" content="./assets/projects/telangana-stride-hub.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=zodiak@400,700&display=swap">
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=zodiak@400,700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript>
-    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=zodiak@400,700&display=swap" rel="stylesheet">
-  </noscript>
   <style>
     :root,[data-theme="light"]{
       --text-xs:clamp(.75rem,.7rem + .25vw,.875rem);
@@ -44,7 +49,7 @@
       --color-bg:#f7f6f2;--color-surface:#f9f8f5;--color-surface-2:#f2efea;--color-surface-3:#ebe7e1;--color-divider:#d9d4cc;--color-border:#d2cec6;--color-text:#26231d;--color-text-muted:#5e5b55;--color-text-faint:#9a9690;--color-primary:#01696f;--color-primary-hover:#0c4e54;--color-primary-soft:#d7e7e5;--color-inverse:#f9f8f4;--color-focus:#01696f;
       --radius-sm:.45rem;--radius-md:.7rem;--radius-lg:1rem;--radius-xl:1.35rem;--radius-full:999px;
       --shadow-sm:0 1px 2px rgba(22,19,12,.05);--shadow-md:0 8px 24px rgba(22,19,12,.08);--shadow-lg:0 18px 44px rgba(22,19,12,.12);
-      --content:1180px;--font-body:'Satoshi', Inter, system-ui, sans-serif;--font-display:'Zodiak', Georgia, serif;
+      --content:1180px;--font-body:Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;--font-display:Georgia, "Times New Roman", serif;
     }
     [data-theme="dark"]{
       --color-bg:#161513;--color-surface:#1d1c19;--color-surface-2:#23211e;--color-surface-3:#2b2926;--color-divider:#2d2b28;--color-border:#393733;--color-text:#e5e0d7;--color-text-muted:#b6b0a6;--color-text-faint:#6f6a63;--color-primary:#57a2ac;--color-primary-hover:#3b838d;--color-primary-soft:#263536;--color-inverse:#1d1c19;--color-focus:#57a2ac;
@@ -724,8 +729,6 @@
     (function(){
       const root = document.documentElement;
       const themeBtn = document.getElementById('themeToggle');
-      const sunIcon = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>';
-      const moonIcon = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
 
       const stored = (function(){ try { return localStorage.getItem('theme'); } catch(_){ return null; } })();
       const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -733,7 +736,6 @@
 
       function applyTheme(){
         root.setAttribute('data-theme', theme);
-        themeBtn.innerHTML = theme === 'dark' ? sunIcon : moonIcon;
         themeBtn.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
       }
       applyTheme();
