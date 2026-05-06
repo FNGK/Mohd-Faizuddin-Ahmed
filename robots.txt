@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fngk.github.io/Mohd-Faizuddin-Ahmed/sitemap.xml
