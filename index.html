@@ -27,8 +27,11 @@
   <meta name="twitter:image" content="./assets/projects/telangana-stride-hub.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=zodiak@400,700&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="./assets/projects/telangana-stride-hub.jpg" fetchpriority="high">
+  <link rel="preload" as="style" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=zodiak@400,700&display=swap">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=zodiak@400,700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=zodiak@400,700&display=swap" rel="stylesheet">
+  </noscript>
   <style>
     :root,[data-theme="light"]{
       --text-xs:clamp(.75rem,.7rem + .25vw,.875rem);
@@ -104,6 +107,7 @@
     .metric span{display:block;font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.08em;color:var(--color-text-muted);margin-bottom:.35rem}
 
     section{padding:clamp(2.75rem,7vw,5rem) 0}
+    section:not(.hero){content-visibility:auto;contain-intrinsic-size:800px}
     .section-head{display:grid;grid-template-columns:4fr 8fr;gap:var(--space-8);align-items:start;margin-bottom:var(--space-6)}
     .kicker{display:inline-block;margin-bottom:var(--space-3);font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.14em;font-weight:700;color:var(--color-primary)}
 
@@ -496,7 +500,7 @@
 
           <article class="project-card">
             <div class="project-thumb">
-              <img src="./assets/projects/telangana-stride-hub.jpg" alt="Designed mock-up of the Hyderabad Globe FC website hero section showing a serif headline, a stadium photograph, and a deep teal call-to-action button." width="1280" height="800" loading="eager" decoding="async" fetchpriority="high">
+              <img src="./assets/projects/telangana-stride-hub.jpg" alt="Designed mock-up of the Hyderabad Globe FC website hero section showing a serif headline, a stadium photograph, and a deep teal call-to-action button." width="1280" height="800" loading="lazy" decoding="async">
             </div>
             <div class="project-body">
               <span class="project-tag">Live · Web build</span>
