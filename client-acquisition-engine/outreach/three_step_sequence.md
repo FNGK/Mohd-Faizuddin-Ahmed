@@ -17,7 +17,7 @@ I reviewed {{BUSINESS_NAME}} and noticed one issue that may be costing qualified
 
 A quick fix you can apply fast is {{QUICK_WIN}}.
 
-I do focused {{PRIMARY_OFFER}} work for small businesses, and I documented a practical framework here: {{TARGET_PAGE}}.
+I do focused {{PRIMARY_OFFER}} work for businesses, and I documented a practical framework here: {{TARGET_PAGE}}.
 
 Open to a 15-minute diagnostic call this week?
 
