@@ -10,9 +10,9 @@
   gap: 0.3rem;
   padding: 0.35rem 0.65rem;
   border-radius: 999px;
-  border: 1px solid #cbd5e1;
-  background: #f8fafc;
-  color: #334155;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--surface-muted) 88%, var(--surface));
+  color: var(--text-muted);
   font-size: 0.78rem;
   font-weight: 700;
 }
@@ -24,15 +24,15 @@
 }
 
 .metric {
-  background: #fff;
-  border: 1px solid #dbe2ea;
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: 12px;
   padding: 0.8rem;
 }
 
 .metric .label {
   display: block;
-  color: #475569;
+  color: var(--text-muted);
   font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -41,10 +41,114 @@
 
 .metric .value {
   display: block;
-  color: #0f172a;
+  color: var(--text);
   font-size: 1.32rem;
   font-weight: 800;
   margin-top: 0.2rem;
+}
+
+.signal-board {
+  border-radius: 12px;
+  border: 1px solid color-mix(in srgb, var(--border) 88%, var(--primary));
+  background: linear-gradient(
+    165deg,
+    color-mix(in srgb, var(--surface) 92%, var(--surface-muted)) 0%,
+    color-mix(in srgb, var(--surface-muted) 65%, var(--surface)) 100%
+  );
+  padding: 0.75rem 0.85rem 0.55rem;
+  overflow: hidden;
+}
+
+.signal-board__top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.45rem;
+}
+
+.signal-board__title {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.signal-board__pill {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.2rem 0.45rem;
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--primary) 14%, transparent);
+  color: var(--primary-dark);
+  border: 1px solid color-mix(in srgb, var(--primary) 28%, transparent);
+}
+
+[data-theme="dark"] .signal-board__pill {
+  color: var(--primary);
+}
+
+.signal-board svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.signal-board figcaption {
+  margin-top: 0.45rem;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  line-height: 1.35;
+}
+
+.visual-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.visual-pillar {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.45rem 0.85rem;
+  align-items: start;
+  padding: 1rem 1.05rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.visual-pillar__icon {
+  grid-row: 1 / span 2;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: color-mix(in srgb, var(--primary) 12%, var(--surface-muted));
+  border: 1px solid color-mix(in srgb, var(--primary) 22%, var(--border));
+  color: var(--primary-dark);
+}
+
+[data-theme="dark"] .visual-pillar__icon {
+  color: var(--primary);
+}
+
+.visual-pillar__icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.visual-pillar h3 {
+  margin: 0;
+  font-size: 1.02rem;
+}
+
+.visual-pillar p {
+  margin: 0;
+  font-size: 0.92rem;
 }
 
 .trust-logos {
@@ -67,6 +171,47 @@
 .logo-box:hover {
   border-color: color-mix(in srgb, var(--primary) 45%, var(--border));
   color: var(--text);
+}
+
+.profile-headshot {
+  width: min(220px, 100%);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+}
+
+.cert-logo-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+.cert-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  min-width: 74px;
+  padding: 0.55rem 0.75rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.cert-logo:hover {
+  text-decoration: none;
+  border-color: color-mix(in srgb, var(--primary) 45%, var(--border));
+}
+
+.cert-logo img {
+  max-height: 30px;
+  max-width: 124px;
+  width: auto;
+  height: auto;
+  border-radius: 0;
 }
 
 .service-table {
@@ -242,6 +387,10 @@
   }
 
   .video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .visual-strip {
     grid-template-columns: 1fr;
   }
 }

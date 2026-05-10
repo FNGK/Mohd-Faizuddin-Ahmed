@@ -49,7 +49,7 @@ def build_markdown(idea: dict) -> str:
     feature_image = "../../assets/projects/unstop-seo-audit.png"
     feature_image_alt = "SEO strategy implementation visual"
     canonical_url = f"https://fngk.github.io/Mohd-Faizuddin-Ahmed/blog/posts/{slug}.html"
-    og_image = "https://fngk.github.io/Mohd-Faizuddin-Ahmed/assets/projects/unstop-seo-audit.png"
+    og_image = "https://fngk.github.io/Mohd-Faizuddin-Ahmed/assets/og/og-default.png"
     external_sources = idea["external_sources"]
     internal_links = idea["internal_links"]
     intro_hook = (

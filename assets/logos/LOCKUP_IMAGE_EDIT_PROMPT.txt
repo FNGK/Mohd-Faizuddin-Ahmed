@@ -1,0 +1,57 @@
+LOCKUP PNG — IMAGE EDIT / REGENERATION PROMPT (SEO With Faiz)
+=============================================================
+Use this prompt in Photoshop, Photopea, or an AI image editor. Goal: one horizontal
+logo lockup that blends into the marketing site header chip AND Open Graph tiles.
+
+BRAND & PRODUCT CONTEXT
+-----------------------
+- Independent commercial SEO practice: technical SEO, local SEO, international SEO,
+  content SEO. Audience: B2B and service-led companies (US, CA, AU, EU).
+- Tone: precise, trustworthy, revenue-focused — not “gaming rankings,” not hype.
+
+VISUAL DIRECTION (must match site CSS)
+--------------------------------------
+- Palette anchors (approximate): teal #0f766e, cyan accent #0284c7, slate text
+  #0f172a, soft surfaces #f8fafc / #f1f5f9, dark UI #111b2e–#152338.
+- Style: clean vector-like edges, generous whitespace, subtle depth OK but no 3D
+  gimmicks, no stock-photo clutter.
+
+TRANSPARENCY & BLENDING (critical)
+----------------------------------
+- The site ships TWO lockups: one for the light topbar, one for the dark chip. The
+  light lockup is NOT shown inside a second “card” in CSS — it should be a clean
+  horizontal bar on the page. For a perfect merge, export with real transparency
+  (no off-white JPEG box); otherwise a faint rectangle will always read as a sticker.
+- Prefer real transparency at the outer bounds of the artwork; avoid accidental
+  light halos on the dark asset or muddy edges on the light asset.
+- Anti-alias edges toward tones that match the target chip, not pure white halos
+  on the dark variant.
+
+WORDMARK / LOCKUP LAYOUT
+------------------------
+- Horizontal lockup suitable for ~280×72 CSS header slot (readable at small sizes).
+- Include tagline only if legible at small scale OR reserve tagline for wide OG use.
+- Ensure lockup works on:
+  (A) light gradient chip in nav, (B) dark navy chip in dark theme,
+  (C) centered OG placement on teal→navy gradient (optional pale rounded panel).
+
+NEGATIVE PROMPTS / AVOID
+------------------------
+- No fake Google logos, no “#1 ranking” badges, no aggressive neon gradients,
+  no clipart charts, no unreadable script fonts at small sizes.
+
+EXPORT VARIANTS (required in this repo)
+----------------------------------------
+1) assets/logos/seo-with-faiz-logo-technical-precision-revenue-growth.png — light-mode header + OG source
+   (transparent PNG preferred; merges with #eef2f7 mesh / frosted topbar).
+2) assets/logos/seo-with-faiz-logo-dark-mode-technical-precision-revenue-growth.png — dark-mode header
+   (transparent PNG on navy #111b2e–#152338). If you export with a baked navy plate,
+   run: python automation/knockout_dark_logo_bg.py
+   For a stroke-free mark on dark UI, export without outer ring/shield strokes (or supply SVG).
+
+Optional: email/PDF variant with a fixed plate — do not overwrite the web filenames
+above unless intentionally replacing both.
+
+AFTER EXPORT
+------------
+Re-run: python automation/build_og_image.py (uses the light lockup for og-default.png).

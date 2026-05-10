@@ -1,0 +1,73 @@
+<svg width="1400" height="360" viewBox="0 0 1400 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">SEO With Faiz brand logo</title>
+  <desc id="logoDesc">A semantic logo that represents trust, growth, and commitment by bridging technical execution and business outcomes.</desc>
+  <defs>
+    <linearGradient id="bridgeGradient" x1="76" y1="88" x2="220" y2="166" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0F766E"/>
+      <stop offset="1" stop-color="#0284C7"/>
+    </linearGradient>
+    <style>
+      .wordmark {
+        font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 74px;
+        letter-spacing: 0.4px;
+        fill: #0F172A;
+      }
+      .tagline {
+        font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 28px;
+        fill: #334155;
+      }
+      .values {
+        font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        fill: #475569;
+      }
+    </style>
+  </defs>
+
+  <!-- Icon mark -->
+  <g transform="translate(24,24)">
+    <!-- Shield: trust and ethical integrity -->
+    <path d="M140 10C194 10 238 53 238 106V138C238 193 198 243 140 274C82 243 42 193 42 138V106C42 53 86 10 140 10Z" fill="#F8FAFC" stroke="#0F172A" stroke-width="7"/>
+    <!-- Ring: continuous learning and system thinking -->
+    <circle cx="140" cy="124" r="84" stroke="#0F172A" stroke-width="5"/>
+
+    <!-- Six value nodes -->
+    <circle cx="140" cy="40" r="6" fill="#0284C7"/>
+    <circle cx="211" cy="81" r="6" fill="#0284C7"/>
+    <circle cx="211" cy="163" r="6" fill="#0284C7"/>
+    <circle cx="140" cy="204" r="6" fill="#0284C7"/>
+    <circle cx="69" cy="163" r="6" fill="#0284C7"/>
+    <circle cx="69" cy="81" r="6" fill="#0284C7"/>
+
+    <!-- Technical side: bracket-inspired execution -->
+    <polyline points="98,90 76,124 98,158" stroke="#0F766E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Business side: growth bars -->
+    <rect x="168" y="150" width="12" height="34" rx="3" fill="#0F766E"/>
+    <rect x="186" y="136" width="12" height="48" rx="3" fill="#0284C7"/>
+    <rect x="204" y="118" width="12" height="66" rx="3" fill="#0F172A"/>
+
+    <!-- Bridge between technical execution and growth -->
+    <path d="M94 141C118 100 160 84 206 102" stroke="url(#bridgeGradient)" stroke-width="11" stroke-linecap="round"/>
+
+    <!-- Commitment check -->
+    <path d="M120 142L142 160L188 120" stroke="#F59E0B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M188 120L188 133M188 120L176 120" stroke="#F59E0B" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Partnership link -->
+    <circle cx="123" cy="193" r="10" stroke="#F59E0B" stroke-width="4"/>
+    <circle cx="144" cy="193" r="10" stroke="#F59E0B" stroke-width="4"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(320,78)">
+    <text class="wordmark" y="74">SEO With Faiz</text>
+    <text class="tagline" y="128">Technical Precision. Revenue Growth.</text>
+    <text class="values" y="166">Transparent · User-First · Data-Led · Adaptive · Long-Term · Aligned</text>
+  </g>
+</svg>
