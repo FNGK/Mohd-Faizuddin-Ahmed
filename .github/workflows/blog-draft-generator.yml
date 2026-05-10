@@ -1,0 +1,56 @@
+name: Blog Draft Generator
+
+on:
+  schedule:
+    - cron: "0 5 * * 1"
+    - cron: "0 5 * * 4"
+  workflow_dispatch:
+    inputs:
+      publish_approved:
+        description: "Publish approved drafts"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  build-blog-drafts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r automation/blog/requirements.txt
+
+      - name: Generate trend data and drafts
+        run: |
+          python automation/blog/trend_collector.py
+          python automation/blog/keyword_planner.py
+          python automation/blog/draft_generator.py
+          python automation/blog/publish_validator.py
+
+      - name: Publish approved drafts
+        if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.publish_approved == 'true' }}
+        run: |
+          python automation/blog/publish_validator.py --publish
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add automation/blog/data blog/drafts blog/posts blog/index.html
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Automate blog draft pipeline updates"
+            git push
+          fi

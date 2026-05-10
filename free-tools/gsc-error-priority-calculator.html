@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GSC Error Priority Calculator | SEO With Faiz</title>
+  <meta name="description" content="Free Google Search Console error priority calculator to rank technical SEO issues by impact, page value, and implementation effort.">
+  <link rel="canonical" href="https://fngk.github.io/Mohd-Faizuddin-Ahmed/free-tools/gsc-error-priority-calculator.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="GSC Error Priority Calculator | SEO With Faiz">
+  <meta property="og:description" content="Instantly score technical issues and identify what to fix first.">
+  <meta property="og:url" content="https://fngk.github.io/Mohd-Faizuddin-Ahmed/free-tools/gsc-error-priority-calculator.html">
+  <meta property="og:image" content="https://fngk.github.io/Mohd-Faizuddin-Ahmed/assets/projects/unstop-seo-audit.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GSC Error Priority Calculator | SEO With Faiz">
+  <meta name="twitter:description" content="Use this free calculator to prioritize Search Console technical fixes.">
+  <meta name="twitter:image" content="https://fngk.github.io/Mohd-Faizuddin-Ahmed/assets/projects/unstop-seo-audit.png">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="../index.html"><span class="brand-mark">SF</span><span>SEO With Faiz</span></a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="../services/index.html">Services</a>
+        <a href="../case-studies/index.html">Case Studies</a>
+        <a href="./gsc-error-priority-calculator.html">Free Tool</a>
+        <a href="../blog/index.html">Blog</a>
+        <a href="../contact/index.html">Contact</a>
+      </nav>
+      <a class="nav-cta" data-dynamic-cta href="../contact/index.html">Book strategy call</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-controls="mobileNav" aria-expanded="false">☰</button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="../services/index.html">Services</a>
+      <a href="../case-studies/index.html">Case Studies</a>
+      <a href="./gsc-error-priority-calculator.html">Free Tool</a>
+      <a href="../blog/index.html">Blog</a>
+      <a href="../contact/index.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="kicker">Free tool</span>
+          <h1>GSC Error Priority Calculator</h1>
+          <p>Use this calculator to decide which technical SEO errors to fix first based on business impact and effort. It is designed for teams that need practical sprint prioritization.</p>
+        </div>
+        <aside class="hero-panel">
+          <h2 style="font-size:1.3rem;">Scoring model</h2>
+          <p><strong>Priority Score =</strong> (Impact × 0.45) + (Page Value × 0.35) + (Issue Volume × 0.20) − (Effort × 0.30)</p>
+          <p>Higher scores indicate higher priority for immediate resolution.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2">
+        <article class="card">
+          <h2 style="font-size:1.35rem;">Enter issue data</h2>
+          <form class="contact-form" id="gscCalcForm">
+            <label for="impact">Business impact (1-10)</label>
+            <input id="impact" name="impact" type="number" min="1" max="10" value="7" required>
+
+            <label for="pageValue">Page value (1-10)</label>
+            <input id="pageValue" name="pageValue" type="number" min="1" max="10" value="8" required>
+
+            <label for="issueVolume">Issue volume (1-10)</label>
+            <input id="issueVolume" name="issueVolume" type="number" min="1" max="10" value="6" required>
+
+            <label for="effort">Fix effort (1-10)</label>
+            <input id="effort" name="effort" type="number" min="1" max="10" value="4" required>
+
+            <button class="btn btn-primary" type="submit">Calculate priority score</button>
+          </form>
+        </article>
+        <article class="card">
+          <h2 style="font-size:1.35rem;">Result</h2>
+          <p id="priorityResult">Submit values to calculate your priority score.</p>
+          <div class="answer-box">
+            <p><strong>How to use the result:</strong> focus first on issues with higher score and lower implementation friction on your revenue-critical pages.</p>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-secondary" href="../resources/seo-audit-playbook.html">Open SEO audit playbook</a>
+            <a class="btn btn-secondary" data-dynamic-cta href="../contact/index.html">Request technical audit</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <p>SEO With Faiz · practical tools for technical SEO decision-making.</p>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="../index.html">Home</a>
+        <a href="../services/technical-seo.html">Technical SEO</a>
+        <a href="../contact/index.html">Contact</a>
+      </nav>
+      <p>© <span data-current-year>2026</span> SEO With Faiz.</p>
+    </div>
+  </footer>
+  <script src="../assets/js/site.js" defer></script>
+  <script>
+    (function () {
+      const form = document.getElementById("gscCalcForm");
+      const result = document.getElementById("priorityResult");
+      if (!form || !result) return;
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const impact = Number(document.getElementById("impact").value || 0);
+        const pageValue = Number(document.getElementById("pageValue").value || 0);
+        const issueVolume = Number(document.getElementById("issueVolume").value || 0);
+        const effort = Number(document.getElementById("effort").value || 0);
+
+        const score = impact * 0.45 + pageValue * 0.35 + issueVolume * 0.2 - effort * 0.3;
+        const rounded = Math.max(0, score).toFixed(2);
+        let label = "Low";
+        if (score >= 6.5) label = "Critical";
+        else if (score >= 4.5) label = "High";
+        else if (score >= 3) label = "Moderate";
+
+        result.innerHTML = "<strong>Priority score:</strong> " + rounded + " (" + label + ").";
+      });
+    })();
+  </script>
+</body>
+</html>

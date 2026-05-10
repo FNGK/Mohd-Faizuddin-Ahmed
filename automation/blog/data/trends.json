@@ -1,0 +1,542 @@
+{
+  "collected_at": "2026-05-10T02:25:39.731795+00:00",
+  "feeds": [
+    "Google Search Central",
+    "Search Engine Journal",
+    "Search Engine Land",
+    "Moz"
+  ],
+  "entry_count": 25,
+  "entries": [
+    {
+      "source": "Search Engine Journal",
+      "title": "Google Adds More AI Search Links, Still No Click Data For SEOs via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/google-expands-ai-search-links-without-new-click-data/574307/",
+      "published": "Sat, 09 May 2026 12:00:34 +0000",
+      "tokens": [
+        "adds",
+        "more",
+        "links",
+        "still",
+        "click",
+        "data",
+        "seos",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "From Reddit to Revenue: Building Real Community That Drives Sales and AI Visibility via @sejournal, @hethr_campbell",
+      "url": "https://www.searchenginejournal.com/from-reddit-to-revenue-building-real-community-that-drives-sales-and-ai-visibility-recap/574380/",
+      "published": "Fri, 08 May 2026 19:53:42 +0000",
+      "tokens": [
+        "reddit",
+        "revenue",
+        "building",
+        "real",
+        "community",
+        "drives",
+        "sales",
+        "visibility"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "The Agent Runtime Wars Have Begun. Is Your Website Ready? via @sejournal, @slobodanmanic",
+      "url": "https://www.searchenginejournal.com/the-agent-runtime-wars-have-begun-is-your-website-ready/574174/",
+      "published": "Fri, 08 May 2026 13:00:11 +0000",
+      "tokens": [
+        "agent",
+        "runtime",
+        "wars",
+        "have",
+        "begun",
+        "website",
+        "ready",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google Core Update Reshuffles Winners, AI Search Expands Links \u2013 SEO Pulse via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/seo-pulse-new-ai-search-links-core-update-winners-and-losers/574314/",
+      "published": "Fri, 08 May 2026 12:30:36 +0000",
+      "tokens": [
+        "core",
+        "reshuffles",
+        "winners",
+        "expands",
+        "links",
+        "pulse",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "The Reddit Earnings Story Most Marketers Missed via @sejournal, @brentcsutoras",
+      "url": "https://www.searchenginejournal.com/the-reddit-earnings-story-most-marketers-missed/573727/",
+      "published": "Fri, 08 May 2026 12:00:40 +0000",
+      "tokens": [
+        "reddit",
+        "earnings",
+        "story",
+        "most",
+        "marketers",
+        "missed",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "AI Companies Are Selling Heartwarming Ads \u2013 They\u2019re Racing To Automate Your Job via @sejournal, @gregjarboe",
+      "url": "https://www.searchenginejournal.com/ai-companies-are-selling-heartwarming-ads-theyre-racing-to-automate-your-job/573626/",
+      "published": "Fri, 08 May 2026 11:00:37 +0000",
+      "tokens": [
+        "companies",
+        "are",
+        "selling",
+        "heartwarming",
+        "ads",
+        "they",
+        "racing",
+        "automate"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "WordPress 7.0 Will Ship Without Real-Time Collaboration via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/wordpress-7-0-will-ship-without-real-time-collaboration/574330/",
+      "published": "Fri, 08 May 2026 10:36:35 +0000",
+      "tokens": [
+        "wordpress",
+        "ship",
+        "without",
+        "real-time",
+        "collaboration",
+        "via",
+        "sejournal",
+        "martinibuster"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "\u201cSEO Expert\u201d Became \u201cAI Search Expert\u201d (Gulp.): How To Control AI Answer Accuracy via @sejournal, @lorenbaker",
+      "url": "https://www.searchenginejournal.com/seo-expert-became-ai-search-expert-gulp-how-to-control-ai-answer-accuracy/574245/",
+      "published": "Thu, 07 May 2026 16:41:38 +0000",
+      "tokens": [
+        "expert",
+        "became",
+        "expert",
+        "gulp",
+        "control",
+        "answer",
+        "accuracy",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Keyword Research Has A New Strategy & It\u2019s Getting Local Businesses Into AI Results [Webinar] via @sejournal, @hethr_campbell",
+      "url": "https://www.searchenginejournal.com/keyword-research-has-a-new-strategy-its-getting-local-businesses-into-ai-results-webinar/573484/",
+      "published": "Thu, 07 May 2026 16:21:50 +0000",
+      "tokens": [
+        "keyword",
+        "research",
+        "has",
+        "new",
+        "strategy",
+        "getting",
+        "local",
+        "businesses"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google\u2019s Mueller Flags SEO Gaps In AI Vibe Coding via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/googles-mueller-vibe-coding-wont-handle-your-seo-for-you/574237/",
+      "published": "Thu, 07 May 2026 16:02:11 +0000",
+      "tokens": [
+        "mueller",
+        "flags",
+        "gaps",
+        "vibe",
+        "coding",
+        "via",
+        "sejournal",
+        "mattgsouthern"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google Ads Rolls Out Journey-Aware Bidding And New Pacing Controls For Advertisers via @sejournal, @brookeosmundson",
+      "url": "https://www.searchenginejournal.com/google-ads-introduces-journey-aware-bidding-and-new-budget-pacing-updates/574141/",
+      "published": "Thu, 07 May 2026 15:00:15 +0000",
+      "tokens": [
+        "ads",
+        "rolls",
+        "out",
+        "journey-aware",
+        "bidding",
+        "new",
+        "pacing",
+        "controls"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "The ROI Problem With AI Traffic Nobody Is Measuring Correctly via @sejournal, @DuaneForrester",
+      "url": "https://www.searchenginejournal.com/the-roi-problem-with-ai-traffic-nobody-is-measuring-correctly/573638/",
+      "published": "Thu, 07 May 2026 13:30:20 +0000",
+      "tokens": [
+        "roi",
+        "problem",
+        "traffic",
+        "nobody",
+        "measuring",
+        "correctly",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "7 Common AI Website Mistakes That Are Easy To Avoid via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/7-common-ai-website-mistakes-that-are-easy-to-avoid/574196/",
+      "published": "Thu, 07 May 2026 13:18:10 +0000",
+      "tokens": [
+        "common",
+        "website",
+        "mistakes",
+        "are",
+        "easy",
+        "avoid",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google\u2019s Quality Threshold Is Quietly Killing Scaled AI Content At Ranking via @sejournal, @TaylorDanRW",
+      "url": "https://www.searchenginejournal.com/googles-quality-threshold-is-quietly-killing-scaled-ai-content/574071/",
+      "published": "Thu, 07 May 2026 13:00:17 +0000",
+      "tokens": [
+        "quality",
+        "threshold",
+        "quietly",
+        "killing",
+        "scaled",
+        "content",
+        "ranking",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "How To Leverage AI Ad Placements For Stronger PPC Performance via @sejournal, @navahf",
+      "url": "https://www.searchenginejournal.com/ask-a-ppc-how-to-leverage-ai-ad-placements-and-are-they-worth-it/573639/",
+      "published": "Thu, 07 May 2026 12:00:02 +0000",
+      "tokens": [
+        "leverage",
+        "placements",
+        "stronger",
+        "ppc",
+        "performance",
+        "via",
+        "sejournal",
+        "navahf"
+      ]
+    },
+    {
+      "source": "Moz",
+      "title": "Cannibalization",
+      "url": "https://feedpress.me/link/9375/14757949/cannibalization",
+      "published": "Fri, 17 Sep 2021 00:00:00 -0700",
+      "tokens": [
+        "cannibalization"
+      ]
+    },
+    {
+      "source": "Moz",
+      "title": "Tackling 8,000 Title Tag Rewrites: A Case Study",
+      "url": "https://feedpress.me/link/9375/14753388/title-tag-rewrite-case-study",
+      "published": "Thu, 16 Sep 2021 00:00:00 -0700",
+      "tokens": [
+        "tackling",
+        "title",
+        "tag",
+        "rewrites",
+        "case",
+        "study"
+      ]
+    },
+    {
+      "source": "Moz",
+      "title": "How Our Website Conversion Strategy Increased Business Inquiries by 37%",
+      "url": "https://feedpress.me/link/9375/14751225/website-conversion-case-study",
+      "published": "Wed, 15 Sep 2021 00:00:00 -0700",
+      "tokens": [
+        "our",
+        "website",
+        "conversion",
+        "strategy",
+        "increased",
+        "business",
+        "inquiries"
+      ]
+    },
+    {
+      "source": "Moz",
+      "title": "How to Add Products to Your Google My Business Listing, Illustrated",
+      "url": "https://feedpress.me/link/9375/14746944/add-products-to-gmb-listing",
+      "published": "Mon, 13 Sep 2021 00:00:00 -0700",
+      "tokens": [
+        "add",
+        "products",
+        "business",
+        "listing",
+        "illustrated"
+      ]
+    },
+    {
+      "source": "Moz",
+      "title": "The Three Bosses of SEO",
+      "url": "https://feedpress.me/link/9375/14742542/three-seo-bosses",
+      "published": "Fri, 10 Sep 2021 00:00:00 -0700",
+      "tokens": [
+        "three",
+        "bosses"
+      ]
+    },
+    {
+      "source": "Moz",
+      "title": "Winning the Page Speed Race: How to Turn Your Clunker of a Website Into a Race Car",
+      "url": "https://feedpress.me/link/9375/14737629/winning-page-speed",
+      "published": "Wed, 08 Sep 2021 00:00:00 -0700",
+      "tokens": [
+        "winning",
+        "page",
+        "speed",
+        "race",
+        "turn",
+        "clunker",
+        "website",
+        "race"
+      ]
+    },
+    {
+      "source": "Moz",
+      "title": "Responsive Search Ads: 5 Best Practices for Google Ads PPC Search Campaigns",
+      "url": "https://feedpress.me/link/9375/14735616/5-google-ads-ppc-best-practices",
+      "published": "Tue, 07 Sep 2021 00:00:00 -0700",
+      "tokens": [
+        "responsive",
+        "ads",
+        "best",
+        "practices",
+        "ads",
+        "ppc",
+        "campaigns"
+      ]
+    },
+    {
+      "source": "Moz",
+      "title": "How to Calculate Your SEO ROI Using Google Analytics",
+      "url": "https://feedpress.me/link/9375/14733670/calculate-seo-roi-with-google-analytics",
+      "published": "Mon, 06 Sep 2021 00:00:00 -0700",
+      "tokens": [
+        "calculate",
+        "roi",
+        "using",
+        "analytics"
+      ]
+    },
+    {
+      "source": "Moz",
+      "title": "How to Use STAT to Find SEO Opportunities at Scale",
+      "url": "https://feedpress.me/link/9375/14729254/find-seo-opportunities-with-stat",
+      "published": "Fri, 03 Sep 2021 00:00:00 -0700",
+      "tokens": [
+        "use",
+        "stat",
+        "find",
+        "opportunities",
+        "scale"
+      ]
+    },
+    {
+      "source": "Moz",
+      "title": "The Guide to Targeted-Impact Link Building",
+      "url": "https://feedpress.me/link/9375/14723651/targeted-impact-link-building-guide",
+      "published": "Wed, 01 Sep 2021 00:00:00 -0700",
+      "tokens": [
+        "targeted-impact",
+        "link",
+        "building"
+      ]
+    }
+  ],
+  "top_terms": [
+    {
+      "term": "via",
+      "count": 15
+    },
+    {
+      "term": "sejournal",
+      "count": 15
+    },
+    {
+      "term": "website",
+      "count": 4
+    },
+    {
+      "term": "ads",
+      "count": 4
+    },
+    {
+      "term": "mattgsouthern",
+      "count": 3
+    },
+    {
+      "term": "links",
+      "count": 2
+    },
+    {
+      "term": "reddit",
+      "count": 2
+    },
+    {
+      "term": "building",
+      "count": 2
+    },
+    {
+      "term": "hethr",
+      "count": 2
+    },
+    {
+      "term": "campbell",
+      "count": 2
+    },
+    {
+      "term": "are",
+      "count": 2
+    },
+    {
+      "term": "martinibuster",
+      "count": 2
+    },
+    {
+      "term": "expert",
+      "count": 2
+    },
+    {
+      "term": "new",
+      "count": 2
+    },
+    {
+      "term": "strategy",
+      "count": 2
+    },
+    {
+      "term": "roi",
+      "count": 2
+    },
+    {
+      "term": "ppc",
+      "count": 2
+    },
+    {
+      "term": "business",
+      "count": 2
+    },
+    {
+      "term": "race",
+      "count": 2
+    },
+    {
+      "term": "adds",
+      "count": 1
+    },
+    {
+      "term": "more",
+      "count": 1
+    },
+    {
+      "term": "still",
+      "count": 1
+    },
+    {
+      "term": "click",
+      "count": 1
+    },
+    {
+      "term": "data",
+      "count": 1
+    },
+    {
+      "term": "seos",
+      "count": 1
+    },
+    {
+      "term": "revenue",
+      "count": 1
+    },
+    {
+      "term": "real",
+      "count": 1
+    },
+    {
+      "term": "community",
+      "count": 1
+    },
+    {
+      "term": "drives",
+      "count": 1
+    },
+    {
+      "term": "sales",
+      "count": 1
+    },
+    {
+      "term": "visibility",
+      "count": 1
+    },
+    {
+      "term": "agent",
+      "count": 1
+    },
+    {
+      "term": "runtime",
+      "count": 1
+    },
+    {
+      "term": "wars",
+      "count": 1
+    },
+    {
+      "term": "have",
+      "count": 1
+    },
+    {
+      "term": "begun",
+      "count": 1
+    },
+    {
+      "term": "ready",
+      "count": 1
+    },
+    {
+      "term": "slobodanmanic",
+      "count": 1
+    },
+    {
+      "term": "core",
+      "count": 1
+    },
+    {
+      "term": "reshuffles",
+      "count": 1
+    }
+  ]
+}
