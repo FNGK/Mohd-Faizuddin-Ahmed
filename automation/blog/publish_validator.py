@@ -56,6 +56,9 @@ def validate_frontmatter(data: dict, body: str) -> list[str]:
     if data.get("approved") is not True:
         errors.append("Draft is not approved")
 
+    if data.get("humanization_verified") is not True:
+        errors.append("Draft has not passed humanization verification")
+
     if not isinstance(data.get("external_sources"), list) or len(data.get("external_sources", [])) < 2:
         errors.append("Need at least 2 external sources")
 

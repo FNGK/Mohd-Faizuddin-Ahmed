@@ -6,8 +6,13 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+from intent_content import human_title
 
 INTERNAL_LINKS_DEFAULT = [
     "../../services/index.html",
@@ -60,7 +65,7 @@ def slugify(text: str) -> str:
 
 
 def build_title_from_term(term: str) -> str:
-    return f"{term.title()} SEO Strategy: What Teams Should Do in 2026"
+    return human_title(term, classify_intent(term))
 
 
 def classify_intent(term: str) -> str:

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog review console</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        font-family: system-ui, sans-serif;
+      }
+      body {
+        margin: 0 auto;
+        max-width: 960px;
+        padding: 2rem 1.25rem 4rem;
+        line-height: 1.5;
+      }
+      h1 {
+        margin-bottom: 0.25rem;
+      }
+      .lede {
+        color: #666;
+        margin-top: 0;
+      }
+      .panel {
+        border: 1px solid #ccc;
+        border-radius: 12px;
+        padding: 1rem 1.25rem;
+        margin: 1rem 0;
+      }
+      label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 0.35rem;
+      }
+      input[type="password"],
+      input[type="text"] {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0.65rem 0.75rem;
+        border-radius: 8px;
+        border: 1px solid #bbb;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+      }
+      th,
+      td {
+        border-bottom: 1px solid #ddd;
+        padding: 0.65rem 0.35rem;
+        text-align: left;
+        vertical-align: top;
+      }
+      button {
+        cursor: pointer;
+        border: 0;
+        border-radius: 999px;
+        padding: 0.55rem 1rem;
+        font-weight: 600;
+        background: #0f6b3f;
+        color: #fff;
+      }
+      button:disabled {
+        opacity: 0.45;
+        cursor: not-allowed;
+      }
+      .status-ready {
+        color: #0f6b3f;
+        font-weight: 600;
+      }
+      .status-blocked {
+        color: #a33;
+        font-weight: 600;
+      }
+      #message {
+        min-height: 1.25rem;
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Blog review console</h1>
+    <p class="lede">Verified drafts can be published in one click after you confirm the publish token.</p>
+
+    <div class="panel">
+      <label for="token">Publish token</label>
+      <input id="token" type="password" autocomplete="off" placeholder="Paste BLOG_PUBLISH_TOKEN" />
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Status</th>
+          <th>Scores</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="draft-rows">
+        <tr>
+          <td colspan="4">Loading drafts…</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p id="message" aria-live="polite"></p>
+
+    <script>
+      const rows = document.getElementById("draft-rows");
+      const message = document.getElementById("message");
+      const tokenInput = document.getElementById("token");
+
+      function statusLabel(draft) {
+        if (draft.published) return { text: "Published", className: "status-ready" };
+        if (draft.humanization_verified) return { text: "Ready to publish", className: "status-ready" };
+        return { text: draft.review_status || "Needs revision", className: "status-blocked" };
+      }
+
+      function renderDrafts(drafts) {
+        if (!drafts.length) {
+          rows.innerHTML = '<tr><td colspan="4">No drafts found.</td></tr>';
+          return;
+        }
+        rows.innerHTML = drafts
+          .map((draft) => {
+            const status = statusLabel(draft);
+            const disabled = !draft.humanization_verified || draft.published;
+            return `<tr>
+              <td><strong>${draft.title}</strong><br /><small>${draft.slug}</small></td>
+              <td class="${status.className}">${status.text}</td>
+              <td>H ${draft.humanization_score ?? "—"} · O ${draft.originality_score ?? "—"}</td>
+              <td><button data-slug="${draft.slug}" ${disabled ? "disabled" : ""}>Publish</button></td>
+            </tr>`;
+          })
+          .join("");
+        rows.querySelectorAll("button[data-slug]").forEach((button) => {
+          button.addEventListener("click", () => publishDraft(button.dataset.slug, button));
+        });
+      }
+
+      async function loadDrafts() {
+        const response = await fetch("/api/drafts");
+        const payload = await response.json();
+        renderDrafts(payload.drafts || []);
+      }
+
+      async function publishDraft(slug, button) {
+        const token = tokenInput.value.trim();
+        if (!token) {
+          message.textContent = "Add the publish token before publishing.";
+          return;
+        }
+        button.disabled = true;
+        message.textContent = `Publishing ${slug}…`;
+        const response = await fetch("/api/publish", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ slug, token }),
+        });
+        const payload = await response.json();
+        if (!response.ok) {
+          message.textContent = payload.error || "Publish failed.";
+          button.disabled = false;
+          return;
+        }
+        message.textContent = payload.message || "Published.";
+        await loadDrafts();
+      }
+
+      loadDrafts().catch(() => {
+        rows.innerHTML = '<tr><td colspan="4">Could not load drafts.</td></tr>';
+      });
+    </script>
+  </body>
+</html>

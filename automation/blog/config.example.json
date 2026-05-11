@@ -1,0 +1,10 @@
+{
+  "notify_to": "md.faiz.ahmed62@gmail.com",
+  "notify_from": "blog@your-domain.com",
+  "smtp_host": "smtp.gmail.com",
+  "smtp_port": 587,
+  "smtp_user": "your-smtp-user@gmail.com",
+  "smtp_password": "app-password-or-secret",
+  "review_base_url": "http://127.0.0.1:8765",
+  "publish_token": "set-a-long-random-token"
+}

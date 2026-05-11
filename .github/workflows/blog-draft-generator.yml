@@ -32,10 +32,19 @@ jobs:
           pip install -r automation/blog/requirements.txt
 
       - name: Generate trend data and drafts
+        env:
+          BLOG_NOTIFY_TO: md.faiz.ahmed62@gmail.com
+          SMTP_HOST: ${{ secrets.BLOG_SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.BLOG_SMTP_PORT }}
+          SMTP_USER: ${{ secrets.BLOG_SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.BLOG_SMTP_PASSWORD }}
+          BLOG_NOTIFY_FROM: ${{ secrets.BLOG_NOTIFY_FROM }}
+          BLOG_REVIEW_BASE_URL: ${{ secrets.BLOG_REVIEW_BASE_URL }}
         run: |
           python automation/blog/trend_collector.py
           python automation/blog/keyword_planner.py
           python automation/blog/draft_generator.py
+          python automation/blog/humanization_gate.py --notify
           python automation/blog/publish_validator.py
 
       - name: Publish approved drafts
