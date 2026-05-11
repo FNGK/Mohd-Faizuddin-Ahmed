@@ -167,7 +167,7 @@ function buildMessage_(row, step) {
   const issue2 = row.Issue_2 || 'internal linking and structure';
   const quickWin = row.Quick_Win || 'tighten your top service page title and heading around customer intent';
   const offer = row.Primary_Offer || 'SEO audit';
-  const targetPage = row.Target_Page || 'https://fngk.github.io/Mohd-Faizuddin-Ahmed/resources/seo-audit-playbook.html';
+  const targetPage = row.Target_Page || 'https://seowithfaiz.com/resources/seo-audit-playbook.html';
 
   if (step === 1) {
     return {

@@ -39,7 +39,7 @@ Issue 3: No review schema
 Quick win: Fix primary city service page title
 Personal angle: Show 3 quick fixes for local calls
 Offer: Local SEO Sprint
-Proof page: https://fngk.github.io/Mohd-Faizuddin-Ahmed/resources/local-seo-checklist.html
+Proof page: https://seowithfaiz.com/resources/local-seo-checklist.html
 
 Rules:
 - 80-120 words each

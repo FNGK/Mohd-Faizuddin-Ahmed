@@ -1,6 +1,6 @@
 # MOHD FAIZUDDIN AHMED
 
-Hyderabad, Telangana, India | [LinkedIn](https://www.linkedin.com/in/mohd-faizuddin-ahmed-4984a0148) | [Portfolio](https://fngk.github.io/Mohd-Faizuddin-Ahmed/) | [md.faiz.ahmed62@gmail.com](mailto:md.faiz.ahmed62@gmail.com)
+Hyderabad, Telangana, India | [LinkedIn](https://www.linkedin.com/in/mohd-faizuddin-ahmed-4984a0148) | [Portfolio](https://seowithfaiz.com/) | [md.faiz.ahmed62@gmail.com](mailto:md.faiz.ahmed62@gmail.com)
 
 ## PROFILE
 
@@ -34,21 +34,21 @@ Delivered quantified impact including 40% engagement growth and 95+ Lighthouse p
 
 ### Hyderabad Globe FC - Digital Transformation
 
-Project Links: [Portfolio](https://fngk.github.io/Mohd-Faizuddin-Ahmed/#projects) | [Live Site](https://telangana-stride-hub.lovable.app/) | [Repository](https://github.com/FNGK/telangana-stride-hub)
+Project Links: [Portfolio](https://seowithfaiz.com/#projects) | [Live Site](https://telangana-stride-hub.lovable.app/) | [Repository](https://github.com/FNGK/telangana-stride-hub)
 
 - Rebuilt a legacy Wix website using React and Tailwind, achieving 95+ Lighthouse performance and accessibility benchmarks.
 - Implemented JSON-LD and local SEO architecture for league and coaching intent clusters, improving structured search readiness.
 
 ### Growth OS for 100Hires
 
-Project Links: [Portfolio](https://fngk.github.io/Mohd-Faizuddin-Ahmed/#projects) | [Live Site](https://fngk.github.io/100hires-growth-project/) | [Repository](https://github.com/FNGK/100hires-growth-project)
+Project Links: [Portfolio](https://seowithfaiz.com/#projects) | [Live Site](https://fngk.github.io/100hires-growth-project/) | [Repository](https://github.com/FNGK/100hires-growth-project)
 
 - Developed a full-funnel growth teardown and experiment roadmap for a hiring-process submission, converting strategy into execution.
 - Prioritized SEO, messaging, and lifecycle tests into sprint-ready actions to reduce strategic ambiguity and improve implementation speed.
 
 ### SEO Opportunity Audit - Unstop.com
 
-Project Links: [Portfolio](https://fngk.github.io/Mohd-Faizuddin-Ahmed/#projects) | [Live Site](https://fngk.github.io/seo-opportunity-audit/) | [Repository](https://github.com/FNGK/seo-opportunity-audit)
+Project Links: [Portfolio](https://seowithfaiz.com/#projects) | [Live Site](https://fngk.github.io/seo-opportunity-audit/) | [Repository](https://github.com/FNGK/seo-opportunity-audit)
 
 - Produced a 10-part SEO audit covering technical SEO, content gaps, internal linking, schema, and Core Web Vitals.
 - Converted diagnostics into a 30-day implementation plan to sequence high-impact fixes and accelerate execution.
