@@ -8,8 +8,8 @@ meta_description: 'Technical SEO prioritization gets fuzzy when every audit ship
   change  Actionable steps for technical SEO, local growth, and AI-era visibility.'
 feature_image: ../../assets/projects/unstop-seo-audit.png
 feature_image_alt: SEO strategy implementation visual
-canonical_url: https://fngk.github.io/Mohd-Faizuddin-Ahmed/blog/posts/technical-seo-prioritization-seo-strategy-what-teams-should-do-in-2026.html
-og_image: https://fngk.github.io/Mohd-Faizuddin-Ahmed/assets/projects/unstop-seo-audit.png
+canonical_url: https://seowithfaiz.com/blog/posts/technical-seo-prioritization-seo-strategy-what-teams-should-do-in-2026.html
+og_image: https://seowithfaiz.com/assets/projects/unstop-seo-audit.png
 intro_hook: 'Technical SEO prioritization gets fuzzy when every audit ships fifty
   red rows. The question that matters for revenue is simpler: **which fixes change
   how Google stores and serves your money pages this month?** If you cannot connect

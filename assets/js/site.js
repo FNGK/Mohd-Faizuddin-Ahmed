@@ -6,6 +6,7 @@
   const topbarInner = document.querySelector(".topbar-inner");
 
   initTheme();
+  initTopbarScroll();
   initMobileMenu();
   initYear();
   initDynamicCtas();
@@ -53,13 +54,25 @@
     root.setAttribute("data-theme", theme);
     const themeMeta = document.querySelector('meta[name="theme-color"]');
     if (themeMeta) {
-      themeMeta.setAttribute("content", theme === "dark" ? "#0b1220" : "#f4f6f8");
+      themeMeta.setAttribute("content", theme === "dark" ? "#08111f" : "#f2ebe0");
     }
   }
 
   function setThemeIcon(button, theme) {
     button.textContent = theme === "dark" ? "☀" : "☾";
     button.setAttribute("aria-label", theme === "dark" ? "Switch to light mode" : "Switch to dark mode");
+  }
+
+  function initTopbarScroll() {
+    const topbar = document.querySelector(".topbar");
+    if (!topbar) return;
+
+    const sync = function () {
+      topbar.classList.toggle("is-scrolled", window.scrollY > 12);
+    };
+
+    sync();
+    window.addEventListener("scroll", sync, { passive: true });
   }
 
   function initMobileMenu() {

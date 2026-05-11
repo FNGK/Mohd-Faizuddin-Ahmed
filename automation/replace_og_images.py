@@ -2,7 +2,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-OG = "https://fngk.github.io/Mohd-Faizuddin-Ahmed/assets/og/og-default.png"
+OG = "https://seowithfaiz.com/assets/og/og-default.png"
 
 
 def main() -> None:

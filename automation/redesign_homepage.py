@@ -1,214 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SEO With Faiz | SEO Services for USA, Canada, Australia, and Europe</title>
-  <meta name="description" content="SEO With Faiz helps service businesses and growth-stage companies increase qualified leads through technical SEO, local SEO, international SEO, and revenue-focused content strategy.">
-  <link rel="canonical" href="https://seowithfaiz.com/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="SEO With Faiz | Global SEO Services">
-  <meta property="og:description" content="Professional SEO services for businesses across the USA, Canada, Australia, and Europe.">
-  <meta property="og:url" content="https://seowithfaiz.com/">
-  <meta property="og:image" content="https://seowithfaiz.com/assets/og/og-default.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="SEO With Faiz — technical SEO partner for pipeline-focused organic growth">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="SEO With Faiz | Global SEO Services">
-  <meta name="twitter:description" content="Technical SEO, local SEO, and international growth strategies built for measurable pipeline impact.">
-  <meta name="twitter:image" content="https://seowithfaiz.com/assets/og/og-default.png">
-  <meta name="theme-color" content="#0d7f76">
-  <link rel="icon" href="https://seowithfaiz.com/assets/logos/seowithfaiz-icon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="./assets/css/site.css">
-  <link rel="stylesheet" href="./assets/css/components.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://seowithfaiz.com/#website",
-        "url": "https://seowithfaiz.com/",
-        "name": "SEO With Faiz",
-        "publisher": {
-          "@id": "https://seowithfaiz.com/#organization"
-        },
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://seowithfaiz.com/blog/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://seowithfaiz.com/#organization",
-        "name": "SEO With Faiz",
-        "url": "https://seowithfaiz.com/",
-        "logo": {
-          "@type": "ImageObject",
-          "@id": "https://seowithfaiz.com/#logo",
-          "url": "https://seowithfaiz.com/assets/logos/seo-with-faiz-logo-technical-precision-revenue-growth.png",
-          "contentUrl": "https://seowithfaiz.com/assets/logos/seo-with-faiz-logo-technical-precision-revenue-growth.png",
-          "width": 1024,
-          "height": 498,
-          "encodingFormat": "image/png",
-          "name": "SEO With Faiz logo — technical SEO and revenue growth",
-          "caption": "Brand lockup for SEO With Faiz: technical SEO, revenue-focused organic growth, AEO and GEO-ready discoverability.",
-          "description": "Transparent PNG logo with shield mark (code, bridge, growth chart) and wordmark for light UI. Dark-theme transparent variant: https://seowithfaiz.com/assets/logos/seo-with-faiz-logo-dark-mode-technical-precision-revenue-growth.png (580×228, blends on navy surfaces)."
-        },
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "sales",
-          "email": "md.faiz.ahmed62@gmail.com",
-          "areaServed": ["US", "CA", "AU", "EU", "IN"],
-          "availableLanguage": ["English"]
-        },
-        "sameAs": [
-          "https://www.linkedin.com/in/mohd-faizuddin-ahmed-4984a0148",
-          "https://github.com/FNGK"
-        ],
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "SEO Services",
-          "itemListElement": [
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Technical SEO"}},
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Local SEO"}},
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "International SEO"}},
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Content SEO"}}
-          ]
-        }
-      },
-      {
-        "@type": "ProfessionalService",
-        "@id": "https://seowithfaiz.com/#service",
-        "name": "SEO With Faiz",
-        "url": "https://seowithfaiz.com/",
-        "areaServed": ["US", "CA", "AU", "EU", "IN"],
-        "serviceType": ["Technical SEO", "Local SEO", "International SEO", "Content SEO"],
-        "provider": {
-          "@type": "Person",
-          "name": "Mohd Faizuddin Ahmed",
-          "alternateName": "Faiz",
-          "sameAs": [
-            "https://www.linkedin.com/in/mohd-faizuddin-ahmed-4984a0148",
-            "https://github.com/FNGK"
-          ],
-          "knowsAbout": [
-            "Technical SEO",
-            "Local SEO",
-            "International SEO",
-            "Answer Engine Optimization",
-            "Generative Engine Optimization"
-          ]
-        }
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://seowithfaiz.com/#webpage",
-        "url": "https://seowithfaiz.com/",
-        "name": "SEO With Faiz Homepage",
-        "speakable": {
-          "@type": "SpeakableSpecification",
-          "cssSelector": [".answer-box", ".hero-copy p"]
-        }
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://seowithfaiz.com/#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Which regions do you support?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "I support SEO campaigns for companies in the USA, Canada, Australia, and Europe, and selected global teams expanding across multiple markets."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you offer fixed packages for every business?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No. I provide starter audit options for fast diagnosis, then move to custom scopes based on business model, market, and growth targets."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do you measure SEO performance?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "I track qualified traffic, lead actions, pipeline contribution, and technical health improvements, not vanity ranking metrics alone."
-            }
-          }
-        ]
-      },
-      {
-        "@type": "HowTo",
-        "@id": "https://seowithfaiz.com/#execution-framework",
-        "name": "Commercial SEO execution framework",
-        "description": "Four-step model used to diagnose, prioritize, execute, and measure SEO initiatives.",
-        "step": [
-          {"@type": "HowToStep", "name": "Diagnose", "text": "Audit technical integrity, intent coverage, and conversion friction."},
-          {"@type": "HowToStep", "name": "Prioritize", "text": "Rank actions by expected business impact and implementation complexity."},
-          {"@type": "HowToStep", "name": "Execute", "text": "Ship technical, content, and internal-linking improvements in sprint cycles."},
-          {"@type": "HowToStep", "name": "Prove", "text": "Report qualified traffic, lead actions, and pipeline movement with assumptions."}
-        ]
-      },
-      {
-        "@type": "ItemList",
-        "@id": "https://seowithfaiz.com/#topical-map",
-        "name": "SEO topical authority map",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Technical SEO cluster"},
-          {"@type": "ListItem", "position": 2, "name": "Local SEO cluster"},
-          {"@type": "ListItem", "position": 3, "name": "International SEO cluster"},
-          {"@type": "ListItem", "position": 4, "name": "Content SEO cluster"},
-          {"@type": "ListItem", "position": 5, "name": "Authority and mentions cluster"},
-          {"@type": "ListItem", "position": 6, "name": "Conversion optimization cluster"}
-        ]
-      }
-    ]
-  }
-  </script>
-</head>
-<body class="page-home">
-  <a class="skip-link" href="#main">Skip to main content</a>
+#!/usr/bin/env python3
+"""Apply flagship homepage structure."""
 
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <a class="brand" href="./index.html" aria-label="SEO With Faiz home">
-        <img class="brand-logo brand-logo--light" src="./assets/logos/seo-with-faiz-logo-technical-precision-revenue-growth.png" alt="SEO With Faiz logo — technical SEO and revenue growth services; shield mark with code, bridge, and growth chart (transparent PNG for light mode)." width="1024" height="498" decoding="async" fetchpriority="high">
-        <img class="brand-logo brand-logo--dark" src="./assets/logos/seo-with-faiz-logo-dark-mode-technical-precision-revenue-growth.png" alt="" width="580" height="228" decoding="async" aria-hidden="true">
-      </a>
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="./services/index.html">Services</a>
-        <a href="./case-studies/index.html">Case Studies</a>
-        <a href="./free-tools/gsc-error-priority-calculator.html">Free Tool</a>
-        <a href="./about/index.html">About</a>
-        <a href="./blog/index.html">Blog</a>
-        <a href="./contact/index.html">Contact</a>
-      </nav>
-      <a class="nav-cta" data-dynamic-cta href="./contact/index.html">Book strategy call</a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-controls="mobileNav" aria-expanded="false">☰</button>
-    </div>
-    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
-      <a href="./services/index.html">Services</a>
-      <a href="./case-studies/index.html">Case Studies</a>
-      <a href="./free-tools/gsc-error-priority-calculator.html">Free Tool</a>
-      <a href="./about/index.html">About</a>
-      <a href="./blog/index.html">Blog</a>
-      <a href="./contact/index.html">Contact</a>
-      <a data-dynamic-cta href="./contact/index.html">Book strategy call</a>
-    </nav>
-  </header>
+from __future__ import annotations
 
+import re
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+INDEX = ROOT / "index.html"
+
+MAIN = """
   <main id="main">
     <section class="section hero hero--flagship">
       <div class="container hero-grid">
-        <div class="hero-copy">
+        <motion class="hero-copy">
           <span class="kicker">Pipeline-first SEO studio</span>
           <h1>Organic growth engineered for revenue, not ranking vanity.</h1>
           <p class="lede">SEO With Faiz is the commercial SEO practice of Mohd Faizuddin Ahmed — built for B2B and service companies in the USA, Canada, Australia, and Europe that need qualified pipeline across classic search and AI answer surfaces.</p>
@@ -284,13 +89,13 @@
             <p>Performance-led rebuild with local discoverability and implementation notes.</p>
           </a>
           <a class="proof-card" href="./free-tools/gsc-error-priority-calculator.html">
-            <div class="proof-card__media"><img src="./assets/projects/lighthouse-global-scores-proof.png" alt="Lighthouse performance proof screenshot" width="640" height="360" loading="lazy" decoding="async"></div>
+            <motion class="proof-card__media"><img src="./assets/projects/lighthouse-global-scores-proof.png" alt="Lighthouse performance proof screenshot" width="640" height="360" loading="lazy" decoding="async"></div>
             <span class="proof-card__eyebrow">Free tool</span>
             <h3>GSC error priority calculator</h3>
             <p>Impact-weighted technical queue scoring for dev and SEO alignment.</p>
           </a>
           <a class="proof-card" href="./resources/seo-audit-playbook.html">
-            <div class="proof-card__media"><img src="./assets/projects/100hires.png" alt="SEO audit playbook resource preview" width="640" height="360" loading="lazy" decoding="async"></div>
+            <motion class="proof-card__media"><img src="./assets/projects/100hires.png" alt="SEO audit playbook resource preview" width="640" height="360" loading="lazy" decoding="async"></div>
             <span class="proof-card__eyebrow">Resource</span>
             <h3>SEO audit playbook</h3>
             <p>Operator checklist for technical integrity, intent coverage, and execution sequencing.</p>
@@ -476,47 +281,15 @@
       </div>
     </section>
   </main>
+""".replace("<motion", "<div").replace("</motion>", "</div>")
 
-    <footer class="site-footer">
-    <div class="container site-footer__grid">
-      <div class="site-footer__brand">
-        <p class="site-footer__title">SEO With Faiz</p>
-        <p>Technical SEO, local growth, and answer-engine visibility for companies that need pipeline, not vanity traffic.</p>
-        <p><a href="./contact/index.html">Book a strategy call</a> · <a href="mailto:md.faiz.ahmed62@gmail.com">md.faiz.ahmed62@gmail.com</a></p>
-      </div>
-      <div>
-        <p class="site-footer__title">Services</p>
-        <nav class="site-footer__links" aria-label="Footer services">
-          <a href="./services/technical-seo.html">Technical SEO</a>
-          <a href="./services/local-seo.html">Local SEO</a>
-          <a href="./services/international-seo.html">International SEO</a>
-          <a href="./services/content-seo.html">Content SEO</a>
-        </nav>
-      </div>
-      <div>
-        <p class="site-footer__title">Proof</p>
-        <nav class="site-footer__links" aria-label="Footer proof">
-          <a href="./case-studies/index.html">Case studies</a>
-          <a href="./mentions.html">Mentions</a>
-          <a href="./resources/seo-audit-playbook.html">SEO playbook</a>
-          <a href="./free-tools/gsc-error-priority-calculator.html">GSC calculator</a>
-        </nav>
-      </div>
-      <div>
-        <p class="site-footer__title">Company</p>
-        <nav class="site-footer__links" aria-label="Footer company">
-          <a href="./about/index.html">About</a>
-          <a href="./blog/index.html">Blog</a>
-          <a href="./contact/index.html">Contact</a>
-        </nav>
-      </div>
-    </div>
-    <div class="container site-footer__bottom">
-      <span>© <span data-current-year>2026</span> SEO With Faiz · seowithfaiz.com</span>
-      <span>USA · Canada · Australia · Europe · India</span>
-    </div>
-  </footer>
 
-  <script src="./assets/js/site.js" defer></script>
-</body>
-</html>
+def main() -> None:
+    html = INDEX.read_text(encoding="utf-8")
+    updated = re.sub(r"<main id=\"main\">[\s\S]*?</main>", MAIN.strip(), html, count=1)
+    INDEX.write_text(updated, encoding="utf-8")
+    print("Homepage main content replaced.")
+
+
+if __name__ == "__main__":
+    main()

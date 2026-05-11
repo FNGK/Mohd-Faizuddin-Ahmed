@@ -8,8 +8,8 @@ meta_description: 'If you run a location-based business, you have probably seen 
   steps for technical SEO, local growth, and AI-era visibility.'
 feature_image: ../../assets/projects/unstop-seo-audit.png
 feature_image_alt: SEO strategy implementation visual
-canonical_url: https://fngk.github.io/Mohd-Faizuddin-Ahmed/blog/posts/local-seo-conversion-strategy-seo-strategy-what-teams-should-do-in-2026.html
-og_image: https://fngk.github.io/Mohd-Faizuddin-Ahmed/assets/projects/unstop-seo-audit.png
+canonical_url: https://seowithfaiz.com/blog/posts/local-seo-conversion-strategy-seo-strategy-what-teams-should-do-in-2026.html
+og_image: https://seowithfaiz.com/assets/projects/unstop-seo-audit.png
 intro_hook: 'If you run a location-based business, you have probably seen the pattern:
   impressions climb on Google Maps, calls trickle in, and the CRM still shows empty
   slots on Tuesday afternoon. That gap is rarely a "more content" problem. It is usually

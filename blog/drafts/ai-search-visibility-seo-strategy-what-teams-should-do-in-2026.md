@@ -8,8 +8,8 @@ meta_description: 'Teams hear "AI search" and spin up a new hub with vague claim
   intent Actionable steps for technical SEO, local growth, and AI-era visibility.'
 feature_image: ../../assets/projects/unstop-seo-audit.png
 feature_image_alt: SEO strategy implementation visual
-canonical_url: https://fngk.github.io/Mohd-Faizuddin-Ahmed/blog/posts/ai-search-visibility-seo-strategy-what-teams-should-do-in-2026.html
-og_image: https://fngk.github.io/Mohd-Faizuddin-Ahmed/assets/projects/unstop-seo-audit.png
+canonical_url: https://seowithfaiz.com/blog/posts/ai-search-visibility-seo-strategy-what-teams-should-do-in-2026.html
+og_image: https://seowithfaiz.com/assets/projects/unstop-seo-audit.png
 intro_hook: 'Teams hear "AI search" and spin up a new hub with vague claims. Searchers
   and answer engines reward something quieter: **pages that resolve one intent completely**,
   with language models can quote without guessing. Your **ai search visibility** plan

@@ -8,8 +8,8 @@ meta_description: When traffic drops after a Google core update, the first insti
   Actionable steps for technical SEO, local growth, and AI-era visibility.
 feature_image: ../../assets/projects/unstop-seo-audit.png
 feature_image_alt: SEO strategy implementation visual
-canonical_url: https://fngk.github.io/Mohd-Faizuddin-Ahmed/blog/posts/google-core-update-recovery-seo-strategy-what-teams-should-do-in-2026.html
-og_image: https://fngk.github.io/Mohd-Faizuddin-Ahmed/assets/projects/unstop-seo-audit.png
+canonical_url: https://seowithfaiz.com/blog/posts/google-core-update-recovery-seo-strategy-what-teams-should-do-in-2026.html
+og_image: https://seowithfaiz.com/assets/projects/unstop-seo-audit.png
 intro_hook: When traffic drops after a Google core update, the first instinct is to
   rewrite everything. That often swaps a clear problem for a muddy one. **Google core
   update recovery** starts with separating signal loss on templates you care about

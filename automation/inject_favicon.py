@@ -4,7 +4,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 MARKER = '<link rel="icon"'
 LINK = (
-    '  <link rel="icon" href="https://fngk.github.io/Mohd-Faizuddin-Ahmed/assets/logos/seowithfaiz-icon.svg" '
+    '  <link rel="icon" href="https://seowithfaiz.com/assets/logos/seowithfaiz-icon.svg" '
     'type="image/svg+xml">\n'
 )
 
