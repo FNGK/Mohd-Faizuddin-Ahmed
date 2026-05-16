@@ -3,14 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="https://seowithfaiz.com/assets/logos/seowithfaiz-icon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/logos/seowithfaiz-icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"></noscript>
 
   <title>GSC Error Priority Calculator | SEO With Faiz</title>
-  <meta name="description" content="Free Google Search Console error priority calculator to rank technical SEO issues by impact, page value, and implementation effort.">
+  <meta name="description" content="Upload a Google Search Console CSV export to surface your top 10 indexing issues by URL count, then score page value and fix effort for sprint prioritization.">
   <link rel="canonical" href="https://seowithfaiz.com/free-tools/gsc-error-priority-calculator.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="GSC Error Priority Calculator | SEO With Faiz">
-  <meta property="og:description" content="Instantly score technical issues and identify what to fix first.">
+  <meta property="og:description" content="Upload GSC CSV, rank your top 10 indexing issues, and score fixes by business impact and effort.">
   <meta property="og:url" content="https://seowithfaiz.com/free-tools/gsc-error-priority-calculator.html">
   <meta property="og:image" content="https://seowithfaiz.com/assets/og/og-default.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -19,13 +23,269 @@
   <meta name="twitter:image" content="https://seowithfaiz.com/assets/og/og-default.png">
   <link rel="stylesheet" href="../assets/css/site.css">
   <link rel="stylesheet" href="../assets/css/components.css">
+  <style>
+    .gsc-upload {
+      border: 2px dashed var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+      background: var(--surface-muted);
+      display: grid;
+      gap: 0.75rem;
+    }
+    .gsc-file-picker {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.85rem;
+    }
+    .gsc-file-picker__input {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    .gsc-file-picker__btn {
+      gap: 0.5rem;
+      cursor: pointer;
+      margin: 0;
+    }
+    .gsc-file-picker__btn svg {
+      width: 1.15rem;
+      height: 1.15rem;
+      flex-shrink: 0;
+    }
+    .gsc-file-picker__btn:hover {
+      transform: translateY(-1px);
+    }
+    .gsc-file-picker__name {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .gsc-file-picker__name--chosen {
+      color: var(--text);
+      font-weight: 600;
+    }
+    .gsc-meta { font-size: 0.92rem; color: var(--text-muted); margin: 0; }
+    .gsc-meta--ok { color: var(--primary); }
+    .gsc-meta--err { color: #b42318; }
+    .gsc-table-wrap { overflow-x: auto; margin-top: 1rem; }
+    .gsc-table input[type="number"] {
+      width: 4.25rem;
+      padding: 0.35rem 0.45rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--surface);
+      color: var(--text);
+    }
+    .gsc-table details { margin-top: 0.35rem; }
+    .gsc-table details summary {
+      cursor: pointer;
+      font-size: 0.88rem;
+      color: var(--primary);
+    }
+    .gsc-url-list {
+      margin: 0.5rem 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      max-height: 12rem;
+      overflow-y: auto;
+    }
+    .priority-pill {
+      display: inline-block;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      border: 1px solid var(--border);
+      white-space: nowrap;
+    }
+    .priority-pill--critical { background: #fef3f2; color: #b42318; border-color: #fecdca; }
+    .priority-pill--high { background: #fffaeb; color: #b54708; border-color: #fedf89; }
+    .priority-pill--moderate { background: #eff8ff; color: #175cd3; border-color: #b2ddff; }
+    .priority-pill--low { background: var(--surface-muted); color: var(--text-muted); }
+    .gsc-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1rem; }
+    .manual-calc summary { cursor: pointer; font-weight: 600; }
+    .gsc-guide-grid {
+      display: grid;
+      gap: 1.25rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+    .gsc-guide-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem 1rem 1.1rem;
+      display: grid;
+      gap: 0.65rem;
+    }
+    .gsc-guide-card h3 {
+      font-size: 1.05rem;
+      margin: 0;
+    }
+    .gsc-guide-card p {
+      margin: 0;
+      font-size: 0.92rem;
+      color: var(--text-muted);
+    }
+    .gsc-figure {
+      margin: 0;
+      border-radius: 10px;
+      background: var(--surface-muted);
+      border: 1px solid var(--border);
+      padding: 0.65rem;
+    }
+    .gsc-figure svg { width: 100%; height: auto; display: block; }
+    .gsc-figure figcaption {
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+    .gsc-formula-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: center;
+      margin-top: 0.35rem;
+    }
+    .gsc-formula-chip {
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.25rem 0.55rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+    }
+    .gsc-formula-chip--plus { color: var(--primary); }
+    .gsc-formula-chip--minus { color: #b42318; }
+    .gsc-steps {
+      counter-reset: gscstep;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 0.75rem;
+    }
+    .gsc-steps li {
+      counter-increment: gscstep;
+      padding-left: 2.25rem;
+      position: relative;
+      color: var(--text-muted);
+      font-size: 0.92rem;
+    }
+    .gsc-steps li::before {
+      content: counter(gscstep);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1.55rem;
+      height: 1.55rem;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.78rem;
+      font-weight: 700;
+      display: grid;
+      place-items: center;
+    }
+    .gsc-steps strong { color: var(--text); }
+    .gsc-report-guide {
+      margin: 1.25rem 0 0;
+      padding: 1.15rem 1.2rem;
+      border-radius: 12px;
+      border: 1px solid color-mix(in srgb, var(--primary) 38%, var(--border));
+      background: color-mix(in srgb, var(--primary) 7%, var(--surface));
+    }
+    .gsc-report-guide h3 {
+      margin: 0 0 0.35rem;
+      font-size: 1.1rem;
+    }
+    .gsc-report-guide > p.gsc-meta { margin-top: 0; }
+    .gsc-report-cols {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      margin-top: 0.85rem;
+    }
+    .gsc-report-col {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.85rem 0.95rem;
+    }
+    .gsc-report-col--yes { border-left: 4px solid var(--primary); }
+    .gsc-report-col--no { border-left: 4px solid #b42318; }
+    .gsc-report-col__label {
+      margin: 0 0 0.5rem;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .gsc-report-col--yes .gsc-report-col__label { color: var(--primary); }
+    .gsc-report-col--no .gsc-report-col__label { color: #b42318; }
+    .gsc-report-col ul {
+      margin: 0.5rem 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    .gsc-report-col li + li { margin-top: 0.35rem; }
+    .gsc-report-path {
+      display: block;
+      margin: 0.35rem 0 0.5rem;
+      padding: 0.55rem 0.65rem;
+      border-radius: 8px;
+      background: var(--surface-muted);
+      border: 1px solid var(--border);
+      font-size: 0.88rem;
+      color: var(--text);
+      line-height: 1.45;
+    }
+    .gsc-report-path strong { color: var(--primary); }
+    .gsc-report-headers {
+      margin: 0.35rem 0 0;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .gsc-report-headers code {
+      font-size: 0.82rem;
+      padding: 0.1rem 0.35rem;
+      border-radius: 4px;
+      background: var(--surface-muted);
+      border: 1px solid var(--border);
+    }
+    .gsc-report-guide--compact {
+      margin: 0 0 1rem;
+      padding: 0.95rem 1rem;
+    }
+    .gsc-report-guide--compact h3 { font-size: 1rem; }
+  </style>
 </head>
 <body class="page-inner">
   <a class="skip-link" href="#main">Skip to main content</a>
   <header class="topbar">
     <div class="container topbar-inner">
-      <a class="brand" href="../index.html" aria-label="SEO With Faiz home"><img class="brand-logo brand-logo--light" src="../assets/logos/seo-with-faiz-logo-technical-precision-revenue-growth.png" alt="SEO With Faiz logo — technical SEO and revenue growth services; shield mark with code, bridge, and growth chart (transparent PNG for light mode)." width="1024" height="498" decoding="async">
-        <img class="brand-logo brand-logo--dark" src="../assets/logos/seo-with-faiz-logo-dark-mode-technical-precision-revenue-growth.png" alt="" width="580" height="228" decoding="async" aria-hidden="true"></a>
+            <a class="brand" href="../index.html" aria-label="SEO With Faiz home">
+        <picture>
+          <source srcset="../assets/logos/seo-with-faiz-logo-header.webp" type="image/webp">
+          <img class="brand-logo brand-logo--light" src="../assets/logos/seo-with-faiz-logo-header.png" alt="SEO With Faiz logo — technical SEO and revenue growth services; shield mark with code, bridge, and growth chart (transparent PNG for light mode)." width="260" height="127" decoding="async">
+        </picture>
+        <picture>
+          <source srcset="../assets/logos/seo-with-faiz-logo-dark-header.webp" type="image/webp">
+          <img class="brand-logo brand-logo--dark" src="../assets/logos/seo-with-faiz-logo-dark-header.png" alt="" width="260" height="102" decoding="async" aria-hidden="true">
+        </picture>
+      </a>
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="../services/index.html">Services</a>
         <a href="../case-studies/index.html">Case Studies</a>
@@ -51,15 +311,18 @@
         <div class="hero-copy">
           <span class="kicker">Free tool</span>
           <h1>GSC Error Priority Calculator</h1>
-          <p>Use this calculator to decide which technical SEO errors to fix first based on business impact and effort. It is designed for teams that need practical sprint prioritization.</p>
+          <p>Upload the <strong>Indexing → Pages</strong> CSV from Search Console (not the Performance/queries report). The tool groups issues, counts URLs, surfaces your <strong>top 10</strong>, and lets you score page value and fix effort.</p>
+          <p><a href="#which-report">Which report to upload</a> · <a href="#gsc-tool">Open calculator</a></p>
         </div>
         <aside class="hero-panel hero-panel--signal">
           <figure class="signal-board">
             <div class="signal-board__top">
-              <span class="signal-board__title">Organic sessions</span>
-              <span class="signal-board__pill">Illustrative</span>
+              <span class="signal-board__title">Priority score</span>
+              <span class="signal-board__pill">Model</span>
             </div>
-            <svg viewBox="0 0 320 118" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <svg viewBox="0 0 320 118" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="heroChartTitle heroChartDesc">
+              <title id="heroChartTitle">Priority rises when impact and value outweigh effort</title>
+              <desc id="heroChartDesc">Stylized bar chart showing higher priority scores for issues with strong business impact.</desc>
               <defs>
                 <linearGradient id="sigTool" x1="0" x2="0" y1="0" y2="1">
                   <stop offset="0%" stop-color="var(--primary)" stop-opacity="0.38" />
@@ -71,106 +334,245 @@
                 <line x1="0" y1="56" x2="320" y2="56" />
                 <line x1="0" y1="84" x2="320" y2="84" />
               </g>
-              <path
-                d="M0 96 L42 90 L84 74 L126 80 L168 62 L210 54 L252 44 L294 36 L320 26 L320 118 L0 118 Z"
-                fill="url(#sigTool)"
-              />
-              <path
-                d="M0 96 L42 90 L84 74 L126 80 L168 62 L210 54 L252 44 L294 36 L320 26"
-                fill="none"
-                stroke="var(--primary)"
-                stroke-width="2.25"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <circle cx="320" cy="26" r="4" fill="var(--surface)" stroke="var(--primary)" stroke-width="2" />
+              <rect x="24" y="52" width="48" height="46" rx="6" fill="var(--surface-muted)" stroke="var(--border)" />
+              <rect x="96" y="38" width="48" height="60" rx="6" fill="url(#sigTool)" stroke="var(--primary)" stroke-width="1.5" />
+              <rect x="168" y="24" width="48" height="74" rx="6" fill="url(#sigTool)" stroke="var(--primary)" stroke-width="1.5" />
+              <rect x="240" y="44" width="48" height="54" rx="6" fill="var(--surface-muted)" stroke="var(--border)" />
+              <text x="48" y="112" text-anchor="middle" font-size="9" fill="var(--text-muted)">Low</text>
+              <text x="120" y="112" text-anchor="middle" font-size="9" fill="var(--text-muted)">Mod</text>
+              <text x="192" y="112" text-anchor="middle" font-size="9" fill="var(--primary)">High</text>
+              <text x="264" y="112" text-anchor="middle" font-size="9" fill="var(--text-muted)">Med</text>
             </svg>
-            <figcaption>
-              Stylized dashboard curve for narrative context — not live client metrics. Reporting ties to your analytics and CRM definitions.
-            </figcaption>
+            <figcaption>Illustrative ranking — your CSV drives real counts and scores.</figcaption>
           </figure>
 
           <h2 style="font-size:1.3rem;">Scoring model</h2>
-          <p><strong>Priority Score =</strong> (Impact × 0.45) + (Page Value × 0.35) + (Issue Volume × 0.20) − (Effort × 0.30)</p>
-          <p>Higher scores indicate higher priority for immediate resolution.</p>
+          <p><strong>Priority =</strong> (Impact × 0.45) + (Page value × 0.35) + (Volume × 0.20) − (Effort × 0.30)</p>
+          <div class="gsc-formula-bar" aria-hidden="true">
+            <span class="gsc-formula-chip gsc-formula-chip--plus">Impact 45%</span>
+            <span class="gsc-formula-chip gsc-formula-chip--plus">Page 35%</span>
+            <span class="gsc-formula-chip gsc-formula-chip--plus">Volume 20%</span>
+            <span class="gsc-formula-chip gsc-formula-chip--minus">Effort −30%</span>
+          </div>
         </aside>
       </div>
     </section>
 
-    <section class="section section-sm section-band" aria-label="Prioritization lens">
+    <section class="section section-sm section-band" id="how-it-works" aria-labelledby="guide-heading">
       <div class="container">
         <div class="section-band-head">
-          <span class="kicker">Sprint economics</span>
-          <h2 style="font-size: 1.35rem; margin: 0.35rem 0 0;">Rank fixes by revenue touchpoints — not spreadsheet anxiety.</h2>
+          <span class="kicker">How to use</span>
+          <h2 id="guide-heading" style="font-size: 1.35rem; margin: 0.35rem 0 0;">From GSC export to sprint backlog in four steps</h2>
+          <p class="gsc-meta" style="margin-top:0.5rem;">Everything runs in your browser. No API keys, no data sent to a server.</p>
         </div>
-        <div class="visual-strip">
-          <article class="visual-pillar">
-            <div class="visual-pillar__icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
+
+        <div class="gsc-report-guide" id="which-report">
+          <h3>Which Search Console report to upload</h3>
+          <p class="gsc-meta">Use the <strong>Page indexing / Pages</strong> export only. You do <strong>not</strong> add reasons manually — Google includes them in the <strong>Status</strong> column (or <strong>Reason</strong> on summary exports).</p>
+          <div class="gsc-report-cols">
+            <div class="gsc-report-col gsc-report-col--yes">
+              <p class="gsc-report-col__label">Upload this</p>
+              <p><strong>Option A — one file (recommended)</strong></p>
+              <span class="gsc-report-path"><strong>Indexing</strong> → <strong>Pages</strong> → <strong>Not indexed</strong> → open the URL table → <strong>Export</strong></span>
+              <p class="gsc-report-headers">Expected headers: <code>URL</code>, <code>Last crawled</code>, <code>Status</code> — the issue name is inside <code>Status</code>.</p>
+              <p style="margin:0.65rem 0 0;font-size:0.9rem;color:var(--text-muted);"><strong>Option B — one issue at a time</strong></p>
+              <span class="gsc-report-path"><strong>Indexing</strong> → <strong>Pages</strong> → <strong>Why pages aren’t indexed</strong> → click a reason → <strong>Export</strong></span>
+              <p class="gsc-report-headers">Combine multiple exports in Excel if you want every reason in one upload.</p>
+              <p style="margin:0.65rem 0 0;font-size:0.9rem;color:var(--text-muted);"><strong>Option C — summary table</strong></p>
+              <span class="gsc-report-path">Issue list with <strong>Reason</strong> + <strong>Pages</strong> columns (no URL column required)</span>
             </div>
-            <h3>Impact weighting</h3>
-            <p>Business and URL value inform what earns developer time first.</p>
+            <div class="gsc-report-col gsc-report-col--no">
+              <p class="gsc-report-col__label">Do not upload</p>
+              <ul>
+                <li><strong>Performance</strong> → Search results (queries, clicks, impressions)</li>
+                <li><strong>Experience</strong>, Core Web Vitals, or HTTPS reports</li>
+                <li><strong>Sitemaps</strong> or <strong>Links</strong> exports</li>
+                <li><strong>URL Inspection</strong> (single-URL check only)</li>
+                <li>Screaming Frog / custom CSVs <strong>unless</strong> you include <code>url</code> + <code>status</code> or <code>reason</code> columns yourself</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <ol class="gsc-steps" style="margin:1.25rem 0 1.5rem;">
+          <li><strong>Export the Pages report</strong> — follow Option A or B above from <strong>Indexing → Pages</strong>.</li>
+          <li><strong>Upload the CSV</strong> — the tool groups by <code>Status</code> / <code>Reason</code> and counts URLs.</li>
+          <li><strong>Adjust scores</strong> — set page value and effort per issue; impact is suggested from the issue name (editable).</li>
+          <li><strong>Fix top 10 first</strong> — highest priority score wins your next dev sprint.</li>
+        </ol>
+
+        <div class="gsc-guide-grid">
+          <article class="gsc-guide-card">
+            <h3>1. Export the Pages report</h3>
+            <figure class="gsc-figure">
+              <svg viewBox="0 0 280 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Search Console menu path Indexing Pages Not indexed Export">
+                <text x="140" y="14" text-anchor="middle" font-size="8" fill="var(--primary)" font-weight="bold">Indexing → Pages → Not indexed → Export</text>
+                <rect x="8" y="22" width="72" height="40" rx="6" fill="var(--surface)" stroke="var(--border)" />
+                <text x="44" y="40" text-anchor="middle" font-size="9" fill="var(--text)">Indexing</text>
+                <text x="44" y="54" text-anchor="middle" font-size="8" fill="var(--text-muted)">sidebar</text>
+                <path d="M84 42 H98" stroke="var(--primary)" stroke-width="1.5" marker-end="url(#arrowGsc)" />
+                <rect x="100" y="22" width="72" height="40" rx="6" fill="var(--surface)" stroke="var(--primary)" />
+                <text x="136" y="40" text-anchor="middle" font-size="9" fill="var(--text)">Pages</text>
+                <text x="136" y="54" text-anchor="middle" font-size="8" fill="var(--primary)">report</text>
+                <path d="M176 42 H190" stroke="var(--primary)" stroke-width="1.5" marker-end="url(#arrowGsc)" />
+                <rect x="192" y="22" width="80" height="40" rx="6" fill="var(--surface-muted)" stroke="var(--border)" />
+                <text x="232" y="40" text-anchor="middle" font-size="8" fill="var(--text)">Not indexed</text>
+                <text x="232" y="54" text-anchor="middle" font-size="8" fill="var(--text-muted)">tab</text>
+                <path d="M140 68 v10" stroke="var(--border)" stroke-width="1.5" />
+                <rect x="90" y="82" width="100" height="32" rx="8" fill="var(--primary)" opacity="0.18" stroke="var(--primary)" />
+                <text x="140" y="102" text-anchor="middle" font-size="10" fill="var(--primary)">Export CSV</text>
+                <rect x="20" y="118" width="240" height="18" rx="4" fill="var(--surface)" stroke="var(--border)" stroke-dasharray="3 2" />
+                <text x="140" y="130" text-anchor="middle" font-size="7" fill="var(--text-muted)">Columns: URL · Last crawled · Status (reason)</text>
+                <defs>
+                  <marker id="arrowGsc" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                    <path d="M0,0 L6,3 L0,6 Z" fill="var(--primary)" />
+                  </marker>
+                </defs>
+              </svg>
+              <figcaption>Not the Performance (queries) report. Status already contains the reason — no manual edits.</figcaption>
+            </figure>
+            <p>Use the same Search Console property you are fixing. Mixing www/non-www skews counts.</p>
           </article>
-          <article class="visual-pillar">
-            <div class="visual-pillar__icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+
+          <article class="gsc-guide-card">
+            <h3>2. Grouping &amp; URL count</h3>
+            <figure class="gsc-figure">
+              <svg viewBox="0 0 280 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CSV rows grouped into issues with URL counts">
+                <rect x="12" y="8" width="256" height="28" rx="4" fill="var(--surface)" stroke="var(--border)" />
+                <text x="20" y="26" font-size="8" fill="var(--text-muted)">url, reason, …</text>
+                <path d="M140 40 v12" stroke="var(--border)" stroke-width="1.5" />
+                <rect x="20" y="58" width="110" height="48" rx="6" fill="var(--surface-muted)" stroke="var(--primary)" />
+                <text x="75" y="78" text-anchor="middle" font-size="9" fill="var(--text)">Duplicate</text>
+                <text x="75" y="94" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--primary)">847 URLs</text>
+                <rect x="150" y="58" width="110" height="48" rx="6" fill="var(--surface-muted)" stroke="var(--border)" />
+                <text x="205" y="78" text-anchor="middle" font-size="9" fill="var(--text)">Crawled NI</text>
+                <text x="205" y="94" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--text-muted)">312 URLs</text>
               </svg>
-            </div>
-            <h3>Effort realism</h3>
-            <p>Subtracts fantasy priorities that stall engineering.</p>
+              <figcaption>Per-URL files are aggregated by reason/status. Summary CSVs use the Pages column directly.</figcaption>
+            </figure>
+            <p>Volume (1–10) scales from your file’s largest issue count so breadth affects rank fairly.</p>
           </article>
-          <article class="visual-pillar">
-            <div class="visual-pillar__icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-6h6v6m-7 4h8a2 2 0 002-2V7l-4-4H7a2 2 0 00-2 2v12a2 2 0 002 2z" />
+
+          <article class="gsc-guide-card">
+            <h3>3. Your judgment inputs</h3>
+            <figure class="gsc-figure">
+              <svg viewBox="0 0 280 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sliders for page value and effort per issue">
+                <text x="20" y="22" font-size="9" fill="var(--text)">Page value</text>
+                <rect x="20" y="28" width="200" height="8" rx="4" fill="var(--border)" />
+                <rect x="20" y="28" width="140" height="8" rx="4" fill="var(--primary)" />
+                <circle cx="160" cy="32" r="7" fill="var(--surface)" stroke="var(--primary)" stroke-width="2" />
+                <text x="20" y="58" font-size="9" fill="var(--text)">Fix effort</text>
+                <rect x="20" y="64" width="200" height="8" rx="4" fill="var(--border)" />
+                <rect x="20" y="64" width="70" height="8" rx="4" fill="#b54708" opacity="0.7" />
+                <circle cx="90" cy="68" r="7" fill="var(--surface)" stroke="#b54708" stroke-width="2" />
+                <text x="20" y="98" font-size="8" fill="var(--text-muted)">Money pages → higher page value. Dev-heavy fixes → higher effort.</text>
               </svg>
-            </div>
-            <h3>Stakeholder narrative</h3>
-            <p>Scores export cleanly into roadmap conversations.</p>
+              <figcaption>Impact defaults from issue keywords (404, canonical, noindex…). Override when you know better.</figcaption>
+            </figure>
+            <p>A 10k-URL junk section can score low on page value even if the count is huge.</p>
+          </article>
+
+          <article class="gsc-guide-card">
+            <h3>4. Priority bands</h3>
+            <figure class="gsc-figure">
+              <svg viewBox="0 0 280 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Priority score bands from critical to low">
+                <rect x="12" y="20" width="256" height="18" rx="4" fill="#fef3f2" stroke="#fecdca" />
+                <text x="20" y="33" font-size="9" fill="#b42318">Critical ≥ 6.5</text>
+                <rect x="12" y="44" width="200" height="18" rx="4" fill="#fffaeb" stroke="#fedf89" />
+                <text x="20" y="57" font-size="9" fill="#b54708">High ≥ 4.5</text>
+                <rect x="12" y="68" width="150" height="18" rx="4" fill="#eff8ff" stroke="#b2ddff" />
+                <text x="20" y="81" font-size="9" fill="#175cd3">Moderate ≥ 3</text>
+                <rect x="12" y="92" width="90" height="18" rx="4" fill="var(--surface-muted)" stroke="var(--border)" />
+                <text x="20" y="105" font-size="9" fill="var(--text-muted)">Low</text>
+              </svg>
+              <figcaption>Ship Critical + High first on revenue URLs. Park Low until capacity opens.</figcaption>
+            </figure>
+            <p>Re-sort after edits — click Recalculate or change any number in the table.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container grid-2">
+    <section class="section" id="gsc-tool">
+      <div class="container">
         <article class="card">
-          <h2 style="font-size:1.35rem;">Enter issue data</h2>
-          <form class="contact-form" id="gscCalcForm">
-            <label for="impact">Business impact (1-10)</label>
-            <input id="impact" name="impact" type="number" min="1" max="10" value="7" required>
-
-            <label for="pageValue">Page value (1-10)</label>
-            <input id="pageValue" name="pageValue" type="number" min="1" max="10" value="8" required>
-
-            <label for="issueVolume">Issue volume (1-10)</label>
-            <input id="issueVolume" name="issueVolume" type="number" min="1" max="10" value="6" required>
-
-            <label for="effort">Fix effort (1-10)</label>
-            <input id="effort" name="effort" type="number" min="1" max="10" value="4" required>
-
-            <button class="btn btn-primary" type="submit">Calculate priority score</button>
-          </form>
-        </article>
-        <article class="card">
-          <h2 style="font-size:1.35rem;">Result</h2>
-          <p id="priorityResult">Submit values to calculate your priority score.</p>
-          <div class="answer-box">
-            <p><strong>How to use the result:</strong> focus first on issues with higher score and lower implementation friction on your revenue-critical pages.</p>
+          <h2 style="font-size:1.35rem;">Upload GSC CSV</h2>
+          <div class="gsc-report-guide gsc-report-guide--compact" aria-labelledby="upload-report-heading">
+            <h3 id="upload-report-heading">Required report: Indexing → Pages</h3>
+            <p class="gsc-meta" style="margin:0;">Export <strong>Not indexed</strong> URLs (Option A) or one reason under <strong>Why pages aren’t indexed</strong> (Option B). <a href="#which-report">Full export instructions</a>.</p>
           </div>
-          <div class="hero-actions">
+          <div class="gsc-upload">
+            <p class="gsc-meta" style="margin-bottom:0.15rem;"><strong>.csv from Page indexing only</strong> — not Search Performance / queries</p>
+            <div class="gsc-file-picker">
+              <input class="gsc-file-picker__input" id="gscCsvFile" type="file" accept=".csv,text/csv" />
+              <label class="gsc-file-picker__btn btn btn-primary" for="gscCsvFile">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M12 12V4m0 0l-4 4m4-4l4 4" />
+                </svg>
+                Choose CSV file
+              </label>
+              <span class="gsc-file-picker__name" id="gscFileName">No file chosen</span>
+            </div>
+            <p id="gscParseStatus" class="gsc-meta" aria-live="polite">Upload a file to analyze your top 10 issues.</p>
+          </div>
+          <div class="gsc-actions">
+            <button class="btn btn-primary" type="button" id="gscRecalcBtn" disabled>Recalculate top 10</button>
+            <button class="btn btn-secondary" type="button" id="gscClearBtn" disabled>Clear</button>
+          </div>
+          <div id="gscResultsWrap" class="gsc-table-wrap" hidden>
+            <h3 style="font-size:1.15rem;margin:1.25rem 0 0.5rem;">Top 10 issues to fix first</h3>
+            <p class="gsc-meta" id="gscResultsSummary"></p>
+            <table class="service-table gsc-table" id="gscIssuesTable">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Issue</th>
+                  <th>URLs</th>
+                  <th title="Auto-suggested from issue type; edit if needed">Impact</th>
+                  <th title="How important affected URLs are to revenue">Page value</th>
+                  <th title="Implementation difficulty">Effort</th>
+                  <th>Vol.</th>
+                  <th>Score</th>
+                  <th>Priority</th>
+                </tr>
+              </thead>
+              <tbody id="gscIssuesBody"></tbody>
+            </table>
+          </div>
+          <div class="hero-actions" style="margin-top:1rem;">
             <a class="btn btn-secondary" href="../resources/seo-audit-playbook.html">Open SEO audit playbook</a>
             <a class="btn btn-secondary" data-dynamic-cta href="../contact/index.html">Request technical audit</a>
           </div>
         </article>
+
+        <details class="card manual-calc" style="padding:1.25rem;margin-top:1.5rem;">
+          <summary>Single-issue calculator (manual)</summary>
+          <div class="grid-2" style="margin-top:1rem;">
+            <form class="contact-form" id="gscCalcForm">
+              <label for="impact">Business impact (1-10)</label>
+              <input id="impact" name="impact" type="number" min="1" max="10" value="7" required>
+
+              <label for="pageValue">Page value (1-10)</label>
+              <input id="pageValue" name="pageValue" type="number" min="1" max="10" value="8" required>
+
+              <label for="issueVolume">Issue volume (1-10)</label>
+              <input id="issueVolume" name="issueVolume" type="number" min="1" max="10" value="6" required>
+
+              <label for="effort">Fix effort (1-10)</label>
+              <input id="effort" name="effort" type="number" min="1" max="10" value="4" required>
+
+              <button class="btn btn-primary" type="submit">Calculate priority score</button>
+            </form>
+            <div>
+              <p id="priorityResult">Submit values to calculate your priority score.</p>
+            </div>
+          </div>
+        </details>
       </div>
     </section>
   </main>
 
-    <footer class="site-footer">
+  <footer class="site-footer">
     <div class="container site-footer__grid">
       <div class="site-footer__brand">
         <p class="site-footer__title">SEO With Faiz</p>
@@ -212,26 +614,465 @@
   <script src="../assets/js/site.js" defer></script>
   <script>
     (function () {
+      const TOP_N = 10;
+      const DEFAULT_PAGE_VALUE = 5;
+      const DEFAULT_EFFORT = 5;
+
+      const fileInput = document.getElementById("gscCsvFile");
+      const parseStatus = document.getElementById("gscParseStatus");
+      const recalcBtn = document.getElementById("gscRecalcBtn");
+      const clearBtn = document.getElementById("gscClearBtn");
+      const fileNameEl = document.getElementById("gscFileName");
+      const resultsWrap = document.getElementById("gscResultsWrap");
+      const resultsSummary = document.getElementById("gscResultsSummary");
+      const issuesBody = document.getElementById("gscIssuesBody");
+
+      let allIssues = [];
+
+      function setFileName(name) {
+        if (!fileNameEl) return;
+        if (name) {
+          fileNameEl.textContent = name;
+          fileNameEl.classList.add("gsc-file-picker__name--chosen");
+        } else {
+          fileNameEl.textContent = "No file chosen";
+          fileNameEl.classList.remove("gsc-file-picker__name--chosen");
+        }
+      }
+
+      const IMPACT_RULES = [
+        { re: /manual action|security|hacked|malware/i, score: 10 },
+        { re: /5\d\d|server error|internal error/i, score: 9 },
+        { re: /noindex|blocked by robots|forbidden|403/i, score: 9 },
+        { re: /404|not found|soft 404/i, score: 8 },
+        { re: /canonical|duplicate|alternate page/i, score: 7 },
+        { re: /redirect|redirected/i, score: 6 },
+        { re: /crawled.*not indexed/i, score: 6 },
+        { re: /discovered.*not indexed/i, score: 5 },
+        { re: /indexed/i, score: 3 }
+      ];
+
+      function clampScore(n) {
+        return Math.min(10, Math.max(1, Math.round(n)));
+      }
+
+      function suggestImpact(label) {
+        for (let i = 0; i < IMPACT_RULES.length; i += 1) {
+          if (IMPACT_RULES[i].re.test(label)) return IMPACT_RULES[i].score;
+        }
+        return 6;
+      }
+
+      function priorityScore(impact, pageValue, volume, effort) {
+        return impact * 0.45 + pageValue * 0.35 + volume * 0.2 - effort * 0.3;
+      }
+
+      function priorityLabel(score) {
+        if (score >= 6.5) return { text: "Critical", cls: "priority-pill--critical" };
+        if (score >= 4.5) return { text: "High", cls: "priority-pill--high" };
+        if (score >= 3) return { text: "Moderate", cls: "priority-pill--moderate" };
+        return { text: "Low", cls: "priority-pill--low" };
+      }
+
+      function volumeFromCount(count, maxCount) {
+        if (maxCount <= 1) return clampScore(count);
+        const ratio = count / maxCount;
+        return clampScore(ratio * 9 + 1);
+      }
+
+      function normalizeHeader(h) {
+        return String(h || "")
+          .replace(/^\uFEFF/, "")
+          .trim()
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, " ")
+          .trim();
+      }
+
+      function parseCSV(text) {
+        const rows = [];
+        let row = [];
+        let field = "";
+        let inQuotes = false;
+        for (let i = 0; i < text.length; i += 1) {
+          const ch = text[i];
+          const next = text[i + 1];
+          if (inQuotes) {
+            if (ch === '"' && next === '"') {
+              field += '"';
+              i += 1;
+            } else if (ch === '"') {
+              inQuotes = false;
+            } else {
+              field += ch;
+            }
+          } else if (ch === '"') {
+            inQuotes = true;
+          } else if (ch === ",") {
+            row.push(field);
+            field = "";
+          } else if (ch === "\n" || (ch === "\r" && next === "\n")) {
+            row.push(field);
+            field = "";
+            if (row.some(function (c) { return String(c).trim() !== ""; })) {
+              rows.push(row);
+            }
+            row = [];
+            if (ch === "\r") i += 1;
+          } else if (ch !== "\r") {
+            field += ch;
+          }
+        }
+        row.push(field);
+        if (row.some(function (c) { return String(c).trim() !== ""; })) {
+          rows.push(row);
+        }
+        return rows;
+      }
+
+      function findColumn(headers, candidates) {
+        for (let c = 0; c < candidates.length; c += 1) {
+          const want = candidates[c];
+          const idx = headers.indexOf(want);
+          if (idx !== -1) return idx;
+        }
+        for (let h = 0; h < headers.length; h += 1) {
+          const label = headers[h];
+          for (let c = 0; c < candidates.length; c += 1) {
+            if (label.indexOf(candidates[c]) !== -1) return h;
+          }
+        }
+        return -1;
+      }
+
+      function parseGscCsv(text) {
+        const rows = parseCSV(text.replace(/^\uFEFF/, ""));
+        if (rows.length < 2) {
+          throw new Error("CSV needs a header row and at least one data row.");
+        }
+        const headers = rows[0].map(normalizeHeader);
+        const urlIdx = findColumn(headers, ["url", "page", "address", "target page", "page url"]);
+        const issueIdx = findColumn(headers, [
+          "reason",
+          "issue",
+          "status",
+          "indexing",
+          "indexing state",
+          "coverage state",
+          "state",
+          "problem",
+          "type",
+          "category",
+          "page indexing"
+        ]);
+        const countIdx = findColumn(headers, ["pages", "page count", "affected", "items", "count", "urls", "number of pages"]);
+
+        const groups = Object.create(null);
+
+        function addIssue(label, url, explicitCount) {
+          const key = label.trim();
+          if (!key) return;
+          if (!groups[key]) {
+            groups[key] = { label: key, urls: [], count: 0 };
+          }
+          if (explicitCount != null && !isNaN(explicitCount)) {
+            groups[key].count = Math.max(groups[key].count, explicitCount);
+          } else if (url) {
+            groups[key].urls.push(url);
+            groups[key].count += 1;
+          } else {
+            groups[key].count += 1;
+          }
+        }
+
+        const summaryMode = issueIdx !== -1 && countIdx !== -1 && urlIdx === -1;
+
+        for (let r = 1; r < rows.length; r += 1) {
+          const cells = rows[r];
+          if (!cells.length) continue;
+
+          if (summaryMode) {
+            const label = cells[issueIdx] || "Unknown issue";
+            const n = parseInt(String(cells[countIdx] || "").replace(/,/g, ""), 10);
+            addIssue(label, null, isNaN(n) ? 1 : n);
+            continue;
+          }
+
+          let label = issueIdx !== -1 ? cells[issueIdx] : "";
+          const url = urlIdx !== -1 ? (cells[urlIdx] || "").trim() : "";
+
+          if (!label && urlIdx !== -1 && headers[urlIdx]) {
+            label = "Unspecified";
+          }
+          if (!label && issueIdx === -1 && url) {
+            label = "URL row (no reason column)";
+          }
+          if (!label) continue;
+
+          if (countIdx !== -1 && !url) {
+            const n = parseInt(String(cells[countIdx] || "").replace(/,/g, ""), 10);
+            addIssue(label, null, isNaN(n) ? 1 : n);
+          } else {
+            addIssue(label, url || null, null);
+          }
+        }
+
+        const list = Object.keys(groups).map(function (key) {
+          const g = groups[key];
+          const urlSet = {};
+          g.urls.forEach(function (u) {
+            if (u) urlSet[u] = true;
+          });
+          const uniqueUrls = Object.keys(urlSet);
+          const count = uniqueUrls.length > 0 ? uniqueUrls.length : g.count;
+          return {
+            label: g.label,
+            urlCount: count,
+            urls: uniqueUrls.slice(0, 50),
+            impact: suggestImpact(g.label),
+            pageValue: DEFAULT_PAGE_VALUE,
+            effort: DEFAULT_EFFORT
+          };
+        });
+
+        if (!list.length) {
+          throw new Error("Could not detect issue/reason columns. Export from Page indexing with URL + reason, or an issue summary with Pages count.");
+        }
+
+        return { issues: list, headers: headers, summaryMode: summaryMode };
+      }
+
+      function setStatus(msg, ok) {
+        parseStatus.textContent = msg;
+        parseStatus.className = "gsc-meta" + (ok === true ? " gsc-meta--ok" : ok === false ? " gsc-meta--err" : "");
+      }
+
+      function renderTable(showList) {
+        const maxCount = Math.max.apply(
+          null,
+          showList.map(function (i) { return i.urlCount; })
+        );
+        issuesBody.innerHTML = "";
+        showList.forEach(function (issue, index) {
+          const vol = volumeFromCount(issue.urlCount, maxCount);
+          const score = Math.max(0, priorityScore(issue.impact, issue.pageValue, vol, issue.effort));
+          const band = priorityLabel(score);
+          const tr = document.createElement("tr");
+          tr.dataset.issueKey = issue.label;
+
+          const sampleHtml =
+            issue.urls.length > 0
+              ? "<details><summary>Sample URLs (" +
+                Math.min(issue.urls.length, 20) +
+                ")</summary><ul class=\"gsc-url-list\">" +
+                issue.urls
+                  .slice(0, 20)
+                  .map(function (u) {
+                    return "<li>" + escapeHtml(u) + "</li>";
+                  })
+                  .join("") +
+                "</ul></details>"
+              : "";
+
+          tr.innerHTML =
+            "<td>" +
+            (index + 1) +
+            "</td>" +
+            "<td><strong>" +
+            escapeHtml(issue.label) +
+            "</strong>" +
+            sampleHtml +
+            "</td>" +
+            "<td>" +
+            issue.urlCount.toLocaleString() +
+            "</td>" +
+            '<td><input type="number" min="1" max="10" value="' +
+            issue.impact +
+            '" data-field="impact" aria-label="Impact for ' +
+            escapeHtml(issue.label) +
+            '"></td>' +
+            '<td><input type="number" min="1" max="10" value="' +
+            issue.pageValue +
+            '" data-field="pageValue" aria-label="Page value for ' +
+            escapeHtml(issue.label) +
+            '"></td>' +
+            '<td><input type="number" min="1" max="10" value="' +
+            issue.effort +
+            '" data-field="effort" aria-label="Effort for ' +
+            escapeHtml(issue.label) +
+            '"></td>' +
+            "<td>" +
+            vol +
+            "</td>" +
+            "<td data-score>" +
+            score.toFixed(2) +
+            "</td>" +
+            '<td><span class="priority-pill ' +
+            band.cls +
+            '" data-label>' +
+            band.text +
+            "</span></td>";
+
+          issuesBody.appendChild(tr);
+        });
+
+        issuesBody.querySelectorAll("input[data-field]").forEach(function (input) {
+          input.addEventListener("change", syncFromTable);
+          input.addEventListener("input", syncFromTable);
+        });
+      }
+
+      function escapeHtml(s) {
+        return String(s)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;");
+      }
+
+      function syncFromTable() {
+        const rows = issuesBody.querySelectorAll("tr");
+        rows.forEach(function (tr) {
+          const key = tr.dataset.issueKey;
+          const issue = allIssues.find(function (i) { return i.label === key; });
+          if (!issue) return;
+          issue.impact = clampScore(tr.querySelector('[data-field="impact"]').value);
+          issue.pageValue = clampScore(tr.querySelector('[data-field="pageValue"]').value);
+          issue.effort = clampScore(tr.querySelector('[data-field="effort"]').value);
+        });
+        const ranked = rankIssues(allIssues);
+        const top = ranked.slice(0, TOP_N);
+        renderTable(top);
+        updateSummary(allIssues.length, top.length);
+      }
+
+      function rankIssues(list) {
+        const maxCount = Math.max.apply(
+          null,
+          list.map(function (i) { return i.urlCount; })
+        );
+        return list
+          .slice()
+          .map(function (issue) {
+            const vol = volumeFromCount(issue.urlCount, maxCount);
+            const score = Math.max(0, priorityScore(issue.impact, issue.pageValue, vol, issue.effort));
+            return { issue: issue, score: score };
+          })
+          .sort(function (a, b) {
+            return b.score - a.score;
+          })
+          .map(function (x) {
+            return x.issue;
+          });
+      }
+
+      function updateSummary(totalIssues, shown) {
+        resultsSummary.textContent =
+          "Found " +
+          totalIssues +
+          " unique issue" +
+          (totalIssues === 1 ? "" : "s") +
+          ". Showing top " +
+          shown +
+          " by priority score. Edit impact, page value, or effort — scores update live.";
+      }
+
+      function runAnalysis() {
+        const ranked = rankIssues(allIssues);
+        const top = ranked.slice(0, TOP_N);
+        renderTable(top);
+        resultsWrap.hidden = false;
+        updateSummary(allIssues.length, top.length);
+        recalcBtn.disabled = false;
+        clearBtn.disabled = false;
+      }
+
+      function loadCsvText(text, fileLabel) {
+        try {
+          const parsed = parseGscCsv(String(text || ""));
+          allIssues = parsed.issues;
+          const mode = parsed.summaryMode ? "issue summary" : "per-URL";
+          setStatus(
+            (fileLabel ? fileLabel + " — " : "") +
+              "Parsed " +
+              allIssues.length +
+              " issues (" +
+              mode +
+              " format). Columns: " +
+              parsed.headers.slice(0, 6).join(", ") +
+              (parsed.headers.length > 6 ? "…" : ""),
+            true
+          );
+          runAnalysis();
+        } catch (err) {
+          allIssues = [];
+          resultsWrap.hidden = true;
+          recalcBtn.disabled = true;
+          clearBtn.disabled = true;
+          setStatus(err.message || "Could not parse CSV.", false);
+        }
+      }
+
+      if (fileInput) {
+        fileInput.addEventListener("change", function () {
+          const file = fileInput.files && fileInput.files[0];
+          if (!file) {
+            setFileName("");
+            return;
+          }
+          setFileName(file.name);
+          const reader = new FileReader();
+          reader.onload = function () {
+            loadCsvText(reader.result, file.name);
+          };
+          reader.onerror = function () {
+            setStatus("Failed to read file.", false);
+          };
+          reader.readAsText(file);
+        });
+      }
+
+      if (recalcBtn) {
+        recalcBtn.addEventListener("click", function () {
+          syncFromTable();
+        });
+      }
+
+      if (clearBtn) {
+        clearBtn.addEventListener("click", function () {
+          allIssues = [];
+          fileInput.value = "";
+          setFileName("");
+          issuesBody.innerHTML = "";
+          resultsWrap.hidden = true;
+          recalcBtn.disabled = true;
+          clearBtn.disabled = true;
+          setStatus("Upload a file to analyze your top 10 issues.", null);
+        });
+      }
+
       const form = document.getElementById("gscCalcForm");
       const result = document.getElementById("priorityResult");
-      if (!form || !result) return;
-
-      form.addEventListener("submit", function (event) {
-        event.preventDefault();
-        const impact = Number(document.getElementById("impact").value || 0);
-        const pageValue = Number(document.getElementById("pageValue").value || 0);
-        const issueVolume = Number(document.getElementById("issueVolume").value || 0);
-        const effort = Number(document.getElementById("effort").value || 0);
-
-        const score = impact * 0.45 + pageValue * 0.35 + issueVolume * 0.2 - effort * 0.3;
-        const rounded = Math.max(0, score).toFixed(2);
-        let label = "Low";
-        if (score >= 6.5) label = "Critical";
-        else if (score >= 4.5) label = "High";
-        else if (score >= 3) label = "Moderate";
-
-        result.innerHTML = "<strong>Priority score:</strong> " + rounded + " (" + label + ").";
-      });
+      if (form && result) {
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+          const impact = Number(document.getElementById("impact").value || 0);
+          const pageValue = Number(document.getElementById("pageValue").value || 0);
+          const issueVolume = Number(document.getElementById("issueVolume").value || 0);
+          const effort = Number(document.getElementById("effort").value || 0);
+          const score = priorityScore(impact, pageValue, issueVolume, effort);
+          const rounded = Math.max(0, score).toFixed(2);
+          const band = priorityLabel(score);
+          result.innerHTML =
+            "<strong>Priority score:</strong> " +
+            rounded +
+            ' (<span class="priority-pill ' +
+            band.cls +
+            '">' +
+            band.text +
+            "</span>).";
+        });
+      }
     })();
   </script>
 </body>
