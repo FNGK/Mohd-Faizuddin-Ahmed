@@ -20,10 +20,12 @@ FONT_URL = (
     "family=Manrope:wght@400;500;600;700;800&display=swap"
 )
 
-LOGO_LIGHT_SRC = "seo-with-faiz-logo-technical-precision-revenue-growth.png"
-LOGO_DARK_SRC = "seo-with-faiz-logo-dark-mode-technical-precision-revenue-growth.png"
-LOGO_LIGHT_OUT = "seo-with-faiz-logo-header"
-LOGO_DARK_OUT = "seo-with-faiz-logo-dark-header"
+LOGO_LIGHT = "seo-with-faiz-logo-technical-precision-revenue-growth.png"
+LOGO_DARK = "seo-with-faiz-logo-dark-mode-technical-precision-revenue-growth.png"
+LOGO_ALT = (
+    "SEO With Faiz logo — technical SEO and revenue growth services; shield mark with "
+    "code, bridge, and growth chart (transparent PNG for light mode)."
+)
 
 RASTER_ASSETS = [
     ("assets/projects/telangana-stride-hub.jpg", 640, 85),
@@ -65,9 +67,6 @@ def save_webp_only(src: Path, max_width: int, quality: int) -> None:
 
 
 def optimize_images() -> None:
-    logos = ROOT / "assets" / "logos"
-    save_webp_and_png(logos / LOGO_LIGHT_SRC, logos / LOGO_LIGHT_OUT, 260, 88)
-    save_webp_and_png(logos / LOGO_DARK_SRC, logos / LOGO_DARK_OUT, 260, 88)
     for rel, width, quality in RASTER_ASSETS:
         src = ROOT / rel
         if not src.exists():
@@ -91,7 +90,7 @@ def performance_head(prefix: str, *, preload_logo: bool) -> str:
     if preload_logo:
         lines.insert(
             4,
-            f'  <link rel="preload" as="image" href="{prefix}assets/logos/{LOGO_LIGHT_OUT}.webp" type="image/webp">',
+            f'  <link rel="preload" as="image" href="{prefix}assets/logos/{LOGO_LIGHT}">',
         )
     return "\n".join(lines) + "\n"
 
@@ -130,17 +129,10 @@ def brand_block(prefix: str, *, high_priority: bool) -> str:
     prio = ' fetchpriority="high"' if high_priority else ""
     return (
         f'      <a class="brand" href="{prefix}index.html" aria-label="SEO With Faiz home">\n'
-        f'        <picture>\n'
-        f'          <source srcset="{prefix}assets/logos/{LOGO_LIGHT_OUT}.webp" type="image/webp">\n'
-        f'          <img class="brand-logo brand-logo--light" src="{prefix}assets/logos/{LOGO_LIGHT_OUT}.png" '
-        f'alt="SEO With Faiz logo — technical SEO and revenue growth services; shield mark with code, bridge, and growth chart (transparent PNG for light mode)." '
-        f'width="260" height="127" decoding="async"{prio}>\n'
-        f"        </picture>\n"
-        f'        <picture>\n'
-        f'          <source srcset="{prefix}assets/logos/{LOGO_DARK_OUT}.webp" type="image/webp">\n'
-        f'          <img class="brand-logo brand-logo--dark" src="{prefix}assets/logos/{LOGO_DARK_OUT}.png" alt="" '
-        f'width="260" height="102" decoding="async" aria-hidden="true">\n'
-        f"        </picture>\n"
+        f'        <img class="brand-logo brand-logo--light" src="{prefix}assets/logos/{LOGO_LIGHT}" '
+        f'alt="{LOGO_ALT}" width="1024" height="498" decoding="async"{prio}>\n'
+        f'        <img class="brand-logo brand-logo--dark" src="{prefix}assets/logos/{LOGO_DARK}" alt="" '
+        f'width="580" height="228" decoding="async" aria-hidden="true">\n'
         f"      </a>"
     )
 
