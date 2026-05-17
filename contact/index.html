@@ -28,9 +28,15 @@
   <a class="skip-link" href="#main">Skip to main content</a>
   <header class="topbar">
     <div class="container topbar-inner">
-                  <a class="brand" href="../index.html" aria-label="SEO With Faiz home">
-        <img class="brand-logo brand-logo--light" src="../assets/logos/seo-with-faiz-logo-technical-precision-revenue-growth.png" alt="SEO With Faiz logo — technical SEO and revenue growth services; shield mark with code, bridge, and growth chart (transparent PNG for light mode)." width="1024" height="498" decoding="async">
-        <img class="brand-logo brand-logo--dark" src="../assets/logos/seo-with-faiz-logo-dark-mode-technical-precision-revenue-growth.png" alt="" width="580" height="228" decoding="async" aria-hidden="true">
+                        <a class="brand" href="../index.html" aria-label="SEO With Faiz home">
+        <picture>
+          <source srcset="../assets/logos/seo-with-faiz-logo-technical-precision-revenue-growth.webp" type="image/webp">
+          <img class="brand-logo brand-logo--light" src="../assets/logos/seo-with-faiz-logo-technical-precision-revenue-growth.png" alt="SEO With Faiz logo — technical SEO and revenue growth services; shield mark with code, bridge, and growth chart (transparent PNG for light mode)." width="400" height="195" decoding="async">
+        </picture>
+        <picture>
+          <source srcset="../assets/logos/seo-with-faiz-logo-dark-mode-technical-precision-revenue-growth.webp" type="image/webp">
+          <img class="brand-logo brand-logo--dark" src="../assets/logos/seo-with-faiz-logo-dark-mode-technical-precision-revenue-growth.png" alt="" width="400" height="157" decoding="async" aria-hidden="true">
+        </picture>
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="../services/index.html">Services</a>
@@ -154,12 +160,9 @@
       <div class="container grid-2">
         <article class="card">
           <h2 style="font-size:1.35rem;">Project inquiry form</h2>
-          <form class="contact-form" action="https://formsubmit.co/md.faiz.ahmed62@gmail.com" method="POST">
-            <input type="hidden" name="_subject" value="New SEO inquiry from seowithfaiz.com">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_next" value="https://seowithfaiz.com/thank-you.html">
-            <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none">
+          <form class="contact-form" id="contactForm" method="post" novalidate data-contact-version="2">
+            <label class="visually-hidden" for="honeypot">Leave blank</label>
+            <input type="text" id="honeypot" name="honeypot" tabindex="-1" autocomplete="off" class="visually-hidden" aria-hidden="true">
 
             <label for="name">Full name</label>
             <input id="name" name="name" type="text" required placeholder="Your full name">
@@ -181,14 +184,16 @@
             </select>
 
             <label for="goal">Primary growth goal</label>
-            <textarea id="goal" name="goal" required placeholder="Tell me what business result you want from SEO in the next 90 days."></textarea>
+            <textarea id="goal" name="goal" required minlength="12" placeholder="Tell me what business result you want from SEO in the next 90 days."></textarea>
 
+            <p id="contactFormStatus" class="form-status" role="alert" hidden></p>
             <button class="btn btn-primary" type="submit">Send inquiry</button>
           </form>
         </article>
         <article class="card">
           <h2 style="font-size:1.35rem;">What happens next</h2>
           <ul>
+            <li>Your inquiry is delivered securely to my inbox.</li>
             <li>I review your website and inquiry context.</li>
             <li>You receive a clear reply with fit, scope direction, and next-step options.</li>
             <li>If fit is confirmed, we schedule a strategy call and finalize the starting engagement.</li>
@@ -239,6 +244,8 @@
       <span>USA · Canada · Australia · Europe · India</span>
     </div>
   </footer>
+  <script src="../assets/js/contact-api-config.js?v=2" defer></script>
+  <script src="../assets/js/contact-form.js?v=2" defer></script>
   <script src="../assets/js/site.js" defer></script>
 </body>
 </html>
