@@ -44,7 +44,7 @@ jobs:
           python automation/blog/trend_collector.py
           python automation/blog/keyword_planner.py
           python automation/blog/draft_generator.py
-          python automation/blog/humanization_gate.py --notify
+          python automation/blog/humanization_gate.py
           python automation/blog/publish_validator.py
 
       - name: Publish approved drafts
