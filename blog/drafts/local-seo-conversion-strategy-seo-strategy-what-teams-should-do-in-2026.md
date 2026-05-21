@@ -45,7 +45,7 @@ humanization_metrics:
   template_hits: 0.0
   passive_hits: 0.0
   max_shingle_overlap: 0.001
-last_humanization_check: '2026-05-11T08:15:02.963037+00:00'
+last_humanization_check: '2026-05-21T08:27:59.767015+00:00'
 ---
 
 ## Why map rankings stall even when reviews look fine

@@ -1,32 +1,32 @@
 ---
 title: 'AI Search Visibility: What to Fix Before You Chase New Formats'
-slug: ai-search-visibility-seo-strategy-what-teams-should-do-in-2026
-date: 2026-05-10
+slug: ai-search-visibility-what-to-fix-before-you-chase-new-formats
+date: '2026-05-21'
 primary_keyword: ai search visibility seo strategy
 meta_description: 'Teams hear "AI search" and spin up a new hub with vague claims.
   Searchers and answer engines reward something quieter: **pages that resolve one
   intent Actionable steps for technical SEO, local growth, and AI-era visibility.'
 feature_image: ../../assets/projects/unstop-seo-audit.png
 feature_image_alt: SEO strategy implementation visual
-canonical_url: https://seowithfaiz.com/blog/posts/ai-search-visibility-seo-strategy-what-teams-should-do-in-2026.html
-og_image: https://seowithfaiz.com/assets/projects/unstop-seo-audit.png
+canonical_url: https://seowithfaiz.com/blog/posts/ai-search-visibility-what-to-fix-before-you-chase-new-formats.html
+og_image: https://seowithfaiz.com/assets/og/og-default.png
 intro_hook: 'Teams hear "AI search" and spin up a new hub with vague claims. Searchers
   and answer engines reward something quieter: **pages that resolve one intent completely**,
   with language models can quote without guessing. Your **ai search visibility** plan
   should start with the questions sales and support already answer ten times a week.'
+intent_cluster: aeo and geo
 approved: false
+humanization_verified: false
+review_status: needs_revision
+ready_notification_sent: false
 external_sources:
-- https://www.searchenginejournal.com/google-expands-ai-search-links-without-new-click-data/574307/
-- https://www.searchenginejournal.com/from-reddit-to-revenue-building-real-community-that-drives-sales-and-ai-visibility-recap/574380/
+- https://www.searchenginejournal.com/the-new-rules-of-search-key-aeo-content-marketing-trends-for-2026-recap/575064/
+- https://www.searchenginejournal.com/mueller-explains-why-google-uses-markdown-on-dev-docs/575465/
 internal_links:
 - ../../services/index.html
 - ../../resources/seo-audit-playbook.html
 - ../../case-studies/index.html
 - ../../contact/index.html
-intent_cluster: aeo and geo
-humanization_verified: false
-review_status: needs_revision
-ready_notification_sent: false
 humanization_score: 86
 originality_score: 0
 humanization_issues:
@@ -45,7 +45,7 @@ humanization_metrics:
   template_hits: 0.0
   passive_hits: 2.0
   max_shingle_overlap: 1.0
-last_humanization_check: '2026-05-21T08:27:59.739624+00:00'
+last_humanization_check: '2026-05-21T08:27:59.748364+00:00'
 ---
 
 ## AI answers reward clarity, not another "AI SEO" landing page

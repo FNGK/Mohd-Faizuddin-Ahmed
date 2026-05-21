@@ -41,8 +41,8 @@ humanization_metrics:
   ai_cliche_hits: 0.0
   template_hits: 0.0
   passive_hits: 0.0
-  max_shingle_overlap: 0.001
-last_humanization_check: '2026-05-11T08:15:02.946037+00:00'
+  max_shingle_overlap: 0.003
+last_humanization_check: '2026-05-21T08:27:59.757627+00:00'
 ---
 
 ## After a core update, panic edits usually make things worse
