@@ -1,8 +1,5 @@
 /**
- * Cloudflare Pages Function — POST /api/v1/contact
- * Note: Production uses `worker.js` + `npx wrangler deploy` (not Pages Functions).
- * Sends inquiry email via Mailchannels (domain must use Cloudflare DNS).
- * Inbox: CONTACT_NOTIFY_TO (default md.faiz.ahmed62@gmail.com; win@ forwards there).
+ * Cloudflare Worker — static site + POST /api/v1/contact (Mailchannels).
  */
 
 const REGIONS = new Set(['USA', 'Canada', 'Australia', 'Europe', 'Other']);
@@ -64,8 +61,21 @@ async function sendMail(env, submission) {
   }
 }
 
-export async function onRequestPost(context) {
-  const { request, env } = context;
+async function handleContact(request, env) {
+  if (request.method === 'OPTIONS') {
+    return new Response(null, {
+      status: 204,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'POST, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type',
+      },
+    });
+  }
+
+  if (request.method !== 'POST') {
+    return new Response('Method Not Allowed', { status: 405 });
+  }
 
   let body;
   try {
@@ -75,7 +85,10 @@ export async function onRequestPost(context) {
   }
 
   if (body.honeypot) {
-    return json({ success: true, message: 'Thank you. Your inquiry was received.', emailDelivered: true }, 201);
+    return json(
+      { success: true, message: 'Thank you. Your inquiry was received.', emailDelivered: true },
+      201
+    );
   }
 
   const errors = validate(body);
@@ -114,13 +127,19 @@ export async function onRequestPost(context) {
   }
 }
 
-export async function onRequestOptions() {
-  return new Response(null, {
-    status: 204,
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'POST, OPTIONS',
-      'Access-Control-Allow-Headers': 'Content-Type',
-    },
-  });
-}
+export default {
+  async fetch(request, env) {
+    const url = new URL(request.url);
+
+    if (url.hostname === 'www.seowithfaiz.com') {
+      const target = new URL(url.pathname + url.search + url.hash, 'https://seowithfaiz.com');
+      return Response.redirect(target.toString(), 301);
+    }
+
+    if (url.pathname === '/api/v1/contact') {
+      return handleContact(request, env);
+    }
+
+    return env.ASSETS.fetch(request);
+  },
+};

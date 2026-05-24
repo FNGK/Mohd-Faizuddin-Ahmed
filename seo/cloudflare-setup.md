@@ -2,16 +2,19 @@
 
 Hosting is **Cloudflare Pages** (static site + Pages Functions for the contact API). Email uses **Cloudflare Email Routing** (`win@seowithfaiz.com` → your Gmail inbox).
 
-## 1. Pages project
+## 1. Workers & Pages project (Wrangler deploy)
 
 | Setting | Value |
 |---------|--------|
 | **Production branch** | `main` |
-| **Build command** | *(leave empty — static HTML repo)* |
-| **Build output directory** | `/` (repository root) |
+| **Build command** | *(leave empty)* |
+| **Deploy command** | `npx wrangler deploy` |
+| **Root directory** | `/` |
 | **Custom domains** | `seowithfaiz.com`, `www.seowithfaiz.com` |
 
-After each push to `main`, Pages redeploys automatically.
+Repo includes `wrangler.jsonc` + `worker.js` (static assets + contact API). After each push to `main`, Cloudflare runs deploy.
+
+**Do not** use absolute URLs in `_redirects` — Wrangler only allows relative paths. **www → apex** is handled in the Worker (`worker.js`) and/or Cloudflare Redirect Rules.
 
 ## 2. DNS (if not already)
 
@@ -28,9 +31,10 @@ Remove old `CNAME` records pointing at `fngk.github.io` if you have fully left G
 
 ## 3. Redirects (in repo + dashboard)
 
-- **Repo:** `_redirects` — `www` → apex (301).
+- **Repo:** `_redirects` — relative paths only (e.g. `/index.html` → `/`). **Not** `https://www...` (build will fail).
+- **Worker:** `worker.js` redirects `www.seowithfaiz.com` → apex (301).
 - **Dashboard:** SSL/TLS → **Always Use HTTPS** = On.
-- Optional Redirect Rule for `/index.html` → `/` (see `seo/cloudflare-redirects.md`).
+- Backup Redirect Rule: hostname `www.seowithfaiz.com` → `https://seowithfaiz.com${uri.path}` (301).
 
 ## 4. Security headers
 
@@ -50,11 +54,11 @@ Also enable:
 - **win@seowithfaiz.com** as allowed sender for Mailchannels (domain on Cloudflare; SPF/DKIM auto for routing).
 - Optional: `admin@seowithfaiz.com` → same inbox (CMS admin).
 
-## 6. Contact form API (Pages Functions + secrets)
+## 6. Contact form API (Worker + secrets)
 
-The form posts to `https://seowithfaiz.com/api/v1/contact`, implemented in `functions/api/v1/contact.js` (Mailchannels).
+The form posts to `https://seowithfaiz.com/api/v1/contact`, handled by `worker.js` (Mailchannels).
 
-**Workers & Pages → your project → Settings → Environment variables** (Production):
+**Workers & Pages → seowithfaiz → Settings → Variables and secrets** (Production):
 
 | Variable | Example | Required |
 |----------|---------|----------|

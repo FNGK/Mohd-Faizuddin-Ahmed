@@ -1,0 +1,16 @@
+.git
+.wrangler
+node_modules
+cms
+server
+automation
+client-acquisition-engine
+functions
+*.md
+formsubmit-test-out.html
+lh-local.json
+lighthouse-logo-restore.json
+Professional_Resume.html
+Professional_Resume.md
+worker.js
+wrangler.jsonc

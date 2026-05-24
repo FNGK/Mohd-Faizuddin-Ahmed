@@ -4,11 +4,13 @@ Hosting is **Cloudflare Pages**. Redirects are split between the repo and the da
 
 ## In repository (auto on deploy)
 
-**`_redirects`** (Pages):
+**`_redirects`** (Wrangler static assets — **relative URLs only**):
 
 ```
-https://www.seowithfaiz.com/* https://seowithfaiz.com/:splat 301
+/index.html / 301
 ```
+
+**www → apex:** handled in `worker.js` and/or Cloudflare Redirect Rules (absolute URLs in `_redirects` will **fail the build**).
 
 ## In Cloudflare Dashboard
 

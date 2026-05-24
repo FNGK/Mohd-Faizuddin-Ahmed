@@ -1,0 +1,34 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "seowithfaiz",
+  "main": "worker.js",
+  "compatibility_date": "2026-05-24",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS",
+    "exclude": [
+      "**/.git/**",
+      "**/.wrangler/**",
+      "**/node_modules/**",
+      "**/cms/**",
+      "**/server/**",
+      "**/automation/**",
+      "**/client-acquisition-engine/**",
+      "**/functions/**",
+      "**/*.md",
+      "**/formsubmit-test-out.html",
+      "**/lh-local.json",
+      "**/lighthouse-logo-restore.json",
+      "**/Professional_Resume.html",
+      "**/Professional_Resume.md",
+      "**/worker.js",
+      "**/wrangler.jsonc",
+      "**/package-lock.json",
+      "**/package.json"
+    ]
+  }
+}
