@@ -1,69 +1,46 @@
 # Cloudflare redirect rules (seowithfaiz.com)
 
-GitHub Pages URLs on `fngk.github.io` are redirected in-repo via `assets/js/canonical-redirect.js` and `404.html`. Cloudflare rules below apply only to your custom domain zone.
+Hosting is **Cloudflare Pages**. Redirects are split between the repo and the dashboard.
 
-## Required rules (Bulk Redirects or Redirect Rules)
+## In repository (auto on deploy)
 
-Create these in **Cloudflare Dashboard → seowithfaiz.com → Rules → Redirect Rules** (or Bulk Redirects).
-
-### 1. www → apex (301)
-
-| Field | Value |
-|-------|--------|
-| If | Hostname equals `www.seowithfaiz.com` |
-| Then | Static redirect to `https://seowithfaiz.com${http.request.uri.path}${http.request.uri.query}` |
-| Status | 301 |
-| Preserve query string | Yes |
-
-Expression (Redirect Rules):
+**`_redirects`** (Pages):
 
 ```
-(http.host eq "www.seowithfaiz.com")
+https://www.seowithfaiz.com/* https://seowithfaiz.com/:splat 301
 ```
 
-Target URL:
+## In Cloudflare Dashboard
 
-```
-https://seowithfaiz.com${uri.path}${uri.query}
-```
+### Always Use HTTPS
 
-### 2. Force HTTPS on apex (if not already)
+**SSL/TLS → Edge Certificates → Always Use HTTPS** = On.
 
-Usually enabled via **SSL/TLS → Edge Certificates → Always Use HTTPS**. No separate rule needed if that toggle is on.
+### Optional: strip `index.html`
 
-### 3. Optional: strip `index.html` (301)
+**Rules → Redirect Rules**
 
 | If | URI Path ends with `/index.html` |
-| Then | Redirect to same path without `index.html` |
+| Then | 301 to path without `index.html` |
 
-Example target: `https://seowithfaiz.com${uri.path}` with rewrite to remove trailing `index.html` (use Cloudflare “Replace” dynamic redirect or a single Page Rule).
+### Legacy GitHub Pages URLs
 
-## DNS (custom domain on GitHub Pages)
+`https://fngk.github.io/Mohd-Faizuddin-Ahmed/*` is **not** in your Cloudflare zone. The repo still ships `assets/js/canonical-redirect.js` for browser redirects from old indexed links. Prefer **Search Console** with `seowithfaiz.com` as the primary property.
 
-For `seowithfaiz.com` serving GitHub Pages through Cloudflare:
+## DNS (Cloudflare Pages — not GitHub Pages)
 
 | Type | Name | Content | Proxy |
 |------|------|---------|-------|
-| CNAME | `@` | `fngk.github.io` | Proxied (orange cloud) |
-| CNAME | `www` | `fngk.github.io` | Proxied |
+| CNAME | `@` | `your-project.pages.dev` | Proxied |
+| CNAME | `www` | `your-project.pages.dev` | Proxied |
 
-In GitHub: **Settings → Pages → Custom domain** = `seowithfaiz.com` (and optionally `www.seowithfaiz.com`).
+Remove `fngk.github.io` CNAMEs when fully migrated.
 
-## What Cloudflare cannot do
-
-- Redirect `https://fngk.github.io/Mohd-Faizuddin-Ahmed/*` — that hostname is on GitHub, not your zone. Use the repo redirect script + `404.html` instead.
-
-## Verify after deploy
+## Verify
 
 ```bash
-# GitHub Pages (should redirect in browser; HTTP may still be 200 from GitHub)
-curl -I "https://fngk.github.io/Mohd-Faizuddin-Ahmed/contact/index.html"
-
-# Apex
-curl -I "https://seowithfaiz.com/contact/index.html"
-
-# www should 301 to apex
 curl -I "https://www.seowithfaiz.com/"
+curl -I "https://seowithfaiz.com/contact/index.html"
 ```
 
-In Chrome: open `https://fngk.github.io/Mohd-Faizuddin-Ahmed/index.html` — address bar should become `https://seowithfaiz.com/` (or `/index.html`).
+www should return **301** to apex. Contact form should POST to `/api/v1/contact` on the same host.

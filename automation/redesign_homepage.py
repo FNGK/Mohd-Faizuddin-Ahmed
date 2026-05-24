@@ -268,12 +268,12 @@ MAIN = """
           <p>I will review your site, identify the highest-impact opportunities, and provide a practical action plan aligned to your growth target.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" data-dynamic-cta href="./contact/index.html">Book strategy call</a>
-            <a class="btn btn-secondary" href="mailto:md.faiz.ahmed62@gmail.com">Email direct</a>
+            <a class="btn btn-secondary" href="mailto:win@seowithfaiz.com">Email direct</a>
           </div>
         </div>
         <article class="card cta-card">
           <h3>Quick contact</h3>
-          <p><strong>Email:</strong> <a href="mailto:md.faiz.ahmed62@gmail.com">md.faiz.ahmed62@gmail.com</a></p>
+          <p><strong>Email:</strong> <a href="mailto:win@seowithfaiz.com">win@seowithfaiz.com</a></p>
           <p><strong>WhatsApp:</strong> <a href="https://wa.me/916281367104" target="_blank" rel="noopener noreferrer">+91 62813 67104</a></p>
           <p><strong>Primary regions:</strong> USA, Canada, Australia, Europe</p>
           <p><strong>Response time:</strong> within 24 business hours</p>

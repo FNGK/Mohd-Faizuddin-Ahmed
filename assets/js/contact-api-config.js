@@ -1,11 +1,9 @@
 /**
- * Contact form API base URL.
- * - Leave apiBase empty when the CMS runs on the same domain (e.g. VPS: python cms/run.py).
- * - GitHub Pages alone cannot run /api/v1/contact; the form falls back to a mailto link on error.
- * - When CMS is live on seowithfaiz.com, set: apiBase: 'https://seowithfaiz.com'
+ * Contact form — Cloudflare Pages (same origin API via Pages Functions).
+ * Official email: win@seowithfaiz.com (Cloudflare Email Routing → Gmail inbox).
  */
 window.CONTACT_API_CONFIG = {
   apiBase: '',
-  notifyEmail: 'md.faiz.ahmed62@gmail.com',
+  notifyEmail: 'win@seowithfaiz.com',
   whatsapp: '+916281367104',
 };

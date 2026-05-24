@@ -1,0 +1,2 @@
+# Cloudflare Pages — https://developers.cloudflare.com/pages/configuration/redirects/
+https://www.seowithfaiz.com/* https://seowithfaiz.com/:splat 301

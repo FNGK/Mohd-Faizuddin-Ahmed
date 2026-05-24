@@ -1,6 +1,6 @@
 # MOHD FAIZUDDIN AHMED
 
-Hyderabad, Telangana, India | [LinkedIn](https://www.linkedin.com/in/mohd-faizuddin-ahmed-4984a0148) | [Portfolio](https://seowithfaiz.com/) | [md.faiz.ahmed62@gmail.com](mailto:md.faiz.ahmed62@gmail.com)
+Hyderabad, Telangana, India | [LinkedIn](https://www.linkedin.com/in/mohd-faizuddin-ahmed-4984a0148) | [Portfolio](https://seowithfaiz.com/) | [win@seowithfaiz.com](mailto:win@seowithfaiz.com)
 
 ## PROFILE
 

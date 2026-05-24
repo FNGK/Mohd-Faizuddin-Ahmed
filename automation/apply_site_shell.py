@@ -24,7 +24,7 @@ def footer_html(prefix: str) -> str:
       <div class="site-footer__brand">
         <p class="site-footer__title">SEO With Faiz</p>
         <p>Technical SEO, local growth, and answer-engine visibility for companies that need pipeline, not vanity traffic.</p>
-        <p><a href="{prefix}contact/index.html">Book a strategy call</a> · <a href="mailto:md.faiz.ahmed62@gmail.com">md.faiz.ahmed62@gmail.com</a></p>
+        <p><a href="{prefix}contact/index.html">Book a strategy call</a> · <a href="mailto:win@seowithfaiz.com">win@seowithfaiz.com</a></p>
       </div>
       <div>
         <p class="site-footer__title">Services</p>

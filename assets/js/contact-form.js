@@ -5,10 +5,9 @@
   const statusEl = document.getElementById('contactFormStatus');
   const submitBtn = form.querySelector('button[type="submit"]');
   const apiCfg = window.CONTACT_API_CONFIG || {};
-  const NOTIFY_EMAIL = apiCfg.notifyEmail || 'md.faiz.ahmed62@gmail.com';
+  const NOTIFY_EMAIL = apiCfg.notifyEmail || 'win@seowithfaiz.com';
   const WHATSAPP = apiCfg.whatsapp || '+916281367104';
 
-  // Never use FormSubmit or native POST to third-party handlers.
   form.removeAttribute('action');
   form.setAttribute('method', 'post');
 
@@ -50,7 +49,7 @@
       statusEl.appendChild(document.createTextNode(message + ' '));
       const link = document.createElement('a');
       link.href = options.mailtoHref;
-      link.textContent = 'Send via Gmail instead';
+      link.textContent = 'Send via email instead';
       link.className = 'form-status__mailto';
       statusEl.appendChild(link);
     }
@@ -126,17 +125,11 @@
       })
       .catch(function (err) {
         setBusy(false);
-        const isNetwork =
-          err instanceof TypeError ||
-          /failed to fetch|network|unavailable/i.test(String(err.message));
-        const hint = isNetwork
-          ? 'The form API is not available on this host yet (GitHub Pages is static). '
-          : '';
         setStatus(
-          hint +
-            (err.message ||
-              'Could not send your inquiry.') +
-            ' You can also email or WhatsApp using the links above.',
+          (err.message || 'Could not send your inquiry.') +
+            ' You can also email win@seowithfaiz.com or WhatsApp ' +
+            WHATSAPP.replace('+', '') +
+            '.',
           'error',
           { mailtoHref: mailtoUrl(payload) }
         );

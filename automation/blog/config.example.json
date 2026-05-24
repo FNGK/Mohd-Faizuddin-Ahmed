@@ -1,6 +1,6 @@
 {
   "notify_to": "md.faiz.ahmed62@gmail.com",
-  "notify_from": "blog@your-domain.com",
+  "notify_from": "win@seowithfaiz.com",
   "smtp_host": "smtp.gmail.com",
   "smtp_port": 587,
   "smtp_user": "your-smtp-user@gmail.com",
