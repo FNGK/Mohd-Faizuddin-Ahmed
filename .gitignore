@@ -2,3 +2,10 @@ automation/blog/config.local.json
 automation/blog/data/ready_alerts.json
 __pycache__/
 *.pyc
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
