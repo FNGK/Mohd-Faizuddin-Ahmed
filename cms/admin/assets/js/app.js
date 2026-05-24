@@ -604,6 +604,7 @@ async function route() {
     return;
   }
 
+  const seq = ++routeSeq;
   const hash = location.hash || '#/dashboard';
   let html = '';
   try {
