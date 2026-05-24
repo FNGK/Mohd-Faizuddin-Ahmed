@@ -7,6 +7,13 @@
   "observability": {
     "enabled": true
   },
+  "send_email": [
+    {
+      "name": "CONTACT_EMAIL",
+      "allowed_destination_addresses": ["md.faiz.ahmed62@gmail.com"],
+      "allowed_sender_addresses": ["win@seowithfaiz.com"]
+    }
+  ],
   "assets": {
     "directory": ".",
     "binding": "ASSETS",

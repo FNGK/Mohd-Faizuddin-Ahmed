@@ -1,6 +1,8 @@
 /**
- * Cloudflare Worker — static site + POST /api/v1/contact (Mailchannels).
+ * Cloudflare Worker — static site + POST /api/v1/contact (Email Routing send_email).
  */
+
+import { EmailMessage } from 'cloudflare:email';
 
 const REGIONS = new Set(['USA', 'Canada', 'Australia', 'Europe', 'Other']);
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -27,6 +29,41 @@ function validate(body) {
   return errors;
 }
 
+function base64Utf8(value) {
+  const bytes = new TextEncoder().encode(value);
+  let binary = '';
+  for (const byte of bytes) binary += String.fromCharCode(byte);
+  return btoa(binary);
+}
+
+function encodeMimeWord(value) {
+  if (/^[\x20-\x7E]*$/.test(value)) return value;
+  return `=?UTF-8?B?${base64Utf8(value)}?=`;
+}
+
+function formatAddress(name, email) {
+  if (!name) return email;
+  const escaped = name.replace(/\\/g, '\\\\').replace(/"/g, '\\"');
+  if (/^[\x20-\x7E]*$/.test(name) && !/[<>",]/.test(name)) {
+    return `"${escaped}" <${email}>`;
+  }
+  return `${encodeMimeWord(name)} <${email}>`;
+}
+
+function buildRawMime({ fromName, fromEmail, toName, toEmail, replyToName, replyToEmail, subject, text }) {
+  return [
+    `From: ${formatAddress(fromName, fromEmail)}`,
+    `To: ${formatAddress(toName, toEmail)}`,
+    `Reply-To: ${formatAddress(replyToName, replyToEmail)}`,
+    `Subject: ${encodeMimeWord(subject)}`,
+    'MIME-Version: 1.0',
+    'Content-Type: text/plain; charset=UTF-8',
+    'Content-Transfer-Encoding: 8bit',
+    '',
+    text,
+  ].join('\r\n');
+}
+
 async function sendMail(env, submission) {
   const notifyTo = env.CONTACT_NOTIFY_TO || 'md.faiz.ahmed62@gmail.com';
   const fromEmail = env.CONTACT_FROM_EMAIL || 'win@seowithfaiz.com';
@@ -43,22 +80,20 @@ async function sendMail(env, submission) {
     submission.goal,
   ].join('\n');
 
-  const res = await fetch('https://api.mailchannels.net/tx/v1/send', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      personalizations: [{ to: [{ email: notifyTo, name: 'Faiz Ahmed' }] }],
-      from: { email: fromEmail, name: fromName },
-      reply_to: { email: submission.email, name: submission.name },
-      subject: `New SEO inquiry — ${submission.name} (${submission.region})`,
-      content: [{ type: 'text/plain', value: text }],
-    }),
+  const subject = `New SEO inquiry — ${submission.name} (${submission.region})`;
+  const raw = buildRawMime({
+    fromName,
+    fromEmail,
+    toName: 'Faiz Ahmed',
+    toEmail: notifyTo,
+    replyToName: submission.name,
+    replyToEmail: submission.email,
+    subject,
+    text,
   });
 
-  if (!res.ok) {
-    const detail = await res.text();
-    throw new Error(`Mailchannels ${res.status}: ${detail.slice(0, 200)}`);
-  }
+  const message = new EmailMessage(fromEmail, notifyTo, raw);
+  await env.CONTACT_EMAIL.send(message);
 }
 
 async function handleContact(request, env) {

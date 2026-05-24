@@ -47,16 +47,16 @@ Remove old `CNAME` records pointing at `fngk.github.io` if you have fully left G
 
 | Custom address | Action | Destination |
 |----------------|--------|-------------|
-| `win@seowithfaiz.com` | Send to | `win@seowithfaiz.com` |
+| `win@seowithfaiz.com` | Send to | `md.faiz.ahmed62@gmail.com` |
 
-Also enable:
+Also configure:
 
-- **win@seowithfaiz.com** as allowed sender for Mailchannels (domain on Cloudflare; SPF/DKIM auto for routing).
+- **Destination address verified**: `md.faiz.ahmed62@gmail.com` must be verified in Email Routing destination addresses.
 - Optional: `admin@seowithfaiz.com` → same inbox (CMS admin).
 
 ## 6. Contact form API (Worker + secrets)
 
-The form posts to `https://seowithfaiz.com/api/v1/contact`, handled by `worker.js` (Mailchannels).
+The form posts to `https://seowithfaiz.com/api/v1/contact`, handled by `worker.js` using Cloudflare `send_email` binding.
 
 **Workers & Pages → seowithfaiz → Settings → Variables and secrets** (Production):
 
@@ -66,7 +66,21 @@ The form posts to `https://seowithfaiz.com/api/v1/contact`, handled by `worker.j
 | `CONTACT_FROM_EMAIL` | `win@seowithfaiz.com` | Yes — From address (must be on your zone) |
 | `CONTACT_FROM_NAME` | `SEO With Faiz` | Optional |
 
-No API keys needed for Mailchannels when sending from a Cloudflare-proxied domain.
+No Mailchannels DNS TXT records are required for this flow.
+
+`wrangler.jsonc` must include a `send_email` binding similar to:
+
+```json
+"send_email": [
+  {
+    "name": "CONTACT_EMAIL",
+    "allowed_destination_addresses": ["md.faiz.ahmed62@gmail.com"],
+    "allowed_sender_addresses": ["win@seowithfaiz.com"]
+  }
+]
+```
+
+After changing `wrangler.jsonc`, redeploy the Worker (`npx wrangler deploy`) or push to `main` so Cloudflare rebuilds with the new binding.
 
 **Test after deploy:**
 
@@ -116,6 +130,6 @@ Blog draft workflow (`.github/workflows/blog-draft-generator.yml`) needs **GitHu
 | Issue | Fix |
 |-------|-----|
 | Form API 404 | Redeploy Pages; confirm `functions/api/v1/contact.js` is on `main` |
-| Form 503 / email not sent | Check Pages env vars; confirm domain uses Cloudflare DNS; check Mailchannels in Workers logs |
+| Form 503 / email not sent | Check `send_email` binding in `wrangler.jsonc`, secrets, destination verification, then redeploy and review Workers logs |
 | CSP blocks fonts | `_headers` includes `fonts.googleapis.com` / `gstatic.com` |
 | Old FormSubmit | Hard refresh; confirm latest `contact/index.html` deployed |
