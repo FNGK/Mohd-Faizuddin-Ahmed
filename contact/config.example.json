@@ -1,0 +1,15 @@
+{
+  "notify_to": "md.faiz.ahmed62@gmail.com",
+  "notify_from": "SEO With Faiz <noreply@seowithfaiz.com>",
+  "smtp_host": "smtp.gmail.com",
+  "smtp_port": 587,
+  "smtp_user": "your-address@gmail.com",
+  "smtp_password": "your-app-password",
+  "allowed_origins": [
+    "https://seowithfaiz.com",
+    "https://www.seowithfaiz.com",
+    "http://127.0.0.1:8765",
+    "http://localhost:8765"
+  ],
+  "rate_limit_per_hour": 8
+}
