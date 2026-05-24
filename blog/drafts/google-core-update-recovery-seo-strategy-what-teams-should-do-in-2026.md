@@ -24,14 +24,26 @@ internal_links:
 - ../../case-studies/index.html
 - ../../contact/index.html
 intent_cluster: commercial seo
-humanization_verified: true
-review_status: ready
+humanization_verified: false
+review_status: needs_revision
 ready_notification_sent: false
-humanization_score: 100
+humanization_score: 81
 originality_score: 100
-humanization_issues: []
+humanization_issues:
+- Body is short (577 words; must exceed recommended 1200).
+- Word count 577 must be above recommended 1200.
+- Word count 577 below minimum 1201 (recommended+1).
+- Title length 67; require 35–62 characters.
+- Meta description length 223; require 120–160.
+- Primary keyword missing from title.
+- Primary keyword missing from meta description.
+- Primary keyword missing from opening content.
+- Need at least 2 H3 sections (PAA/FAQ).
+- Need at least 5 bullet lines for scannability.
+- Missing PAA/FAQ section for AEO/GEO.
+- Need at least 4 PAA questions in frontmatter research.
 humanization_metrics:
-  word_count: 577.0
+  word_count: 577
   sentence_length_variance: 32.034
   lexical_diversity: 0.603
   contractions: 2.0
@@ -41,8 +53,10 @@ humanization_metrics:
   ai_cliche_hits: 0.0
   template_hits: 0.0
   passive_hits: 0.0
-  max_shingle_overlap: 0.003
-last_humanization_check: '2026-05-21T08:27:59.757627+00:00'
+  max_shingle_overlap: 0.0
+  flesch_ease: 50.69
+  fk_grade: 10.17
+last_humanization_check: '2026-05-24T13:51:38.753639+00:00'
 ---
 
 ## After a core update, panic edits usually make things worse

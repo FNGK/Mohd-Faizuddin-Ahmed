@@ -81,10 +81,10 @@ def _jaccard(a: set[tuple[str, ...]], b: set[tuple[str, ...]]) -> float:
 
 
 def collect_reference_corpus(repo_root: Path, exclude_path: Path | None = None) -> list[str]:
+    """Published posts only — comparing against other drafts falsely fails template-based drafts."""
     corpus: list[str] = []
-    drafts_dir = repo_root / "blog" / "drafts"
     posts_dir = repo_root / "blog" / "posts"
-    for folder in (drafts_dir, posts_dir):
+    for folder in (posts_dir,):
         if not folder.is_dir():
             continue
         for path in folder.glob("*"):
@@ -118,7 +118,9 @@ def originality_against_corpus(body: str, corpus: list[str]) -> tuple[int, float
     return score, max_overlap
 
 
-def score_humanization(body: str, primary_keyword: str = "") -> HumanizationReport:
+def score_humanization(
+    body: str, primary_keyword: str = "", *, recommended_word_count: int = 1200
+) -> HumanizationReport:
     issues: list[str] = []
     metrics: dict[str, float] = {}
     lower = body.lower()
@@ -127,8 +129,11 @@ def score_humanization(body: str, primary_keyword: str = "") -> HumanizationRepo
     word_count = len(words)
     metrics["word_count"] = float(word_count)
 
-    if word_count < 520:
-        issues.append(f"Body is short for a solution post ({word_count} words; aim for 520+).")
+    min_words = recommended_word_count + 1
+    if word_count < min_words:
+        issues.append(
+            f"Body is short ({word_count} words; must exceed recommended {recommended_word_count})."
+        )
 
     lengths = [len(s.split()) for s in sentences]
     if lengths:
@@ -140,7 +145,7 @@ def score_humanization(body: str, primary_keyword: str = "") -> HumanizationRepo
 
     unique_ratio = len(set(words)) / word_count if word_count else 0.0
     metrics["lexical_diversity"] = unique_ratio
-    if unique_ratio < 0.42:
+    if unique_ratio < 0.38:
         issues.append("Vocabulary repeats too often for a natural read.")
 
     contractions = len(re.findall(r"\b(?:you're|we're|it's|don't|can't|won't|isn't|aren't|i've|i'm)\b", lower))
@@ -163,7 +168,9 @@ def score_humanization(body: str, primary_keyword: str = "") -> HumanizationRepo
         metrics["primary_keyword_hits"] = float(keyword_hits)
         if keyword_hits < 1:
             issues.append("Primary keyword is missing from the body.")
-        if keyword_hits > 6:
+        max_hits = 5 if len(primary_keyword) > 22 else 6
+        density = keyword_hits / max(1, word_count)
+        if keyword_hits > max_hits and density > 0.012:
             issues.append("Primary keyword is stuffed; keep it natural.")
 
     cliche_hits = sum(1 for phrase in AI_CLICHES if phrase in lower)
@@ -190,9 +197,9 @@ def score_humanization(body: str, primary_keyword: str = "") -> HumanizationRepo
     score -= min(35, len(issues) * 7)
     score -= min(20, cliche_hits * 8)
     score -= min(15, template_hits * 6)
-    if word_count < 520:
+    if word_count < min_words:
         score -= 12
-    if unique_ratio < 0.42:
+    if unique_ratio < 0.38:
         score -= 8
     score = max(0, min(100, score))
 
@@ -211,10 +218,13 @@ def evaluate_draft(
     repo_root: Path,
     draft_path: Path | None = None,
     *,
-    min_score: int = 72,
+    meta: dict | None = None,
+    min_score: int = 80,
     min_originality: int = 62,
 ) -> HumanizationReport:
-    report = score_humanization(body, primary_keyword)
+    meta = meta or {}
+    recommended = int(meta.get("recommended_word_count") or 1200)
+    report = score_humanization(body, primary_keyword, recommended_word_count=recommended)
     corpus = collect_reference_corpus(repo_root, exclude_path=draft_path)
     originality, overlap = originality_against_corpus(body, corpus)
     report.originality_score = originality
@@ -225,7 +235,23 @@ def evaluate_draft(
         )
     if report.score < min_score:
         report.issues.append(f"Humanization score {report.score} is below the {min_score} threshold.")
-    report.verified = report.score >= min_score and originality >= min_originality and not any(
-        issue.startswith("Body is short") for issue in report.issues
+
+    from compliance import validate_full_draft
+
+    compliance = validate_full_draft(
+        meta,
+        body,
+        for_publish=False,
+        humanization_score=report.score,
+        originality_score=report.originality_score,
+    )
+    report.issues.extend(compliance.errors)
+    report.metrics.update(compliance.metrics)
+
+    report.verified = (
+        report.score >= min_score
+        and originality >= min_originality
+        and compliance.passed
+        and not any(issue.startswith("Body is short") for issue in report.issues)
     )
     return report

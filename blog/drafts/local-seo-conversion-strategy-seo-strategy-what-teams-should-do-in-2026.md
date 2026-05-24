@@ -25,16 +25,26 @@ internal_links:
 - ../../case-studies/index.html
 - ../../contact/index.html
 intent_cluster: local growth
-humanization_verified: true
-review_status: ready
+humanization_verified: false
+review_status: needs_revision
 ready_notification_sent: false
-humanization_score: 86
+humanization_score: 67
 originality_score: 100
 humanization_issues:
+- Body is short (621 words; must exceed recommended 1200).
 - Add a few contractions so the voice sounds spoken, not generated.
 - Include at least one direct question that mirrors reader intent.
+- Humanization score 67 is below the 80 threshold.
+- Word count 621 must be above recommended 1200.
+- Word count 621 below minimum 1201 (recommended+1).
+- Meta description length 223; require 120–160.
+- Primary keyword missing from title.
+- Primary keyword missing from meta description.
+- Primary keyword missing from opening content.
+- Need at least 2 H3 sections (PAA/FAQ).
+- Need at least 5 bullet lines for scannability.
 humanization_metrics:
-  word_count: 621.0
+  word_count: 621
   sentence_length_variance: 52.305
   lexical_diversity: 0.554
   contractions: 0.0
@@ -44,8 +54,10 @@ humanization_metrics:
   ai_cliche_hits: 0.0
   template_hits: 0.0
   passive_hits: 0.0
-  max_shingle_overlap: 0.001
-last_humanization_check: '2026-05-21T08:27:59.767015+00:00'
+  max_shingle_overlap: 0.0
+  flesch_ease: 60.9
+  fk_grade: 9.17
+last_humanization_check: '2026-05-24T13:51:38.777980+00:00'
 ---
 
 ## Why map rankings stall even when reviews look fine

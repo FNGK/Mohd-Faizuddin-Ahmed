@@ -27,14 +27,23 @@ intent_cluster: technical optimization
 humanization_verified: false
 review_status: needs_revision
 ready_notification_sent: false
-humanization_score: 86
-originality_score: 3
+humanization_score: 67
+originality_score: 100
 humanization_issues:
+- Body is short (573 words; must exceed recommended 1200).
 - Add a few contractions so the voice sounds spoken, not generated.
 - Address the reader directly more often with you/your.
-- Too much overlap with other site copy (originality 3; need 62+).
+- Humanization score 67 is below the 80 threshold.
+- Word count 573 must be above recommended 1200.
+- Word count 573 below minimum 1201 (recommended+1).
+- Title length 66; require 35–62 characters.
+- Meta description length 223; require 120–160.
+- Primary keyword missing from title.
+- Primary keyword missing from meta description.
+- Primary keyword missing from opening content.
+- Need at least 2 H3 sections (PAA/FAQ).
 humanization_metrics:
-  word_count: 573.0
+  word_count: 573
   sentence_length_variance: 51.188
   lexical_diversity: 0.585
   contractions: 0.0
@@ -44,8 +53,10 @@ humanization_metrics:
   ai_cliche_hits: 0.0
   template_hits: 0.0
   passive_hits: 0.0
-  max_shingle_overlap: 0.974
-last_humanization_check: '2026-05-21T08:27:59.784668+00:00'
+  max_shingle_overlap: 0.0
+  flesch_ease: 50.21
+  fk_grade: 10.44
+last_humanization_check: '2026-05-24T13:51:38.879717+00:00'
 ---
 
 ## Crawl budget is a business constraint, not a specialist hobby

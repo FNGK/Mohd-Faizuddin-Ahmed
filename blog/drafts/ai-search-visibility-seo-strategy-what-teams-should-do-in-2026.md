@@ -27,14 +27,23 @@ intent_cluster: aeo and geo
 humanization_verified: false
 review_status: needs_revision
 ready_notification_sent: false
-humanization_score: 86
-originality_score: 0
+humanization_score: 67
+originality_score: 100
 humanization_issues:
+- Body is short (587 words; must exceed recommended 1200).
 - Add a few contractions so the voice sounds spoken, not generated.
 - Primary keyword is missing from the body.
-- Too much overlap with other site copy (originality 0; need 62+).
+- Humanization score 67 is below the 80 threshold.
+- Word count 587 must be above recommended 1200.
+- Word count 587 below minimum 1201 (recommended+1).
+- Meta description length 223; require 120–160.
+- Primary keyword missing from title.
+- Primary keyword missing from meta description.
+- Primary keyword missing from opening content.
+- Need at least 2 H3 sections (PAA/FAQ).
+- Need at least 5 bullet lines for scannability.
 humanization_metrics:
-  word_count: 587.0
+  word_count: 587
   sentence_length_variance: 34.099
   lexical_diversity: 0.624
   contractions: 0.0
@@ -44,8 +53,10 @@ humanization_metrics:
   ai_cliche_hits: 0.0
   template_hits: 0.0
   passive_hits: 2.0
-  max_shingle_overlap: 1.0
-last_humanization_check: '2026-05-21T08:27:59.739624+00:00'
+  max_shingle_overlap: 0.0
+  flesch_ease: 53.66
+  fk_grade: 9.83
+last_humanization_check: '2026-05-24T13:51:38.704654+00:00'
 ---
 
 ## AI answers reward clarity, not another "AI SEO" landing page

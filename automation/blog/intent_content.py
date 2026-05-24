@@ -19,15 +19,9 @@ def human_title(term: str, intent_cluster: str) -> str:
 
 
 def build_body(idea: dict[str, Any]) -> str:
-    cluster = (idea.get("intent_cluster") or "").strip().lower()
-    builders = {
-        "local growth": _body_local_growth,
-        "technical optimization": _body_technical,
-        "aeo and geo": _body_aeo_geo,
-        "commercial seo": _body_core_update,
-    }
-    builder = builders.get(cluster, _body_generic)
-    return builder(idea)
+    from content_builder import build_body as build_full_body
+
+    return build_full_body(idea)
 
 
 def _body_local_growth(idea: dict[str, Any]) -> str:

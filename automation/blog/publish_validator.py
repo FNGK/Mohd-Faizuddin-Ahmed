@@ -4,12 +4,15 @@
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import shutil
 from pathlib import Path
 
 import markdown
 import yaml
+
+from compliance import validate_full_draft
 
 REQUIRED_FIELDS = [
     "title",
@@ -23,8 +26,14 @@ REQUIRED_FIELDS = [
     "og_image",
     "intro_hook",
     "approved",
+    "editorial_reviewed",
     "external_sources",
     "internal_links",
+    "recommended_word_count",
+    "serp_intent",
+    "funnel_stage",
+    "paa_questions",
+    "serp_analysis",
 ]
 
 
@@ -47,65 +56,20 @@ def split_frontmatter(content: str) -> tuple[dict, str]:
     return data, body.strip()
 
 
-def validate_frontmatter(data: dict, body: str) -> list[str]:
+def validate_frontmatter(data: dict, body: str, *, publishing: bool) -> list[str]:
     errors = []
     for field in REQUIRED_FIELDS:
-        if field not in data:
+        if field not in data or data.get(field) in (None, "", []):
             errors.append(f"Missing field: {field}")
 
-    if data.get("approved") is not True:
-        errors.append("Draft is not approved")
-
-    if data.get("humanization_verified") is not True:
-        errors.append("Draft has not passed humanization verification")
-
-    if not isinstance(data.get("external_sources"), list) or len(data.get("external_sources", [])) < 2:
-        errors.append("Need at least 2 external sources")
-
-    if not isinstance(data.get("internal_links"), list) or len(data.get("internal_links", [])) < 3:
-        errors.append("Need at least 3 internal links")
-
-    word_count = len(re.findall(r"\b\w+\b", body))
-    if word_count < 450:
-        errors.append("Body too short (minimum 450 words)")
-
-    if len(re.findall(r"^##\s+", body, flags=re.MULTILINE)) < 3:
-        errors.append("Need at least 3 H2 sections")
-
-    if len(re.findall(r"^\s*-\s+", body, flags=re.MULTILINE)) < 3:
-        errors.append("Need at least 3 bullet points in body")
-
-    primary_keyword = str(data.get("primary_keyword", "")).strip().lower()
-    if primary_keyword:
-        lower_body = body.lower()
-        keyword_count = lower_body.count(primary_keyword)
-        if keyword_count > 0 and (keyword_count / max(1, word_count)) > 0.03:
-            errors.append("Potential keyword stuffing detected")
-
-    passive_pattern = re.compile(r"\b(?:was|were|is|are|been|be)\s+\w+ed\b", re.IGNORECASE)
-    passive_hits = len(passive_pattern.findall(body))
-    if passive_hits > 18:
-        errors.append("Passive voice usage appears too high")
-
-    clickbait_terms = [
-        "you won't believe",
-        "shocking",
-        "secret trick",
-        "guaranteed rank #1",
-        "instant results",
-    ]
-    if any(term in body.lower() for term in clickbait_terms):
-        errors.append("Clickbait language detected")
-
-    outdated_years = re.findall(r"\b(2023|2024)\b", body)
-    if outdated_years:
-        errors.append("Outdated year references detected (2023/2024)")
-
-    jargon_terms = ["lsi", "tf-idf", "pogo-sticking"]
-    jargon_hits = sum(body.lower().count(term) for term in jargon_terms)
-    if jargon_hits > 2:
-        errors.append("Jargon overload detected")
-
+    compliance = validate_full_draft(
+        data,
+        body,
+        for_publish=publishing,
+        humanization_score=int(data.get("humanization_score") or 0),
+        originality_score=int(data.get("originality_score") or 0),
+    )
+    errors.extend(compliance.errors)
     return errors
 
 
@@ -117,8 +81,29 @@ def make_links_html(links: list[str], label_prefix: str, external: bool) -> str:
     return "\n".join(rows)
 
 
+def build_faq_schema(data: dict, body: str) -> str:
+    questions = []
+    for match in re.finditer(r"^###\s+(.+)$\n+([^#]+)", body, flags=re.MULTILINE):
+        q = match.group(1).strip()
+        a = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", match.group(2).strip())
+        a = re.sub(r"\*+", "", a)[:500]
+        questions.append({"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}})
+    if not questions:
+        return ""
+    payload = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": questions[:6],
+    }
+    return json.dumps(payload, ensure_ascii=True)
+
+
 def render_html(template: str, data: dict, body_markdown: str) -> str:
     post_html = markdown.markdown(body_markdown, extensions=["tables", "fenced_code"])
+    faq_schema = build_faq_schema(data, body_markdown)
+    article_schema_extra = ""
+    if faq_schema:
+        article_schema_extra = f',\n    "subjectOf": {faq_schema}'
     replacements = {
         "{{TITLE}}": str(data["title"]),
         "{{META_DESCRIPTION}}": str(data["meta_description"]),
@@ -133,6 +118,7 @@ def render_html(template: str, data: dict, body_markdown: str) -> str:
         "{{POST_HTML}}": post_html,
         "{{EXTERNAL_SOURCES_HTML}}": make_links_html(data["external_sources"], "External source", True),
         "{{INTERNAL_LINKS_HTML}}": make_links_html(data["internal_links"], "Related resource", False),
+        "{{FAQ_SCHEMA_EXTRA}}": article_schema_extra,
     }
     html = template
     for key, value in replacements.items():
@@ -178,9 +164,11 @@ def process_draft(
     except Exception as exc:
         return False, f"{draft_path.name}: parse error ({exc})"
 
-    errors = validate_frontmatter(data, body)
+    errors = validate_frontmatter(data, body, publishing=publish)
     if errors:
-        return False, f"{draft_path.name}: " + "; ".join(errors)
+        return False, f"{draft_path.name}: " + "; ".join(errors[:8]) + (
+            f" (+{len(errors) - 8} more)" if len(errors) > 8 else ""
+        )
 
     if publish:
         post_path = posts_dir / f"{data['slug']}.html"
@@ -213,6 +201,12 @@ def main() -> None:
         raise FileNotFoundError(f"Index file not found: {index_path}")
 
     template_text = template_path.read_text(encoding="utf-8")
+    if "{{FAQ_SCHEMA_EXTRA}}" not in template_text:
+        template_text = template_text.replace(
+            '"mainEntityOfPage": "{{CANONICAL_URL}}"',
+            '"mainEntityOfPage": "{{CANONICAL_URL}}"{{FAQ_SCHEMA_EXTRA}}',
+        )
+
     draft_files = sorted(p for p in drafts_dir.glob("*.md") if p.name.lower() != "readme.md")
     if not draft_files:
         print("No draft files to process.")

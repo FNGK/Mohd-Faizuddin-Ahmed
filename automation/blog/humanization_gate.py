@@ -19,7 +19,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Verify blog drafts for humanized copy.")
     parser.add_argument("--drafts-dir", default="blog/drafts", help="Draft folder path")
     parser.add_argument("--repo-root", default=".", help="Repository root")
-    parser.add_argument("--min-score", type=int, default=72, help="Minimum humanization score")
+    parser.add_argument("--min-score", type=int, default=80, help="Minimum humanization score")
     parser.add_argument("--min-originality", type=int, default=62, help="Minimum originality score")
     parser.add_argument("--notify", action="store_true", help="Send ready-for-review alerts")
     return parser.parse_args()
@@ -39,6 +39,7 @@ def process_draft(
         str(meta.get("primary_keyword", "")),
         repo_root,
         path,
+        meta=meta,
         min_score=min_score,
         min_originality=min_originality,
     )

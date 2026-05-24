@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-05-21T08:27:59.518522+00:00",
+  "collected_at": "2026-05-24T13:51:37.639155+00:00",
   "feeds": [
     "Google Search Central",
     "Search Engine Journal",
@@ -8,6 +8,182 @@
   ],
   "entry_count": 25,
   "entries": [
+    {
+      "source": "Search Engine Journal",
+      "title": "All You Need To Know About Cloudflare\u2019s Agent Readiness Score via @sejournal, @slobodanmanic",
+      "url": "https://www.searchenginejournal.com/all-you-need-to-know-about-cloudflares-agent-readiness-score/574226/",
+      "published": "Sun, 24 May 2026 12:00:59 +0000",
+      "tokens": [
+        "all",
+        "need",
+        "know",
+        "cloudflare",
+        "agent",
+        "readiness",
+        "score",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google I/O Didn\u2019t End SEO. The Risk Is Somewhere Else via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/google-i-o-didnt-end-seo-the-risk-is-somewhere-else/575660/",
+      "published": "Sat, 23 May 2026 12:00:44 +0000",
+      "tokens": [
+        "didn",
+        "end",
+        "risk",
+        "somewhere",
+        "else",
+        "via",
+        "sejournal",
+        "mattgsouthern"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "3 Unrelated Stories About AI & Writing Tell The Same Story via @sejournal, @gregjarboe",
+      "url": "https://www.searchenginejournal.com/3-unrelated-stories-about-ai-writing-tell-the-same-story/575070/",
+      "published": "Fri, 22 May 2026 14:00:37 +0000",
+      "tokens": [
+        "unrelated",
+        "stories",
+        "writing",
+        "tell",
+        "same",
+        "story",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google Launches Core Update Amid I/O AI Search Overhaul \u2013 SEO Pulse via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/seo-pulse-google-launches-core-update-amid-i-o-ai-search-overhaul/575676/",
+      "published": "Fri, 22 May 2026 12:30:40 +0000",
+      "tokens": [
+        "launches",
+        "core",
+        "amid",
+        "overhaul",
+        "pulse",
+        "via",
+        "sejournal",
+        "mattgsouthern"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Security Researcher: WordPress 7.0 Could Trigger Rush To Steal AI API Keys via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/wordpress-7-0-faces-security-concerns-over-ai-api-keys/575679/",
+      "published": "Fri, 22 May 2026 10:37:43 +0000",
+      "tokens": [
+        "security",
+        "researcher",
+        "wordpress",
+        "could",
+        "trigger",
+        "rush",
+        "steal",
+        "api"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "When Marketing Leaders Can\u2019t Explain Search Performance via @sejournal, @coreydmorris",
+      "url": "https://www.searchenginejournal.com/when-marketing-leaders-cant-explain-search-performance/572464/",
+      "published": "Fri, 22 May 2026 09:00:18 +0000",
+      "tokens": [
+        "marketing",
+        "leaders",
+        "can",
+        "explain",
+        "performance",
+        "via",
+        "sejournal",
+        "coreydmorris"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google Confirms May 2026 Core Update Is Now Rolling Out via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/google-begins-rolling-out-may-2026-core-update/575589/",
+      "published": "Thu, 21 May 2026 16:11:57 +0000",
+      "tokens": [
+        "confirms",
+        "may",
+        "core",
+        "now",
+        "rolling",
+        "out",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "LLM Guidance Doesn\u2019t Transfer The Way SEO Guidance Did via @sejournal, @DuaneForrester",
+      "url": "https://www.searchenginejournal.com/llm-guidance-doesnt-transfer-the-way-seo-guidance-did/575077/",
+      "published": "Thu, 21 May 2026 13:30:17 +0000",
+      "tokens": [
+        "llm",
+        "guidance",
+        "doesn",
+        "transfer",
+        "way",
+        "guidance",
+        "did",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "How To Stress-Test A Staging Environment To Surface Risks Pre-Launch  \u2013 Ask An SEO via @sejournal, @HelenPollitt1",
+      "url": "https://www.searchenginejournal.com/ask-an-seo-how-do-you-stress-test-a-staging-environment/573559/",
+      "published": "Thu, 21 May 2026 11:30:16 +0000",
+      "tokens": [
+        "stress-test",
+        "staging",
+        "environment",
+        "surface",
+        "risks",
+        "pre-launch",
+        "ask",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "WordPress 7.0 Is A Winner: Here\u2019s What You Need To Know via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/wordpress-7-0-is-a-winner-heres-what-you-need-to-know/575510/",
+      "published": "Thu, 21 May 2026 10:06:34 +0000",
+      "tokens": [
+        "wordpress",
+        "winner",
+        "here",
+        "need",
+        "know",
+        "via",
+        "sejournal",
+        "martinibuster"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Microsoft Clarity Now Shows Grounding Queries Behind AI Citations via @sejournal, @TaylorDanRW",
+      "url": "https://www.searchenginejournal.com/microsoft-clarity-now-shows-grounding-queries-behind-ai-citations/575279/",
+      "published": "Thu, 21 May 2026 09:00:49 +0000",
+      "tokens": [
+        "microsoft",
+        "clarity",
+        "now",
+        "shows",
+        "grounding",
+        "queries",
+        "behind",
+        "citations"
+      ]
+    },
     {
       "source": "Search Engine Journal",
       "title": "The New Rules of Search: Key AEO & Content Marketing Trends for 2026 via @sejournal, @hethr_campbell",
@@ -57,189 +233,18 @@
     },
     {
       "source": "Search Engine Journal",
-      "title": "Google Introduces New Ad Formats In AI Mode via @sejournal, @brookeosmundson",
+      "title": "Google Expands AI Mode With New Ad Placements For Advertisers via @sejournal, @brookeosmundson",
       "url": "https://www.searchenginejournal.com/google-introduces-new-ad-formats-in-ai-mode/575354/",
       "published": "Wed, 20 May 2026 16:00:06 +0000",
       "tokens": [
-        "introduces",
-        "new",
-        "formats",
+        "expands",
         "mode",
+        "new",
+        "placements",
+        "advertisers",
         "via",
         "sejournal",
         "brookeosmundson"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Shares First AI Mode Usage Data After One Year via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/google-shares-first-ai-mode-usage-data-after-one-year/575443/",
-      "published": "Wed, 20 May 2026 14:59:57 +0000",
-      "tokens": [
-        "shares",
-        "first",
-        "mode",
-        "usage",
-        "data",
-        "after",
-        "one",
-        "year"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Mt. Stupid Has A Pricing Page via @sejournal, @pedrodias",
-      "url": "https://www.searchenginejournal.com/mt-stupid-has-a-pricing-page/575079/",
-      "published": "Wed, 20 May 2026 13:30:52 +0000",
-      "tokens": [
-        "stupid",
-        "has",
-        "pricing",
-        "page",
-        "via",
-        "sejournal",
-        "pedrodias"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google\u2019s llms.txt Guidance Depends On Which Product You Ask via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/googles-llms-txt-guidance-depends-on-which-product-you-ask/575431/",
-      "published": "Wed, 20 May 2026 12:47:19 +0000",
-      "tokens": [
-        "llms",
-        "txt",
-        "guidance",
-        "depends",
-        "which",
-        "product",
-        "ask",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "More Organic Search Traffic, More Ad Revenue: 4 Publishing Workflow Fixes That Bring Both",
-      "url": "https://www.searchenginejournal.com/more-organic-search-traffic-more-ad-revenue-4-publishing-workflow-fixes-that-bring-both-spa/575424/",
-      "published": "Wed, 20 May 2026 12:01:49 +0000",
-      "tokens": [
-        "more",
-        "organic",
-        "traffic",
-        "more",
-        "revenue",
-        "publishing",
-        "workflow",
-        "fixes"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Can A 300,000-Influencer Network Built On AI-Generated Content Work? via @sejournal, @gregjarboe",
-      "url": "https://www.searchenginejournal.com/can-a-300000-influencer-network-built-on-ai-generated-content-work/574985/",
-      "published": "Wed, 20 May 2026 11:00:39 +0000",
-      "tokens": [
-        "can",
-        "influencer",
-        "network",
-        "built",
-        "ai-generated",
-        "content",
-        "work",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Ads Budget Misallocation Is More Common Than You Think \u2013 And Harder To Spot via @sejournal, @LisaRocksSEM",
-      "url": "https://www.searchenginejournal.com/google-ads-budget-misallocation-is-more-common-than-you-think-and-harder-to-spot/573615/",
-      "published": "Wed, 20 May 2026 09:00:56 +0000",
-      "tokens": [
-        "ads",
-        "budget",
-        "misallocation",
-        "more",
-        "common",
-        "than",
-        "think",
-        "harder"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "90% Of Brands Have Zero AI Search Mentions, New Study Finds 4 Key SEO Insights",
-      "url": "https://www.searchenginejournal.com/ai-seo-mentions-study-victorious-spa/575040/",
-      "published": "Tue, 19 May 2026 21:27:10 +0000",
-      "tokens": [
-        "brands",
-        "have",
-        "zero",
-        "mentions",
-        "new",
-        "study",
-        "finds",
-        "key"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "YouTube Brings Conversational Search And Gemini Omni To Creators via @sejournal, @brookeosmundson",
-      "url": "https://www.searchenginejournal.com/youtube-expands-ai-creation-tools-with-gemini-omni-and-conversational-search/575310/",
-      "published": "Tue, 19 May 2026 18:00:12 +0000",
-      "tokens": [
-        "youtube",
-        "brings",
-        "conversational",
-        "gemini",
-        "omni",
-        "creators",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Announces New Universal Cart At I/O via @sejournal, @brookeosmundson",
-      "url": "https://www.searchenginejournal.com/google-announces-new-universal-cart-at-i-o/575301/",
-      "published": "Tue, 19 May 2026 17:45:41 +0000",
-      "tokens": [
-        "announces",
-        "new",
-        "universal",
-        "cart",
-        "via",
-        "sejournal",
-        "brookeosmundson"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Brings AI Content Verification To Search via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/google-brings-ai-content-verification-to-search/575320/",
-      "published": "Tue, 19 May 2026 17:45:26 +0000",
-      "tokens": [
-        "brings",
-        "content",
-        "verification",
-        "via",
-        "sejournal",
-        "mattgsouthern"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google\u2019s New Search Box Hands Queries To AI Agents, I/O Reveals via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/google-adds-ai-agents-to-search-redesigns-search-box-at-i-o/575311/",
-      "published": "Tue, 19 May 2026 17:45:17 +0000",
-      "tokens": [
-        "new",
-        "box",
-        "hands",
-        "queries",
-        "agents",
-        "reveals",
-        "via",
-        "sejournal"
       ]
     },
     {
@@ -374,54 +379,54 @@
   "top_terms": [
     {
       "term": "via",
-      "count": 13
+      "count": 15
     },
     {
       "term": "sejournal",
-      "count": 13
-    },
-    {
-      "term": "new",
-      "count": 5
+      "count": 15
     },
     {
       "term": "mattgsouthern",
-      "count": 5
+      "count": 4
     },
     {
-      "term": "content",
+      "term": "wordpress",
       "count": 3
     },
     {
-      "term": "brookeosmundson",
+      "term": "martinibuster",
       "count": 3
     },
     {
-      "term": "more",
-      "count": 3
-    },
-    {
-      "term": "ads",
-      "count": 3
-    },
-    {
-      "term": "key",
+      "term": "need",
       "count": 2
     },
     {
-      "term": "mode",
+      "term": "know",
       "count": 2
     },
     {
-      "term": "page",
+      "term": "launches",
       "count": 2
     },
     {
-      "term": "study",
+      "term": "core",
       "count": 2
     },
     {
-      "term": "brings",
+      "term": "marketing",
+      "count": 2
+    },
+    {
+      "term": "now",
+      "count": 2
+    },
+    {
+      "term": "guidance",
+      "count": 2
+    },
+    {
+      "term": "new",
       "count": 2
     },
     {
@@ -437,99 +442,99 @@
       "count": 2
     },
     {
-      "term": "rules",
+      "term": "ads",
+      "count": 2
+    },
+    {
+      "term": "all",
       "count": 1
     },
     {
-      "term": "aeo",
+      "term": "cloudflare",
       "count": 1
     },
     {
-      "term": "marketing",
+      "term": "agent",
       "count": 1
     },
     {
-      "term": "trends",
+      "term": "readiness",
       "count": 1
     },
     {
-      "term": "hethr",
+      "term": "score",
       "count": 1
     },
     {
-      "term": "campbell",
+      "term": "slobodanmanic",
       "count": 1
     },
     {
-      "term": "mueller",
+      "term": "didn",
       "count": 1
     },
     {
-      "term": "explains",
+      "term": "end",
       "count": 1
     },
     {
-      "term": "why",
+      "term": "risk",
       "count": 1
     },
     {
-      "term": "uses",
+      "term": "somewhere",
       "count": 1
     },
     {
-      "term": "markdown",
+      "term": "else",
       "count": 1
     },
     {
-      "term": "dev",
+      "term": "unrelated",
       "count": 1
     },
     {
-      "term": "docs",
+      "term": "stories",
       "count": 1
     },
     {
-      "term": "wordpress",
+      "term": "writing",
       "count": 1
     },
     {
-      "term": "launches",
+      "term": "tell",
       "count": 1
     },
     {
-      "term": "native",
+      "term": "same",
       "count": 1
     },
     {
-      "term": "integration",
+      "term": "story",
       "count": 1
     },
     {
-      "term": "martinibuster",
+      "term": "gregjarboe",
       "count": 1
     },
     {
-      "term": "introduces",
+      "term": "amid",
       "count": 1
     },
     {
-      "term": "formats",
+      "term": "overhaul",
       "count": 1
     },
     {
-      "term": "shares",
+      "term": "pulse",
       "count": 1
     },
     {
-      "term": "first",
+      "term": "security",
       "count": 1
     },
     {
-      "term": "usage",
-      "count": 1
-    },
-    {
-      "term": "data",
+      "term": "researcher",
       "count": 1
     }
   ]

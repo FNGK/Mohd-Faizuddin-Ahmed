@@ -1,6 +1,8 @@
 {
-  "generated_at": "2026-05-21T08:27:59.568326+00:00",
+  "generated_at": "2026-05-24T14:42:06.187973+00:00",
   "idea_count": 4,
+  "gemini_calls_this_run": 0,
+  "gemini_enabled": true,
   "ideas": [
     {
       "title": "AI Search Visibility: What to Fix Before You Chase New Formats",
@@ -15,8 +17,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/the-new-rules-of-search-key-aeo-content-marketing-trends-for-2026-recap/575064/",
-        "https://www.searchenginejournal.com/mueller-explains-why-google-uses-markdown-on-dev-docs/575465/"
+        "https://www.searchenginejournal.com/all-you-need-to-know-about-cloudflares-agent-readiness-score/574226/",
+        "https://www.searchenginejournal.com/google-i-o-didnt-end-seo-the-risk-is-somewhere-else/575660/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -24,7 +26,22 @@
         "../../case-studies/index.html",
         "../../contact/index.html"
       ],
-      "recommended_word_count": 1200
+      "recommended_word_count": 1200,
+      "serp_intent": "informational",
+      "funnel_stage": "awareness",
+      "serp_features": [
+        "featured_snippet"
+      ],
+      "paa_questions": [
+        "How does ai search visibility affect organic revenue in 2026?",
+        "What is answer engine optimization in practice?",
+        "How do I get cited in AI overviews without keyword stuffing?",
+        "Does structured data help generative search visibility?",
+        "How long should FAQ answers be for featured snippets?"
+      ],
+      "serp_analysis": "SERP snapshot for 'ai search visibility': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include All You Need To Know About Cloudflare\u2019s Agent Readiness Score via @sejournal, @slobodanmanic; Google I/O Didn\u2019t End SEO. The Risk Is Somewhere Else via @sejournal, @MattGSouthern; 3 Unrelated Stories About AI & Writing Tell The Same Story via @sejournal, @gregjarboe. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "research_source": "heuristic",
+      "gemini_enriched": false
     },
     {
       "title": "Technical SEO Priorities When Crawl Budget and Revenue Both Matter",
@@ -39,8 +56,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/wordpress-7-0-launches-with-native-ai-integration/575419/",
-        "https://www.searchenginejournal.com/google-introduces-new-ad-formats-in-ai-mode/575354/"
+        "https://www.searchenginejournal.com/3-unrelated-stories-about-ai-writing-tell-the-same-story/575070/",
+        "https://www.searchenginejournal.com/seo-pulse-google-launches-core-update-amid-i-o-ai-search-overhaul/575676/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -48,7 +65,22 @@
         "../../case-studies/index.html",
         "../../contact/index.html"
       ],
-      "recommended_word_count": 1200
+      "recommended_word_count": 1200,
+      "serp_intent": "informational_technical",
+      "funnel_stage": "awareness",
+      "serp_features": [
+        "featured_snippet"
+      ],
+      "paa_questions": [
+        "How does google core update recovery affect organic revenue in 2026?",
+        "What should I fix first in a technical SEO audit?",
+        "How does crawl budget affect large ecommerce sites?",
+        "When should I use noindex versus canonical consolidation?",
+        "What Core Web Vitals matter most for SEO?"
+      ],
+      "serp_analysis": "SERP snapshot for 'google core update recovery': dominant intent is **informational_technical** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include All You Need To Know About Cloudflare\u2019s Agent Readiness Score via @sejournal, @slobodanmanic; Google I/O Didn\u2019t End SEO. The Risk Is Somewhere Else via @sejournal, @MattGSouthern; 3 Unrelated Stories About AI & Writing Tell The Same Story via @sejournal, @gregjarboe. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "research_source": "heuristic",
+      "gemini_enriched": false
     },
     {
       "title": "Local SEO That Turns Map Views Into Booked Jobs in 2026",
@@ -63,8 +95,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/google-shares-first-ai-mode-usage-data-after-one-year/575443/",
-        "https://www.searchenginejournal.com/mt-stupid-has-a-pricing-page/575079/"
+        "https://www.searchenginejournal.com/wordpress-7-0-faces-security-concerns-over-ai-api-keys/575679/",
+        "https://www.searchenginejournal.com/when-marketing-leaders-cant-explain-search-performance/572464/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -72,7 +104,23 @@
         "../../case-studies/index.html",
         "../../contact/index.html"
       ],
-      "recommended_word_count": 1200
+      "recommended_word_count": 1200,
+      "serp_intent": "local_commercial",
+      "funnel_stage": "decision",
+      "serp_features": [
+        "featured_snippet",
+        "local_pack"
+      ],
+      "paa_questions": [
+        "How does local affect organic revenue in 2026?",
+        "How do I improve Google Business Profile conversions?",
+        "Why do map views not turn into phone calls?",
+        "What local landing page elements increase bookings?",
+        "How often should I update photos and posts on GBP?"
+      ],
+      "serp_analysis": "SERP snapshot for 'local seo conversion strategy': dominant intent is **local_commercial** at the **decision** funnel stage. Observed SERP features include featured_snippet, local_pack. Recent titles in the news layer include All You Need To Know About Cloudflare\u2019s Agent Readiness Score via @sejournal, @slobodanmanic; Google I/O Didn\u2019t End SEO. The Risk Is Somewhere Else via @sejournal, @MattGSouthern; 3 Unrelated Stories About AI & Writing Tell The Same Story via @sejournal, @gregjarboe. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "research_source": "heuristic",
+      "gemini_enriched": false
     },
     {
       "title": "Recovering After a Google Core Update Without Burning the Site Down",
@@ -87,8 +135,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/googles-llms-txt-guidance-depends-on-which-product-you-ask/575431/",
-        "https://www.searchenginejournal.com/more-organic-search-traffic-more-ad-revenue-4-publishing-workflow-fixes-that-bring-both-spa/575424/"
+        "https://www.searchenginejournal.com/google-begins-rolling-out-may-2026-core-update/575589/",
+        "https://www.searchenginejournal.com/llm-guidance-doesnt-transfer-the-way-seo-guidance-did/575077/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -96,7 +144,22 @@
         "../../case-studies/index.html",
         "../../contact/index.html"
       ],
-      "recommended_word_count": 1200
+      "recommended_word_count": 1200,
+      "serp_intent": "informational",
+      "funnel_stage": "awareness",
+      "serp_features": [
+        "featured_snippet"
+      ],
+      "paa_questions": [
+        "How does seo reporting for pipeline affect organic revenue in 2026?",
+        "How long does recovery take after a Google core update?",
+        "Should I rewrite all pages after a traffic drop?",
+        "How do I separate a penalty from a core update?",
+        "What E-E-A-T signals matter most for YMYL niches?"
+      ],
+      "serp_analysis": "SERP snapshot for 'seo reporting for pipeline': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include All You Need To Know About Cloudflare\u2019s Agent Readiness Score via @sejournal, @slobodanmanic; Google I/O Didn\u2019t End SEO. The Risk Is Somewhere Else via @sejournal, @MattGSouthern; 3 Unrelated Stories About AI & Writing Tell The Same Story via @sejournal, @gregjarboe. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "research_source": "heuristic",
+      "gemini_enriched": false
     }
   ]
 }

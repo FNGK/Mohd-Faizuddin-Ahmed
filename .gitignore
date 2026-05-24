@@ -1,5 +1,7 @@
 automation/blog/config.local.json
 automation/blog/data/ready_alerts.json
+automation/blog/data/gemini_research_cache.json
+automation/blog/data/gemini_usage_state.json
 contact/config.local.json
 contact/data/
 cms/backend/.env

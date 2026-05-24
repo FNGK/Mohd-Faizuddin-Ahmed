@@ -12,7 +12,15 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+from gemini_research import (
+    GeminiBudget,
+    is_gemini_active,
+    load_gemini_config,
+    maybe_enrich_with_gemini,
+    usage_status,
+)
 from intent_content import human_title
+from intent_research import enrich_idea
 
 INTERNAL_LINKS_DEFAULT = [
     "../../services/index.html",
@@ -55,6 +63,16 @@ def parse_args() -> argparse.Namespace:
         help="Keyword plan output path",
     )
     parser.add_argument("--max-ideas", type=int, default=8, help="Maximum idea count")
+    parser.add_argument(
+        "--gemini",
+        action="store_true",
+        help="Allow Gemini enrichment (still respects max calls and cache)",
+    )
+    parser.add_argument(
+        "--no-gemini",
+        action="store_true",
+        help="Disable Gemini for this run",
+    )
     return parser.parse_args()
 
 
@@ -102,6 +120,19 @@ def main() -> None:
     ideas = []
     seen_slugs = set()
     source_cursor = 0
+    trend_titles = [e.get("title", "") for e in source_entries[:12]]
+
+    cfg = load_gemini_config()
+    gemini_on = is_gemini_active(cfg) and not args.no_gemini
+    if args.gemini:
+        cfg = dict(cfg)
+        cfg["gemini_enabled"] = True
+        gemini_on = not args.no_gemini
+    budget = GeminiBudget(int(cfg.get("gemini_max_calls_per_run", 1)) if gemini_on else 0)
+    gemini_calls = 0
+    gemini_skipped_quota = False
+    if gemini_on:
+        print(f"Gemini: {usage_status(cfg)}")
 
     for term in top_terms:
       # Use selected terms only.
@@ -123,7 +154,7 @@ def main() -> None:
                 ][: 2 - len(sources)]
             )
 
-        ideas.append(
+        idea = enrich_idea(
             {
                 "title": title,
                 "slug": slug,
@@ -139,18 +170,31 @@ def main() -> None:
                 "external_sources": sources,
                 "internal_links": INTERNAL_LINKS_DEFAULT,
                 "recommended_word_count": 1200,
-            }
+            },
+            term,
+            trend_titles,
         )
+        if gemini_on and not gemini_skipped_quota:
+            idea, used = maybe_enrich_with_gemini(idea, term, trend_titles, budget=budget)
+            if used:
+                gemini_calls += 1
+            elif idea.pop("gemini_quota_paused", None):
+                gemini_skipped_quota = True
+                print("Gemini free-tier quota hit — heuristic research only until cooldown.")
+        ideas.append(idea)
         if len(ideas) >= args.max_ideas:
             break
 
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "idea_count": len(ideas),
+        "gemini_calls_this_run": gemini_calls,
+        "gemini_enabled": gemini_on,
         "ideas": ideas,
     }
     output_path.write_text(json.dumps(payload, indent=2, ensure_ascii=True), encoding="utf-8")
-    print(f"Wrote keyword plan: {output_path} ({len(ideas)} ideas)")
+    gemini_note = f", Gemini API calls: {gemini_calls}" if gemini_on else ""
+    print(f"Wrote keyword plan: {output_path} ({len(ideas)} ideas{gemini_note})")
 
 
 if __name__ == "__main__":

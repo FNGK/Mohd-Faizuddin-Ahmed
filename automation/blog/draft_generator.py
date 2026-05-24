@@ -5,12 +5,14 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+from content_config import META_DESC_LEN_MAX, META_DESC_LEN_MIN, TITLE_LEN_MAX
 from draft_io import dump_frontmatter
 from intent_content import build_body, human_title
 
@@ -47,33 +49,61 @@ def draft_exists(slug: str, drafts_dir: Path) -> bool:
 
 
 def first_sentence(text: str) -> str:
-    for line in text.splitlines():
-        stripped = line.strip()
-        if not stripped or stripped.startswith("#"):
+    for block in text.split("\n\n"):
+        block = block.strip()
+        if not block or block.startswith("#"):
             continue
-        return stripped
+        for line in block.splitlines():
+            stripped = line.strip()
+            if stripped and not stripped.startswith("#"):
+                parts = re.split(r"(?<=[.!?])\s+", stripped)
+                return parts[0] if parts else stripped
     return "Practical guidance for teams that need search visibility tied to pipeline outcomes."
+
+
+def build_seo_title(idea: dict, term: str, intent_cluster: str, primary_keyword: str) -> str:
+    base = idea.get("title") or human_title(term, intent_cluster)
+    tokens = [t for t in primary_keyword.lower().split() if t not in {"seo", "strategy"}]
+    label = " ".join(tokens[:3]).title() or term.title()
+    candidate = f"{label}: 2026 Playbook"
+    if len(candidate) <= TITLE_LEN_MAX and all(t in candidate.lower() for t in tokens[:2] if len(t) > 2):
+        return candidate
+    candidate = f"{base.split(':')[0].strip()}: {label}"[:TITLE_LEN_MAX]
+    return candidate.rsplit(" ", 1)[0] if len(candidate) >= TITLE_LEN_MAX else candidate
+
+
+def build_meta_description(intro: str, primary_keyword: str) -> str:
+    base = re.sub(r"\*+", "", intro).strip()
+    if len(base) > 90:
+        base = base[:87].rsplit(" ", 1)[0] + "…"
+    suffix = f" {primary_keyword.strip()} — SERP-aligned SEO, AEO, GEO, and SXO steps."
+    meta = (base + suffix).strip()
+    if len(meta) > META_DESC_LEN_MAX:
+        meta = meta[: META_DESC_LEN_MAX - 1].rsplit(" ", 1)[0] + "…"
+    while len(meta) < META_DESC_LEN_MIN:
+        meta += " Actionable for marketing leaders."
+        if len(meta) > META_DESC_LEN_MAX:
+            meta = meta[:META_DESC_LEN_MAX]
+            break
+    return meta
 
 
 def build_markdown(idea: dict) -> str:
     now = datetime.now(timezone.utc).date().isoformat()
+    idea = dict(idea)
+    idea["date"] = now
     intent_cluster = idea.get("intent_cluster", "commercial seo")
     term = str(idea.get("primary_keyword", "")).replace(" seo strategy", "").strip() or idea.get("slug", "seo")
-    title = idea.get("title") or human_title(term, intent_cluster)
     slug = idea["slug"]
     primary_keyword = idea["primary_keyword"]
+    title = build_seo_title(idea, term, intent_cluster, primary_keyword)
     body = build_body(idea)
     intro_hook = first_sentence(body)
-    meta_description = (
-        f"{intro_hook[:150].rstrip('.')} "
-        "Actionable steps for technical SEO, local growth, and AI-era visibility."
-    ).strip()
+    meta_description = build_meta_description(intro_hook, primary_keyword)
     feature_image = "../../assets/projects/unstop-seo-audit.png"
-    feature_image_alt = "SEO strategy implementation visual"
+    feature_image_alt = f"{title} — SEO With Faiz editorial illustration"
     canonical_url = f"https://seowithfaiz.com/blog/posts/{slug}.html"
     og_image = "https://seowithfaiz.com/assets/og/og-default.png"
-    external_sources = idea["external_sources"]
-    internal_links = idea["internal_links"]
 
     frontmatter = {
         "title": title,
@@ -87,12 +117,23 @@ def build_markdown(idea: dict) -> str:
         "og_image": og_image,
         "intro_hook": intro_hook,
         "intent_cluster": intent_cluster,
+        "serp_intent": idea.get("serp_intent"),
+        "funnel_stage": idea.get("funnel_stage"),
+        "serp_features": idea.get("serp_features", []),
+        "paa_questions": idea.get("paa_questions", []),
+        "serp_analysis": idea.get("serp_analysis"),
+        "recommended_word_count": idea.get("recommended_word_count", 1200),
+        "target_audience": idea.get("target_audience"),
+        "cta": idea.get("cta", "Book a strategy call"),
         "approved": False,
+        "editorial_reviewed": False,
         "humanization_verified": False,
         "review_status": "pending",
         "ready_notification_sent": False,
-        "external_sources": external_sources,
-        "internal_links": internal_links,
+        "external_sources": idea["external_sources"],
+        "internal_links": idea["internal_links"],
+        "research_source": idea.get("research_source", "heuristic"),
+        "gemini_enriched": bool(idea.get("gemini_enriched")),
     }
     return dump_frontmatter(frontmatter, body)
 
