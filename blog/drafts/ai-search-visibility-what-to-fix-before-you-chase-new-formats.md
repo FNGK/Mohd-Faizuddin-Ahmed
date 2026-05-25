@@ -37,11 +37,11 @@ humanization_issues:
 - Word count 587 must be above recommended 1200.
 - Word count 587 below minimum 1201 (recommended+1).
 - Meta description length 223; require 120–160.
-- Primary keyword missing from title.
 - Primary keyword missing from meta description.
 - Primary keyword missing from opening content.
 - Need at least 2 H3 sections (PAA/FAQ).
 - Need at least 5 bullet lines for scannability.
+- Missing PAA/FAQ section for AEO/GEO.
 humanization_metrics:
   word_count: 587
   sentence_length_variance: 34.099
@@ -56,7 +56,7 @@ humanization_metrics:
   max_shingle_overlap: 0.0
   flesch_ease: 53.66
   fk_grade: 9.83
-last_humanization_check: '2026-05-24T13:51:38.732025+00:00'
+last_humanization_check: '2026-05-25T08:55:53.215939+00:00'
 ---
 
 ## AI answers reward clarity, not another "AI SEO" landing page

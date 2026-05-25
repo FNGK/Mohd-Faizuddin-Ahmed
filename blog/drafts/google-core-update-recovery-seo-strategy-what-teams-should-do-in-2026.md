@@ -35,13 +35,13 @@ humanization_issues:
 - Word count 577 below minimum 1201 (recommended+1).
 - Title length 67; require 35–62 characters.
 - Meta description length 223; require 120–160.
-- Primary keyword missing from title.
 - Primary keyword missing from meta description.
 - Primary keyword missing from opening content.
 - Need at least 2 H3 sections (PAA/FAQ).
 - Need at least 5 bullet lines for scannability.
 - Missing PAA/FAQ section for AEO/GEO.
 - Need at least 4 PAA questions in frontmatter research.
+- Missing 'Last reviewed' freshness signal for answer engines.
 humanization_metrics:
   word_count: 577
   sentence_length_variance: 32.034
@@ -56,7 +56,7 @@ humanization_metrics:
   max_shingle_overlap: 0.0
   flesch_ease: 50.69
   fk_grade: 10.17
-last_humanization_check: '2026-05-24T13:51:38.753639+00:00'
+last_humanization_check: '2026-05-25T08:55:53.227344+00:00'
 ---
 
 ## After a core update, panic edits usually make things worse
