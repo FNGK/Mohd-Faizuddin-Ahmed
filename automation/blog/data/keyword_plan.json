@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-01T10:17:45.903846+00:00",
+  "generated_at": "2026-06-04T08:43:52.658341+00:00",
   "idea_count": 4,
   "gemini_calls_this_run": 0,
   "gemini_enabled": true,
@@ -17,8 +17,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/treating-reviews-as-business-infrastructure-not-marketing-drives-real-business-results/575702/",
-        "https://www.searchenginejournal.com/what-googles-new-ai-guide-actually-debunks-and-what-it-doesnt/575497/"
+        "https://www.searchenginejournal.com/ask-an-seo-what-does-entity-optimization-mean/575597/",
+        "https://www.searchenginejournal.com/what-not-to-automate-with-ai-the-seo-deskilling-trap/574887/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -39,7 +39,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'ai search visibility': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include Treating Reviews As Business Infrastructure, Not Marketing, Drives Real Business Results via @sejournal, @MattGSouthern; What Google\u2019s New AI Guide Actually Debunks. And What It Doesn\u2019t via @sejournal, @slobodanmanic; Amazon Vs. Perplexity: The CFAA Case That Decides Whether AI Agents Can Visit Your Website via @sejournal, @slobodanmanic. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'ai search visibility': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include How Can You Implement Entity Optimization Without Relying On Schema Markup? \u2013 Ask An SEO via @sejournal, @HelenPollitt1; What Not To Automate With AI: The SEO Deskilling Trap; What Is The Agentic Web? via @sejournal, @slobodanmanic. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -56,8 +56,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/amazon-vs-perplexity-the-cfaa-case-that-decides-whether-ai-agents-can-visit-your-website/575499/",
-        "https://www.searchenginejournal.com/white-collar-will-be-fully-automated-in-18-months-so-what-makes-you-different/575072/"
+        "https://www.searchenginejournal.com/what-is-the-agentic-web/574224/",
+        "https://www.searchenginejournal.com/google-tests-dedicated-ai-search-reports-in-search-console/577793/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -78,7 +78,7 @@
         "When should I use noindex versus canonical consolidation?",
         "What Core Web Vitals matter most for SEO?"
       ],
-      "serp_analysis": "SERP snapshot for 'google core update recovery': dominant intent is **informational_technical** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include Treating Reviews As Business Infrastructure, Not Marketing, Drives Real Business Results via @sejournal, @MattGSouthern; What Google\u2019s New AI Guide Actually Debunks. And What It Doesn\u2019t via @sejournal, @slobodanmanic; Amazon Vs. Perplexity: The CFAA Case That Decides Whether AI Agents Can Visit Your Website via @sejournal, @slobodanmanic. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'google core update recovery': dominant intent is **informational_technical** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include How Can You Implement Entity Optimization Without Relying On Schema Markup? \u2013 Ask An SEO via @sejournal, @HelenPollitt1; What Not To Automate With AI: The SEO Deskilling Trap; What Is The Agentic Web? via @sejournal, @slobodanmanic. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -95,8 +95,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/googles-i-o-demos-reveal-the-new-business-visibility-problem/576217/",
-        "https://www.searchenginejournal.com/ai-content-alone-wont-fix-your-seo-rankings-heres-what-will/577380/"
+        "https://www.searchenginejournal.com/microsoft-web-iq-gives-ai-agents-bing-grounding-apis/577736/",
+        "https://www.searchenginejournal.com/googles-may-core-update-complete-after-volatile-rollout/577704/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -118,7 +118,7 @@
         "What local landing page elements increase bookings?",
         "How often should I update photos and posts on GBP?"
       ],
-      "serp_analysis": "SERP snapshot for 'local seo conversion strategy': dominant intent is **local_commercial** at the **decision** funnel stage. Observed SERP features include featured_snippet, local_pack. Recent titles in the news layer include Treating Reviews As Business Infrastructure, Not Marketing, Drives Real Business Results via @sejournal, @MattGSouthern; What Google\u2019s New AI Guide Actually Debunks. And What It Doesn\u2019t via @sejournal, @slobodanmanic; Amazon Vs. Perplexity: The CFAA Case That Decides Whether AI Agents Can Visit Your Website via @sejournal, @slobodanmanic. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'local seo conversion strategy': dominant intent is **local_commercial** at the **decision** funnel stage. Observed SERP features include featured_snippet, local_pack. Recent titles in the news layer include How Can You Implement Entity Optimization Without Relying On Schema Markup? \u2013 Ask An SEO via @sejournal, @HelenPollitt1; What Not To Automate With AI: The SEO Deskilling Trap; What Is The Agentic Web? via @sejournal, @slobodanmanic. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -135,8 +135,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/updated-serps-new-study-measures-the-serp-in-pixels-not-ranks-recap/577359/",
-        "https://www.searchenginejournal.com/google-ai-overview-data-looks-different-for-commercial-queries/577350/"
+        "https://www.searchenginejournal.com/chatgpt-citations-changed-after-gpt-5-5-sistrix-data-shows/577694/",
+        "https://www.searchenginejournal.com/how-to-use-lighthouse-to-test-your-website-for-agentic-readiness/577421/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -157,7 +157,7 @@
         "How do I separate a penalty from a core update?",
         "What E-E-A-T signals matter most for YMYL niches?"
       ],
-      "serp_analysis": "SERP snapshot for 'seo reporting for pipeline': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include Treating Reviews As Business Infrastructure, Not Marketing, Drives Real Business Results via @sejournal, @MattGSouthern; What Google\u2019s New AI Guide Actually Debunks. And What It Doesn\u2019t via @sejournal, @slobodanmanic; Amazon Vs. Perplexity: The CFAA Case That Decides Whether AI Agents Can Visit Your Website via @sejournal, @slobodanmanic. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'seo reporting for pipeline': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include How Can You Implement Entity Optimization Without Relying On Schema Markup? \u2013 Ask An SEO via @sejournal, @HelenPollitt1; What Not To Automate With AI: The SEO Deskilling Trap; What Is The Agentic Web? via @sejournal, @slobodanmanic. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     }

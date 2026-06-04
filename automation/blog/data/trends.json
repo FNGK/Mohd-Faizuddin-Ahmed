@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-06-01T10:17:43.539623+00:00",
+  "collected_at": "2026-06-04T08:43:50.192688+00:00",
   "feeds": [
     "Google Search Central",
     "Search Engine Journal",
@@ -10,18 +10,218 @@
   "entries": [
     {
       "source": "Search Engine Journal",
-      "title": "Treating Reviews As Business Infrastructure, Not Marketing, Drives Real Business Results via @sejournal, @MattGSouthern",
+      "title": "How Can You Implement Entity Optimization Without Relying On Schema Markup? \u2013 Ask An SEO via @sejournal, @HelenPollitt1",
+      "url": "https://www.searchenginejournal.com/ask-an-seo-what-does-entity-optimization-mean/575597/",
+      "published": "Thu, 04 Jun 2026 08:30:30 +0000",
+      "tokens": [
+        "can",
+        "implement",
+        "entity",
+        "optimization",
+        "without",
+        "relying",
+        "schema",
+        "markup"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "What Not To Automate With AI: The SEO Deskilling Trap",
+      "url": "https://www.searchenginejournal.com/what-not-to-automate-with-ai-the-seo-deskilling-trap/574887/",
+      "published": "Wed, 03 Jun 2026 12:00:43 +0000",
+      "tokens": [
+        "not",
+        "automate",
+        "deskilling",
+        "trap"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "What Is The Agentic Web? via @sejournal, @slobodanmanic",
+      "url": "https://www.searchenginejournal.com/what-is-the-agentic-web/574224/",
+      "published": "Wed, 03 Jun 2026 09:00:26 +0000",
+      "tokens": [
+        "agentic",
+        "web",
+        "via",
+        "sejournal",
+        "slobodanmanic"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google Tests Dedicated AI Search Reports In Search Console via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/google-tests-dedicated-ai-search-reports-in-search-console/577793/",
+      "published": "Wed, 03 Jun 2026 05:10:20 +0000",
+      "tokens": [
+        "tests",
+        "dedicated",
+        "reports",
+        "console",
+        "via",
+        "sejournal",
+        "mattgsouthern"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Microsoft Web IQ Gives AI Agents Bing Grounding APIs via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/microsoft-web-iq-gives-ai-agents-bing-grounding-apis/577736/",
+      "published": "Tue, 02 Jun 2026 19:10:58 +0000",
+      "tokens": [
+        "microsoft",
+        "web",
+        "gives",
+        "agents",
+        "bing",
+        "grounding",
+        "apis",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google\u2019s May Core Update Complete After Volatile Rollout via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/googles-may-core-update-complete-after-volatile-rollout/577704/",
+      "published": "Tue, 02 Jun 2026 15:01:45 +0000",
+      "tokens": [
+        "may",
+        "core",
+        "complete",
+        "after",
+        "volatile",
+        "rollout",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "ChatGPT Citations Changed After GPT-5.5, SISTRIX Data Shows via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/chatgpt-citations-changed-after-gpt-5-5-sistrix-data-shows/577694/",
+      "published": "Tue, 02 Jun 2026 14:20:15 +0000",
+      "tokens": [
+        "chatgpt",
+        "citations",
+        "changed",
+        "after",
+        "gpt-",
+        "sistrix",
+        "data",
+        "shows"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "How To Use Lighthouse To Test Your Website For Agentic Readiness via @sejournal, @marie_haynes",
+      "url": "https://www.searchenginejournal.com/how-to-use-lighthouse-to-test-your-website-for-agentic-readiness/577421/",
+      "published": "Tue, 02 Jun 2026 13:30:35 +0000",
+      "tokens": [
+        "use",
+        "lighthouse",
+        "test",
+        "website",
+        "agentic",
+        "readiness",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "How To Fix Google Ads Smart Bidding With A Primary Vs. Secondary Conversion Framework",
+      "url": "https://www.searchenginejournal.com/how-to-fix-google-ads-smart-bidding-with-a-primary-vs-secondary-conversion-framework/574075/",
+      "published": "Tue, 02 Jun 2026 11:00:12 +0000",
+      "tokens": [
+        "fix",
+        "ads",
+        "smart",
+        "bidding",
+        "primary",
+        "secondary",
+        "conversion",
+        "framework"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google Confirms LLMs.txt Has No Current Implementation via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/google-says-llms-txt-is-purely-speculative-for-now/577576/",
+      "published": "Tue, 02 Jun 2026 10:08:07 +0000",
+      "tokens": [
+        "confirms",
+        "llms",
+        "txt",
+        "has",
+        "current",
+        "implementation",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Why Great Content No Longer Works: MIT Research Shows The Shift Reshaping SEO Strategy via @sejournal, @gregjarboe",
+      "url": "https://www.searchenginejournal.com/why-great-content-no-longer-works-mit-research-shows-the-shift-reshaping-seo-strategy/575880/",
+      "published": "Tue, 02 Jun 2026 08:00:16 +0000",
+      "tokens": [
+        "why",
+        "great",
+        "content",
+        "longer",
+        "works",
+        "mit",
+        "research",
+        "shows"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "EntityMap: The Open Standard That Gives AI Systems A Structured View Of Your Business via @sejournal, @Dixon_Jones",
+      "url": "https://www.searchenginejournal.com/entitymap-the-open-standard-that-gives-ai-systems-a-structured-view-of-your-business/576146/",
+      "published": "Mon, 01 Jun 2026 13:00:35 +0000",
+      "tokens": [
+        "entitymap",
+        "open",
+        "standard",
+        "gives",
+        "systems",
+        "structured",
+        "view",
+        "business"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google CEO Sundar Pichai Downplays Google Zero Concerns via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/google-ceo-sundar-pichai-downplays-google-zero-concerns/577489/",
+      "published": "Mon, 01 Jun 2026 11:29:10 +0000",
+      "tokens": [
+        "ceo",
+        "sundar",
+        "pichai",
+        "downplays",
+        "zero",
+        "concerns",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "How Reviews Drive Business Results Beyond Marketing via @sejournal, @MattGSouthern",
       "url": "https://www.searchenginejournal.com/treating-reviews-as-business-infrastructure-not-marketing-drives-real-business-results/575702/",
       "published": "Mon, 01 Jun 2026 10:00:32 +0000",
       "tokens": [
-        "treating",
         "reviews",
+        "drive",
         "business",
-        "infrastructure",
-        "not",
+        "results",
+        "beyond",
         "marketing",
-        "drives",
-        "real"
+        "via",
+        "sejournal"
       ]
     },
     {
@@ -37,213 +237,6 @@
         "via",
         "sejournal",
         "slobodanmanic"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Amazon Vs. Perplexity: The CFAA Case That Decides Whether AI Agents Can Visit Your Website via @sejournal, @slobodanmanic",
-      "url": "https://www.searchenginejournal.com/amazon-vs-perplexity-the-cfaa-case-that-decides-whether-ai-agents-can-visit-your-website/575499/",
-      "published": "Mon, 01 Jun 2026 00:56:10 +0000",
-      "tokens": [
-        "amazon",
-        "perplexity",
-        "cfaa",
-        "case",
-        "decides",
-        "whether",
-        "agents",
-        "can"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "White-Collar Will Be Fully Automated In 18 Months \u2013 So What Makes You Different? via @sejournal, @gregjarboe",
-      "url": "https://www.searchenginejournal.com/white-collar-will-be-fully-automated-in-18-months-so-what-makes-you-different/575072/",
-      "published": "Sun, 31 May 2026 09:30:29 +0000",
-      "tokens": [
-        "white-collar",
-        "fully",
-        "automated",
-        "months",
-        "makes",
-        "different",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google\u2019s I/O Demos Reveal The New Business Visibility Problem via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/googles-i-o-demos-reveal-the-new-business-visibility-problem/576217/",
-      "published": "Sat, 30 May 2026 12:00:25 +0000",
-      "tokens": [
-        "demos",
-        "reveal",
-        "new",
-        "business",
-        "visibility",
-        "problem",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "AI Content Alone Won\u2019t Fix Your SEO Rankings (Here\u2019s What Will) via @sejournal, @hethr_campbell",
-      "url": "https://www.searchenginejournal.com/ai-content-alone-wont-fix-your-seo-rankings-heres-what-will/577380/",
-      "published": "Fri, 29 May 2026 22:40:05 +0000",
-      "tokens": [
-        "content",
-        "alone",
-        "won",
-        "fix",
-        "rankings",
-        "here",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google SERP Layout Shift: Position 1 Now Appears Halfway Down The Page via @sejournal, @lorenbaker",
-      "url": "https://www.searchenginejournal.com/updated-serps-new-study-measures-the-serp-in-pixels-not-ranks-recap/577359/",
-      "published": "Fri, 29 May 2026 21:07:47 +0000",
-      "tokens": [
-        "serp",
-        "layout",
-        "shift",
-        "position",
-        "now",
-        "appears",
-        "halfway",
-        "down"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google AI Overview Data Looks Different For Commercial Queries via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/google-ai-overview-data-looks-different-for-commercial-queries/577350/",
-      "published": "Fri, 29 May 2026 19:23:16 +0000",
-      "tokens": [
-        "overview",
-        "data",
-        "looks",
-        "different",
-        "commercial",
-        "queries",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Expands Preferred Sources, Pichai Addresses AI Overviews via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/seo-pulse-preferred-sources-expand-gmail-brand-lift-pichai-on-ai-overviews/577173/",
-      "published": "Fri, 29 May 2026 12:30:07 +0000",
-      "tokens": [
-        "expands",
-        "preferred",
-        "sources",
-        "pichai",
-        "addresses",
-        "overviews",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "How To See If Competitors Are Advertising In Your Customers\u2019 ChatGPT Answers via @sejournal, @trendos_com",
-      "url": "https://www.searchenginejournal.com/see-competitor-ads-chatgpt-trendos-spa/575883/",
-      "published": "Thu, 28 May 2026 16:27:33 +0000",
-      "tokens": [
-        "see",
-        "competitors",
-        "are",
-        "advertising",
-        "customers",
-        "chatgpt",
-        "answers",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "You\u2019re Using AI At The Execution Layer. The Value Is In The Judgment Layer via @sejournal, @DuaneForrester",
-      "url": "https://www.searchenginejournal.com/youre-using-ai-at-the-execution-layer-the-value-is-in-the-judgment-layer/575747/",
-      "published": "Thu, 28 May 2026 13:30:50 +0000",
-      "tokens": [
-        "using",
-        "execution",
-        "layer",
-        "value",
-        "judgment",
-        "layer",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "The AI Sameness Trap Is Quietly Eroding Your SEO Competitive Advantage via @sejournal, @TaylorDanRW",
-      "url": "https://www.searchenginejournal.com/ai-convergence-seo/575879/",
-      "published": "Thu, 28 May 2026 11:00:19 +0000",
-      "tokens": [
-        "sameness",
-        "trap",
-        "quietly",
-        "eroding",
-        "competitive",
-        "advantage",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "WordPress Market Share Declines For Six Months In A Row via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/wordpress-market-share-in-decline/576042/",
-      "published": "Thu, 28 May 2026 09:18:49 +0000",
-      "tokens": [
-        "wordpress",
-        "market",
-        "share",
-        "declines",
-        "six",
-        "months",
-        "row",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Is Performance Max Actually Better Than Running Separate Campaigns? \u2013 Ask A PPC via @sejournal, @brookeosmundson",
-      "url": "https://www.searchenginejournal.com/ask-a-ppc-is-performance-max-actually-better-than-running-separate-campaigns/573174/",
-      "published": "Thu, 28 May 2026 08:00:12 +0000",
-      "tokens": [
-        "performance",
-        "max",
-        "actually",
-        "better",
-        "than",
-        "running",
-        "separate",
-        "campaigns"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Preferred Sources Hit 345K, Expand Into AI Search via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/google-preferred-sources-hit-345k-expand-into-ai-search/576032/",
-      "published": "Wed, 27 May 2026 21:40:28 +0000",
-      "tokens": [
-        "preferred",
-        "sources",
-        "hit",
-        "expand",
-        "via",
-        "sejournal",
-        "mattgsouthern"
       ]
     },
     {
@@ -378,30 +371,34 @@
   "top_terms": [
     {
       "term": "via",
-      "count": 15
+      "count": 13
     },
     {
       "term": "sejournal",
-      "count": 15
-    },
-    {
-      "term": "business",
-      "count": 5
+      "count": 13
     },
     {
       "term": "mattgsouthern",
       "count": 5
     },
     {
+      "term": "business",
+      "count": 4
+    },
+    {
       "term": "website",
       "count": 3
     },
     {
-      "term": "new",
+      "term": "ads",
+      "count": 3
+    },
+    {
+      "term": "agentic",
       "count": 2
     },
     {
-      "term": "actually",
+      "term": "web",
       "count": 2
     },
     {
@@ -409,43 +406,31 @@
       "count": 2
     },
     {
-      "term": "case",
+      "term": "gives",
       "count": 2
     },
     {
-      "term": "months",
+      "term": "after",
       "count": 2
     },
     {
-      "term": "different",
+      "term": "shows",
       "count": 2
     },
     {
-      "term": "page",
+      "term": "use",
       "count": 2
     },
     {
-      "term": "preferred",
+      "term": "conversion",
       "count": 2
     },
     {
-      "term": "sources",
+      "term": "martinibuster",
       "count": 2
     },
     {
-      "term": "using",
-      "count": 2
-    },
-    {
-      "term": "layer",
-      "count": 2
-    },
-    {
-      "term": "campaigns",
-      "count": 2
-    },
-    {
-      "term": "ppc",
+      "term": "strategy",
       "count": 2
     },
     {
@@ -453,19 +438,43 @@
       "count": 2
     },
     {
-      "term": "ads",
-      "count": 2
-    },
-    {
-      "term": "treating",
+      "term": "can",
       "count": 1
     },
     {
-      "term": "reviews",
+      "term": "implement",
       "count": 1
     },
     {
-      "term": "infrastructure",
+      "term": "entity",
+      "count": 1
+    },
+    {
+      "term": "optimization",
+      "count": 1
+    },
+    {
+      "term": "without",
+      "count": 1
+    },
+    {
+      "term": "relying",
+      "count": 1
+    },
+    {
+      "term": "schema",
+      "count": 1
+    },
+    {
+      "term": "markup",
+      "count": 1
+    },
+    {
+      "term": "ask",
+      "count": 1
+    },
+    {
+      "term": "helenpollitt",
       "count": 1
     },
     {
@@ -473,47 +482,35 @@
       "count": 1
     },
     {
-      "term": "marketing",
+      "term": "automate",
       "count": 1
     },
     {
-      "term": "drives",
+      "term": "deskilling",
       "count": 1
     },
     {
-      "term": "real",
+      "term": "trap",
       "count": 1
     },
     {
-      "term": "results",
+      "term": "tests",
       "count": 1
     },
     {
-      "term": "debunks",
+      "term": "dedicated",
       "count": 1
     },
     {
-      "term": "doesn",
+      "term": "reports",
       "count": 1
     },
     {
-      "term": "amazon",
+      "term": "console",
       "count": 1
     },
     {
-      "term": "perplexity",
-      "count": 1
-    },
-    {
-      "term": "cfaa",
-      "count": 1
-    },
-    {
-      "term": "decides",
-      "count": 1
-    },
-    {
-      "term": "whether",
+      "term": "microsoft",
       "count": 1
     },
     {
@@ -521,19 +518,15 @@
       "count": 1
     },
     {
-      "term": "can",
+      "term": "bing",
       "count": 1
     },
     {
-      "term": "visit",
+      "term": "grounding",
       "count": 1
     },
     {
-      "term": "white-collar",
-      "count": 1
-    },
-    {
-      "term": "fully",
+      "term": "apis",
       "count": 1
     }
   ]
