@@ -29,7 +29,50 @@ ANCHOR_URLS = [
 EXPERT_QUOTE_TARGETS = {"Qwoted", "Featured", "SourceBottle"}
 DIRECTORY_TARGETS = {"Clutch", "UpCity", "GoodFirms", "DesignRush"}
 
+SIGNUP_URLS = {
+    "Qwoted": "https://app.qwoted.com/users/sign_up",
+    "Featured": "https://featured.com/users/sign_up",
+    "SourceBottle": "https://www.sourcebottle.com/subscribe.asp",
+    "Clutch": "https://vendor.clutch.co/registration",
+    "UpCity": "https://upcity.com/profiles/create",
+    "GoodFirms": "https://www.goodfirms.co/directory/listing/create",
+    "DesignRush": "https://www.designrush.com/agency/profile/create",
+}
+
+PROFILE_COPY = """Headline:
+International SEO and Technical SEO Consultant | SEO With Faiz
+
+50-word bio:
+Mohd Faizuddin Ahmed (Faiz) is the independent consultant behind SEO With Faiz. He helps US and cross-border companies improve international SEO, technical SEO, hreflang governance, and AI-search-ready content systems with a proof-first, no-fluff operating model.
+
+Expert topics:
+- International SEO
+- Technical SEO
+- Hreflang
+- Localization strategy
+- Cross-border market expansion
+
+Proof URLs:
+- https://seowithfaiz.com/services/international-seo.html
+- https://seowithfaiz.com/resources/international-seo-diagnostic-framework.html
+- https://seowithfaiz.com/resources/international-seo-expert-media-kit.html
+- https://www.linkedin.com/in/seowithfaiz
+
+Do not claim a US office or guaranteed rankings.
+"""
+
 PITCH_TEMPLATES = {
+    "expert_platform": """Wave 1 action: Create expert profile on {{target}}
+
+Signup URL: {{signup_url}}
+
+{{profile_copy}}
+
+Response hook for journalist requests:
+"I audit international rollouts before they become hreflang debt."
+
+After profile is live, mark status=live in outreach/output/wave-1/wave-1-queue.csv and increment directories_live or mentions_earned in measurement/off-page-authority-tracker.csv as appropriate.
+""",
     "editorial": """Subject: Source for international SEO / localization commentary
 
 Hi {{name}},
@@ -176,8 +219,15 @@ def generate_wave1() -> Path:
         if not wave.startswith("wave-1"):
             continue
         pitch_type = row["category"]
+        if row["target"] in EXPERT_QUOTE_TARGETS:
+            pitch_type = "expert_platform"
         template = PITCH_TEMPLATES.get(pitch_type, PITCH_TEMPLATES["editorial"])
-        pitch = template.replace("{{target}}", row["target"]).replace("{{partner}}", row["target"])
+        pitch = (
+            template.replace("{{target}}", row["target"])
+            .replace("{{partner}}", row["target"])
+            .replace("{{signup_url}}", SIGNUP_URLS.get(row["target"], row["site_url"]))
+            .replace("{{profile_copy}}", PROFILE_COPY)
+        )
         slug = row["target"].lower().replace(" ", "-").replace("/", "-")
         pitch_path = OUTPUT_DIR / f"{slug}.txt"
         pitch_path.write_text(pitch, encoding="utf-8")
@@ -188,6 +238,7 @@ def generate_wave1() -> Path:
                 "category": row["category"],
                 "target": row["target"],
                 "site_url": row["site_url"],
+                "signup_url": SIGNUP_URLS.get(row["target"], row["site_url"]),
                 "initial_angle": row["initial_angle"],
                 "pitch_file": str(pitch_path.relative_to(REPO_ROOT)).replace("\\", "/"),
                 "status": "queued",
@@ -204,6 +255,7 @@ def generate_wave1() -> Path:
                 "category",
                 "target",
                 "site_url",
+                "signup_url",
                 "initial_angle",
                 "pitch_file",
                 "status",
@@ -230,7 +282,10 @@ def generate_wave1() -> Path:
 def print_plan() -> None:
     print("SEO With Faiz off-page deployment plan")
     print("1. Validate anchor assets are live on seowithfaiz.com")
-    print("2. Register expert-source profiles: Qwoted, Featured, SourceBottle")
+    print("2. Register expert-source profiles:")
+    print("   - Qwoted: https://app.qwoted.com/users/sign_up")
+    print("   - Featured: https://featured.com/users/sign_up")
+    print("   - SourceBottle: https://www.sourcebottle.com/subscribe.asp")
     print("3. Submit directory profiles: Clutch, UpCity, GoodFirms, DesignRush")
     print("4. Send podcast pitches only after expert-platform profiles are live")
     print("5. Log every live mention in mentions.html and off-page-authority-tracker.csv")

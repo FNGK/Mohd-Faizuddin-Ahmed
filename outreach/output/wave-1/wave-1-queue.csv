@@ -1,8 +1,8 @@
-wave,priority,category,target,site_url,initial_angle,pitch_file,status,notes
-wave-1-expert-platforms,1,editorial,Qwoted,https://www.qwoted.com/,International SEO commentary for US companies expanding abroad,outreach/output/wave-1/qwoted.txt,queued,
-wave-1-expert-platforms,1,editorial,Featured,https://featured.com/,"Hreflang, localization, and market-priority insights",outreach/output/wave-1/featured.txt,queued,
-wave-1-expert-platforms,1,editorial,SourceBottle,https://www.sourcebottle.com/,Cross-border SEO and localization expertise,outreach/output/wave-1/sourcebottle.txt,queued,
-wave-1-directories,1,directory,Clutch,https://clutch.co/,Profile focused on international SEO and technical SEO,outreach/output/wave-1/clutch.txt,queued,
-wave-1-directories,1,directory,UpCity,https://upcity.com/,Specialization-first profile with proof assets,outreach/output/wave-1/upcity.txt,queued,
-wave-1-directories,1,directory,GoodFirms,https://www.goodfirms.co/,Proof-led profile and clean service taxonomy,outreach/output/wave-1/goodfirms.txt,queued,
-wave-1-directories,1,directory,DesignRush,https://www.designrush.com/,International SEO consultant positioning,outreach/output/wave-1/designrush.txt,queued,
+wave,priority,category,target,site_url,signup_url,initial_angle,pitch_file,status,notes
+wave-1-expert-platforms,1,editorial,Qwoted,https://www.qwoted.com/,https://app.qwoted.com/users/sign_up,International SEO commentary for US companies expanding abroad,outreach/output/wave-1/qwoted.txt,queued,
+wave-1-expert-platforms,1,editorial,Featured,https://featured.com/,https://featured.com/users/sign_up,"Hreflang, localization, and market-priority insights",outreach/output/wave-1/featured.txt,queued,
+wave-1-expert-platforms,1,editorial,SourceBottle,https://www.sourcebottle.com/,https://www.sourcebottle.com/subscribe.asp,Cross-border SEO and localization expertise,outreach/output/wave-1/sourcebottle.txt,queued,
+wave-1-directories,1,directory,Clutch,https://clutch.co/,https://vendor.clutch.co/registration,Profile focused on international SEO and technical SEO,outreach/output/wave-1/clutch.txt,queued,
+wave-1-directories,1,directory,UpCity,https://upcity.com/,https://upcity.com/profiles/create,Specialization-first profile with proof assets,outreach/output/wave-1/upcity.txt,queued,
+wave-1-directories,1,directory,GoodFirms,https://www.goodfirms.co/,https://www.goodfirms.co/directory/listing/create,Proof-led profile and clean service taxonomy,outreach/output/wave-1/goodfirms.txt,queued,
+wave-1-directories,1,directory,DesignRush,https://www.designrush.com/,https://www.designrush.com/agency/profile/create,International SEO consultant positioning,outreach/output/wave-1/designrush.txt,queued,

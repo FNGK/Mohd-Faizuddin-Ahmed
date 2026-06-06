@@ -1,21 +1,30 @@
-Subject: Source for international SEO / localization commentary
+Wave 1 action: Create expert profile on Featured
 
-Hi {{name}},
+Signup URL: https://featured.com/users/sign_up
 
-I help US and cross-border companies diagnose international SEO expansion problems before they turn into hreflang debt, weak localization, and authority gaps.
+Headline:
+International SEO and Technical SEO Consultant | SEO With Faiz
 
-If you ever need a source on:
-- why same-language markets still need localization
-- what hreflang does not fix
-- how US teams should prioritize markets before rollout
-- why international SEO needs market-level reporting
+50-word bio:
+Mohd Faizuddin Ahmed (Faiz) is the independent consultant behind SEO With Faiz. He helps US and cross-border companies improve international SEO, technical SEO, hreflang governance, and AI-search-ready content systems with a proof-first, no-fluff operating model.
 
-I can provide a concise expert quote quickly.
+Expert topics:
+- International SEO
+- Technical SEO
+- Hreflang
+- Localization strategy
+- Cross-border market expansion
 
-Useful references:
-- Diagnostic framework: https://seowithfaiz.com/resources/international-seo-diagnostic-framework.html
-- Media kit: https://seowithfaiz.com/resources/international-seo-expert-media-kit.html
+Proof URLs:
+- https://seowithfaiz.com/services/international-seo.html
+- https://seowithfaiz.com/resources/international-seo-diagnostic-framework.html
+- https://seowithfaiz.com/resources/international-seo-expert-media-kit.html
+- https://www.linkedin.com/in/seowithfaiz
 
-Best,
-Faiz
-SEO With Faiz | https://seowithfaiz.com/
+Do not claim a US office or guaranteed rankings.
+
+
+Response hook for journalist requests:
+"I audit international rollouts before they become hreflang debt."
+
+After profile is live, mark status=live in outreach/output/wave-1/wave-1-queue.csv and increment directories_live or mentions_earned in measurement/off-page-authority-tracker.csv as appropriate.
