@@ -1,0 +1,9 @@
+{
+  "generated_on": "2026-06-06",
+  "queue_csv": "outreach/output/wave-1/wave-1-queue.csv",
+  "pitch_count": 7,
+  "waves": {
+    "wave-1-expert-platforms": 3,
+    "wave-1-directories": 4
+  }
+}
