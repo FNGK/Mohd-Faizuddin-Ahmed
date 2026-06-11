@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-06-08T09:21:58.274816+00:00",
+  "collected_at": "2026-06-11T09:08:24.435585+00:00",
   "feeds": [
     "Google Search Central",
     "Search Engine Journal",
@@ -10,95 +10,30 @@
   "entries": [
     {
       "source": "Search Engine Journal",
-      "title": "What SEOs Should Read Before Labor Day, 5 Books For A Transformative Summer via @sejournal, @gregjarboe",
-      "url": "https://www.searchenginejournal.com/what-seos-should-read-before-labor-day-4-books-for-a-transformative-summer/577681/",
-      "published": "Sun, 07 Jun 2026 12:02:53 +0000",
+      "title": "Google Is Adding Business Profile Tools To The Gemini App via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/google-is-adding-business-profile-tools-to-the-gemini-app/578824/",
+      "published": "Wed, 10 Jun 2026 20:08:36 +0000",
       "tokens": [
-        "seos",
-        "should",
-        "read",
-        "before",
-        "labor",
-        "day",
-        "books",
-        "transformative"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google\u2019s New Guidance Claims Authority Over SEO, Tools, And AEO/GEO via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/googles-new-guidance-claims-authority-over-seo-tools-and-aeo-geo/578162/",
-      "published": "Sun, 07 Jun 2026 09:09:04 +0000",
-      "tokens": [
-        "new",
-        "guidance",
-        "claims",
-        "authority",
-        "over",
-        "tools",
-        "aeo",
-        "geo"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Gives Sites AI Search Opt-Out, But Not The Data To Use It via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/google-gives-sites-ai-search-opt-out-but-not-the-data-to-use-it/577978/",
-      "published": "Sat, 06 Jun 2026 13:31:25 +0000",
-      "tokens": [
-        "gives",
-        "sites",
-        "opt-out",
-        "but",
-        "not",
-        "data",
-        "use",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Your Next AI Visitor Will Know Who Sent It via @sejournal, @slobodanmanic",
-      "url": "https://www.searchenginejournal.com/your-next-ai-visitor-will-know-who-sent-it/575489/",
-      "published": "Sat, 06 Jun 2026 12:00:26 +0000",
-      "tokens": [
-        "next",
-        "visitor",
-        "know",
-        "who",
-        "sent",
-        "via",
-        "sejournal",
-        "slobodanmanic"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google\u2019s Updated Guidance Urges FTC Complaints Against Shady SEOs via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/googles-updated-guidance-urges-ftc-complaints-against-shady-seos/578151/",
-      "published": "Sat, 06 Jun 2026 07:18:58 +0000",
-      "tokens": [
-        "updated",
-        "guidance",
-        "urges",
-        "ftc",
-        "complaints",
-        "against",
-        "shady",
-        "seos"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Analytics Is Adding Google Business Profile Data via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/google-analytics-is-adding-google-business-profile-data/578107/",
-      "published": "Fri, 05 Jun 2026 14:57:11 +0000",
-      "tokens": [
-        "analytics",
         "adding",
         "business",
         "profile",
-        "data",
+        "tools",
+        "gemini",
+        "app",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google Search Sends 23% Of Queries To The Open Web via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/google-search-sends-23-of-queries-to-the-open-web/578724/",
+      "published": "Wed, 10 Jun 2026 14:26:29 +0000",
+      "tokens": [
+        "sends",
+        "queries",
+        "open",
+        "web",
         "via",
         "sejournal",
         "mattgsouthern"
@@ -106,143 +41,201 @@
     },
     {
       "source": "Search Engine Journal",
-      "title": "AI Literacy Is Not Prompt Literacy. Ann Handley Says It\u2019s Judgment Literacy via @sejournal, @gregjarboe",
-      "url": "https://www.searchenginejournal.com/ai-literacy-is-not-prompt-literacy-ann-handley-says-its-judgment-literacy/577322/",
-      "published": "Fri, 05 Jun 2026 14:00:29 +0000",
+      "title": "Claude Is The Fastest-Growing AI Traffic Source, Per New Data via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/claude-is-the-fastest-growing-ai-traffic-source-per-new-data/578669/",
+      "published": "Wed, 10 Jun 2026 13:43:06 +0000",
       "tokens": [
-        "literacy",
-        "not",
-        "prompt",
-        "literacy",
-        "ann",
-        "handley",
-        "says",
-        "judgment"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Tests AI Search Data, UK Requires Opt Out \u2013 SEO Pulse via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/seo-pulse-google-tests-ai-search-data-uk-requires-opt-out/578003/",
-      "published": "Fri, 05 Jun 2026 12:30:34 +0000",
-      "tokens": [
-        "tests",
-        "data",
-        "requires",
-        "opt",
-        "out",
-        "pulse",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google\u2019s Sergey Brin Sees A Path To AGI But Not Beyond It via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/googles-sergey-brin-sees-a-path-to-agi/578068/",
-      "published": "Fri, 05 Jun 2026 12:10:04 +0000",
-      "tokens": [
-        "sergey",
-        "brin",
-        "sees",
-        "path",
-        "agi",
-        "but",
-        "not",
-        "beyond"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "What Is A Migration Hangover Traffic Drop & How Do You Avoid It?",
-      "url": "https://www.searchenginejournal.com/what-is-a-migration-hangover-traffic-drop-how-do-you-avoid-it/575102/",
-      "published": "Fri, 05 Jun 2026 10:00:34 +0000",
-      "tokens": [
-        "migration",
-        "hangover",
+        "claude",
+        "fastest-growing",
         "traffic",
-        "drop",
-        "avoid"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google\u2019s May Core Update Favored Pages That Match Intent via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/googles-may-core-update-favored-pages-that-match-intent/577996/",
-      "published": "Fri, 05 Jun 2026 02:43:01 +0000",
-      "tokens": [
-        "may",
-        "core",
-        "favored",
-        "pages",
-        "match",
-        "intent",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Launches Search Profiles, Here\u2019s How You Can Get One via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/google-launches-search-profiles-for-creators-with-100k-followers/577983/",
-      "published": "Thu, 04 Jun 2026 18:00:04 +0000",
-      "tokens": [
-        "launches",
-        "profiles",
-        "here",
-        "can",
-        "get",
-        "one",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Must Let Websites Opt Out Of AI Search Features In UK via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/google-must-let-websites-opt-out-of-ai-search-features-in-uk/577970/",
-      "published": "Thu, 04 Jun 2026 14:13:17 +0000",
-      "tokens": [
-        "must",
-        "let",
-        "websites",
-        "opt",
-        "out",
-        "features",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "You Can Finally Measure Content Alignment. That\u2019s The Dangerous Part via @sejournal, @DuaneForrester",
-      "url": "https://www.searchenginejournal.com/you-can-finally-measure-content-alignment-thats-the-dangerous-part/577424/",
-      "published": "Thu, 04 Jun 2026 13:30:11 +0000",
-      "tokens": [
-        "can",
-        "finally",
-        "measure",
-        "content",
-        "alignment",
-        "dangerous",
-        "part",
+        "source",
+        "per",
+        "new",
+        "data",
         "via"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "Why Users Are Fleeing To AI-Free Search & What It Means For SEO via @sejournal, @TaylorDanRW",
-      "url": "https://www.searchenginejournal.com/why-users-are-fleeing-to-ai-free-search-what-it-means-for-seo/577691/",
-      "published": "Thu, 04 Jun 2026 12:01:48 +0000",
+      "title": "The Integrity Graph: The Missing Layer In Your AI Visibility Audit via @sejournal, @billhunt",
+      "url": "https://www.searchenginejournal.com/the-integrity-graph-the-missing-layer-in-your-ai-visibility-audit/577854/",
+      "published": "Wed, 10 Jun 2026 13:30:06 +0000",
       "tokens": [
-        "why",
-        "users",
-        "are",
-        "fleeing",
-        "ai-free",
-        "means",
+        "integrity",
+        "graph",
+        "missing",
+        "layer",
+        "visibility",
+        "audit",
         "via",
         "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Research Suggests AI Engines Assign Ranking Roles To Sources via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/research-suggests-ai-engines-assign-ranking-roles-to-sources/578620/",
+      "published": "Wed, 10 Jun 2026 13:00:33 +0000",
+      "tokens": [
+        "research",
+        "suggests",
+        "engines",
+        "assign",
+        "ranking",
+        "roles",
+        "sources",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "What The Future Of Google Looks Like",
+      "url": "https://www.searchenginejournal.com/what-the-future-of-google-looks-like/578349/",
+      "published": "Wed, 10 Jun 2026 11:00:35 +0000",
+      "tokens": [
+        "future",
+        "looks",
+        "like"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "SEO Panel Agrees: Brand Is The New Backlink For AI SEO via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/seo-panel-agrees-brand-is-the-new-backlink-for-ai-seo/578567/",
+      "published": "Wed, 10 Jun 2026 10:10:18 +0000",
+      "tokens": [
+        "panel",
+        "agrees",
+        "brand",
+        "new",
+        "backlink",
+        "via",
+        "sejournal",
+        "martinibuster"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Why Your Product Feed Is An SEO Asset (And Who Should Own It) via @sejournal, @demirie",
+      "url": "https://www.searchenginejournal.com/why-your-product-feed-is-an-seo-asset-and-who-should-own-it/575543/",
+      "published": "Wed, 10 Jun 2026 09:00:45 +0000",
+      "tokens": [
+        "why",
+        "product",
+        "feed",
+        "asset",
+        "who",
+        "should",
+        "own",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "AI Search In 2026: Five Findings From 300 Enterprise Marketing Execs",
+      "url": "https://www.searchenginejournal.com/enterprise-ai-search-report-branch-spa/575983/",
+      "published": "Wed, 10 Jun 2026 05:00:46 +0000",
+      "tokens": [
+        "five",
+        "findings",
+        "enterprise",
+        "marketing",
+        "execs"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Claude Fable 5 \u201cFeels Next Level\u201d via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/claude-fable-5-feels-next-level/578538/",
+      "published": "Wed, 10 Jun 2026 03:30:45 +0000",
+      "tokens": [
+        "claude",
+        "fable",
+        "feels",
+        "next",
+        "level",
+        "via",
+        "sejournal",
+        "martinibuster"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "US Publishers Demand Common Crawl Stop Scraping Their Content via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/us-publishers-demand-common-crawl-stop-scraping-their-content/578532/",
+      "published": "Wed, 10 Jun 2026 00:45:20 +0000",
+      "tokens": [
+        "publishers",
+        "demand",
+        "common",
+        "crawl",
+        "stop",
+        "scraping",
+        "their",
+        "content"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "More News Sites Default To Blocking AI Crawlers via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/more-news-sites-default-to-blocking-ai-crawlers/578527/",
+      "published": "Wed, 10 Jun 2026 00:06:10 +0000",
+      "tokens": [
+        "more",
+        "sites",
+        "default",
+        "blocking",
+        "crawlers",
+        "via",
+        "sejournal",
+        "mattgsouthern"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Reddit Gained Top Positions In Every Niche After May Core Update via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/reddit-gained-top-positions-in-every-niche-after-may-core-update/578502/",
+      "published": "Tue, 09 Jun 2026 16:44:39 +0000",
+      "tokens": [
+        "reddit",
+        "gained",
+        "top",
+        "positions",
+        "every",
+        "niche",
+        "after",
+        "may"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Web Push Advertising 2026: Market Trends, Challenges & Opportunities via @sejournal, @rollerads",
+      "url": "https://www.searchenginejournal.com/web-push-advertising-trends-rollerads-spa/575976/",
+      "published": "Tue, 09 Jun 2026 15:08:50 +0000",
+      "tokens": [
+        "web",
+        "push",
+        "advertising",
+        "market",
+        "trends",
+        "challenges",
+        "opportunities",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "The Complete Guide To Local SEO For Multiple Locations via @sejournal, @TaylorDanRW",
+      "url": "https://www.searchenginejournal.com/the-complete-guide-to-local-seo-for-multiple-locations/578080/",
+      "published": "Tue, 09 Jun 2026 13:30:17 +0000",
+      "tokens": [
+        "complete",
+        "local",
+        "multiple",
+        "locations",
+        "via",
+        "sejournal",
+        "taylordanrw"
       ]
     },
     {
@@ -377,70 +370,38 @@
   "top_terms": [
     {
       "term": "via",
-      "count": 14
+      "count": 13
     },
     {
       "term": "sejournal",
-      "count": 14
+      "count": 13
     },
     {
       "term": "mattgsouthern",
       "count": 6
     },
     {
-      "term": "martinibuster",
-      "count": 3
-    },
-    {
-      "term": "not",
-      "count": 3
-    },
-    {
-      "term": "data",
-      "count": 3
-    },
-    {
       "term": "business",
       "count": 3
     },
     {
-      "term": "literacy",
+      "term": "martinibuster",
       "count": 3
     },
     {
-      "term": "seos",
+      "term": "web",
       "count": 2
     },
     {
-      "term": "gregjarboe",
+      "term": "claude",
       "count": 2
     },
     {
-      "term": "guidance",
+      "term": "new",
       "count": 2
     },
     {
-      "term": "but",
-      "count": 2
-    },
-    {
-      "term": "use",
-      "count": 2
-    },
-    {
-      "term": "analytics",
-      "count": 2
-    },
-    {
-      "term": "opt",
-      "count": 2
-    },
-    {
-      "term": "out",
-      "count": 2
-    },
-    {
-      "term": "can",
+      "term": "opportunities",
       "count": 2
     },
     {
@@ -456,51 +417,11 @@
       "count": 2
     },
     {
-      "term": "should",
+      "term": "adding",
       "count": 1
     },
     {
-      "term": "read",
-      "count": 1
-    },
-    {
-      "term": "before",
-      "count": 1
-    },
-    {
-      "term": "labor",
-      "count": 1
-    },
-    {
-      "term": "day",
-      "count": 1
-    },
-    {
-      "term": "books",
-      "count": 1
-    },
-    {
-      "term": "transformative",
-      "count": 1
-    },
-    {
-      "term": "summer",
-      "count": 1
-    },
-    {
-      "term": "new",
-      "count": 1
-    },
-    {
-      "term": "claims",
-      "count": 1
-    },
-    {
-      "term": "authority",
-      "count": 1
-    },
-    {
-      "term": "over",
+      "term": "profile",
       "count": 1
     },
     {
@@ -508,31 +429,103 @@
       "count": 1
     },
     {
-      "term": "aeo",
+      "term": "gemini",
       "count": 1
     },
     {
-      "term": "geo",
+      "term": "app",
       "count": 1
     },
     {
-      "term": "gives",
+      "term": "sends",
       "count": 1
     },
     {
-      "term": "sites",
+      "term": "queries",
       "count": 1
     },
     {
-      "term": "opt-out",
+      "term": "open",
       "count": 1
     },
     {
-      "term": "next",
+      "term": "fastest-growing",
       "count": 1
     },
     {
-      "term": "visitor",
+      "term": "traffic",
+      "count": 1
+    },
+    {
+      "term": "source",
+      "count": 1
+    },
+    {
+      "term": "per",
+      "count": 1
+    },
+    {
+      "term": "data",
+      "count": 1
+    },
+    {
+      "term": "integrity",
+      "count": 1
+    },
+    {
+      "term": "graph",
+      "count": 1
+    },
+    {
+      "term": "missing",
+      "count": 1
+    },
+    {
+      "term": "layer",
+      "count": 1
+    },
+    {
+      "term": "visibility",
+      "count": 1
+    },
+    {
+      "term": "audit",
+      "count": 1
+    },
+    {
+      "term": "billhunt",
+      "count": 1
+    },
+    {
+      "term": "research",
+      "count": 1
+    },
+    {
+      "term": "suggests",
+      "count": 1
+    },
+    {
+      "term": "engines",
+      "count": 1
+    },
+    {
+      "term": "assign",
+      "count": 1
+    },
+    {
+      "term": "ranking",
+      "count": 1
+    },
+    {
+      "term": "roles",
+      "count": 1
+    },
+    {
+      "term": "sources",
+      "count": 1
+    },
+    {
+      "term": "future",
       "count": 1
     }
   ]
