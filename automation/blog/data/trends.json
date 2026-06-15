@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-06-11T09:08:24.435585+00:00",
+  "collected_at": "2026-06-15T10:54:08.128348+00:00",
   "feeds": [
     "Google Search Central",
     "Search Engine Journal",
@@ -10,182 +10,95 @@
   "entries": [
     {
       "source": "Search Engine Journal",
-      "title": "Google Is Adding Business Profile Tools To The Gemini App via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/google-is-adding-business-profile-tools-to-the-gemini-app/578824/",
-      "published": "Wed, 10 Jun 2026 20:08:36 +0000",
+      "title": "Google\u2019s Unexpected Take On Site Folder Structure And SEO via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/googles-unexpected-take-on-site-folder-structure-and-seo/579268/",
+      "published": "Mon, 15 Jun 2026 10:44:07 +0000",
       "tokens": [
-        "adding",
-        "business",
-        "profile",
-        "tools",
-        "gemini",
-        "app",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Search Sends 23% Of Queries To The Open Web via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/google-search-sends-23-of-queries-to-the-open-web/578724/",
-      "published": "Wed, 10 Jun 2026 14:26:29 +0000",
-      "tokens": [
-        "sends",
-        "queries",
-        "open",
-        "web",
+        "unexpected",
+        "take",
+        "site",
+        "folder",
+        "structure",
         "via",
         "sejournal",
-        "mattgsouthern"
+        "martinibuster"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "Claude Is The Fastest-Growing AI Traffic Source, Per New Data via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/claude-is-the-fastest-growing-ai-traffic-source-per-new-data/578669/",
-      "published": "Wed, 10 Jun 2026 13:43:06 +0000",
+      "title": "Your Q4 Budget Is Built On 2024 Search Data \u2013 3 New Reports That Should Reshape It via @sejournal, @gregjarboe",
+      "url": "https://www.searchenginejournal.com/your-q4-budget-is-built-on-2024-search-data-3-new-reports-that-should-reshape-it/579190/",
+      "published": "Mon, 15 Jun 2026 10:15:52 +0000",
       "tokens": [
-        "claude",
-        "fastest-growing",
-        "traffic",
-        "source",
-        "per",
+        "budget",
+        "built",
+        "data",
         "new",
+        "reports",
+        "should",
+        "reshape",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google Cloud Announces The Open Knowledge Format via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/google-cloud-announces-the-open-knowledge-format/579253/",
+      "published": "Mon, 15 Jun 2026 10:07:11 +0000",
+      "tokens": [
+        "cloud",
+        "announces",
+        "open",
+        "knowledge",
+        "format",
+        "via",
+        "sejournal",
+        "martinibuster"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "How One Team Earned 1,000+ AI Citations With Unique Research Data via @sejournal, @lorenbaker",
+      "url": "https://www.searchenginejournal.com/how-one-team-earned-1000-ai-citations-with-unique-research-data-webinar/578513/",
+      "published": "Mon, 15 Jun 2026 07:45:45 +0000",
+      "tokens": [
+        "one",
+        "team",
+        "earned",
+        "citations",
+        "unique",
+        "research",
         "data",
         "via"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "The Integrity Graph: The Missing Layer In Your AI Visibility Audit via @sejournal, @billhunt",
-      "url": "https://www.searchenginejournal.com/the-integrity-graph-the-missing-layer-in-your-ai-visibility-audit/577854/",
-      "published": "Wed, 10 Jun 2026 13:30:06 +0000",
+      "title": "Stripe Projects Opens Cloud Infrastructure Buying To AI Agents via @sejournal, @slobodanmanic",
+      "url": "https://www.searchenginejournal.com/stripe-projects-opens-cloud-infrastructure-buying-to-ai-agents/575504/",
+      "published": "Sun, 14 Jun 2026 12:00:16 +0000",
       "tokens": [
-        "integrity",
-        "graph",
-        "missing",
-        "layer",
+        "stripe",
+        "projects",
+        "opens",
+        "cloud",
+        "infrastructure",
+        "buying",
+        "agents",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "What Apple\u2019s Gemini-Powered Siri Means For Search Visibility via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/what-apples-gemini-powered-siri-means-for-search-visibility/578931/",
+      "published": "Sat, 13 Jun 2026 12:00:28 +0000",
+      "tokens": [
+        "apple",
+        "gemini-powered",
+        "siri",
+        "means",
         "visibility",
-        "audit",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Research Suggests AI Engines Assign Ranking Roles To Sources via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/research-suggests-ai-engines-assign-ranking-roles-to-sources/578620/",
-      "published": "Wed, 10 Jun 2026 13:00:33 +0000",
-      "tokens": [
-        "research",
-        "suggests",
-        "engines",
-        "assign",
-        "ranking",
-        "roles",
-        "sources",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "What The Future Of Google Looks Like",
-      "url": "https://www.searchenginejournal.com/what-the-future-of-google-looks-like/578349/",
-      "published": "Wed, 10 Jun 2026 11:00:35 +0000",
-      "tokens": [
-        "future",
-        "looks",
-        "like"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "SEO Panel Agrees: Brand Is The New Backlink For AI SEO via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/seo-panel-agrees-brand-is-the-new-backlink-for-ai-seo/578567/",
-      "published": "Wed, 10 Jun 2026 10:10:18 +0000",
-      "tokens": [
-        "panel",
-        "agrees",
-        "brand",
-        "new",
-        "backlink",
-        "via",
-        "sejournal",
-        "martinibuster"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Why Your Product Feed Is An SEO Asset (And Who Should Own It) via @sejournal, @demirie",
-      "url": "https://www.searchenginejournal.com/why-your-product-feed-is-an-seo-asset-and-who-should-own-it/575543/",
-      "published": "Wed, 10 Jun 2026 09:00:45 +0000",
-      "tokens": [
-        "why",
-        "product",
-        "feed",
-        "asset",
-        "who",
-        "should",
-        "own",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "AI Search In 2026: Five Findings From 300 Enterprise Marketing Execs",
-      "url": "https://www.searchenginejournal.com/enterprise-ai-search-report-branch-spa/575983/",
-      "published": "Wed, 10 Jun 2026 05:00:46 +0000",
-      "tokens": [
-        "five",
-        "findings",
-        "enterprise",
-        "marketing",
-        "execs"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Claude Fable 5 \u201cFeels Next Level\u201d via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/claude-fable-5-feels-next-level/578538/",
-      "published": "Wed, 10 Jun 2026 03:30:45 +0000",
-      "tokens": [
-        "claude",
-        "fable",
-        "feels",
-        "next",
-        "level",
-        "via",
-        "sejournal",
-        "martinibuster"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "US Publishers Demand Common Crawl Stop Scraping Their Content via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/us-publishers-demand-common-crawl-stop-scraping-their-content/578532/",
-      "published": "Wed, 10 Jun 2026 00:45:20 +0000",
-      "tokens": [
-        "publishers",
-        "demand",
-        "common",
-        "crawl",
-        "stop",
-        "scraping",
-        "their",
-        "content"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "More News Sites Default To Blocking AI Crawlers via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/more-news-sites-default-to-blocking-ai-crawlers/578527/",
-      "published": "Wed, 10 Jun 2026 00:06:10 +0000",
-      "tokens": [
-        "more",
-        "sites",
-        "default",
-        "blocking",
-        "crawlers",
         "via",
         "sejournal",
         "mattgsouthern"
@@ -193,49 +106,145 @@
     },
     {
       "source": "Search Engine Journal",
-      "title": "Reddit Gained Top Positions In Every Niche After May Core Update via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/reddit-gained-top-positions-in-every-niche-after-may-core-update/578502/",
-      "published": "Tue, 09 Jun 2026 16:44:39 +0000",
+      "title": "Anthropic Forced To Shut Down Fable 5 By U.S. Government Order via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/government-order-shuts-down-fable-5-despite-anthropics-objections/579168/",
+      "published": "Sat, 13 Jun 2026 04:12:48 +0000",
       "tokens": [
-        "reddit",
-        "gained",
-        "top",
-        "positions",
-        "every",
-        "niche",
-        "after",
-        "may"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Web Push Advertising 2026: Market Trends, Challenges & Opportunities via @sejournal, @rollerads",
-      "url": "https://www.searchenginejournal.com/web-push-advertising-trends-rollerads-spa/575976/",
-      "published": "Tue, 09 Jun 2026 15:08:50 +0000",
-      "tokens": [
-        "web",
-        "push",
-        "advertising",
-        "market",
-        "trends",
-        "challenges",
-        "opportunities",
+        "anthropic",
+        "forced",
+        "shut",
+        "down",
+        "fable",
+        "government",
+        "order",
         "via"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "The Complete Guide To Local SEO For Multiple Locations via @sejournal, @TaylorDanRW",
-      "url": "https://www.searchenginejournal.com/the-complete-guide-to-local-seo-for-multiple-locations/578080/",
-      "published": "Tue, 09 Jun 2026 13:30:17 +0000",
+      "title": "Google Publishes Tennessee Search \u201cBlacklist\u201d Guidance via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/google-publishes-tennessee-search-blacklist-guidance/579161/",
+      "published": "Fri, 12 Jun 2026 22:52:58 +0000",
       "tokens": [
-        "complete",
-        "local",
-        "multiple",
-        "locations",
+        "publishes",
+        "tennessee",
+        "blacklist",
+        "guidance",
         "via",
         "sejournal",
-        "taylordanrw"
+        "martinibuster"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "MonsterInsights Website Compromised And Sending Phishing Emails via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/monsterinsights-website-compromised-and-sending-phishing-emails/579140/",
+      "published": "Fri, 12 Jun 2026 21:09:18 +0000",
+      "tokens": [
+        "monsterinsights",
+        "website",
+        "compromised",
+        "sending",
+        "phishing",
+        "emails",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google Rolls Out AI Mode Information Agents To Ultra Subscribers via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/google-rolls-out-ai-mode-information-agents-to-ultra-subscribers/579085/",
+      "published": "Fri, 12 Jun 2026 19:44:53 +0000",
+      "tokens": [
+        "rolls",
+        "out",
+        "mode",
+        "information",
+        "agents",
+        "ultra",
+        "subscribers",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google Extends Dynamic Search Ads Migration Deadline via @sejournal, @brookeosmundson",
+      "url": "https://www.searchenginejournal.com/google-extends-dynamic-search-ads-migration-deadline/579074/",
+      "published": "Fri, 12 Jun 2026 19:21:24 +0000",
+      "tokens": [
+        "extends",
+        "dynamic",
+        "ads",
+        "migration",
+        "deadline",
+        "via",
+        "sejournal",
+        "brookeosmundson"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Reddit Climbs, Clicks Drop, GBP Comes To GA4 \u2013 SEO Pulse via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/seo-pulse-reddit-climbs-clicks-drop-gbp-comes-to-ga4/579029/",
+      "published": "Fri, 12 Jun 2026 12:30:23 +0000",
+      "tokens": [
+        "reddit",
+        "climbs",
+        "clicks",
+        "drop",
+        "gbp",
+        "comes",
+        "pulse",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "What AI Overview Click Data Reveals About Consumer Search Behavior: 5 Strategic Insights For CMOs via @sejournal, @gregjarboe",
+      "url": "https://www.searchenginejournal.com/ai-overview-click-data-reveals-unexpected-user-behavior-patterns-for-marketers/578379/",
+      "published": "Fri, 12 Jun 2026 11:02:35 +0000",
+      "tokens": [
+        "overview",
+        "click",
+        "data",
+        "reveals",
+        "consumer",
+        "behavior",
+        "strategic",
+        "insights"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google\u2019s Agent-Friendly Checklist Is The Accessibility Audit Restated via @sejournal, @slobodanmanic",
+      "url": "https://www.searchenginejournal.com/googles-agent-friendly-checklist-is-the-accessibility-audit-restated/575495/",
+      "published": "Fri, 12 Jun 2026 09:00:35 +0000",
+      "tokens": [
+        "agent-friendly",
+        "checklist",
+        "accessibility",
+        "audit",
+        "restated",
+        "via",
+        "sejournal",
+        "slobodanmanic"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "AI Bots Keep Overloading Servers. Should Website Owners Keep Paying? via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/ai-bots-keep-overloading-servers-should-website-owners-keep-paying/579018/",
+      "published": "Thu, 11 Jun 2026 23:53:14 +0000",
+      "tokens": [
+        "bots",
+        "keep",
+        "overloading",
+        "servers",
+        "should",
+        "website",
+        "owners",
+        "keep"
       ]
     },
     {
@@ -370,42 +379,58 @@
   "top_terms": [
     {
       "term": "via",
-      "count": 13
+      "count": 15
     },
     {
       "term": "sejournal",
-      "count": 13
-    },
-    {
-      "term": "mattgsouthern",
-      "count": 6
-    },
-    {
-      "term": "business",
-      "count": 3
+      "count": 15
     },
     {
       "term": "martinibuster",
-      "count": 3
-    },
-    {
-      "term": "web",
-      "count": 2
-    },
-    {
-      "term": "claude",
-      "count": 2
-    },
-    {
-      "term": "new",
-      "count": 2
-    },
-    {
-      "term": "opportunities",
-      "count": 2
+      "count": 6
     },
     {
       "term": "website",
+      "count": 4
+    },
+    {
+      "term": "data",
+      "count": 3
+    },
+    {
+      "term": "mattgsouthern",
+      "count": 3
+    },
+    {
+      "term": "ads",
+      "count": 3
+    },
+    {
+      "term": "should",
+      "count": 2
+    },
+    {
+      "term": "gregjarboe",
+      "count": 2
+    },
+    {
+      "term": "cloud",
+      "count": 2
+    },
+    {
+      "term": "agents",
+      "count": 2
+    },
+    {
+      "term": "slobodanmanic",
+      "count": 2
+    },
+    {
+      "term": "keep",
+      "count": 2
+    },
+    {
+      "term": "business",
       "count": 2
     },
     {
@@ -413,35 +438,47 @@
       "count": 2
     },
     {
-      "term": "ads",
-      "count": 2
-    },
-    {
-      "term": "adding",
+      "term": "unexpected",
       "count": 1
     },
     {
-      "term": "profile",
+      "term": "take",
       "count": 1
     },
     {
-      "term": "tools",
+      "term": "site",
       "count": 1
     },
     {
-      "term": "gemini",
+      "term": "folder",
       "count": 1
     },
     {
-      "term": "app",
+      "term": "structure",
       "count": 1
     },
     {
-      "term": "sends",
+      "term": "budget",
       "count": 1
     },
     {
-      "term": "queries",
+      "term": "built",
+      "count": 1
+    },
+    {
+      "term": "new",
+      "count": 1
+    },
+    {
+      "term": "reports",
+      "count": 1
+    },
+    {
+      "term": "reshape",
+      "count": 1
+    },
+    {
+      "term": "announces",
       "count": 1
     },
     {
@@ -449,51 +486,31 @@
       "count": 1
     },
     {
-      "term": "fastest-growing",
+      "term": "knowledge",
       "count": 1
     },
     {
-      "term": "traffic",
+      "term": "format",
       "count": 1
     },
     {
-      "term": "source",
+      "term": "one",
       "count": 1
     },
     {
-      "term": "per",
+      "term": "team",
       "count": 1
     },
     {
-      "term": "data",
+      "term": "earned",
       "count": 1
     },
     {
-      "term": "integrity",
+      "term": "citations",
       "count": 1
     },
     {
-      "term": "graph",
-      "count": 1
-    },
-    {
-      "term": "missing",
-      "count": 1
-    },
-    {
-      "term": "layer",
-      "count": 1
-    },
-    {
-      "term": "visibility",
-      "count": 1
-    },
-    {
-      "term": "audit",
-      "count": 1
-    },
-    {
-      "term": "billhunt",
+      "term": "unique",
       "count": 1
     },
     {
@@ -501,31 +518,23 @@
       "count": 1
     },
     {
-      "term": "suggests",
+      "term": "lorenbaker",
       "count": 1
     },
     {
-      "term": "engines",
+      "term": "stripe",
       "count": 1
     },
     {
-      "term": "assign",
+      "term": "projects",
       "count": 1
     },
     {
-      "term": "ranking",
+      "term": "opens",
       "count": 1
     },
     {
-      "term": "roles",
-      "count": 1
-    },
-    {
-      "term": "sources",
-      "count": 1
-    },
-    {
-      "term": "future",
+      "term": "infrastructure",
       "count": 1
     }
   ]

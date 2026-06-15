@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T09:08:26.631419+00:00",
+  "generated_at": "2026-06-15T10:54:10.934644+00:00",
   "idea_count": 4,
   "gemini_calls_this_run": 0,
   "gemini_enabled": true,
@@ -17,8 +17,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/google-is-adding-business-profile-tools-to-the-gemini-app/578824/",
-        "https://www.searchenginejournal.com/google-search-sends-23-of-queries-to-the-open-web/578724/"
+        "https://www.searchenginejournal.com/googles-unexpected-take-on-site-folder-structure-and-seo/579268/",
+        "https://www.searchenginejournal.com/your-q4-budget-is-built-on-2024-search-data-3-new-reports-that-should-reshape-it/579190/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -39,7 +39,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'ai search visibility': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include Google Is Adding Business Profile Tools To The Gemini App via @sejournal, @MattGSouthern; Google Search Sends 23% Of Queries To The Open Web via @sejournal, @MattGSouthern; Claude Is The Fastest-Growing AI Traffic Source, Per New Data via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'ai search visibility': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include Google\u2019s Unexpected Take On Site Folder Structure And SEO via @sejournal, @martinibuster; Your Q4 Budget Is Built On 2024 Search Data \u2013 3 New Reports That Should Reshape It via @sejournal, @gregjarboe; Google Cloud Announces The Open Knowledge Format via @sejournal, @martinibuster. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -56,8 +56,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/claude-is-the-fastest-growing-ai-traffic-source-per-new-data/578669/",
-        "https://www.searchenginejournal.com/the-integrity-graph-the-missing-layer-in-your-ai-visibility-audit/577854/"
+        "https://www.searchenginejournal.com/google-cloud-announces-the-open-knowledge-format/579253/",
+        "https://www.searchenginejournal.com/how-one-team-earned-1000-ai-citations-with-unique-research-data-webinar/578513/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -78,7 +78,7 @@
         "When should I use noindex versus canonical consolidation?",
         "What Core Web Vitals matter most for SEO?"
       ],
-      "serp_analysis": "SERP snapshot for 'google core update recovery': dominant intent is **informational_technical** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include Google Is Adding Business Profile Tools To The Gemini App via @sejournal, @MattGSouthern; Google Search Sends 23% Of Queries To The Open Web via @sejournal, @MattGSouthern; Claude Is The Fastest-Growing AI Traffic Source, Per New Data via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'google core update recovery': dominant intent is **informational_technical** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include Google\u2019s Unexpected Take On Site Folder Structure And SEO via @sejournal, @martinibuster; Your Q4 Budget Is Built On 2024 Search Data \u2013 3 New Reports That Should Reshape It via @sejournal, @gregjarboe; Google Cloud Announces The Open Knowledge Format via @sejournal, @martinibuster. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -95,8 +95,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/research-suggests-ai-engines-assign-ranking-roles-to-sources/578620/",
-        "https://www.searchenginejournal.com/what-the-future-of-google-looks-like/578349/"
+        "https://www.searchenginejournal.com/stripe-projects-opens-cloud-infrastructure-buying-to-ai-agents/575504/",
+        "https://www.searchenginejournal.com/what-apples-gemini-powered-siri-means-for-search-visibility/578931/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -118,7 +118,7 @@
         "What local landing page elements increase bookings?",
         "How often should I update photos and posts on GBP?"
       ],
-      "serp_analysis": "SERP snapshot for 'local seo conversion strategy': dominant intent is **local_commercial** at the **decision** funnel stage. Observed SERP features include featured_snippet, local_pack. Recent titles in the news layer include Google Is Adding Business Profile Tools To The Gemini App via @sejournal, @MattGSouthern; Google Search Sends 23% Of Queries To The Open Web via @sejournal, @MattGSouthern; Claude Is The Fastest-Growing AI Traffic Source, Per New Data via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'local seo conversion strategy': dominant intent is **local_commercial** at the **decision** funnel stage. Observed SERP features include featured_snippet, local_pack. Recent titles in the news layer include Google\u2019s Unexpected Take On Site Folder Structure And SEO via @sejournal, @martinibuster; Your Q4 Budget Is Built On 2024 Search Data \u2013 3 New Reports That Should Reshape It via @sejournal, @gregjarboe; Google Cloud Announces The Open Knowledge Format via @sejournal, @martinibuster. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -135,8 +135,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/seo-panel-agrees-brand-is-the-new-backlink-for-ai-seo/578567/",
-        "https://www.searchenginejournal.com/why-your-product-feed-is-an-seo-asset-and-who-should-own-it/575543/"
+        "https://www.searchenginejournal.com/government-order-shuts-down-fable-5-despite-anthropics-objections/579168/",
+        "https://www.searchenginejournal.com/google-publishes-tennessee-search-blacklist-guidance/579161/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -157,7 +157,7 @@
         "How do I separate a penalty from a core update?",
         "What E-E-A-T signals matter most for YMYL niches?"
       ],
-      "serp_analysis": "SERP snapshot for 'seo reporting for pipeline': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include Google Is Adding Business Profile Tools To The Gemini App via @sejournal, @MattGSouthern; Google Search Sends 23% Of Queries To The Open Web via @sejournal, @MattGSouthern; Claude Is The Fastest-Growing AI Traffic Source, Per New Data via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'seo reporting for pipeline': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include Google\u2019s Unexpected Take On Site Folder Structure And SEO via @sejournal, @martinibuster; Your Q4 Budget Is Built On 2024 Search Data \u2013 3 New Reports That Should Reshape It via @sejournal, @gregjarboe; Google Cloud Announces The Open Knowledge Format via @sejournal, @martinibuster. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     }
