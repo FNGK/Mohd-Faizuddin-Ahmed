@@ -56,7 +56,7 @@ humanization_metrics:
   max_shingle_overlap: 0.0
   flesch_ease: 50.69
   fk_grade: 10.17
-last_humanization_check: '2026-06-18T09:10:05.393326+00:00'
+last_humanization_check: '2026-06-22T10:36:06.428452+00:00'
 ---
 
 ## After a core update, panic edits usually make things worse

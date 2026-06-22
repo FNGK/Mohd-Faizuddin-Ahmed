@@ -56,7 +56,7 @@ humanization_metrics:
   max_shingle_overlap: 0.0
   flesch_ease: 53.66
   fk_grade: 9.83
-last_humanization_check: '2026-06-18T09:10:05.346285+00:00'
+last_humanization_check: '2026-06-22T10:36:06.392890+00:00'
 ---
 
 ## AI answers reward clarity, not another "AI SEO" landing page
