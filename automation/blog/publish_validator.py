@@ -4,10 +4,12 @@
 from __future__ import annotations
 
 import argparse
+import datetime as _dt
 import json
 import re
 import shutil
 from pathlib import Path
+from urllib.parse import urlparse
 
 import markdown
 import yaml
@@ -73,52 +75,180 @@ def validate_frontmatter(data: dict, body: str, *, publishing: bool) -> list[str
     return errors
 
 
-def make_links_html(links: list[str], label_prefix: str, external: bool) -> str:
+# Friendly labels for internal "related" links (path normalized, no ../ prefix).
+_INTERNAL_LABELS = {
+    "services/index.html": ("Service catalog", "Services"),
+    "services/technical-seo.html": ("Technical SEO", "Service"),
+    "services/local-seo.html": ("Local SEO", "Service"),
+    "services/international-seo.html": ("International SEO", "Service"),
+    "services/content-seo.html": ("Content SEO", "Service"),
+    "resources/seo-audit-playbook.html": ("SEO audit playbook", "Resource"),
+    "case-studies/index.html": ("Case studies", "Proof"),
+    "contact/index.html": ("Book a strategy call", "Contact"),
+    "free-tools/gsc-error-priority-calculator.html": ("GSC priority calculator", "Free tool"),
+}
+
+
+def _internal_key(url: str) -> str:
+    return re.sub(r"^(\.\./)+", "", url).lstrip("./")
+
+
+def _external_label(url: str) -> str:
+    try:
+        parsed = urlparse(url)
+        host = parsed.netloc.replace("www.", "")
+        segs = [s for s in parsed.path.split("/") if s and not s.endswith((".html", ".php"))]
+        if segs:
+            title = segs[-1].replace("-", " ").replace("_", " ").strip().title()
+            return f"{host} — {title}"
+        return host
+    except Exception:
+        return url
+
+
+def build_reference_items(urls: list[str]) -> str:
     rows = []
-    for idx, url in enumerate(links, start=1):
-        target = ' target="_blank" rel="noopener noreferrer"' if external else ""
-        rows.append(f'<ul><li><a href="{url}"{target}>{label_prefix} {idx}</a></li></ul>')
+    for url in urls:
+        rows.append(
+            f'    <li><a href="{url}" target="_blank" rel="noopener noreferrer">{_external_label(url)}</a></li>'
+        )
     return "\n".join(rows)
 
 
-def build_faq_schema(data: dict, body: str) -> str:
-    questions = []
-    for match in re.finditer(r"^###\s+(.+)$\n+([^#]+)", body, flags=re.MULTILINE):
-        q = match.group(1).strip()
-        a = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", match.group(2).strip())
-        a = re.sub(r"\*+", "", a)[:500]
-        questions.append({"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}})
-    if not questions:
+def build_related_cards(links: list[str]) -> str:
+    cards = []
+    for url in links:
+        key = _internal_key(url)
+        if key in _INTERNAL_LABELS:
+            title, eyebrow = _INTERNAL_LABELS[key]
+        else:
+            title = key.rsplit("/", 1)[-1].replace(".html", "").replace("-", " ").title()
+            eyebrow = "Resource"
+        cards.append(
+            f'    <a class="related-post" href="{url}">\n'
+            f'      <span class="related-post__eyebrow">{eyebrow}</span>\n'
+            f'      <h3>{title}</h3>\n'
+            f'      <span class="go">Read &rarr;</span>\n'
+            f"    </a>"
+        )
+    return "\n".join(cards)
+
+
+def get_faqs(data: dict) -> list[tuple[str, str]]:
+    """FAQs come from an explicit frontmatter `faqs` list of {question, answer}.
+
+    This is intentional: deriving FAQs from every `###` heading (the old
+    behavior) mislabeled normal subheadings as Q&A and duplicated them on the
+    page. Explicit faqs give clean, valid FAQPage schema and a real accordion.
+    """
+    out = []
+    for item in data.get("faqs") or []:
+        q = str(item.get("question", "")).strip()
+        a = str(item.get("answer", "")).strip()
+        if q and a:
+            out.append((q, a))
+    return out
+
+
+def build_faq_schema(faqs: list[tuple[str, str]]) -> str:
+    if not faqs:
         return ""
     payload = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "mainEntity": questions[:6],
+        "mainEntity": [
+            {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a[:600]}}
+            for q, a in faqs[:8]
+        ],
     }
     return json.dumps(payload, ensure_ascii=True)
 
 
+def build_faq_visible(faqs: list[tuple[str, str]]) -> str:
+    if not faqs:
+        return ""
+    items = "\n".join(
+        f"    <details><summary>{q}</summary><p>{a}</p></details>" for q, a in faqs[:8]
+    )
+    return (
+        '<h2>Frequently asked questions</h2>\n'
+        '          <div class="post-faq">\n'
+        f"{items}\n"
+        "          </div>"
+    )
+
+
+def build_key_takeaways(data: dict) -> str:
+    items = data.get("key_takeaways") or []
+    if not items:
+        return ""
+    lis = "\n".join(f"      <li>{x}</li>" for x in items)
+    return (
+        '<aside class="key-takeaways" aria-label="Key takeaways">\n'
+        '            <p class="key-takeaways__title">Key takeaways</p>\n'
+        f"            <ul>\n{lis}\n            </ul>\n"
+        "          </aside>"
+    )
+
+
+def build_breadcrumb_schema(data: dict) -> str:
+    payload = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://seowithfaiz.com/"},
+            {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://seowithfaiz.com/blog/"},
+            {"@type": "ListItem", "position": 3, "name": str(data["title"]), "item": str(data["canonical_url"])},
+        ],
+    }
+    return (
+        '<script type="application/ld+json">\n  '
+        + json.dumps(payload, ensure_ascii=True)
+        + "\n  </script>"
+    )
+
+
+def _word_count(body_markdown: str) -> int:
+    text = re.sub(r"[#*`>\[\]()_-]", " ", body_markdown)
+    return len(re.findall(r"\b\w+\b", text))
+
+
+def _date_display(date_str: str) -> str:
+    try:
+        d = _dt.datetime.strptime(str(date_str), "%Y-%m-%d")
+        return f"{d.strftime('%B')} {d.day}, {d.year}"
+    except Exception:
+        return str(date_str)
+
+
 def render_html(template: str, data: dict, body_markdown: str) -> str:
     post_html = markdown.markdown(body_markdown, extensions=["tables", "fenced_code"])
-    faq_schema = build_faq_schema(data, body_markdown)
-    article_schema_extra = ""
-    if faq_schema:
-        article_schema_extra = f',\n    "subjectOf": {faq_schema}'
+    faqs = get_faqs(data)
+    faq_schema = build_faq_schema(faqs)
+    article_schema_extra = f',\n    "subjectOf": {faq_schema}' if faq_schema else ""
+    words = _word_count(body_markdown)
+    read_time = max(1, round(words / 220))
     replacements = {
         "{{TITLE}}": str(data["title"]),
         "{{META_DESCRIPTION}}": str(data["meta_description"]),
         "{{CANONICAL_URL}}": str(data["canonical_url"]),
         "{{OG_IMAGE}}": str(data["og_image"]),
         "{{DATE_PUBLISHED}}": str(data["date"]),
-        "{{DATE_MODIFIED}}": str(data["date"]),
+        "{{DATE_MODIFIED}}": str(data.get("date_modified") or data["date"]),
+        "{{DATE_DISPLAY}}": _date_display(data["date"]),
+        "{{READ_TIME}}": str(read_time),
+        "{{WORD_COUNT}}": str(words),
         "{{PRIMARY_KEYWORD}}": str(data["primary_keyword"]),
         "{{INTRO_HOOK}}": str(data["intro_hook"]),
         "{{FEATURE_IMAGE}}": str(data["feature_image"]),
         "{{FEATURE_IMAGE_ALT}}": str(data["feature_image_alt"]),
+        "{{KEY_TAKEAWAYS_HTML}}": build_key_takeaways(data),
         "{{POST_HTML}}": post_html,
-        "{{EXTERNAL_SOURCES_HTML}}": make_links_html(data["external_sources"], "External source", True),
-        "{{INTERNAL_LINKS_HTML}}": make_links_html(data["internal_links"], "Related resource", False),
+        "{{FAQ_HTML}}": build_faq_visible(faqs),
+        "{{EXTERNAL_SOURCES_HTML}}": build_reference_items(data["external_sources"]),
+        "{{INTERNAL_LINKS_HTML}}": build_related_cards(data["internal_links"]),
         "{{FAQ_SCHEMA_EXTRA}}": article_schema_extra,
+        "{{BREADCRUMB_SCHEMA}}": build_breadcrumb_schema(data),
     }
     html = template
     for key, value in replacements.items():

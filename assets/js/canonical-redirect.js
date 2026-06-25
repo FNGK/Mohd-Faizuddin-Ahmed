@@ -1,4 +1,18 @@
 /**
+ * Theme bootstrap — runs synchronously in <head> before first paint to avoid
+ * a light->dark flash. Dark-premium is the default brand identity; an explicit
+ * stored choice wins. Full theme toggle wiring lives in site.js.
+ */
+(function () {
+  try {
+    var stored = localStorage.getItem('seowithfaiz-theme');
+    document.documentElement.setAttribute('data-theme', stored || 'dark');
+  } catch (e) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+})();
+
+/**
  * Redirect GitHub Pages project URLs to the canonical custom domain.
  * Loaded synchronously in <head> so visitors and crawlers reach seowithfaiz.com quickly.
  */

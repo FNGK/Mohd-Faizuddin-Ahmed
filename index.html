@@ -77,8 +77,23 @@
         ],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
-          "name": "SEO Services",
+          "name": "SEO Services and Packages",
           "itemListElement": [
+            {
+              "@type": "Offer",
+              "name": "Starter SEO audit",
+              "priceCurrency": "USD",
+              "price": "100",
+              "priceSpecification": {"@type": "PriceSpecification", "price": "100", "priceCurrency": "USD"},
+              "itemOffered": {"@type": "Service", "name": "Starter SEO audit", "description": "Technical and on-page diagnostic with a 30-day prioritized roadmap."}
+            },
+            {
+              "@type": "Offer",
+              "name": "Growth retainer",
+              "priceCurrency": "USD",
+              "priceSpecification": {"@type": "UnitPriceSpecification", "price": "499", "priceCurrency": "USD", "minPrice": "499", "unitCode": "MON", "referenceQuantity": {"@type": "QuantitativeValue", "value": "1", "unitCode": "MON"}},
+              "itemOffered": {"@type": "Service", "name": "Monthly SEO growth retainer", "description": "Monthly technical, content, and reporting execution across target markets."}
+            },
             {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Technical SEO"}},
             {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Local SEO"}},
             {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "International SEO"}},
@@ -221,7 +236,7 @@
       <div class="container hero-grid">
         <div class="hero-copy">
           <span class="kicker">Pipeline-first SEO studio</span>
-          <h1>Organic growth engineered for revenue, not ranking vanity.</h1>
+          <h1>Organic growth engineered for <span class="text-grad">revenue</span>, not ranking vanity.</h1>
           <p class="lede">SEO With Faiz is the commercial SEO practice of Mohd Faizuddin Ahmed — built for B2B and service companies in the USA, Canada, Australia, and Europe that need qualified pipeline across classic search and AI answer surfaces.</p>
           <div class="answer-box" aria-label="Quick answer">
             <p><strong>Quick answer:</strong> Start with a technical and intent diagnostic, then execute monthly priorities tied to pipeline metrics — not vanity rank reports.</p>
@@ -259,11 +274,11 @@
       <div class="container stat-ribbon">
         <article class="stat-ribbon__item">
           <span class="stat-ribbon__label">Proof assets</span>
-          <span class="stat-ribbon__value">4 public builds</span>
+          <span class="stat-ribbon__value"><span data-count-to="4">4</span> public builds</span>
         </article>
         <article class="stat-ribbon__item">
           <span class="stat-ribbon__label">Starter audit</span>
-          <span class="stat-ribbon__value">USD 100</span>
+          <span class="stat-ribbon__value"><span data-count-to="100" data-count-prefix="USD ">USD 100</span></span>
         </article>
         <article class="stat-ribbon__item">
           <span class="stat-ribbon__label">Schema graph</span>
@@ -374,35 +389,94 @@
       </div>
     </section>
 
-    <section class="section section-sm">
+    <section class="section section-sm section-band" aria-label="How engagements work">
       <div class="container">
-        <span class="kicker">Services</span>
-        <h2>Global SEO services with hybrid pricing.</h2>
-        <p class="lede">Start with a focused diagnostic engagement, then scale into implementation retainers built around your market and growth stage.</p>
-        <div class="grid-2" style="margin-top:1rem;">
-          <article class="card">
-            <h3>Starter SEO audit</h3>
-            <p>Best for teams that need clear technical and on-page priorities before investing in full implementation.</p>
-            <ul>
-              <li>Technical SEO and architecture review (up to 10 core pages)</li>
-              <li>Intent and content gap map</li>
-              <li>30-day action roadmap with priority stack</li>
-            </ul>
-            <p><strong>Starter pricing:</strong> USD 100 (upfront)</p>
-            <a class="btn btn-secondary" href="./services/technical-seo.html">View scope</a>
+        <div class="section-band-head">
+          <span class="kicker">How we work</span>
+          <h2>A four-step model that ties every action to pipeline.</h2>
+          <p class="lede">No vague retainers. Each sprint moves through the same accountable loop so you always know what is being done and why.</p>
+        </div>
+        <div class="process-steps">
+          <article class="process-step">
+            <span class="process-step__num" aria-hidden="true">1</span>
+            <h3>Diagnose</h3>
+            <p>Audit technical integrity, intent coverage, and conversion friction across your priority pages.</p>
           </article>
-          <article class="card">
-            <h3>Custom growth retainers</h3>
-            <p>For companies ready to execute monthly SEO implementation and reporting across target markets.</p>
-            <ul>
-              <li>Technical fixes and content operations</li>
-              <li>Local and international market expansion</li>
-              <li>Monthly performance and pipeline reporting</li>
+          <article class="process-step">
+            <span class="process-step__num" aria-hidden="true">2</span>
+            <h3>Prioritize</h3>
+            <p>Rank actions by expected business impact and implementation complexity — highest leverage first.</p>
+          </article>
+          <article class="process-step">
+            <span class="process-step__num" aria-hidden="true">3</span>
+            <h3>Execute</h3>
+            <p>Ship technical, content, and internal-linking improvements in focused sprint cycles.</p>
+          </article>
+          <article class="process-step">
+            <span class="process-step__num" aria-hidden="true">4</span>
+            <h3>Prove</h3>
+            <p>Report qualified traffic, lead actions, and pipeline movement — with assumptions stated openly.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-sm" id="pricing" aria-label="Pricing">
+      <div class="container">
+        <span class="kicker">Transparent pricing</span>
+        <h2>Premium SEO execution at globally affordable rates.</h2>
+        <p class="lede">Start with a low-risk diagnostic, then scale into an implementation retainer built around your market and growth stage. No long lock-ins, no agency markup — you work directly with Faiz.</p>
+        <div class="pricing-grid">
+          <article class="price-card">
+            <span class="price-card__name">Starter audit</span>
+            <div class="price-card__price">
+              <span class="price-card__amount">$100</span>
+              <span class="price-card__period">one-time</span>
+            </div>
+            <p class="price-card__desc">For teams that need clear technical and on-page priorities before committing to full implementation.</p>
+            <ul class="price-card__list">
+              <li>Technical SEO &amp; architecture review (up to 10 core pages)</li>
+              <li>Search intent and content gap map</li>
+              <li>30-day prioritized action roadmap</li>
+              <li>Delivered within a few business days</li>
             </ul>
-            <p><strong>Pricing model:</strong> custom scope by market, site size, and growth targets.</p>
+            <a class="btn btn-secondary" data-dynamic-cta href="./contact/index.html">Start with an audit</a>
+          </article>
+          <article class="price-card price-card--featured">
+            <span class="price-card__ribbon">Most popular</span>
+            <span class="price-card__name">Growth retainer</span>
+            <div class="price-card__price">
+              <span class="price-card__amount">$499</span>
+              <span class="price-card__period">/ month</span>
+            </div>
+            <p class="price-card__from">From — scoped to your site</p>
+            <p class="price-card__desc">For companies ready to execute monthly SEO implementation and reporting across target markets.</p>
+            <ul class="price-card__list">
+              <li>Everything in the starter audit</li>
+              <li>Technical fixes &amp; content operations</li>
+              <li>Local and international market expansion</li>
+              <li>Monthly performance &amp; pipeline reporting</li>
+              <li>Direct access to Faiz — no handoff chain</li>
+            </ul>
+            <a class="btn btn-primary" data-dynamic-cta href="./contact/index.html">Book strategy call</a>
+          </article>
+          <article class="price-card">
+            <span class="price-card__name">Scale &amp; custom</span>
+            <div class="price-card__price">
+              <span class="price-card__amount">Custom</span>
+            </div>
+            <p class="price-card__from">Quoted by market &amp; site size</p>
+            <p class="price-card__desc">For multi-market programs and larger sites that need governance and a dedicated cadence.</p>
+            <ul class="price-card__list">
+              <li>Multi-market hreflang governance</li>
+              <li>AEO / GEO content systems</li>
+              <li>Dedicated sprint cadence</li>
+              <li>Stakeholder-ready reporting</li>
+            </ul>
             <a class="btn btn-secondary" href="./services/index.html">Compare services</a>
           </article>
         </div>
+        <p class="lede" style="margin-top:1.25rem;font-size:0.92rem;">Pricing is transparent and flexible — final retainer scope depends on market, site size, and growth targets. <a href="./contact/index.html">Ask for a tailored quote</a>.</p>
       </div>
     </section>
 

@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-06-25T08:18:21.226175+00:00",
-  "idea_count": 4,
+  "generated_at": "2026-06-25T09:37:00.368195+00:00",
+  "idea_count": 15,
   "gemini_calls_this_run": 0,
-  "gemini_enabled": true,
+  "gemini_enabled": false,
   "ideas": [
     {
-      "title": "AI Search Visibility: What to Fix Before You Chase New Formats",
-      "slug": "ai-search-visibility-what-to-fix-before-you-chase-new-formats",
-      "primary_keyword": "ai search visibility seo strategy",
+      "title": "Answer Engine Optimization: Staying Visible as AI Reshapes Search in 2026",
+      "slug": "answer-engine-optimization-staying-visible-as-ai-reshapes-search-in-2026",
+      "primary_keyword": "answer engine optimization",
       "secondary_keywords": [
-        "ai search visibility seo checklist",
-        "ai search visibility best practices",
-        "ai search visibility implementation guide"
+        "answer engine optimization checklist",
+        "answer engine optimization examples",
+        "answer engine optimization best practices"
       ],
       "intent_cluster": "aeo and geo",
       "target_audience": "Marketing leads, founders, and growth managers",
@@ -33,31 +33,343 @@
         "featured_snippet"
       ],
       "paa_questions": [
-        "How does ai search visibility affect organic revenue in 2026?",
+        "How does answer engine optimization affect organic revenue in 2026?",
         "What is answer engine optimization in practice?",
         "How do I get cited in AI overviews without keyword stuffing?",
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'ai search visibility': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include What 2 Content Strategists Say AI Should Never Write For You [Webinar] via @sejournal, @hethr_campbell; Google\u2019s Mueller Explains How AI Search Impressions Get Counted via @sejournal, @MattGSouthern; Marketing Hiring Down 36% At Big Tech, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'answer engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include What 2 Content Strategists Say AI Should Never Write For You [Webinar] via @sejournal, @hethr_campbell; Google\u2019s Mueller Explains How AI Search Impressions Get Counted via @sejournal, @MattGSouthern; Marketing Hiring Down 36% At Big Tech, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
     {
-      "title": "Technical SEO Priorities When Crawl Budget and Revenue Both Matter",
-      "slug": "technical-seo-priorities-when-crawl-budget-and-revenue-both-matter",
-      "primary_keyword": "google core update recovery seo strategy",
+      "title": "Generative Engine Optimization: Staying Visible as AI Reshapes Search in 2026",
+      "slug": "generative-engine-optimization-staying-visible-as-ai-reshapes-search-in",
+      "primary_keyword": "generative engine optimization",
       "secondary_keywords": [
-        "google core update recovery seo checklist",
-        "google core update recovery best practices",
-        "google core update recovery implementation guide"
+        "generative engine optimization checklist",
+        "generative engine optimization examples",
+        "generative engine optimization best practices"
       ],
-      "intent_cluster": "technical optimization",
+      "intent_cluster": "aeo and geo",
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
         "https://www.searchenginejournal.com/marketing-hiring-down-36-at-big-tech-data-shows/580485/",
         "https://www.searchenginejournal.com/microsoft-clarity-now-flags-bots-that-ignore-robots-txt/580446/"
+      ],
+      "internal_links": [
+        "../../services/index.html",
+        "../../resources/seo-audit-playbook.html",
+        "../../case-studies/index.html",
+        "../../contact/index.html"
+      ],
+      "recommended_word_count": 1200,
+      "serp_intent": "informational",
+      "funnel_stage": "awareness",
+      "serp_features": [
+        "featured_snippet"
+      ],
+      "paa_questions": [
+        "How does generative engine optimization affect organic revenue in 2026?",
+        "What is answer engine optimization in practice?",
+        "How do I get cited in AI overviews without keyword stuffing?",
+        "Does structured data help generative search visibility?",
+        "How long should FAQ answers be for featured snippets?"
+      ],
+      "serp_analysis": "SERP snapshot for 'generative engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include What 2 Content Strategists Say AI Should Never Write For You [Webinar] via @sejournal, @hethr_campbell; Google\u2019s Mueller Explains How AI Search Impressions Get Counted via @sejournal, @MattGSouthern; Marketing Hiring Down 36% At Big Tech, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "research_source": "heuristic",
+      "gemini_enriched": false
+    },
+    {
+      "title": "How to Rank in AI Overviews: A Step-by-Step Guide for 2026",
+      "slug": "how-to-rank-in-ai-overviews-a-step-by-step-guide-for-2026",
+      "primary_keyword": "how to rank in ai overviews",
+      "secondary_keywords": [
+        "rank in ai overviews checklist",
+        "rank in ai overviews examples",
+        "rank in ai overviews best practices"
+      ],
+      "intent_cluster": "aeo and geo",
+      "target_audience": "Marketing leads, founders, and growth managers",
+      "cta": "Book a strategy call",
+      "external_sources": [
+        "https://www.searchenginejournal.com/google-begins-rolling-out-the-june-2026-spam-update/580424/",
+        "https://www.searchenginejournal.com/google-strongest-match-search-ad-labels-test/580378/"
+      ],
+      "internal_links": [
+        "../../services/index.html",
+        "../../resources/seo-audit-playbook.html",
+        "../../case-studies/index.html",
+        "../../contact/index.html"
+      ],
+      "recommended_word_count": 1200,
+      "serp_intent": "informational",
+      "funnel_stage": "awareness",
+      "serp_features": [
+        "featured_snippet"
+      ],
+      "paa_questions": [
+        "How does how to rank in ai overviews affect organic revenue in 2026?",
+        "What is answer engine optimization in practice?",
+        "How do I get cited in AI overviews without keyword stuffing?",
+        "Does structured data help generative search visibility?",
+        "How long should FAQ answers be for featured snippets?"
+      ],
+      "serp_analysis": "SERP snapshot for 'how to rank in ai overviews': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include What 2 Content Strategists Say AI Should Never Write For You [Webinar] via @sejournal, @hethr_campbell; Google\u2019s Mueller Explains How AI Search Impressions Get Counted via @sejournal, @MattGSouthern; Marketing Hiring Down 36% At Big Tech, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "research_source": "heuristic",
+      "gemini_enriched": false
+    },
+    {
+      "title": "How to Get Cited by ChatGPT: A Step-by-Step Guide for 2026",
+      "slug": "how-to-get-cited-by-chatgpt-a-step-by-step-guide-for-2026",
+      "primary_keyword": "how to get cited by chatgpt",
+      "secondary_keywords": [
+        "get cited by chatgpt checklist",
+        "get cited by chatgpt examples",
+        "get cited by chatgpt best practices"
+      ],
+      "intent_cluster": "aeo and geo",
+      "target_audience": "Marketing leads, founders, and growth managers",
+      "cta": "Book a strategy call",
+      "external_sources": [
+        "https://www.searchenginejournal.com/the-accessibility-tree-is-how-ai-agents-read-your-site-its-breaking/578171/",
+        "https://www.searchenginejournal.com/why-international-seo-needs-a-global-knowledge-integrity-strategy/577880/"
+      ],
+      "internal_links": [
+        "../../services/index.html",
+        "../../resources/seo-audit-playbook.html",
+        "../../case-studies/index.html",
+        "../../contact/index.html"
+      ],
+      "recommended_word_count": 1200,
+      "serp_intent": "informational",
+      "funnel_stage": "awareness",
+      "serp_features": [
+        "featured_snippet"
+      ],
+      "paa_questions": [
+        "How does how to get cited by chatgpt affect organic revenue in 2026?",
+        "What is answer engine optimization in practice?",
+        "How do I get cited in AI overviews without keyword stuffing?",
+        "Does structured data help generative search visibility?",
+        "How long should FAQ answers be for featured snippets?"
+      ],
+      "serp_analysis": "SERP snapshot for 'how to get cited by chatgpt': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include What 2 Content Strategists Say AI Should Never Write For You [Webinar] via @sejournal, @hethr_campbell; Google\u2019s Mueller Explains How AI Search Impressions Get Counted via @sejournal, @MattGSouthern; Marketing Hiring Down 36% At Big Tech, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "research_source": "heuristic",
+      "gemini_enriched": false
+    },
+    {
+      "title": "AI Search Optimization: Staying Visible as AI Reshapes Search in 2026",
+      "slug": "ai-search-optimization-staying-visible-as-ai-reshapes-search-in-2026",
+      "primary_keyword": "ai search optimization",
+      "secondary_keywords": [
+        "ai search optimization checklist",
+        "ai search optimization examples",
+        "ai search optimization best practices"
+      ],
+      "intent_cluster": "aeo and geo",
+      "target_audience": "Marketing leads, founders, and growth managers",
+      "cta": "Book a strategy call",
+      "external_sources": [
+        "https://www.searchenginejournal.com/why-ai-visibility-depends-on-operational-alignment-not-just-seo/577683/",
+        "https://www.searchenginejournal.com/google-deepmind-admits-large-scale-ai-agent-deployment-is-unsafe-today/580321/"
+      ],
+      "internal_links": [
+        "../../services/index.html",
+        "../../resources/seo-audit-playbook.html",
+        "../../case-studies/index.html",
+        "../../contact/index.html"
+      ],
+      "recommended_word_count": 1200,
+      "serp_intent": "informational",
+      "funnel_stage": "awareness",
+      "serp_features": [
+        "featured_snippet"
+      ],
+      "paa_questions": [
+        "How does ai search optimization affect organic revenue in 2026?",
+        "What is answer engine optimization in practice?",
+        "How do I get cited in AI overviews without keyword stuffing?",
+        "Does structured data help generative search visibility?",
+        "How long should FAQ answers be for featured snippets?"
+      ],
+      "serp_analysis": "SERP snapshot for 'ai search optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include What 2 Content Strategists Say AI Should Never Write For You [Webinar] via @sejournal, @hethr_campbell; Google\u2019s Mueller Explains How AI Search Impressions Get Counted via @sejournal, @MattGSouthern; Marketing Hiring Down 36% At Big Tech, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "research_source": "heuristic",
+      "gemini_enriched": false
+    },
+    {
+      "title": "LLM SEO: Staying Visible as AI Reshapes Search in 2026",
+      "slug": "llm-seo-staying-visible-as-ai-reshapes-search-in-2026",
+      "primary_keyword": "llm seo",
+      "secondary_keywords": [
+        "llm seo checklist",
+        "llm seo examples",
+        "llm seo best practices"
+      ],
+      "intent_cluster": "aeo and geo",
+      "target_audience": "Marketing leads, founders, and growth managers",
+      "cta": "Book a strategy call",
+      "external_sources": [
+        "https://www.searchenginejournal.com/the-grounding-wars-are-coming-how-ai-visibility-creates-its-own-black-hat-playbook/580247/",
+        "https://www.searchenginejournal.com/ultimate-member-wordpress-plugin-vulnerability/580307/"
+      ],
+      "internal_links": [
+        "../../services/index.html",
+        "../../resources/seo-audit-playbook.html",
+        "../../case-studies/index.html",
+        "../../contact/index.html"
+      ],
+      "recommended_word_count": 1200,
+      "serp_intent": "informational",
+      "funnel_stage": "awareness",
+      "serp_features": [
+        "featured_snippet"
+      ],
+      "paa_questions": [
+        "How does llm affect organic revenue in 2026?",
+        "What is answer engine optimization in practice?",
+        "How do I get cited in AI overviews without keyword stuffing?",
+        "Does structured data help generative search visibility?",
+        "How long should FAQ answers be for featured snippets?"
+      ],
+      "serp_analysis": "SERP snapshot for 'llm seo': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include What 2 Content Strategists Say AI Should Never Write For You [Webinar] via @sejournal, @hethr_campbell; Google\u2019s Mueller Explains How AI Search Impressions Get Counted via @sejournal, @MattGSouthern; Marketing Hiring Down 36% At Big Tech, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "research_source": "heuristic",
+      "gemini_enriched": false
+    },
+    {
+      "title": "Schema Markup for AI Search: Staying Visible as AI Reshapes Search in 2026",
+      "slug": "schema-markup-for-ai-search-staying-visible-as-ai-reshapes-search-in-202",
+      "primary_keyword": "schema markup for ai search",
+      "secondary_keywords": [
+        "schema markup for ai search checklist",
+        "schema markup for ai search examples",
+        "schema markup for ai search best practices"
+      ],
+      "intent_cluster": "aeo and geo",
+      "target_audience": "Marketing leads, founders, and growth managers",
+      "cta": "Book a strategy call",
+      "external_sources": [
+        "https://www.searchenginejournal.com/anthropics-claude-enters-workplace-as-a-slack-channel-coworker/580292/",
+        "https://www.searchenginejournal.com/googles-limited-ad-serving-update-raises-questions-about-advertiser-qualification/579138/"
+      ],
+      "internal_links": [
+        "../../services/index.html",
+        "../../resources/seo-audit-playbook.html",
+        "../../case-studies/index.html",
+        "../../contact/index.html"
+      ],
+      "recommended_word_count": 1200,
+      "serp_intent": "informational",
+      "funnel_stage": "awareness",
+      "serp_features": [
+        "featured_snippet"
+      ],
+      "paa_questions": [
+        "How does schema markup for ai search affect organic revenue in 2026?",
+        "What is answer engine optimization in practice?",
+        "How do I get cited in AI overviews without keyword stuffing?",
+        "Does structured data help generative search visibility?",
+        "How long should FAQ answers be for featured snippets?"
+      ],
+      "serp_analysis": "SERP snapshot for 'schema markup for ai search': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include What 2 Content Strategists Say AI Should Never Write For You [Webinar] via @sejournal, @hethr_campbell; Google\u2019s Mueller Explains How AI Search Impressions Get Counted via @sejournal, @MattGSouthern; Marketing Hiring Down 36% At Big Tech, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "research_source": "heuristic",
+      "gemini_enriched": false
+    },
+    {
+      "title": "Technical SEO Audit: Priorities That Protect Crawl Budget and Revenue",
+      "slug": "technical-seo-audit-priorities-that-protect-crawl-budget-and-revenue",
+      "primary_keyword": "technical seo audit",
+      "secondary_keywords": [
+        "technical seo audit checklist",
+        "technical seo audit examples",
+        "technical seo audit best practices"
+      ],
+      "intent_cluster": "technical optimization",
+      "target_audience": "Marketing leads, founders, and growth managers",
+      "cta": "Book a strategy call",
+      "external_sources": [
+        "https://www.searchenginejournal.com/how-are-seo-teams-actually-tracking-ai-citations-across-six-engines-webinar/580283/",
+        "https://feedpress.me/link/9375/14757949/cannibalization"
+      ],
+      "internal_links": [
+        "../../services/index.html",
+        "../../resources/seo-audit-playbook.html",
+        "../../case-studies/index.html",
+        "../../contact/index.html"
+      ],
+      "recommended_word_count": 1200,
+      "serp_intent": "informational_technical",
+      "funnel_stage": "awareness",
+      "serp_features": [
+        "featured_snippet"
+      ],
+      "paa_questions": [
+        "How does technical affect organic revenue in 2026?",
+        "What should I fix first in a technical SEO audit?",
+        "How does crawl budget affect large ecommerce sites?",
+        "When should I use noindex versus canonical consolidation?",
+        "What Core Web Vitals matter most for SEO?"
+      ],
+      "serp_analysis": "SERP snapshot for 'technical seo audit': dominant intent is **informational_technical** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include What 2 Content Strategists Say AI Should Never Write For You [Webinar] via @sejournal, @hethr_campbell; Google\u2019s Mueller Explains How AI Search Impressions Get Counted via @sejournal, @MattGSouthern; Marketing Hiring Down 36% At Big Tech, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "research_source": "heuristic",
+      "gemini_enriched": false
+    },
+    {
+      "title": "Core Web Vitals Optimization: Priorities That Protect Crawl Budget and Revenue",
+      "slug": "core-web-vitals-optimization-priorities-that-protect-crawl-budget-and-re",
+      "primary_keyword": "core web vitals optimization",
+      "secondary_keywords": [
+        "core web vitals optimization checklist",
+        "core web vitals optimization examples",
+        "core web vitals optimization best practices"
+      ],
+      "intent_cluster": "technical optimization",
+      "target_audience": "Marketing leads, founders, and growth managers",
+      "cta": "Book a strategy call",
+      "external_sources": [
+        "https://feedpress.me/link/9375/14753388/title-tag-rewrite-case-study",
+        "https://feedpress.me/link/9375/14751225/website-conversion-case-study"
+      ],
+      "internal_links": [
+        "../../services/index.html",
+        "../../resources/seo-audit-playbook.html",
+        "../../case-studies/index.html",
+        "../../contact/index.html"
+      ],
+      "recommended_word_count": 1200,
+      "serp_intent": "informational_technical",
+      "funnel_stage": "awareness",
+      "serp_features": [
+        "featured_snippet"
+      ],
+      "paa_questions": [
+        "How does core web vitals optimization affect organic revenue in 2026?",
+        "What should I fix first in a technical SEO audit?",
+        "How does crawl budget affect large ecommerce sites?",
+        "When should I use noindex versus canonical consolidation?",
+        "What Core Web Vitals matter most for SEO?"
+      ],
+      "serp_analysis": "SERP snapshot for 'core web vitals optimization': dominant intent is **informational_technical** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include What 2 Content Strategists Say AI Should Never Write For You [Webinar] via @sejournal, @hethr_campbell; Google\u2019s Mueller Explains How AI Search Impressions Get Counted via @sejournal, @MattGSouthern; Marketing Hiring Down 36% At Big Tech, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "research_source": "heuristic",
+      "gemini_enriched": false
+    },
+    {
+      "title": "Google Core Update Recovery: Priorities That Protect Crawl Budget and Revenue",
+      "slug": "google-core-update-recovery-priorities-that-protect-crawl-budget-and-rev",
+      "primary_keyword": "google core update recovery",
+      "secondary_keywords": [
+        "google core update recovery checklist",
+        "google core update recovery examples",
+        "google core update recovery best practices"
+      ],
+      "intent_cluster": "technical optimization",
+      "target_audience": "Marketing leads, founders, and growth managers",
+      "cta": "Book a strategy call",
+      "external_sources": [
+        "https://feedpress.me/link/9375/14746944/add-products-to-gmb-listing",
+        "https://feedpress.me/link/9375/14742542/three-seo-bosses"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -83,20 +395,98 @@
       "gemini_enriched": false
     },
     {
-      "title": "Local SEO That Turns Map Views Into Booked Jobs in 2026",
-      "slug": "local-seo-that-turns-map-views-into-booked-jobs-in-2026",
-      "primary_keyword": "local seo conversion strategy seo strategy",
+      "title": "International SEO Best Practices: A Pipeline-First Guide for 2026",
+      "slug": "international-seo-best-practices-a-pipeline-first-guide-for-2026",
+      "primary_keyword": "international seo best practices",
       "secondary_keywords": [
-        "local seo conversion strategy seo checklist",
-        "local seo conversion strategy best practices",
-        "local seo conversion strategy implementation guide"
+        "international seo best practices checklist",
+        "international seo best practices examples",
+        "international seo best practices best practices"
+      ],
+      "intent_cluster": "commercial seo",
+      "target_audience": "Marketing leads, founders, and growth managers",
+      "cta": "Book a strategy call",
+      "external_sources": [
+        "https://feedpress.me/link/9375/14737629/winning-page-speed",
+        "https://feedpress.me/link/9375/14735616/5-google-ads-ppc-best-practices"
+      ],
+      "internal_links": [
+        "../../services/index.html",
+        "../../resources/seo-audit-playbook.html",
+        "../../case-studies/index.html",
+        "../../contact/index.html"
+      ],
+      "recommended_word_count": 1200,
+      "serp_intent": "comparison",
+      "funnel_stage": "consideration",
+      "serp_features": [
+        "featured_snippet"
+      ],
+      "paa_questions": [
+        "How does international affect organic revenue in 2026?",
+        "How long does recovery take after a Google core update?",
+        "Should I rewrite all pages after a traffic drop?",
+        "How do I separate a penalty from a core update?",
+        "What E-E-A-T signals matter most for YMYL niches?"
+      ],
+      "serp_analysis": "SERP snapshot for 'international seo best practices': dominant intent is **comparison** at the **consideration** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include What 2 Content Strategists Say AI Should Never Write For You [Webinar] via @sejournal, @hethr_campbell; Google\u2019s Mueller Explains How AI Search Impressions Get Counted via @sejournal, @MattGSouthern; Marketing Hiring Down 36% At Big Tech, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "research_source": "heuristic",
+      "gemini_enriched": false
+    },
+    {
+      "title": "Hreflang Implementation: Priorities That Protect Crawl Budget and Revenue",
+      "slug": "hreflang-implementation-priorities-that-protect-crawl-budget-and-revenue",
+      "primary_keyword": "hreflang implementation",
+      "secondary_keywords": [
+        "hreflang implementation checklist",
+        "hreflang implementation examples",
+        "hreflang implementation best practices"
+      ],
+      "intent_cluster": "technical optimization",
+      "target_audience": "Marketing leads, founders, and growth managers",
+      "cta": "Book a strategy call",
+      "external_sources": [
+        "https://feedpress.me/link/9375/14733670/calculate-seo-roi-with-google-analytics",
+        "https://feedpress.me/link/9375/14729254/find-seo-opportunities-with-stat"
+      ],
+      "internal_links": [
+        "../../services/index.html",
+        "../../resources/seo-audit-playbook.html",
+        "../../case-studies/index.html",
+        "../../contact/index.html"
+      ],
+      "recommended_word_count": 1200,
+      "serp_intent": "informational_technical",
+      "funnel_stage": "awareness",
+      "serp_features": [
+        "featured_snippet"
+      ],
+      "paa_questions": [
+        "How does hreflang implementation affect organic revenue in 2026?",
+        "What should I fix first in a technical SEO audit?",
+        "How does crawl budget affect large ecommerce sites?",
+        "When should I use noindex versus canonical consolidation?",
+        "What Core Web Vitals matter most for SEO?"
+      ],
+      "serp_analysis": "SERP snapshot for 'hreflang implementation': dominant intent is **informational_technical** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include What 2 Content Strategists Say AI Should Never Write For You [Webinar] via @sejournal, @hethr_campbell; Google\u2019s Mueller Explains How AI Search Impressions Get Counted via @sejournal, @MattGSouthern; Marketing Hiring Down 36% At Big Tech, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "research_source": "heuristic",
+      "gemini_enriched": false
+    },
+    {
+      "title": "Local SEO for Service Businesses: Turning Local Search Into Booked Jobs",
+      "slug": "local-seo-for-service-businesses-turning-local-search-into-booked-jobs",
+      "primary_keyword": "local seo for service businesses",
+      "secondary_keywords": [
+        "local seo for service businesses checklist",
+        "local seo for service businesses examples",
+        "local seo for service businesses best practices"
       ],
       "intent_cluster": "local growth",
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/google-begins-rolling-out-the-june-2026-spam-update/580424/",
-        "https://www.searchenginejournal.com/google-strongest-match-search-ad-labels-test/580378/"
+        "https://feedpress.me/link/9375/14723651/targeted-impact-link-building-guide",
+        "https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -118,25 +508,25 @@
         "What local landing page elements increase bookings?",
         "How often should I update photos and posts on GBP?"
       ],
-      "serp_analysis": "SERP snapshot for 'local seo conversion strategy': dominant intent is **local_commercial** at the **decision** funnel stage. Observed SERP features include featured_snippet, local_pack. Recent titles in the news layer include What 2 Content Strategists Say AI Should Never Write For You [Webinar] via @sejournal, @hethr_campbell; Google\u2019s Mueller Explains How AI Search Impressions Get Counted via @sejournal, @MattGSouthern; Marketing Hiring Down 36% At Big Tech, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'local seo for service businesses': dominant intent is **local_commercial** at the **decision** funnel stage. Observed SERP features include featured_snippet, local_pack. Recent titles in the news layer include What 2 Content Strategists Say AI Should Never Write For You [Webinar] via @sejournal, @hethr_campbell; Google\u2019s Mueller Explains How AI Search Impressions Get Counted via @sejournal, @MattGSouthern; Marketing Hiring Down 36% At Big Tech, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
     {
-      "title": "Recovering After a Google Core Update Without Burning the Site Down",
-      "slug": "recovering-after-a-google-core-update-without-burning-the-site-down",
-      "primary_keyword": "seo reporting for pipeline seo strategy",
+      "title": "SaaS SEO Strategy: A Pipeline-First Guide for 2026",
+      "slug": "saas-seo-strategy-a-pipeline-first-guide-for-2026",
+      "primary_keyword": "saas seo strategy",
       "secondary_keywords": [
-        "seo reporting for pipeline seo checklist",
-        "seo reporting for pipeline best practices",
-        "seo reporting for pipeline implementation guide"
+        "saas seo strategy checklist",
+        "saas seo strategy examples",
+        "saas seo strategy best practices"
       ],
       "intent_cluster": "commercial seo",
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/the-accessibility-tree-is-how-ai-agents-read-your-site-its-breaking/578171/",
-        "https://www.searchenginejournal.com/why-international-seo-needs-a-global-knowledge-integrity-strategy/577880/"
+        "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -151,13 +541,52 @@
         "featured_snippet"
       ],
       "paa_questions": [
-        "How does seo reporting for pipeline affect organic revenue in 2026?",
+        "How does saas affect organic revenue in 2026?",
         "How long does recovery take after a Google core update?",
         "Should I rewrite all pages after a traffic drop?",
         "How do I separate a penalty from a core update?",
         "What E-E-A-T signals matter most for YMYL niches?"
       ],
-      "serp_analysis": "SERP snapshot for 'seo reporting for pipeline': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include What 2 Content Strategists Say AI Should Never Write For You [Webinar] via @sejournal, @hethr_campbell; Google\u2019s Mueller Explains How AI Search Impressions Get Counted via @sejournal, @MattGSouthern; Marketing Hiring Down 36% At Big Tech, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'saas seo strategy': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include What 2 Content Strategists Say AI Should Never Write For You [Webinar] via @sejournal, @hethr_campbell; Google\u2019s Mueller Explains How AI Search Impressions Get Counted via @sejournal, @MattGSouthern; Marketing Hiring Down 36% At Big Tech, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "research_source": "heuristic",
+      "gemini_enriched": false
+    },
+    {
+      "title": "How Much Does SEO Cost: A Pipeline-First Guide for 2026",
+      "slug": "how-much-does-seo-cost-a-pipeline-first-guide-for-2026",
+      "primary_keyword": "how much does seo cost",
+      "secondary_keywords": [
+        "how much does seo cost checklist",
+        "how much does seo cost examples",
+        "how much does seo cost best practices"
+      ],
+      "intent_cluster": "commercial seo",
+      "target_audience": "Marketing leads, founders, and growth managers",
+      "cta": "Book a strategy call",
+      "external_sources": [
+        "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+        "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data"
+      ],
+      "internal_links": [
+        "../../services/index.html",
+        "../../resources/seo-audit-playbook.html",
+        "../../case-studies/index.html",
+        "../../contact/index.html"
+      ],
+      "recommended_word_count": 1200,
+      "serp_intent": "commercial",
+      "funnel_stage": "decision",
+      "serp_features": [
+        "featured_snippet"
+      ],
+      "paa_questions": [
+        "How does how much does affect organic revenue in 2026?",
+        "How long does recovery take after a Google core update?",
+        "Should I rewrite all pages after a traffic drop?",
+        "How do I separate a penalty from a core update?",
+        "What E-E-A-T signals matter most for YMYL niches?"
+      ],
+      "serp_analysis": "SERP snapshot for 'how much does seo cost': dominant intent is **commercial** at the **decision** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include What 2 Content Strategists Say AI Should Never Write For You [Webinar] via @sejournal, @hethr_campbell; Google\u2019s Mueller Explains How AI Search Impressions Get Counted via @sejournal, @MattGSouthern; Marketing Hiring Down 36% At Big Tech, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     }

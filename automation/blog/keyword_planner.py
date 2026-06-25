@@ -29,15 +29,29 @@ INTERNAL_LINKS_DEFAULT = [
     "../../contact/index.html",
 ]
 
+# Wedge-aligned seed keywords. These are phrased the way people actually
+# search (AEO/GEO first, then technical/international/local/commercial), so
+# they can be used as primary keywords directly — no suffix stapling.
 SEED_TERMS = [
-    "ai search visibility",
+    # AEO / GEO wedge (primary focus)
+    "answer engine optimization",
+    "generative engine optimization",
+    "how to rank in ai overviews",
+    "how to get cited by chatgpt",
+    "ai search optimization",
+    "llm seo",
+    "schema markup for ai search",
+    # Technical
+    "technical seo audit",
+    "core web vitals optimization",
     "google core update recovery",
-    "local seo conversion strategy",
-    "technical seo prioritization",
-    "seo reporting for pipeline",
-    "entity seo strategy",
-    "international seo localization",
-    "programmatic seo quality control",
+    # International (positioning)
+    "international seo best practices",
+    "hreflang implementation",
+    # Local + commercial
+    "local seo for service businesses",
+    "saas seo strategy",
+    "how much does seo cost",
 ]
 
 BLOCKED_TERMS = {
@@ -86,12 +100,62 @@ def build_title_from_term(term: str) -> str:
     return human_title(term, classify_intent(term))
 
 
+_QUESTION_PREFIX = re.compile(
+    r"^(how to|how do i|what is|what are|why|when to|where to)\s+", re.IGNORECASE
+)
+
+
+def build_keywords(term: str) -> tuple[str, list[str]]:
+    """Build a realistic primary keyword and natural secondary variants.
+
+    The previous version appended " seo strategy" to every term, producing
+    malformed, zero-volume queries (e.g. "seo reporting for pipeline seo
+    strategy"). We now use the cleaned term itself as the primary keyword
+    (including valid question-form queries like "how to rank in ai overviews")
+    and derive grammatical, search-like long-tail variants from the topic stem
+    — so noun-phrase seeds never become "how to technical seo audit".
+    """
+    primary = re.sub(r"\s+", " ", term).strip().lower()
+    # Strip a leading question phrase so modifiers attach to a clean noun stem.
+    stem = _QUESTION_PREFIX.sub("", primary).strip() or primary
+    candidates = [
+        f"{stem} checklist",
+        f"{stem} examples",
+        f"{stem} best practices",
+        f"{stem} 2026",
+    ]
+    secondary: list[str] = []
+    seen = {primary}
+    for variant in candidates:
+        variant = re.sub(r"\s+", " ", variant).strip()
+        if variant and variant not in seen:
+            seen.add(variant)
+            secondary.append(variant)
+        if len(secondary) >= 3:
+            break
+    return primary, secondary
+
+
 def classify_intent(term: str) -> str:
-    if any(t in term for t in ("local", "map", "profile")):
+    if any(t in term for t in ("local", "map", "profile", "gbp", "near me")):
         return "local growth"
-    if any(t in term for t in ("ai", "llm", "answer", "generative")):
+    if any(
+        t in term
+        for t in (
+            "ai",
+            "llm",
+            "answer",
+            "generative",
+            "chatgpt",
+            "gpt",
+            "aeo",
+            "geo",
+            "overview",
+            "cited",
+        )
+    ):
         return "aeo and geo"
-    if any(t in term for t in ("core", "crawl", "index", "technical", "schema")):
+    if any(t in term for t in ("core", "crawl", "index", "technical", "schema", "audit", "hreflang", "core web vitals")):
         return "technical optimization"
     return "commercial seo"
 
@@ -142,6 +206,8 @@ def main() -> None:
             continue
         seen_slugs.add(slug)
 
+        primary_keyword, secondary_keywords = build_keywords(term)
+
         sources = []
         while len(sources) < 2 and source_cursor < len(source_entries):
             sources.append(source_entries[source_cursor]["url"])
@@ -158,12 +224,8 @@ def main() -> None:
             {
                 "title": title,
                 "slug": slug,
-                "primary_keyword": f"{term} seo strategy",
-                "secondary_keywords": [
-                    f"{term} seo checklist",
-                    f"{term} best practices",
-                    f"{term} implementation guide",
-                ],
+                "primary_keyword": primary_keyword,
+                "secondary_keywords": secondary_keywords,
                 "intent_cluster": classify_intent(term),
                 "target_audience": "Marketing leads, founders, and growth managers",
                 "cta": "Book a strategy call",

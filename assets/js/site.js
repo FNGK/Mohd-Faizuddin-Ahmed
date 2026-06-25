@@ -14,12 +14,16 @@
   initTableOfContents();
   initAudioMode();
   initBackToTop();
+  initScrollReveal();
+  initCounters();
+  initReadingProgress();
 
   function initTheme() {
     const key = "seowithfaiz-theme";
     const stored = safeGet(key);
-    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const activeTheme = stored || (prefersDark ? "dark" : "light");
+    // Dark-premium is the brand's default identity; honor an explicit stored
+    // choice, otherwise default everyone to dark. Light remains a toggle.
+    const activeTheme = stored || "dark";
     applyTheme(activeTheme);
 
     if (!topbarInner) return;
@@ -236,6 +240,134 @@
     button.addEventListener("click", function () {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
+  }
+
+  function initReadingProgress() {
+    const bar = document.querySelector("[data-read-progress]");
+    if (!bar) return;
+    const article = document.querySelector(".post-body") || document.querySelector("main");
+    if (!article) return;
+
+    const update = function () {
+      const rect = article.getBoundingClientRect();
+      const total = rect.height - window.innerHeight;
+      const scrolled = Math.min(Math.max(-rect.top, 0), Math.max(total, 1));
+      const ratio = total > 0 ? Math.min(scrolled / total, 1) : 0;
+      bar.style.transform = "scaleX(" + ratio + ")";
+    };
+
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update, { passive: true });
+  }
+
+  function prefersReducedMotion() {
+    return window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  }
+
+  function initScrollReveal() {
+    if (prefersReducedMotion() || !("IntersectionObserver" in window)) return;
+
+    // Elements worth revealing on scroll. Hero content animates on load, so skip it.
+    const selectors = [
+      ".section .kicker",
+      ".section h2",
+      ".card",
+      ".proof-card",
+      ".visual-pillar",
+      ".stat-ribbon__item",
+      ".price-card",
+      ".process-step",
+      ".market-strip__item",
+      ".faq-item",
+      ".timeline-item",
+      ".blog-card",
+      ".answer-box",
+      ".service-table",
+      ".quote"
+    ];
+
+    const seen = new Set();
+    const targets = [];
+    selectors.forEach(function (sel) {
+      document.querySelectorAll(sel).forEach(function (el) {
+        if (seen.has(el) || el.closest(".hero")) return;
+        seen.add(el);
+        targets.push(el);
+      });
+    });
+    if (!targets.length) return;
+
+    // Stagger by index within the same parent for a wave effect.
+    targets.forEach(function (el) {
+      el.classList.add("reveal");
+      const siblings = Array.prototype.filter.call(
+        el.parentNode ? el.parentNode.children : [],
+        function (c) { return c.classList && c.classList.contains("reveal"); }
+      );
+      const idx = Math.max(0, siblings.indexOf(el));
+      el.style.transitionDelay = Math.min(idx * 80, 360) + "ms";
+    });
+
+    const observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("reveal--in");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { rootMargin: "0px 0px -8% 0px", threshold: 0.12 }
+    );
+
+    targets.forEach(function (el) { observer.observe(el); });
+  }
+
+  function initCounters() {
+    const counters = document.querySelectorAll("[data-count-to]");
+    if (!counters.length) return;
+
+    const run = function (el) {
+      const target = parseFloat(el.getAttribute("data-count-to"));
+      if (isNaN(target)) return;
+      const prefix = el.getAttribute("data-count-prefix") || "";
+      const suffix = el.getAttribute("data-count-suffix") || "";
+      const decimals = parseInt(el.getAttribute("data-count-decimals") || "0", 10);
+
+      if (prefersReducedMotion()) {
+        el.textContent = prefix + target.toFixed(decimals) + suffix;
+        return;
+      }
+
+      const duration = 1400;
+      const start = performance.now();
+      const step = function (now) {
+        const p = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = prefix + (target * eased).toFixed(decimals) + suffix;
+        if (p < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    };
+
+    if (!("IntersectionObserver" in window)) {
+      counters.forEach(run);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            run(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.6 }
+    );
+    counters.forEach(function (el) { observer.observe(el); });
   }
 
   function getRefHost() {

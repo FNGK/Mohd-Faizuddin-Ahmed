@@ -5,17 +5,51 @@ from __future__ import annotations
 from typing import Any
 
 
+_TITLE_ACRONYMS = {
+    "seo": "SEO", "ai": "AI", "aeo": "AEO", "geo": "GEO", "llm": "LLM",
+    "gbp": "GBP", "chatgpt": "ChatGPT", "gpt": "GPT", "b2b": "B2B",
+    "saas": "SaaS", "ctr": "CTR", "serp": "SERP", "gsc": "GSC", "ux": "UX",
+}
+_TITLE_LOWER = {"to", "in", "for", "by", "the", "a", "an", "and", "or", "of", "vs", "on"}
+
+
+def smart_title_case(term: str) -> str:
+    """Title-case a keyword while preserving SEO acronyms (SEO, AI, ChatGPT…)."""
+    words = term.strip().split()
+    out = []
+    for idx, word in enumerate(words):
+        low = word.lower()
+        if low in _TITLE_ACRONYMS:
+            out.append(_TITLE_ACRONYMS[low])
+        elif idx != 0 and low in _TITLE_LOWER:
+            out.append(low)
+        else:
+            out.append(word[:1].upper() + word[1:])
+    return " ".join(out)
+
+
 def human_title(term: str, intent_cluster: str) -> str:
-    term_clean = term.strip().title()
-    if intent_cluster == "local growth":
-        return f"Local SEO That Turns Map Views Into Booked Jobs in 2026"
-    if intent_cluster == "technical optimization":
-        return f"Technical SEO Priorities When Crawl Budget and Revenue Both Matter"
+    """Build a unique, on-brand title from the term.
+
+    Previously this returned one hardcoded title per intent cluster, so every
+    seed in a cluster produced an identical title (and slug) and was deduped —
+    collapsing many keyword ideas into ~4 near-clone posts. Titles are now
+    term-specific so each keyword yields a distinct article.
+    """
+    label = smart_title_case(term)
+    if term.strip().lower().startswith(
+        ("how to", "how do i", "what is", "what are", "why", "when to", "where to")
+    ):
+        return f"{label}: A Step-by-Step Guide for 2026"
     if intent_cluster == "aeo and geo":
-        return f"AI Search Visibility: What to Fix Before You Chase New Formats"
+        return f"{label}: Staying Visible as AI Reshapes Search in 2026"
+    if intent_cluster == "technical optimization":
+        return f"{label}: Priorities That Protect Crawl Budget and Revenue"
+    if intent_cluster == "local growth":
+        return f"{label}: Turning Local Search Into Booked Jobs"
     if intent_cluster == "commercial seo":
-        return f"Recovering After a Google Core Update Without Burning the Site Down"
-    return f"{term_clean}: A Practical Playbook for 2026"
+        return f"{label}: A Pipeline-First Guide for 2026"
+    return f"{label}: A Practical Playbook for 2026"
 
 
 def build_body(idea: dict[str, Any]) -> str:
