@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-06-22T10:36:04.123280+00:00",
+  "collected_at": "2026-06-25T08:18:15.753976+00:00",
   "feeds": [
     "Google Search Central",
     "Search Engine Journal",
@@ -10,240 +10,240 @@
   "entries": [
     {
       "source": "Search Engine Journal",
-      "title": "Build A Live Data Stack With MCP For Smarter Campaign Performance",
-      "url": "https://www.searchenginejournal.com/build-a-live-data-stack-with-mcp-for-smarter-campaign-performance/577414/",
-      "published": "Mon, 22 Jun 2026 08:30:04 +0000",
-      "tokens": [
-        "build",
-        "live",
-        "data",
-        "stack",
-        "mcp",
-        "smarter",
-        "campaign",
-        "performance"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Make Something Agents Want via @sejournal, @slobodanmanic",
-      "url": "https://www.searchenginejournal.com/make-something-agents-want/576188/",
-      "published": "Sun, 21 Jun 2026 12:00:34 +0000",
-      "tokens": [
-        "make",
-        "something",
-        "agents",
-        "want",
-        "via",
-        "sejournal",
-        "slobodanmanic"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "The Content Framework That Worked In 2019 Is Now Working Against You via @sejournal, @gregjarboe",
-      "url": "https://www.searchenginejournal.com/the-content-framework-that-worked-in-2019-is-now-working-against-you/579051/",
-      "published": "Sat, 20 Jun 2026 14:00:50 +0000",
+      "title": "What 2 Content Strategists Say AI Should Never Write For You [Webinar] via @sejournal, @hethr_campbell",
+      "url": "https://www.searchenginejournal.com/what-2-contentful-strategists-say-ai-should-never-write-for-you-webinar/580162/",
+      "published": "Thu, 25 Jun 2026 07:45:34 +0000",
       "tokens": [
         "content",
-        "framework",
-        "worked",
-        "now",
-        "working",
-        "against",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Deindexing Reports Keep Coming, Google Sees Nothing Unusual via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/deindexing-reports-keep-coming-google-sees-nothing-unusual/579847/",
-      "published": "Sat, 20 Jun 2026 12:30:44 +0000",
-      "tokens": [
-        "deindexing",
-        "reports",
-        "keep",
-        "coming",
-        "sees",
-        "nothing",
-        "unusual",
+        "strategists",
+        "say",
+        "should",
+        "never",
+        "write",
+        "webinar",
         "via"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "We Need To Change Our Approach To AI Prompt Tracking via @sejournal, @TaylorDanRW",
-      "url": "https://www.searchenginejournal.com/we-need-to-change-our-approach-to-ai-prompt-tracking/579646/",
-      "published": "Fri, 19 Jun 2026 13:45:33 +0000",
+      "title": "Google\u2019s Mueller Explains How AI Search Impressions Get Counted via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/googles-mueller-explains-how-ai-search-impressions-get-counted/580491/",
+      "published": "Thu, 25 Jun 2026 04:05:37 +0000",
       "tokens": [
-        "need",
-        "change",
-        "our",
-        "approach",
-        "prompt",
-        "tracking",
+        "mueller",
+        "explains",
+        "impressions",
+        "get",
+        "counted",
         "via",
-        "sejournal"
+        "sejournal",
+        "mattgsouthern"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "AI Citation Share Ships, New Data Doubts LLMS.txt \u2013 SEO Pulse via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/seo-pulse-ai-citation-share-ships-new-data-doubts-llms-txt/579942/",
-      "published": "Fri, 19 Jun 2026 12:30:32 +0000",
+      "title": "Marketing Hiring Down 36% At Big Tech, Data Shows via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/marketing-hiring-down-36-at-big-tech-data-shows/580485/",
+      "published": "Thu, 25 Jun 2026 00:26:06 +0000",
       "tokens": [
-        "citation",
-        "share",
-        "ships",
-        "new",
+        "marketing",
+        "hiring",
+        "down",
+        "big",
+        "tech",
         "data",
-        "doubts",
-        "llms",
+        "shows",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Microsoft Clarity Now Flags Bots That Ignore Robots.txt via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/microsoft-clarity-now-flags-bots-that-ignore-robots-txt/580446/",
+      "published": "Wed, 24 Jun 2026 20:13:45 +0000",
+      "tokens": [
+        "microsoft",
+        "clarity",
+        "now",
+        "flags",
+        "bots",
+        "ignore",
+        "robots",
         "txt"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "Google Research Shows How AI Spam Can Be Detected via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/google-generated-ai-detected/579987/",
-      "published": "Fri, 19 Jun 2026 11:45:35 +0000",
+      "title": "Google Begins Rolling Out The June 2026 Spam Update via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/google-begins-rolling-out-the-june-2026-spam-update/580424/",
+      "published": "Wed, 24 Jun 2026 16:50:17 +0000",
       "tokens": [
-        "research",
-        "shows",
+        "begins",
+        "rolling",
+        "out",
+        "june",
         "spam",
-        "can",
-        "detected",
         "via",
         "sejournal",
-        "martinibuster"
+        "mattgsouthern"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "AI Mode Sends A Different Visitor. Your Website Wasn\u2019t Built For Them via @sejournal, @slobodanmanic",
-      "url": "https://www.searchenginejournal.com/ai-mode-sends-a-different-visitor-your-website-wasnt-built-for-them/576185/",
-      "published": "Fri, 19 Jun 2026 09:00:22 +0000",
+      "title": "Google Tests \u2018Strongest Match\u2019 Labels On Search Ads via @sejournal, @brookeosmundson",
+      "url": "https://www.searchenginejournal.com/google-strongest-match-search-ad-labels-test/580378/",
+      "published": "Wed, 24 Jun 2026 16:07:37 +0000",
       "tokens": [
-        "mode",
-        "sends",
-        "different",
-        "visitor",
-        "website",
-        "wasn",
-        "built",
-        "them"
+        "tests",
+        "strongest",
+        "match",
+        "labels",
+        "ads",
+        "via",
+        "sejournal",
+        "brookeosmundson"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "OpenAI Brings Improved Health Responses To Free ChatGPT via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/openai-brings-improved-health-responses-to-free-chatgpt/579919/",
-      "published": "Thu, 18 Jun 2026 21:29:10 +0000",
+      "title": "The Accessibility Tree Is How AI Agents Read Your Site & It\u2019s Breaking via @sejournal, @slobodanmanic",
+      "url": "https://www.searchenginejournal.com/the-accessibility-tree-is-how-ai-agents-read-your-site-its-breaking/578171/",
+      "published": "Wed, 24 Jun 2026 15:00:13 +0000",
       "tokens": [
-        "openai",
-        "brings",
-        "improved",
-        "health",
-        "responses",
-        "free",
-        "chatgpt",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google, Microsoft Back Draft AI Agent Discovery Spec via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/google-microsoft-back-draft-ai-agent-discovery-spec/579894/",
-      "published": "Thu, 18 Jun 2026 19:48:40 +0000",
-      "tokens": [
-        "microsoft",
-        "back",
-        "draft",
-        "agent",
-        "discovery",
-        "spec",
+        "accessibility",
+        "tree",
+        "agents",
+        "read",
+        "site",
+        "breaking",
         "via",
         "sejournal"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "Rank And AI Citation Aren\u2019t The Same Number via @sejournal, @DuaneForrester",
-      "url": "https://www.searchenginejournal.com/rank-and-ai-citation-arent-the-same-number/579202/",
-      "published": "Thu, 18 Jun 2026 13:30:18 +0000",
+      "title": "Why International SEO Needs A Global Knowledge Integrity Strategy via @sejournal, @billhunt",
+      "url": "https://www.searchenginejournal.com/why-international-seo-needs-a-global-knowledge-integrity-strategy/577880/",
+      "published": "Wed, 24 Jun 2026 13:30:17 +0000",
       "tokens": [
-        "rank",
-        "citation",
-        "aren",
-        "same",
-        "number",
-        "via",
-        "sejournal",
-        "duaneforrester"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Is Becoming A Personalizing Mirror Before You Even Type A Query via @sejournal, @TaylorDanRW",
-      "url": "https://www.searchenginejournal.com/the-search-mirror-personal-intelligence-and-agentic-browsing/578430/",
-      "published": "Thu, 18 Jun 2026 11:00:31 +0000",
-      "tokens": [
-        "becoming",
-        "personalizing",
-        "mirror",
-        "before",
-        "even",
-        "type",
-        "query",
+        "why",
+        "international",
+        "needs",
+        "global",
+        "knowledge",
+        "integrity",
+        "strategy",
         "via"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "Google Exposes The Fundamental Flaw Of LLMs.txt via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/google-exposes-llms-txt-flaw/579814/",
-      "published": "Thu, 18 Jun 2026 09:56:49 +0000",
-      "tokens": [
-        "exposes",
-        "fundamental",
-        "flaw",
-        "llms",
-        "txt",
-        "via",
-        "sejournal",
-        "martinibuster"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Tightens Requirements For Domain Migrations via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/google-tightens-requirements-for-domain-migrations/579781/",
-      "published": "Thu, 18 Jun 2026 09:17:45 +0000",
-      "tokens": [
-        "tightens",
-        "requirements",
-        "domain",
-        "migrations",
-        "via",
-        "sejournal",
-        "martinibuster"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Why Calling Yourself The Best Could Be Helping Your Competitors Win In AI Search via @sejournal, @lilyraynyc",
-      "url": "https://www.searchenginejournal.com/why-calling-yourself-the-best-could-be-helping-your-competitors-win-in-ai-search/579778/",
-      "published": "Thu, 18 Jun 2026 09:00:08 +0000",
+      "title": "Why AI Visibility Does Not Only Depend On SEO",
+      "url": "https://www.searchenginejournal.com/why-ai-visibility-depends-on-operational-alignment-not-just-seo/577683/",
+      "published": "Wed, 24 Jun 2026 12:00:10 +0000",
       "tokens": [
         "why",
-        "calling",
-        "yourself",
-        "best",
-        "could",
-        "helping",
-        "competitors",
-        "win"
+        "visibility",
+        "does",
+        "not",
+        "only",
+        "depend"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google DeepMind Admits Large-Scale AI Agent Deployment Is Unsafe Today via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/google-deepmind-admits-large-scale-ai-agent-deployment-is-unsafe-today/580321/",
+      "published": "Wed, 24 Jun 2026 10:58:05 +0000",
+      "tokens": [
+        "deepmind",
+        "admits",
+        "large-scale",
+        "agent",
+        "deployment",
+        "unsafe",
+        "today",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "The Grounding Wars Are Coming: How AI Visibility Creates Its Own Black-Hat Playbook via @sejournal, @purnavirji",
+      "url": "https://www.searchenginejournal.com/the-grounding-wars-are-coming-how-ai-visibility-creates-its-own-black-hat-playbook/580247/",
+      "published": "Wed, 24 Jun 2026 10:00:21 +0000",
+      "tokens": [
+        "grounding",
+        "wars",
+        "are",
+        "coming",
+        "visibility",
+        "creates",
+        "its",
+        "own"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Ultimate Member WordPress Plugin Vulnerability Affects Up To 200k Sites via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/ultimate-member-wordpress-plugin-vulnerability/580307/",
+      "published": "Wed, 24 Jun 2026 08:29:30 +0000",
+      "tokens": [
+        "ultimate",
+        "member",
+        "wordpress",
+        "plugin",
+        "vulnerability",
+        "affects",
+        "sites",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Anthropic\u2019s @Claude Enters Workplace As A Slack Channel Coworker via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/anthropics-claude-enters-workplace-as-a-slack-channel-coworker/580292/",
+      "published": "Tue, 23 Jun 2026 23:14:23 +0000",
+      "tokens": [
+        "anthropic",
+        "claude",
+        "enters",
+        "workplace",
+        "slack",
+        "channel",
+        "coworker",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google\u2019s Limited Ad Serving Update Raises Questions About Advertiser Qualification via @sejournal, @brookeosmundson",
+      "url": "https://www.searchenginejournal.com/googles-limited-ad-serving-update-raises-questions-about-advertiser-qualification/579138/",
+      "published": "Tue, 23 Jun 2026 20:27:45 +0000",
+      "tokens": [
+        "limited",
+        "serving",
+        "raises",
+        "questions",
+        "advertiser",
+        "qualification",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "How Are SEO Teams Actually Tracking AI Citations Across Six Engines? [Webinar] via @sejournal, @lorenbaker",
+      "url": "https://www.searchenginejournal.com/how-are-seo-teams-actually-tracking-ai-citations-across-six-engines-webinar/580283/",
+      "published": "Tue, 23 Jun 2026 20:22:27 +0000",
+      "tokens": [
+        "are",
+        "teams",
+        "actually",
+        "tracking",
+        "citations",
+        "across",
+        "six",
+        "engines"
       ]
     },
     {
@@ -389,43 +389,39 @@
       "count": 4
     },
     {
+      "term": "ads",
+      "count": 3
+    },
+    {
       "term": "martinibuster",
       "count": 3
     },
     {
+      "term": "webinar",
+      "count": 2
+    },
+    {
+      "term": "brookeosmundson",
+      "count": 2
+    },
+    {
+      "term": "why",
+      "count": 2
+    },
+    {
+      "term": "strategy",
+      "count": 2
+    },
+    {
+      "term": "visibility",
+      "count": 2
+    },
+    {
+      "term": "are",
+      "count": 2
+    },
+    {
       "term": "website",
-      "count": 3
-    },
-    {
-      "term": "data",
-      "count": 2
-    },
-    {
-      "term": "slobodanmanic",
-      "count": 2
-    },
-    {
-      "term": "our",
-      "count": 2
-    },
-    {
-      "term": "taylordanrw",
-      "count": 2
-    },
-    {
-      "term": "citation",
-      "count": 2
-    },
-    {
-      "term": "llms",
-      "count": 2
-    },
-    {
-      "term": "txt",
-      "count": 2
-    },
-    {
-      "term": "best",
       "count": 2
     },
     {
@@ -437,63 +433,91 @@
       "count": 2
     },
     {
-      "term": "ads",
-      "count": 2
-    },
-    {
-      "term": "build",
-      "count": 1
-    },
-    {
-      "term": "live",
-      "count": 1
-    },
-    {
-      "term": "stack",
-      "count": 1
-    },
-    {
-      "term": "mcp",
-      "count": 1
-    },
-    {
-      "term": "smarter",
-      "count": 1
-    },
-    {
-      "term": "campaign",
-      "count": 1
-    },
-    {
-      "term": "performance",
-      "count": 1
-    },
-    {
-      "term": "make",
-      "count": 1
-    },
-    {
-      "term": "something",
-      "count": 1
-    },
-    {
-      "term": "agents",
-      "count": 1
-    },
-    {
-      "term": "want",
-      "count": 1
-    },
-    {
       "term": "content",
       "count": 1
     },
     {
-      "term": "framework",
+      "term": "strategists",
       "count": 1
     },
     {
-      "term": "worked",
+      "term": "say",
+      "count": 1
+    },
+    {
+      "term": "should",
+      "count": 1
+    },
+    {
+      "term": "never",
+      "count": 1
+    },
+    {
+      "term": "write",
+      "count": 1
+    },
+    {
+      "term": "hethr",
+      "count": 1
+    },
+    {
+      "term": "campbell",
+      "count": 1
+    },
+    {
+      "term": "mueller",
+      "count": 1
+    },
+    {
+      "term": "explains",
+      "count": 1
+    },
+    {
+      "term": "impressions",
+      "count": 1
+    },
+    {
+      "term": "get",
+      "count": 1
+    },
+    {
+      "term": "counted",
+      "count": 1
+    },
+    {
+      "term": "marketing",
+      "count": 1
+    },
+    {
+      "term": "hiring",
+      "count": 1
+    },
+    {
+      "term": "down",
+      "count": 1
+    },
+    {
+      "term": "big",
+      "count": 1
+    },
+    {
+      "term": "tech",
+      "count": 1
+    },
+    {
+      "term": "data",
+      "count": 1
+    },
+    {
+      "term": "shows",
+      "count": 1
+    },
+    {
+      "term": "microsoft",
+      "count": 1
+    },
+    {
+      "term": "clarity",
       "count": 1
     },
     {
@@ -501,39 +525,15 @@
       "count": 1
     },
     {
-      "term": "working",
+      "term": "flags",
       "count": 1
     },
     {
-      "term": "against",
+      "term": "bots",
       "count": 1
     },
     {
-      "term": "gregjarboe",
-      "count": 1
-    },
-    {
-      "term": "deindexing",
-      "count": 1
-    },
-    {
-      "term": "reports",
-      "count": 1
-    },
-    {
-      "term": "keep",
-      "count": 1
-    },
-    {
-      "term": "coming",
-      "count": 1
-    },
-    {
-      "term": "sees",
-      "count": 1
-    },
-    {
-      "term": "nothing",
+      "term": "ignore",
       "count": 1
     }
   ]

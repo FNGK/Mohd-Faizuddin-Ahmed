@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T10:36:06.070906+00:00",
+  "generated_at": "2026-06-25T08:18:21.226175+00:00",
   "idea_count": 4,
   "gemini_calls_this_run": 0,
   "gemini_enabled": true,
@@ -17,8 +17,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/build-a-live-data-stack-with-mcp-for-smarter-campaign-performance/577414/",
-        "https://www.searchenginejournal.com/make-something-agents-want/576188/"
+        "https://www.searchenginejournal.com/what-2-contentful-strategists-say-ai-should-never-write-for-you-webinar/580162/",
+        "https://www.searchenginejournal.com/googles-mueller-explains-how-ai-search-impressions-get-counted/580491/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -39,7 +39,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'ai search visibility': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include Build A Live Data Stack With MCP For Smarter Campaign Performance; Make Something Agents Want via @sejournal, @slobodanmanic; The Content Framework That Worked In 2019 Is Now Working Against You via @sejournal, @gregjarboe. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'ai search visibility': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include What 2 Content Strategists Say AI Should Never Write For You [Webinar] via @sejournal, @hethr_campbell; Google\u2019s Mueller Explains How AI Search Impressions Get Counted via @sejournal, @MattGSouthern; Marketing Hiring Down 36% At Big Tech, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -56,8 +56,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/the-content-framework-that-worked-in-2019-is-now-working-against-you/579051/",
-        "https://www.searchenginejournal.com/deindexing-reports-keep-coming-google-sees-nothing-unusual/579847/"
+        "https://www.searchenginejournal.com/marketing-hiring-down-36-at-big-tech-data-shows/580485/",
+        "https://www.searchenginejournal.com/microsoft-clarity-now-flags-bots-that-ignore-robots-txt/580446/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -78,7 +78,7 @@
         "When should I use noindex versus canonical consolidation?",
         "What Core Web Vitals matter most for SEO?"
       ],
-      "serp_analysis": "SERP snapshot for 'google core update recovery': dominant intent is **informational_technical** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include Build A Live Data Stack With MCP For Smarter Campaign Performance; Make Something Agents Want via @sejournal, @slobodanmanic; The Content Framework That Worked In 2019 Is Now Working Against You via @sejournal, @gregjarboe. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'google core update recovery': dominant intent is **informational_technical** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include What 2 Content Strategists Say AI Should Never Write For You [Webinar] via @sejournal, @hethr_campbell; Google\u2019s Mueller Explains How AI Search Impressions Get Counted via @sejournal, @MattGSouthern; Marketing Hiring Down 36% At Big Tech, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -95,8 +95,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/we-need-to-change-our-approach-to-ai-prompt-tracking/579646/",
-        "https://www.searchenginejournal.com/seo-pulse-ai-citation-share-ships-new-data-doubts-llms-txt/579942/"
+        "https://www.searchenginejournal.com/google-begins-rolling-out-the-june-2026-spam-update/580424/",
+        "https://www.searchenginejournal.com/google-strongest-match-search-ad-labels-test/580378/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -118,7 +118,7 @@
         "What local landing page elements increase bookings?",
         "How often should I update photos and posts on GBP?"
       ],
-      "serp_analysis": "SERP snapshot for 'local seo conversion strategy': dominant intent is **local_commercial** at the **decision** funnel stage. Observed SERP features include featured_snippet, local_pack. Recent titles in the news layer include Build A Live Data Stack With MCP For Smarter Campaign Performance; Make Something Agents Want via @sejournal, @slobodanmanic; The Content Framework That Worked In 2019 Is Now Working Against You via @sejournal, @gregjarboe. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'local seo conversion strategy': dominant intent is **local_commercial** at the **decision** funnel stage. Observed SERP features include featured_snippet, local_pack. Recent titles in the news layer include What 2 Content Strategists Say AI Should Never Write For You [Webinar] via @sejournal, @hethr_campbell; Google\u2019s Mueller Explains How AI Search Impressions Get Counted via @sejournal, @MattGSouthern; Marketing Hiring Down 36% At Big Tech, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -135,8 +135,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/google-generated-ai-detected/579987/",
-        "https://www.searchenginejournal.com/ai-mode-sends-a-different-visitor-your-website-wasnt-built-for-them/576185/"
+        "https://www.searchenginejournal.com/the-accessibility-tree-is-how-ai-agents-read-your-site-its-breaking/578171/",
+        "https://www.searchenginejournal.com/why-international-seo-needs-a-global-knowledge-integrity-strategy/577880/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -157,7 +157,7 @@
         "How do I separate a penalty from a core update?",
         "What E-E-A-T signals matter most for YMYL niches?"
       ],
-      "serp_analysis": "SERP snapshot for 'seo reporting for pipeline': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include Build A Live Data Stack With MCP For Smarter Campaign Performance; Make Something Agents Want via @sejournal, @slobodanmanic; The Content Framework That Worked In 2019 Is Now Working Against You via @sejournal, @gregjarboe. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'seo reporting for pipeline': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include What 2 Content Strategists Say AI Should Never Write For You [Webinar] via @sejournal, @hethr_campbell; Google\u2019s Mueller Explains How AI Search Impressions Get Counted via @sejournal, @MattGSouthern; Marketing Hiring Down 36% At Big Tech, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     }
