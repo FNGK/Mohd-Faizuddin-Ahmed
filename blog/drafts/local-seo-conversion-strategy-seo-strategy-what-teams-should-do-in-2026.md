@@ -57,7 +57,7 @@ humanization_metrics:
   max_shingle_overlap: 0.0
   flesch_ease: 60.9
   fk_grade: 9.17
-last_humanization_check: '2026-06-25T08:18:21.629818+00:00'
+last_humanization_check: '2026-06-29T09:25:04.672161+00:00'
 ---
 
 ## Why map rankings stall even when reviews look fine
