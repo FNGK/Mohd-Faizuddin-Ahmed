@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T09:25:04.231836+00:00",
+  "generated_at": "2026-07-02T08:08:57.256775+00:00",
   "idea_count": 8,
   "gemini_calls_this_run": 0,
   "gemini_enabled": true,
@@ -17,8 +17,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/google-meta-descriptions-not-required-for-seo-but-theyre-worthwhile/580694/",
-        "https://www.searchenginejournal.com/search-and-agents-are-one-product-you-only-need-one-playbook/576191/"
+        "https://www.searchenginejournal.com/google-ai-overviews-study-finds-lost-clicks-werent-lower-quality/581298/",
+        "https://www.searchenginejournal.com/openai-hiring-points-to-image-video-ads-coming-to-chatgpt/581289/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -30,7 +30,7 @@
       "serp_intent": "informational",
       "funnel_stage": "awareness",
       "serp_features": [
-        "organic_blue_link"
+        "video"
       ],
       "paa_questions": [
         "How does answer engine optimization affect organic revenue in 2026?",
@@ -39,7 +39,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'answer engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include organic_blue_link. Recent titles in the news layer include Google: Meta Descriptions Not Required For SEO. But They\u2019re Worthwhile. via @sejournal, @martinibuster; Search And Agents Are One Product. You Only Need One Playbook via @sejournal, @slobodanmanic; Google Says AI Visibility Hinges On Content People Actually Want To Read via @sejournal, @martinibuster. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'answer engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include video. Recent titles in the news layer include Google AI Overviews Study Finds Lost Clicks Weren\u2019t Lower Quality via @sejournal, @MattGSouthern; OpenAI Hiring Points To Image & Video Ads Coming To ChatGPT via @sejournal, @MattGSouthern; Habitual Publisher Traffic Is Collapsing. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -56,8 +56,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/google-says-make-content-people-want-to-read/580642/",
-        "https://www.searchenginejournal.com/googles-spam-update-now-reaches-ai-answers-enforcement-is-hard/580535/"
+        "https://www.searchenginejournal.com/habitual-publisher-traffic-is-collapsing/580673/",
+        "https://www.searchenginejournal.com/fabrice-canel-longtime-bing-search-leader-retires-from-microsoft/581247/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -69,7 +69,7 @@
       "serp_intent": "informational",
       "funnel_stage": "awareness",
       "serp_features": [
-        "organic_blue_link"
+        "video"
       ],
       "paa_questions": [
         "How does generative engine optimization affect organic revenue in 2026?",
@@ -78,7 +78,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'generative engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include organic_blue_link. Recent titles in the news layer include Google: Meta Descriptions Not Required For SEO. But They\u2019re Worthwhile. via @sejournal, @martinibuster; Search And Agents Are One Product. You Only Need One Playbook via @sejournal, @slobodanmanic; Google Says AI Visibility Hinges On Content People Actually Want To Read via @sejournal, @martinibuster. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'generative engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include video. Recent titles in the news layer include Google AI Overviews Study Finds Lost Clicks Weren\u2019t Lower Quality via @sejournal, @MattGSouthern; OpenAI Hiring Points To Image & Video Ads Coming To ChatGPT via @sejournal, @MattGSouthern; Habitual Publisher Traffic Is Collapsing. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -95,8 +95,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/bruce-clay-seo-pioneer-who-invented-content-siloing-has-died/580602/",
-        "https://www.searchenginejournal.com/a-third-of-fintech-is-invisible-to-ai-agents/576193/"
+        "https://www.searchenginejournal.com/88-of-companies-use-ai-as-a-tool-only-12-built-a-system/580648/",
+        "https://www.searchenginejournal.com/anthropics-claude-fable-5-is-back-with-new-usage-limits-and-safeguards/581231/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -108,7 +108,8 @@
       "serp_intent": "informational",
       "funnel_stage": "awareness",
       "serp_features": [
-        "featured_snippet"
+        "featured_snippet",
+        "video"
       ],
       "paa_questions": [
         "How does how to rank in ai overviews affect organic revenue in 2026?",
@@ -117,7 +118,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'how to rank in ai overviews': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include Google: Meta Descriptions Not Required For SEO. But They\u2019re Worthwhile. via @sejournal, @martinibuster; Search And Agents Are One Product. You Only Need One Playbook via @sejournal, @slobodanmanic; Google Says AI Visibility Hinges On Content People Actually Want To Read via @sejournal, @martinibuster. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'how to rank in ai overviews': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, video. Recent titles in the news layer include Google AI Overviews Study Finds Lost Clicks Weren\u2019t Lower Quality via @sejournal, @MattGSouthern; OpenAI Hiring Points To Image & Video Ads Coming To ChatGPT via @sejournal, @MattGSouthern; Habitual Publisher Traffic Is Collapsing. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -134,8 +135,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/seo-pulse-google-spam-update-rolls-out-ai-manipulation-in-scope/580565/",
-        "https://www.searchenginejournal.com/google-seo-for-ai-agents/580589/"
+        "https://www.searchenginejournal.com/new-wordpress-plugin-safely-and-easily-connects-ai-to-your-website/581219/",
+        "https://www.searchenginejournal.com/the-4-step-test-that-catches-ai-errors-before-they-shape-your-strategy/577687/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -147,7 +148,8 @@
       "serp_intent": "informational",
       "funnel_stage": "awareness",
       "serp_features": [
-        "featured_snippet"
+        "featured_snippet",
+        "video"
       ],
       "paa_questions": [
         "How does how to get cited by chatgpt affect organic revenue in 2026?",
@@ -156,7 +158,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'how to get cited by chatgpt': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include Google: Meta Descriptions Not Required For SEO. But They\u2019re Worthwhile. via @sejournal, @martinibuster; Search And Agents Are One Product. You Only Need One Playbook via @sejournal, @slobodanmanic; Google Says AI Visibility Hinges On Content People Actually Want To Read via @sejournal, @martinibuster. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'how to get cited by chatgpt': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, video. Recent titles in the news layer include Google AI Overviews Study Finds Lost Clicks Weren\u2019t Lower Quality via @sejournal, @MattGSouthern; OpenAI Hiring Points To Image & Video Ads Coming To ChatGPT via @sejournal, @MattGSouthern; Habitual Publisher Traffic Is Collapsing. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -173,8 +175,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/google-gemini-can-now-control-your-computer-hackers-are-already-targeting-ai-agents/580578/",
-        "https://www.searchenginejournal.com/your-brand-message-is-costing-you-half-your-views-what-2-reports-can-tell-us/580029/"
+        "https://www.searchenginejournal.com/anthropics-claude-sonnet-5-is-near-opus-intelligence-for-all-plans/581202/",
+        "https://www.searchenginejournal.com/chrome-auto-browse-acts-on-your-website-apples-siri-ai-only-reads-it/578681/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -186,7 +188,7 @@
       "serp_intent": "informational",
       "funnel_stage": "awareness",
       "serp_features": [
-        "organic_blue_link"
+        "video"
       ],
       "paa_questions": [
         "How does ai search optimization affect organic revenue in 2026?",
@@ -195,7 +197,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'ai search optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include organic_blue_link. Recent titles in the news layer include Google: Meta Descriptions Not Required For SEO. But They\u2019re Worthwhile. via @sejournal, @martinibuster; Search And Agents Are One Product. You Only Need One Playbook via @sejournal, @slobodanmanic; Google Says AI Visibility Hinges On Content People Actually Want To Read via @sejournal, @martinibuster. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'ai search optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include video. Recent titles in the news layer include Google AI Overviews Study Finds Lost Clicks Weren\u2019t Lower Quality via @sejournal, @MattGSouthern; OpenAI Hiring Points To Image & Video Ads Coming To ChatGPT via @sejournal, @MattGSouthern; Habitual Publisher Traffic Is Collapsing. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -212,8 +214,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/google-desktop-ctr-climbs-while-mobile-dips-report-finds/580527/",
-        "https://www.searchenginejournal.com/my-ai-assistant-traffic-was-fake-the-googlebot-number-was-worse/580052/"
+        "https://www.searchenginejournal.com/ai-agents-struggle-to-read-b2b-pricing-report-finds/581186/",
+        "https://www.searchenginejournal.com/chatgpt-users-are-now-mostly-non-english/581159/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -225,7 +227,7 @@
       "serp_intent": "informational",
       "funnel_stage": "awareness",
       "serp_features": [
-        "organic_blue_link"
+        "video"
       ],
       "paa_questions": [
         "How does llm affect organic revenue in 2026?",
@@ -234,7 +236,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'llm seo': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include organic_blue_link. Recent titles in the news layer include Google: Meta Descriptions Not Required For SEO. But They\u2019re Worthwhile. via @sejournal, @martinibuster; Search And Agents Are One Product. You Only Need One Playbook via @sejournal, @slobodanmanic; Google Says AI Visibility Hinges On Content People Actually Want To Read via @sejournal, @martinibuster. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'llm seo': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include video. Recent titles in the news layer include Google AI Overviews Study Finds Lost Clicks Weren\u2019t Lower Quality via @sejournal, @MattGSouthern; OpenAI Hiring Points To Image & Video Ads Coming To ChatGPT via @sejournal, @MattGSouthern; Habitual Publisher Traffic Is Collapsing. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -251,8 +253,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/ask-the-ppc-how-do-i-effectively-measure-campaign-success-across-multiple-platforms/576209/",
-        "https://www.searchenginejournal.com/wp-rocket-now-offers-free-cdn-for-your-most-important-pages/580516/"
+        "https://www.searchenginejournal.com/google-puts-recipe-links-at-top-of-ai-mode-responses/581149/",
+        "https://www.searchenginejournal.com/how-chatgpt-actually-picks-sources-i-read-the-network-traffic-not-the-outputs/580895/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -264,7 +266,7 @@
       "serp_intent": "informational",
       "funnel_stage": "awareness",
       "serp_features": [
-        "organic_blue_link"
+        "video"
       ],
       "paa_questions": [
         "How does schema markup for ai search affect organic revenue in 2026?",
@@ -273,7 +275,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'schema markup for ai search': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include organic_blue_link. Recent titles in the news layer include Google: Meta Descriptions Not Required For SEO. But They\u2019re Worthwhile. via @sejournal, @martinibuster; Search And Agents Are One Product. You Only Need One Playbook via @sejournal, @slobodanmanic; Google Says AI Visibility Hinges On Content People Actually Want To Read via @sejournal, @martinibuster. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'schema markup for ai search': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include video. Recent titles in the news layer include Google AI Overviews Study Finds Lost Clicks Weren\u2019t Lower Quality via @sejournal, @MattGSouthern; OpenAI Hiring Points To Image & Video Ads Coming To ChatGPT via @sejournal, @MattGSouthern; Habitual Publisher Traffic Is Collapsing. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -290,7 +292,7 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/wordpress-new-ai-feature/580500/",
+        "https://www.searchenginejournal.com/61-of-cmos-say-local-marketing-is-too-complex-heres-the-fix-spa/580542/",
         "https://feedpress.me/link/9375/14757949/cannibalization"
       ],
       "internal_links": [
@@ -303,7 +305,7 @@
       "serp_intent": "informational_technical",
       "funnel_stage": "awareness",
       "serp_features": [
-        "organic_blue_link"
+        "video"
       ],
       "paa_questions": [
         "How does technical affect organic revenue in 2026?",
@@ -312,7 +314,7 @@
         "When should I use noindex versus canonical consolidation?",
         "What Core Web Vitals matter most for SEO?"
       ],
-      "serp_analysis": "SERP snapshot for 'technical seo audit': dominant intent is **informational_technical** at the **awareness** funnel stage. Observed SERP features include organic_blue_link. Recent titles in the news layer include Google: Meta Descriptions Not Required For SEO. But They\u2019re Worthwhile. via @sejournal, @martinibuster; Search And Agents Are One Product. You Only Need One Playbook via @sejournal, @slobodanmanic; Google Says AI Visibility Hinges On Content People Actually Want To Read via @sejournal, @martinibuster. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'technical seo audit': dominant intent is **informational_technical** at the **awareness** funnel stage. Observed SERP features include video. Recent titles in the news layer include Google AI Overviews Study Finds Lost Clicks Weren\u2019t Lower Quality via @sejournal, @MattGSouthern; OpenAI Hiring Points To Image & Video Ads Coming To ChatGPT via @sejournal, @MattGSouthern; Habitual Publisher Traffic Is Collapsing. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     }
