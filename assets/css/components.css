@@ -1692,3 +1692,8 @@
   .feature-row { grid-template-columns: 1fr; gap: 1.25rem; }
   .feature-row--reverse .feature-row__media { order: -1; }
 }
+
+/* --- Logo proof tiles (brand logo contained on a light card) --- */
+.proof-card__media--logo { background: #f4f1ea; }
+.proof-card__media--logo picture { display: grid; place-items: center; width: 100%; height: 100%; padding: 1.4rem; }
+.proof-card__media--logo picture img { width: auto; height: auto; max-width: 86%; max-height: 78%; object-fit: contain; border-radius: 0; }
