@@ -8,8 +8,8 @@
   <link rel="icon" href="./assets/logos/seowithfaiz-icon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    <link rel="preload" as="image" href="./assets/logos/seo-with-faiz-logo-technical-precision-revenue-growth.webp" type="image/webp">
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"></noscript>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap"></noscript>
 
   <title>Web Design, Development, SEO &amp; Marketing | SEO With Faiz</title>
   <meta name="description" content="Full-service web studio: custom, 3D, Shopify Plus, WordPress &amp; Magento builds — engineered with technical SEO and performance marketing for enterprise and growth-stage brands.">
@@ -198,6 +198,10 @@
             <a class="btn btn-secondary" href="./services/index.html">Explore services</a>
           </div>
         </div>
+        <div class="hero-viz" data-hero-viz aria-label="Interactive 3D globe representing global delivery">
+          <canvas class="hero-viz__canvas" data-hero-globe aria-hidden="true"></canvas>
+          <span class="hero-viz__hint" aria-hidden="true">Drag to explore</span>
+          <div class="hero-viz__fallback">
         <aside class="hero-console" data-hero-tilt aria-label="Studio snapshot">
           <div class="hero-console__inner">
             <div class="hero-console__head">
@@ -237,6 +241,8 @@
           <span class="hero-console__chip hero-console__chip--2" aria-hidden="true">Shopify Plus</span>
           <span class="hero-console__chip hero-console__chip--3" aria-hidden="true">Next.js</span>
         </aside>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -612,5 +618,6 @@
   <script src="./assets/js/site.js" defer></script>
   <script src="./assets/js/hero-3d.js" defer></script>
   <script src="./assets/js/conversion.js" defer></script>
+  <script type="module" src="./assets/js/hero-globe.js"></script>
 </body>
 </html>

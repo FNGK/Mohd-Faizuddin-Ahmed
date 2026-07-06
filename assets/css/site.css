@@ -19,7 +19,7 @@
   --shadow-brand: 0 18px 40px rgba(13, 127, 118, 0.16);
   --container: 1180px;
   --font-display: "Fraunces", Georgia, "Times New Roman", serif;
-  --font-body: "Manrope", "Segoe UI", Roboto, Arial, sans-serif;
+  --font-body: "Hanken Grotesk", "Segoe UI", Roboto, Arial, sans-serif;
   --mesh-a: radial-gradient(ellipse 120% 80% at 0% -20%, rgba(13, 127, 118, 0.22), transparent 58%);
   --mesh-b: radial-gradient(ellipse 90% 60% at 100% 0%, rgba(197, 106, 29, 0.16), transparent 54%);
   --mesh-c: radial-gradient(ellipse 70% 50% at 50% 110%, rgba(12, 20, 36, 0.06), transparent 58%);
