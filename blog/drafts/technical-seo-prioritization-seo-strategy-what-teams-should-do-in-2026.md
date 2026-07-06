@@ -56,7 +56,7 @@ humanization_metrics:
   max_shingle_overlap: 0.0
   flesch_ease: 50.21
   fk_grade: 10.44
-last_humanization_check: '2026-07-02T08:08:57.912917+00:00'
+last_humanization_check: '2026-07-06T08:58:52.654865+00:00'
 ---
 
 ## Crawl budget is a business constraint, not a specialist hobby

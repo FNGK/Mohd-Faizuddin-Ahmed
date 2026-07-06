@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T08:08:57.256775+00:00",
+  "generated_at": "2026-07-06T08:58:52.025094+00:00",
   "idea_count": 8,
   "gemini_calls_this_run": 0,
   "gemini_enabled": true,
@@ -17,8 +17,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/google-ai-overviews-study-finds-lost-clicks-werent-lower-quality/581298/",
-        "https://www.searchenginejournal.com/openai-hiring-points-to-image-video-ads-coming-to-chatgpt/581289/"
+        "https://www.searchenginejournal.com/safaris-mcp-server/581487/",
+        "https://www.searchenginejournal.com/google-put-ai-visibility-inside-the-seo-tool-on-purpose/577889/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -30,6 +30,7 @@
       "serp_intent": "informational",
       "funnel_stage": "awareness",
       "serp_features": [
+        "featured_snippet",
         "video"
       ],
       "paa_questions": [
@@ -39,7 +40,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'answer engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include video. Recent titles in the news layer include Google AI Overviews Study Finds Lost Clicks Weren\u2019t Lower Quality via @sejournal, @MattGSouthern; OpenAI Hiring Points To Image & Video Ads Coming To ChatGPT via @sejournal, @MattGSouthern; Habitual Publisher Traffic Is Collapsing. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'answer engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, video. Recent titles in the news layer include Safari\u2019s New MCP Server Enables AI Debugging For SEO And CWV via @sejournal, @martinibuster; Google Put AI Visibility Inside The SEO Tool On Purpose via @sejournal, @slobodanmanic; Fake DMCA Complaints Keep Erasing Real Pages From Google \u2013 What To Watch For via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -56,8 +57,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/habitual-publisher-traffic-is-collapsing/580673/",
-        "https://www.searchenginejournal.com/fabrice-canel-longtime-bing-search-leader-retires-from-microsoft/581247/"
+        "https://www.searchenginejournal.com/fake-dmca-complaints-keep-erasing-real-pages-from-google-what-to-watch-for/581299/",
+        "https://www.searchenginejournal.com/lighthouse-fails-your-llms-txt-without-markdown-links/577590/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -69,6 +70,7 @@
       "serp_intent": "informational",
       "funnel_stage": "awareness",
       "serp_features": [
+        "featured_snippet",
         "video"
       ],
       "paa_questions": [
@@ -78,7 +80,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'generative engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include video. Recent titles in the news layer include Google AI Overviews Study Finds Lost Clicks Weren\u2019t Lower Quality via @sejournal, @MattGSouthern; OpenAI Hiring Points To Image & Video Ads Coming To ChatGPT via @sejournal, @MattGSouthern; Habitual Publisher Traffic Is Collapsing. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'generative engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, video. Recent titles in the news layer include Safari\u2019s New MCP Server Enables AI Debugging For SEO And CWV via @sejournal, @martinibuster; Google Put AI Visibility Inside The SEO Tool On Purpose via @sejournal, @slobodanmanic; Fake DMCA Complaints Keep Erasing Real Pages From Google \u2013 What To Watch For via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -95,8 +97,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/88-of-companies-use-ai-as-a-tool-only-12-built-a-system/580648/",
-        "https://www.searchenginejournal.com/anthropics-claude-fable-5-is-back-with-new-usage-limits-and-safeguards/581231/"
+        "https://www.searchenginejournal.com/seo-pulse-where-clicks-go-what-agents-skip-whos-leaving-bing/581426/",
+        "https://www.searchenginejournal.com/ai-search-is-nothing-without-seo-it-knows-it/580452/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -118,7 +120,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'how to rank in ai overviews': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, video. Recent titles in the news layer include Google AI Overviews Study Finds Lost Clicks Weren\u2019t Lower Quality via @sejournal, @MattGSouthern; OpenAI Hiring Points To Image & Video Ads Coming To ChatGPT via @sejournal, @MattGSouthern; Habitual Publisher Traffic Is Collapsing. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'how to rank in ai overviews': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, video. Recent titles in the news layer include Safari\u2019s New MCP Server Enables AI Debugging For SEO And CWV via @sejournal, @martinibuster; Google Put AI Visibility Inside The SEO Tool On Purpose via @sejournal, @slobodanmanic; Fake DMCA Complaints Keep Erasing Real Pages From Google \u2013 What To Watch For via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -135,8 +137,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/new-wordpress-plugin-safely-and-easily-connects-ai-to-your-website/581219/",
-        "https://www.searchenginejournal.com/the-4-step-test-that-catches-ai-errors-before-they-shape-your-strategy/577687/"
+        "https://www.searchenginejournal.com/googles-mueller-flags-a-case-on-why-lcp-fixes-miss-the-target/581413/",
+        "https://www.searchenginejournal.com/google-ends-cache-served-amp-pages-in-search/581405/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -158,7 +160,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'how to get cited by chatgpt': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, video. Recent titles in the news layer include Google AI Overviews Study Finds Lost Clicks Weren\u2019t Lower Quality via @sejournal, @MattGSouthern; OpenAI Hiring Points To Image & Video Ads Coming To ChatGPT via @sejournal, @MattGSouthern; Habitual Publisher Traffic Is Collapsing. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'how to get cited by chatgpt': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, video. Recent titles in the news layer include Safari\u2019s New MCP Server Enables AI Debugging For SEO And CWV via @sejournal, @martinibuster; Google Put AI Visibility Inside The SEO Tool On Purpose via @sejournal, @slobodanmanic; Fake DMCA Complaints Keep Erasing Real Pages From Google \u2013 What To Watch For via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -175,8 +177,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/anthropics-claude-sonnet-5-is-near-opus-intelligence-for-all-plans/581202/",
-        "https://www.searchenginejournal.com/chrome-auto-browse-acts-on-your-website-apples-siri-ai-only-reads-it/578681/"
+        "https://www.searchenginejournal.com/cloudflares-ai-crawler-rules-can-block-googlebot/581385/",
+        "https://www.searchenginejournal.com/your-younger-audience-is-declining-faster-than-it-looks/581277/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -188,6 +190,7 @@
       "serp_intent": "informational",
       "funnel_stage": "awareness",
       "serp_features": [
+        "featured_snippet",
         "video"
       ],
       "paa_questions": [
@@ -197,7 +200,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'ai search optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include video. Recent titles in the news layer include Google AI Overviews Study Finds Lost Clicks Weren\u2019t Lower Quality via @sejournal, @MattGSouthern; OpenAI Hiring Points To Image & Video Ads Coming To ChatGPT via @sejournal, @MattGSouthern; Habitual Publisher Traffic Is Collapsing. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'ai search optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, video. Recent titles in the news layer include Safari\u2019s New MCP Server Enables AI Debugging For SEO And CWV via @sejournal, @martinibuster; Google Put AI Visibility Inside The SEO Tool On Purpose via @sejournal, @slobodanmanic; Fake DMCA Complaints Keep Erasing Real Pages From Google \u2013 What To Watch For via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -214,8 +217,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/ai-agents-struggle-to-read-b2b-pricing-report-finds/581186/",
-        "https://www.searchenginejournal.com/chatgpt-users-are-now-mostly-non-english/581159/"
+        "https://www.searchenginejournal.com/microsoft-just-proved-a-point-about-search-today/580664/",
+        "https://www.searchenginejournal.com/googles-dmca-crisis-is-disrupting-the-web-it-will-only-get-worse/581340/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -227,6 +230,7 @@
       "serp_intent": "informational",
       "funnel_stage": "awareness",
       "serp_features": [
+        "featured_snippet",
         "video"
       ],
       "paa_questions": [
@@ -236,7 +240,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'llm seo': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include video. Recent titles in the news layer include Google AI Overviews Study Finds Lost Clicks Weren\u2019t Lower Quality via @sejournal, @MattGSouthern; OpenAI Hiring Points To Image & Video Ads Coming To ChatGPT via @sejournal, @MattGSouthern; Habitual Publisher Traffic Is Collapsing. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'llm seo': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, video. Recent titles in the news layer include Safari\u2019s New MCP Server Enables AI Debugging For SEO And CWV via @sejournal, @martinibuster; Google Put AI Visibility Inside The SEO Tool On Purpose via @sejournal, @slobodanmanic; Fake DMCA Complaints Keep Erasing Real Pages From Google \u2013 What To Watch For via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -253,8 +257,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/google-puts-recipe-links-at-top-of-ai-mode-responses/581149/",
-        "https://www.searchenginejournal.com/how-chatgpt-actually-picks-sources-i-read-the-network-traffic-not-the-outputs/580895/"
+        "https://www.searchenginejournal.com/google-data-shows-ai-search-users-moved-past-keywords-your-content-hasnt/580596/",
+        "https://www.searchenginejournal.com/ask-an-seo-should-i-block-ai-crawlers-or-measure-their-value-first/580005/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -266,6 +270,7 @@
       "serp_intent": "informational",
       "funnel_stage": "awareness",
       "serp_features": [
+        "featured_snippet",
         "video"
       ],
       "paa_questions": [
@@ -275,7 +280,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'schema markup for ai search': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include video. Recent titles in the news layer include Google AI Overviews Study Finds Lost Clicks Weren\u2019t Lower Quality via @sejournal, @MattGSouthern; OpenAI Hiring Points To Image & Video Ads Coming To ChatGPT via @sejournal, @MattGSouthern; Habitual Publisher Traffic Is Collapsing. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'schema markup for ai search': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, video. Recent titles in the news layer include Safari\u2019s New MCP Server Enables AI Debugging For SEO And CWV via @sejournal, @martinibuster; Google Put AI Visibility Inside The SEO Tool On Purpose via @sejournal, @slobodanmanic; Fake DMCA Complaints Keep Erasing Real Pages From Google \u2013 What To Watch For via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -292,7 +297,7 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/61-of-cmos-say-local-marketing-is-too-complex-heres-the-fix-spa/580542/",
+        "https://www.searchenginejournal.com/google-ai-overviews-study-finds-lost-clicks-werent-lower-quality/581298/",
         "https://feedpress.me/link/9375/14757949/cannibalization"
       ],
       "internal_links": [
@@ -305,6 +310,7 @@
       "serp_intent": "informational_technical",
       "funnel_stage": "awareness",
       "serp_features": [
+        "featured_snippet",
         "video"
       ],
       "paa_questions": [
@@ -314,7 +320,7 @@
         "When should I use noindex versus canonical consolidation?",
         "What Core Web Vitals matter most for SEO?"
       ],
-      "serp_analysis": "SERP snapshot for 'technical seo audit': dominant intent is **informational_technical** at the **awareness** funnel stage. Observed SERP features include video. Recent titles in the news layer include Google AI Overviews Study Finds Lost Clicks Weren\u2019t Lower Quality via @sejournal, @MattGSouthern; OpenAI Hiring Points To Image & Video Ads Coming To ChatGPT via @sejournal, @MattGSouthern; Habitual Publisher Traffic Is Collapsing. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'technical seo audit': dominant intent is **informational_technical** at the **awareness** funnel stage. Observed SERP features include featured_snippet, video. Recent titles in the news layer include Safari\u2019s New MCP Server Enables AI Debugging For SEO And CWV via @sejournal, @martinibuster; Google Put AI Visibility Inside The SEO Tool On Purpose via @sejournal, @slobodanmanic; Fake DMCA Complaints Keep Erasing Real Pages From Google \u2013 What To Watch For via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     }

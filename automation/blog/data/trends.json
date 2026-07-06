@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-07-02T08:08:53.980013+00:00",
+  "collected_at": "2026-07-06T08:58:48.692416+00:00",
   "feeds": [
     "Google Search Central",
     "Search Engine Journal",
@@ -8,6 +8,225 @@
   ],
   "entry_count": 25,
   "entries": [
+    {
+      "source": "Search Engine Journal",
+      "title": "Safari\u2019s New MCP Server Enables AI Debugging For SEO And CWV via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/safaris-mcp-server/581487/",
+      "published": "Sun, 05 Jul 2026 21:15:10 +0000",
+      "tokens": [
+        "safari",
+        "new",
+        "mcp",
+        "server",
+        "enables",
+        "debugging",
+        "cwv",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google Put AI Visibility Inside The SEO Tool On Purpose via @sejournal, @slobodanmanic",
+      "url": "https://www.searchenginejournal.com/google-put-ai-visibility-inside-the-seo-tool-on-purpose/577889/",
+      "published": "Sun, 05 Jul 2026 12:00:33 +0000",
+      "tokens": [
+        "put",
+        "visibility",
+        "inside",
+        "tool",
+        "purpose",
+        "via",
+        "sejournal",
+        "slobodanmanic"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Fake DMCA Complaints Keep Erasing Real Pages From Google \u2013 What To Watch For via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/fake-dmca-complaints-keep-erasing-real-pages-from-google-what-to-watch-for/581299/",
+      "published": "Sat, 04 Jul 2026 12:30:57 +0000",
+      "tokens": [
+        "fake",
+        "dmca",
+        "complaints",
+        "keep",
+        "erasing",
+        "real",
+        "pages",
+        "watch"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Lighthouse Fails Your Llms.txt Without Markdown Links via @sejournal, @slobodanmanic",
+      "url": "https://www.searchenginejournal.com/lighthouse-fails-your-llms-txt-without-markdown-links/577590/",
+      "published": "Fri, 03 Jul 2026 14:00:03 +0000",
+      "tokens": [
+        "lighthouse",
+        "fails",
+        "llms",
+        "txt",
+        "without",
+        "markdown",
+        "links",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Where Clicks Go, What Agents Skip, Who\u2019s Leaving Bing \u2013 SEO Pulse via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/seo-pulse-where-clicks-go-what-agents-skip-whos-leaving-bing/581426/",
+      "published": "Fri, 03 Jul 2026 12:30:55 +0000",
+      "tokens": [
+        "clicks",
+        "agents",
+        "skip",
+        "who",
+        "leaving",
+        "bing",
+        "pulse",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "AI Search Is Nothing Without SEO & It Knows It via @sejournal, @TaylorDanRW",
+      "url": "https://www.searchenginejournal.com/ai-search-is-nothing-without-seo-it-knows-it/580452/",
+      "published": "Fri, 03 Jul 2026 09:30:26 +0000",
+      "tokens": [
+        "nothing",
+        "without",
+        "knows",
+        "via",
+        "sejournal",
+        "taylordanrw"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google\u2019s Mueller Flags A Case On Why LCP Fixes Miss the Target via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/googles-mueller-flags-a-case-on-why-lcp-fixes-miss-the-target/581413/",
+      "published": "Thu, 02 Jul 2026 22:50:47 +0000",
+      "tokens": [
+        "mueller",
+        "flags",
+        "case",
+        "why",
+        "lcp",
+        "fixes",
+        "miss",
+        "target"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google Ends Cache-Served AMP Pages In Search via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/google-ends-cache-served-amp-pages-in-search/581405/",
+      "published": "Thu, 02 Jul 2026 20:06:10 +0000",
+      "tokens": [
+        "ends",
+        "cache-served",
+        "amp",
+        "pages",
+        "via",
+        "sejournal",
+        "mattgsouthern"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Cloudflare\u2019s AI Crawler Rules Can Block Googlebot via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/cloudflares-ai-crawler-rules-can-block-googlebot/581385/",
+      "published": "Thu, 02 Jul 2026 16:29:50 +0000",
+      "tokens": [
+        "cloudflare",
+        "crawler",
+        "rules",
+        "can",
+        "block",
+        "googlebot",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Your Younger Audience Is Declining Faster Than It Looks",
+      "url": "https://www.searchenginejournal.com/your-younger-audience-is-declining-faster-than-it-looks/581277/",
+      "published": "Thu, 02 Jul 2026 14:00:11 +0000",
+      "tokens": [
+        "younger",
+        "audience",
+        "declining",
+        "faster",
+        "than",
+        "looks"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Microsoft Just Proved A Point About Search Today via @sejournal, @DuaneForrester",
+      "url": "https://www.searchenginejournal.com/microsoft-just-proved-a-point-about-search-today/580664/",
+      "published": "Thu, 02 Jul 2026 12:30:20 +0000",
+      "tokens": [
+        "microsoft",
+        "just",
+        "proved",
+        "point",
+        "today",
+        "via",
+        "sejournal",
+        "duaneforrester"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Why Google\u2019s DMCA Crisis Is Bad And Will Only Get Worse. via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/googles-dmca-crisis-is-disrupting-the-web-it-will-only-get-worse/581340/",
+      "published": "Thu, 02 Jul 2026 11:21:15 +0000",
+      "tokens": [
+        "why",
+        "dmca",
+        "crisis",
+        "bad",
+        "only",
+        "get",
+        "worse",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google Data Shows AI Search Users Moved Past Keywords, Your Content Hasn\u2019t via @sejournal, @gregjarboe",
+      "url": "https://www.searchenginejournal.com/google-data-shows-ai-search-users-moved-past-keywords-your-content-hasnt/580596/",
+      "published": "Thu, 02 Jul 2026 11:00:11 +0000",
+      "tokens": [
+        "data",
+        "shows",
+        "users",
+        "moved",
+        "past",
+        "keywords",
+        "content",
+        "hasn"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Should I Block AI Crawlers Or Measure Their Value First? \u2013 Ask An SEO via @sejournal, @HelenPollitt1",
+      "url": "https://www.searchenginejournal.com/ask-an-seo-should-i-block-ai-crawlers-or-measure-their-value-first/580005/",
+      "published": "Thu, 02 Jul 2026 09:30:54 +0000",
+      "tokens": [
+        "should",
+        "block",
+        "crawlers",
+        "measure",
+        "their",
+        "value",
+        "first",
+        "ask"
+      ]
+    },
     {
       "source": "Search Engine Journal",
       "title": "Google AI Overviews Study Finds Lost Clicks Weren\u2019t Lower Quality via @sejournal, @MattGSouthern",
@@ -22,226 +241,6 @@
         "weren",
         "lower",
         "quality"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "OpenAI Hiring Points To Image & Video Ads Coming To ChatGPT via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/openai-hiring-points-to-image-video-ads-coming-to-chatgpt/581289/",
-      "published": "Wed, 01 Jul 2026 21:44:34 +0000",
-      "tokens": [
-        "openai",
-        "hiring",
-        "points",
-        "image",
-        "video",
-        "ads",
-        "coming",
-        "chatgpt"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Habitual Publisher Traffic Is Collapsing",
-      "url": "https://www.searchenginejournal.com/habitual-publisher-traffic-is-collapsing/580673/",
-      "published": "Wed, 01 Jul 2026 13:30:13 +0000",
-      "tokens": [
-        "habitual",
-        "publisher",
-        "traffic",
-        "collapsing"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Fabrice Canel, Longtime Bing Search Leader, Retires From Microsoft via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/fabrice-canel-longtime-bing-search-leader-retires-from-microsoft/581247/",
-      "published": "Wed, 01 Jul 2026 12:37:31 +0000",
-      "tokens": [
-        "fabrice",
-        "canel",
-        "longtime",
-        "bing",
-        "leader",
-        "retires",
-        "microsoft",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "88% Of Companies Use AI As A Tool, Only 12% Built A System via @sejournal, @gregjarboe",
-      "url": "https://www.searchenginejournal.com/88-of-companies-use-ai-as-a-tool-only-12-built-a-system/580648/",
-      "published": "Wed, 01 Jul 2026 12:00:03 +0000",
-      "tokens": [
-        "companies",
-        "use",
-        "tool",
-        "only",
-        "built",
-        "system",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Anthropic\u2019s Claude Fable 5 Is Back With New Usage Limits And Safeguards via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/anthropics-claude-fable-5-is-back-with-new-usage-limits-and-safeguards/581231/",
-      "published": "Wed, 01 Jul 2026 11:46:47 +0000",
-      "tokens": [
-        "anthropic",
-        "claude",
-        "fable",
-        "back",
-        "new",
-        "usage",
-        "limits",
-        "safeguards"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "New WordPress Plugin Safely And Easily Connects AI To Your Website via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/new-wordpress-plugin-safely-and-easily-connects-ai-to-your-website/581219/",
-      "published": "Wed, 01 Jul 2026 11:05:25 +0000",
-      "tokens": [
-        "new",
-        "wordpress",
-        "plugin",
-        "safely",
-        "easily",
-        "connects",
-        "website",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "The 4-Step Test That Catches AI Errors Before They Shape Your Strategy via @sejournal, @alexanderkesler",
-      "url": "https://www.searchenginejournal.com/the-4-step-test-that-catches-ai-errors-before-they-shape-your-strategy/577687/",
-      "published": "Wed, 01 Jul 2026 10:00:56 +0000",
-      "tokens": [
-        "step",
-        "test",
-        "catches",
-        "errors",
-        "before",
-        "they",
-        "shape",
-        "strategy"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Anthropic\u2019s Claude Sonnet 5 Is \u201cNear-Opus Intelligence\u201d For All Plans via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/anthropics-claude-sonnet-5-is-near-opus-intelligence-for-all-plans/581202/",
-      "published": "Wed, 01 Jul 2026 09:56:37 +0000",
-      "tokens": [
-        "anthropic",
-        "claude",
-        "sonnet",
-        "near-opus",
-        "intelligence",
-        "all",
-        "plans",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Chrome Auto-Browse Acts On Your Website, Apple\u2019s Siri AI Only Reads It via @sejournal, @slobodanmanic",
-      "url": "https://www.searchenginejournal.com/chrome-auto-browse-acts-on-your-website-apples-siri-ai-only-reads-it/578681/",
-      "published": "Wed, 01 Jul 2026 08:00:17 +0000",
-      "tokens": [
-        "chrome",
-        "auto-browse",
-        "acts",
-        "website",
-        "apple",
-        "siri",
-        "only",
-        "reads"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "AI Agents Are Failing To Read B2B Pricing, Study Warns via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/ai-agents-struggle-to-read-b2b-pricing-report-finds/581186/",
-      "published": "Wed, 01 Jul 2026 02:21:48 +0000",
-      "tokens": [
-        "agents",
-        "are",
-        "failing",
-        "read",
-        "pricing",
-        "study",
-        "warns",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "ChatGPT Users Are Now Mostly Non-English via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/chatgpt-users-are-now-mostly-non-english/581159/",
-      "published": "Tue, 30 Jun 2026 18:53:34 +0000",
-      "tokens": [
-        "chatgpt",
-        "users",
-        "are",
-        "now",
-        "mostly",
-        "non-english",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Puts Recipe Links At Top Of AI Mode Responses via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/google-puts-recipe-links-at-top-of-ai-mode-responses/581149/",
-      "published": "Tue, 30 Jun 2026 18:06:12 +0000",
-      "tokens": [
-        "puts",
-        "recipe",
-        "links",
-        "top",
-        "mode",
-        "responses",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "How ChatGPT Actually Picks Sources (I Read The Network Traffic, Not The Outputs) via @sejournal, @suganthan",
-      "url": "https://www.searchenginejournal.com/how-chatgpt-actually-picks-sources-i-read-the-network-traffic-not-the-outputs/580895/",
-      "published": "Tue, 30 Jun 2026 13:30:23 +0000",
-      "tokens": [
-        "chatgpt",
-        "actually",
-        "picks",
-        "sources",
-        "read",
-        "network",
-        "traffic",
-        "not"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "61% of CMOs Say Local Marketing Is Too Complex: Here\u2019s the Fix",
-      "url": "https://www.searchenginejournal.com/61-of-cmos-say-local-marketing-is-too-complex-heres-the-fix-spa/580542/",
-      "published": "Tue, 30 Jun 2026 13:08:09 +0000",
-      "tokens": [
-        "cmos",
-        "say",
-        "local",
-        "marketing",
-        "too",
-        "complex",
-        "here",
-        "fix"
       ]
     },
     {
@@ -376,70 +375,58 @@
   "top_terms": [
     {
       "term": "via",
-      "count": 13
+      "count": 14
     },
     {
       "term": "sejournal",
-      "count": 13
+      "count": 14
     },
     {
       "term": "mattgsouthern",
       "count": 6
     },
     {
-      "term": "website",
-      "count": 4
+      "term": "martinibuster",
+      "count": 2
+    },
+    {
+      "term": "slobodanmanic",
+      "count": 2
+    },
+    {
+      "term": "dmca",
+      "count": 2
+    },
+    {
+      "term": "pages",
+      "count": 2
+    },
+    {
+      "term": "without",
+      "count": 2
+    },
+    {
+      "term": "clicks",
+      "count": 2
+    },
+    {
+      "term": "case",
+      "count": 2
+    },
+    {
+      "term": "why",
+      "count": 2
+    },
+    {
+      "term": "block",
+      "count": 2
     },
     {
       "term": "study",
-      "count": 3
-    },
-    {
-      "term": "ads",
-      "count": 3
-    },
-    {
-      "term": "chatgpt",
-      "count": 3
-    },
-    {
-      "term": "martinibuster",
-      "count": 3
-    },
-    {
-      "term": "traffic",
       "count": 2
     },
     {
-      "term": "use",
-      "count": 2
-    },
-    {
-      "term": "only",
-      "count": 2
-    },
-    {
-      "term": "anthropic",
-      "count": 2
-    },
-    {
-      "term": "claude",
-      "count": 2
-    },
-    {
-      "term": "new",
-      "count": 2
-    },
-    {
-      "term": "strategy",
-      "count": 2
-    },
-    {
-      "term": "are",
-      "count": 2
-    },
-    {
-      "term": "read",
+      "term": "website",
       "count": 2
     },
     {
@@ -451,87 +438,99 @@
       "count": 2
     },
     {
-      "term": "overviews",
+      "term": "ads",
+      "count": 2
+    },
+    {
+      "term": "safari",
       "count": 1
     },
     {
-      "term": "finds",
+      "term": "new",
       "count": 1
     },
     {
-      "term": "lost",
+      "term": "mcp",
       "count": 1
     },
     {
-      "term": "clicks",
+      "term": "server",
       "count": 1
     },
     {
-      "term": "weren",
+      "term": "enables",
       "count": 1
     },
     {
-      "term": "lower",
+      "term": "debugging",
       "count": 1
     },
     {
-      "term": "quality",
+      "term": "cwv",
       "count": 1
     },
     {
-      "term": "openai",
+      "term": "put",
       "count": 1
     },
     {
-      "term": "hiring",
+      "term": "visibility",
       "count": 1
     },
     {
-      "term": "points",
+      "term": "inside",
       "count": 1
     },
     {
-      "term": "image",
+      "term": "tool",
       "count": 1
     },
     {
-      "term": "video",
+      "term": "purpose",
       "count": 1
     },
     {
-      "term": "coming",
+      "term": "fake",
       "count": 1
     },
     {
-      "term": "habitual",
+      "term": "complaints",
       "count": 1
     },
     {
-      "term": "publisher",
+      "term": "keep",
       "count": 1
     },
     {
-      "term": "collapsing",
+      "term": "erasing",
       "count": 1
     },
     {
-      "term": "fabrice",
+      "term": "real",
       "count": 1
     },
     {
-      "term": "canel",
+      "term": "watch",
       "count": 1
     },
     {
-      "term": "longtime",
+      "term": "lighthouse",
       "count": 1
     },
     {
-      "term": "bing",
+      "term": "fails",
       "count": 1
     },
     {
-      "term": "leader",
+      "term": "llms",
+      "count": 1
+    },
+    {
+      "term": "txt",
+      "count": 1
+    },
+    {
+      "term": "markdown",
       "count": 1
     }
   ]
