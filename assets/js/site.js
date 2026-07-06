@@ -118,9 +118,9 @@
       if (source.includes("linkedin")) {
         cta.textContent = "Book LinkedIn strategy call";
       } else if (source.includes("google")) {
-        cta.textContent = "Get custom SEO growth plan";
+        cta.textContent = "Get a custom growth plan";
       } else if (source.includes("youtube")) {
-        cta.textContent = "Book 15-min SEO review";
+        cta.textContent = "Book a 15-min review";
       }
     });
 
@@ -132,7 +132,7 @@
         if (!scrolled && depth > 0.45) {
           scrolled = true;
           dynamicCtas.forEach(function (cta) {
-            cta.textContent = "Request custom SEO action plan";
+            cta.textContent = "Request a custom growth plan";
           });
         }
       },
