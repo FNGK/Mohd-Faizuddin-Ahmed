@@ -1215,3 +1215,209 @@
 @media (max-width: 860px) {
   .related-posts { grid-template-columns: 1fr; }
 }
+
+/* =====================================================================
+   ELITE 3D HERO  (.hero-3d) — cinematic, GPU-cheap, mobile-safe.
+   Canvas constellation + pointer-driven 3D tilt console + depth chips.
+   Dark is the default identity; teal is the signature accent. Every
+   moving part is frozen under prefers-reduced-motion.
+   ===================================================================== */
+.hero-3d {
+  position: relative;
+  min-height: clamp(560px, 86vh, 880px);
+  display: flex;
+  align-items: center;
+}
+.hero-3d .hero-grid {
+  position: relative;
+  z-index: 2;
+  align-items: center;
+}
+.hero-3d__canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  pointer-events: none;
+  border-radius: 0;
+}
+.hero-3d__glow {
+  position: absolute;
+  z-index: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(64px);
+  will-change: transform;
+}
+.hero-3d__glow--a {
+  top: -14%;
+  right: 2%;
+  width: 44vw;
+  max-width: 640px;
+  aspect-ratio: 1;
+  opacity: 0.5;
+  background: radial-gradient(circle, color-mix(in srgb, var(--primary) 60%, transparent), transparent 68%);
+  animation: mesh-drift 22s ease-in-out infinite;
+}
+.hero-3d__glow--b {
+  bottom: -20%;
+  left: -8%;
+  width: 40vw;
+  max-width: 560px;
+  aspect-ratio: 1;
+  opacity: 0.35;
+  background: radial-gradient(circle, color-mix(in srgb, var(--accent) 42%, transparent), transparent 70%);
+  animation: mesh-drift 28s ease-in-out infinite reverse;
+}
+
+/* Perspective scene so the console tilts in real 3D (desktop only) */
+@media (min-width: 981px) {
+  .hero-3d .hero-grid { perspective: 1400px; }
+}
+
+.hero-console {
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+  transition: transform 0.45s var(--ease-out);
+  animation: hero-in 0.9s var(--ease-out) 0.3s both;
+}
+.hero-console__inner {
+  position: relative;
+  display: grid;
+  gap: 1.05rem;
+  padding: 1.35rem 1.4rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--glass-border, var(--border));
+  background: var(--glass-strong, color-mix(in srgb, var(--surface) 92%, transparent));
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, var(--shadow-md), var(--shadow-glow);
+  backdrop-filter: blur(18px) saturate(1.15);
+  -webkit-backdrop-filter: blur(18px) saturate(1.15);
+}
+.hero-console__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.hero-console__head .kicker { margin: 0; }
+.hero-console__pulse {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--primary-dark);
+}
+[data-theme="dark"] .hero-console__pulse { color: var(--primary); }
+.hero-console__pulse i {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--success);
+  animation: live-pulse 2s ease-out infinite;
+}
+.hero-console__viz {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--border) 80%, transparent);
+  background: color-mix(in srgb, var(--ink) 5%, transparent);
+}
+[data-theme="dark"] .hero-console__viz {
+  background: rgba(3, 10, 22, 0.4);
+  border-color: var(--glass-border);
+}
+.hero-console__viz svg { display: block; width: 100%; height: auto; }
+.hero-console__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+.hero-console__list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--border) 80%, transparent);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+[data-theme="dark"] .hero-console__list li { border-color: rgba(255, 255, 255, 0.08); }
+.hero-console__list li:last-child { border-bottom: 0; padding-bottom: 0; }
+.hero-console__list strong { color: var(--text); font-weight: 700; }
+
+.hero-console__chip {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.72rem;
+  border-radius: 999px;
+  font-size: 0.74rem;
+  font-weight: 800;
+  color: var(--text);
+  background: var(--glass-strong, var(--surface));
+  border: 1px solid var(--glass-border, var(--border));
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  white-space: nowrap;
+  animation: float-soft 6s ease-in-out infinite;
+}
+.hero-console__chip::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--primary);
+  box-shadow: 0 0 8px var(--primary);
+}
+.hero-console__chip--1 { top: -0.9rem; right: 1rem; transform: translateZ(60px); animation-delay: 0s; }
+.hero-console__chip--2 { bottom: 2.4rem; left: -1.4rem; transform: translateZ(92px); animation-delay: 1.1s; }
+.hero-console__chip--3 { bottom: -0.9rem; right: 2.2rem; transform: translateZ(44px); animation-delay: 2.2s; }
+
+@keyframes live-pulse {
+  0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--success) 55%, transparent); }
+  70% { box-shadow: 0 0 0 8px transparent; }
+  100% { box-shadow: 0 0 0 0 transparent; }
+}
+
+/* Entity-graph micro-animations (SVG presentation attributes) */
+.eg-link { stroke: color-mix(in srgb, var(--primary) 50%, transparent); stroke-width: 1.2; opacity: 0.5; }
+.eg-flow {
+  stroke: var(--primary);
+  stroke-width: 1.6;
+  stroke-dasharray: 4 10;
+  opacity: 0.9;
+  animation: eg-dash 1.4s linear infinite;
+}
+.eg-node { fill: var(--surface); stroke: color-mix(in srgb, var(--primary) 70%, var(--border)); stroke-width: 1.4; }
+[data-theme="dark"] .eg-node { fill: #0c1b2e; }
+.eg-node--hub { fill: var(--primary); animation: eg-hub 3s ease-in-out infinite; }
+.eg-node--live { animation: eg-live 2.4s ease-in-out infinite; }
+@keyframes eg-dash { to { stroke-dashoffset: -28; } }
+@keyframes eg-hub { 0%, 100% { opacity: 1; } 50% { opacity: 0.72; } }
+@keyframes eg-live { 0%, 100% { r: 4; opacity: 1; } 50% { r: 5.4; opacity: 0.7; } }
+
+@media (max-width: 980px) {
+  .hero-3d { min-height: auto; padding-top: 1.5rem; }
+  .hero-console { transform: none !important; }
+  .hero-console__chip { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-3d__glow,
+  .hero-console__chip,
+  .hero-console__pulse i,
+  .eg-flow,
+  .eg-node--hub,
+  .eg-node--live { animation: none !important; }
+  .hero-console { animation: none !important; transform: none !important; }
+}

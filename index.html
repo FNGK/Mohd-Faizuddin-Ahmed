@@ -232,8 +232,11 @@
   </header>
 
   <main id="main">
-    <section class="section hero hero--flagship">
-      <div class="container hero-grid">
+    <section class="section hero hero--flagship hero-3d" aria-label="Introduction">
+      <canvas class="hero-3d__canvas" data-hero-canvas aria-hidden="true"></canvas>
+      <span class="hero-3d__glow hero-3d__glow--a" aria-hidden="true"></span>
+      <span class="hero-3d__glow hero-3d__glow--b" aria-hidden="true"></span>
+      <div class="container hero-grid" data-hero-scene>
         <div class="hero-copy">
           <span class="kicker">Pipeline-first SEO studio</span>
           <h1>Organic growth engineered for <span class="text-grad">revenue</span>, not ranking vanity.</h1>
@@ -253,19 +256,44 @@
             <a class="btn btn-secondary" href="./case-studies/index.html">Review proof library</a>
           </div>
         </div>
-        <aside class="studio-panel" aria-label="Engagement snapshot">
-          <span class="kicker">Operating snapshot</span>
-          <ul class="studio-panel__list">
-            <li><span>Delivery model</span><strong>Audit → retainer</strong></li>
-            <li><span>Performance baseline</span><strong>Lighthouse 95+</strong></li>
-            <li><span>Markets served</span><strong>US · CA · AU · EU</strong></li>
-            <li><span>Response window</span><strong>24 business hours</strong></li>
-          </ul>
-          <p>Public artifacts, case studies, and implementation notes are available before you book a call.</p>
-          <div class="hero-actions">
-            <a class="btn btn-secondary" href="./mentions.html">Mentions and proof</a>
-            <a class="btn btn-secondary" href="./resources/seo-audit-playbook.html">SEO playbook</a>
+        <aside class="hero-console" data-hero-tilt aria-label="Operating snapshot">
+          <div class="hero-console__inner">
+            <div class="hero-console__head">
+              <span class="kicker">Operating snapshot</span>
+              <span class="hero-console__pulse"><i aria-hidden="true"></i>Live</span>
+            </div>
+            <div class="hero-console__viz">
+              <svg viewBox="0 0 320 150" role="img" aria-label="Topical authority graph connecting six SEO clusters to a central hub">
+                <g>
+                  <line class="eg-link" x1="160" y1="78" x2="40" y2="40" />
+                  <line class="eg-flow" x1="160" y1="78" x2="150" y2="24" />
+                  <line class="eg-link" x1="160" y1="78" x2="280" y2="46" />
+                  <line class="eg-flow" x1="160" y1="78" x2="300" y2="112" />
+                  <line class="eg-link" x1="160" y1="78" x2="170" y2="130" />
+                  <line class="eg-link" x1="160" y1="78" x2="36" y2="112" />
+                </g>
+                <g>
+                  <circle class="eg-node eg-node--live" cx="40" cy="40" r="4" />
+                  <circle class="eg-node" cx="150" cy="24" r="4" />
+                  <circle class="eg-node eg-node--live" cx="280" cy="46" r="4" />
+                  <circle class="eg-node" cx="300" cy="112" r="4" />
+                  <circle class="eg-node eg-node--live" cx="170" cy="130" r="4" />
+                  <circle class="eg-node" cx="36" cy="112" r="4" />
+                  <circle class="eg-node--hub" cx="160" cy="78" r="9" />
+                  <circle cx="160" cy="78" r="3.4" fill="#03141f" />
+                </g>
+              </svg>
+            </div>
+            <ul class="hero-console__list">
+              <li><span>Delivery model</span><strong>Audit → retainer</strong></li>
+              <li><span>Performance baseline</span><strong>Lighthouse 95+</strong></li>
+              <li><span>Markets served</span><strong>US · CA · AU · EU</strong></li>
+              <li><span>Response window</span><strong>24 business hours</strong></li>
+            </ul>
           </div>
+          <span class="hero-console__chip hero-console__chip--1" aria-hidden="true">AEO + GEO ready</span>
+          <span class="hero-console__chip hero-console__chip--2" aria-hidden="true">Schema graph</span>
+          <span class="hero-console__chip hero-console__chip--3" aria-hidden="true">Core Web Vitals</span>
         </aside>
       </div>
     </section>
@@ -604,5 +632,6 @@
   </footer>
 
   <script src="./assets/js/site.js" defer></script>
+  <script src="./assets/js/hero-3d.js" defer></script>
 </body>
 </html>
