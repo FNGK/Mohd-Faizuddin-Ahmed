@@ -27,18 +27,23 @@
   }
 
   // Gate: accessibility and genuinely-constrained devices keep the fallback.
-  if (reduce || lowData || veryLowMem || !webglOK()) return;
+  // NOTE: the WebGL support probe is deliberately NOT here — creating a GL
+  // context at load costs seconds on software-GL environments (headless
+  // Chrome, PSI). It runs inside ignite(), after first interaction, where
+  // real devices answer it in milliseconds.
+  if (reduce || lowData || veryLowMem) return;
 
-  // Defer the heavy lifting (670KB module parse + WebGL compile) until the
-  // visitor's first interaction. A pointer twitch, scroll, tap, or keypress
-  // arrives within moments for real users, so the globe still feels instant —
-  // but page content never competes with decoration for the main thread.
+  // Defer the heavy lifting (GL probe + 670KB module parse + WebGL compile)
+  // until the visitor's first interaction. A pointer twitch, scroll, tap, or
+  // keypress arrives within moments for real users, so the globe still feels
+  // instant — but page content never competes with decoration.
   var ARM_EVENTS = ["pointerdown", "pointermove", "touchstart", "wheel", "scroll", "keydown"];
   var armed = false;
   function ignite() {
     if (armed) return;
     armed = true;
     ARM_EVENTS.forEach(function (ev) { window.removeEventListener(ev, ignite); });
+    if (!webglOK()) return; // keep the console fallback
     import("./vendor/three.module.min.js").then(function (THREE) {
       build(THREE);
     }).catch(function (err) {
