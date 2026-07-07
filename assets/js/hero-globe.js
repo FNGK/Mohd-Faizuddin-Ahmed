@@ -1,8 +1,10 @@
 /* Enterprise 3D hero — an interactive WebGL globe (self-hosted Three.js).
-   Progressive enhancement: only capable desktops load Three and render the
-   globe. Phones, reduced-motion, save-data, and no-WebGL users keep the
-   lightweight fallback, so the "Lighthouse 95+" promise holds everywhere.
-   Concept ties to the offer: global reach, connections lighting up a network. */
+   Progressive enhancement on every device: desktop and mobile both render
+   the globe, with mobile tuned lighter (fewer particles, capped DPR, larger
+   label pills, horizontal-only drag so page scroll is never trapped).
+   Reduced-motion, save-data, very-low-memory, and no-WebGL users keep the
+   lightweight fallback. Concept ties to the offer: global reach,
+   connections lighting up a network. */
 (function () {
   "use strict";
 
@@ -12,11 +14,10 @@
 
   var mq = window.matchMedia;
   var reduce = mq && mq("(prefers-reduced-motion: reduce)").matches;
-  var finePointer = mq && mq("(pointer: fine)").matches;
-  var wideEnough = window.innerWidth >= 900;
+  var coarse = !(mq && mq("(pointer: fine)").matches);
   var conn = navigator.connection || {};
   var lowData = conn.saveData || /2g/.test(conn.effectiveType || "");
-  var lowMem = navigator.deviceMemory && navigator.deviceMemory < 4;
+  var veryLowMem = navigator.deviceMemory && navigator.deviceMemory < 2;
 
   function webglOK() {
     try {
@@ -25,19 +26,25 @@
     } catch (e) { return false; }
   }
 
-  // Gate: only enhance where it will look and perform great.
-  if (reduce || !finePointer || !wideEnough || lowData || lowMem || !webglOK()) return;
+  // Gate: accessibility and genuinely-constrained devices keep the fallback.
+  if (reduce || lowData || veryLowMem || !webglOK()) return;
 
   import("./vendor/three.module.min.js").then(function (THREE) {
     build(THREE);
-  }).catch(function () { /* keep fallback */ });
+  }).catch(function (err) {
+    viz.classList.remove("is-3d"); // restore fallback on any failure
+    if (window.console && console.warn) console.warn("hero-globe fallback:", err && err.message ? err.message : err);
+  });
 
   function build(THREE) {
+    // Reveal the 3D viewport first so the container takes its real
+    // (mobile min-height) size before the canvas is measured.
+    viz.classList.add("is-3d");
     var W = viz.clientWidth, H = viz.clientHeight;
-    if (W < 40 || H < 40) return;
+    if (W < 40 || H < 40) { viz.classList.remove("is-3d"); return; }
 
-    var renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true, alpha: true, powerPreference: "high-performance" });
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    var renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: !coarse, alpha: true, powerPreference: "high-performance" });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, coarse ? 1.75 : 2));
     renderer.setSize(W, H, false);
 
     var scene = new THREE.Scene();
@@ -58,7 +65,7 @@
     globe.add(core);
 
     // --- Point-cloud globe (Fibonacci sphere) ---
-    var COUNT = 2400;
+    var COUNT = coarse ? 1500 : 2400;
     var positions = new Float32Array(COUNT * 3);
     var golden = Math.PI * (3 - Math.sqrt(5));
     for (var i = 0; i < COUNT; i++) {
@@ -148,7 +155,7 @@
       var sprite = new THREE.Sprite(new THREE.SpriteMaterial({
         map: tex, transparent: true, depthTest: true, depthWrite: false, opacity: 0.92
       }));
-      var hWorld = 0.08;
+      var hWorld = coarse ? 0.105 : 0.08; // larger pills for small screens
       sprite.scale.set(hWorld * (label.w / label.h), hWorld, 1);
 
       // Unique latitude per term: alternate hemispheres from the poles in,
@@ -167,16 +174,18 @@
 
     globe.rotation.x = 0.32;
 
-    // --- Interaction: drag to rotate + inertia + idle auto-rotate ---
+    // --- Interaction: drag to rotate + inertia + idle auto-rotate.
+    //     On touch devices only horizontal drags rotate (pan-y), so a
+    //     thumb over the globe still scrolls the page vertically. ---
     var dragging = false, lastX = 0, lastY = 0, velX = 0.0018, velY = 0;
-    canvas.style.touchAction = "none";
+    canvas.style.touchAction = coarse ? "pan-y" : "none";
     canvas.addEventListener("pointerdown", function (e) { dragging = true; lastX = e.clientX; lastY = e.clientY; velX = velY = 0; viz.classList.add("is-grabbing"); });
     window.addEventListener("pointerup", function () { dragging = false; viz.classList.remove("is-grabbing"); });
     window.addEventListener("pointermove", function (e) {
       if (!dragging) return;
       var dx = e.clientX - lastX, dy = e.clientY - lastY;
       lastX = e.clientX; lastY = e.clientY;
-      velY = dx * 0.005; velX = dy * 0.005;
+      velY = dx * 0.005; velX = coarse ? 0 : dy * 0.005;
       globe.rotation.y += velY; globe.rotation.x += velX;
     });
 
@@ -223,8 +232,6 @@
     var rt;
     window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(resize, 150); }, { passive: true });
 
-    // Success: reveal the globe, hide the fallback.
-    viz.classList.add("is-3d");
     start();
   }
 
