@@ -1709,7 +1709,7 @@
   place-items: center;
   width: 100%;
 }
-@media (min-width: 981px) {
+@media (min-width: 900px) {
   .hero-viz { min-height: clamp(440px, 46vh, 580px); }
 }
 .hero-viz__canvas {

@@ -41,8 +41,8 @@
     renderer.setSize(W, H, false);
 
     var scene = new THREE.Scene();
-    var camera = new THREE.PerspectiveCamera(42, W / H, 0.1, 100);
-    camera.position.set(0, 0, 2.9);
+    var camera = new THREE.PerspectiveCamera(50, W / H, 0.1, 100);
+    camera.position.set(0, 0, 3.2);
 
     var globe = new THREE.Group();
     scene.add(globe);
@@ -122,6 +122,49 @@
       arcs.push({ curve: curve, pulse: pulse, t: Math.random(), speed: 0.0025 + Math.random() * 0.0035 });
     }
 
+    // --- Orbiting service terms: the offer, written into the scene.
+    //     One term per orbit. Every orbit is a "latitude" ring on the same
+    //     tilted axis: parallel planes with >= 0.14 vertical spacing, so no
+    //     two labels can ever meet — regardless of speed or direction.
+    //     Longest labels take the high-latitude (smaller-radius) rings so
+    //     nothing clips the camera frame. Sprites depth-test against the
+    //     opaque core, so labels genuinely pass behind the globe. ---
+    var TERMS = [ // ordered longest -> shortest
+      "Core Web Vitals", "Technical SEO", "Shopify Plus", "Paid Media",
+      "WordPress", "3D / WebGL", "AEO + GEO", "hreflang",
+      "Magento", "Next.js", "GA4", "CRO"
+    ];
+    var ORBIT_R = 1.42;
+    var tiltGroup = new THREE.Group();
+    tiltGroup.rotation.x = 0.30;
+    tiltGroup.rotation.z = 0.10;
+    scene.add(tiltGroup);
+    var orbits = [];
+    for (var ti = 0; ti < TERMS.length; ti++) {
+      var label = makeLabelTexture(TERMS[ti]);
+      var tex = new THREE.CanvasTexture(label.canvas);
+      tex.minFilter = THREE.LinearFilter;
+      tex.anisotropy = 2;
+      var sprite = new THREE.Sprite(new THREE.SpriteMaterial({
+        map: tex, transparent: true, depthTest: true, depthWrite: false, opacity: 0.92
+      }));
+      var hWorld = 0.08;
+      sprite.scale.set(hWorld * (label.w / label.h), hWorld, 1);
+
+      // Unique latitude per term: alternate hemispheres from the poles in,
+      // 0.14 apart (> pill height), longest labels at highest |y|.
+      var slot = Math.floor(ti / 2);
+      var y = (0.77 - slot * 0.14) * (ti % 2 === 0 ? 1 : -1);
+      var r = Math.sqrt(ORBIT_R * ORBIT_R - y * y);
+
+      var ring = new THREE.Group();
+      sprite.position.set(r, y, 0);
+      ring.add(sprite);
+      ring.rotation.y = ti * 2.4; // spread starting phases
+      tiltGroup.add(ring);
+      orbits.push({ ring: ring, speed: (0.0014 + (ti % 5) * 0.0004) * (ti % 2 === 0 ? 1 : -1) });
+    }
+
     globe.rotation.x = 0.32;
 
     // --- Interaction: drag to rotate + inertia + idle auto-rotate ---
@@ -152,6 +195,9 @@
         velX *= 0.94;
         globe.rotation.x += (0.32 - globe.rotation.x) * 0.02; // settle tilt
       }
+      for (var o = 0; o < orbits.length; o++) {
+        orbits[o].ring.rotation.y += orbits[o].speed;
+      }
       for (var k = 0; k < arcs.length; k++) {
         arcs[k].t += arcs[k].speed;
         if (arcs[k].t > 1) arcs[k].t -= 1;
@@ -180,6 +226,40 @@
     // Success: reveal the globe, hide the fallback.
     viz.classList.add("is-3d");
     start();
+  }
+
+  function makeLabelTexture(text) {
+    var dpr = 2;
+    var padX = 18, h = 44;
+    var c = document.createElement("canvas");
+    var ctx = c.getContext("2d");
+    ctx.font = "600 22px 'Hanken Grotesk', 'Segoe UI', Arial, sans-serif";
+    var w = Math.ceil(ctx.measureText(text).width) + padX * 2;
+    c.width = w * dpr; c.height = h * dpr;
+    ctx = c.getContext("2d");
+    ctx.scale(dpr, dpr);
+    // glass pill
+    var r = h / 2;
+    ctx.beginPath();
+    ctx.moveTo(r, 0); ctx.lineTo(w - r, 0); ctx.arc(w - r, r, r, -Math.PI / 2, Math.PI / 2);
+    ctx.lineTo(r, h); ctx.arc(r, r, r, Math.PI / 2, -Math.PI / 2);
+    ctx.closePath();
+    ctx.fillStyle = "rgba(8, 24, 40, 0.78)";
+    ctx.fill();
+    ctx.lineWidth = 1.5;
+    ctx.strokeStyle = "rgba(47, 212, 198, 0.55)";
+    ctx.stroke();
+    // teal marker dot
+    ctx.beginPath();
+    ctx.arc(padX - 6, h / 2, 3, 0, Math.PI * 2);
+    ctx.fillStyle = "#2fd4c6";
+    ctx.fill();
+    // label
+    ctx.font = "600 22px 'Hanken Grotesk', 'Segoe UI', Arial, sans-serif";
+    ctx.fillStyle = "#e8fbf8";
+    ctx.textBaseline = "middle";
+    ctx.fillText(text, padX + 4, h / 2 + 1);
+    return { canvas: c, w: w, h: h };
   }
 
   function makeDotTexture(THREE) {
