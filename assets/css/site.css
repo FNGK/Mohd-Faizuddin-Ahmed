@@ -136,6 +136,15 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Links inside body copy stay distinguishable without relying on color
+   alone (WCAG 1.4.1) — a fine, offset underline that reads as editorial. */
+main p a:not(.btn) {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: color-mix(in srgb, currentColor 55%, transparent);
+}
+
 .skip-link {
   position: absolute;
   left: -9999px;

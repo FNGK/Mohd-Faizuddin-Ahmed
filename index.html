@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="./assets/logos/seowithfaiz-icon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    <link rel="preload" as="image" href="./assets/logos/seo-with-faiz-logo-technical-precision-revenue-growth.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="./assets/logos/seo-with-faiz-logo-dark-mode-technical-precision-revenue-growth.webp" type="image/webp">
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap"></noscript>
 
@@ -27,8 +28,7 @@
   <meta name="twitter:description" content="Design, development, 3D, SEO, and performance marketing — engineered for measurable pipeline.">
   <meta name="twitter:image" content="https://seowithfaiz.com/assets/og/og-default.png">
   <meta name="theme-color" content="#08111f">
-  <link rel="stylesheet" href="./assets/css/site.css">
-  <link rel="stylesheet" href="./assets/css/components.css">
+  <link rel="stylesheet" href="./assets/css/app.min.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -145,11 +145,11 @@
       <a class="brand" href="./index.html" aria-label="SEO With Faiz home">
         <picture>
           <source srcset="./assets/logos/seo-with-faiz-logo-technical-precision-revenue-growth.webp" type="image/webp">
-          <img class="brand-logo brand-logo--light" src="./assets/logos/seo-with-faiz-logo-technical-precision-revenue-growth.png" alt="SEO With Faiz logo — web design, development, SEO and growth studio (transparent PNG for light mode)." width="400" height="195" decoding="async" fetchpriority="high">
+          <img class="brand-logo brand-logo--light" src="./assets/logos/seo-with-faiz-logo-technical-precision-revenue-growth.png" alt="SEO With Faiz logo — web design, development, SEO and growth studio (transparent PNG for light mode)." width="400" height="195" decoding="async" loading="lazy">
         </picture>
         <picture>
           <source srcset="./assets/logos/seo-with-faiz-logo-dark-mode-technical-precision-revenue-growth.webp" type="image/webp">
-          <img class="brand-logo brand-logo--dark" src="./assets/logos/seo-with-faiz-logo-dark-mode-technical-precision-revenue-growth.png" alt="" width="400" height="157" decoding="async" aria-hidden="true">
+          <img class="brand-logo brand-logo--dark" src="./assets/logos/seo-with-faiz-logo-dark-mode-technical-precision-revenue-growth.png" alt="" width="400" height="157" decoding="async" aria-hidden="true" fetchpriority="high">
         </picture>
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
@@ -197,7 +197,7 @@
             <a class="btn btn-secondary" href="./services/index.html">Explore services</a>
           </div>
         </div>
-        <div class="hero-viz" data-hero-viz aria-label="Interactive 3D globe representing global delivery">
+        <div class="hero-viz" data-hero-viz role="img" aria-label="Interactive 3D globe representing global delivery">
           <canvas class="hero-viz__canvas" data-hero-globe aria-hidden="true"></canvas>
           <span class="hero-viz__hint" aria-hidden="true">Drag to explore</span>
           <div class="hero-viz__fallback">
