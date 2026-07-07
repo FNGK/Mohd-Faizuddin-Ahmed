@@ -1699,9 +1699,10 @@
 .proof-card__media--logo picture img { width: auto; height: auto; max-width: 86%; max-height: 78%; object-fit: contain; border-radius: 0; }
 
 /* =====================================================================
-   3D HERO VIEWPORT (.hero-viz) — holds the WebGL globe on capable
-   desktops, and the console fallback everywhere else. hero-globe.js adds
-   .is-3d on success; until then the fallback is what renders.
+   3D HERO VIEWPORT (.hero-viz) — holds the WebGL globe on desktop AND
+   mobile (mobile runs a lighter scene). hero-globe.js adds .is-3d on
+   success; until then — and for reduced-motion / save-data / no-WebGL
+   visitors — the console fallback is what renders.
    ===================================================================== */
 .hero-viz {
   position: relative;
@@ -1711,6 +1712,9 @@
 }
 @media (min-width: 900px) {
   .hero-viz { min-height: clamp(440px, 46vh, 580px); }
+}
+@media (max-width: 899px) {
+  .hero-viz.is-3d { min-height: min(96vw, 460px); }
 }
 .hero-viz__canvas {
   position: absolute;
