@@ -53,9 +53,9 @@
 
   function nodeCount() {
     var vw = window.innerWidth;
-    if (vw < 640) return 26;
-    if (vw < 1024) return 44;
-    return 66;
+    if (vw < 640) return 18;
+    if (vw < 1024) return 34;
+    return 48;
   }
   function linkDist() { return window.innerWidth < 640 ? 92 : 132; }
 
@@ -118,9 +118,15 @@
     }
   }
 
-  function loop() {
-    draw(true);
+  // Ambient decoration renders at ~30fps — half the paint cost, visually
+  // indistinguishable for a slow particle drift.
+  var FRAME_MS = 33;
+  var lastFrame = 0;
+  function loop(now) {
     rafId = requestAnimationFrame(loop);
+    if (now - lastFrame < FRAME_MS) return;
+    lastFrame = now;
+    draw(true);
   }
   function start() {
     if (rafId || !visible || document.hidden) return;
@@ -130,12 +136,16 @@
     if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
   }
 
-  resize();
-  seed();
+  // Wait for window load so the constellation never competes with real
+  // content (fonts, hero, LCP) for the main thread.
+  function init() {
+    resize();
+    seed();
 
-  if (reduce) {
-    draw(false); // one static frame — still an elegant graphic, no motion
-  } else {
+    if (reduce) {
+      draw(false); // one static frame — still an elegant graphic, no motion
+      return;
+    }
     start();
 
     if ("IntersectionObserver" in window) {
@@ -151,5 +161,13 @@
       clearTimeout(resizeTimer);
       resizeTimer = setTimeout(function () { resize(); seed(); if (reduce) draw(false); }, 180);
     }, { passive: true });
+  }
+
+  if (document.readyState === "complete") {
+    init();
+  } else {
+    window.addEventListener("load", function () {
+      requestAnimationFrame(function () { init(); });
+    }, { once: true });
   }
 })();
