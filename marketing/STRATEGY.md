@@ -30,15 +30,51 @@ is Exhibit A.
 | Instagram (@seo_with_faiz) | Craft showcase, brand surface | 1/day via Buffer (branded card) |
 | LinkedIn | PRIMARY ICP channel | ⚠ awaiting connection in Buffer (free slot open) |
 
+## Conversion strategy — closing $1K–$5K/mo retainers with today's proof
+### (added 2026-07-08 after honest proof assessment; all roles align to this)
+
+Current proof supports craft-trust, not outcome-trust. Until outcome proof
+exists, we compensate with five legitimate levers — never fabrication:
+
+1. **Vertical wedge.** Lead with the two clusters we can actually prove:
+   **boutique hospitality** (Button Eyes: booking funnels, WordPress, SEO)
+   and **sports clubs/academies** (Little Stars, Hyderabad Globe FC).
+   Content and angles should speak to these buyers by name — booking-funnel
+   economics, seasonal demand, local+international guest search. Generalist
+   angles remain, but the wedge gets priority.
+2. **Teardown-as-proof.** The public audit pack model is the flagship demo.
+   Content shows diagnosis quality (mini-teardowns of common patterns —
+   anonymized/pattern-level, never naming a business negatively in public).
+3. **Pilot-sprint framing.** All CTAs and copy may reference "engagements
+   begin with a focused 30-day sprint — defined deliverables, month to
+   month, no lock-in." (Still no prices.)
+4. **Build-in-public receipts.** Publish this site's own real growth
+   evidence as it accrues (GSC/analytics screenshots, AI-citation wins).
+   Own-site results are proof nobody can dispute.
+5. **Proof harvest (needs Faiz, listed under "asks").** Named testimonials
+   from Little Stars + Hyderabad Globe FC; Google reviews on the GBP
+   profile; free Clutch listing.
+
+**Outbound (prepared-by-machine, sent-by-human):** the highest-converting
+motion at this proof level is a personalized teardown sent to a hand-picked
+hospitality/sports prospect. Automation may research and draft; Faiz sends.
+
 ## Current focus themes (strategist rotates these)
 
-1. The rebuild story: how seowithfaiz.com hit 96+ Lighthouse WITH a 3D
-   WebGL hero (craft-proof series).
-2. AI search (AEO/GEO): how buyers' customers now find answers, and what
-   that means for their site.
-3. Platform truth: Shopify Plus vs Magento vs custom — candid fit guidance.
-4. Case-study amplification: Little Stars (custom Next.js), Button Eyes
-   (WordPress+SEO), Unstop audit framework.
+1. Boutique-hospitality wedge: booking funnels, hotel SEO, direct-booking
+   economics (ties to Button Eyes case).
+2. Sports-organization wedge: club/academy sites that recruit and retain
+   (ties to Little Stars + HGFC).
+3. The rebuild story: 96+ Lighthouse WITH a 3D WebGL hero (craft-proof).
+4. AI search (AEO/GEO): how buyers' customers now find answers.
+5. Platform truth: Shopify Plus vs Magento vs custom — candid fit guidance.
+
+## Asks awaiting Faiz (the strategist re-surfaces these weekly)
+
+- [ ] Request named testimonials: Little Stars, Hyderabad Globe FC.
+- [ ] Ask 2–3 real contacts for Google reviews on the GBP profile.
+- [ ] Create free Clutch.co profile.
+- [ ] Reconnect LinkedIn to Buffer once the account is restored.
 
 ## Standing rules
 
