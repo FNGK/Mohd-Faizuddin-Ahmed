@@ -8,7 +8,7 @@
 
 - ~~[craft-proof] "A 3D WebGL globe and a 96+ Lighthouse score on the same page. The trick isn't the 3D — it's WHEN it loads." — /services/3d-web-design.html~~ (used 2026-07-08)
 - ~~[buyer-education] "Your customers stopped clicking and started asking. What AI answers say about you is the new first impression." — /blog/ (AEO post)~~ (used 2026-07-09 → /blog/posts/answer-engine-optimization-guide.html)
-- [wedge-hospitality] "Every booking your website loses goes to an OTA that charges 15–25% commission. Direct-booking economics start with the site, not the ad budget." — /case-studies/button-eyes-resort.html
+- ~~[wedge-hospitality] "Every booking your website loses goes to an OTA that charges 15–25% commission. Direct-booking economics start with the site, not the ad budget." — /case-studies/button-eyes-resort.html~~ (used 2026-07-10)
 - [wedge-sports] "A sports academy's website has one real job in enrollment season: make a parent trust you in 30 seconds. Here's how we built for that." — /case-studies/little-stars-academy.html
 - [wedge-hospitality] "Travelers plan trips by asking AI now. If your resort isn't structured to be the answer, you're invisible at the exact moment they're deciding." — /services/technical-seo.html
 - [pov] "Engagements here start with a 30-day sprint — defined deliverables, month to month, no lock-in. If the work doesn't earn month two, you shouldn't buy it." — /contact/index.html
