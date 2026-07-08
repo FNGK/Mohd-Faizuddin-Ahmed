@@ -6,8 +6,8 @@
 
 ## Social angles (GBP / Instagram / LinkedIn)
 
-- [craft-proof] "A 3D WebGL globe and a 96+ Lighthouse score on the same page. The trick isn't the 3D — it's WHEN it loads." — /services/3d-web-design.html
-- [buyer-education] "Your customers stopped clicking and started asking. What AI answers say about you is the new first impression." — /blog/ (AEO post)
+- ~~[craft-proof] "A 3D WebGL globe and a 96+ Lighthouse score on the same page. The trick isn't the 3D — it's WHEN it loads." — /services/3d-web-design.html~~ (used 2026-07-08)
+- ~~[buyer-education] "Your customers stopped clicking and started asking. What AI answers say about you is the new first impression." — /blog/ (AEO post)~~ (used 2026-07-09 → /blog/posts/answer-engine-optimization-guide.html)
 - [craft-proof] "The hidden logo mistake costing sites 73KB per visit: display:none images still download." — /blog/
 - [platform-truth] "Shopify Plus or Magento? Wrong question. Start with who runs the site on a Tuesday afternoon." — /services/shopify-development.html
 - [case-study] "A football academy's website built like a flagship — custom Next.js, live at hydlittlestars.com." — /case-studies/little-stars-academy.html
