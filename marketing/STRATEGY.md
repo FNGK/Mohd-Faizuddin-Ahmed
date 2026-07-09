@@ -75,6 +75,8 @@ hospitality/sports prospect. Automation may research and draft; Faiz sends.
 - [ ] Ask 2–3 real contacts for Google reviews on the GBP profile.
 - [ ] Create free Clutch.co profile.
 - [ ] Reconnect LinkedIn to Buffer once the account is restored.
+- [ ] Link Instagram (@seo_with_faiz) as a Business account to a Facebook Page inside the SAME Meta Business Portfolio as the connected login (act_2089451385293163). Until then, the Meta MCP reads the ad account but returns 0 Instagram accounts, so organic IG insights are unavailable and the team optimizes on Buffer engagement + Gmail inquiries only.
+- [ ] Review the Prospector's Gmail drafts (Mon/Thu) and send the good ones.
 
 ## Standing rules
 
