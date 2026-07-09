@@ -29,3 +29,4 @@
 ## Weekly log
 
 <!-- strategist appends below this line, newest at the bottom -->
+2026-07-09 | — | — | — | — | — | 0 | instagram:"The 3D isn't the hard part..." (craft-proof) → reach 2, 1 reaction | — (baseline week) | Flagged 8 unauthorized Instagram posts (paid-ads/PPC teardown content, price mentions, comment-bait, fake NYC/Austin hashtags) published outside the Buffer/editorial pipeline — see STRATEGY asks. No optimization rule triggered: this is the first logged week (no prior-week trend), Meta IG insights still unreachable (IG not linked to a Facebook Page), Ahrefs Web Analytics returned "insufficient plan".

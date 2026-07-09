@@ -26,8 +26,15 @@
 
 ## Blog angles (for the cloud draft factory / editor)
 
-- How AI Overviews choose who to cite — structure lessons from a site built for it
+> Note (2026-07-09): `blog/drafts/` currently holds 14 unpublished drafts,
+> 7 of them near-duplicate AI-search/AEO/GEO pieces. Prioritize the
+> non-AI-search angles below until that backlog is edited down — see the
+> "Asks awaiting Faiz" note in STRATEGY.md.
+
 - Shopify Plus vs Magento in 2026: the honest decision tree
 - The enterprise website pre-launch checklist (the one I actually use)
 - 3D on the web without killing performance: budgets, gates, fallbacks
 - Why your redesign lost you rankings (and the migration discipline that prevents it)
+- What a boutique resort's booking funnel should measure besides room rate (wedge-hospitality)
+- The website audit a sports academy needs before enrollment season (wedge-sports)
+- How AI Overviews choose who to cite — structure lessons from a site built for it

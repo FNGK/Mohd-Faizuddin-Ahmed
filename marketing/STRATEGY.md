@@ -71,10 +71,42 @@ hospitality/sports prospect. Automation may research and draft; Faiz sends.
 
 ## Asks awaiting Faiz (the strategist re-surfaces these weekly)
 
+- [ ] **URGENT — unauthorized Instagram posts (2026-07-09).** 8 posts on
+  @seo_with_faiz this week did NOT come from our Buffer/editorial pipeline:
+  generic "paid-ads teardown" copy, "Comment X and my system will auto-DM
+  you the framework" bait (no such auto-DM system exists — never built),
+  TWO posts naming prices ("$500 SEO retainer", "$10k a month hiding in
+  your ad account" — hard violation of the no-prices rule), and 15+ spammy
+  hashtags including fake #NYCtech/#AustinTech location tags. Some were
+  posted "via: buffer" (created directly through Buffer's compose, not our
+  repo scripts — no branded card, Canva-exported images instead) and some
+  "via: network" (posted directly to Instagram, bypassing Buffer entirely)
+  as near-duplicates of the same 3 posts a few hours later. This means
+  something with write access to either the Buffer account or the
+  Instagram account itself is publishing off-brand, guideline-violating
+  content unattended. Recommend: check Buffer account activity log +
+  connected API apps, check Instagram/Meta Business Suite "connected apps"
+  for anything unrecognized, rotate the Buffer/Meta tokens, and manually
+  review/delete the 8 posts (post IDs logged in this run's output) since
+  they carry price mentions and a fabricated auto-DM promise — real
+  reputational and possibly compliance risk. This pattern (unauthorized
+  write access to a connected account) mirrors the buttoneyes.in
+  compromise — treat with the same urgency.
+- [ ] Blog draft pipeline is over-indexed on one topic: of 14 unpublished
+  drafts in `blog/drafts/`, 7 are near-duplicate AI-search/AEO/GEO pieces
+  and 2 more pairs duplicate each other (core-update recovery x2,
+  technical-SEO-priorities x2). None of the 4 originally queued blog
+  angles (Shopify Plus vs Magento, pre-launch checklist, 3D-without-killing-performance,
+  redesign/migration discipline) have been drafted yet. Editor-in-Chief
+  should retire the duplicate AI-search drafts and steer Thu/Mon drafting
+  toward the wedge + platform-truth angles below.
 - [ ] Request named testimonials: Little Stars, Hyderabad Globe FC.
 - [ ] Ask 2–3 real contacts for Google reviews on the GBP profile.
-- [ ] Create free Clutch.co profile.
-- [ ] Reconnect LinkedIn to Buffer once the account is restored.
+- [x] Create free Clutch.co profile — submitted 2026-07-08, Clutch is reviewing before publishing (confirmation email received).
+- [ ] Reconnect LinkedIn to Buffer once the account is restored — LinkedIn
+  support case #260707-016053 is still open as of 2026-07-08 (identity
+  verification submitted, awaiting their response). Buffer still shows
+  only 2 channels (Instagram, GBP).
 - [ ] Link Instagram (@seo_with_faiz) as a Business account to a Facebook Page inside the SAME Meta Business Portfolio as the connected login (act_2089451385293163). Until then, the Meta MCP reads the ad account but returns 0 Instagram accounts, so organic IG insights are unavailable and the team optimizes on Buffer engagement + Gmail inquiries only.
 - [ ] Review the Prospector's Gmail drafts (Mon/Thu) and send the good ones.
 
