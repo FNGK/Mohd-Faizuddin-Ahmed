@@ -28,13 +28,14 @@ intent_cluster: local growth
 humanization_verified: false
 review_status: needs_revision
 ready_notification_sent: false
-humanization_score: 67
+humanization_score: 60
 originality_score: 100
 humanization_issues:
 - Body is short (621 words; must exceed recommended 1200).
 - Add a few contractions so the voice sounds spoken, not generated.
 - Include at least one direct question that mirrors reader intent.
-- Humanization score 67 is below the 80 threshold.
+- Split up em-dash chains (2+ em-dashes in one sentence)—a common AI tell.
+- Humanization score 60 is below the 80 threshold.
 - Word count 621 must be above recommended 1200.
 - Word count 621 below minimum 1201 (recommended+1).
 - Meta description length 223; require 120–160.
@@ -42,7 +43,6 @@ humanization_issues:
 - Primary keyword missing from meta description.
 - Primary keyword missing from opening content.
 - Need at least 2 H3 sections (PAA/FAQ).
-- Need at least 5 bullet lines for scannability.
 humanization_metrics:
   word_count: 621
   sentence_length_variance: 52.305
@@ -54,10 +54,15 @@ humanization_metrics:
   ai_cliche_hits: 0.0
   template_hits: 0.0
   passive_hits: 0.0
+  em_dash_total: 7.0
+  em_dash_chains: 2.0
   max_shingle_overlap: 0.0
   flesch_ease: 60.9
   fk_grade: 9.17
-last_humanization_check: '2026-07-06T08:58:52.601224+00:00'
+last_humanization_check: '2026-07-10T07:40:58.987449+00:00'
+editor_notes: 'Stale duplicate: same pre-schema pipeline issue. Sibling draft local-seo-that-turns-map-views-into-booked-jobs-in-2026.md
+  covers the same topic and has been regenerated to current schema/quality bar. Recommend
+  archiving/deleting this one once a human confirms.'
 ---
 
 ## Why map rankings stall even when reviews look fine

@@ -27,13 +27,14 @@ internal_links:
 - ../../resources/seo-audit-playbook.html
 - ../../case-studies/index.html
 - ../../contact/index.html
-humanization_score: 67
+humanization_score: 60
 originality_score: 100
 humanization_issues:
 - Body is short (587 words; must exceed recommended 1200).
 - Add a few contractions so the voice sounds spoken, not generated.
 - Primary keyword is missing from the body.
-- Humanization score 67 is below the 80 threshold.
+- Split up em-dash chains (2+ em-dashes in one sentence)—a common AI tell.
+- Humanization score 60 is below the 80 threshold.
 - Word count 587 must be above recommended 1200.
 - Word count 587 below minimum 1201 (recommended+1).
 - Meta description length 223; require 120–160.
@@ -41,7 +42,6 @@ humanization_issues:
 - Primary keyword missing from opening content.
 - Need at least 2 H3 sections (PAA/FAQ).
 - Need at least 5 bullet lines for scannability.
-- Missing PAA/FAQ section for AEO/GEO.
 humanization_metrics:
   word_count: 587
   sentence_length_variance: 34.099
@@ -53,10 +53,15 @@ humanization_metrics:
   ai_cliche_hits: 0.0
   template_hits: 0.0
   passive_hits: 2.0
+  em_dash_total: 8.0
+  em_dash_chains: 2.0
   max_shingle_overlap: 0.0
   flesch_ease: 53.66
   fk_grade: 9.83
-last_humanization_check: '2026-07-06T08:58:52.478190+00:00'
+last_humanization_check: '2026-07-10T07:40:58.846047+00:00'
+editor_notes: 'Superseded: same reason as ai-search-visibility-seo-strategy-what-teams-should-do-in-2026.md
+  — topic already covered by 6 verified AI-search-visibility drafts. Recommend archiving/deleting
+  once a human confirms.'
 ---
 
 ## AI answers reward clarity, not another "AI SEO" landing page

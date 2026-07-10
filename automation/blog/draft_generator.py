@@ -12,9 +12,14 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from content_config import META_DESC_LEN_MAX, META_DESC_LEN_MIN, TITLE_LEN_MAX
+from content_config import (
+    META_DESC_LEN_MAX,
+    META_DESC_LEN_MIN,
+    TITLE_LEN_MAX,
+    TITLE_LEN_MIN,
+)
 from draft_io import dump_frontmatter
-from intent_content import build_body, human_title
+from intent_content import build_body, human_title, smart_title_case
 
 
 def parse_args() -> argparse.Namespace:
@@ -62,14 +67,40 @@ def first_sentence(text: str) -> str:
 
 
 def build_seo_title(idea: dict, term: str, intent_cluster: str, primary_keyword: str) -> str:
-    base = idea.get("title") or human_title(term, intent_cluster)
-    tokens = [t for t in primary_keyword.lower().split() if t not in {"seo", "strategy"}]
-    label = " ".join(tokens[:3]).title() or term.title()
-    candidate = f"{label}: 2026 Playbook"
-    if len(candidate) <= TITLE_LEN_MAX and all(t in candidate.lower() for t in tokens[:2] if len(t) > 2):
+    """Prefer the well-formed title keyword_planner already built via human_title().
+
+    The previous version discarded that title unconditionally and rebuilt one from
+    only the first three primary_keyword tokens (e.g. "how to get cited by chatgpt"
+    -> "How To Get"), which routinely landed under the 35-char minimum and dropped
+    the actual meaningful keyword tokens ("cited", "chatgpt")—so titles both failed
+    length checks and failed "primary keyword missing from title" checks.
+    """
+    base = str(idea.get("title") or human_title(term, intent_cluster)).strip()
+    kw_tokens = [t for t in primary_keyword.lower().split() if len(t) > 3 and t not in {"strategy"}]
+
+    def covers_keyword(title: str) -> bool:
+        low = title.lower()
+        return not kw_tokens or all(t in low for t in kw_tokens[:2])
+
+    def in_bounds(title: str) -> bool:
+        return TITLE_LEN_MIN <= len(title) <= TITLE_LEN_MAX
+
+    if in_bounds(base) and covers_keyword(base):
+        return base
+
+    # Fallback: rebuild from the full keyword phrase (acronym-aware via
+    # smart_title_case) instead of a truncated 3-token label.
+    candidate = human_title(primary_keyword, intent_cluster)
+    if in_bounds(candidate) and covers_keyword(candidate):
         return candidate
-    candidate = f"{base.split(':')[0].strip()}: {label}"[:TITLE_LEN_MAX]
-    return candidate.rsplit(" ", 1)[0] if len(candidate) >= TITLE_LEN_MAX else candidate
+
+    label = smart_title_case(primary_keyword) or term.title()
+    candidate = f"{label}: A 2026 Playbook for Search Teams"
+    if len(candidate) > TITLE_LEN_MAX:
+        candidate = candidate[:TITLE_LEN_MAX].rsplit(" ", 1)[0]
+    while len(candidate) < TITLE_LEN_MIN:
+        candidate += " Now"
+    return candidate
 
 
 def build_meta_description(intro: str, primary_keyword: str) -> str:

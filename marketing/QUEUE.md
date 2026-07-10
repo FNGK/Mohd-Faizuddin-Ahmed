@@ -6,6 +6,12 @@
 
 ## Social angles (GBP / Instagram / LinkedIn)
 
+- [atomized] "Most crawl-budget audits ship fifty red rows. Only the ones tied to your money pages matter this month." — https://seowithfaiz.com/blog/posts/technical-seo-priorities-when-crawl-budget-and-revenue-both-matter.html
+- [atomized] "Core Web Vitals are a tie-breaker, not a religion. A slow careers page costs you less than a slow product page with a perfect Lighthouse score on the wrong URL." — https://seowithfaiz.com/blog/posts/technical-seo-priorities-when-crawl-budget-and-revenue-both-matter.html
+- [atomized] "Fix crawl budget in the right order: segment your crawl export by template, sort by internal links + organic sessions + conversion rate, then work the overlap list — not the longest list of hreflang warnings." — https://seowithfaiz.com/blog/posts/technical-seo-priorities-when-crawl-budget-and-revenue-both-matter.html
+- [atomized] "If two pages on your site compete for the same question, ChatGPT won't cite either one cleanly. AI summaries hate duplication as much as blue-link results do." — https://seowithfaiz.com/blog/posts/how-to-get-cited-by-chatgpt-a-step-by-step-guide-for-2026.html
+- [atomized] "You don't need an 'AI SEO' strategy. You need one page per question that states the answer in the first two sentences." — https://seowithfaiz.com/blog/posts/how-to-get-cited-by-chatgpt-a-step-by-step-guide-for-2026.html
+- [atomized] "Want ChatGPT to cite you? List every question your sales team already answers from call notes and tickets, map each one to a single URL you control, and answer it in plain English before the caveats." — https://seowithfaiz.com/blog/posts/how-to-get-cited-by-chatgpt-a-step-by-step-guide-for-2026.html
 - ~~[craft-proof] "A 3D WebGL globe and a 96+ Lighthouse score on the same page. The trick isn't the 3D — it's WHEN it loads." — /services/3d-web-design.html~~ (used 2026-07-08)
 - ~~[buyer-education] "Your customers stopped clicking and started asking. What AI answers say about you is the new first impression." — /blog/ (AEO post)~~ (used 2026-07-09 → /blog/posts/answer-engine-optimization-guide.html)
 - ~~[wedge-hospitality] "Every booking your website loses goes to an OTA that charges 15–25% commission. Direct-booking economics start with the site, not the ad budget." — /case-studies/button-eyes-resort.html~~ (used 2026-07-10)
@@ -26,10 +32,16 @@
 
 ## Blog angles (for the cloud draft factory / editor)
 
-> Note (2026-07-09): `blog/drafts/` currently holds 14 unpublished drafts,
-> 7 of them near-duplicate AI-search/AEO/GEO pieces. Prioritize the
-> non-AI-search angles below until that backlog is edited down — see the
-> "Asks awaiting Faiz" note in STRATEGY.md.
+> Note (2026-07-10): the humanization/compliance gate had real bugs (generic
+> non-answering FAQ template, broken title generator, a trim step that could
+> gut whole sections) that kept every draft stuck at `needs_revision` — fixed
+> in `automation/blog/*.py`. 9 of 14 backlog drafts now pass and are `ready`;
+> 2 published this run (technical-seo-audit, how-to-get-cited-by-chatgpt).
+> 5 AEO/GEO-cluster drafts are held back deliberately to avoid keyword
+> cannibalization (2 published + this run's 2 already cover that pillar) —
+> publish at most 1 per week from that remainder. 5 stale/duplicate stub
+> drafts were annotated `needs_revision` with editor_notes instead of
+> deleted; a human should confirm before removing them.
 
 - Shopify Plus vs Magento in 2026: the honest decision tree
 - The enterprise website pre-launch checklist (the one I actually use)

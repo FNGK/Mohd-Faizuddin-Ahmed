@@ -221,6 +221,17 @@ def _date_display(date_str: str) -> str:
         return str(date_str)
 
 
+def _strip_md_emphasis(text: str) -> str:
+    """Strip **bold**/*italic* markers for fields rendered as plain text.
+
+    {{INTRO_HOOK}} is inserted verbatim (not passed through markdown.markdown());
+    it's built from the first sentence of the "Quick answer" block, which
+    contains **bold** keyword markers meant for the body copy. Left unstripped,
+    readers saw literal asterisks in the teaser line—not "highly easy to read".
+    """
+    return re.sub(r"\*\*(.+?)\*\*|\*(.+?)\*", lambda m: m.group(1) or m.group(2), text)
+
+
 def render_html(template: str, data: dict, body_markdown: str) -> str:
     post_html = markdown.markdown(body_markdown, extensions=["tables", "fenced_code"])
     faqs = get_faqs(data)
@@ -239,7 +250,7 @@ def render_html(template: str, data: dict, body_markdown: str) -> str:
         "{{READ_TIME}}": str(read_time),
         "{{WORD_COUNT}}": str(words),
         "{{PRIMARY_KEYWORD}}": str(data["primary_keyword"]),
-        "{{INTRO_HOOK}}": str(data["intro_hook"]),
+        "{{INTRO_HOOK}}": _strip_md_emphasis(str(data["intro_hook"])),
         "{{FEATURE_IMAGE}}": str(data["feature_image"]),
         "{{FEATURE_IMAGE_ALT}}": str(data["feature_image_alt"]),
         "{{KEY_TAKEAWAYS_HTML}}": build_key_takeaways(data),

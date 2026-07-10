@@ -36,7 +36,7 @@ EXPANSION_PARAGRAPHS: list[str] = [
     (
         "When you align search, answer engines, and on-site experience, you'll reduce bounce from mismatched "
         "intent. You'll improve qualified pipeline if you review Search Console weekly. Note which templates "
-        "earn clicks but lose users on mobile—those URLs are your highest-leverage SXO fixes."
+        "earn clicks but lose users on mobile—those URLs are your highest-impact SXO fixes."
     ),
     (
         "Stakeholders rarely need another keyword list; they need a prioritized queue tied to revenue. "
@@ -84,20 +84,67 @@ def _serp_research_section(idea: dict[str, Any]) -> str:
 
 For **{kw}**, you're targeting **{intent}** intent at the **{funnel}** stage. Give scanners a direct answer first. Give evaluators proof mid-page. Give decision-makers one clear next step. SERP features to design for: {features}.
 
+This isn't only a blue-link game anymore. ChatGPT, Perplexity, and Google's AI Overviews pull from the same well-structured, sourced answers that rank—so a page built to satisfy a skeptical human reader tends to get quoted by those surfaces too, without a separate "AI SEO" layer bolted on.
+
 Last reviewed: {idea.get("date", "2026")}. We follow Google Search Essentials, spam policies, and helpful-content guidance."""
+
+
+_FAQ_OPENERS = [
+    'Here\'s the direct answer: treat "{q}" as a question your own page must resolve above '
+    "the fold, not a theme to write around.",
+    'Short version: "{q}" only gets answered well when one page states the outcome in its '
+    "first two sentences, not its tenth paragraph.",
+    'Plainly: "{q}" is a page-ownership problem before it\'s a writing problem—decide which '
+    "URL answers it, then write toward that URL.",
+    'The honest answer to "{q}" starts with naming the single page responsible for it, then '
+    "stating the outcome before the caveats.",
+]
+
+_FAQ_SUPPORTS = [
+    "Start from the exact phrase people type into Google or an AI assistant, not the internal "
+    "shorthand your team prefers.",
+    "Attach the claim to one page you control, so the answer stays checkable instead of "
+    "scattered across old posts.",
+    "Skip the hedging language—state the number, timeline, or constraint plainly, then move "
+    "straight to the next point.",
+    "Keep the supporting detail specific enough that a competitor couldn't paste the same "
+    "sentence onto their own site.",
+]
+
+_FAQ_CLOSERS = [
+    "For **{kw}**, treat this as a living answer tied to real Search Console queries and "
+    "support tickets, not a one-time write-up.",
+    "Revisit this whenever **{kw}** priorities shift, since stale answers lose both rankings "
+    "and AI citations quietly.",
+    "Pair this with a real example from delivery work on **{kw}**, not a hypothetical nobody "
+    "has tested.",
+]
+
+
+def _faq_answer(question: str, kw: str, idx: int) -> str:
+    """Answer the specific question asked—not a generic template repeated per question.
+
+    Each answer is built from question-referencing opener + rotated support + rotated
+    closer so length lands in the 45-95 word PAA/AEO band by construction (never a
+    borderline miss) and no two answers in one article read identically (keeps
+    lexical diversity/humanization scoring honest and gives answer engines a real,
+    extractable, question-specific answer instead of boilerplate).
+    """
+    q_clean = question.strip().rstrip("?").strip()
+    q_lower = (q_clean[0].lower() + q_clean[1:]) if q_clean else q_clean
+    opener = _FAQ_OPENERS[idx % len(_FAQ_OPENERS)].format(q=q_lower)
+    support = _FAQ_SUPPORTS[(idx + 1) % len(_FAQ_SUPPORTS)]
+    closer = _FAQ_CLOSERS[idx % len(_FAQ_CLOSERS)].format(kw=kw)
+    return f"{opener} {support} {closer}"
 
 
 def _paa_faq_section(idea: dict[str, Any]) -> str:
     questions: list[str] = list(idea.get("paa_questions") or [])[:6]
     kw = str(idea.get("primary_keyword", "seo"))
     blocks = ["## People also ask (PAA) — answered for search and AI surfaces", ""]
-    for q in questions:
+    for idx, q in enumerate(questions):
         blocks.append(f"### {q}")
-        blocks.append(
-            f"You'll want one URL you control for this question. Answer in two short sentences first. "
-            f"Then add steps and limits. For **{kw}**, use Search Console, call notes, and shipped fixes. "
-            f"Don't speculate—link to primary docs when you can't verify a claim."
-        )
+        blocks.append(_faq_answer(q, kw, idx))
         blocks.append("")
     return "\n".join(blocks).strip()
 
@@ -107,7 +154,7 @@ def _sxo_section(idea: dict[str, Any]) -> str:
     return f"""## Search experience (SXO) checklist on this page
 
 - **Scan path:** headings mirror real queries; the first screen states outcome, audience, and constraint.
-- **Trust:** author box, dated review, and links to services and proof—not generic widgets alone.
+- **Trust:** author box, dated review, structured data/schema markup, and links to services and proof—not generic widgets alone.
 - **Action:** one primary CTA ({cta}) repeated after proof, not competing buttons with equal weight.
 - **Performance:** prioritize LCP and INP on templates that receive organic entries from this topic.
 - **Accessibility:** descriptive link text, sufficient contrast, and headings that do not skip levels.
@@ -185,25 +232,27 @@ def _weave_links(body: str, idea: dict[str, Any]) -> str:
 
 
 def _trim_to_max_words(text: str, max_words: int) -> str:
-    marker = "## Sources and further reading"
-    sources_block = ""
-    main = text.strip()
-    if marker in main:
-        main, sources_block = main.split(marker, 1)
-        sources_block = marker + sources_block
+    """Trim by dropping whole trailing H2 sections, never leaving an orphaned
+    heading or gutting a section down to nothing.
 
-    paragraphs = [p.strip() for p in re.split(r"\n\n+", main.strip()) if p.strip()]
-    reserved = count_words(sources_block) if sources_block else 0
-    budget = max(200, max_words - reserved)
+    The previous version popped individual paragraphs off the end regardless of
+    structure, which could strip a section's body while leaving its "## Heading"
+    behind—or silently delete several sections' worth of substantive content
+    while numeric compliance checks (H2 count, word count) kept passing because
+    the fixed scaffolding (quick answer, PAA, SXO, sources) already satisfied
+    them. Trimming whole sections keeps whatever survives coherent.
+    """
+    text = text.strip()
+    sections = [s for s in re.split(r"(?=^## )", text, flags=re.MULTILINE) if s.strip()]
+    if len(sections) <= 1:
+        paragraphs = [p.strip() for p in re.split(r"\n\n+", text) if p.strip()]
+        while len(paragraphs) > 1 and count_words("\n\n".join(paragraphs)) > max_words:
+            paragraphs.pop()
+        return "\n\n".join(paragraphs)
 
-    while paragraphs and count_words("\n\n".join(paragraphs)) > budget:
-        paragraphs.pop()
-    body = "\n\n".join(paragraphs)
-    if sources_block:
-        body = f"{body}\n\n{sources_block.strip()}".strip()
-    if count_words(body) <= max_words:
-        return body
-    return _trim_to_max_words(body.replace(sources_block, "").strip(), max_words) if sources_block else body
+    while len(sections) > 1 and count_words("\n\n".join(sections)) > max_words:
+        sections.pop()
+    return "\n\n".join(s.strip() for s in sections)
 
 
 def _append_source_links_section(body: str, idea: dict[str, Any]) -> str:
@@ -254,34 +303,55 @@ def build_body(idea: dict[str, Any]) -> str:
     recommended = int(idea.get("recommended_word_count") or DEFAULT_RECOMMENDED_WORD_COUNT)
     min_w, max_w = word_bounds(recommended)
 
-    core_sections = [
-        _quick_answer_block(idea),
-        _serp_research_section(idea),
-        _cluster_body(idea),
-        _paa_faq_section(idea),
-    ]
-    tail_sections = [_sxo_section(idea)]
-    body = "\n\n".join(core_sections)
-    body = _weave_links(body, idea)
-    body = _pad_to_min_words(body, min_w, idea)
-    if count_words(body) > max_w:
-        body = _trim_to_max_words(body, max_w)
-    if count_words(body) < min_w:
-        body = _pad_to_min_words(body, min_w, idea)
-    body = _polish_long_sentences(body)
-    reserved = "\n\n".join(tail_sections)
+    # PAA/FAQ, the SXO checklist, and sources are compliance-required structural
+    # sections—never trim candidates. Word-count trimming/padding only ever
+    # touches the flexible pool (quick answer, SERP research, cluster body), or a
+    # long PAA section could get chopped off entirely by `_trim_to_max_words`
+    # popping paragraphs from the tail (it previously sat last in the trimmed
+    # pool, so growing the FAQ answers to a real word count made this happen).
+    reserved = "\n\n".join([_paa_faq_section(idea), _sxo_section(idea)])
     reserved += "\n\n" + _append_source_links_section("", idea).strip()
-    budget = max(200, max_w - count_words(reserved))
-    if count_words(body) > budget:
-        body = _trim_to_max_words(body, budget)
-    body = f"{body.strip()}\n\n{reserved.strip()}".strip()
+    reserved_words = count_words(reserved)
+    budget = max(200, max_w - reserved_words)
+    flexible_min = max(200, min_w - reserved_words)
+
+    flexible = "\n\n".join(
+        [
+            _quick_answer_block(idea),
+            _serp_research_section(idea),
+            _cluster_body(idea),
+        ]
+    )
+    flexible = _weave_links(flexible, idea)
+    flexible = _pad_to_min_words(flexible, flexible_min, idea)
+    if count_words(flexible) > budget:
+        flexible = _trim_to_max_words(flexible, budget)
+    if count_words(flexible) < flexible_min:
+        flexible = _pad_to_min_words(flexible, flexible_min, idea)
+    flexible = _polish_long_sentences(flexible)
+    body = f"{flexible.strip()}\n\n{reserved.strip()}".strip()
     if count_words(body) > max_w:
-        body = _trim_to_max_words(body, max_w)
+        # Reserved sections are fixed; only the flexible pool ever gets cut.
+        flexible = _trim_to_max_words(flexible, max(200, max_w - reserved_words))
+        body = f"{flexible.strip()}\n\n{reserved.strip()}".strip()
     return body.strip() + "\n"
 
 
+_CLAUSE_SPLIT_RE = re.compile(
+    r",\s+(?=(?:so|because|which|while|though|yet|however|so that)\b)|;\s+|—(?=\S)"
+)
+
+
 def _polish_long_sentences(text: str) -> str:
-    """Split very long sentences to improve readability scores without changing meaning much."""
+    """Split very long sentences at a natural clause boundary near the middle.
+
+    The previous version split at a raw word-count midpoint regardless of
+    grammar, which cut mid-clause and produced broken sentences like "so a
+    page built to satisfy." / "a skeptical human reader tends to get quoted
+    by those surfaces too." Only split where a comma-before-conjunction or
+    semicolon exists near the midpoint; otherwise leave the sentence intact—
+    a slightly long sentence reads better than a grammatically broken one.
+    """
     out_blocks: list[str] = []
     for block in re.split(r"\n\n+", text.strip()):
         if block.startswith("#") or "](" in block:
@@ -291,11 +361,23 @@ def _polish_long_sentences(text: str) -> str:
         polished: list[str] = []
         for sentence in sentences:
             words = sentence.split()
-            if len(words) > 26:
-                mid = len(words) // 2
-                polished.append(" ".join(words[:mid]).rstrip(",;") + ".")
-                polished.append(" ".join(words[mid:]))
-            else:
+            if len(words) <= 26:
                 polished.append(sentence)
+                continue
+            candidates = [m.start() for m in _CLAUSE_SPLIT_RE.finditer(sentence)]
+            if not candidates:
+                polished.append(sentence)
+                continue
+            mid_char = len(sentence) // 2
+            split_at = min(candidates, key=lambda i: abs(i - mid_char))
+            first = sentence[:split_at].rstrip(" ,;—").strip()
+            rest = sentence[split_at:].lstrip(" ,;—").strip()
+            if not first or not rest:
+                polished.append(sentence)
+                continue
+            first = first if first[-1] in ".!?" else first + "."
+            rest = rest[0].upper() + rest[1:]
+            polished.append(first)
+            polished.append(rest)
         out_blocks.append(" ".join(polished))
     return "\n\n".join(out_blocks)

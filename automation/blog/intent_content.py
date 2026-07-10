@@ -143,15 +143,15 @@ def _body_aeo_geo(idea: dict[str, Any]) -> str:
     kw = idea.get("primary_keyword") or "ai search visibility"
     return f"""## AI answers reward clarity, not another "AI SEO" landing page
 
-Teams hear "AI search" and spin up a new hub with vague claims. Searchers and answer engines reward something quieter: **pages that resolve one intent completely**, with language models can quote without guessing. Your **ai search visibility** plan should start with the questions sales and support already answer ten times a week.
+Teams hear "AI search" and spin up a new hub with vague claims. Searchers and answer engines reward something quieter: **pages that resolve one intent completely**, written so language models can quote them without guessing. Your **ai search visibility** plan should start with the questions sales and support already answer ten times a week.
 
-List those questions verbatim from tickets, call notes, and chat logs. Map each to a URL that exists—or should exist—as a single, authoritative answer. If two pages compete, merge or differentiate sharply. AI summaries hate polite duplication as much as classic blue-link results do.
+List those questions verbatim from tickets, call notes, and chat logs. Map each one to a single URL that exists (or should exist) as the authoritative answer. If two pages compete, merge or differentiate sharply. AI summaries hate polite duplication as much as classic blue-link results do.
 
 ## Make answers extractable without dumbing down the brand
 
 Lead sections with a direct response in plain English, then deepen with steps, constraints, and examples. Use headings that track real queries ("how long does X take," "what voids a warranty") instead of metaphor-heavy titles. Short lists help when items are truly parallel; avoid bullet farms that repeat the same sentence shape.
 
-Add named entities you are allowed to mention—products, standards, regions—and define them once. Answer engines stitch facts more reliably when proper nouns are consistent across service pages, docs, and posts. Keep opinions labeled as guidance; mark procedures as steps with prerequisites.
+Add named entities you are allowed to mention: products, standards, regions, and define each one once. Answer engines stitch facts more reliably when proper nouns are consistent across service pages, docs, and posts. Keep opinions labeled as guidance; mark procedures as steps with prerequisites.
 
 ## GEO is geography plus corroboration
 

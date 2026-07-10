@@ -87,7 +87,13 @@ def infer_serp_features(term: str, trend_titles: list[str]) -> list[str]:
 
 def build_paa_questions(term: str, cluster: str, count: int = 5) -> list[str]:
     base = list(PAA_BY_CLUSTER.get(cluster, PAA_BY_CLUSTER["commercial seo"]))
-    term_clean = re.sub(r"\s+seo.*$", "", term, flags=re.IGNORECASE).strip()
+    # Previously stripped everything from " seo" onward (leftover from the old
+    # "<term> seo strategy" keyword-suffix pattern keyword_planner no longer
+    # generates—see its build_keywords() docstring). That regex now mangles
+    # legitimate terms that contain "seo" mid-phrase, e.g. "technical seo audit"
+    # -> "technical", producing "How does technical affect organic revenue in
+    # 2026?" instead of a real question. Use the term as written.
+    term_clean = term.strip()
     tailored = [f"How does {term_clean} affect organic revenue in 2026?"] + base
     seen: set[str] = set()
     out: list[str] = []

@@ -126,6 +126,12 @@ def validate_seo(data: dict[str, Any], body: str) -> list[str]:
     return errors
 
 
+AIO_SURFACES = (
+    "chatgpt", "perplexity", "ai overview", "ai overviews", "ai mode",
+    "gemini", "copilot", "claude", "google's ai",
+)
+
+
 def validate_aeo_geo(data: dict[str, Any], body: str) -> list[str]:
     errors = []
     if "people also ask" not in body.lower() and "frequently asked questions" not in body.lower():
@@ -139,6 +145,63 @@ def validate_aeo_geo(data: dict[str, Any], body: str) -> list[str]:
         errors.append("Need bold entity or key-term markers for extractable answers.")
     if "schema" not in body.lower() and "structured data" not in body.lower():
         errors.append("Reference structured data/schema for GEO corroboration.")
+    return errors
+
+
+def validate_aio(body: str) -> list[str]:
+    """AIO: the piece must name a real AI answer surface, not just say "AI interfaces".
+
+    Naming ChatGPT/Perplexity/AI Overviews/Gemini/Copilot specifically is both more
+    truthful (real, checkable products vs. vague hand-waving) and a stronger signal
+    that the content was written to be citable on those surfaces, not just SEO copy
+    with "AI" sprinkled in.
+    """
+    errors = []
+    lower = body.lower()
+    if not any(surface in lower for surface in AIO_SURFACES):
+        errors.append(
+            "Name at least one concrete AI answer surface (ChatGPT, Perplexity, Google AI "
+            "Overviews, Gemini, or Copilot) for AIO—generic 'AI interfaces' language doesn't count."
+        )
+    return errors
+
+
+_INTENT_STOPWORDS = {
+    "what", "when", "where", "which", "while", "with", "your", "that", "this",
+    "does", "will", "have", "from", "into", "about", "their", "there", "these",
+    "those", "than", "then", "just", "much", "many", "most", "some", "such",
+}
+
+
+def validate_user_intent(body: str, data: dict[str, Any]) -> list[str]:
+    """The reader (and an AI crawler skimming the first screen) must instantly see
+    what this piece is for and who it's for—and every FAQ/PAA answer must actually
+    answer the question asked, not recite a generic template. Catches the exact
+    failure mode where an article scored well on every metric except being useful:
+    identical boilerplate under six different questions.
+    """
+    errors = []
+    lead = body.strip()[:600].lower()
+    if not any(marker in lead for marker in ("quick answer", "tl;dr", "short answer", "in short")):
+        errors.append(
+            "Opening must lead with a quick-answer/TL;DR framing in the first screen so "
+            "intent is obvious immediately—not just eventually."
+        )
+    if not str(data.get("target_audience") or "").strip():
+        errors.append("Missing target_audience — content must be written for a specific reader, not 'everyone'.")
+
+    for match in re.finditer(r"^###\s+(.+)$\n+([^#]+)", body, flags=re.MULTILINE):
+        question, answer = match.group(1), match.group(2)
+        q_words = {
+            w for w in re.findall(r"[a-z']{4,}", question.lower())
+            if w not in _INTENT_STOPWORDS
+        }
+        a_words = set(re.findall(r"[a-z']{4,}", answer.lower()))
+        if q_words and not (q_words & a_words):
+            errors.append(
+                f"FAQ answer for '{question[:60]}' doesn't reference the question's own "
+                "terms—looks like a generic template, not a real answer."
+            )
     return errors
 
 
@@ -222,7 +285,9 @@ def validate_full_draft(
     report.errors.extend(validate_word_count(body, recommended))
     report.errors.extend(validate_seo(data, body))
     report.errors.extend(validate_aeo_geo(data, body))
+    report.errors.extend(validate_aio(body))
     report.errors.extend(validate_sxo(body, data))
+    report.errors.extend(validate_user_intent(body, data))
     report.errors.extend(validate_links(body))
     report.errors.extend(validate_policies(body, data))
     report.errors.extend(validate_research_metadata(data))

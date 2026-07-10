@@ -10,12 +10,13 @@ AI_CLICHES = (
     "in today's digital landscape",
     "in conclusion",
     "it's important to note",
-    "delve into",
+    "delve",
     "leverage",
     "robust",
-    "seamlessly",
+    "seamless",
     "game-changer",
-    "unlock the power",
+    "game changer",
+    "unlock",
     "at the end of the day",
     "comprehensive guide",
     "navigate the ever-changing",
@@ -23,6 +24,9 @@ AI_CLICHES = (
     "holistic approach",
     "synergy",
     "paradigm",
+    # SEO With Faiz brand-voice banned phrases (see swf-marketing-team skill)
+    "elevate your",
+    "look no further",
 )
 
 TEMPLATE_PHRASES = (
@@ -192,6 +196,15 @@ def score_humanization(
     metrics["passive_hits"] = float(passive)
     if passive > 12:
         issues.append("Too much passive voice; lead with who does what.")
+
+    em_dash_total = body.count("—")
+    em_dash_chains = sum(1 for s in sentences if s.count("—") >= 2)
+    metrics["em_dash_total"] = float(em_dash_total)
+    metrics["em_dash_chains"] = float(em_dash_chains)
+    if em_dash_chains:
+        issues.append("Split up em-dash chains (2+ em-dashes in one sentence)—a common AI tell.")
+    elif em_dash_total > 14:
+        issues.append("Em-dash overuse; vary punctuation (commas, parentheses, periods) like a human writer would.")
 
     score = 100
     score -= min(35, len(issues) * 7)
