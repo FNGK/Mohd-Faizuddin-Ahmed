@@ -17,6 +17,7 @@
   initScrollReveal();
   initCounters();
   initReadingProgress();
+  initAnalyticsEvents();
 
   function initTheme() {
     const key = "seowithfaiz-theme";
@@ -240,6 +241,38 @@
     button.addEventListener("click", function () {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
+  }
+
+  function initAnalyticsEvents() {
+    if (typeof window.gtag !== "function") return;
+
+    document.addEventListener(
+      "click",
+      function (event) {
+        const el = event.target.closest ? event.target.closest("a, button") : null;
+        if (!el) return;
+
+        if (el.matches("[data-dynamic-cta], .nav-cta, .btn-primary")) {
+          window.gtag("event", "cta_click", {
+            cta_label: (el.textContent || "").trim().slice(0, 60),
+            cta_href: el.getAttribute("href") || "",
+          });
+        }
+
+        const href = el.getAttribute && el.getAttribute("href");
+        if (href && /^https?:\/\//i.test(href) && href.indexOf("seowithfaiz.com") === -1) {
+          window.gtag("event", "outbound_click", { link_url: href });
+        }
+      },
+      { passive: true }
+    );
+
+    const form = document.querySelector(".contact-form, form[data-contact]");
+    if (form) {
+      form.addEventListener("submit", function () {
+        window.gtag("event", "generate_lead", { method: "contact_form" });
+      });
+    }
   }
 
   function initReadingProgress() {
