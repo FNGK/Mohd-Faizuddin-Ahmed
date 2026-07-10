@@ -28,7 +28,7 @@ is Exhibit A.
 | Blog (seowithfaiz.com/blog) | Authority + AI-search citations | 2/wk drafted (Mon/Thu cloud), published Tue/Fri after editorial audit |
 | Google Business Profile | Local + brand searches, freshness | 1/day via Buffer |
 | Instagram (@seo_with_faiz) | Craft showcase, brand surface | 1/day via Buffer (branded card) |
-| LinkedIn | PRIMARY ICP channel | ⚠ awaiting connection in Buffer (free slot open) |
+| LinkedIn (seowithfaiz) | PRIMARY ICP channel | ✅ connected in Buffer as of 2026-07-09 — cadence not yet started, needs its first scheduled post |
 
 ## Conversion strategy — closing $1K–$5K/mo retainers with today's proof
 ### (added 2026-07-08 after honest proof assessment; all roles align to this)
@@ -71,27 +71,14 @@ hospitality/sports prospect. Automation may research and draft; Faiz sends.
 
 ## Asks awaiting Faiz (the strategist re-surfaces these weekly)
 
-- [ ] **URGENT — unauthorized Instagram posts (2026-07-09).** 8 posts on
-  @seo_with_faiz this week did NOT come from our Buffer/editorial pipeline:
-  generic "paid-ads teardown" copy, "Comment X and my system will auto-DM
-  you the framework" bait (no such auto-DM system exists — never built),
-  TWO posts naming prices ("$500 SEO retainer", "$10k a month hiding in
-  your ad account" — hard violation of the no-prices rule), and 15+ spammy
-  hashtags including fake #NYCtech/#AustinTech location tags. Some were
-  posted "via: buffer" (created directly through Buffer's compose, not our
-  repo scripts — no branded card, Canva-exported images instead) and some
-  "via: network" (posted directly to Instagram, bypassing Buffer entirely)
-  as near-duplicates of the same 3 posts a few hours later. This means
-  something with write access to either the Buffer account or the
-  Instagram account itself is publishing off-brand, guideline-violating
-  content unattended. Recommend: check Buffer account activity log +
-  connected API apps, check Instagram/Meta Business Suite "connected apps"
-  for anything unrecognized, rotate the Buffer/Meta tokens, and manually
-  review/delete the 8 posts (post IDs logged in this run's output) since
-  they carry price mentions and a fabricated auto-DM promise — real
-  reputational and possibly compliance risk. This pattern (unauthorized
-  write access to a connected account) mirrors the buttoneyes.in
-  compromise — treat with the same urgency.
+- [x] ~~Unauthorized Instagram posts~~ — **resolved/corrected 2026-07-09: Faiz
+  confirmed he posted these himself**, not a compromise. Leaving one note
+  for awareness, not urgency: the 8 posts (2026-07-05–06, paid-ads/PPC
+  "teardown" copy) still contain two price mentions ("$500 SEO retainer",
+  "$10k a month hiding in your ad account") and "Comment X for an auto-DM"
+  bait, which conflict with the studio's own no-prices and no-comment-bait
+  rules if judged by the same Elite Audit Protocol as pipeline content.
+  No action needed unless Faiz wants them edited/removed — his call.
 - [ ] Blog draft pipeline is over-indexed on one topic: of 14 unpublished
   drafts in `blog/drafts/`, 7 are near-duplicate AI-search/AEO/GEO pieces
   and 2 more pairs duplicate each other (core-update recovery x2,
