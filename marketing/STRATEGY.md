@@ -28,7 +28,7 @@ is Exhibit A.
 | Blog (seowithfaiz.com/blog) | Authority + AI-search citations | 2/wk drafted (Mon/Thu cloud), published Tue/Fri after editorial audit |
 | Google Business Profile | Local + brand searches, freshness | 1/day via Buffer |
 | Instagram (@seo_with_faiz) | Craft showcase, brand surface | 1/day via Buffer (branded card) |
-| LinkedIn (seowithfaiz) | PRIMARY ICP channel | ✅ connected in Buffer as of 2026-07-09 — cadence not yet started, needs its first scheduled post |
+| LinkedIn (seowithfaiz) | PRIMARY ICP channel | ✅ connected since 2026-07-09; first post drafted 2026-07-11, awaiting Faiz's approval before cadence starts |
 
 ## Conversion strategy — closing $1K–$5K/mo retainers with today's proof
 ### (added 2026-07-08 after honest proof assessment; all roles align to this)
@@ -90,19 +90,25 @@ hospitality/sports prospect. Automation may research and draft; Faiz sends.
 - [ ] Request named testimonials: Little Stars, Hyderabad Globe FC.
 - [ ] Ask 2–3 real contacts for Google reviews on the GBP profile.
 - [x] Create free Clutch.co profile — submitted 2026-07-08, Clutch is reviewing before publishing (confirmation email received).
-- [x] Reconnect LinkedIn to Buffer — done 2026-07-09 (channel "seowithfaiz"
-  now live in Buffer). Next: needs its first scheduled post — Social
-  Manager should pull the top LinkedIn-suited angle from QUEUE.md.
-- [ ] Instagram → Facebook Page link — Faiz linked @seo_with_faiz to a new
-  Page ("SEO with Faiz", id 1155475207656895) on 2026-07-09. The Page now
-  shows up via the Meta ads MCP (get_account_pages, get_facebook_page_insights
-  — 0 views/engagements, brand new page). But get_instagram_accounts still
-  returns 0 IG accounts for act_2089451385293163, so organic IG insights
-  (reach, follower growth, profile views) are still unavailable — likely
-  propagation delay or the Page needs to be inside the same Meta Business
-  Portfolio as the ad account login, not just linked. Re-check next run;
-  if still 0 after a few days, the Page may need re-linking via Meta
-  Business Suite's "Linked accounts," not just a plain Page connection.
+- [ ] Reconnect LinkedIn to Buffer — channel live since 2026-07-09. First
+  post drafted 2026-07-11 (wedge-hospitality/AEO angle, 09:30 IST slot,
+  linking to /services/technical-seo.html) but saved as **draft only**,
+  not scheduled live — this is a brand-new channel with zero posting
+  history, so the run treated its first post as needing Faiz's sign-off
+  rather than auto-publishing. **Ask: review and approve/edit the draft
+  in Buffer, then future runs will schedule LinkedIn automatically like
+  GBP/Instagram.**
+- [ ] Instagram → Facebook Page link — still not fully propagated as of
+  2026-07-11. `get_instagram_accounts(act_2089451385293163)` still returns
+  0 accounts, same as before. However, `get_instagram_posts` and
+  `get_instagram_account_insights` (called directly with the ad account ID,
+  no instagram_account_id) DID return real organic data this run — 5 recent
+  posts with engagement, reach 68/profile views 7 over last_7d — so some
+  organic IG telemetry is flowing through a different path even though the
+  accounts-lookup endpoint itself is still empty. Re-check get_instagram_accounts
+  specifically in a future run; if it's still 0 after this, the mismatch
+  between the two endpoints (one blind, one working) is worth flagging to
+  Meta support rather than assuming propagation delay.
 - [ ] Review the Prospector's Gmail drafts (Mon/Thu) and send the good ones.
 
 ## Standing rules
