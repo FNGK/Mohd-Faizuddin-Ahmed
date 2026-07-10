@@ -90,11 +90,19 @@ hospitality/sports prospect. Automation may research and draft; Faiz sends.
 - [ ] Request named testimonials: Little Stars, Hyderabad Globe FC.
 - [ ] Ask 2–3 real contacts for Google reviews on the GBP profile.
 - [x] Create free Clutch.co profile — submitted 2026-07-08, Clutch is reviewing before publishing (confirmation email received).
-- [ ] Reconnect LinkedIn to Buffer once the account is restored — LinkedIn
-  support case #260707-016053 is still open as of 2026-07-08 (identity
-  verification submitted, awaiting their response). Buffer still shows
-  only 2 channels (Instagram, GBP).
-- [ ] Link Instagram (@seo_with_faiz) as a Business account to a Facebook Page inside the SAME Meta Business Portfolio as the connected login (act_2089451385293163). Until then, the Meta MCP reads the ad account but returns 0 Instagram accounts, so organic IG insights are unavailable and the team optimizes on Buffer engagement + Gmail inquiries only.
+- [x] Reconnect LinkedIn to Buffer — done 2026-07-09 (channel "seowithfaiz"
+  now live in Buffer). Next: needs its first scheduled post — Social
+  Manager should pull the top LinkedIn-suited angle from QUEUE.md.
+- [ ] Instagram → Facebook Page link — Faiz linked @seo_with_faiz to a new
+  Page ("SEO with Faiz", id 1155475207656895) on 2026-07-09. The Page now
+  shows up via the Meta ads MCP (get_account_pages, get_facebook_page_insights
+  — 0 views/engagements, brand new page). But get_instagram_accounts still
+  returns 0 IG accounts for act_2089451385293163, so organic IG insights
+  (reach, follower growth, profile views) are still unavailable — likely
+  propagation delay or the Page needs to be inside the same Meta Business
+  Portfolio as the ad account login, not just linked. Re-check next run;
+  if still 0 after a few days, the Page may need re-linking via Meta
+  Business Suite's "Linked accounts," not just a plain Page connection.
 - [ ] Review the Prospector's Gmail drafts (Mon/Thu) and send the good ones.
 
 ## Standing rules
