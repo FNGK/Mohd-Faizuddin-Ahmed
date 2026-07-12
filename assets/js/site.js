@@ -18,6 +18,7 @@
   initCounters();
   initReadingProgress();
   initAnalyticsEvents();
+    initConsent();
 
   function initTheme() {
     const key = "seowithfaiz-theme";
@@ -450,6 +451,183 @@
       .trim()
       .replace(/\s+/g, "-")
       .replace(/-+/g, "-");
+  }
+
+  // ───────────────────────────────────────────────────────────────
+  // Cookie consent — drives Cloudflare Zaraz's consent API and emits
+  // Google Consent Mode v2 signals. CSP-safe: this script is 'self', and
+  // the injected <style> is allowed by style-src 'unsafe-inline'. The
+  // banner only appears once Zaraz (the tag host) is live — no tags, no
+  // banner — so it activates automatically when you enable Zaraz.
+  // ───────────────────────────────────────────────────────────────
+  var CONSENT_KEY = "swf-consent-v1";
+  // After creating consent purposes in Cloudflare → Zaraz → Consent, paste
+  // their purpose IDs here so granular Analytics/Marketing choices map exactly.
+  // Left empty, we fall back to Zaraz setAll() for a simple accept/reject.
+  var CONSENT_PURPOSES = { analytics: "", advertising: "" };
+
+  function initConsent() {
+    consentModeDefault();
+    var stored = readConsent();
+    if (stored) {
+      applyConsent(stored, true);
+    } else {
+      waitForZaraz(function (present) { if (present) renderConsentBanner(false); });
+    }
+    document.addEventListener("click", function (e) {
+      var t = e.target.closest ? e.target.closest("[data-cookie-settings]") : null;
+      if (t) { e.preventDefault(); renderConsentBanner(true); }
+    });
+    window.swfOpenConsent = function () { renderConsentBanner(true); };
+  }
+
+  function readConsent() {
+    var raw = safeGet(CONSENT_KEY);
+    if (!raw) return null;
+    try { return JSON.parse(raw); } catch (_e) { return null; }
+  }
+
+  function saveConsent(choice) {
+    safeSet(CONSENT_KEY, JSON.stringify(choice));
+    try {
+      document.cookie = "swf_consent=" + (choice.analytics ? "a" : "") + (choice.advertising ? "m" : "") +
+        "; Max-Age=31536000; Path=/; SameSite=Lax" + (location.protocol === "https:" ? "; Secure" : "");
+    } catch (_e) {}
+  }
+
+  function consentModeDefault() {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push(["consent", "default", {
+      ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied",
+      analytics_storage: "denied", wait_for_update: 500
+    }]);
+  }
+
+  function applyConsent(choice, isUpdate) {
+    applyZarazConsent(choice);
+    if (isUpdate) {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push(["consent", "update", {
+        analytics_storage: choice.analytics ? "granted" : "denied",
+        ad_storage: choice.advertising ? "granted" : "denied",
+        ad_user_data: choice.advertising ? "granted" : "denied",
+        ad_personalization: choice.advertising ? "granted" : "denied"
+      }]);
+    }
+  }
+
+  function applyZarazConsent(choice) {
+    var tries = 0;
+    (function attempt() {
+      if (window.zaraz && zaraz.consent) {
+        try {
+          if (CONSENT_PURPOSES.analytics || CONSENT_PURPOSES.advertising) {
+            var map = {};
+            if (CONSENT_PURPOSES.analytics) map[CONSENT_PURPOSES.analytics] = !!choice.analytics;
+            if (CONSENT_PURPOSES.advertising) map[CONSENT_PURPOSES.advertising] = !!choice.advertising;
+            zaraz.consent.set(map);
+          } else {
+            zaraz.consent.setAll(!!(choice.analytics && choice.advertising));
+          }
+          if (typeof zaraz.consent.sendQueuedEvents === "function") zaraz.consent.sendQueuedEvents();
+        } catch (_e) {}
+        return;
+      }
+      if (tries++ < 20) setTimeout(attempt, 250);
+    })();
+  }
+
+  function waitForZaraz(cb) {
+    var tries = 0;
+    (function attempt() {
+      if (window.zaraz && zaraz.consent) return cb(true);
+      if (tries++ < 20) return setTimeout(attempt, 250);
+      return cb(false);
+    })();
+  }
+
+  function injectConsentStyles() {
+    if (document.getElementById("swf-consent-style")) return;
+    var css = [
+      ".swf-consent{position:fixed;left:16px;right:16px;bottom:16px;z-index:2147483000;",
+      "max-width:520px;margin-left:auto;background:var(--surface,#0e1a2c);color:var(--text,#e8fbf8);",
+      "border:1px solid var(--border,rgba(255,255,255,.14));border-radius:16px;",
+      "box-shadow:0 18px 48px rgba(0,0,0,.45);padding:20px 20px 16px;font-family:inherit;",
+      "transform:translateY(140%);opacity:0;transition:transform .35s ease,opacity .35s ease;}",
+      ".swf-consent.is-open{transform:translateY(0);opacity:1;}",
+      ".swf-consent h2{font-size:1.05rem;margin:0 0 6px;}",
+      ".swf-consent p{font-size:.9rem;line-height:1.5;margin:0 0 14px;color:var(--muted,#a8c3cd);}",
+      ".swf-consent a{color:var(--primary,#2fd4c6);}",
+      ".swf-consent__row{display:flex;flex-wrap:wrap;gap:8px;}",
+      ".swf-consent__btn{font:inherit;font-weight:700;font-size:.85rem;cursor:pointer;border-radius:10px;",
+      "padding:10px 16px;border:1px solid var(--border,rgba(255,255,255,.2));background:transparent;color:var(--text,#e8fbf8);}",
+      ".swf-consent__btn--primary{background:var(--primary,#2fd4c6);border-color:var(--primary,#2fd4c6);color:#04231f;}",
+      ".swf-consent__btn--ghost{opacity:.85;}",
+      ".swf-consent__prefs{margin:2px 0 12px;display:none;}",
+      ".swf-consent__prefs.is-open{display:block;}",
+      ".swf-consent__pref{display:flex;align-items:flex-start;gap:10px;font-size:.85rem;margin:8px 0;color:var(--text,#e8fbf8);}",
+      ".swf-consent__pref input{margin-top:3px;}",
+      "@media(max-width:600px){.swf-consent{left:10px;right:10px;bottom:10px;}}"
+    ].join("");
+    var style = document.createElement("style");
+    style.id = "swf-consent-style";
+    style.textContent = css;
+    document.head.appendChild(style);
+  }
+
+  function renderConsentBanner(forceOpen) {
+    var existing = document.getElementById("swf-consent");
+    if (existing) { existing.classList.add("is-open"); return; }
+    injectConsentStyles();
+    var stored = readConsent() || { analytics: false, advertising: false };
+    var el = document.createElement("div");
+    el.id = "swf-consent";
+    el.className = "swf-consent";
+    el.setAttribute("role", "dialog");
+    el.setAttribute("aria-label", "Cookie consent");
+    el.innerHTML =
+      '<h2>Your privacy</h2>' +
+      '<p>We use analytics and (for our LinkedIn ads) advertising cookies to see what works. Essential site functions always run. See our <a href="/privacy/">privacy policy</a>.</p>' +
+      '<div class="swf-consent__prefs" id="swfPrefs">' +
+        '<label class="swf-consent__pref"><input type="checkbox" id="swfAnalytics"' + (stored.analytics ? " checked" : "") + '><span><strong>Analytics</strong> &mdash; anonymous usage stats (Google Analytics).</span></label>' +
+        '<label class="swf-consent__pref"><input type="checkbox" id="swfAds"' + (stored.advertising ? " checked" : "") + '><span><strong>Marketing</strong> &mdash; measure &amp; improve our LinkedIn ads (LinkedIn Insight Tag).</span></label>' +
+      '</div>' +
+      '<div class="swf-consent__row">' +
+        '<button class="swf-consent__btn swf-consent__btn--primary" id="swfAcceptAll" type="button">Accept all</button>' +
+        '<button class="swf-consent__btn" id="swfReject" type="button">Reject non-essential</button>' +
+        '<button class="swf-consent__btn swf-consent__btn--ghost" id="swfManage" type="button" aria-expanded="false">Manage</button>' +
+        '<button class="swf-consent__btn swf-consent__btn--ghost" id="swfSave" type="button" style="display:none;">Save choices</button>' +
+      '</div>';
+    document.body.appendChild(el);
+    // setTimeout (not requestAnimationFrame) so the reveal still fires in a
+    // background/inactive tab, where rAF is paused.
+    setTimeout(function () { el.classList.add("is-open"); }, 20);
+
+    function choose(choice) {
+      saveConsent(choice);
+      applyConsent(choice, true);
+      el.classList.remove("is-open");
+      setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 400);
+    }
+    el.querySelector("#swfAcceptAll").addEventListener("click", function () {
+      choose({ analytics: true, advertising: true });
+    });
+    el.querySelector("#swfReject").addEventListener("click", function () {
+      choose({ analytics: false, advertising: false });
+    });
+    el.querySelector("#swfManage").addEventListener("click", function () {
+      var prefs = el.querySelector("#swfPrefs");
+      var save = el.querySelector("#swfSave");
+      var open = prefs.classList.toggle("is-open");
+      this.setAttribute("aria-expanded", open ? "true" : "false");
+      save.style.display = open ? "" : "none";
+    });
+    el.querySelector("#swfSave").addEventListener("click", function () {
+      choose({
+        analytics: el.querySelector("#swfAnalytics").checked,
+        advertising: el.querySelector("#swfAds").checked
+      });
+    });
   }
 
   function safeGet(key) {
