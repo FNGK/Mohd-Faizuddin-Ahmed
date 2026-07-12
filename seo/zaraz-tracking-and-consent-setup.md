@@ -1,3 +1,9 @@
+> **SUPERSEDED (2026-07-12):** Faiz went with a client-side **GTM container
+> (`GTM-KQ9KNHN2`)** instead — installed site-wide via `automation/inject_gtm.py`
+> + `assets/js/gtm-loader.js`, consent-gated by the banner in `site.js`. Configure
+> GA4 + the LinkedIn Insight Tag *inside GTM* now. This Zaraz guide is retained
+> only as a fallback if you later reconsider edge/server-side tagging.
+
 # Cloudflare Zaraz — server-side tracking + consent setup
 
 > Built 2026-07-12. This is the dashboard-side checklist to turn on GA4 +
