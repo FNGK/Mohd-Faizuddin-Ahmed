@@ -96,7 +96,59 @@ async function sendMail(env, submission) {
   await env.CONTACT_EMAIL.send(message);
 }
 
-async function handleContact(request, env) {
+// ── LinkedIn Conversions API (server-side lead conversion) ──
+// Conversion "Website Lead — Strategy Call Request" (id 29401001). Fire-and-
+// forget after a lead email sends; gated on the visitor's advertising consent
+// (the banner sets swf_consent=...'m' when granted). Requires the account
+// secret LINKEDIN_CONVERSIONS_TOKEN (rw_conversions scope); no-ops without it.
+const LINKEDIN_CONVERSION_URN = 'urn:lla:llaPartnerConversion:29401001';
+
+function readCookie(request, name) {
+  const header = request.headers.get('Cookie') || '';
+  const match = header.match(new RegExp('(?:^|;\\s*)' + name + '=([^;]*)'));
+  return match ? decodeURIComponent(match[1]) : '';
+}
+
+async function sha256Hex(value) {
+  const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(value));
+  return Array.from(new Uint8Array(digest))
+    .map((b) => b.toString(16).padStart(2, '0'))
+    .join('');
+}
+
+async function sendLinkedInConversion(env, submission, request) {
+  try {
+    const token = env.LINKEDIN_CONVERSIONS_TOKEN;
+    if (!token) return; // not configured yet — no-op
+
+    // Only send when the visitor granted advertising consent.
+    if (readCookie(request, 'swf_consent').indexOf('m') === -1) return;
+
+    const emailHash = await sha256Hex(submission.email.trim().toLowerCase());
+    const res = await fetch('https://api.linkedin.com/rest/conversionEvents', {
+      method: 'POST',
+      headers: {
+        Authorization: 'Bearer ' + token,
+        'LinkedIn-Version': env.LINKEDIN_API_VERSION || '202505',
+        'X-Restli-Protocol-Version': '2.0.0',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        conversion: LINKEDIN_CONVERSION_URN,
+        conversionHappenedAt: Date.now(),
+        eventId: crypto.randomUUID(),
+        user: { userIds: [{ idType: 'SHA256_EMAIL', idValue: emailHash }] },
+      }),
+    });
+    if (!res.ok) {
+      console.error('LinkedIn CAPI non-2xx', res.status, await res.text());
+    }
+  } catch (err) {
+    console.error('LinkedIn CAPI send failed', err);
+  }
+}
+
+async function handleContact(request, env, ctx) {
   if (request.method === 'OPTIONS') {
     return new Response(null, {
       status: 204,
@@ -141,6 +193,9 @@ async function handleContact(request, env) {
 
   try {
     await sendMail(env, submission);
+    if (ctx && typeof ctx.waitUntil === 'function') {
+      ctx.waitUntil(sendLinkedInConversion(env, submission, request));
+    }
     return json(
       {
         success: true,
@@ -163,7 +218,7 @@ async function handleContact(request, env) {
 }
 
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     const url = new URL(request.url);
 
     if (url.hostname === 'www.seowithfaiz.com') {
@@ -172,7 +227,7 @@ export default {
     }
 
     if (url.pathname === '/api/v1/contact') {
-      return handleContact(request, env);
+      return handleContact(request, env, ctx);
     }
 
     return env.ASSETS.fetch(request);
