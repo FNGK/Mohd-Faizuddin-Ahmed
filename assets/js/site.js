@@ -467,12 +467,14 @@
   var CONSENT_PURPOSES = { analytics: "", advertising: "" };
 
   function initConsent() {
-    consentModeDefault();
+    // Consent Mode defaults are set in gtm-loader.js (before GTM loads). Here
+    // we just apply a stored choice or show the banner. Tags now always exist
+    // (GTM is site-wide), so the banner shows whenever there's no saved choice.
     var stored = readConsent();
     if (stored) {
-      applyConsent(stored, true);
+      applyConsent(stored, false);
     } else {
-      waitForZaraz(function (present) { if (present) renderConsentBanner(false); });
+      renderConsentBanner(false);
     }
     document.addEventListener("click", function (e) {
       var t = e.target.closest ? e.target.closest("[data-cookie-settings]") : null;
@@ -513,6 +515,8 @@
         ad_user_data: choice.advertising ? "granted" : "denied",
         ad_personalization: choice.advertising ? "granted" : "denied"
       }]);
+      // Non-Google tags (e.g. a GTM-hosted LinkedIn Insight Tag) can gate on this event.
+      window.dataLayer.push({ event: "swf_consent", analytics_consent: !!choice.analytics, ad_consent: !!choice.advertising });
     }
   }
 
