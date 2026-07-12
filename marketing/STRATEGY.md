@@ -69,6 +69,13 @@ hospitality/sports prospect. Automation may research and draft; Faiz sends.
 4. AI search (AEO/GEO): how buyers' customers now find answers.
 5. Platform truth: Shopify Plus vs Magento vs custom — candid fit guidance.
 
+**(2026-07-11 note, not a reorder):** week-1 reach is still single digits
+(1–9) per on-pipeline post, too thin to declare a top-quartile format —
+holding rotation steady. Directionally, the AEO/buyer-education post
+("Your customers stopped clicking. They started asking.") had the week's
+best engagement rate (75%, n=4 reach) of anything in the approved pipeline;
+worth one more AEO-pillar angle next week, not a pillar promotion yet.
+
 ## Asks awaiting Faiz (the strategist re-surfaces these weekly)
 
 - [x] ~~Unauthorized Instagram posts~~ — **resolved/corrected 2026-07-09: Faiz
@@ -79,37 +86,49 @@ hospitality/sports prospect. Automation may research and draft; Faiz sends.
   bait, which conflict with the studio's own no-prices and no-comment-bait
   rules if judged by the same Elite Audit Protocol as pipeline content.
   No action needed unless Faiz wants them edited/removed — his call.
-- [ ] Blog draft pipeline is over-indexed on one topic: of 14 unpublished
-  drafts in `blog/drafts/`, 7 are near-duplicate AI-search/AEO/GEO pieces
-  and 2 more pairs duplicate each other (core-update recovery x2,
-  technical-SEO-priorities x2). None of the 4 originally queued blog
-  angles (Shopify Plus vs Magento, pre-launch checklist, 3D-without-killing-performance,
-  redesign/migration discipline) have been drafted yet. Editor-in-Chief
-  should retire the duplicate AI-search drafts and steer Thu/Mon drafting
-  toward the wedge + platform-truth angles below.
+- [x] Blog draft backlog — **addressed 2026-07-10**: the compliance-gate bug
+  that stuck every draft at `needs_revision` was fixed; 9 of 14 backlog
+  drafts now pass, 2 published (technical-SEO priorities, ChatGPT-citation
+  guide). Remaining ask: 7 ready-but-unpublished AEO/GEO-cluster drafts are
+  deliberately throttled to ≤1/week to avoid keyword cannibalization, and 5
+  stale/duplicate stubs are annotated `needs_revision` awaiting a human
+  decision to delete from `blog/drafts/` — please confirm those 5 can go.
 - [ ] Request named testimonials: Little Stars, Hyderabad Globe FC.
 - [ ] Ask 2–3 real contacts for Google reviews on the GBP profile.
 - [x] Create free Clutch.co profile — submitted 2026-07-08, Clutch is reviewing before publishing (confirmation email received).
-- [ ] Reconnect LinkedIn to Buffer — channel live since 2026-07-09. First
-  post drafted 2026-07-11 (wedge-hospitality/AEO angle, 09:30 IST slot,
-  linking to /services/technical-seo.html) but saved as **draft only**,
-  not scheduled live — this is a brand-new channel with zero posting
-  history, so the run treated its first post as needing Faiz's sign-off
-  rather than auto-publishing. **Ask: review and approve/edit the draft
-  in Buffer, then future runs will schedule LinkedIn automatically like
-  GBP/Instagram.**
-- [ ] Instagram → Facebook Page link — still not fully propagated as of
-  2026-07-11. `get_instagram_accounts(act_2089451385293163)` still returns
-  0 accounts, same as before. However, `get_instagram_posts` and
-  `get_instagram_account_insights` (called directly with the ad account ID,
-  no instagram_account_id) DID return real organic data this run — 5 recent
-  posts with engagement, reach 68/profile views 7 over last_7d — so some
-  organic IG telemetry is flowing through a different path even though the
-  accounts-lookup endpoint itself is still empty. Re-check get_instagram_accounts
-  specifically in a future run; if it's still 0 after this, the mismatch
-  between the two endpoints (one blind, one working) is worth flagging to
-  Meta support rather than assuming propagation delay.
-- [ ] Review the Prospector's Gmail drafts (Mon/Thu) and send the good ones.
+- [ ] **LinkedIn draft still awaiting approval.** Correction to last week's
+  note: this is Faiz's existing personal profile (`seowithfaiz`, posting
+  history back to Feb 2025 — sports/career/certification posts, unrelated
+  to the studio brand), not a brand-new channel. The pipeline's first
+  branded draft (wedge-hospitality/AEO angle, linking to
+  /services/technical-seo.html) was written 2026-07-10 and is **still
+  sitting in Buffer as a draft, unpublished**, as of this run. Ask: review
+  and approve/edit it in Buffer so the LinkedIn cadence (3×/week per the
+  playbook) can actually start.
+- [ ] Instagram → Facebook Page link — still not fully propagated, 2nd
+  consecutive week. `get_instagram_accounts(act_2089451385293163)` again
+  returns 0 accounts, while `get_instagram_posts`/`get_instagram_account_insights`
+  (called directly with the ad account ID) again return real data (reach 69,
+  profile views 7, 6 posts, last_7d). Same split as last week. Given it's
+  reproduced twice now, worth a Meta Business Suite check or support ticket
+  rather than waiting on propagation — or, if the working path is sufficient
+  for our reporting needs, deprioritize.
+- [ ] **Prospector outreach is fully stalled — the highest-leverage ask.**
+  8 teardown drafts sit in Gmail (`marketing/PROSPECTS.md`), all status
+  `drafted`, zero `sent` as of 2026-07-11. This is the fastest plausible
+  path to a first paid client and it's bottlenecked entirely on a manual
+  review-and-send from Faiz. Recommend picking 2–3 of the strongest (e.g.
+  WNY Flash Soccer Academy — no viewport meta tag at all; Player Progression
+  Academy — homepage appears fully JS-rendered, near-invisible to crawlers)
+  and sending this week.
+- [ ] **New: GA4 shows near-zero site traffic this week** — 2 total
+  sessions (1 Direct, 1 Unassigned) across the whole property, 0 keyEvents,
+  and Meta reports 0 `website_clicks` from Instagram despite 69 reach and
+  6 posts linking to specific site pages. Property is only ~6 days past tag
+  install, so this may still be early/noisy — but zero click-through despite
+  active linking is worth a manual check: click through the actual posted
+  links once to confirm they resolve and GA4 fires, before concluding it's
+  a genuine demand problem rather than a tracking gap.
 
 ## Standing rules
 

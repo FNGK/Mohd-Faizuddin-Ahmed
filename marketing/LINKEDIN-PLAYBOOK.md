@@ -63,6 +63,19 @@ Nav alerts you to new matches weekly — that's your daily prospect feed.
 > teardown video of your site — no pitch, just the fixes I'd make first.
 > Want me to record it? — Faiz, seowithfaiz.com
 
+**Warm-intent InMail angle this week (updated 2026-07-11):** this week's
+best-performing on-pipeline content was AEO/buyer-education ("Your
+customers stopped clicking. They started asking.") — 75% engagement rate,
+the strongest of anything in the approved pipeline (small sample, but the
+clearest signal we have). For prospects who've recently posted about AI
+search, ChatGPT, or "how customers find us now," lead the connect note or
+InMail with that angle instead of the generic booking-funnel hook:
+> Hi [Name] — saw your post on [AI search / how customers are finding you].
+> I took a look at whether [business.com] would get cited if a guest asked
+> ChatGPT or an AI Overview about [boutique hotels/academies] in
+> [location] — [ONE specific, verified structural gap]. Happy to send a
+> quick breakdown, no pitch. — Faiz, seowithfaiz.com
+
 **After a teardown video (moving to the call):**
 > Glad it was useful. If you want, I'll turn the top 3 fixes into a scoped
 > 30-day sprint — defined deliverables, month to month, no lock-in. 15
@@ -87,3 +100,12 @@ Each Monday, refresh the "warm-intent" angle in template/InMail to match the
 week's best-performing content theme, and note in the weekly brief how many
 teardown InMails Faiz sent + replies (tracked in PROSPECTS.md, channel:
 linkedin). Never automate any LinkedIn action.
+
+**2026-07-11 status:** 0 teardown InMails logged as sent via LinkedIn in
+`PROSPECTS.md` this week (0 replies, by definition). Sales Navigator setup
+(saved searches A/B/C) has not yet been confirmed as done — the LinkedIn
+channel itself only just got its first branded Buffer draft (still
+unpublished). Until the one-time setup + saved searches are confirmed live,
+the InMail motion described above hasn't actually started; the 8 Gmail
+teardown drafts from the Prospector are the nearer-term lever (see
+STRATEGY.md asks).
