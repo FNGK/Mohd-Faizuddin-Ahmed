@@ -14,6 +14,11 @@
       "allowed_sender_addresses": ["win@seowithfaiz.com"]
     }
   ],
+  // CRM lead storage — un-comment after running `npx wrangler d1 create swf-crm`
+  // and paste the printed database_id (see seo/crm-setup.md):
+  // "d1_databases": [
+  //   { "binding": "CRM_DB", "database_name": "swf-crm", "database_id": "PASTE-ID-HERE" }
+  // ],
   "assets": {
     "directory": ".",
     "binding": "ASSETS",

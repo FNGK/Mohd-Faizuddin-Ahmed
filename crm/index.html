@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="../assets/logos/seowithfaiz-icon.svg" type="image/svg+xml">
+  <title>CRM — SEO With Faiz</title>
+  <link rel="stylesheet" href="../assets/css/app.min.css">
+  <style>
+    body.crm { background: var(--bg, #08111f); min-height: 100vh; }
+    .crm-wrap { max-width: 1080px; margin: 0 auto; padding: 2rem 1.2rem 4rem; }
+    .crm-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.6rem; }
+    .crm-head h1 { font-size: 1.6rem; margin: 0; }
+    .crm-tabs { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1.4rem; }
+    .crm-tab { font: inherit; font-weight: 700; font-size: .88rem; cursor: pointer; padding: .55rem 1rem; border-radius: 10px; border: 1px solid var(--border, rgba(255,255,255,.14)); background: transparent; color: var(--text, #e8fbf8); }
+    .crm-tab.active { background: var(--primary, #2fd4c6); border-color: var(--primary, #2fd4c6); color: #04231f; }
+    .crm-card { background: var(--surface, #0e1a2c); border: 1px solid var(--border, rgba(255,255,255,.12)); border-radius: 14px; padding: 1.2rem 1.3rem; margin-bottom: 1rem; }
+    .crm-login { max-width: 420px; margin: 12vh auto 0; }
+    .crm-login input { width: 100%; margin: .6rem 0 1rem; padding: .7rem .9rem; border-radius: 10px; border: 1px solid var(--border, rgba(255,255,255,.2)); background: transparent; color: inherit; font: inherit; }
+    .crm-status { font-family: ui-monospace, monospace; font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; padding: .18rem .55rem; border-radius: 99px; border: 1px solid var(--border, rgba(255,255,255,.2)); }
+    .crm-status[data-s="new"] { color: #7dd3fc; } .crm-status[data-s="contacted"] { color: #fcd34d; }
+    .crm-status[data-s="replied"] { color: #f9a8d4; } .crm-status[data-s="call"] { color: var(--primary, #2fd4c6); }
+    .crm-status[data-s="won"] { color: #86efac; } .crm-status[data-s="lost"] { color: #94a3b8; }
+    .crm-lead { display: grid; grid-template-columns: 1fr auto; gap: .8rem; align-items: start; }
+    .crm-lead h3 { margin: 0 0 .2rem; font-size: 1.02rem; }
+    .crm-lead p { margin: .15rem 0; font-size: .88rem; color: var(--muted, #a8c3cd); }
+    .crm-lead .goal { color: var(--text, #e8fbf8); font-size: .9rem; margin-top: .45rem; }
+    .crm-controls { display: flex; flex-direction: column; gap: .5rem; align-items: flex-end; }
+    .crm-controls select, .crm-btn { font: inherit; font-size: .84rem; font-weight: 600; padding: .45rem .7rem; border-radius: 9px; border: 1px solid var(--border, rgba(255,255,255,.2)); background: transparent; color: var(--text, #e8fbf8); cursor: pointer; }
+    .crm-btn--primary { background: var(--primary, #2fd4c6); border-color: var(--primary, #2fd4c6); color: #04231f; }
+    .crm-btn--danger { border-color: rgba(248,113,113,.5); color: #fca5a5; }
+    .crm-empty { color: var(--muted, #a8c3cd); text-align: center; padding: 2.4rem 1rem; }
+    .crm-note { font-size: .82rem; color: var(--muted, #a8c3cd); }
+    .crm-int { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: .7rem 0; border-bottom: 1px solid var(--border, rgba(255,255,255,.08)); }
+    .crm-int:last-child { border-bottom: 0; }
+    .crm-pill-ok { color: #86efac; } .crm-pill-no { color: #fcd34d; }
+    .crm-draft h3 { margin: 0 0 .25rem; font-size: 1rem; }
+    .crm-draft-row { display: flex; gap: .5rem; margin-top: .7rem; flex-wrap: wrap; }
+    .crm-msg { position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%); background: var(--primary, #2fd4c6); color: #04231f; font-weight: 700; padding: .6rem 1.2rem; border-radius: 10px; opacity: 0; transition: opacity .3s; pointer-events: none; }
+    .crm-msg.show { opacity: 1; }
+    textarea.crm-notes { width: 100%; min-height: 54px; margin-top: .5rem; background: transparent; color: inherit; border: 1px solid var(--border, rgba(255,255,255,.15)); border-radius: 9px; font: inherit; font-size: .85rem; padding: .5rem .7rem; }
+    .hidden { display: none !important; }
+    @media (max-width: 640px) { .crm-lead { grid-template-columns: 1fr; } .crm-controls { align-items: stretch; flex-direction: row; flex-wrap: wrap; } }
+  </style>
+</head>
+<body class="page-inner crm">
+  <div class="crm-wrap">
+
+    <!-- Login -->
+    <div id="crmLogin" class="crm-card crm-login hidden">
+      <h1 style="font-size:1.3rem;">SEO With Faiz — CRM</h1>
+      <p class="crm-note">Enter the access key to open the studio CRM.</p>
+      <label for="crmKey" class="crm-note">Access key</label>
+      <input id="crmKey" type="password" autocomplete="current-password" placeholder="••••••••••">
+      <button id="crmLoginBtn" class="crm-btn crm-btn--primary" type="button">Open CRM</button>
+      <p id="crmLoginErr" class="crm-note" style="color:#fca5a5;"></p>
+    </div>
+
+    <!-- App -->
+    <div id="crmApp" class="hidden">
+      <div class="crm-head">
+        <h1>Studio CRM</h1>
+        <div style="display:flex;gap:.5rem;align-items:center;">
+          <a class="crm-btn" href="../index.html">← Site</a>
+          <button id="crmLogout" class="crm-btn" type="button">Log out</button>
+        </div>
+      </div>
+
+      <div class="crm-tabs">
+        <button class="crm-tab active" data-tab="leads" type="button">Leads</button>
+        <button class="crm-tab" data-tab="blogs" type="button">Blog approvals</button>
+        <button class="crm-tab" data-tab="integrations" type="button">Integrations</button>
+      </div>
+
+      <section id="tab-leads">
+        <div class="crm-card">
+          <h3 style="margin:0 0 .5rem;font-size:1rem;">Add lead manually</h3>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.5rem;">
+            <input id="mlName" placeholder="Name" style="padding:.5rem .7rem;border-radius:9px;border:1px solid var(--border,rgba(255,255,255,.2));background:transparent;color:inherit;font:inherit;">
+            <input id="mlEmail" placeholder="Email" style="padding:.5rem .7rem;border-radius:9px;border:1px solid var(--border,rgba(255,255,255,.2));background:transparent;color:inherit;font:inherit;">
+            <input id="mlWebsite" placeholder="Website (optional)" style="padding:.5rem .7rem;border-radius:9px;border:1px solid var(--border,rgba(255,255,255,.2));background:transparent;color:inherit;font:inherit;">
+            <button id="mlAdd" class="crm-btn crm-btn--primary" type="button">Add lead</button>
+          </div>
+          <p class="crm-note" style="margin:.5rem 0 0;">Use this for outbound replies (teardown prospects who answered) so the pipeline tracks them.</p>
+        </div>
+        <div id="leadsList"></div>
+      </section>
+
+      <section id="tab-blogs" class="hidden">
+        <p class="crm-note" style="margin:0 0 .8rem;">Drafts from the blog pipeline. <strong>Approve</strong> = publish on the next editorial run (Tue/Fri). <strong>Hold</strong> = keep ready but don't publish. <strong>Reject</strong> = send back for revision. The Editor-in-Chief applies decisions automatically.</p>
+        <div id="blogsList"></div>
+      </section>
+
+      <section id="tab-integrations" class="hidden">
+        <div class="crm-card" id="intList"></div>
+        <p class="crm-note">Each ✅ tool receives CRM conversion signals automatically: <strong>new lead → generate_lead</strong>, <strong>status "call" → qualify/Schedule</strong>, <strong>status "won" → close_won/Purchase</strong> — sent to GA4, LinkedIn Conversions API, and Meta Conversions API (consent-respecting, emails hashed). Pending tools activate the moment their secret is configured — setup steps live in <code>seo/crm-setup.md</code>.</p>
+      </section>
+    </div>
+
+    <div id="crmMsg" class="crm-msg"></div>
+  </div>
+  <script src="crm.js" defer></script>
+</body>
+</html>
