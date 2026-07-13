@@ -83,6 +83,16 @@ signal clean).
   your teardown video within 3 business days, to the email you entered.
 - **Confirmation CTA:** "See recent work" → https://seowithfaiz.com/case-studies/
 
+## Tracking status (2026-07-13, live-verified)
+- GTM `GTM-KQ9KNHN2` live site-wide; GA4 `G-LQZ72RK5LM` firing (first real data
+  collection started today); **LinkedIn Insight Tag live — partner ID `10541097`**
+  (`px.ads.linkedin.com/collect` verified firing post-consent); Conversion
+  Linker published. Consent-gating verified end-to-end (fresh visitor → banner
+  → accept → tags fire; CSP clean).
+- Server-side CAPI lead conversion `29401001` wired in `worker.js` (pending
+  `LINKEDIN_CONVERSIONS_TOKEN` secret). Insight Tag now also enables a
+  URL-based conversion on `/thank-you.html` + website retargeting audiences.
+
 ## Ad creative
 - **Image:** `assets/social/linkedin-ad-hospitality-teardown.png` (1200×627)
 - **Introductory text:**
