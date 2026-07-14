@@ -6,6 +6,12 @@
 
 ## Social angles (GBP / Instagram / LinkedIn)
 
+- [atomized] "Ranking #1 on the map pack and having an empty booking calendar can both be true at once. Ranking and booking are two different jobs — most local SEO treats them as one." — https://seowithfaiz.com/blog/posts/local-seo-that-turns-map-views-into-booked-jobs-in-2026.html
+- [atomized] "Local SEO isn't a rankings problem. It's a conversion problem wearing a rankings costume." — https://seowithfaiz.com/blog/posts/local-seo-that-turns-map-views-into-booked-jobs-in-2026.html
+- [atomized] "Pull 30 days of Google Business Profile insights and compare calls, direction requests, and website taps against actual booked jobs — the mismatch tells you exactly where your profile-to-phone leak is." — https://seowithfaiz.com/blog/posts/local-seo-that-turns-map-views-into-booked-jobs-in-2026.html
+- [atomized] "A Google core update rarely punishes one page — it re-weighs how Google trusts your whole site. Chasing a single ranking swing after a rollout usually burns weeks on the wrong fix." — https://seowithfaiz.com/blog/posts/recovering-after-a-google-core-update-without-burning-the-site-down.html
+- [atomized] "Most 'core update recovery' advice starts with content. Mine starts with crawl budget and indexation — cosmetics come last." — https://seowithfaiz.com/blog/posts/recovering-after-a-google-core-update-without-burning-the-site-down.html
+- [atomized] "After a core update: segment traffic loss by template (not URL), fix crawl and indexation issues first, then rebuild topical authority on whichever template lost the most." — https://seowithfaiz.com/blog/posts/recovering-after-a-google-core-update-without-burning-the-site-down.html
 - [atomized] "Most crawl-budget audits ship fifty red rows. Only the ones tied to your money pages matter this month." — https://seowithfaiz.com/blog/posts/technical-seo-priorities-when-crawl-budget-and-revenue-both-matter.html
 - [atomized] "Core Web Vitals are a tie-breaker, not a religion. A slow careers page costs you less than a slow product page with a perfect Lighthouse score on the wrong URL." — https://seowithfaiz.com/blog/posts/technical-seo-priorities-when-crawl-budget-and-revenue-both-matter.html
 - [atomized] "Fix crawl budget in the right order: segment your crawl export by template, sort by internal links + organic sessions + conversion rate, then work the overlap list — not the longest list of hreflang warnings." — https://seowithfaiz.com/blog/posts/technical-seo-priorities-when-crawl-budget-and-revenue-both-matter.html
