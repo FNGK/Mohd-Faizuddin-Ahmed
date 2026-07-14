@@ -19,7 +19,7 @@
 - ~~[wedge-hospitality] "Travelers plan trips by asking AI now. If your resort isn't structured to be the answer, you're invisible at the exact moment they're deciding." — /services/technical-seo.html~~ (used 2026-07-11 → LinkedIn draft, first-ever LinkedIn post, awaiting Faiz's approval to publish)
 - ~~[pov] "Engagements here start with a 30-day sprint — defined deliverables, month to month, no lock-in. If the work doesn't earn month two, you shouldn't buy it." — /contact/index.html~~ (used 2026-07-13 → GBP + Instagram)
 - ~~[wedge-sports] "Clubs spend on kits and facilities, then recruit through a website that loads in eight seconds. The digital front door matters as much as the physical one." — /case-studies/hyderabad-globe-fc.html~~ (used 2026-07-13 → LinkedIn, scheduled live)
-- [craft-proof] "The hidden logo mistake costing sites 73KB per visit: display:none images still download." — /blog/
+- ~~[craft-proof] "The hidden logo mistake costing sites 73KB per visit: display:none images still download." — /blog/~~ (used 2026-07-15 → GBP/IG/LinkedIn, reframed with a verified ~36KB figure from the site's own logo assets rather than the unverified 73KB — see LOG)
 - [platform-truth] "Shopify Plus or Magento? Wrong question. Start with who runs the site on a Tuesday afternoon." — /services/shopify-development.html
 - [case-study] "A football academy's website built like a flagship — custom Next.js, live at hydlittlestars.com." — /case-studies/little-stars-academy.html
 - [pov] "Most agencies describe their audits. I publish one." — /case-studies/button-eyes-resort.html
