@@ -6,7 +6,7 @@
 
 ## Social angles (GBP / Instagram / LinkedIn)
 
-- [atomized] "Ranking #1 on the map pack and having an empty booking calendar can both be true at once. Ranking and booking are two different jobs — most local SEO treats them as one." — https://seowithfaiz.com/blog/posts/local-seo-that-turns-map-views-into-booked-jobs-in-2026.html
+- ~~[atomized] "Ranking #1 on the map pack and having an empty booking calendar can both be true at once. Ranking and booking are two different jobs — most local SEO treats them as one." — https://seowithfaiz.com/blog/posts/local-seo-that-turns-map-views-into-booked-jobs-in-2026.html~~ (used 2026-07-16 → GBP/IG/LinkedIn)
 - [atomized] "Local SEO isn't a rankings problem. It's a conversion problem wearing a rankings costume." — https://seowithfaiz.com/blog/posts/local-seo-that-turns-map-views-into-booked-jobs-in-2026.html
 - [atomized] "Pull 30 days of Google Business Profile insights and compare calls, direction requests, and website taps against actual booked jobs — the mismatch tells you exactly where your profile-to-phone leak is." — https://seowithfaiz.com/blog/posts/local-seo-that-turns-map-views-into-booked-jobs-in-2026.html
 - [atomized] "A Google core update rarely punishes one page — it re-weighs how Google trusts your whole site. Chasing a single ranking swing after a rollout usually burns weeks on the wrong fix." — https://seowithfaiz.com/blog/posts/recovering-after-a-google-core-update-without-burning-the-site-down.html
