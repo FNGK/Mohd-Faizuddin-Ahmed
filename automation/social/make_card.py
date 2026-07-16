@@ -93,10 +93,21 @@ def render(statement: str, support: str, out: Path):
 
     margin = 96
     # kicker: accent dash + support label (top)
-    kick_f = font(FONTS / "HankenGrotesk.ttf", 34, [("wght", 700)] and [700])
+    # size adapts like the statement below: shrink until it fits in 2 lines
+    kick_w = W - margin - (margin + 76)
+    kick_size = 34
+    while kick_size > 20:
+        kick_f = font(FONTS / "HankenGrotesk.ttf", kick_size, [700])
+        kick_lines = wrap(d, support.upper(), kick_f, kick_w)
+        if len(kick_lines) <= 2:
+            break
+        kick_size -= 2
     d.rounded_rectangle([margin, margin + 8, margin + 56, margin + 14], 3, fill=TEAL)
-    d.text((margin + 76, margin - 8), support.upper(), font=kick_f, fill=TEAL,
-           features=None)
+    kick_line_h = int(kick_size * 1.3)
+    ky = margin - 8
+    for kl in kick_lines:
+        d.text((margin + 76, ky), kl, font=kick_f, fill=TEAL)
+        ky += kick_line_h
 
     # statement (Fraunces, semibold, generous leading)
     # size adapts: shrink until it fits in 6 lines
