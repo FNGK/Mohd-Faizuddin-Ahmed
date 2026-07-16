@@ -28,7 +28,7 @@
 - ~~[craft-proof] "The hidden logo mistake costing sites 73KB per visit: display:none images still download." — /blog/~~ (used 2026-07-15 → GBP/IG/LinkedIn, reframed with a verified ~36KB figure from the site's own logo assets rather than the unverified 73KB — see LOG)
 - [platform-truth] "Shopify Plus or Magento? Wrong question. Start with who runs the site on a Tuesday afternoon." — /services/shopify-development.html
 - [case-study] "A football academy's website built like a flagship — custom Next.js, live at hydlittlestars.com." — /case-studies/little-stars-academy.html
-- [pov] "Most agencies describe their audits. I publish one." — /case-studies/button-eyes-resort.html
+- ~~[pov] "Most agencies describe their audits. I publish one." — /case-studies/button-eyes-resort.html~~ (used 2026-07-17 → GBP/IG/LinkedIn)
 - [behind-studio] "I use AI aggressively and review everything personally. Senior judgment at modern speed — and I'll always tell you which is which." — /about/
 - [buyer-education] "A one-second delay isn't a design flaw, it's a leak in revenue. What Core Web Vitals actually measure." — /services/technical-seo.html
 - [craft-proof] "Why my WebGL globe never loads for Lighthouse — and loads in under a second for you. Progressive enhancement done honestly." — /services/3d-web-design.html
