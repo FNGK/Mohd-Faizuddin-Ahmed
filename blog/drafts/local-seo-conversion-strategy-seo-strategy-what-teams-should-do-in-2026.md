@@ -29,7 +29,7 @@ humanization_verified: false
 review_status: needs_revision
 ready_notification_sent: false
 humanization_score: 60
-originality_score: 100
+originality_score: 93
 humanization_issues:
 - Body is short (621 words; must exceed recommended 1200).
 - Add a few contractions so the voice sounds spoken, not generated.
@@ -56,10 +56,10 @@ humanization_metrics:
   passive_hits: 0.0
   em_dash_total: 7.0
   em_dash_chains: 2.0
-  max_shingle_overlap: 0.0
+  max_shingle_overlap: 0.073
   flesch_ease: 60.9
   fk_grade: 9.17
-last_humanization_check: '2026-07-10T07:40:58.987449+00:00'
+last_humanization_check: '2026-07-16T07:18:52.930354+00:00'
 editor_notes: 'Stale duplicate: same pre-schema pipeline issue. Sibling draft local-seo-that-turns-map-views-into-booked-jobs-in-2026.md
   covers the same topic and has been regenerated to current schema/quality bar. Recommend
   archiving/deleting this one once a human confirms.'

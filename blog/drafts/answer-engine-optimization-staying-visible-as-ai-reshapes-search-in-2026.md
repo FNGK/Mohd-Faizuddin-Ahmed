@@ -36,8 +36,8 @@ target_audience: Marketing leads, founders, and growth managers
 cta: Book a strategy call
 approved: false
 editorial_reviewed: false
-humanization_verified: true
-review_status: ready
+humanization_verified: false
+review_status: needs_revision
 ready_notification_sent: false
 external_sources:
 - https://www.searchenginejournal.com/google-meta-descriptions-not-required-for-seo-but-theyre-worthwhile/580694/
@@ -50,8 +50,9 @@ internal_links:
 research_source: heuristic
 gemini_enriched: false
 humanization_score: 100
-originality_score: 100
-humanization_issues: []
+originality_score: 45
+humanization_issues:
+- Too much overlap with other site copy (originality 45; need 62+).
 humanization_metrics:
   word_count: 1236
   sentence_length_variance: 47.617
@@ -65,10 +66,10 @@ humanization_metrics:
   passive_hits: 1.0
   em_dash_total: 9.0
   em_dash_chains: 0.0
-  max_shingle_overlap: 0.001
+  max_shingle_overlap: 0.548
   flesch_ease: 52.76
   fk_grade: 9.84
-last_humanization_check: '2026-07-10T07:40:58.867358+00:00'
+last_humanization_check: '2026-07-16T07:18:52.822625+00:00'
 ---
 
 ## Quick answer

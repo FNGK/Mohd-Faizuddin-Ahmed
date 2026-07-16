@@ -35,8 +35,8 @@ target_audience: Marketing leads, founders, and growth managers
 cta: Book a strategy call
 approved: false
 editorial_reviewed: false
-humanization_verified: true
-review_status: ready
+humanization_verified: false
+review_status: needs_revision
 ready_notification_sent: false
 external_sources:
 - https://www.searchenginejournal.com/microsoft-just-proved-a-point-about-search-today/580664/
@@ -49,8 +49,9 @@ internal_links:
 research_source: heuristic
 gemini_enriched: false
 humanization_score: 100
-originality_score: 100
-humanization_issues: []
+originality_score: 44
+humanization_issues:
+- Too much overlap with other site copy (originality 44; need 62+).
 humanization_metrics:
   word_count: 1226
   sentence_length_variance: 47.368
@@ -64,10 +65,10 @@ humanization_metrics:
   passive_hits: 1.0
   em_dash_total: 9.0
   em_dash_chains: 0.0
-  max_shingle_overlap: 0.001
+  max_shingle_overlap: 0.561
   flesch_ease: 56.32
   fk_grade: 9.41
-last_humanization_check: '2026-07-10T07:40:58.969711+00:00'
+last_humanization_check: '2026-07-16T07:18:52.911907+00:00'
 ---
 
 ## Quick answer

@@ -28,7 +28,7 @@ internal_links:
 - ../../case-studies/index.html
 - ../../contact/index.html
 humanization_score: 60
-originality_score: 100
+originality_score: 90
 humanization_issues:
 - Body is short (587 words; must exceed recommended 1200).
 - Add a few contractions so the voice sounds spoken, not generated.
@@ -55,10 +55,10 @@ humanization_metrics:
   passive_hits: 2.0
   em_dash_total: 8.0
   em_dash_chains: 2.0
-  max_shingle_overlap: 0.0
+  max_shingle_overlap: 0.101
   flesch_ease: 53.66
   fk_grade: 9.83
-last_humanization_check: '2026-07-10T07:40:58.846047+00:00'
+last_humanization_check: '2026-07-16T07:18:52.798998+00:00'
 editor_notes: 'Superseded: same reason as ai-search-visibility-seo-strategy-what-teams-should-do-in-2026.md
   — topic already covered by 6 verified AI-search-visibility drafts. Recommend archiving/deleting
   once a human confirms.'

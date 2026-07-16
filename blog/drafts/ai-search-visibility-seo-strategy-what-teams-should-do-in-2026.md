@@ -28,7 +28,7 @@ humanization_verified: false
 review_status: needs_revision
 ready_notification_sent: false
 humanization_score: 60
-originality_score: 100
+originality_score: 90
 humanization_issues:
 - Body is short (587 words; must exceed recommended 1200).
 - Add a few contractions so the voice sounds spoken, not generated.
@@ -55,10 +55,10 @@ humanization_metrics:
   passive_hits: 2.0
   em_dash_total: 8.0
   em_dash_chains: 2.0
-  max_shingle_overlap: 0.0
+  max_shingle_overlap: 0.101
   flesch_ease: 53.66
   fk_grade: 9.83
-last_humanization_check: '2026-07-10T07:40:58.830625+00:00'
+last_humanization_check: '2026-07-16T07:18:52.781011+00:00'
 editor_notes: 'Superseded: this AI-search-visibility topic is already fully covered
   by 6 verified drafts (ai-search-optimization, answer-engine-optimization, generative-engine-optimization,
   llm-seo, how-to-rank-in-ai-overviews, how-to-get-cited-by-chatgpt). Publishing this

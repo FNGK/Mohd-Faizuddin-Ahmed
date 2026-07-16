@@ -28,7 +28,7 @@ humanization_verified: false
 review_status: needs_revision
 ready_notification_sent: false
 humanization_score: 67
-originality_score: 100
+originality_score: 89
 humanization_issues:
 - Body is short (573 words; must exceed recommended 1200).
 - Add a few contractions so the voice sounds spoken, not generated.
@@ -55,10 +55,10 @@ humanization_metrics:
   passive_hits: 0.0
   em_dash_total: 4.0
   em_dash_chains: 0.0
-  max_shingle_overlap: 0.0
+  max_shingle_overlap: 0.114
   flesch_ease: 50.21
   fk_grade: 10.44
-last_humanization_check: '2026-07-10T07:40:59.093951+00:00'
+last_humanization_check: '2026-07-16T07:18:52.993493+00:00'
 editor_notes: 'Stale duplicate: same pre-schema pipeline issue. Sibling draft technical-seo-priorities-when-crawl-budget-and-revenue-both-matter.md
   covers the same topic and has been regenerated to current schema/quality bar. Recommend
   archiving/deleting this one once a human confirms.'
