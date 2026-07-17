@@ -1,4 +1,10 @@
 # Wrangler static assets: only RELATIVE URLs allowed.
 # www -> apex: use Cloudflare Dashboard -> Rules -> Redirect Rules (see seo/cloudflare-setup.md).
-
-/index.html / 301
+#
+# No rules currently needed: html_handling is "none" (wrangler.jsonc), and
+# worker.js explicitly serves index.html for directory-style requests
+# (including root /). A prior "/index.html -> /" rule here caused a redirect
+# loop against that worker logic (ASSETS.fetch() applies _redirects even to
+# requests constructed internally by the worker) — removed; index.html's own
+# <link rel="canonical" href="https://seowithfaiz.com/"> already handles SEO
+# consolidation without a hard redirect.
