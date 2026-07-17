@@ -460,6 +460,17 @@ export default {
       return handleCrmApi(request, env, ctx, url);
     }
 
+    // assets.html_handling is "none" (see wrangler.jsonc) so /page.html serves
+    // directly at its own canonical URL instead of Cloudflare's default
+    // redirecting it to /page. That mode requires an exact file path, so
+    // directory requests (/, /services/, etc.) need index.html appended here —
+    // "none" no longer resolves those automatically.
+    if (url.pathname.endsWith('/')) {
+      const indexUrl = new URL(url);
+      indexUrl.pathname = url.pathname + 'index.html';
+      return env.ASSETS.fetch(new Request(indexUrl, request));
+    }
+
     return env.ASSETS.fetch(request);
   },
 };

@@ -21,6 +21,13 @@
   "assets": {
     "directory": ".",
     "binding": "ASSETS",
+    // Default "auto-trailing-slash" 307-redirects /page.html -> /page, which
+    // conflicts with every canonical tag, sitemap entry, and internal link on
+    // this site (all use the .html form). "none" disables that redirect so
+    // .html pages serve directly at their declared canonical URL. Directory
+    // paths (/, /services/, etc.) no longer auto-resolve to index.html under
+    // "none" — worker.js explicitly rewrites those before calling ASSETS.fetch.
+    "html_handling": "none",
     "exclude": [
       "**/.git/**",
       "**/.wrangler/**",
