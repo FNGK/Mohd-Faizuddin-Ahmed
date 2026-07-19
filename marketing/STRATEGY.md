@@ -96,15 +96,10 @@ worth one more AEO-pillar angle next week, not a pillar promotion yet.
 - [ ] Request named testimonials: Little Stars, Hyderabad Globe FC.
 - [ ] Ask 2–3 real contacts for Google reviews on the GBP profile.
 - [x] Create free Clutch.co profile — submitted 2026-07-08, Clutch is reviewing before publishing (confirmation email received).
-- [ ] **LinkedIn draft still awaiting approval.** Correction to last week's
-  note: this is Faiz's existing personal profile (`seowithfaiz`, posting
-  history back to Feb 2025 — sports/career/certification posts, unrelated
-  to the studio brand), not a brand-new channel. The pipeline's first
-  branded draft (wedge-hospitality/AEO angle, linking to
-  /services/technical-seo.html) was written 2026-07-10 and is **still
-  sitting in Buffer as a draft, unpublished**, as of this run. Ask: review
-  and approve/edit it in Buffer so the LinkedIn cadence (3×/week per the
-  playbook) can actually start.
+- [x] ~~LinkedIn draft awaiting approval~~ — **resolved by 2026-07-19**: the
+  2026-07-10 draft is no longer present in Buffer (0 drafts across all
+  channels as of this run's queue check); LinkedIn has been on the daily
+  scheduled-live cadence since 2026-07-13 per LOG.md. No action needed.
 - [ ] Instagram → Facebook Page link — still not fully propagated, 2nd
   consecutive week. `get_instagram_accounts(act_2089451385293163)` again
   returns 0 accounts, while `get_instagram_posts`/`get_instagram_account_insights`
