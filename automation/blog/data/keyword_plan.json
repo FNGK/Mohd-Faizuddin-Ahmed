@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T07:18:52.267376+00:00",
+  "generated_at": "2026-07-20T07:57:17.014907+00:00",
   "idea_count": 8,
   "gemini_calls_this_run": 0,
   "gemini_enabled": true,
@@ -17,8 +17,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/google-brings-calendar-to-personal-intelligence-in-ai-mode/582409/",
-        "https://www.searchenginejournal.com/chatgpt-calls-turn-into-leads-more-often-invoca-report/582400/"
+        "https://www.searchenginejournal.com/how-to-measure-ai-search-visibility/579893/",
+        "https://www.searchenginejournal.com/are-you-a-bot-screens-can-get-your-pages-dropped-by-google/582801/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -30,7 +30,8 @@
       "serp_intent": "informational",
       "funnel_stage": "awareness",
       "serp_features": [
-        "featured_snippet"
+        "featured_snippet",
+        "local_pack"
       ],
       "paa_questions": [
         "How does answer engine optimization affect organic revenue in 2026?",
@@ -39,7 +40,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'answer engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include Google Brings Calendar To Personal Intelligence In AI Mode via @sejournal, @MattGSouthern; ChatGPT Calls Turn Into Leads More Often: Invoca Report via @sejournal, @MattGSouthern; How Google May \u2018Understand\u2019 Unique Content. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'answer engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack. Recent titles in the news layer include How To Measure AI Search Visibility via @sejournal, @slobodanmanic; \u201cAre You A Bot\u201d Screens Can Get Your Pages Dropped By Google via @sejournal, @MattGSouthern; When To Use Search Console\u2019s \u2018Validate Fix,\u2019 According To Google via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -56,8 +57,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/how-google-may-understand-unique-content/581959/",
-        "https://www.searchenginejournal.com/google-says-no-seo-penalty-for-year-long-a-b-tests/582349/"
+        "https://www.searchenginejournal.com/when-to-use-search-consoles-validate-fix-according-to-google/582791/",
+        "https://www.searchenginejournal.com/google-notebooklm-rebrand-may-expose-your-site-to-more-ai-scraping/582775/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -69,7 +70,8 @@
       "serp_intent": "informational",
       "funnel_stage": "awareness",
       "serp_features": [
-        "featured_snippet"
+        "featured_snippet",
+        "local_pack"
       ],
       "paa_questions": [
         "How does generative engine optimization affect organic revenue in 2026?",
@@ -78,7 +80,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'generative engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include Google Brings Calendar To Personal Intelligence In AI Mode via @sejournal, @MattGSouthern; ChatGPT Calls Turn Into Leads More Often: Invoca Report via @sejournal, @MattGSouthern; How Google May \u2018Understand\u2019 Unique Content. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'generative engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack. Recent titles in the news layer include How To Measure AI Search Visibility via @sejournal, @slobodanmanic; \u201cAre You A Bot\u201d Screens Can Get Your Pages Dropped By Google via @sejournal, @MattGSouthern; When To Use Search Console\u2019s \u2018Validate Fix,\u2019 According To Google via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -95,8 +97,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/ga4s-ai-assistant-channel-undercounts-your-ai-traffic-how-to-build-one-that-doesnt/580133/",
-        "https://www.searchenginejournal.com/the-ppc-metrics-your-cfo-actually-cares-about-and-how-to-report-them/578813/"
+        "https://www.searchenginejournal.com/google-puts-a-number-on-ai-search-clicks-without-the-data/582755/",
+        "https://www.searchenginejournal.com/google-faces-class-action-over-books-used-to-train-gemini/582708/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -108,7 +110,8 @@
       "serp_intent": "informational",
       "funnel_stage": "awareness",
       "serp_features": [
-        "featured_snippet"
+        "featured_snippet",
+        "local_pack"
       ],
       "paa_questions": [
         "How does how to rank in ai overviews affect organic revenue in 2026?",
@@ -117,7 +120,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'how to rank in ai overviews': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include Google Brings Calendar To Personal Intelligence In AI Mode via @sejournal, @MattGSouthern; ChatGPT Calls Turn Into Leads More Often: Invoca Report via @sejournal, @MattGSouthern; How Google May \u2018Understand\u2019 Unique Content. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'how to rank in ai overviews': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack. Recent titles in the news layer include How To Measure AI Search Visibility via @sejournal, @slobodanmanic; \u201cAre You A Bot\u201d Screens Can Get Your Pages Dropped By Google via @sejournal, @MattGSouthern; When To Use Search Console\u2019s \u2018Validate Fix,\u2019 According To Google via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -134,8 +137,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/googles-mueller-on-first-link-priority-link-obfuscation/582316/",
-        "https://www.searchenginejournal.com/tiktok-targets-ai-generated-spam-accounts-in-high-risk-topics/582256/"
+        "https://www.searchenginejournal.com/apple-maps-ads-ban-home-services/582542/",
+        "https://www.searchenginejournal.com/seo-pulse-google-on-canonical-fixes-mueller-on-hidden-links/582671/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -147,7 +150,8 @@
       "serp_intent": "informational",
       "funnel_stage": "awareness",
       "serp_features": [
-        "featured_snippet"
+        "featured_snippet",
+        "local_pack"
       ],
       "paa_questions": [
         "How does how to get cited by chatgpt affect organic revenue in 2026?",
@@ -156,7 +160,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'how to get cited by chatgpt': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include Google Brings Calendar To Personal Intelligence In AI Mode via @sejournal, @MattGSouthern; ChatGPT Calls Turn Into Leads More Often: Invoca Report via @sejournal, @MattGSouthern; How Google May \u2018Understand\u2019 Unique Content. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'how to get cited by chatgpt': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack. Recent titles in the news layer include How To Measure AI Search Visibility via @sejournal, @slobodanmanic; \u201cAre You A Bot\u201d Screens Can Get Your Pages Dropped By Google via @sejournal, @MattGSouthern; When To Use Search Console\u2019s \u2018Validate Fix,\u2019 According To Google via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -173,8 +177,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/google-adds-image-generation-to-ai-overviews-revamps-images/582242/",
-        "https://www.searchenginejournal.com/where-search-attention-is-going-how-to-measure-it/582142/"
+        "https://www.searchenginejournal.com/google-explains-seo-connection-of-site-quality-to-non-indexed-pages/582683/",
+        "https://www.searchenginejournal.com/avinash-kaushik-says-renegotiate-now-seo-fees-25-to-75-lower/581891/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -186,7 +190,8 @@
       "serp_intent": "informational",
       "funnel_stage": "awareness",
       "serp_features": [
-        "featured_snippet"
+        "featured_snippet",
+        "local_pack"
       ],
       "paa_questions": [
         "How does ai search optimization affect organic revenue in 2026?",
@@ -195,7 +200,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'ai search optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include Google Brings Calendar To Personal Intelligence In AI Mode via @sejournal, @MattGSouthern; ChatGPT Calls Turn Into Leads More Often: Invoca Report via @sejournal, @MattGSouthern; How Google May \u2018Understand\u2019 Unique Content. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'ai search optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack. Recent titles in the news layer include How To Measure AI Search Visibility via @sejournal, @slobodanmanic; \u201cAre You A Bot\u201d Screens Can Get Your Pages Dropped By Google via @sejournal, @MattGSouthern; When To Use Search Console\u2019s \u2018Validate Fix,\u2019 According To Google via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -212,8 +217,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/scaled-ai-content-often-fails-googles-crawl-economics-explain-why/581325/",
-        "https://www.searchenginejournal.com/surviving-the-impression-squeeze-how-agentic-commerce-is-changing-google-ads-in-2026/579939/"
+        "https://www.searchenginejournal.com/gemini-3-5-pro-delayed-over-coding-bloomberg-reports/582660/",
+        "https://www.searchenginejournal.com/ai-search-cites-reddit-5-proven-plays-to-boost-multi-location-visibility-recap/582568/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -225,7 +230,8 @@
       "serp_intent": "informational",
       "funnel_stage": "awareness",
       "serp_features": [
-        "featured_snippet"
+        "featured_snippet",
+        "local_pack"
       ],
       "paa_questions": [
         "How does llm seo affect organic revenue in 2026?",
@@ -234,7 +240,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'llm seo': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include Google Brings Calendar To Personal Intelligence In AI Mode via @sejournal, @MattGSouthern; ChatGPT Calls Turn Into Leads More Often: Invoca Report via @sejournal, @MattGSouthern; How Google May \u2018Understand\u2019 Unique Content. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'llm seo': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack. Recent titles in the news layer include How To Measure AI Search Visibility via @sejournal, @slobodanmanic; \u201cAre You A Bot\u201d Screens Can Get Your Pages Dropped By Google via @sejournal, @MattGSouthern; When To Use Search Console\u2019s \u2018Validate Fix,\u2019 According To Google via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -251,8 +257,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/googles-marvin-clarifies-ai-search-and-qualified-future-conversions/582185/",
-        "https://www.searchenginejournal.com/chatgpt-access-tied-to-9-drop-in-traditional-search/582167/"
+        "https://www.searchenginejournal.com/google-starts-rolling-out-connected-apps-in-ai-mode-search/582545/",
+        "https://www.searchenginejournal.com/do-the-answer-engines-keep-your-fingerprint-or-do-they-start-fresh-every-time/582124/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -264,7 +270,8 @@
       "serp_intent": "informational",
       "funnel_stage": "awareness",
       "serp_features": [
-        "featured_snippet"
+        "featured_snippet",
+        "local_pack"
       ],
       "paa_questions": [
         "How does schema markup for ai search affect organic revenue in 2026?",
@@ -273,7 +280,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'schema markup for ai search': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include Google Brings Calendar To Personal Intelligence In AI Mode via @sejournal, @MattGSouthern; ChatGPT Calls Turn Into Leads More Often: Invoca Report via @sejournal, @MattGSouthern; How Google May \u2018Understand\u2019 Unique Content. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'schema markup for ai search': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack. Recent titles in the news layer include How To Measure AI Search Visibility via @sejournal, @slobodanmanic; \u201cAre You A Bot\u201d Screens Can Get Your Pages Dropped By Google via @sejournal, @MattGSouthern; When To Use Search Console\u2019s \u2018Validate Fix,\u2019 According To Google via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -290,7 +297,7 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/google-ads-requires-disclosure-for-ai-generated-content/581925/",
+        "https://www.searchenginejournal.com/ai-seo-writing-thats-specific-may-get-cited-more/582531/",
         "https://feedpress.me/link/9375/14757949/cannibalization"
       ],
       "internal_links": [
@@ -303,7 +310,8 @@
       "serp_intent": "informational_technical",
       "funnel_stage": "awareness",
       "serp_features": [
-        "featured_snippet"
+        "featured_snippet",
+        "local_pack"
       ],
       "paa_questions": [
         "How does technical seo audit affect organic revenue in 2026?",
@@ -312,7 +320,7 @@
         "When should I use noindex versus canonical consolidation?",
         "What Core Web Vitals matter most for SEO?"
       ],
-      "serp_analysis": "SERP snapshot for 'technical seo audit': dominant intent is **informational_technical** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include Google Brings Calendar To Personal Intelligence In AI Mode via @sejournal, @MattGSouthern; ChatGPT Calls Turn Into Leads More Often: Invoca Report via @sejournal, @MattGSouthern; How Google May \u2018Understand\u2019 Unique Content. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'technical seo audit': dominant intent is **informational_technical** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack. Recent titles in the news layer include How To Measure AI Search Visibility via @sejournal, @slobodanmanic; \u201cAre You A Bot\u201d Screens Can Get Your Pages Dropped By Google via @sejournal, @MattGSouthern; When To Use Search Console\u2019s \u2018Validate Fix,\u2019 According To Google via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     }

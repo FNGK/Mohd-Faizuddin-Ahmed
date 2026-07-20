@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-07-16T07:18:49.485372+00:00",
+  "collected_at": "2026-07-20T07:57:14.284133+00:00",
   "feeds": [
     "Google Search Central",
     "Search Engine Journal",
@@ -10,15 +10,44 @@
   "entries": [
     {
       "source": "Search Engine Journal",
-      "title": "Google Brings Calendar To Personal Intelligence In AI Mode via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/google-brings-calendar-to-personal-intelligence-in-ai-mode/582409/",
-      "published": "Wed, 15 Jul 2026 21:45:59 +0000",
+      "title": "How To Measure AI Search Visibility via @sejournal, @slobodanmanic",
+      "url": "https://www.searchenginejournal.com/how-to-measure-ai-search-visibility/579893/",
+      "published": "Sun, 19 Jul 2026 12:00:44 +0000",
       "tokens": [
-        "brings",
-        "calendar",
-        "personal",
-        "intelligence",
-        "mode",
+        "measure",
+        "visibility",
+        "via",
+        "sejournal",
+        "slobodanmanic"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "\u201cAre You A Bot\u201d Screens Can Get Your Pages Dropped By Google via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/are-you-a-bot-screens-can-get-your-pages-dropped-by-google/582801/",
+      "published": "Sun, 19 Jul 2026 05:00:38 +0000",
+      "tokens": [
+        "are",
+        "bot",
+        "screens",
+        "can",
+        "get",
+        "pages",
+        "dropped",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "When To Use Search Console\u2019s \u2018Validate Fix,\u2019 According To Google via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/when-to-use-search-consoles-validate-fix-according-to-google/582791/",
+      "published": "Sat, 18 Jul 2026 21:41:52 +0000",
+      "tokens": [
+        "use",
+        "console",
+        "validate",
+        "fix",
+        "according",
         "via",
         "sejournal",
         "mattgsouthern"
@@ -26,219 +55,193 @@
     },
     {
       "source": "Search Engine Journal",
-      "title": "ChatGPT Calls Turn Into Leads More Often: Invoca Report via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/chatgpt-calls-turn-into-leads-more-often-invoca-report/582400/",
-      "published": "Wed, 15 Jul 2026 17:50:16 +0000",
+      "title": "Google NotebookLM Rebrand May Expose Your Site To More AI Scraping via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/google-notebooklm-rebrand-may-expose-your-site-to-more-ai-scraping/582775/",
+      "published": "Sat, 18 Jul 2026 10:09:29 +0000",
       "tokens": [
-        "chatgpt",
-        "calls",
-        "turn",
-        "leads",
-        "more",
-        "often",
-        "invoca",
-        "report"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "How Google May \u2018Understand\u2019 Unique Content",
-      "url": "https://www.searchenginejournal.com/how-google-may-understand-unique-content/581959/",
-      "published": "Wed, 15 Jul 2026 13:30:00 +0000",
-      "tokens": [
+        "notebooklm",
+        "rebrand",
         "may",
-        "understand",
-        "unique",
-        "content"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Says No SEO Penalty For Year-Long A/B Tests? via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/google-says-no-seo-penalty-for-year-long-a-b-tests/582349/",
-      "published": "Wed, 15 Jul 2026 12:33:03 +0000",
-      "tokens": [
-        "says",
-        "penalty",
-        "year-long",
-        "tests",
-        "via",
-        "sejournal",
-        "martinibuster"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "GA4\u2019s AI Assistant Channel Undercounts Your AI Traffic: How To Build One That Doesn\u2019t",
-      "url": "https://www.searchenginejournal.com/ga4s-ai-assistant-channel-undercounts-your-ai-traffic-how-to-build-one-that-doesnt/580133/",
-      "published": "Wed, 15 Jul 2026 11:30:27 +0000",
-      "tokens": [
-        "assistant",
-        "channel",
-        "undercounts",
-        "traffic",
-        "build",
-        "one",
-        "doesn"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "The PPC Metrics Your CFO Actually Cares About (And How To Report Them) via @sejournal, @timothyjjensen",
-      "url": "https://www.searchenginejournal.com/the-ppc-metrics-your-cfo-actually-cares-about-and-how-to-report-them/578813/",
-      "published": "Wed, 15 Jul 2026 09:30:15 +0000",
-      "tokens": [
-        "ppc",
-        "metrics",
-        "cfo",
-        "actually",
-        "cares",
-        "report",
-        "them",
+        "expose",
+        "site",
+        "more",
+        "scraping",
         "via"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "Google\u2019s Mueller On First Link Priority & Link Obfuscation via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/googles-mueller-on-first-link-priority-link-obfuscation/582316/",
-      "published": "Wed, 15 Jul 2026 00:46:35 +0000",
+      "title": "Google Puts A Number On AI Search Clicks, Without The Data via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/google-puts-a-number-on-ai-search-clicks-without-the-data/582755/",
+      "published": "Sat, 18 Jul 2026 05:00:48 +0000",
       "tokens": [
+        "puts",
+        "number",
+        "clicks",
+        "without",
+        "data",
+        "via",
+        "sejournal",
+        "mattgsouthern"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google Faces Class Action Over Books Used To Train Gemini via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/google-faces-class-action-over-books-used-to-train-gemini/582708/",
+      "published": "Fri, 17 Jul 2026 19:51:57 +0000",
+      "tokens": [
+        "faces",
+        "class",
+        "action",
+        "over",
+        "books",
+        "used",
+        "train",
+        "gemini"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Apple Maps Ads Ban Home Services, Crypto ATMs, Bail Bonds via @sejournal, @brookeosmundson",
+      "url": "https://www.searchenginejournal.com/apple-maps-ads-ban-home-services/582542/",
+      "published": "Fri, 17 Jul 2026 19:38:09 +0000",
+      "tokens": [
+        "apple",
+        "maps",
+        "ads",
+        "ban",
+        "home",
+        "services",
+        "crypto",
+        "atms"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google On Canonical Fixes, Mueller On Hidden Link Pitfalls \u2013 SEO Pulse via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/seo-pulse-google-on-canonical-fixes-mueller-on-hidden-links/582671/",
+      "published": "Fri, 17 Jul 2026 12:30:33 +0000",
+      "tokens": [
+        "canonical",
+        "fixes",
         "mueller",
-        "first",
+        "hidden",
         "link",
-        "priority",
-        "link",
-        "obfuscation",
+        "pitfalls",
+        "pulse",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google Explains SEO Connection Of Site Quality To Non-Indexed Pages via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/google-explains-seo-connection-of-site-quality-to-non-indexed-pages/582683/",
+      "published": "Fri, 17 Jul 2026 11:16:20 +0000",
+      "tokens": [
+        "explains",
+        "connection",
+        "site",
+        "quality",
+        "non-indexed",
+        "pages",
         "via",
         "sejournal"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "TikTok Targets AI-Generated Spam Accounts In High-Risk Topics via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/tiktok-targets-ai-generated-spam-accounts-in-high-risk-topics/582256/",
-      "published": "Tue, 14 Jul 2026 18:26:32 +0000",
+      "title": "Avinash Kaushik Says Renegotiate Now \u2013 SEO Fees 25% To 75% Lower via @sejournal, @gregjarboe",
+      "url": "https://www.searchenginejournal.com/avinash-kaushik-says-renegotiate-now-seo-fees-25-to-75-lower/581891/",
+      "published": "Fri, 17 Jul 2026 10:30:56 +0000",
       "tokens": [
-        "tiktok",
-        "targets",
-        "ai-generated",
-        "spam",
-        "accounts",
-        "high-risk",
-        "topics",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Revamps Image Search, Adds Generation To AI Overviews via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/google-adds-image-generation-to-ai-overviews-revamps-images/582242/",
-      "published": "Tue, 14 Jul 2026 16:00:40 +0000",
-      "tokens": [
-        "revamps",
-        "image",
-        "adds",
-        "generation",
-        "overviews",
-        "via",
-        "sejournal",
-        "mattgsouthern"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Where Search Attention Is Moving And The Metrics That Track It via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/where-search-attention-is-going-how-to-measure-it/582142/",
-      "published": "Tue, 14 Jul 2026 13:30:20 +0000",
-      "tokens": [
-        "attention",
-        "moving",
-        "metrics",
-        "track",
-        "via",
-        "sejournal",
-        "mattgsouthern"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Why Scaled AI Content Fails: Google\u2019s Crawl Economics Explained via @sejournal, @TaylorDanRW",
-      "url": "https://www.searchenginejournal.com/scaled-ai-content-often-fails-googles-crawl-economics-explain-why/581325/",
-      "published": "Tue, 14 Jul 2026 11:30:48 +0000",
-      "tokens": [
-        "why",
-        "scaled",
-        "content",
-        "fails",
-        "crawl",
-        "economics",
-        "explained",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Surviving The Impression Squeeze: How Agentic Commerce Is Changing Google Ads In 2026 via @sejournal, @siliconvallaeys",
-      "url": "https://www.searchenginejournal.com/surviving-the-impression-squeeze-how-agentic-commerce-is-changing-google-ads-in-2026/579939/",
-      "published": "Tue, 14 Jul 2026 09:30:43 +0000",
-      "tokens": [
-        "surviving",
-        "impression",
-        "squeeze",
-        "agentic",
-        "commerce",
-        "changing",
-        "ads",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google\u2019s Marvin Clarifies AI Search and Qualified Future Conversions via @sejournal, @brookeosmundson",
-      "url": "https://www.searchenginejournal.com/googles-marvin-clarifies-ai-search-and-qualified-future-conversions/582185/",
-      "published": "Mon, 13 Jul 2026 20:46:27 +0000",
-      "tokens": [
-        "marvin",
-        "clarifies",
-        "qualified",
-        "future",
-        "conversions",
-        "via",
-        "sejournal",
-        "brookeosmundson"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "ChatGPT Access Tied To 9% Drop In Traditional Search via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/chatgpt-access-tied-to-9-drop-in-traditional-search/582167/",
-      "published": "Mon, 13 Jul 2026 17:54:10 +0000",
-      "tokens": [
-        "chatgpt",
-        "access",
-        "tied",
-        "drop",
-        "traditional",
-        "via",
-        "sejournal",
-        "mattgsouthern"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Ads Now Requires Disclosure Labels On AI-Generated Content via @sejournal, @brookeosmundson",
-      "url": "https://www.searchenginejournal.com/google-ads-requires-disclosure-for-ai-generated-content/581925/",
-      "published": "Mon, 13 Jul 2026 16:00:35 +0000",
-      "tokens": [
-        "ads",
+        "avinash",
+        "kaushik",
+        "says",
+        "renegotiate",
         "now",
-        "requires",
-        "disclosure",
-        "labels",
-        "ai-generated",
-        "content",
+        "fees",
+        "lower",
         "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google Delays Gemini 3.5 Pro Over Coding Issues: Report via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/gemini-3-5-pro-delayed-over-coding-bloomberg-reports/582660/",
+      "published": "Thu, 16 Jul 2026 22:44:17 +0000",
+      "tokens": [
+        "delays",
+        "gemini",
+        "pro",
+        "over",
+        "coding",
+        "issues",
+        "report",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "AI Search Cites Reddit: 5 Proven Plays To Boost Multi-Location Visibility via @sejournal, @lorenbaker",
+      "url": "https://www.searchenginejournal.com/ai-search-cites-reddit-5-proven-plays-to-boost-multi-location-visibility-recap/582568/",
+      "published": "Thu, 16 Jul 2026 21:23:43 +0000",
+      "tokens": [
+        "cites",
+        "reddit",
+        "proven",
+        "plays",
+        "boost",
+        "multi-location",
+        "visibility",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google\u2019s AI Mode Now Connects To Your Apps via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/google-starts-rolling-out-connected-apps-in-ai-mode-search/582545/",
+      "published": "Thu, 16 Jul 2026 16:00:53 +0000",
+      "tokens": [
+        "mode",
+        "now",
+        "connects",
+        "apps",
+        "via",
+        "sejournal",
+        "mattgsouthern"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Do The Answer Engines Keep Your Fingerprint, Or Do They Start Fresh Every Time? via @sejournal, @DuaneForrester",
+      "url": "https://www.searchenginejournal.com/do-the-answer-engines-keep-your-fingerprint-or-do-they-start-fresh-every-time/582124/",
+      "published": "Thu, 16 Jul 2026 13:30:01 +0000",
+      "tokens": [
+        "answer",
+        "engines",
+        "keep",
+        "fingerprint",
+        "they",
+        "start",
+        "fresh",
+        "every"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "AI SEO: Writing That\u2019s Specific May Get Cited More via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/ai-seo-writing-thats-specific-may-get-cited-more/582531/",
+      "published": "Thu, 16 Jul 2026 11:03:01 +0000",
+      "tokens": [
+        "writing",
+        "specific",
+        "may",
+        "get",
+        "cited",
+        "more",
+        "via",
+        "sejournal"
       ]
     },
     {
@@ -373,54 +376,66 @@
   "top_terms": [
     {
       "term": "via",
-      "count": 13
+      "count": 15
     },
     {
       "term": "sejournal",
-      "count": 13
+      "count": 15
     },
     {
       "term": "mattgsouthern",
       "count": 7
     },
     {
-      "term": "ads",
-      "count": 4
+      "term": "martinibuster",
+      "count": 3
     },
     {
-      "term": "content",
+      "term": "ads",
       "count": 3
+    },
+    {
+      "term": "visibility",
+      "count": 2
+    },
+    {
+      "term": "get",
+      "count": 2
+    },
+    {
+      "term": "pages",
+      "count": 2
+    },
+    {
+      "term": "use",
+      "count": 2
+    },
+    {
+      "term": "may",
+      "count": 2
+    },
+    {
+      "term": "site",
+      "count": 2
+    },
+    {
+      "term": "more",
+      "count": 2
+    },
+    {
+      "term": "over",
+      "count": 2
+    },
+    {
+      "term": "gemini",
+      "count": 2
     },
     {
       "term": "link",
-      "count": 3
-    },
-    {
-      "term": "chatgpt",
       "count": 2
     },
     {
-      "term": "turn",
-      "count": 2
-    },
-    {
-      "term": "report",
-      "count": 2
-    },
-    {
-      "term": "ppc",
-      "count": 2
-    },
-    {
-      "term": "metrics",
-      "count": 2
-    },
-    {
-      "term": "ai-generated",
-      "count": 2
-    },
-    {
-      "term": "brookeosmundson",
+      "term": "now",
       "count": 2
     },
     {
@@ -436,99 +451,87 @@
       "count": 2
     },
     {
-      "term": "brings",
+      "term": "measure",
       "count": 1
     },
     {
-      "term": "calendar",
+      "term": "slobodanmanic",
       "count": 1
     },
     {
-      "term": "personal",
+      "term": "are",
       "count": 1
     },
     {
-      "term": "intelligence",
+      "term": "bot",
       "count": 1
     },
     {
-      "term": "mode",
+      "term": "screens",
       "count": 1
     },
     {
-      "term": "calls",
+      "term": "can",
       "count": 1
     },
     {
-      "term": "leads",
+      "term": "dropped",
       "count": 1
     },
     {
-      "term": "more",
+      "term": "console",
       "count": 1
     },
     {
-      "term": "often",
+      "term": "validate",
       "count": 1
     },
     {
-      "term": "invoca",
+      "term": "fix",
       "count": 1
     },
     {
-      "term": "may",
+      "term": "according",
       "count": 1
     },
     {
-      "term": "understand",
+      "term": "notebooklm",
       "count": 1
     },
     {
-      "term": "unique",
+      "term": "rebrand",
       "count": 1
     },
     {
-      "term": "says",
+      "term": "expose",
       "count": 1
     },
     {
-      "term": "penalty",
+      "term": "scraping",
       "count": 1
     },
     {
-      "term": "year-long",
+      "term": "puts",
       "count": 1
     },
     {
-      "term": "tests",
+      "term": "number",
       "count": 1
     },
     {
-      "term": "martinibuster",
+      "term": "clicks",
       "count": 1
     },
     {
-      "term": "assistant",
+      "term": "without",
       "count": 1
     },
     {
-      "term": "channel",
+      "term": "data",
       "count": 1
     },
     {
-      "term": "undercounts",
-      "count": 1
-    },
-    {
-      "term": "traffic",
-      "count": 1
-    },
-    {
-      "term": "build",
-      "count": 1
-    },
-    {
-      "term": "one",
+      "term": "faces",
       "count": 1
     }
   ]
