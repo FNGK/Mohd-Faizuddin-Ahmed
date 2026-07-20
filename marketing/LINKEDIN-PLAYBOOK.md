@@ -63,18 +63,21 @@ Nav alerts you to new matches weekly — that's your daily prospect feed.
 > teardown video of your site — no pitch, just the fixes I'd make first.
 > Want me to record it? — Faiz, seowithfaiz.com
 
-**Warm-intent InMail angle this week (updated 2026-07-11):** this week's
-best-performing on-pipeline content was AEO/buyer-education ("Your
-customers stopped clicking. They started asking.") — 75% engagement rate,
-the strongest of anything in the approved pipeline (small sample, but the
-clearest signal we have). For prospects who've recently posted about AI
-search, ChatGPT, or "how customers find us now," lead the connect note or
-InMail with that angle instead of the generic booking-funnel hook:
-> Hi [Name] — saw your post on [AI search / how customers are finding you].
-> I took a look at whether [business.com] would get cited if a guest asked
-> ChatGPT or an AI Overview about [boutique hotels/academies] in
-> [location] — [ONE specific, verified structural gap]. Happy to send a
-> quick breakdown, no pitch. — Faiz, seowithfaiz.com
+**Warm-intent InMail angle this week (updated 2026-07-20):** the last two
+weeks both show the same pattern — case-study/proof-anchored content
+outperforms everything else (07-13 HGFC LinkedIn post: 65 reach/91
+impressions, the best of any post in 2 weeks; 07-13 Instagram 30-day-sprint
+post: 55 reach/1 share). For prospects in the sports/academy or hospitality
+wedge, lead with a named, verifiable proof point instead of a generic
+booking-funnel hook:
+> Hi [Name] — I rebuilt [Hyderabad Globe FC]'s site (technical SEO +
+> performance) and it now holds a 95+ Lighthouse score on a platform that
+> used to fight every fix. Took a quick look at [business.com] — [ONE
+> specific, verified structural gap]. Happy to send a short breakdown of
+> what I'd fix first, no pitch. — Faiz, seowithfaiz.com
+(Keep the AI-search angle below in reserve for prospects who've posted
+about AI/ChatGPT specifically — it's still a real signal, just not this
+week's strongest.)
 
 **After a teardown video (moving to the call):**
 > Glad it was useful. If you want, I'll turn the top 3 fixes into a scoped
@@ -109,3 +112,14 @@ unpublished). Until the one-time setup + saved searches are confirmed live,
 the InMail motion described above hasn't actually started; the 8 Gmail
 teardown drafts from the Prospector are the nearer-term lever (see
 STRATEGY.md asks).
+
+**2026-07-20 status:** still 0 teardown InMails logged as sent via
+LinkedIn in `PROSPECTS.md` (0 replies) — the Sales Nav/InMail motion has
+not started; every prospect entry in `PROSPECTS.md` is still Gmail-channel
+outreach. LinkedIn organic posting itself is healthy (daily scheduled-live
+cadence continues, 07-13's HGFC post is the best-performing post across
+any channel in the last 2 weeks at 65 reach/91 impressions). Note: Faiz's
+LinkedIn profile is separately receiving ~20 unrelated "new lead" emails/wk
+from LinkedIn's own Service Marketplace feature (freelance gig requests
+from Indian individuals, not the ICP) — see STRATEGY.md ask; these are
+noise against this playbook's InMail motion, not a channel signal.

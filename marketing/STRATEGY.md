@@ -76,6 +76,17 @@ holding rotation steady. Directionally, the AEO/buyer-education post
 best engagement rate (75%, n=4 reach) of anything in the approved pipeline;
 worth one more AEO-pillar angle next week, not a pillar promotion yet.
 
+**(2026-07-20 update):** two weeks running, the clear top performer is
+case-study/proof-anchored content with a concrete CTA — not any one pillar.
+07-13 LinkedIn (Hyderabad Globe FC rebuild) hit 65 reach/91 impressions,
+the week's best by a wide margin; 07-13 Instagram (30-day-sprint pov, also
+proof-anchored) hit 55 reach/1 share. Every other post this week sat in a
+flat 3-4 reach band on Instagram regardless of pillar, so pillar rotation
+still isn't the lever — format is. Per the optimization rule, 2 more
+case-study-anchored angles are already staged next in QUEUE.md (Little
+Stars Next.js build, another Button Eyes angle). Holding pillar rotation
+otherwise.
+
 ## Asks awaiting Faiz (the strategist re-surfaces these weekly)
 
 - [x] ~~Unauthorized Instagram posts~~ — **resolved/corrected 2026-07-09: Faiz
@@ -93,6 +104,13 @@ worth one more AEO-pillar angle next week, not a pillar promotion yet.
   deliberately throttled to ≤1/week to avoid keyword cannibalization, and 5
   stale/duplicate stubs are annotated `needs_revision` awaiting a human
   decision to delete from `blog/drafts/` — please confirm those 5 can go.
+- [ ] **New: blog cadence has stalled.** No post has published since
+  2026-07-14 (Friday 07-17's editorial slot appears to have been skipped),
+  and all 12 remaining files in `blog/drafts/` are now `review_status:
+  needs_revision` — zero are `ready`. The Content Factory/Editor-in-Chief
+  roles need either fresh Mon/Thu drafts or a revision pass on the backlog
+  to keep the 2/week cadence; this is outside the Growth Strategist's
+  remit but is blocking the "Authority + AI-search citations" channel goal.
 - [ ] Request named testimonials: Little Stars, Hyderabad Globe FC.
 - [ ] Ask 2–3 real contacts for Google reviews on the GBP profile.
 - [x] Create free Clutch.co profile — submitted 2026-07-08, Clutch is reviewing before publishing (confirmation email received).
@@ -100,30 +118,44 @@ worth one more AEO-pillar angle next week, not a pillar promotion yet.
   2026-07-10 draft is no longer present in Buffer (0 drafts across all
   channels as of this run's queue check); LinkedIn has been on the daily
   scheduled-live cadence since 2026-07-13 per LOG.md. No action needed.
-- [ ] Instagram → Facebook Page link — still not fully propagated, 2nd
+- [ ] Instagram → Facebook Page link — still not fully propagated, 3rd
   consecutive week. `get_instagram_accounts(act_2089451385293163)` again
-  returns 0 accounts, while `get_instagram_posts`/`get_instagram_account_insights`
-  (called directly with the ad account ID) again return real data (reach 69,
-  profile views 7, 6 posts, last_7d). Same split as last week. Given it's
-  reproduced twice now, worth a Meta Business Suite check or support ticket
-  rather than waiting on propagation — or, if the working path is sufficient
-  for our reporting needs, deprioritize.
-- [ ] **Prospector outreach is fully stalled — the highest-leverage ask.**
-  8 teardown drafts sit in Gmail (`marketing/PROSPECTS.md`), all status
-  `drafted`, zero `sent` as of 2026-07-11. This is the fastest plausible
-  path to a first paid client and it's bottlenecked entirely on a manual
-  review-and-send from Faiz. Recommend picking 2–3 of the strongest (e.g.
-  WNY Flash Soccer Academy — no viewport meta tag at all; Player Progression
-  Academy — homepage appears fully JS-rendered, near-invisible to crawlers)
-  and sending this week.
-- [ ] **New: GA4 shows near-zero site traffic this week** — 2 total
-  sessions (1 Direct, 1 Unassigned) across the whole property, 0 keyEvents,
-  and Meta reports 0 `website_clicks` from Instagram despite 69 reach and
-  6 posts linking to specific site pages. Property is only ~6 days past tag
-  install, so this may still be early/noisy — but zero click-through despite
-  active linking is worth a manual check: click through the actual posted
-  links once to confirm they resolve and GA4 fires, before concluding it's
-  a genuine demand problem rather than a tracking gap.
+  returns 0 accounts, while the direct-account-id path continues to return
+  real data (reach 74, profile views 6, last_7d). Reproduced 3 weeks
+  straight now — either file a Meta support ticket, or since the working
+  path is sufficient for our reporting needs, formally deprioritize this
+  and stop re-flagging it weekly.
+- [ ] **Prospector outreach is still mostly stalled.** Of 12 teardown
+  drafts total, 9 are `sent` (2026-07-12) with zero replies after a
+  2026-07-16 followup, and 3 newer ones (1824 House Inn + Barn, Locker
+  Soccer Academy, Steamboat Inn) have sat at `drafted`, unsent, since
+  2026-07-16. Recommend sending those 3 this week — and if the 9 sent
+  keep getting zero replies, that's a signal to test a different opening
+  (e.g. the warm-intent AI-search angle below) rather than just more volume.
+- [x] **RESOLVED — the "near-zero GA4 traffic" flag from last week was a
+  tracking-config bug, not a demand problem.** GA4 sessions are up to 77
+  this week (Direct 53, Organic Social 13, Unassigned 9, Organic Search 2),
+  but the property's `keyEvents` metric (40 this week) is 100% the
+  `swf_consent` event — a cookie-consent-banner click — confirmed via an
+  eventName breakdown. The property's actual configured conversion events
+  (`purchase`, `close_convert_lead`, `qualify_lead`) fired **zero times**
+  all week. **This needs Faiz's attention**: there is currently no real
+  lead-conversion signal in GA4 at all. Either mark a genuine event (a
+  contact-form submit, a "book a strategy call" click) as the key event, or
+  every future GA4 "conversions" number this system reports is meaningless.
+  Until fixed, treat GA4 as sessions-only data — the Gmail inquiry count
+  is the only trustworthy lead signal.
+- [ ] **New: Faiz's LinkedIn profile is getting flooded with "new lead"
+  marketplace notifications — worth a judgment call, not urgent.** ~20
+  unread emails this week from LinkedIn's Service Marketplace ("a new lead
+  is available in [Indian city]"), all for one-off gigs from individuals,
+  not businesses — e.g. "Digital Marketing Manager... looking for help,"
+  budget type "one time need." These are tied to Faiz's personal
+  profile having "Providing services" enabled, not to seowithfaiz.com, and
+  don't match the enterprise US/CA/AU/EU ICP. They're not inquiries against
+  our north-star metric (none counted as such this week) — Faiz's call
+  whether to keep them on for occasional relevant overflow work or turn the
+  marketplace-lead notifications off to cut inbox noise.
 
 ## Standing rules
 

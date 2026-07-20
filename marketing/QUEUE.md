@@ -35,6 +35,8 @@
 - [platform-truth] "WordPress isn't slow. Bloated themes, 40 plugins, and cheap hosting are slow." — /services/wordpress-development.html
 - [pov] "'We guarantee #1 rankings' is the fastest way to spot an agency to avoid." — /services/index.html
 - [case-study] "Ten-part public SEO audit of one of India's biggest platforms — the framework, published." — /case-studies/unstop-seo-audit.html
+- [craft-proof/behind-studio] "This week I found my own analytics were counting cookie-banner clicks as conversions, not real leads. If a $0 misconfiguration can quietly break your funnel measurement, imagine what's hiding in a stack with twenty integrations." — /services/technical-seo.html
+- [wedge-sports] "A club's website has to win a parent over before a coach ever gets the chance. Here's the technical rebuild that got Hyderabad Globe FC there — schema, canonicals, and a 95+ Lighthouse score on a platform that used to fight every one of those." — /case-studies/hyderabad-globe-fc.html
 
 ## Blog angles (for the cloud draft factory / editor)
 
