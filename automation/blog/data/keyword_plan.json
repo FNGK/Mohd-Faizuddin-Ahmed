@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T07:57:17.014907+00:00",
+  "generated_at": "2026-07-23T07:27:44.334395+00:00",
   "idea_count": 8,
   "gemini_calls_this_run": 0,
   "gemini_enabled": true,
@@ -17,8 +17,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/how-to-measure-ai-search-visibility/579893/",
-        "https://www.searchenginejournal.com/are-you-a-bot-screens-can-get-your-pages-dropped-by-google/582801/"
+        "https://www.searchenginejournal.com/why-ai-content-stopped-working-what-to-do-about-it-watch-now/583098/",
+        "https://www.searchenginejournal.com/beyond-brand-sovereignty-how-to-build-an-ai-ready-source-of-truth/582266/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -31,7 +31,8 @@
       "funnel_stage": "awareness",
       "serp_features": [
         "featured_snippet",
-        "local_pack"
+        "local_pack",
+        "video"
       ],
       "paa_questions": [
         "How does answer engine optimization affect organic revenue in 2026?",
@@ -40,7 +41,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'answer engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack. Recent titles in the news layer include How To Measure AI Search Visibility via @sejournal, @slobodanmanic; \u201cAre You A Bot\u201d Screens Can Get Your Pages Dropped By Google via @sejournal, @MattGSouthern; When To Use Search Console\u2019s \u2018Validate Fix,\u2019 According To Google via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'answer engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack, video. Recent titles in the news layer include Why AI Content Stopped Working & What To Do About It [Watch Now] via @sejournal, @hethr_campbell; Beyond Brand Sovereignty: How To Build An AI-Ready Source Of Truth via @sejournal, @billhunt; Designing A Measurement Framework Before You Touch GA4 via @sejournal, @bngsrc. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -57,8 +58,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/when-to-use-search-consoles-validate-fix-according-to-google/582791/",
-        "https://www.searchenginejournal.com/google-notebooklm-rebrand-may-expose-your-site-to-more-ai-scraping/582775/"
+        "https://www.searchenginejournal.com/designing-a-measurement-framework-before-you-touch-ga4/580767/",
+        "https://www.searchenginejournal.com/ai-overviews-now-answer-most-local-searches-how-to-get-your-business-cited/580757/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -71,7 +72,8 @@
       "funnel_stage": "awareness",
       "serp_features": [
         "featured_snippet",
-        "local_pack"
+        "local_pack",
+        "video"
       ],
       "paa_questions": [
         "How does generative engine optimization affect organic revenue in 2026?",
@@ -80,7 +82,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'generative engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack. Recent titles in the news layer include How To Measure AI Search Visibility via @sejournal, @slobodanmanic; \u201cAre You A Bot\u201d Screens Can Get Your Pages Dropped By Google via @sejournal, @MattGSouthern; When To Use Search Console\u2019s \u2018Validate Fix,\u2019 According To Google via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'generative engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack, video. Recent titles in the news layer include Why AI Content Stopped Working & What To Do About It [Watch Now] via @sejournal, @hethr_campbell; Beyond Brand Sovereignty: How To Build An AI-Ready Source Of Truth via @sejournal, @billhunt; Designing A Measurement Framework Before You Touch GA4 via @sejournal, @bngsrc. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -97,8 +99,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/google-puts-a-number-on-ai-search-clicks-without-the-data/582755/",
-        "https://www.searchenginejournal.com/google-faces-class-action-over-books-used-to-train-gemini/582708/"
+        "https://www.searchenginejournal.com/anthropics-claude-can-now-watch-a-video-and-learn-your-job/583053/",
+        "https://www.searchenginejournal.com/court-dismisses-googles-dmca-claims-against-serpapi/583033/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -111,7 +113,8 @@
       "funnel_stage": "awareness",
       "serp_features": [
         "featured_snippet",
-        "local_pack"
+        "local_pack",
+        "video"
       ],
       "paa_questions": [
         "How does how to rank in ai overviews affect organic revenue in 2026?",
@@ -120,7 +123,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'how to rank in ai overviews': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack. Recent titles in the news layer include How To Measure AI Search Visibility via @sejournal, @slobodanmanic; \u201cAre You A Bot\u201d Screens Can Get Your Pages Dropped By Google via @sejournal, @MattGSouthern; When To Use Search Console\u2019s \u2018Validate Fix,\u2019 According To Google via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'how to rank in ai overviews': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack, video. Recent titles in the news layer include Why AI Content Stopped Working & What To Do About It [Watch Now] via @sejournal, @hethr_campbell; Beyond Brand Sovereignty: How To Build An AI-Ready Source Of Truth via @sejournal, @billhunt; Designing A Measurement Framework Before You Touch GA4 via @sejournal, @bngsrc. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -137,8 +140,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/apple-maps-ads-ban-home-services/582542/",
-        "https://www.searchenginejournal.com/seo-pulse-google-on-canonical-fixes-mueller-on-hidden-links/582671/"
+        "https://www.searchenginejournal.com/googles-ai-search-data-is-growing-but-the-gaps-remain/582558/",
+        "https://www.searchenginejournal.com/how-to-run-a-winning-youtube-ad-campaign-without-a-7-figure-budget/581008/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -151,7 +154,8 @@
       "funnel_stage": "awareness",
       "serp_features": [
         "featured_snippet",
-        "local_pack"
+        "local_pack",
+        "video"
       ],
       "paa_questions": [
         "How does how to get cited by chatgpt affect organic revenue in 2026?",
@@ -160,7 +164,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'how to get cited by chatgpt': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack. Recent titles in the news layer include How To Measure AI Search Visibility via @sejournal, @slobodanmanic; \u201cAre You A Bot\u201d Screens Can Get Your Pages Dropped By Google via @sejournal, @MattGSouthern; When To Use Search Console\u2019s \u2018Validate Fix,\u2019 According To Google via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'how to get cited by chatgpt': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack, video. Recent titles in the news layer include Why AI Content Stopped Working & What To Do About It [Watch Now] via @sejournal, @hethr_campbell; Beyond Brand Sovereignty: How To Build An AI-Ready Source Of Truth via @sejournal, @billhunt; Designing A Measurement Framework Before You Touch GA4 via @sejournal, @bngsrc. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -177,8 +181,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/google-explains-seo-connection-of-site-quality-to-non-indexed-pages/582683/",
-        "https://www.searchenginejournal.com/avinash-kaushik-says-renegotiate-now-seo-fees-25-to-75-lower/581891/"
+        "https://www.searchenginejournal.com/rundowns/the-new-google-business-profile-playbook-for-ai-local-search/",
+        "https://www.searchenginejournal.com/2027-marketing-budgets-why-new-categories-beat-bigger-ai-line-items/582688/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -191,7 +195,8 @@
       "funnel_stage": "awareness",
       "serp_features": [
         "featured_snippet",
-        "local_pack"
+        "local_pack",
+        "video"
       ],
       "paa_questions": [
         "How does ai search optimization affect organic revenue in 2026?",
@@ -200,7 +205,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'ai search optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack. Recent titles in the news layer include How To Measure AI Search Visibility via @sejournal, @slobodanmanic; \u201cAre You A Bot\u201d Screens Can Get Your Pages Dropped By Google via @sejournal, @MattGSouthern; When To Use Search Console\u2019s \u2018Validate Fix,\u2019 According To Google via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'ai search optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack, video. Recent titles in the news layer include Why AI Content Stopped Working & What To Do About It [Watch Now] via @sejournal, @hethr_campbell; Beyond Brand Sovereignty: How To Build An AI-Ready Source Of Truth via @sejournal, @billhunt; Designing A Measurement Framework Before You Touch GA4 via @sejournal, @bngsrc. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -217,8 +222,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/gemini-3-5-pro-delayed-over-coding-bloomberg-reports/582660/",
-        "https://www.searchenginejournal.com/ai-search-cites-reddit-5-proven-plays-to-boost-multi-location-visibility-recap/582568/"
+        "https://www.searchenginejournal.com/googles-liz-reid-discusses-persistent-autonomous-search/582948/",
+        "https://www.searchenginejournal.com/70-of-top-retailers-are-invisible-to-agentic-commerce-heres-why/581198/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -231,7 +236,8 @@
       "funnel_stage": "awareness",
       "serp_features": [
         "featured_snippet",
-        "local_pack"
+        "local_pack",
+        "video"
       ],
       "paa_questions": [
         "How does llm seo affect organic revenue in 2026?",
@@ -240,7 +246,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'llm seo': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack. Recent titles in the news layer include How To Measure AI Search Visibility via @sejournal, @slobodanmanic; \u201cAre You A Bot\u201d Screens Can Get Your Pages Dropped By Google via @sejournal, @MattGSouthern; When To Use Search Console\u2019s \u2018Validate Fix,\u2019 According To Google via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'llm seo': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack, video. Recent titles in the news layer include Why AI Content Stopped Working & What To Do About It [Watch Now] via @sejournal, @hethr_campbell; Beyond Brand Sovereignty: How To Build An AI-Ready Source Of Truth via @sejournal, @billhunt; Designing A Measurement Framework Before You Touch GA4 via @sejournal, @bngsrc. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -257,8 +263,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/google-starts-rolling-out-connected-apps-in-ai-mode-search/582545/",
-        "https://www.searchenginejournal.com/do-the-answer-engines-keep-your-fingerprint-or-do-they-start-fresh-every-time/582124/"
+        "https://www.searchenginejournal.com/ai-overviews-visibility-a-reliable-way-to-track-what-spot-checks-miss-webinar/582955/",
+        "https://www.searchenginejournal.com/google-ai-mode-shows-ads-on-1-in-3-commercial-keywords/582976/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -271,7 +277,8 @@
       "funnel_stage": "awareness",
       "serp_features": [
         "featured_snippet",
-        "local_pack"
+        "local_pack",
+        "video"
       ],
       "paa_questions": [
         "How does schema markup for ai search affect organic revenue in 2026?",
@@ -280,7 +287,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'schema markup for ai search': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack. Recent titles in the news layer include How To Measure AI Search Visibility via @sejournal, @slobodanmanic; \u201cAre You A Bot\u201d Screens Can Get Your Pages Dropped By Google via @sejournal, @MattGSouthern; When To Use Search Console\u2019s \u2018Validate Fix,\u2019 According To Google via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'schema markup for ai search': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack, video. Recent titles in the news layer include Why AI Content Stopped Working & What To Do About It [Watch Now] via @sejournal, @hethr_campbell; Beyond Brand Sovereignty: How To Build An AI-Ready Source Of Truth via @sejournal, @billhunt; Designing A Measurement Framework Before You Touch GA4 via @sejournal, @bngsrc. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -297,7 +304,7 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/ai-seo-writing-thats-specific-may-get-cited-more/582531/",
+        "https://www.searchenginejournal.com/content-marketing-agencies-ai-contentworkshop-spcs/581935/",
         "https://feedpress.me/link/9375/14757949/cannibalization"
       ],
       "internal_links": [
@@ -311,7 +318,8 @@
       "funnel_stage": "awareness",
       "serp_features": [
         "featured_snippet",
-        "local_pack"
+        "local_pack",
+        "video"
       ],
       "paa_questions": [
         "How does technical seo audit affect organic revenue in 2026?",
@@ -320,7 +328,7 @@
         "When should I use noindex versus canonical consolidation?",
         "What Core Web Vitals matter most for SEO?"
       ],
-      "serp_analysis": "SERP snapshot for 'technical seo audit': dominant intent is **informational_technical** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack. Recent titles in the news layer include How To Measure AI Search Visibility via @sejournal, @slobodanmanic; \u201cAre You A Bot\u201d Screens Can Get Your Pages Dropped By Google via @sejournal, @MattGSouthern; When To Use Search Console\u2019s \u2018Validate Fix,\u2019 According To Google via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'technical seo audit': dominant intent is **informational_technical** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack, video. Recent titles in the news layer include Why AI Content Stopped Working & What To Do About It [Watch Now] via @sejournal, @hethr_campbell; Beyond Brand Sovereignty: How To Build An AI-Ready Source Of Truth via @sejournal, @billhunt; Designing A Measurement Framework Before You Touch GA4 via @sejournal, @bngsrc. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     }

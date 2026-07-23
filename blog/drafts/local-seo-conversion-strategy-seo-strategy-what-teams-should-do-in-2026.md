@@ -59,7 +59,7 @@ humanization_metrics:
   max_shingle_overlap: 0.073
   flesch_ease: 60.9
   fk_grade: 9.17
-last_humanization_check: '2026-07-20T07:57:17.544616+00:00'
+last_humanization_check: '2026-07-23T07:27:44.858694+00:00'
 editor_notes: 'Stale duplicate: same pre-schema pipeline issue. Sibling draft local-seo-that-turns-map-views-into-booked-jobs-in-2026.md
   covers the same topic and has been regenerated to current schema/quality bar. Recommend
   archiving/deleting this one once a human confirms.'
