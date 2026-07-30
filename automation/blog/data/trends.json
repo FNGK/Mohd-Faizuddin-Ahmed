@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-07-27T08:29:15.831419+00:00",
+  "collected_at": "2026-07-30T07:29:40.204310+00:00",
   "feeds": [
     "Google Search Central",
     "Search Engine Journal",
@@ -10,240 +10,240 @@
   "entries": [
     {
       "source": "Search Engine Journal",
-      "title": "X Live-Tweets Its Fight Against Chatbot Spam In Real-Time via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/x-live-tweets-its-fight-against-chatbot-spam-in-real-time/583572/",
-      "published": "Sun, 26 Jul 2026 10:17:57 +0000",
+      "title": "Q3 AI Visibility: AI Citations, Brand Mentions & Content Refreshes That Work via @sejournal, @AirOpsHQ",
+      "url": "https://www.searchenginejournal.com/rundowns/q3-ai-visibility-ai-citations-brand-mentions-content-refreshes-that-work/",
+      "published": "Wed, 29 Jul 2026 19:41:37 +0000",
       "tokens": [
-        "live-tweets",
-        "its",
-        "fight",
-        "against",
-        "chatbot",
-        "spam",
-        "real-time",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Charging AI Bots Decides Which Agents Can Still Cite You via @sejournal, @slobodanmanic",
-      "url": "https://www.searchenginejournal.com/charging-ai-bots-decides-which-agents-can-still-cite-you/580050/",
-      "published": "Sat, 25 Jul 2026 19:00:19 +0000",
-      "tokens": [
-        "charging",
-        "bots",
-        "decides",
-        "which",
-        "agents",
-        "can",
-        "still",
-        "cite"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Data Compares Gemini & AI Mode Use Against Daily Life via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/google-data-compares-gemini-ai-mode-use-against-daily-life/583533/",
-      "published": "Sat, 25 Jul 2026 13:54:31 +0000",
-      "tokens": [
-        "data",
-        "compares",
-        "gemini",
-        "mode",
-        "use",
-        "against",
-        "daily",
-        "life"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google\u2019s Q2: Precise Revenue Figures, Click Claims You Can\u2019t Check via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/googles-q2-precise-revenue-figures-click-claims-you-cant-check/583280/",
-      "published": "Sat, 25 Jul 2026 12:30:24 +0000",
-      "tokens": [
-        "precise",
-        "revenue",
-        "figures",
-        "click",
-        "claims",
-        "can",
-        "check",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Says Why It May Ignore Robots.txt And Negatively Impact SEO via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/google-says-why-it-may-ignore-robots-txt-and-negatively-impact-seo/583475/",
-      "published": "Sat, 25 Jul 2026 10:17:52 +0000",
-      "tokens": [
-        "says",
-        "why",
-        "may",
-        "ignore",
-        "robots",
-        "txt",
-        "negatively",
-        "impact"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Emergency Brand Audit: What AI Says About Your Locations via @sejournal, @lorenbaker",
-      "url": "https://www.searchenginejournal.com/emergency-brand-audit-what-ai-says-about-your-locations-recap/583422/",
-      "published": "Fri, 24 Jul 2026 19:53:26 +0000",
-      "tokens": [
-        "emergency",
+        "visibility",
+        "citations",
         "brand",
-        "audit",
-        "says",
-        "locations",
+        "mentions",
+        "content",
+        "refreshes",
+        "work",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "89% Of AI Search Demand Has No Clear Owner: Use This Before The Window Closes via @sejournal, @gregjarboe",
+      "url": "https://www.searchenginejournal.com/89-of-ai-search-demand-has-no-clear-owner-use-this-before-the-window-closes/583255/",
+      "published": "Wed, 29 Jul 2026 19:00:15 +0000",
+      "tokens": [
+        "demand",
+        "has",
+        "clear",
+        "owner",
+        "use",
+        "before",
+        "window",
+        "closes"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "European Search Strategy Goes Beyond Google & Bing via @sejournal, @motokohunt",
+      "url": "https://www.searchenginejournal.com/european-search-strategy-goes-beyond-google-bing/581780/",
+      "published": "Wed, 29 Jul 2026 17:32:12 +0000",
+      "tokens": [
+        "european",
+        "strategy",
+        "goes",
+        "beyond",
+        "bing",
         "via",
         "sejournal",
-        "lorenbaker"
+        "motokohunt"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "The AI Overviews YouTube Gap: The Platform Your Team Skipped For 20 Years via @sejournal, @gregjarboe",
-      "url": "https://www.searchenginejournal.com/the-ai-overviews-youtube-gap-the-platform-your-team-skipped-for-20-years/582702/",
-      "published": "Fri, 24 Jul 2026 19:00:50 +0000",
+      "title": "Google Opens Search Console Social Reporting To Everyone via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/google-opens-search-console-social-reporting-to-everyone/584144/",
+      "published": "Wed, 29 Jul 2026 17:11:33 +0000",
       "tokens": [
-        "overviews",
-        "youtube",
-        "gap",
-        "platform",
-        "team",
-        "skipped",
-        "years",
+        "opens",
+        "console",
+        "social",
+        "reporting",
+        "everyone",
+        "via",
+        "sejournal",
+        "mattgsouthern"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google Ads Bidding Strategies: Where To Spend Your Time In 2026 via @sejournal, @LisaRocksSEM",
+      "url": "https://www.searchenginejournal.com/google-ads-bidding-strategies-where-to-spend-your-time-in-2026/581479/",
+      "published": "Wed, 29 Jul 2026 14:30:33 +0000",
+      "tokens": [
+        "ads",
+        "bidding",
+        "strategies",
+        "spend",
+        "time",
+        "via",
+        "sejournal",
+        "lisarockssem"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "How Perplexity Actually Picks Sources (I Read The Stream, Not The Answers) via @sejournal, @suganthan",
+      "url": "https://www.searchenginejournal.com/how-perplexity-actually-picks-sources-i-read-the-stream-not-the-answers/583769/",
+      "published": "Wed, 29 Jul 2026 12:01:39 +0000",
+      "tokens": [
+        "perplexity",
+        "actually",
+        "picks",
+        "sources",
+        "read",
+        "stream",
+        "not",
+        "answers"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google\u2019s Open Knowledge Format Adds Five Trust Signals via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/googles-open-knowledge-format-adds-five-trust-signals/584120/",
+      "published": "Wed, 29 Jul 2026 11:00:20 +0000",
+      "tokens": [
+        "open",
+        "knowledge",
+        "format",
+        "adds",
+        "five",
+        "trust",
+        "signals",
         "via"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "Search Growth Slows, Publishers Weigh Leaving Google \u2013 SEO Pulse via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/seo-pulse-search-growth-slows-publishers-weigh-leaving-google/583329/",
-      "published": "Fri, 24 Jul 2026 12:00:25 +0000",
+      "title": "Google\u2019s Mueller: Fix Conflicting Metadata, Don\u2019t Test It via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/googles-mueller-fix-conflicting-metadata-dont-test-it/584055/",
+      "published": "Wed, 29 Jul 2026 10:30:57 +0000",
       "tokens": [
-        "growth",
-        "slows",
-        "publishers",
-        "weigh",
-        "leaving",
-        "pulse",
+        "mueller",
+        "fix",
+        "conflicting",
+        "metadata",
+        "don",
+        "test",
         "via",
         "sejournal"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "AI Search is Working. How to Prove It With Real Tests. via @sejournal, @hethr_campbell",
-      "url": "https://www.searchenginejournal.com/ai-search-is-working-how-to-prove-it-with-real-tests-recap/583306/",
-      "published": "Thu, 23 Jul 2026 19:38:11 +0000",
-      "tokens": [
-        "working",
-        "prove",
-        "real",
-        "tests",
-        "via",
-        "sejournal",
-        "hethr",
-        "campbell"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "AI Browsers Are Backward Because Agents Never Needed The Visual Layer via @sejournal, @slobodanmanic",
-      "url": "https://www.searchenginejournal.com/ai-browsers-are-backward-because-agents-never-needed-the-visual-layer/583056/",
-      "published": "Thu, 23 Jul 2026 19:00:39 +0000",
-      "tokens": [
-        "browsers",
-        "are",
-        "backward",
-        "because",
-        "agents",
-        "never",
-        "needed",
-        "visual"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "YouTube Explains What Can Stop A Channel Getting Paid via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/youtube-explains-what-can-stop-a-channel-getting-paid/583096/",
-      "published": "Thu, 23 Jul 2026 16:00:00 +0000",
+      "title": "YouTube Views Rose While Long-Form Ad Revenue Fell, Data Shows via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/youtube-views-rose-while-long-form-ad-revenue-fell-data-shows/584040/",
+      "published": "Wed, 29 Jul 2026 09:00:29 +0000",
       "tokens": [
         "youtube",
-        "explains",
-        "can",
-        "stop",
-        "channel",
-        "getting",
-        "paid",
+        "views",
+        "rose",
+        "while",
+        "long-form",
+        "revenue",
+        "fell",
+        "data"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google\u2019s Illyes Unsure On Shifting unavailable_after Dates via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/googles-illyes-unsure-on-shifting-unavailable_after-dates/584064/",
+      "published": "Wed, 29 Jul 2026 07:00:06 +0000",
+      "tokens": [
+        "illyes",
+        "unsure",
+        "shifting",
+        "unavailable",
+        "after",
+        "dates",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "AI Recognizes 96% Of Brands But Mentions Almost None, New Study Finds",
+      "url": "https://www.searchenginejournal.com/ai-brand-mention-study-victorious-spa/582765/",
+      "published": "Wed, 29 Jul 2026 05:00:32 +0000",
+      "tokens": [
+        "recognizes",
+        "brands",
+        "but",
+        "mentions",
+        "almost",
+        "none",
+        "new",
+        "study"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google On SEO Impact Of URLs Injected By CMS Platforms via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/google-on-seo-impact-of-urls-injected-into-html-by-cms-platforms/584037/",
+      "published": "Wed, 29 Jul 2026 00:38:31 +0000",
+      "tokens": [
+        "impact",
+        "urls",
+        "injected",
+        "cms",
+        "platforms",
+        "via",
+        "sejournal",
+        "martinibuster"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "AI Opt-Out May Cost Sites A Google Top Stories Spot via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/ai-opt-out-may-cost-publishers-a-top-stories-spot/584016/",
+      "published": "Tue, 28 Jul 2026 21:20:40 +0000",
+      "tokens": [
+        "opt-out",
+        "may",
+        "cost",
+        "sites",
+        "top",
+        "stories",
+        "spot",
         "via"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "Are We Repeating History & Risking Backlink Penalties Again? via @sejournal, @TaylorDanRW",
-      "url": "https://www.searchenginejournal.com/are-we-repeating-history-risking-backlink-penalties-again/583070/",
-      "published": "Thu, 23 Jul 2026 14:30:41 +0000",
+      "title": "The Future Of Search & AI: What I Learned From Google\u2019s Latest Earnings Call via @sejournal, @marie_haynes",
+      "url": "https://www.searchenginejournal.com/the-future-of-search-ai-what-i-learned-from-googles-latest-earnings-call/583662/",
+      "published": "Tue, 28 Jul 2026 19:00:06 +0000",
       "tokens": [
-        "are",
-        "repeating",
-        "history",
-        "risking",
-        "backlink",
-        "penalties",
-        "again",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Alphabet Q2 Earnings Show $5.85 Billion Negative Free Cash Flow via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/google-q2-earnings-show-5-85-billion-negative-free-cash-flow/583259/",
-      "published": "Thu, 23 Jul 2026 12:50:31 +0000",
-      "tokens": [
-        "alphabet",
+        "future",
+        "learned",
         "earnings",
-        "show",
-        "billion",
-        "negative",
-        "free",
-        "cash",
-        "flow"
+        "call",
+        "via",
+        "sejournal",
+        "marie",
+        "haynes"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "Google Went \u2018Not Provided\u2019 In 2011 And Blinded Us, ChatGPT Just Shipped Its Version via @sejournal, @DuaneForrester",
-      "url": "https://www.searchenginejournal.com/google-went-not-provided-in-2011-and-blinded-us-chatgpt-just-shipped-its-version/582839/",
-      "published": "Thu, 23 Jul 2026 12:00:13 +0000",
+      "title": "Google Search Results Still Rank Heavily AI-Flagged Pages via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/heavily-ai-flagged-pages-still-rank-across-googles-top-10/583983/",
+      "published": "Tue, 28 Jul 2026 18:06:52 +0000",
       "tokens": [
-        "went",
-        "not",
-        "provided",
-        "blinded",
-        "chatgpt",
-        "just",
-        "shipped",
-        "its"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Pichai Says Google Needs Gemini 4 To Compete At The Frontier via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/pichai-says-google-needs-gemini-4-to-compete-at-the-frontier/583214/",
-      "published": "Thu, 23 Jul 2026 10:30:58 +0000",
-      "tokens": [
-        "pichai",
-        "says",
-        "needs",
-        "gemini",
-        "compete",
-        "frontier",
+        "results",
+        "still",
+        "rank",
+        "heavily",
+        "ai-flagged",
+        "pages",
         "via",
         "sejournal"
       ]
@@ -380,46 +380,22 @@
   "top_terms": [
     {
       "term": "via",
-      "count": 15
+      "count": 14
     },
     {
       "term": "sejournal",
-      "count": 15
+      "count": 14
     },
     {
       "term": "mattgsouthern",
-      "count": 5
+      "count": 6
     },
     {
-      "term": "martinibuster",
+      "term": "ads",
       "count": 3
     },
     {
-      "term": "can",
-      "count": 3
-    },
-    {
-      "term": "says",
-      "count": 3
-    },
-    {
-      "term": "its",
-      "count": 2
-    },
-    {
-      "term": "against",
-      "count": 2
-    },
-    {
-      "term": "agents",
-      "count": 2
-    },
-    {
-      "term": "slobodanmanic",
-      "count": 2
-    },
-    {
-      "term": "gemini",
+      "term": "mentions",
       "count": 2
     },
     {
@@ -427,11 +403,15 @@
       "count": 2
     },
     {
-      "term": "youtube",
+      "term": "strategy",
       "count": 2
     },
     {
-      "term": "are",
+      "term": "martinibuster",
+      "count": 2
+    },
+    {
+      "term": "study",
       "count": 2
     },
     {
@@ -447,95 +427,115 @@
       "count": 2
     },
     {
-      "term": "ads",
-      "count": 2
-    },
-    {
-      "term": "live-tweets",
+      "term": "visibility",
       "count": 1
     },
     {
-      "term": "fight",
+      "term": "citations",
       "count": 1
     },
     {
-      "term": "chatbot",
+      "term": "brand",
       "count": 1
     },
     {
-      "term": "spam",
+      "term": "content",
       "count": 1
     },
     {
-      "term": "real-time",
+      "term": "refreshes",
       "count": 1
     },
     {
-      "term": "charging",
+      "term": "work",
       "count": 1
     },
     {
-      "term": "bots",
+      "term": "airopshq",
       "count": 1
     },
     {
-      "term": "decides",
+      "term": "demand",
       "count": 1
     },
     {
-      "term": "which",
+      "term": "has",
       "count": 1
     },
     {
-      "term": "still",
+      "term": "clear",
       "count": 1
     },
     {
-      "term": "cite",
+      "term": "owner",
       "count": 1
     },
     {
-      "term": "data",
+      "term": "before",
       "count": 1
     },
     {
-      "term": "compares",
+      "term": "window",
       "count": 1
     },
     {
-      "term": "mode",
+      "term": "closes",
       "count": 1
     },
     {
-      "term": "daily",
+      "term": "gregjarboe",
       "count": 1
     },
     {
-      "term": "life",
+      "term": "european",
       "count": 1
     },
     {
-      "term": "precise",
+      "term": "goes",
       "count": 1
     },
     {
-      "term": "revenue",
+      "term": "beyond",
       "count": 1
     },
     {
-      "term": "figures",
+      "term": "bing",
       "count": 1
     },
     {
-      "term": "click",
+      "term": "motokohunt",
       "count": 1
     },
     {
-      "term": "claims",
+      "term": "opens",
       "count": 1
     },
     {
-      "term": "check",
+      "term": "console",
+      "count": 1
+    },
+    {
+      "term": "social",
+      "count": 1
+    },
+    {
+      "term": "reporting",
+      "count": 1
+    },
+    {
+      "term": "everyone",
+      "count": 1
+    },
+    {
+      "term": "bidding",
+      "count": 1
+    },
+    {
+      "term": "strategies",
+      "count": 1
+    },
+    {
+      "term": "spend",
       "count": 1
     }
   ]
