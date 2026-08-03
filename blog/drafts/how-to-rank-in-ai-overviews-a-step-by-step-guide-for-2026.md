@@ -69,7 +69,7 @@ humanization_metrics:
   max_shingle_overlap: 0.615
   flesch_ease: 56.7
   fk_grade: 9.48
-last_humanization_check: '2026-07-30T07:29:43.054480+00:00'
+last_humanization_check: '2026-08-03T08:26:45.781041+00:00'
 ---
 
 ## Quick answer

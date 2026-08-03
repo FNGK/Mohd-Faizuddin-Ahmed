@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-07-30T07:29:40.204310+00:00",
+  "collected_at": "2026-08-03T08:26:42.470109+00:00",
   "feeds": [
     "Google Search Central",
     "Search Engine Journal",
@@ -8,6 +8,150 @@
   ],
   "entry_count": 25,
   "entries": [
+    {
+      "source": "Search Engine Journal",
+      "title": "What Opting Out Of Google\u2019s AI Search Features Means Now via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/what-opting-out-of-googles-ai-search-features-means-now/584321/",
+      "published": "Sat, 01 Aug 2026 12:00:39 +0000",
+      "tokens": [
+        "opting",
+        "out",
+        "features",
+        "means",
+        "now",
+        "via",
+        "sejournal",
+        "mattgsouthern"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Cloudflare\u2019s PACT Is Not Live Yet \u2013 Decide Which Track Your Traffic Needs via @sejournal, @slobodanmanic",
+      "url": "https://www.searchenginejournal.com/cloudflares-pact-is-not-live-yet-decide-which-track-your-traffic-needs/580328/",
+      "published": "Fri, 31 Jul 2026 14:30:32 +0000",
+      "tokens": [
+        "cloudflare",
+        "pact",
+        "not",
+        "live",
+        "yet",
+        "decide",
+        "which",
+        "track"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Social Search Data For All, AI-Detected Pages Rank Lower \u2013 SEO Pulse via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/seo-pulse-social-search-data-for-all-ai-detected-pages-rank-lower/584337/",
+      "published": "Fri, 31 Jul 2026 12:30:09 +0000",
+      "tokens": [
+        "social",
+        "data",
+        "all",
+        "ai-detected",
+        "pages",
+        "rank",
+        "lower",
+        "pulse"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google May Treat Search Box Pages As A Site Quality Issue via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/google-may-treat-search-box-pages-as-a-site-quality-issue/584419/",
+      "published": "Fri, 31 Jul 2026 11:24:14 +0000",
+      "tokens": [
+        "may",
+        "treat",
+        "box",
+        "pages",
+        "site",
+        "quality",
+        "issue",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "WP Engine Partners With BigCommerce To Scale WordPress Stores via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/wp-engine-bigcommerce-wordpress-stores/584343/",
+      "published": "Thu, 30 Jul 2026 23:04:36 +0000",
+      "tokens": [
+        "engine",
+        "partners",
+        "bigcommerce",
+        "scale",
+        "wordpress",
+        "stores",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "AI Search Isn\u2019t Replacing Google, It\u2019s Layering On Top \u2013 Similarweb Data via @sejournal, @gregjarboe",
+      "url": "https://www.searchenginejournal.com/ai-search-isnt-replacing-google-its-layering-on-top-similarweb-data/583378/",
+      "published": "Thu, 30 Jul 2026 19:00:03 +0000",
+      "tokens": [
+        "isn",
+        "replacing",
+        "layering",
+        "top",
+        "similarweb",
+        "data",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google\u2019s \u2018Generative AI\u2019 Search Console Data Is A Trap For Marketers via @sejournal, @TaylorDanRW",
+      "url": "https://www.searchenginejournal.com/googles-generative-ai-search-console-data-is-a-trap-for-marketers/584018/",
+      "published": "Thu, 30 Jul 2026 14:30:22 +0000",
+      "tokens": [
+        "generative",
+        "console",
+        "data",
+        "trap",
+        "marketers",
+        "via",
+        "sejournal",
+        "taylordanrw"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Head Of Anthropic\u2019s Claude Code Says Prompt Engineering Not That Important via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/head-of-anthropics-claude-code-says-prompt-engineering-not-that-important/584286/",
+      "published": "Thu, 30 Jul 2026 12:30:07 +0000",
+      "tokens": [
+        "head",
+        "anthropic",
+        "claude",
+        "code",
+        "says",
+        "prompt",
+        "engineering",
+        "not"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Entity Mapping Works On Google. Does Any Of It Reach ChatGPT? via @sejournal, @DuaneForrester",
+      "url": "https://www.searchenginejournal.com/entity-mapping-works-on-google-does-any-of-it-reach-chatgpt/583663/",
+      "published": "Thu, 30 Jul 2026 12:00:50 +0000",
+      "tokens": [
+        "entity",
+        "mapping",
+        "works",
+        "does",
+        "any",
+        "reach",
+        "chatgpt",
+        "via"
+      ]
+    },
     {
       "source": "Search Engine Journal",
       "title": "Q3 AI Visibility: AI Citations, Brand Mentions & Content Refreshes That Work via @sejournal, @AirOpsHQ",
@@ -102,150 +246,6 @@
         "stream",
         "not",
         "answers"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google\u2019s Open Knowledge Format Adds Five Trust Signals via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/googles-open-knowledge-format-adds-five-trust-signals/584120/",
-      "published": "Wed, 29 Jul 2026 11:00:20 +0000",
-      "tokens": [
-        "open",
-        "knowledge",
-        "format",
-        "adds",
-        "five",
-        "trust",
-        "signals",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google\u2019s Mueller: Fix Conflicting Metadata, Don\u2019t Test It via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/googles-mueller-fix-conflicting-metadata-dont-test-it/584055/",
-      "published": "Wed, 29 Jul 2026 10:30:57 +0000",
-      "tokens": [
-        "mueller",
-        "fix",
-        "conflicting",
-        "metadata",
-        "don",
-        "test",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "YouTube Views Rose While Long-Form Ad Revenue Fell, Data Shows via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/youtube-views-rose-while-long-form-ad-revenue-fell-data-shows/584040/",
-      "published": "Wed, 29 Jul 2026 09:00:29 +0000",
-      "tokens": [
-        "youtube",
-        "views",
-        "rose",
-        "while",
-        "long-form",
-        "revenue",
-        "fell",
-        "data"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google\u2019s Illyes Unsure On Shifting unavailable_after Dates via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/googles-illyes-unsure-on-shifting-unavailable_after-dates/584064/",
-      "published": "Wed, 29 Jul 2026 07:00:06 +0000",
-      "tokens": [
-        "illyes",
-        "unsure",
-        "shifting",
-        "unavailable",
-        "after",
-        "dates",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "AI Recognizes 96% Of Brands But Mentions Almost None, New Study Finds",
-      "url": "https://www.searchenginejournal.com/ai-brand-mention-study-victorious-spa/582765/",
-      "published": "Wed, 29 Jul 2026 05:00:32 +0000",
-      "tokens": [
-        "recognizes",
-        "brands",
-        "but",
-        "mentions",
-        "almost",
-        "none",
-        "new",
-        "study"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google On SEO Impact Of URLs Injected By CMS Platforms via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/google-on-seo-impact-of-urls-injected-into-html-by-cms-platforms/584037/",
-      "published": "Wed, 29 Jul 2026 00:38:31 +0000",
-      "tokens": [
-        "impact",
-        "urls",
-        "injected",
-        "cms",
-        "platforms",
-        "via",
-        "sejournal",
-        "martinibuster"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "AI Opt-Out May Cost Sites A Google Top Stories Spot via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/ai-opt-out-may-cost-publishers-a-top-stories-spot/584016/",
-      "published": "Tue, 28 Jul 2026 21:20:40 +0000",
-      "tokens": [
-        "opt-out",
-        "may",
-        "cost",
-        "sites",
-        "top",
-        "stories",
-        "spot",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "The Future Of Search & AI: What I Learned From Google\u2019s Latest Earnings Call via @sejournal, @marie_haynes",
-      "url": "https://www.searchenginejournal.com/the-future-of-search-ai-what-i-learned-from-googles-latest-earnings-call/583662/",
-      "published": "Tue, 28 Jul 2026 19:00:06 +0000",
-      "tokens": [
-        "future",
-        "learned",
-        "earnings",
-        "call",
-        "via",
-        "sejournal",
-        "marie",
-        "haynes"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Search Results Still Rank Heavily AI-Flagged Pages via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/heavily-ai-flagged-pages-still-rank-across-googles-top-10/583983/",
-      "published": "Tue, 28 Jul 2026 18:06:52 +0000",
-      "tokens": [
-        "results",
-        "still",
-        "rank",
-        "heavily",
-        "ai-flagged",
-        "pages",
-        "via",
-        "sejournal"
       ]
     },
     {
@@ -380,22 +380,50 @@
   "top_terms": [
     {
       "term": "via",
-      "count": 14
+      "count": 15
     },
     {
       "term": "sejournal",
-      "count": 14
+      "count": 15
     },
     {
       "term": "mattgsouthern",
-      "count": 6
+      "count": 3
+    },
+    {
+      "term": "not",
+      "count": 3
+    },
+    {
+      "term": "data",
+      "count": 3
+    },
+    {
+      "term": "martinibuster",
+      "count": 3
     },
     {
       "term": "ads",
       "count": 3
     },
     {
-      "term": "mentions",
+      "term": "social",
+      "count": 2
+    },
+    {
+      "term": "pages",
+      "count": 2
+    },
+    {
+      "term": "scale",
+      "count": 2
+    },
+    {
+      "term": "gregjarboe",
+      "count": 2
+    },
+    {
+      "term": "console",
       "count": 2
     },
     {
@@ -404,14 +432,6 @@
     },
     {
       "term": "strategy",
-      "count": 2
-    },
-    {
-      "term": "martinibuster",
-      "count": 2
-    },
-    {
-      "term": "study",
       "count": 2
     },
     {
@@ -427,115 +447,95 @@
       "count": 2
     },
     {
-      "term": "visibility",
+      "term": "opting",
       "count": 1
     },
     {
-      "term": "citations",
+      "term": "out",
       "count": 1
     },
     {
-      "term": "brand",
+      "term": "features",
       "count": 1
     },
     {
-      "term": "content",
+      "term": "means",
       "count": 1
     },
     {
-      "term": "refreshes",
+      "term": "now",
       "count": 1
     },
     {
-      "term": "work",
+      "term": "cloudflare",
       "count": 1
     },
     {
-      "term": "airopshq",
+      "term": "pact",
       "count": 1
     },
     {
-      "term": "demand",
+      "term": "live",
       "count": 1
     },
     {
-      "term": "has",
+      "term": "yet",
       "count": 1
     },
     {
-      "term": "clear",
+      "term": "decide",
       "count": 1
     },
     {
-      "term": "owner",
+      "term": "which",
       "count": 1
     },
     {
-      "term": "before",
+      "term": "track",
       "count": 1
     },
     {
-      "term": "window",
+      "term": "traffic",
       "count": 1
     },
     {
-      "term": "closes",
+      "term": "needs",
       "count": 1
     },
     {
-      "term": "gregjarboe",
+      "term": "slobodanmanic",
       "count": 1
     },
     {
-      "term": "european",
+      "term": "all",
       "count": 1
     },
     {
-      "term": "goes",
+      "term": "ai-detected",
       "count": 1
     },
     {
-      "term": "beyond",
+      "term": "rank",
       "count": 1
     },
     {
-      "term": "bing",
+      "term": "lower",
       "count": 1
     },
     {
-      "term": "motokohunt",
+      "term": "pulse",
       "count": 1
     },
     {
-      "term": "opens",
+      "term": "may",
       "count": 1
     },
     {
-      "term": "console",
+      "term": "treat",
       "count": 1
     },
     {
-      "term": "social",
-      "count": 1
-    },
-    {
-      "term": "reporting",
-      "count": 1
-    },
-    {
-      "term": "everyone",
-      "count": 1
-    },
-    {
-      "term": "bidding",
-      "count": 1
-    },
-    {
-      "term": "strategies",
-      "count": 1
-    },
-    {
-      "term": "spend",
+      "term": "box",
       "count": 1
     }
   ]
