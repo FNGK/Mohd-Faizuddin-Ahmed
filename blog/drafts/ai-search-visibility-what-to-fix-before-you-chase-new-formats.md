@@ -58,7 +58,7 @@ humanization_metrics:
   max_shingle_overlap: 0.101
   flesch_ease: 53.66
   fk_grade: 9.83
-last_humanization_check: '2026-08-06T07:34:08.383967+00:00'
+last_humanization_check: '2026-08-10T06:09:21.044386+00:00'
 editor_notes: 'Superseded: same reason as ai-search-visibility-seo-strategy-what-teams-should-do-in-2026.md
   — topic already covered by 6 verified AI-search-visibility drafts. Recommend archiving/deleting
   once a human confirms.'

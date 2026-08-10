@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-08-06T07:34:05.867880+00:00",
+  "collected_at": "2026-08-10T06:09:17.699554+00:00",
   "feeds": [
     "Google Search Central",
     "Search Engine Journal",
@@ -8,6 +8,214 @@
   ],
   "entry_count": 25,
   "entries": [
+    {
+      "source": "Search Engine Journal",
+      "title": "How To Remove Negative Content From Google Before AI Answers Cite It via @sejournal, @EraseDotCom",
+      "url": "https://www.searchenginejournal.com/how-to-remove-negative-content-from-google-before-ai-answers-cite-it-spa/582989/",
+      "published": "Mon, 10 Aug 2026 05:00:33 +0000",
+      "tokens": [
+        "remove",
+        "negative",
+        "content",
+        "before",
+        "answers",
+        "cite",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "AI\u2019s Impact Is Outrunning Measurement: The Trust And Attribution Gap Facing Brands via @sejournal, @gregjarboe",
+      "url": "https://www.searchenginejournal.com/ais-impact-is-outrunning-measurement-the-trust-and-attribution-gap-facing-brands/584141/",
+      "published": "Sat, 08 Aug 2026 12:00:30 +0000",
+      "tokens": [
+        "impact",
+        "outrunning",
+        "measurement",
+        "trust",
+        "attribution",
+        "gap",
+        "facing",
+        "brands"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "AI Search Only Feels New If Your SEO Was Shallow via @sejournal, @slobodanmanic",
+      "url": "https://www.searchenginejournal.com/ai-search-only-feels-new-if-your-seo-was-shallow/584115/",
+      "published": "Fri, 07 Aug 2026 19:00:31 +0000",
+      "tokens": [
+        "only",
+        "feels",
+        "new",
+        "was",
+        "shallow",
+        "via",
+        "sejournal",
+        "slobodanmanic"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Gen Z Now Treats Claude And OpenAI Like Consumer Brands, But Trust Is Still An Issue via @sejournal, @gregjarboe",
+      "url": "https://www.searchenginejournal.com/gen-z-now-treats-claude-and-openai-like-consumer-brands-but-trust-is-still-an-issue/584449/",
+      "published": "Fri, 07 Aug 2026 14:30:16 +0000",
+      "tokens": [
+        "gen",
+        "now",
+        "treats",
+        "claude",
+        "openai",
+        "like",
+        "consumer",
+        "brands"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google\u2019s Ex-AI Chief Jeff Dean Explains How To Improve Context Engineering via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/googles-ex-ai-chief-jeff-dean-explains-how-to-improve-context-engineering/584955/",
+      "published": "Fri, 07 Aug 2026 12:11:48 +0000",
+      "tokens": [
+        "ex-ai",
+        "chief",
+        "jeff",
+        "dean",
+        "explains",
+        "improve",
+        "context",
+        "engineering"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "How Cats.txt Showed LLMs.txt Evidence Is GEO Astrology",
+      "url": "https://www.searchenginejournal.com/how-cats-txt-showed-llms-txt-evidence-is-geo-astrology/584653/",
+      "published": "Fri, 07 Aug 2026 12:00:42 +0000",
+      "tokens": [
+        "cats",
+        "txt",
+        "showed",
+        "llms",
+        "txt",
+        "evidence",
+        "geo",
+        "astrology"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "The AEO Playbook: How to Get Cited & Stay Visible via @sejournal, @hethr_campbell",
+      "url": "https://www.searchenginejournal.com/aeo-playbook-get-cited-stay-visible-recap/584926/",
+      "published": "Fri, 07 Aug 2026 07:45:43 +0000",
+      "tokens": [
+        "aeo",
+        "playbook",
+        "get",
+        "cited",
+        "stay",
+        "visible",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "WordPress Security Release 7.0.3 Fixes High Severity XSS Vulnerability via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/wordpress-security-release-7-0-3-fixes-high-severity-xss-vulnerability/584927/",
+      "published": "Thu, 06 Aug 2026 23:02:34 +0000",
+      "tokens": [
+        "wordpress",
+        "security",
+        "release",
+        "fixes",
+        "high",
+        "severity",
+        "xss",
+        "vulnerability"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "I Helped Scale Google Ads To Billions \u2013 Here\u2019s How I\u2019d Build An AI Search Strategy Today",
+      "url": "https://www.searchenginejournal.com/i-helped-scale-google-ads-to-billions-heres-how-id-build-an-ai-search-strategy-today/582556/",
+      "published": "Thu, 06 Aug 2026 19:00:59 +0000",
+      "tokens": [
+        "helped",
+        "scale",
+        "ads",
+        "billions",
+        "here",
+        "build",
+        "strategy",
+        "today"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Why Part Of Your AI Authority Takes Years, Not Campaigns & Why It Comes From Other People via @sejournal, @DuaneForrester",
+      "url": "https://www.searchenginejournal.com/why-part-of-your-ai-authority-takes-years-not-campaigns-why-it-comes-from-other-people/584467/",
+      "published": "Thu, 06 Aug 2026 14:30:36 +0000",
+      "tokens": [
+        "why",
+        "part",
+        "authority",
+        "takes",
+        "years",
+        "not",
+        "campaigns",
+        "why"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "WordPress 7.1 Accessibility Change May Break Some Plugins via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/wordpress-7-1-accessibility-change-may-break-some-plugins/584820/",
+      "published": "Thu, 06 Aug 2026 13:10:41 +0000",
+      "tokens": [
+        "wordpress",
+        "accessibility",
+        "change",
+        "may",
+        "break",
+        "some",
+        "plugins",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "How AI Search Trends Are Changing PPC Campaign Structures\u00a0\u2013 Ask A PPC via @sejournal, @navahf",
+      "url": "https://www.searchenginejournal.com/how-ai-search-trends-are-changing-ppc-campaign-structures-ask-a-ppc/584004/",
+      "published": "Thu, 06 Aug 2026 12:00:53 +0000",
+      "tokens": [
+        "trends",
+        "are",
+        "changing",
+        "ppc",
+        "campaign",
+        "structures",
+        "ask",
+        "ppc"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "The Trust Signals That Get Your Brand Cited By AI Overviews, Just Like Freshpet [Webinar] via @sejournal, @hethr_campbell",
+      "url": "https://www.searchenginejournal.com/the-trust-signals-that-get-your-brand-cited-by-ai-overviews-just-like-freshpet-webinar/584796/",
+      "published": "Thu, 06 Aug 2026 07:45:50 +0000",
+      "tokens": [
+        "trust",
+        "signals",
+        "get",
+        "brand",
+        "cited",
+        "overviews",
+        "just",
+        "like"
+      ]
+    },
     {
       "source": "Search Engine Journal",
       "title": "Google Chief Scientist Who Helped Build Modern Search And AI Steps Away via @sejournal, @martinibuster",
@@ -38,204 +246,6 @@
         "conversion",
         "optimization",
         "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "The Future Of Discoverability",
-      "url": "https://www.searchenginejournal.com/the-future-of-discoverability/584489/",
-      "published": "Wed, 05 Aug 2026 19:00:27 +0000",
-      "tokens": [
-        "future",
-        "discoverability"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "When AI Takes The Click, Click Worthiness Should Guide Your Strategy via @sejournal, @billhunt",
-      "url": "https://www.searchenginejournal.com/when-ai-takes-the-click-click-worthiness-should-guide-your-strategy/582587/",
-      "published": "Wed, 05 Aug 2026 17:30:05 +0000",
-      "tokens": [
-        "takes",
-        "click",
-        "click",
-        "worthiness",
-        "should",
-        "strategy",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Microsoft Advertising Adds AI Visibility Insights, PMax Testing, And Creative Preview Updates via @sejournal, @brookeosmundson",
-      "url": "https://www.searchenginejournal.com/microsoft-advertising-adds-ai-visibility-insights-pmax-testing-and-creative-preview-updates/584760/",
-      "published": "Wed, 05 Aug 2026 17:00:19 +0000",
-      "tokens": [
-        "microsoft",
-        "advertising",
-        "adds",
-        "visibility",
-        "insights",
-        "pmax",
-        "testing",
-        "creative"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "AI Visibility Measurement: What To Track & What To Ignore",
-      "url": "https://www.searchenginejournal.com/ai-visibility-measurement-what-to-track-what-to-ignore/582009/",
-      "published": "Wed, 05 Aug 2026 14:30:03 +0000",
-      "tokens": [
-        "visibility",
-        "measurement",
-        "track",
-        "ignore"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Reddit Wants To Be The Destination, Not Just The Source Behind Search & AI via @sejournal, @brentcsutoras",
-      "url": "https://www.searchenginejournal.com/reddit-wants-to-be-the-destination-not-just-the-source-behind-search-ai/584586/",
-      "published": "Wed, 05 Aug 2026 12:00:08 +0000",
-      "tokens": [
-        "reddit",
-        "wants",
-        "destination",
-        "not",
-        "just",
-        "source",
-        "behind",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Reddit CEO Intends To Show More Reviews And Recommendations via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/reddit-ceo-intends-to-show-more-reviews-and-recommendations/584731/",
-      "published": "Wed, 05 Aug 2026 09:17:33 +0000",
-      "tokens": [
-        "reddit",
-        "ceo",
-        "intends",
-        "show",
-        "more",
-        "reviews",
-        "recommendations",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "What Top Stories Inside AI Overviews Means For Publishers And Brands In 2026 And Beyond via @sejournal, @gregjarboe",
-      "url": "https://www.searchenginejournal.com/what-top-stories-inside-ai-overviews-means-for-publishers-and-brands-in-2026-and-beyond/584175/",
-      "published": "Tue, 04 Aug 2026 19:00:12 +0000",
-      "tokens": [
-        "top",
-        "stories",
-        "inside",
-        "overviews",
-        "means",
-        "publishers",
-        "brands",
-        "beyond"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Report That Cloudflare AI Bot Blocking Prevents Googlebot From Indexing Sites via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/report-that-cloudflare-ai-bot-blocking-prevents-googlebot-from-indexing-sites/584673/",
-      "published": "Tue, 04 Aug 2026 15:18:58 +0000",
-      "tokens": [
-        "report",
-        "cloudflare",
-        "bot",
-        "blocking",
-        "prevents",
-        "googlebot",
-        "indexing",
-        "sites"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Now Reports AI Search Impressions. Here\u2019s How To Read Them via @sejournal, @cshel",
-      "url": "https://www.searchenginejournal.com/google-reports-ai-search-impressions-how-to-read-them/582824/",
-      "published": "Tue, 04 Aug 2026 14:30:39 +0000",
-      "tokens": [
-        "now",
-        "reports",
-        "impressions",
-        "here",
-        "read",
-        "them",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Paid Search Absorbed Organic\u2019s Collapse \u2013 Then Q2 Slowed Down via @sejournal, @brookeosmundson",
-      "url": "https://www.searchenginejournal.com/paid-search-absorbed-organics-collapse-then-q2-slowed-down/583560/",
-      "published": "Tue, 04 Aug 2026 12:00:50 +0000",
-      "tokens": [
-        "paid",
-        "absorbed",
-        "organic",
-        "collapse",
-        "then",
-        "slowed",
-        "down",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "WooCommerce Social Login WordPress Plugin Enables Full Site Takeover via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/woocommerce-social-login-wordpress-plugin-enables-full-site-takeover/584601/",
-      "published": "Mon, 03 Aug 2026 23:26:39 +0000",
-      "tokens": [
-        "woocommerce",
-        "social",
-        "login",
-        "wordpress",
-        "plugin",
-        "enables",
-        "full",
-        "site"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Snapchat Clamps Down On AI-Generated Videos via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/snapchat-clamps-down-on-ai-generated-spotlight-videos/584594/",
-      "published": "Mon, 03 Aug 2026 22:23:57 +0000",
-      "tokens": [
-        "snapchat",
-        "clamps",
-        "down",
-        "ai-generated",
-        "videos",
-        "via",
-        "sejournal",
-        "martinibuster"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Open Knowledge Format v0.2 Adds A Trust Layer \u2013 No AI Agent Reads It Yet via @sejournal, @slobodanmanic",
-      "url": "https://www.searchenginejournal.com/open-knowledge-format-v0-2-adds-a-trust-layer-no-ai-agent-reads-it-yet/583661/",
-      "published": "Mon, 03 Aug 2026 19:00:01 +0000",
-      "tokens": [
-        "open",
-        "knowledge",
-        "format",
-        "adds",
-        "trust",
-        "layer",
-        "agent",
-        "reads"
       ]
     },
     {
@@ -378,10 +388,26 @@
     },
     {
       "term": "martinibuster",
-      "count": 5
+      "count": 4
     },
     {
-      "term": "conversion",
+      "term": "trust",
+      "count": 3
+    },
+    {
+      "term": "ads",
+      "count": 3
+    },
+    {
+      "term": "ppc",
+      "count": 3
+    },
+    {
+      "term": "brands",
+      "count": 2
+    },
+    {
+      "term": "gregjarboe",
       "count": 2
     },
     {
@@ -389,7 +415,47 @@
       "count": 2
     },
     {
-      "term": "click",
+      "term": "like",
+      "count": 2
+    },
+    {
+      "term": "chief",
+      "count": 2
+    },
+    {
+      "term": "txt",
+      "count": 2
+    },
+    {
+      "term": "get",
+      "count": 2
+    },
+    {
+      "term": "cited",
+      "count": 2
+    },
+    {
+      "term": "hethr",
+      "count": 2
+    },
+    {
+      "term": "campbell",
+      "count": 2
+    },
+    {
+      "term": "wordpress",
+      "count": 2
+    },
+    {
+      "term": "helped",
+      "count": 2
+    },
+    {
+      "term": "scale",
+      "count": 2
+    },
+    {
+      "term": "build",
       "count": 2
     },
     {
@@ -397,23 +463,19 @@
       "count": 2
     },
     {
-      "term": "adds",
+      "term": "why",
       "count": 2
     },
     {
-      "term": "visibility",
+      "term": "campaigns",
       "count": 2
     },
     {
-      "term": "brookeosmundson",
+      "term": "are",
       "count": 2
     },
     {
-      "term": "reddit",
-      "count": 2
-    },
-    {
-      "term": "down",
+      "term": "conversion",
       "count": 2
     },
     {
@@ -429,103 +491,51 @@
       "count": 2
     },
     {
-      "term": "ads",
-      "count": 2
-    },
-    {
-      "term": "chief",
+      "term": "remove",
       "count": 1
     },
     {
-      "term": "scientist",
+      "term": "negative",
       "count": 1
     },
     {
-      "term": "who",
+      "term": "content",
       "count": 1
     },
     {
-      "term": "helped",
+      "term": "before",
       "count": 1
     },
     {
-      "term": "build",
+      "term": "answers",
       "count": 1
     },
     {
-      "term": "modern",
+      "term": "cite",
       "count": 1
     },
     {
-      "term": "steps",
+      "term": "erasedotcom",
       "count": 1
     },
     {
-      "term": "away",
+      "term": "impact",
       "count": 1
     },
     {
-      "term": "referrals",
+      "term": "outrunning",
       "count": 1
     },
     {
-      "term": "are",
+      "term": "measurement",
       "count": 1
     },
     {
-      "term": "recreating",
+      "term": "attribution",
       "count": 1
     },
     {
-      "term": "oldest",
-      "count": 1
-    },
-    {
-      "term": "mistake",
-      "count": 1
-    },
-    {
-      "term": "optimization",
-      "count": 1
-    },
-    {
-      "term": "future",
-      "count": 1
-    },
-    {
-      "term": "discoverability",
-      "count": 1
-    },
-    {
-      "term": "takes",
-      "count": 1
-    },
-    {
-      "term": "worthiness",
-      "count": 1
-    },
-    {
-      "term": "should",
-      "count": 1
-    },
-    {
-      "term": "billhunt",
-      "count": 1
-    },
-    {
-      "term": "microsoft",
-      "count": 1
-    },
-    {
-      "term": "advertising",
-      "count": 1
-    },
-    {
-      "term": "insights",
-      "count": 1
-    },
-    {
-      "term": "pmax",
+      "term": "gap",
       "count": 1
     }
   ]
