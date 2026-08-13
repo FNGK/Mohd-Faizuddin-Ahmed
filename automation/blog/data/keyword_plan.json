@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T06:09:20.448317+00:00",
+  "generated_at": "2026-08-13T06:11:01.803855+00:00",
   "idea_count": 8,
   "gemini_calls_this_run": 0,
   "gemini_enabled": true,
@@ -17,8 +17,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/how-to-remove-negative-content-from-google-before-ai-answers-cite-it-spa/582989/",
-        "https://www.searchenginejournal.com/ais-impact-is-outrunning-measurement-the-trust-and-attribution-gap-facing-brands/584141/"
+        "https://www.searchenginejournal.com/google-gemini-passes-1b-monthly-users-63-now-use-voice/585624/",
+        "https://www.searchenginejournal.com/how-to-create-health-ymyl-content-that-performs-in-ai-search/584431/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -39,7 +39,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'answer engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include How To Remove Negative Content From Google Before AI Answers Cite It via @sejournal, @EraseDotCom; AI\u2019s Impact Is Outrunning Measurement: The Trust And Attribution Gap Facing Brands via @sejournal, @gregjarboe; AI Search Only Feels New If Your SEO Was Shallow via @sejournal, @slobodanmanic. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'answer engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include Google Gemini Passes 1B Monthly Users, 63% Now Use Voice via @sejournal, @MattGSouthern; How to Create Health & YMYL Content That Performs in AI Search; Google Amends SerpApi Suit With Content Licensing Terms via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -56,8 +56,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/ai-search-only-feels-new-if-your-seo-was-shallow/584115/",
-        "https://www.searchenginejournal.com/gen-z-now-treats-claude-and-openai-like-consumer-brands-but-trust-is-still-an-issue/584449/"
+        "https://www.searchenginejournal.com/google-amends-serpapi-suit-with-content-licensing-terms/585505/",
+        "https://www.searchenginejournal.com/openai-allows-some-health-finance-ads-in-chatgpt/585516/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -78,7 +78,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'generative engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include How To Remove Negative Content From Google Before AI Answers Cite It via @sejournal, @EraseDotCom; AI\u2019s Impact Is Outrunning Measurement: The Trust And Attribution Gap Facing Brands via @sejournal, @gregjarboe; AI Search Only Feels New If Your SEO Was Shallow via @sejournal, @slobodanmanic. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'generative engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include Google Gemini Passes 1B Monthly Users, 63% Now Use Voice via @sejournal, @MattGSouthern; How to Create Health & YMYL Content That Performs in AI Search; Google Amends SerpApi Suit With Content Licensing Terms via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -95,8 +95,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/googles-ex-ai-chief-jeff-dean-explains-how-to-improve-context-engineering/584955/",
-        "https://www.searchenginejournal.com/how-cats-txt-showed-llms-txt-evidence-is-geo-astrology/584653/"
+        "https://www.searchenginejournal.com/cloudflare-gives-ai-agents-wallets-that-pay-for-what-they-access/584959/",
+        "https://www.searchenginejournal.com/google-is-ending-target-overperformance-what-to-fix-before-august-17/584875/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -117,7 +117,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'how to rank in ai overviews': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include How To Remove Negative Content From Google Before AI Answers Cite It via @sejournal, @EraseDotCom; AI\u2019s Impact Is Outrunning Measurement: The Trust And Attribution Gap Facing Brands via @sejournal, @gregjarboe; AI Search Only Feels New If Your SEO Was Shallow via @sejournal, @slobodanmanic. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'how to rank in ai overviews': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include Google Gemini Passes 1B Monthly Users, 63% Now Use Voice via @sejournal, @MattGSouthern; How to Create Health & YMYL Content That Performs in AI Search; Google Amends SerpApi Suit With Content Licensing Terms via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -134,8 +134,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/aeo-playbook-get-cited-stay-visible-recap/584926/",
-        "https://www.searchenginejournal.com/wordpress-security-release-7-0-3-fixes-high-severity-xss-vulnerability/584927/"
+        "https://www.searchenginejournal.com/automattic-fires-back-at-wp-engines-motion-for-sanctions/585472/",
+        "https://www.searchenginejournal.com/chatgpts-search-index-serves-small-sites-too-data-shows/585388/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -156,7 +156,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'how to get cited by chatgpt': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include How To Remove Negative Content From Google Before AI Answers Cite It via @sejournal, @EraseDotCom; AI\u2019s Impact Is Outrunning Measurement: The Trust And Attribution Gap Facing Brands via @sejournal, @gregjarboe; AI Search Only Feels New If Your SEO Was Shallow via @sejournal, @slobodanmanic. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'how to get cited by chatgpt': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include Google Gemini Passes 1B Monthly Users, 63% Now Use Voice via @sejournal, @MattGSouthern; How to Create Health & YMYL Content That Performs in AI Search; Google Amends SerpApi Suit With Content Licensing Terms via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -173,8 +173,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/i-helped-scale-google-ads-to-billions-heres-how-id-build-an-ai-search-strategy-today/582556/",
-        "https://www.searchenginejournal.com/why-part-of-your-ai-authority-takes-years-not-campaigns-why-it-comes-from-other-people/584467/"
+        "https://www.searchenginejournal.com/the-metric-most-seos-are-still-not-measuring-in-the-age-of-ai/584027/",
+        "https://www.searchenginejournal.com/organic-traffic-dropped-what-to-tell-clients-the-ai-visibility-metrics-to-report-instead-spa/584388/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -195,7 +195,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'ai search optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include How To Remove Negative Content From Google Before AI Answers Cite It via @sejournal, @EraseDotCom; AI\u2019s Impact Is Outrunning Measurement: The Trust And Attribution Gap Facing Brands via @sejournal, @gregjarboe; AI Search Only Feels New If Your SEO Was Shallow via @sejournal, @slobodanmanic. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'ai search optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include Google Gemini Passes 1B Monthly Users, 63% Now Use Voice via @sejournal, @MattGSouthern; How to Create Health & YMYL Content That Performs in AI Search; Google Amends SerpApi Suit With Content Licensing Terms via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -212,8 +212,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/wordpress-7-1-accessibility-change-may-break-some-plugins/584820/",
-        "https://www.searchenginejournal.com/how-ai-search-trends-are-changing-ppc-campaign-structures-ask-a-ppc/584004/"
+        "https://www.searchenginejournal.com/anthropic-claude-watermarks-eu-ai-act-code/585355/",
+        "https://www.searchenginejournal.com/how-transunions-ai-findings-should-change-the-way-seos-pitch-geo/584922/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -234,7 +234,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'llm seo': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include How To Remove Negative Content From Google Before AI Answers Cite It via @sejournal, @EraseDotCom; AI\u2019s Impact Is Outrunning Measurement: The Trust And Attribution Gap Facing Brands via @sejournal, @gregjarboe; AI Search Only Feels New If Your SEO Was Shallow via @sejournal, @slobodanmanic. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'llm seo': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include Google Gemini Passes 1B Monthly Users, 63% Now Use Voice via @sejournal, @MattGSouthern; How to Create Health & YMYL Content That Performs in AI Search; Google Amends SerpApi Suit With Content Licensing Terms via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -251,8 +251,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/the-trust-signals-that-get-your-brand-cited-by-ai-overviews-just-like-freshpet-webinar/584796/",
-        "https://www.searchenginejournal.com/google-loses-the-engineer-who-helped-build-search-and-modern-ai/584785/"
+        "https://www.searchenginejournal.com/youtube-updates-partner-program-terms-shorts-payout-rules/585331/",
+        "https://www.searchenginejournal.com/the-ai-detection-false-economy-fueling-fear-of-writing/584967/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -273,7 +273,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'schema markup for ai search': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include How To Remove Negative Content From Google Before AI Answers Cite It via @sejournal, @EraseDotCom; AI\u2019s Impact Is Outrunning Measurement: The Trust And Attribution Gap Facing Brands via @sejournal, @gregjarboe; AI Search Only Feels New If Your SEO Was Shallow via @sejournal, @slobodanmanic. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'schema markup for ai search': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include Google Gemini Passes 1B Monthly Users, 63% Now Use Voice via @sejournal, @MattGSouthern; How to Create Health & YMYL Content That Performs in AI Search; Google Amends SerpApi Suit With Content Licensing Terms via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -290,7 +290,7 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/ai-referrals-are-recreating-the-oldest-mistake-in-conversion-optimization/584331/",
+        "https://www.searchenginejournal.com/wpforms-lite-accused-of-adding-backdoor-i-tested-it-and-was-surprised/585273/",
         "https://feedpress.me/link/9375/14757949/cannibalization"
       ],
       "internal_links": [
@@ -312,7 +312,7 @@
         "When should I use noindex versus canonical consolidation?",
         "What Core Web Vitals matter most for SEO?"
       ],
-      "serp_analysis": "SERP snapshot for 'technical seo audit': dominant intent is **informational_technical** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include How To Remove Negative Content From Google Before AI Answers Cite It via @sejournal, @EraseDotCom; AI\u2019s Impact Is Outrunning Measurement: The Trust And Attribution Gap Facing Brands via @sejournal, @gregjarboe; AI Search Only Feels New If Your SEO Was Shallow via @sejournal, @slobodanmanic. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'technical seo audit': dominant intent is **informational_technical** at the **awareness** funnel stage. Observed SERP features include featured_snippet. Recent titles in the news layer include Google Gemini Passes 1B Monthly Users, 63% Now Use Voice via @sejournal, @MattGSouthern; How to Create Health & YMYL Content That Performs in AI Search; Google Amends SerpApi Suit With Content Licensing Terms via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     }

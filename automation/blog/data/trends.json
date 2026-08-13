@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-08-10T06:09:17.699554+00:00",
+  "collected_at": "2026-08-13T06:10:59.857200+00:00",
   "feeds": [
     "Google Search Central",
     "Search Engine Journal",
@@ -10,242 +10,239 @@
   "entries": [
     {
       "source": "Search Engine Journal",
-      "title": "How To Remove Negative Content From Google Before AI Answers Cite It via @sejournal, @EraseDotCom",
-      "url": "https://www.searchenginejournal.com/how-to-remove-negative-content-from-google-before-ai-answers-cite-it-spa/582989/",
-      "published": "Mon, 10 Aug 2026 05:00:33 +0000",
+      "title": "Google Gemini Passes 1B Monthly Users, 63% Now Use Voice via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/google-gemini-passes-1b-monthly-users-63-now-use-voice/585624/",
+      "published": "Thu, 13 Aug 2026 01:00:07 +0000",
       "tokens": [
-        "remove",
-        "negative",
-        "content",
-        "before",
-        "answers",
-        "cite",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "AI\u2019s Impact Is Outrunning Measurement: The Trust And Attribution Gap Facing Brands via @sejournal, @gregjarboe",
-      "url": "https://www.searchenginejournal.com/ais-impact-is-outrunning-measurement-the-trust-and-attribution-gap-facing-brands/584141/",
-      "published": "Sat, 08 Aug 2026 12:00:30 +0000",
-      "tokens": [
-        "impact",
-        "outrunning",
-        "measurement",
-        "trust",
-        "attribution",
-        "gap",
-        "facing",
-        "brands"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "AI Search Only Feels New If Your SEO Was Shallow via @sejournal, @slobodanmanic",
-      "url": "https://www.searchenginejournal.com/ai-search-only-feels-new-if-your-seo-was-shallow/584115/",
-      "published": "Fri, 07 Aug 2026 19:00:31 +0000",
-      "tokens": [
-        "only",
-        "feels",
-        "new",
-        "was",
-        "shallow",
-        "via",
-        "sejournal",
-        "slobodanmanic"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Gen Z Now Treats Claude And OpenAI Like Consumer Brands, But Trust Is Still An Issue via @sejournal, @gregjarboe",
-      "url": "https://www.searchenginejournal.com/gen-z-now-treats-claude-and-openai-like-consumer-brands-but-trust-is-still-an-issue/584449/",
-      "published": "Fri, 07 Aug 2026 14:30:16 +0000",
-      "tokens": [
-        "gen",
+        "gemini",
+        "passes",
+        "monthly",
+        "users",
         "now",
-        "treats",
-        "claude",
-        "openai",
-        "like",
-        "consumer",
-        "brands"
+        "use",
+        "voice",
+        "via"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "Google\u2019s Ex-AI Chief Jeff Dean Explains How To Improve Context Engineering via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/googles-ex-ai-chief-jeff-dean-explains-how-to-improve-context-engineering/584955/",
-      "published": "Fri, 07 Aug 2026 12:11:48 +0000",
+      "title": "How to Create Health & YMYL Content That Performs in AI Search",
+      "url": "https://www.searchenginejournal.com/how-to-create-health-ymyl-content-that-performs-in-ai-search/584431/",
+      "published": "Wed, 12 Aug 2026 19:00:47 +0000",
       "tokens": [
-        "ex-ai",
-        "chief",
-        "jeff",
-        "dean",
-        "explains",
-        "improve",
-        "context",
-        "engineering"
+        "create",
+        "health",
+        "ymyl",
+        "content",
+        "performs"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "How Cats.txt Showed LLMs.txt Evidence Is GEO Astrology",
-      "url": "https://www.searchenginejournal.com/how-cats-txt-showed-llms-txt-evidence-is-geo-astrology/584653/",
-      "published": "Fri, 07 Aug 2026 12:00:42 +0000",
+      "title": "Google Amends SerpApi Suit With Content Licensing Terms via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/google-amends-serpapi-suit-with-content-licensing-terms/585505/",
+      "published": "Wed, 12 Aug 2026 18:02:14 +0000",
       "tokens": [
-        "cats",
-        "txt",
-        "showed",
-        "llms",
-        "txt",
-        "evidence",
-        "geo",
-        "astrology"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "The AEO Playbook: How to Get Cited & Stay Visible via @sejournal, @hethr_campbell",
-      "url": "https://www.searchenginejournal.com/aeo-playbook-get-cited-stay-visible-recap/584926/",
-      "published": "Fri, 07 Aug 2026 07:45:43 +0000",
-      "tokens": [
-        "aeo",
-        "playbook",
-        "get",
-        "cited",
-        "stay",
-        "visible",
+        "amends",
+        "serpapi",
+        "suit",
+        "content",
+        "licensing",
+        "terms",
         "via",
         "sejournal"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "WordPress Security Release 7.0.3 Fixes High Severity XSS Vulnerability via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/wordpress-security-release-7-0-3-fixes-high-severity-xss-vulnerability/584927/",
-      "published": "Thu, 06 Aug 2026 23:02:34 +0000",
+      "title": "OpenAI Allows Some Health & Finance Ads In ChatGPT via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/openai-allows-some-health-finance-ads-in-chatgpt/585516/",
+      "published": "Wed, 12 Aug 2026 15:14:23 +0000",
       "tokens": [
-        "wordpress",
-        "security",
-        "release",
-        "fixes",
-        "high",
-        "severity",
-        "xss",
-        "vulnerability"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "I Helped Scale Google Ads To Billions \u2013 Here\u2019s How I\u2019d Build An AI Search Strategy Today",
-      "url": "https://www.searchenginejournal.com/i-helped-scale-google-ads-to-billions-heres-how-id-build-an-ai-search-strategy-today/582556/",
-      "published": "Thu, 06 Aug 2026 19:00:59 +0000",
-      "tokens": [
-        "helped",
-        "scale",
-        "ads",
-        "billions",
-        "here",
-        "build",
-        "strategy",
-        "today"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Why Part Of Your AI Authority Takes Years, Not Campaigns & Why It Comes From Other People via @sejournal, @DuaneForrester",
-      "url": "https://www.searchenginejournal.com/why-part-of-your-ai-authority-takes-years-not-campaigns-why-it-comes-from-other-people/584467/",
-      "published": "Thu, 06 Aug 2026 14:30:36 +0000",
-      "tokens": [
-        "why",
-        "part",
-        "authority",
-        "takes",
-        "years",
-        "not",
-        "campaigns",
-        "why"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "WordPress 7.1 Accessibility Change May Break Some Plugins via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/wordpress-7-1-accessibility-change-may-break-some-plugins/584820/",
-      "published": "Thu, 06 Aug 2026 13:10:41 +0000",
-      "tokens": [
-        "wordpress",
-        "accessibility",
-        "change",
-        "may",
-        "break",
+        "openai",
+        "allows",
         "some",
-        "plugins",
+        "health",
+        "finance",
+        "ads",
+        "chatgpt",
         "via"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "How AI Search Trends Are Changing PPC Campaign Structures\u00a0\u2013 Ask A PPC via @sejournal, @navahf",
-      "url": "https://www.searchenginejournal.com/how-ai-search-trends-are-changing-ppc-campaign-structures-ask-a-ppc/584004/",
-      "published": "Thu, 06 Aug 2026 12:00:53 +0000",
+      "title": "Cloudflare Gives AI Agents Wallets That Pay For What They Access via @sejournal, @slobodanmanic",
+      "url": "https://www.searchenginejournal.com/cloudflare-gives-ai-agents-wallets-that-pay-for-what-they-access/584959/",
+      "published": "Wed, 12 Aug 2026 14:30:08 +0000",
       "tokens": [
-        "trends",
-        "are",
-        "changing",
-        "ppc",
-        "campaign",
-        "structures",
-        "ask",
-        "ppc"
+        "cloudflare",
+        "gives",
+        "agents",
+        "wallets",
+        "pay",
+        "they",
+        "access",
+        "via"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "The Trust Signals That Get Your Brand Cited By AI Overviews, Just Like Freshpet [Webinar] via @sejournal, @hethr_campbell",
-      "url": "https://www.searchenginejournal.com/the-trust-signals-that-get-your-brand-cited-by-ai-overviews-just-like-freshpet-webinar/584796/",
-      "published": "Thu, 06 Aug 2026 07:45:50 +0000",
+      "title": "Google Is Ending Target Overperformance \u2013 What to Fix Before August 17 via @sejournal, @brookeosmundson",
+      "url": "https://www.searchenginejournal.com/google-is-ending-target-overperformance-what-to-fix-before-august-17/584875/",
+      "published": "Wed, 12 Aug 2026 12:00:33 +0000",
       "tokens": [
-        "trust",
-        "signals",
+        "ending",
+        "target",
+        "overperformance",
+        "fix",
+        "before",
+        "august",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Automattic Fires Back At WP Engine\u2019s Motion For Sanctions via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/automattic-fires-back-at-wp-engines-motion-for-sanctions/585472/",
+      "published": "Wed, 12 Aug 2026 10:33:17 +0000",
+      "tokens": [
+        "automattic",
+        "fires",
+        "back",
+        "engine",
+        "motion",
+        "sanctions",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "ChatGPT\u2019s Search Index Serves Small Sites Too, Data Shows via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/chatgpts-search-index-serves-small-sites-too-data-shows/585388/",
+      "published": "Tue, 11 Aug 2026 19:11:46 +0000",
+      "tokens": [
+        "chatgpt",
+        "index",
+        "serves",
+        "small",
+        "sites",
+        "too",
+        "data",
+        "shows"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "The Metric Most SEOs Are Still Not Measuring In The Age Of AI via @sejournal, @SequinsNsearch",
+      "url": "https://www.searchenginejournal.com/the-metric-most-seos-are-still-not-measuring-in-the-age-of-ai/584027/",
+      "published": "Tue, 11 Aug 2026 19:00:19 +0000",
+      "tokens": [
+        "metric",
+        "most",
+        "seos",
+        "are",
+        "still",
+        "not",
+        "measuring",
+        "age"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Organic Traffic Dropped? What to Tell Clients & the AI Visibility Metrics to Report Instead",
+      "url": "https://www.searchenginejournal.com/organic-traffic-dropped-what-to-tell-clients-the-ai-visibility-metrics-to-report-instead-spa/584388/",
+      "published": "Tue, 11 Aug 2026 18:59:11 +0000",
+      "tokens": [
+        "organic",
+        "traffic",
+        "dropped",
+        "tell",
+        "clients",
+        "visibility",
+        "metrics",
+        "report"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Anthropic To Mark Claude Text & Files Under EU AI Act Code via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/anthropic-claude-watermarks-eu-ai-act-code/585355/",
+      "published": "Tue, 11 Aug 2026 16:03:35 +0000",
+      "tokens": [
+        "anthropic",
+        "mark",
+        "claude",
+        "text",
+        "files",
+        "under",
+        "act",
+        "code"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "What TransUnion\u2019s AI Research Reveals About How Brands Actually Get Cited via @sejournal, @gregjarboe",
+      "url": "https://www.searchenginejournal.com/how-transunions-ai-findings-should-change-the-way-seos-pitch-geo/584922/",
+      "published": "Tue, 11 Aug 2026 14:30:56 +0000",
+      "tokens": [
+        "transunion",
+        "research",
+        "reveals",
+        "brands",
+        "actually",
         "get",
-        "brand",
         "cited",
-        "overviews",
-        "just",
-        "like"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Chief Scientist Who Helped Build Modern Search And AI Steps Away via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/google-loses-the-engineer-who-helped-build-search-and-modern-ai/584785/",
-      "published": "Wed, 05 Aug 2026 22:16:33 +0000",
-      "tokens": [
-        "chief",
-        "scientist",
-        "who",
-        "helped",
-        "build",
-        "modern",
-        "steps",
-        "away"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "AI Referrals Are Recreating The Oldest Mistake In Conversion Optimization via @sejournal, @slobodanmanic",
-      "url": "https://www.searchenginejournal.com/ai-referrals-are-recreating-the-oldest-mistake-in-conversion-optimization/584331/",
-      "published": "Wed, 05 Aug 2026 20:12:01 +0000",
-      "tokens": [
-        "referrals",
-        "are",
-        "recreating",
-        "oldest",
-        "mistake",
-        "conversion",
-        "optimization",
         "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "YouTube Adds New Shorts Payout Rules To Partner Program Terms via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/youtube-updates-partner-program-terms-shorts-payout-rules/585331/",
+      "published": "Tue, 11 Aug 2026 12:13:24 +0000",
+      "tokens": [
+        "youtube",
+        "adds",
+        "new",
+        "shorts",
+        "payout",
+        "rules",
+        "partner",
+        "program"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "The AI Detection False Economy: Fueling FOW (Fear of Writing) via @sejournal, @andybetts1",
+      "url": "https://www.searchenginejournal.com/the-ai-detection-false-economy-fueling-fear-of-writing/584967/",
+      "published": "Tue, 11 Aug 2026 12:00:08 +0000",
+      "tokens": [
+        "detection",
+        "false",
+        "economy",
+        "fueling",
+        "fow",
+        "fear",
+        "writing",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "WPForms Lite Accused Of Adding Backdoor. I Tested It And Was Surprised via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/wpforms-lite-accused-of-adding-backdoor-i-tested-it-and-was-surprised/585273/",
+      "published": "Tue, 11 Aug 2026 09:03:14 +0000",
+      "tokens": [
+        "wpforms",
+        "lite",
+        "accused",
+        "adding",
+        "backdoor",
+        "tested",
+        "was",
+        "surprised"
       ]
     },
     {
@@ -387,95 +384,35 @@
       "count": 13
     },
     {
-      "term": "martinibuster",
-      "count": 4
-    },
-    {
-      "term": "trust",
-      "count": 3
+      "term": "mattgsouthern",
+      "count": 6
     },
     {
       "term": "ads",
       "count": 3
     },
     {
-      "term": "ppc",
-      "count": 3
-    },
-    {
-      "term": "brands",
+      "term": "use",
       "count": 2
     },
     {
-      "term": "gregjarboe",
+      "term": "health",
       "count": 2
     },
     {
-      "term": "slobodanmanic",
+      "term": "content",
       "count": 2
     },
     {
-      "term": "like",
+      "term": "terms",
       "count": 2
     },
     {
-      "term": "chief",
+      "term": "chatgpt",
       "count": 2
     },
     {
-      "term": "txt",
-      "count": 2
-    },
-    {
-      "term": "get",
-      "count": 2
-    },
-    {
-      "term": "cited",
-      "count": 2
-    },
-    {
-      "term": "hethr",
-      "count": 2
-    },
-    {
-      "term": "campbell",
-      "count": 2
-    },
-    {
-      "term": "wordpress",
-      "count": 2
-    },
-    {
-      "term": "helped",
-      "count": 2
-    },
-    {
-      "term": "scale",
-      "count": 2
-    },
-    {
-      "term": "build",
-      "count": 2
-    },
-    {
-      "term": "strategy",
-      "count": 2
-    },
-    {
-      "term": "why",
-      "count": 2
-    },
-    {
-      "term": "campaigns",
-      "count": 2
-    },
-    {
-      "term": "are",
-      "count": 2
-    },
-    {
-      "term": "conversion",
+      "term": "martinibuster",
       "count": 2
     },
     {
@@ -491,51 +428,111 @@
       "count": 2
     },
     {
-      "term": "remove",
+      "term": "gemini",
       "count": 1
     },
     {
-      "term": "negative",
+      "term": "passes",
       "count": 1
     },
     {
-      "term": "content",
+      "term": "monthly",
       "count": 1
     },
     {
-      "term": "before",
+      "term": "users",
       "count": 1
     },
     {
-      "term": "answers",
+      "term": "now",
       "count": 1
     },
     {
-      "term": "cite",
+      "term": "voice",
       "count": 1
     },
     {
-      "term": "erasedotcom",
+      "term": "create",
       "count": 1
     },
     {
-      "term": "impact",
+      "term": "ymyl",
       "count": 1
     },
     {
-      "term": "outrunning",
+      "term": "performs",
       "count": 1
     },
     {
-      "term": "measurement",
+      "term": "amends",
       "count": 1
     },
     {
-      "term": "attribution",
+      "term": "serpapi",
       "count": 1
     },
     {
-      "term": "gap",
+      "term": "suit",
+      "count": 1
+    },
+    {
+      "term": "licensing",
+      "count": 1
+    },
+    {
+      "term": "openai",
+      "count": 1
+    },
+    {
+      "term": "allows",
+      "count": 1
+    },
+    {
+      "term": "some",
+      "count": 1
+    },
+    {
+      "term": "finance",
+      "count": 1
+    },
+    {
+      "term": "cloudflare",
+      "count": 1
+    },
+    {
+      "term": "gives",
+      "count": 1
+    },
+    {
+      "term": "agents",
+      "count": 1
+    },
+    {
+      "term": "wallets",
+      "count": 1
+    },
+    {
+      "term": "pay",
+      "count": 1
+    },
+    {
+      "term": "they",
+      "count": 1
+    },
+    {
+      "term": "access",
+      "count": 1
+    },
+    {
+      "term": "slobodanmanic",
+      "count": 1
+    },
+    {
+      "term": "ending",
+      "count": 1
+    },
+    {
+      "term": "target",
       "count": 1
     }
   ]
