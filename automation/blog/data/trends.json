@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-08-13T06:10:59.857200+00:00",
+  "collected_at": "2026-08-17T05:32:55.011054+00:00",
   "feeds": [
     "Google Search Central",
     "Search Engine Journal",
@@ -10,239 +10,239 @@
   "entries": [
     {
       "source": "Search Engine Journal",
-      "title": "Google Gemini Passes 1B Monthly Users, 63% Now Use Voice via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/google-gemini-passes-1b-monthly-users-63-now-use-voice/585624/",
-      "published": "Thu, 13 Aug 2026 01:00:07 +0000",
-      "tokens": [
-        "gemini",
-        "passes",
-        "monthly",
-        "users",
-        "now",
-        "use",
-        "voice",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "How to Create Health & YMYL Content That Performs in AI Search",
-      "url": "https://www.searchenginejournal.com/how-to-create-health-ymyl-content-that-performs-in-ai-search/584431/",
-      "published": "Wed, 12 Aug 2026 19:00:47 +0000",
-      "tokens": [
-        "create",
-        "health",
-        "ymyl",
-        "content",
-        "performs"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Amends SerpApi Suit With Content Licensing Terms via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/google-amends-serpapi-suit-with-content-licensing-terms/585505/",
-      "published": "Wed, 12 Aug 2026 18:02:14 +0000",
-      "tokens": [
-        "amends",
-        "serpapi",
-        "suit",
-        "content",
-        "licensing",
-        "terms",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "OpenAI Allows Some Health & Finance Ads In ChatGPT via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/openai-allows-some-health-finance-ads-in-chatgpt/585516/",
-      "published": "Wed, 12 Aug 2026 15:14:23 +0000",
-      "tokens": [
-        "openai",
-        "allows",
-        "some",
-        "health",
-        "finance",
-        "ads",
-        "chatgpt",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Cloudflare Gives AI Agents Wallets That Pay For What They Access via @sejournal, @slobodanmanic",
-      "url": "https://www.searchenginejournal.com/cloudflare-gives-ai-agents-wallets-that-pay-for-what-they-access/584959/",
-      "published": "Wed, 12 Aug 2026 14:30:08 +0000",
-      "tokens": [
-        "cloudflare",
-        "gives",
-        "agents",
-        "wallets",
-        "pay",
-        "they",
-        "access",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Is Ending Target Overperformance \u2013 What to Fix Before August 17 via @sejournal, @brookeosmundson",
-      "url": "https://www.searchenginejournal.com/google-is-ending-target-overperformance-what-to-fix-before-august-17/584875/",
-      "published": "Wed, 12 Aug 2026 12:00:33 +0000",
-      "tokens": [
-        "ending",
-        "target",
-        "overperformance",
-        "fix",
-        "before",
-        "august",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Automattic Fires Back At WP Engine\u2019s Motion For Sanctions via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/automattic-fires-back-at-wp-engines-motion-for-sanctions/585472/",
-      "published": "Wed, 12 Aug 2026 10:33:17 +0000",
-      "tokens": [
-        "automattic",
-        "fires",
-        "back",
-        "engine",
-        "motion",
-        "sanctions",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "ChatGPT\u2019s Search Index Serves Small Sites Too, Data Shows via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/chatgpts-search-index-serves-small-sites-too-data-shows/585388/",
-      "published": "Tue, 11 Aug 2026 19:11:46 +0000",
+      "title": "ChatGPT\u2019s Index, GA Benchmarks, Google Refiles Complaint \u2013 SEO Pulse via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/seo-pulse-chatgpts-index-ga-benchmarks-google-refiles-complaint/585748/",
+      "published": "Sat, 15 Aug 2026 12:00:14 +0000",
       "tokens": [
         "chatgpt",
         "index",
-        "serves",
-        "small",
-        "sites",
-        "too",
-        "data",
-        "shows"
+        "benchmarks",
+        "refiles",
+        "complaint",
+        "pulse",
+        "via",
+        "sejournal"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "The Metric Most SEOs Are Still Not Measuring In The Age Of AI via @sejournal, @SequinsNsearch",
-      "url": "https://www.searchenginejournal.com/the-metric-most-seos-are-still-not-measuring-in-the-age-of-ai/584027/",
-      "published": "Tue, 11 Aug 2026 19:00:19 +0000",
-      "tokens": [
-        "metric",
-        "most",
-        "seos",
-        "are",
-        "still",
-        "not",
-        "measuring",
-        "age"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Organic Traffic Dropped? What to Tell Clients & the AI Visibility Metrics to Report Instead",
-      "url": "https://www.searchenginejournal.com/organic-traffic-dropped-what-to-tell-clients-the-ai-visibility-metrics-to-report-instead-spa/584388/",
-      "published": "Tue, 11 Aug 2026 18:59:11 +0000",
-      "tokens": [
-        "organic",
-        "traffic",
-        "dropped",
-        "tell",
-        "clients",
-        "visibility",
-        "metrics",
-        "report"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Anthropic To Mark Claude Text & Files Under EU AI Act Code via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/anthropic-claude-watermarks-eu-ai-act-code/585355/",
-      "published": "Tue, 11 Aug 2026 16:03:35 +0000",
+      "title": "Anthropic Reveals What The Watermark Is And How It Can Be Defeated via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/anthropic-reveals-what-the-watermark-is-and-how-it-can-be-defeated/585930/",
+      "published": "Sat, 15 Aug 2026 10:46:00 +0000",
       "tokens": [
         "anthropic",
-        "mark",
-        "claude",
-        "text",
-        "files",
-        "under",
-        "act",
-        "code"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "What TransUnion\u2019s AI Research Reveals About How Brands Actually Get Cited via @sejournal, @gregjarboe",
-      "url": "https://www.searchenginejournal.com/how-transunions-ai-findings-should-change-the-way-seos-pitch-geo/584922/",
-      "published": "Tue, 11 Aug 2026 14:30:56 +0000",
-      "tokens": [
-        "transunion",
-        "research",
         "reveals",
-        "brands",
-        "actually",
-        "get",
-        "cited",
-        "via"
+        "watermark",
+        "can",
+        "defeated",
+        "via",
+        "sejournal",
+        "martinibuster"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "YouTube Adds New Shorts Payout Rules To Partner Program Terms via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/youtube-updates-partner-program-terms-shorts-payout-rules/585331/",
-      "published": "Tue, 11 Aug 2026 12:13:24 +0000",
+      "title": "Google Brings Gemini 3.7 Flash To AI Mode In Search via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/google-brings-gemini-3-7-flash-to-ai-mode-in-search/585923/",
+      "published": "Fri, 14 Aug 2026 23:02:04 +0000",
+      "tokens": [
+        "brings",
+        "gemini",
+        "flash",
+        "mode",
+        "via",
+        "sejournal",
+        "mattgsouthern"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "OpenAI Says Robots.txt May Not Apply To ChatGPT\u2019s Fetch Bot via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/openai-says-robots-txt-may-not-apply-to-chatgpts-fetch-bot/585864/",
+      "published": "Fri, 14 Aug 2026 19:10:07 +0000",
+      "tokens": [
+        "openai",
+        "says",
+        "robots",
+        "txt",
+        "may",
+        "not",
+        "apply",
+        "chatgpt"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "What A Claude Watermark Can & Can\u2019t Tell You About Authorship via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/what-a-claude-watermark-can-cant-tell-you-about-authorship/585754/",
+      "published": "Fri, 14 Aug 2026 19:00:39 +0000",
+      "tokens": [
+        "claude",
+        "watermark",
+        "can",
+        "can",
+        "tell",
+        "authorship",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "YouTube Measures Creator Video on Branded Search Lift, But The Attribution Gap Still Exists via @sejournal, @gregjarboe",
+      "url": "https://www.searchenginejournal.com/youtube-measures-creator-video-on-branded-search-lift-but-the-attribution-gap-still-exists/584876/",
+      "published": "Fri, 14 Aug 2026 17:30:21 +0000",
       "tokens": [
         "youtube",
-        "adds",
-        "new",
-        "shorts",
-        "payout",
-        "rules",
-        "partner",
-        "program"
+        "measures",
+        "creator",
+        "video",
+        "branded",
+        "lift",
+        "but",
+        "attribution"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "The AI Detection False Economy: Fueling FOW (Fear of Writing) via @sejournal, @andybetts1",
-      "url": "https://www.searchenginejournal.com/the-ai-detection-false-economy-fueling-fear-of-writing/584967/",
-      "published": "Tue, 11 Aug 2026 12:00:08 +0000",
+      "title": "Cloudflare: Machine Traffic Could Hit 1,000x Human Traffic In 5 Years via @sejournal, @slobodanmanic",
+      "url": "https://www.searchenginejournal.com/the-biggest-ai-crawler-on-my-website-was-hunting-for-credentials/585159/",
+      "published": "Fri, 14 Aug 2026 14:30:22 +0000",
       "tokens": [
-        "detection",
-        "false",
-        "economy",
-        "fueling",
-        "fow",
-        "fear",
-        "writing",
+        "cloudflare",
+        "machine",
+        "traffic",
+        "could",
+        "hit",
+        "human",
+        "traffic",
+        "years"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "ChatGPT Already Knows Who It\u2019ll Recommend Before It Searches via @sejournal, @suganthan",
+      "url": "https://www.searchenginejournal.com/chatgpt-already-knows-who-itll-recommend-before-it-searches/585162/",
+      "published": "Fri, 14 Aug 2026 12:00:06 +0000",
+      "tokens": [
+        "chatgpt",
+        "already",
+        "knows",
+        "who",
+        "recommend",
+        "before",
+        "searches",
         "via"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "WPForms Lite Accused Of Adding Backdoor. I Tested It And Was Surprised via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/wpforms-lite-accused-of-adding-backdoor-i-tested-it-and-was-surprised/585273/",
-      "published": "Tue, 11 Aug 2026 09:03:14 +0000",
+      "title": "Google Is Removing Language Targeting From Search Campaigns via @sejournal, @brookeosmundson",
+      "url": "https://www.searchenginejournal.com/google-is-removing-language-targeting-from-search-campaigns/585592/",
+      "published": "Thu, 13 Aug 2026 21:30:33 +0000",
       "tokens": [
-        "wpforms",
-        "lite",
-        "accused",
-        "adding",
-        "backdoor",
-        "tested",
-        "was",
-        "surprised"
+        "removing",
+        "language",
+        "targeting",
+        "campaigns",
+        "via",
+        "sejournal",
+        "brookeosmundson"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "The GEO Trust Gap: SEOs Want The Data, But Not The Platforms Selling It via @sejournal, @DuaneForrester",
+      "url": "https://www.searchenginejournal.com/the-geo-trust-gap-seos-want-the-data-but-not-the-platforms-selling-it/585161/",
+      "published": "Thu, 13 Aug 2026 19:00:43 +0000",
+      "tokens": [
+        "geo",
+        "trust",
+        "gap",
+        "seos",
+        "want",
+        "data",
+        "but",
+        "not"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "The PPC Clean-Up: How to Audit and Fix \u2018Value Inflation\u2019 in Google Ads",
+      "url": "https://www.searchenginejournal.com/the-ppc-clean-up-how-to-audit-and-fix-value-inflation-in-google-ads/583009/",
+      "published": "Thu, 13 Aug 2026 17:30:31 +0000",
+      "tokens": [
+        "ppc",
+        "clean-up",
+        "audit",
+        "fix",
+        "value",
+        "inflation",
+        "ads"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Why Anthropic\u2019s Claude Watermark May Be A New Text-Marking Method via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/why-anthropics-claude-watermark-may-be-a-new-text-marking-method/585703/",
+      "published": "Thu, 13 Aug 2026 15:23:00 +0000",
+      "tokens": [
+        "why",
+        "anthropic",
+        "claude",
+        "watermark",
+        "may",
+        "new",
+        "text-marking",
+        "method"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Reddit Preserved The Part Of The Internet We Broke via @sejournal, @brentcsutoras",
+      "url": "https://www.searchenginejournal.com/reddit-preserved-the-part-of-the-internet-we-broke/585485/",
+      "published": "Thu, 13 Aug 2026 14:30:44 +0000",
+      "tokens": [
+        "reddit",
+        "preserved",
+        "part",
+        "internet",
+        "broke",
+        "via",
+        "sejournal",
+        "brentcsutoras"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "How Do I Know If AI Overviews Are Taking Clicks From My Site And What Can I Do About It? \u2013 Ask An SEO via @sejournal, @HelenPollitt1",
+      "url": "https://www.searchenginejournal.com/how-do-i-know-if-ai-overviews-are-taking-clicks-from-my-site-and-what-can-i-do-about-it-ask-an-seo/583417/",
+      "published": "Thu, 13 Aug 2026 12:00:20 +0000",
+      "tokens": [
+        "know",
+        "overviews",
+        "are",
+        "taking",
+        "clicks",
+        "site",
+        "can",
+        "ask"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "AI Overviews: How Freshpet Stands Out in SEO & GEO [Webinar] via @sejournal, @hethr_campbell",
+      "url": "https://www.searchenginejournal.com/ai-overviews-how-freshpet-stands-out-seo-geo/584796/",
+      "published": "Thu, 13 Aug 2026 11:06:50 +0000",
+      "tokens": [
+        "overviews",
+        "freshpet",
+        "stands",
+        "out",
+        "geo",
+        "webinar",
+        "via",
+        "sejournal"
       ]
     },
     {
@@ -377,42 +377,78 @@
   "top_terms": [
     {
       "term": "via",
-      "count": 13
+      "count": 14
     },
     {
       "term": "sejournal",
-      "count": 13
+      "count": 14
     },
     {
       "term": "mattgsouthern",
-      "count": 6
+      "count": 4
+    },
+    {
+      "term": "can",
+      "count": 4
+    },
+    {
+      "term": "chatgpt",
+      "count": 3
+    },
+    {
+      "term": "watermark",
+      "count": 3
     },
     {
       "term": "ads",
       "count": 3
     },
     {
-      "term": "use",
-      "count": 2
-    },
-    {
-      "term": "health",
-      "count": 2
-    },
-    {
-      "term": "content",
-      "count": 2
-    },
-    {
-      "term": "terms",
-      "count": 2
-    },
-    {
-      "term": "chatgpt",
+      "term": "anthropic",
       "count": 2
     },
     {
       "term": "martinibuster",
+      "count": 2
+    },
+    {
+      "term": "may",
+      "count": 2
+    },
+    {
+      "term": "not",
+      "count": 2
+    },
+    {
+      "term": "claude",
+      "count": 2
+    },
+    {
+      "term": "but",
+      "count": 2
+    },
+    {
+      "term": "gap",
+      "count": 2
+    },
+    {
+      "term": "traffic",
+      "count": 2
+    },
+    {
+      "term": "campaigns",
+      "count": 2
+    },
+    {
+      "term": "geo",
+      "count": 2
+    },
+    {
+      "term": "ppc",
+      "count": 2
+    },
+    {
+      "term": "overviews",
       "count": 2
     },
     {
@@ -428,55 +464,47 @@
       "count": 2
     },
     {
+      "term": "index",
+      "count": 1
+    },
+    {
+      "term": "benchmarks",
+      "count": 1
+    },
+    {
+      "term": "refiles",
+      "count": 1
+    },
+    {
+      "term": "complaint",
+      "count": 1
+    },
+    {
+      "term": "pulse",
+      "count": 1
+    },
+    {
+      "term": "reveals",
+      "count": 1
+    },
+    {
+      "term": "defeated",
+      "count": 1
+    },
+    {
+      "term": "brings",
+      "count": 1
+    },
+    {
       "term": "gemini",
       "count": 1
     },
     {
-      "term": "passes",
+      "term": "flash",
       "count": 1
     },
     {
-      "term": "monthly",
-      "count": 1
-    },
-    {
-      "term": "users",
-      "count": 1
-    },
-    {
-      "term": "now",
-      "count": 1
-    },
-    {
-      "term": "voice",
-      "count": 1
-    },
-    {
-      "term": "create",
-      "count": 1
-    },
-    {
-      "term": "ymyl",
-      "count": 1
-    },
-    {
-      "term": "performs",
-      "count": 1
-    },
-    {
-      "term": "amends",
-      "count": 1
-    },
-    {
-      "term": "serpapi",
-      "count": 1
-    },
-    {
-      "term": "suit",
-      "count": 1
-    },
-    {
-      "term": "licensing",
+      "term": "mode",
       "count": 1
     },
     {
@@ -484,55 +512,27 @@
       "count": 1
     },
     {
-      "term": "allows",
+      "term": "says",
       "count": 1
     },
     {
-      "term": "some",
+      "term": "robots",
       "count": 1
     },
     {
-      "term": "finance",
+      "term": "txt",
       "count": 1
     },
     {
-      "term": "cloudflare",
+      "term": "apply",
       "count": 1
     },
     {
-      "term": "gives",
+      "term": "fetch",
       "count": 1
     },
     {
-      "term": "agents",
-      "count": 1
-    },
-    {
-      "term": "wallets",
-      "count": 1
-    },
-    {
-      "term": "pay",
-      "count": 1
-    },
-    {
-      "term": "they",
-      "count": 1
-    },
-    {
-      "term": "access",
-      "count": 1
-    },
-    {
-      "term": "slobodanmanic",
-      "count": 1
-    },
-    {
-      "term": "ending",
-      "count": 1
-    },
-    {
-      "term": "target",
+      "term": "bot",
       "count": 1
     }
   ]
