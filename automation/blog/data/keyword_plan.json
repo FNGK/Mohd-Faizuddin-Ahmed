@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T05:22:48.816948+00:00",
+  "generated_at": "2026-08-24T05:36:02.531138+00:00",
   "idea_count": 8,
   "gemini_calls_this_run": 0,
   "gemini_enabled": true,
@@ -17,8 +17,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/why-reddits-chatgpt-citation-drop-isnt-fully-explained/586479/",
-        "https://www.searchenginejournal.com/microsoft-advertising-rolls-out-ai-max-globally/586459/"
+        "https://www.searchenginejournal.com/seo-pulse-spam-update-generative-ui-ai-overviews-reddit-drop/586597/",
+        "https://www.searchenginejournal.com/ai-mode-queries-are-3x-longer-the-case-for-leading-with-the-answer/585990/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -40,7 +40,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'answer engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Why Reddit\u2019s ChatGPT Citation Drop Isn\u2019t Fully Explained via @sejournal, @MattGSouthern; Microsoft Advertising Rolls Out AI Max Globally via @sejournal, @brookeosmundson; Google Expands Generative UI Beyond AI Mode Into AI Overviews via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'answer engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Spam Update, Generative UI In AIOs, Reddit Drop \u2013 SEO Pulse via @sejournal, @MattGSouthern; AI Mode Queries Are 3X Longer \u2013 Why Your Page Should Lead With The Answer via @sejournal, @gregjarboe; The House Doesn\u2019t Publish Its Tells via @sejournal, @pedrodias. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -57,8 +57,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/google-expands-generative-ui-beyond-ai-mode-into-ai-overviews/586452/",
-        "https://www.searchenginejournal.com/decision-coverage-why-ai-recommends-some-brands-and-not-others/583028/"
+        "https://www.searchenginejournal.com/the-house-doesnt-publish-its-tells/586359/",
+        "https://www.searchenginejournal.com/googles-generated-interfaces-could-compete-with-tool-pages/586589/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -80,7 +80,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'generative engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Why Reddit\u2019s ChatGPT Citation Drop Isn\u2019t Fully Explained via @sejournal, @MattGSouthern; Microsoft Advertising Rolls Out AI Max Globally via @sejournal, @brookeosmundson; Google Expands Generative UI Beyond AI Mode Into AI Overviews via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'generative engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Spam Update, Generative UI In AIOs, Reddit Drop \u2013 SEO Pulse via @sejournal, @MattGSouthern; AI Mode Queries Are 3X Longer \u2013 Why Your Page Should Lead With The Answer via @sejournal, @gregjarboe; The House Doesn\u2019t Publish Its Tells via @sejournal, @pedrodias. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -97,8 +97,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/clicks-are-down-42-linkedin-reach-down-47-but-youre-raging-at-the-wrong-target/585862/",
-        "https://www.searchenginejournal.com/inmotion-hosting-launches-tiered-agency-partner-program-spn/586195/"
+        "https://www.searchenginejournal.com/what-ai-bot-data-from-hundreds-of-sites-reveals-about-ai-search-webinar/586556/",
+        "https://www.searchenginejournal.com/the-keyword-universe-was-always-smaller-than-we-thought/586065/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -120,7 +120,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'how to rank in ai overviews': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Why Reddit\u2019s ChatGPT Citation Drop Isn\u2019t Fully Explained via @sejournal, @MattGSouthern; Microsoft Advertising Rolls Out AI Max Globally via @sejournal, @brookeosmundson; Google Expands Generative UI Beyond AI Mode Into AI Overviews via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'how to rank in ai overviews': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Spam Update, Generative UI In AIOs, Reddit Drop \u2013 SEO Pulse via @sejournal, @MattGSouthern; AI Mode Queries Are 3X Longer \u2013 Why Your Page Should Lead With The Answer via @sejournal, @gregjarboe; The House Doesn\u2019t Publish Its Tells via @sejournal, @pedrodias. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -137,8 +137,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/how-to-track-google-ai-mode-traffic-in-search-console/586194/",
-        "https://www.searchenginejournal.com/google-answers-why-spam-updates-need-to-happen/586382/"
+        "https://www.searchenginejournal.com/microsoft-ads-is-removing-max-cpc-from-new-campaigns/586527/",
+        "https://www.searchenginejournal.com/ask-an-seo-how-do-i-identify-cannibalization-problems-consolidate-without-loss-of-visibility/553881/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -160,7 +160,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'how to get cited by chatgpt': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Why Reddit\u2019s ChatGPT Citation Drop Isn\u2019t Fully Explained via @sejournal, @MattGSouthern; Microsoft Advertising Rolls Out AI Max Globally via @sejournal, @brookeosmundson; Google Expands Generative UI Beyond AI Mode Into AI Overviews via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'how to get cited by chatgpt': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Spam Update, Generative UI In AIOs, Reddit Drop \u2013 SEO Pulse via @sejournal, @MattGSouthern; AI Mode Queries Are 3X Longer \u2013 Why Your Page Should Lead With The Answer via @sejournal, @gregjarboe; The House Doesn\u2019t Publish Its Tells via @sejournal, @pedrodias. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -177,8 +177,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/google-answers-why-search-updates-arent-announced-right-away/586370/",
-        "https://www.searchenginejournal.com/how-google-aios-use-facebook-instagram-tiktok-from-300-million-us-searches/585244/"
+        "https://www.searchenginejournal.com/google-expands-personalization-across-search-discover-news/586528/",
+        "https://www.searchenginejournal.com/the-conversion-setup-errors-that-break-smart-bidding/584671/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -200,7 +200,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'ai search optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Why Reddit\u2019s ChatGPT Citation Drop Isn\u2019t Fully Explained via @sejournal, @MattGSouthern; Microsoft Advertising Rolls Out AI Max Globally via @sejournal, @brookeosmundson; Google Expands Generative UI Beyond AI Mode Into AI Overviews via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'ai search optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Spam Update, Generative UI In AIOs, Reddit Drop \u2013 SEO Pulse via @sejournal, @MattGSouthern; AI Mode Queries Are 3X Longer \u2013 Why Your Page Should Lead With The Answer via @sejournal, @gregjarboe; The House Doesn\u2019t Publish Its Tells via @sejournal, @pedrodias. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -217,8 +217,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/everyone-is-negotiating-with-google-while-meta-reads-the-web-for-free/584465/",
-        "https://www.searchenginejournal.com/google-begins-rolling-out-the-august-2026-spam-update/586301/"
+        "https://www.searchenginejournal.com/prompt-injection-just-proved-something-seo-has-known-for-25-years/586405/",
+        "https://www.searchenginejournal.com/why-reddits-chatgpt-citation-drop-isnt-fully-explained/586479/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -240,7 +240,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'llm seo': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Why Reddit\u2019s ChatGPT Citation Drop Isn\u2019t Fully Explained via @sejournal, @MattGSouthern; Microsoft Advertising Rolls Out AI Max Globally via @sejournal, @brookeosmundson; Google Expands Generative UI Beyond AI Mode Into AI Overviews via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'llm seo': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Spam Update, Generative UI In AIOs, Reddit Drop \u2013 SEO Pulse via @sejournal, @MattGSouthern; AI Mode Queries Are 3X Longer \u2013 Why Your Page Should Lead With The Answer via @sejournal, @gregjarboe; The House Doesn\u2019t Publish Its Tells via @sejournal, @pedrodias. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -257,8 +257,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/why-search-volume-is-screening-out-your-best-content-opportunities/585048/",
-        "https://www.searchenginejournal.com/ai-search-myths-debunked-ahrefs-spa/584393/"
+        "https://www.searchenginejournal.com/microsoft-advertising-rolls-out-ai-max-globally/586459/",
+        "https://www.searchenginejournal.com/google-expands-generative-ui-beyond-ai-mode-into-ai-overviews/586452/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -280,7 +280,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'schema markup for ai search': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Why Reddit\u2019s ChatGPT Citation Drop Isn\u2019t Fully Explained via @sejournal, @MattGSouthern; Microsoft Advertising Rolls Out AI Max Globally via @sejournal, @brookeosmundson; Google Expands Generative UI Beyond AI Mode Into AI Overviews via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'schema markup for ai search': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Spam Update, Generative UI In AIOs, Reddit Drop \u2013 SEO Pulse via @sejournal, @MattGSouthern; AI Mode Queries Are 3X Longer \u2013 Why Your Page Should Lead With The Answer via @sejournal, @gregjarboe; The House Doesn\u2019t Publish Its Tells via @sejournal, @pedrodias. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -297,7 +297,7 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/what-we-can-learn-from-evolving-chatgpt-fan-out-queries/586254/",
+        "https://www.searchenginejournal.com/decision-coverage-why-ai-recommends-some-brands-and-not-others/583028/",
         "https://feedpress.me/link/9375/14757949/cannibalization"
       ],
       "internal_links": [
@@ -320,7 +320,7 @@
         "When should I use noindex versus canonical consolidation?",
         "What Core Web Vitals matter most for SEO?"
       ],
-      "serp_analysis": "SERP snapshot for 'technical seo audit': dominant intent is **informational_technical** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Why Reddit\u2019s ChatGPT Citation Drop Isn\u2019t Fully Explained via @sejournal, @MattGSouthern; Microsoft Advertising Rolls Out AI Max Globally via @sejournal, @brookeosmundson; Google Expands Generative UI Beyond AI Mode Into AI Overviews via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'technical seo audit': dominant intent is **informational_technical** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Spam Update, Generative UI In AIOs, Reddit Drop \u2013 SEO Pulse via @sejournal, @MattGSouthern; AI Mode Queries Are 3X Longer \u2013 Why Your Page Should Lead With The Answer via @sejournal, @gregjarboe; The House Doesn\u2019t Publish Its Tells via @sejournal, @pedrodias. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     }

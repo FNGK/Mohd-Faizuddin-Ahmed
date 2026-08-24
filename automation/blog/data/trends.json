@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-08-20T05:22:47.049259+00:00",
+  "collected_at": "2026-08-24T05:36:00.736708+00:00",
   "feeds": [
     "Google Search Central",
     "Search Engine Journal",
@@ -8,6 +8,179 @@
   ],
   "entry_count": 25,
   "entries": [
+    {
+      "source": "Search Engine Journal",
+      "title": "Spam Update, Generative UI In AIOs, Reddit Drop \u2013 SEO Pulse via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/seo-pulse-spam-update-generative-ui-ai-overviews-reddit-drop/586597/",
+      "published": "Sat, 22 Aug 2026 12:30:28 +0000",
+      "tokens": [
+        "spam",
+        "generative",
+        "aios",
+        "reddit",
+        "drop",
+        "pulse",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "AI Mode Queries Are 3X Longer \u2013 Why Your Page Should Lead With The Answer via @sejournal, @gregjarboe",
+      "url": "https://www.searchenginejournal.com/ai-mode-queries-are-3x-longer-the-case-for-leading-with-the-answer/585990/",
+      "published": "Fri, 21 Aug 2026 19:00:14 +0000",
+      "tokens": [
+        "mode",
+        "queries",
+        "are",
+        "longer",
+        "why",
+        "page",
+        "should",
+        "lead"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "The House Doesn\u2019t Publish Its Tells via @sejournal, @pedrodias",
+      "url": "https://www.searchenginejournal.com/the-house-doesnt-publish-its-tells/586359/",
+      "published": "Fri, 21 Aug 2026 14:30:45 +0000",
+      "tokens": [
+        "house",
+        "doesn",
+        "publish",
+        "its",
+        "tells",
+        "via",
+        "sejournal",
+        "pedrodias"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google\u2019s Generated Interfaces Could Compete With Tool Pages via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/googles-generated-interfaces-could-compete-with-tool-pages/586589/",
+      "published": "Fri, 21 Aug 2026 12:00:32 +0000",
+      "tokens": [
+        "generated",
+        "interfaces",
+        "could",
+        "compete",
+        "tool",
+        "pages",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "What AI Bot Data From Hundreds Of Sites Reveals About AI Search [Webinar] via @sejournal, @lorenbaker",
+      "url": "https://www.searchenginejournal.com/what-ai-bot-data-from-hundreds-of-sites-reveals-about-ai-search-webinar/586556/",
+      "published": "Fri, 21 Aug 2026 07:45:38 +0000",
+      "tokens": [
+        "bot",
+        "data",
+        "hundreds",
+        "sites",
+        "reveals",
+        "webinar",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "The Keyword Universe Was Always Smaller Than We Thought via @sejournal, @DuaneForrester",
+      "url": "https://www.searchenginejournal.com/the-keyword-universe-was-always-smaller-than-we-thought/586065/",
+      "published": "Thu, 20 Aug 2026 19:00:38 +0000",
+      "tokens": [
+        "keyword",
+        "universe",
+        "was",
+        "always",
+        "smaller",
+        "than",
+        "thought",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Microsoft Ads Is Removing Max CPC From New Campaigns via @sejournal, @brookeosmundson",
+      "url": "https://www.searchenginejournal.com/microsoft-ads-is-removing-max-cpc-from-new-campaigns/586527/",
+      "published": "Thu, 20 Aug 2026 18:13:03 +0000",
+      "tokens": [
+        "microsoft",
+        "ads",
+        "removing",
+        "max",
+        "cpc",
+        "new",
+        "campaigns",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "How Do I Identify Cannibalization Problems & Consolidate Without Loss Of Visibility? \u2013 Ask An SEO via @sejournal, @rollerblader",
+      "url": "https://www.searchenginejournal.com/ask-an-seo-how-do-i-identify-cannibalization-problems-consolidate-without-loss-of-visibility/553881/",
+      "published": "Thu, 20 Aug 2026 17:30:58 +0000",
+      "tokens": [
+        "identify",
+        "cannibalization",
+        "problems",
+        "consolidate",
+        "without",
+        "loss",
+        "visibility",
+        "ask"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google Expands Personalization Across Search, Discover & News via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/google-expands-personalization-across-search-discover-news/586528/",
+      "published": "Thu, 20 Aug 2026 16:02:52 +0000",
+      "tokens": [
+        "expands",
+        "personalization",
+        "across",
+        "discover",
+        "via",
+        "sejournal",
+        "mattgsouthern"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "The Conversion Setup Errors That Break Smart Bidding",
+      "url": "https://www.searchenginejournal.com/the-conversion-setup-errors-that-break-smart-bidding/584671/",
+      "published": "Thu, 20 Aug 2026 14:30:03 +0000",
+      "tokens": [
+        "conversion",
+        "setup",
+        "errors",
+        "break",
+        "smart",
+        "bidding"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Prompt Injections Just Proved Something SEO Has Known For 25 Years via @sejournal, @theshelleywalsh",
+      "url": "https://www.searchenginejournal.com/prompt-injection-just-proved-something-seo-has-known-for-25-years/586405/",
+      "published": "Thu, 20 Aug 2026 12:00:39 +0000",
+      "tokens": [
+        "prompt",
+        "injections",
+        "just",
+        "proved",
+        "something",
+        "has",
+        "known",
+        "years"
+      ]
+    },
     {
       "source": "Search Engine Journal",
       "title": "Why Reddit\u2019s ChatGPT Citation Drop Isn\u2019t Fully Explained via @sejournal, @MattGSouthern",
@@ -70,179 +243,6 @@
         "brands",
         "not",
         "others"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Clicks Are Down 42%, LinkedIn Reach Down 47% But You\u2019re Raging At The Wrong Target via @sejournal, @gregjarboe",
-      "url": "https://www.searchenginejournal.com/clicks-are-down-42-linkedin-reach-down-47-but-youre-raging-at-the-wrong-target/585862/",
-      "published": "Wed, 19 Aug 2026 14:30:55 +0000",
-      "tokens": [
-        "clicks",
-        "are",
-        "down",
-        "linkedin",
-        "reach",
-        "down",
-        "but",
-        "raging"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "InMotion Hosting Launches Tiered Agency Partner Program via @sejournal, @inmotionhosting",
-      "url": "https://www.searchenginejournal.com/inmotion-hosting-launches-tiered-agency-partner-program-spn/586195/",
-      "published": "Wed, 19 Aug 2026 14:29:43 +0000",
-      "tokens": [
-        "inmotion",
-        "hosting",
-        "launches",
-        "tiered",
-        "agency",
-        "partner",
-        "program",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "How To Track Google AI Mode Traffic In Search Console via @sejournal, @suganthan",
-      "url": "https://www.searchenginejournal.com/how-to-track-google-ai-mode-traffic-in-search-console/586194/",
-      "published": "Wed, 19 Aug 2026 12:00:51 +0000",
-      "tokens": [
-        "track",
-        "mode",
-        "traffic",
-        "console",
-        "via",
-        "sejournal",
-        "suganthan"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Answers Why Spam Updates Need To Happen via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/google-answers-why-spam-updates-need-to-happen/586382/",
-      "published": "Wed, 19 Aug 2026 10:42:13 +0000",
-      "tokens": [
-        "answers",
-        "why",
-        "spam",
-        "updates",
-        "need",
-        "happen",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Answers Why Search Updates Aren\u2019t Announced Right Away via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/google-answers-why-search-updates-arent-announced-right-away/586370/",
-      "published": "Wed, 19 Aug 2026 10:19:30 +0000",
-      "tokens": [
-        "answers",
-        "why",
-        "updates",
-        "aren",
-        "announced",
-        "right",
-        "away",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "How Google AIOs Use Facebook, Instagram & TikTok From 300 Million US Searches",
-      "url": "https://www.searchenginejournal.com/how-google-aios-use-facebook-instagram-tiktok-from-300-million-us-searches/585244/",
-      "published": "Tue, 18 Aug 2026 19:00:48 +0000",
-      "tokens": [
-        "aios",
-        "use",
-        "facebook",
-        "instagram",
-        "tiktok",
-        "million",
-        "searches"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Everyone Is Negotiating With Google While Meta Reads The Web For Free via @sejournal, @slobodanmanic",
-      "url": "https://www.searchenginejournal.com/everyone-is-negotiating-with-google-while-meta-reads-the-web-for-free/584465/",
-      "published": "Tue, 18 Aug 2026 17:30:31 +0000",
-      "tokens": [
-        "everyone",
-        "negotiating",
-        "while",
-        "meta",
-        "reads",
-        "web",
-        "free",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Begins Rolling Out The August 2026 Spam Update via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/google-begins-rolling-out-the-august-2026-spam-update/586301/",
-      "published": "Tue, 18 Aug 2026 17:10:40 +0000",
-      "tokens": [
-        "begins",
-        "rolling",
-        "out",
-        "august",
-        "spam",
-        "via",
-        "sejournal",
-        "mattgsouthern"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Why Search Volume Is Screening Out Your Best Content Opportunities",
-      "url": "https://www.searchenginejournal.com/why-search-volume-is-screening-out-your-best-content-opportunities/585048/",
-      "published": "Tue, 18 Aug 2026 14:30:48 +0000",
-      "tokens": [
-        "why",
-        "volume",
-        "screening",
-        "out",
-        "best",
-        "content",
-        "opportunities"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "9 AI Search Myths, Debunked by 15 Million Data Points via @sejournal, @ahrefs",
-      "url": "https://www.searchenginejournal.com/ai-search-myths-debunked-ahrefs-spa/584393/",
-      "published": "Tue, 18 Aug 2026 14:26:59 +0000",
-      "tokens": [
-        "myths",
-        "debunked",
-        "million",
-        "data",
-        "points",
-        "via",
-        "sejournal",
-        "ahrefs"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "What We Can Learn From Evolving ChatGPT Fan-Out Queries via @sejournal, @lilyraynyc",
-      "url": "https://www.searchenginejournal.com/what-we-can-learn-from-evolving-chatgpt-fan-out-queries/586254/",
-      "published": "Tue, 18 Aug 2026 13:01:30 +0000",
-      "tokens": [
-        "can",
-        "learn",
-        "evolving",
-        "chatgpt",
-        "fan-out",
-        "queries",
-        "via",
-        "sejournal"
       ]
     },
     {
@@ -377,26 +377,34 @@
   "top_terms": [
     {
       "term": "via",
-      "count": 13
+      "count": 14
     },
     {
       "term": "sejournal",
-      "count": 13
-    },
-    {
-      "term": "why",
-      "count": 5
+      "count": 14
     },
     {
       "term": "mattgsouthern",
+      "count": 5
+    },
+    {
+      "term": "why",
       "count": 3
     },
     {
-      "term": "out",
+      "term": "ads",
       "count": 3
     },
     {
-      "term": "chatgpt",
+      "term": "generative",
+      "count": 2
+    },
+    {
+      "term": "reddit",
+      "count": 2
+    },
+    {
+      "term": "drop",
       "count": 2
     },
     {
@@ -404,39 +412,35 @@
       "count": 2
     },
     {
-      "term": "down",
+      "term": "page",
       "count": 2
     },
     {
-      "term": "answers",
+      "term": "microsoft",
       "count": 2
     },
     {
-      "term": "spam",
+      "term": "max",
       "count": 2
     },
     {
-      "term": "updates",
+      "term": "campaigns",
       "count": 2
     },
     {
-      "term": "martinibuster",
+      "term": "brookeosmundson",
       "count": 2
     },
     {
-      "term": "use",
+      "term": "cannibalization",
       "count": 2
     },
     {
-      "term": "million",
+      "term": "expands",
       "count": 2
     },
     {
-      "term": "best",
-      "count": 2
-    },
-    {
-      "term": "opportunities",
+      "term": "conversion",
       "count": 2
     },
     {
@@ -452,87 +456,83 @@
       "count": 2
     },
     {
-      "term": "ads",
-      "count": 2
-    },
-    {
-      "term": "reddit",
+      "term": "spam",
       "count": 1
     },
     {
-      "term": "citation",
+      "term": "aios",
       "count": 1
     },
     {
-      "term": "drop",
+      "term": "pulse",
       "count": 1
     },
     {
-      "term": "isn",
+      "term": "queries",
       "count": 1
     },
     {
-      "term": "fully",
+      "term": "are",
       "count": 1
     },
     {
-      "term": "explained",
+      "term": "longer",
       "count": 1
     },
     {
-      "term": "microsoft",
+      "term": "should",
       "count": 1
     },
     {
-      "term": "advertising",
+      "term": "lead",
       "count": 1
     },
     {
-      "term": "rolls",
+      "term": "answer",
       "count": 1
     },
     {
-      "term": "max",
+      "term": "gregjarboe",
       "count": 1
     },
     {
-      "term": "globally",
+      "term": "house",
       "count": 1
     },
     {
-      "term": "brookeosmundson",
+      "term": "doesn",
       "count": 1
     },
     {
-      "term": "expands",
+      "term": "publish",
       "count": 1
     },
     {
-      "term": "generative",
+      "term": "its",
       "count": 1
     },
     {
-      "term": "beyond",
+      "term": "tells",
       "count": 1
     },
     {
-      "term": "overviews",
+      "term": "pedrodias",
       "count": 1
     },
     {
-      "term": "decision",
+      "term": "generated",
       "count": 1
     },
     {
-      "term": "coverage",
+      "term": "interfaces",
       "count": 1
     },
     {
-      "term": "recommends",
+      "term": "could",
       "count": 1
     },
     {
-      "term": "some",
+      "term": "compete",
       "count": 1
     }
   ]
