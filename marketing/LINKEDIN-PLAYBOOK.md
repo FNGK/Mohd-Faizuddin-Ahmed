@@ -123,3 +123,14 @@ LinkedIn profile is separately receiving ~20 unrelated "new lead" emails/wk
 from LinkedIn's own Service Marketplace feature (freelance gig requests
 from Indian individuals, not the ICP) — see STRATEGY.md ask; these are
 noise against this playbook's InMail motion, not a channel signal.
+
+**2026-08-24 status:** still 0 teardown InMails logged in `PROSPECTS.md`
+(0 replies) — the Sales Nav/InMail motion has not started. Organic posting
+went silent for ~5 weeks (see STRATEGY.md's new urgent ask) — the only
+LinkedIn activity in that window is 2 off-pipeline posts sent 2026-08-17
+that don't match this playbook's brand voice or content approach (generic
+"Google Ads update" / GTM content, hashtag walls, comment-bait) and were
+not produced by the Social Manager role — flagged to Faiz for
+confirmation, not corrected here. The warm-intent InMail angle below is
+unchanged from 07-20 since there's no fresher on-pipeline performance data
+to update it with; resume the daily cadence once the pipeline restarts.

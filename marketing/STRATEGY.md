@@ -87,8 +87,76 @@ case-study-anchored angles are already staged next in QUEUE.md (Little
 Stars Next.js build, another Button Eyes angle). Holding pillar rotation
 otherwise.
 
+**(2026-08-24 update — resuming after a ~5-week gap in the scheduled
+roles):** no on-pipeline social/blog content published between 2026-07-20
+and today. There is no fresh performance data this week, so the
+case-study/proof-anchored-format finding from 07-20 is still the best
+evidence on hand — while this run was in progress, the Social Manager role
+resumed concurrently (live in this same working tree) and, per that
+guidance, swapped a queued GBP-taps angle for the staged Little Stars
+Next.js case-study angle for 2026-08-25 (see LOG.md / git history
+2026-08-24). Good sign the loop is running again — holding pillar rotation
+and the format-over-pillar finding from last data; worth confirming
+tomorrow's post actually goes out and gets logged.
+
 ## Asks awaiting Faiz (the strategist re-surfaces these weekly)
 
+- [ ] **NEW, URGENT (partially resolving live): the Editor-in-Chief,
+  Social Manager, Prospector, and Growth Strategist scheduled roles went
+  silent for ~5 weeks** (2026-07-20 → 2026-08-24 — LOG.md's last entry
+  before today was 07-20; no blog/GBP/Instagram post shipped in that
+  window). **Correction to an earlier draft of this note:** the blog-draft
+  GitHub Action (`Automate blog draft pipeline updates`) did NOT stop —
+  git history shows it ran every 3-4 days the whole time (2026-07-20,
+  07-23, 07-27, 07-30, 08-03, 08-06, 08-10, 08-13, 08-17, 08-20, 08-24) —
+  it just never produced a draft that cleared the compliance gate (see the
+  next ask). The roles that actually went dark are the ones that run on
+  this Claude-Code-scheduled-task loop, not GitHub Actions. **While this
+  run was in progress, that loop appears to have resumed on its own** — a
+  concurrent Social Manager-style commit landed mid-run
+  (`b37c662`/`f01aabb`, 2026-08-24, branded cards for 2026-08-25) and
+  PROSPECTS.md picked up fresh Gmail reply-checks dated today. Worth
+  Faiz confirming tomorrow's (08-25) posts actually go out and get logged,
+  and checking why the loop paused for 5 weeks in the first place so it
+  doesn't happen silently again.
+- [ ] **NEW: 2 off-brand LinkedIn posts went out 2026-08-17** (via Buffer,
+  outside this pipeline) — "Stop chasing ghost buttons in Google Tag
+  Manager!" and "The Google Ads August 17th Update is Here..." Both read
+  like generic stock marketing-agency content: 12+ hashtags each, heavy
+  emoji (📉🛑👻💻), "Let's discuss in the comments! 👇" comment-bait, and
+  zero connection to SWF's positioning, wedge, or case studies — they'd
+  fail nearly every check in the Elite Audit Protocol (Voice, Positioning,
+  Compounding). Given the identical pattern to the 2026-07-05 Instagram
+  false-alarm (Faiz posting manually, not a compromise — see
+  `swf-instagram-unauthorized-posts-incident` memory), this is most likely
+  Faiz posting by hand while the pipeline was down. Needs his confirmation
+  either way; if manual, worth deciding whether to leave them, edit them
+  toward brand guardrails, or delete — his call, not corrected here.
+- [ ] **Blog draft backlog regressed, and the bot is running, not stalled.**
+  As of 07-20, 7 of the remaining backlog drafts were `review_status:
+  ready`. As of this run, all 12 remaining files in `blog/drafts/` are
+  back to `needs_revision` — despite (or because of) the blog-draft GitHub
+  Action running every 3-4 days throughout the gap (11 "Automate blog
+  draft pipeline updates" commits between 07-20 and 08-24, touching
+  `keyword_plan.json`/`trends.json` and re-scoring every draft each time).
+  Worth an engineering look at whether the compliance-gate fix from 07-10
+  (`automation/blog/*.py`) held, regressed, or was touched by something
+  else during the gap — outside the Growth Strategist's remit but blocking
+  the blog channel entirely.
+- [ ] **GA4 tracking bug still unresolved, one month later.** First flagged
+  2026-07-20: `keyEvents` is 100% the `swf_consent` cookie-banner-click
+  event; the property's real configured conversions (`purchase`,
+  `close_convert_lead`, `qualify_lead`) fired zero times again this week.
+  Every "X sessions" report from this system remains sessions-only data
+  until a genuine contact-form-submit or strategy-call-booked event is
+  marked as the GA4 key event.
+- [ ] **Prospector's 3 unsent drafts are now 5+ weeks stale.** 1824 House
+  Inn + Barn, Locker Soccer Academy, and Steamboat Inn have sat at
+  `drafted` in `PROSPECTS.md` since 2026-07-16 without being sent. The 9
+  sent 2026-07-12 got zero replies after a follow-up — recommend either
+  sending these 3 now (the teardown findings should still be accurate) or
+  discarding them and having the Prospector re-verify before a fresh
+  batch, since site content can change over 5+ weeks.
 - [x] ~~Unauthorized Instagram posts~~ — **resolved/corrected 2026-07-09: Faiz
   confirmed he posted these himself**, not a compromise. Leaving one note
   for awareness, not urgency: the 8 posts (2026-07-05–06, paid-ads/PPC
