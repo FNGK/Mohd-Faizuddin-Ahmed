@@ -94,3 +94,77 @@ Deliver as a short WhatsApp message or 3-min screen-recording → then offer the
 - If replies are cheap but don't convert → the *audit-to-offer* close needs work.
 - If conversations are expensive/thin → tighten the creative or niche city.
 - 1–4 clients from this seed = channel proven → scale spend from client cash.
+
+---
+
+## Market research (Meta Ad Library + 2026 benchmarks) — pre-launch
+**Live competitor intel (Ad Library, India, Aug 2026):**
+- **Agencies selling TO clinics (your direct competitors):** *7Unit Softwares*
+  runs pain-hook ads to doctors — "What If Your Referrals Stopped Tomorrow?",
+  "From Unpredictable Referrals to Predictable OPDs", "Build Your Patient
+  Revenue Engine." Others (*Hyperdigitech* "Get More Leads ₹9,999", *Nexcore*
+  "Google Ads ₹4,000/mo") lead with PRICE. → Your edge = **value-first (free
+  audit), not price-dumping**; borrow their proven pain angle (referral
+  dependence / a competitor taking the patient).
+- **Aesthetic clinics themselves:** ~254 active ads in India. Hooks are
+  OFFER-led ("20% OFF", "Glow Up till 15 Sep", "Double chin from ₹40K",
+  "Glowing skin ₹999"). CTAs split "Book appointment" / "instagram.com" / a
+  rising "Chat with us" (WhatsApp). Many drive to Instagram with **no booking
+  funnel** → that's your audit ammunition ("you pay to send patients to
+  Instagram, then lose them — no WhatsApp funnel, no follow-up").
+
+**2026 benchmarks that change the plan:**
+- **Video/Reels convert 2–3× vs static** (both clinic ads and CTWA). Biggest lever.
+- **CTWA CPL is 40–60% lower** than form/landing campaigns in India; the metric
+  is **CPSC (cost per started conversation)**, not CPC.
+- **72-hour free messaging window** opens when a lead messages — all follow-up
+  is free for 72h. Use it to qualify → push to a call.
+- **Targeting:** start DETAILED; add Advantage+ only after ~50 conversions.
+- **Budget floor:** guides recommend ₹500–1,000/day for Meta to optimise.
+- **Compliance (audit point):** India NMC Ethics Code 2026 restricts before/after
+  imagery for doctors — knowing this = instant credibility with a clinician.
+
+**Refinements to apply before launch:**
+1. **Creative → video.** A 15–30s vertical Reel (Faiz talking, or a screen-record
+   of a live clinic Google/site audit) beats the static card 2–3×. Static can
+   launch; shoot a simple video within days.
+2. **Budget → concentrate for signal.** ₹200/day × 15 is below the optimisation
+   floor. Same ~₹3K total, run **₹400–500/day for 6–8 days** so Meta gets enough
+   daily conversations to learn — or accept ₹200/day as a raw seed (ok for CTWA
+   since Faiz closes manually; just slower learning).
+3. **Targeting → detailed, 2–3 cities** (Mumbai/Delhi/Bangalore) + derma/aesthetic/
+   small-business interests; creative self-qualifies.
+4. **Hook → add the referral/competitor pain** (variant C below).
+5. **Follow-up → exploit the 72h window** with a qualify → audit → call flow.
+
+## Ad copy — research-refined (variant C, pain hook)
+Skin & aesthetic clinics: the clinic down the road is taking the patients who
+searched for *you*. When someone Googles "skin clinic in [city]" — or scrolls
+past your ad — do they book, or bounce to Instagram and forget? I'll audit your
+clinic's Google + ad funnel free and send the 3 leaks costing you consultations.
+Message me your clinic + city.
+- **Headline:** Free audit — the 3 leaks costing your clinic patients
+- **CTA:** Send Message
+
+## Facebook Page content (paste-ready)
+- **Page name:** keep **SEO With Faiz** (don't rename repeatedly — Meta limits it)
+- **Username:** @seowithfaiz  ·  **Category:** Marketing Agency
+- **Intro (≤255):** I help clinics and local businesses get found on Google and
+  turn ad clicks into booked patients — websites, local SEO, and WhatsApp
+  booking funnels that actually convert.
+- **About/Bio:** Founder-led web & growth studio. I fix the things that quietly
+  cost clinics patients — slow or unfindable websites, unoptimised Google
+  Business profiles, ad clicks that leak before booking. Practical, no-jargon,
+  results you can see. Free clinic audit on request — message me.
+- **Website:** https://seowithfaiz.com/ · **WhatsApp:** +91 62813 67104
+- **CTA button:** "Send WhatsApp Message"
+- **First 3 posts (so the Page isn't empty when ads point at it):**
+  1. *Intro* + the branded card: "New here 👋 I help clinics and local businesses
+     get found on Google and turn clicks into booked patients. If your website or
+     Google listing isn't pulling patients, message me for a free audit."
+  2. *Value:* "3 reasons patients pick the clinic *above* you on Google: (1)
+     more/newer reviews, (2) a complete Google Business profile, (3) a fast mobile
+     site with an obvious 'Book' button. Miss these and you pay to be invisible."
+  3. *CTA:* "I'll audit your clinic's online presence free — the 3 quickest fixes
+     to get more consultations. No cost, no pitch. Drop your clinic name + city."
+- Still upload a **logo + cover image** (owner does this) so the Page reads real.
