@@ -4,7 +4,11 @@
 > Small paid test: **₹200/day for 12–15 days** (~₹2.4–3K total). This is a
 > LEARNING budget — it tests the offer + creative and seeds conversations Faiz
 > closes by hand in WhatsApp. Manual, human-launched (never auto-launch).
-> Ad account `act_2089451385293163` (INR, ACTIVE, WhatsApp-capable).
+> **Run on ad account `act_943106958814573` ("SEO With Faiz - Leads")** — the
+> dedicated, funded account (INR). NOT the personal `act_2089451385293163`.
+> Note: the connected Meta MCP login is currently routed only to the personal
+> account, so tool-side verification of the Leads account needs its access
+> shared with the connected login (Meta Business Settings → assign account).
 
 ## The strategy in one line
 Bypass the website (which reads AI/weak) by driving to **WhatsApp**, where Faiz
