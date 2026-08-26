@@ -188,21 +188,28 @@ async function sendGa4Event(env, lead, eventName, params) {
   } catch (err) { console.error('GA4 MP send failed', err); }
 }
 
-async function sendMetaEvent(env, lead, eventName) {
+async function sendMetaEvent(env, lead, eventName, opts) {
   try {
     if (!env.META_PIXEL_ID || !env.META_CAPI_TOKEN || !lead.ad_consent) return;
+    opts = opts || {};
+    const userData = { em: [await sha256Hex(lead.email.trim().toLowerCase())] };
+    if (opts.clientIp) userData.client_ip_address = opts.clientIp;
+    if (opts.userAgent) userData.client_user_agent = opts.userAgent;
+    if (opts.fbp) userData.fbp = opts.fbp;
+    if (opts.fbc) userData.fbc = opts.fbc;
+    const evt = {
+      event_name: eventName,
+      event_time: Math.floor(Date.now() / 1000),
+      action_source: opts.actionSource || 'system_generated',
+      // eventId matches the browser Pixel's eventID so Meta de-duplicates.
+      event_id: opts.eventId || ('swf-' + lead.id + '-' + eventName),
+      user_data: userData,
+    };
+    if (opts.sourceUrl) evt.event_source_url = opts.sourceUrl;
     const res = await fetch('https://graph.facebook.com/v21.0/' + env.META_PIXEL_ID + '/events?access_token=' + env.META_CAPI_TOKEN, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        data: [{
-          event_name: eventName,
-          event_time: Math.floor(Date.now() / 1000),
-          action_source: 'system_generated',
-          event_id: 'swf-' + lead.id + '-' + eventName,
-          user_data: { em: [await sha256Hex(lead.email.trim().toLowerCase())] },
-        }],
-      }),
+      body: JSON.stringify({ data: [evt] }),
     });
     if (!res.ok) console.error('Meta CAPI non-2xx', res.status, await res.text());
   } catch (err) { console.error('Meta CAPI send failed', err); }
@@ -408,16 +415,33 @@ async function handleContact(request, env, ctx) {
     region: body.region.trim(),
     goal: body.goal.trim(),
   };
+  // Meta CAPI context. The client sends event_id (the same value the browser
+  // Pixel uses as its Lead eventID) so Meta de-duplicates the browser + server
+  // events; fbp/fbc/IP/UA raise match quality.
+  const metaLead = {
+    eventId: (typeof body.eventId === 'string' && body.eventId) ? body.eventId.slice(0, 100) : 'swf-lead-' + Date.now(),
+    actionSource: 'website',
+    sourceUrl: typeof body.pageUrl === 'string' ? body.pageUrl.slice(0, 500) : undefined,
+    clientIp: request.headers.get('CF-Connecting-IP') || undefined,
+    userAgent: request.headers.get('User-Agent') || undefined,
+    fbp: readCookie(request, '_fbp') || undefined,
+    fbc: readCookie(request, '_fbc') || undefined,
+  };
 
   try {
     await sendMail(env, submission);
     if (ctx && typeof ctx.waitUntil === 'function') {
       ctx.waitUntil(sendLinkedInConversion(env, submission, request));
-      // CRM capture + generate_lead signal (no-ops until CRM_DB is bound).
+      // CRM capture + generate_lead (GA4) + Lead (Meta CAPI). Each no-ops until
+      // its secret/binding exists; Meta + GA4 are consent-gated on the lead.
       ctx.waitUntil(
         crmInsertLead(env, submission, request)
           .then(function (lead) {
-            if (lead) return sendGa4Event(env, lead, 'generate_lead', { method: 'contact_form' });
+            if (!lead) return;
+            return Promise.all([
+              sendGa4Event(env, lead, 'generate_lead', { method: 'contact_form' }),
+              sendMetaEvent(env, lead, 'Lead', metaLead),
+            ]);
           })
           .catch(function (err) { console.error('CRM lead insert failed', err); })
       );

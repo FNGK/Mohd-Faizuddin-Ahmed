@@ -95,6 +95,14 @@
     if (!form.reportValidity()) return;
 
     const payload = payloadFromForm();
+    // Shared Meta event_id: the server CAPI Lead and the browser Pixel Lead (via
+    // GTM on the thank-you page, reading ?eid=) use the same value so Meta
+    // de-duplicates the two. pageUrl gives CAPI the event_source_url.
+    const eid = (window.crypto && crypto.randomUUID)
+      ? crypto.randomUUID()
+      : 'swf-' + Date.now() + '-' + Math.random().toString(16).slice(2);
+    payload.eventId = eid;
+    payload.pageUrl = window.location.href;
     setBusy(true);
     setStatus('Sending your inquiry…', 'success');
 
@@ -115,7 +123,7 @@
       })
       .then(function (result) {
         if (result.ok && result.data && result.data.success) {
-          window.location.href = thankYouUrl() + '?sent=1';
+          window.location.href = thankYouUrl() + '?sent=1&eid=' + encodeURIComponent(eid);
           return;
         }
         const message =

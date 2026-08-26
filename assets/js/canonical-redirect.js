@@ -35,19 +35,10 @@
 })();
 
 /**
- * Google Analytics 4 (G-LQZ72RK5LM). Installed here so it loads on every page
- * via the single shared head script. Skipped on the GitHub Pages host (that
- * request is redirected to the canonical domain above, where GA4 fires cleanly).
+ * GA4 (G-LQZ72RK5LM) is loaded via the GTM container (GTM-KQ9KNHN2), where it is
+ * consent-gated by the banner (fires only after analytics_storage is granted).
+ * The previous direct gtag() install here fired GA4 synchronously in <head> —
+ * BEFORE the Consent Mode default was set and ignoring consent entirely — so it
+ * tracked visitors who had rejected or not answered the banner, and double-fired
+ * GA4 alongside the GTM tag. Removed to stop the ungated/pre-consent tracking.
  */
-(function () {
-  if (location.hostname === 'fngk.github.io') return;
-  var ID = 'G-LQZ72RK5LM';
-  window.dataLayer = window.dataLayer || [];
-  window.gtag = function () { window.dataLayer.push(arguments); };
-  window.gtag('js', new Date());
-  window.gtag('config', ID, { anonymize_ip: true });
-  var s = document.createElement('script');
-  s.async = true;
-  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID;
-  document.head.appendChild(s);
-})();
