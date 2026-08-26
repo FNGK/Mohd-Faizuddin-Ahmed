@@ -18,6 +18,10 @@
   "d1_databases": [
     { "binding": "CRM_DB", "database_name": "swf-crm", "database_id": "dd0b6773-a2a0-4e48-955b-77715c05fc05" }
   ],
+  // The Meta Pixel ID is public (embedded in the browser Pixel on every page),
+  // so it lives here as a plaintext var — guaranteed present on every deploy.
+  // META_CAPI_TOKEN is a Secret (dashboard / wrangler secret put), NEVER here.
+  "vars": { "META_PIXEL_ID": "1688219305569530" },
   "assets": {
     "directory": ".",
     "binding": "ASSETS",
