@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-08-24T05:36:00.736708+00:00",
+  "collected_at": "2026-08-27T16:01:32.059086+00:00",
   "feeds": [
     "Google Search Central",
     "Search Engine Journal",
@@ -10,220 +10,219 @@
   "entries": [
     {
       "source": "Search Engine Journal",
-      "title": "Spam Update, Generative UI In AIOs, Reddit Drop \u2013 SEO Pulse via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/seo-pulse-spam-update-generative-ui-ai-overviews-reddit-drop/586597/",
-      "published": "Sat, 22 Aug 2026 12:30:28 +0000",
+      "title": "Google Starts Rolling Out Hotel Booking In AI Mode via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/google-starts-rolling-out-hotel-booking-in-ai-mode/587288/",
+      "published": "Thu, 27 Aug 2026 16:00:35 +0000",
       "tokens": [
-        "spam",
-        "generative",
-        "aios",
-        "reddit",
-        "drop",
-        "pulse",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "AI Mode Queries Are 3X Longer \u2013 Why Your Page Should Lead With The Answer via @sejournal, @gregjarboe",
-      "url": "https://www.searchenginejournal.com/ai-mode-queries-are-3x-longer-the-case-for-leading-with-the-answer/585990/",
-      "published": "Fri, 21 Aug 2026 19:00:14 +0000",
-      "tokens": [
-        "mode",
-        "queries",
-        "are",
-        "longer",
-        "why",
-        "page",
-        "should",
-        "lead"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "The House Doesn\u2019t Publish Its Tells via @sejournal, @pedrodias",
-      "url": "https://www.searchenginejournal.com/the-house-doesnt-publish-its-tells/586359/",
-      "published": "Fri, 21 Aug 2026 14:30:45 +0000",
-      "tokens": [
-        "house",
-        "doesn",
-        "publish",
-        "its",
-        "tells",
-        "via",
-        "sejournal",
-        "pedrodias"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google\u2019s Generated Interfaces Could Compete With Tool Pages via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/googles-generated-interfaces-could-compete-with-tool-pages/586589/",
-      "published": "Fri, 21 Aug 2026 12:00:32 +0000",
-      "tokens": [
-        "generated",
-        "interfaces",
-        "could",
-        "compete",
-        "tool",
-        "pages",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "What AI Bot Data From Hundreds Of Sites Reveals About AI Search [Webinar] via @sejournal, @lorenbaker",
-      "url": "https://www.searchenginejournal.com/what-ai-bot-data-from-hundreds-of-sites-reveals-about-ai-search-webinar/586556/",
-      "published": "Fri, 21 Aug 2026 07:45:38 +0000",
-      "tokens": [
-        "bot",
-        "data",
-        "hundreds",
-        "sites",
-        "reveals",
-        "webinar",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "The Keyword Universe Was Always Smaller Than We Thought via @sejournal, @DuaneForrester",
-      "url": "https://www.searchenginejournal.com/the-keyword-universe-was-always-smaller-than-we-thought/586065/",
-      "published": "Thu, 20 Aug 2026 19:00:38 +0000",
-      "tokens": [
-        "keyword",
-        "universe",
-        "was",
-        "always",
-        "smaller",
-        "than",
-        "thought",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Microsoft Ads Is Removing Max CPC From New Campaigns via @sejournal, @brookeosmundson",
-      "url": "https://www.searchenginejournal.com/microsoft-ads-is-removing-max-cpc-from-new-campaigns/586527/",
-      "published": "Thu, 20 Aug 2026 18:13:03 +0000",
-      "tokens": [
-        "microsoft",
-        "ads",
-        "removing",
-        "max",
-        "cpc",
-        "new",
-        "campaigns",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "How Do I Identify Cannibalization Problems & Consolidate Without Loss Of Visibility? \u2013 Ask An SEO via @sejournal, @rollerblader",
-      "url": "https://www.searchenginejournal.com/ask-an-seo-how-do-i-identify-cannibalization-problems-consolidate-without-loss-of-visibility/553881/",
-      "published": "Thu, 20 Aug 2026 17:30:58 +0000",
-      "tokens": [
-        "identify",
-        "cannibalization",
-        "problems",
-        "consolidate",
-        "without",
-        "loss",
-        "visibility",
-        "ask"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Expands Personalization Across Search, Discover & News via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/google-expands-personalization-across-search-discover-news/586528/",
-      "published": "Thu, 20 Aug 2026 16:02:52 +0000",
-      "tokens": [
-        "expands",
-        "personalization",
-        "across",
-        "discover",
-        "via",
-        "sejournal",
-        "mattgsouthern"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "The Conversion Setup Errors That Break Smart Bidding",
-      "url": "https://www.searchenginejournal.com/the-conversion-setup-errors-that-break-smart-bidding/584671/",
-      "published": "Thu, 20 Aug 2026 14:30:03 +0000",
-      "tokens": [
-        "conversion",
-        "setup",
-        "errors",
-        "break",
-        "smart",
-        "bidding"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Prompt Injections Just Proved Something SEO Has Known For 25 Years via @sejournal, @theshelleywalsh",
-      "url": "https://www.searchenginejournal.com/prompt-injection-just-proved-something-seo-has-known-for-25-years/586405/",
-      "published": "Thu, 20 Aug 2026 12:00:39 +0000",
-      "tokens": [
-        "prompt",
-        "injections",
-        "just",
-        "proved",
-        "something",
-        "has",
-        "known",
-        "years"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Why Reddit\u2019s ChatGPT Citation Drop Isn\u2019t Fully Explained via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/why-reddits-chatgpt-citation-drop-isnt-fully-explained/586479/",
-      "published": "Wed, 19 Aug 2026 22:03:26 +0000",
-      "tokens": [
-        "why",
-        "reddit",
-        "chatgpt",
-        "citation",
-        "drop",
-        "isn",
-        "fully",
-        "explained"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Microsoft Advertising Rolls Out AI Max Globally via @sejournal, @brookeosmundson",
-      "url": "https://www.searchenginejournal.com/microsoft-advertising-rolls-out-ai-max-globally/586459/",
-      "published": "Wed, 19 Aug 2026 19:41:53 +0000",
-      "tokens": [
-        "microsoft",
-        "advertising",
-        "rolls",
+        "starts",
+        "rolling",
         "out",
-        "max",
-        "globally",
+        "hotel",
+        "booking",
+        "mode",
         "via",
         "sejournal"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "Google Expands Generative UI Beyond AI Mode Into AI Overviews via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/google-expands-generative-ui-beyond-ai-mode-into-ai-overviews/586452/",
-      "published": "Wed, 19 Aug 2026 19:00:27 +0000",
+      "title": "OpenAI Adds WebMCP Site Tools To ChatGPT\u2019s Browser via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/chatgpt-adds-webmcp-support/587237/",
+      "published": "Thu, 27 Aug 2026 15:18:34 +0000",
       "tokens": [
-        "expands",
-        "generative",
-        "beyond",
+        "openai",
+        "adds",
+        "webmcp",
+        "site",
+        "tools",
+        "chatgpt",
+        "browser",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "How To Become A Strategic Partner & Keep Clients Years Longer",
+      "url": "https://www.searchenginejournal.com/vendor-to-strategic-partner-client-lifetime-value/585254/",
+      "published": "Thu, 27 Aug 2026 14:30:58 +0000",
+      "tokens": [
+        "become",
+        "strategic",
+        "partner",
+        "keep",
+        "clients",
+        "years",
+        "longer"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "We Analyzed 107 Million AI Answers. Here\u2019s Where Each Industry\u2019s Citations Actually Come From via @sejournal, @trendos_com",
+      "url": "https://www.searchenginejournal.com/ai-search-citation-sources-trendos-spa/586289/",
+      "published": "Thu, 27 Aug 2026 13:37:27 +0000",
+      "tokens": [
+        "analyzed",
+        "million",
+        "answers",
+        "here",
+        "each",
+        "industry",
+        "citations",
+        "actually"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "ChatGPT Searches Individual Subreddits By Name via @sejournal, @suganthan",
+      "url": "https://www.searchenginejournal.com/chatgpt-searches-individual-subreddits-by-name/586925/",
+      "published": "Thu, 27 Aug 2026 12:00:30 +0000",
+      "tokens": [
+        "chatgpt",
+        "searches",
+        "individual",
+        "subreddits",
+        "name",
+        "via",
+        "sejournal",
+        "suganthan"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Judge Says Google/Publisher AI Situation \u201cSeems Really Unfair\u201d via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/judge-in-penske-vs-google-says-ai-situation-seems-really-unfair/587216/",
+      "published": "Wed, 26 Aug 2026 22:06:00 +0000",
+      "tokens": [
+        "judge",
+        "says",
+        "publisher",
+        "situation",
+        "seems",
+        "really",
+        "unfair",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "AI Tools Recommend Brands But Cite Other Sites, Data Shows via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/ai-tools-recommend-brands-but-cite-other-sites-data-shows/587160/",
+      "published": "Wed, 26 Aug 2026 21:13:06 +0000",
+      "tokens": [
+        "tools",
+        "recommend",
+        "brands",
+        "but",
+        "cite",
+        "other",
+        "sites",
+        "data"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Why Running YouTube Ads Like Search Will Burn Your Budget",
+      "url": "https://www.searchenginejournal.com/why-running-youtube-ads-like-search-will-burn-your-budget/584794/",
+      "published": "Wed, 26 Aug 2026 19:00:30 +0000",
+      "tokens": [
+        "why",
+        "running",
+        "youtube",
+        "ads",
+        "like",
+        "burn",
+        "budget"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "AI Brand Preference Now Splits By Generation, Claude Leads Gen Z More Than 7-To-1 via @sejournal, @gregjarboe",
+      "url": "https://www.searchenginejournal.com/ai-brand-preference-now-splits-by-generation-claude-leads-gen-z-more-than-7-to-1/586624/",
+      "published": "Wed, 26 Aug 2026 14:30:21 +0000",
+      "tokens": [
+        "brand",
+        "preference",
+        "now",
+        "splits",
+        "generation",
+        "claude",
+        "leads",
+        "gen"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "How To Advertise In Google AI Mode For Ecommerce via @sejournal, @tonyadam",
+      "url": "https://www.searchenginejournal.com/how-to-advertise-in-google-ai-mode-for-ecommerce/582810/",
+      "published": "Wed, 26 Aug 2026 12:00:17 +0000",
+      "tokens": [
+        "advertise",
         "mode",
-        "overviews",
+        "ecommerce",
+        "via",
+        "sejournal",
+        "tonyadam"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Wix Introduces Symphony, An Easy Way For Local Businesses To Use AI Agents via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/wix-introduces-symphony-an-easy-way-for-local-businesses-to-use-ai-agents/587093/",
+      "published": "Wed, 26 Aug 2026 09:17:38 +0000",
+      "tokens": [
+        "wix",
+        "introduces",
+        "symphony",
+        "easy",
+        "way",
+        "local",
+        "businesses",
+        "use"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": ".Org Sites Are 34% Likelier To Generate Ecommerce Revenue Than .Com via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/org-sites-are-34-likelier-to-generate-ecommerce-revenue-than-com/587082/",
+      "published": "Tue, 25 Aug 2026 22:36:35 +0000",
+      "tokens": [
+        "org",
+        "sites",
+        "are",
+        "likelier",
+        "generate",
+        "ecommerce",
+        "revenue",
+        "than"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "ChatGPT Rebuilt Its Search Tool, I Read The New Language It Speaks via @sejournal, @suganthan",
+      "url": "https://www.searchenginejournal.com/chatgpt-rebuilt-its-search-tool-i-read-the-new-language-it-speaks/586710/",
+      "published": "Tue, 25 Aug 2026 19:00:30 +0000",
+      "tokens": [
+        "chatgpt",
+        "rebuilt",
+        "its",
+        "tool",
+        "read",
+        "new",
+        "language",
+        "speaks"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google Brings Developing-Topic Link Carousels To AI Mode via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/google-brings-developing-topic-link-carousels-to-ai-mode/587022/",
+      "published": "Tue, 25 Aug 2026 17:39:07 +0000",
+      "tokens": [
+        "brings",
+        "developing-topic",
+        "link",
+        "carousels",
+        "mode",
         "via",
         "sejournal",
         "mattgsouthern"
@@ -231,18 +230,18 @@
     },
     {
       "source": "Search Engine Journal",
-      "title": "Decision Coverage: Why AI Recommends Some Brands And Not Others via @sejournal, @billhunt",
-      "url": "https://www.searchenginejournal.com/decision-coverage-why-ai-recommends-some-brands-and-not-others/583028/",
-      "published": "Wed, 19 Aug 2026 19:00:10 +0000",
+      "title": "Why International SEO Needs Machine-Recognizable E-E-A-T via @sejournal, @motokohunt",
+      "url": "https://www.searchenginejournal.com/why-international-seo-needs-machine-recognizable-e-e-a-t/583439/",
+      "published": "Tue, 25 Aug 2026 14:30:30 +0000",
       "tokens": [
-        "decision",
-        "coverage",
         "why",
-        "recommends",
-        "some",
-        "brands",
-        "not",
-        "others"
+        "international",
+        "needs",
+        "machine-recognizable",
+        "e-e-a-t",
+        "via",
+        "sejournal",
+        "motokohunt"
       ]
     },
     {
@@ -377,18 +376,26 @@
   "top_terms": [
     {
       "term": "via",
-      "count": 14
+      "count": 13
     },
     {
       "term": "sejournal",
-      "count": 14
+      "count": 13
     },
     {
       "term": "mattgsouthern",
-      "count": 5
+      "count": 4
     },
     {
-      "term": "why",
+      "term": "mode",
+      "count": 3
+    },
+    {
+      "term": "chatgpt",
+      "count": 3
+    },
+    {
+      "term": "martinibuster",
       "count": 3
     },
     {
@@ -396,51 +403,39 @@
       "count": 3
     },
     {
-      "term": "generative",
+      "term": "tools",
       "count": 2
     },
     {
-      "term": "reddit",
+      "term": "com",
       "count": 2
     },
     {
-      "term": "drop",
+      "term": "suganthan",
       "count": 2
     },
     {
-      "term": "mode",
+      "term": "sites",
       "count": 2
     },
     {
-      "term": "page",
+      "term": "why",
       "count": 2
     },
     {
-      "term": "microsoft",
+      "term": "than",
       "count": 2
     },
     {
-      "term": "max",
+      "term": "ecommerce",
       "count": 2
     },
     {
-      "term": "campaigns",
+      "term": "use",
       "count": 2
     },
     {
-      "term": "brookeosmundson",
-      "count": 2
-    },
-    {
-      "term": "cannibalization",
-      "count": 2
-    },
-    {
-      "term": "expands",
-      "count": 2
-    },
-    {
-      "term": "conversion",
+      "term": "link",
       "count": 2
     },
     {
@@ -456,23 +451,67 @@
       "count": 2
     },
     {
-      "term": "spam",
+      "term": "starts",
       "count": 1
     },
     {
-      "term": "aios",
+      "term": "rolling",
       "count": 1
     },
     {
-      "term": "pulse",
+      "term": "out",
       "count": 1
     },
     {
-      "term": "queries",
+      "term": "hotel",
       "count": 1
     },
     {
-      "term": "are",
+      "term": "booking",
+      "count": 1
+    },
+    {
+      "term": "openai",
+      "count": 1
+    },
+    {
+      "term": "adds",
+      "count": 1
+    },
+    {
+      "term": "webmcp",
+      "count": 1
+    },
+    {
+      "term": "site",
+      "count": 1
+    },
+    {
+      "term": "browser",
+      "count": 1
+    },
+    {
+      "term": "become",
+      "count": 1
+    },
+    {
+      "term": "strategic",
+      "count": 1
+    },
+    {
+      "term": "partner",
+      "count": 1
+    },
+    {
+      "term": "keep",
+      "count": 1
+    },
+    {
+      "term": "clients",
+      "count": 1
+    },
+    {
+      "term": "years",
       "count": 1
     },
     {
@@ -480,59 +519,19 @@
       "count": 1
     },
     {
-      "term": "should",
+      "term": "analyzed",
       "count": 1
     },
     {
-      "term": "lead",
+      "term": "million",
       "count": 1
     },
     {
-      "term": "answer",
+      "term": "answers",
       "count": 1
     },
     {
-      "term": "gregjarboe",
-      "count": 1
-    },
-    {
-      "term": "house",
-      "count": 1
-    },
-    {
-      "term": "doesn",
-      "count": 1
-    },
-    {
-      "term": "publish",
-      "count": 1
-    },
-    {
-      "term": "its",
-      "count": 1
-    },
-    {
-      "term": "tells",
-      "count": 1
-    },
-    {
-      "term": "pedrodias",
-      "count": 1
-    },
-    {
-      "term": "generated",
-      "count": 1
-    },
-    {
-      "term": "interfaces",
-      "count": 1
-    },
-    {
-      "term": "could",
-      "count": 1
-    },
-    {
-      "term": "compete",
+      "term": "here",
       "count": 1
     }
   ]
