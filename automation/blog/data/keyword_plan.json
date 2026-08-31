@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T16:01:33.924511+00:00",
+  "generated_at": "2026-08-31T11:20:58.911435+00:00",
   "idea_count": 8,
   "gemini_calls_this_run": 0,
   "gemini_enabled": true,
@@ -17,8 +17,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/google-starts-rolling-out-hotel-booking-in-ai-mode/587288/",
-        "https://www.searchenginejournal.com/chatgpt-adds-webmcp-support/587237/"
+        "https://www.searchenginejournal.com/googles-mueller-shares-their-experience-with-markdown-for-ai-seo/587671/",
+        "https://www.searchenginejournal.com/ucp-releases-spec-update-with-schema-changes/587590/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -40,7 +40,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'answer engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Google Starts Rolling Out Hotel Booking In AI Mode via @sejournal, @MattGSouthern; OpenAI Adds WebMCP Site Tools To ChatGPT\u2019s Browser via @sejournal, @MattGSouthern; How To Become A Strategic Partner & Keep Clients Years Longer. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'answer engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Google\u2019s Mueller Shares Their Experience With Markdown For AI SEO via @sejournal, @martinibuster; UCP Releases Spec Update With Schema Changes via @sejournal, @MattGSouthern; Claude Searches Web Differently From Claude Code, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -57,8 +57,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/vendor-to-strategic-partner-client-lifetime-value/585254/",
-        "https://www.searchenginejournal.com/ai-search-citation-sources-trendos-spa/586289/"
+        "https://www.searchenginejournal.com/claude-code-rarely-searches-web-compared-claude-data/587584/",
+        "https://www.searchenginejournal.com/facebook-groups-are-googles-no-2-forum-source/587545/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -80,7 +80,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'generative engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Google Starts Rolling Out Hotel Booking In AI Mode via @sejournal, @MattGSouthern; OpenAI Adds WebMCP Site Tools To ChatGPT\u2019s Browser via @sejournal, @MattGSouthern; How To Become A Strategic Partner & Keep Clients Years Longer. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'generative engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Google\u2019s Mueller Shares Their Experience With Markdown For AI SEO via @sejournal, @martinibuster; UCP Releases Spec Update With Schema Changes via @sejournal, @MattGSouthern; Claude Searches Web Differently From Claude Code, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -97,8 +97,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/chatgpt-searches-individual-subreddits-by-name/586925/",
-        "https://www.searchenginejournal.com/judge-in-penske-vs-google-says-ai-situation-seems-really-unfair/587216/"
+        "https://www.searchenginejournal.com/anthropic-warns-hackers-are-stealing-claude-sessions-to-hijack-accounts/587566/",
+        "https://www.searchenginejournal.com/rank-math-wordpress-plugin-accused-of-secretly-taking-admin-access/587554/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -120,7 +120,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'how to rank in ai overviews': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Google Starts Rolling Out Hotel Booking In AI Mode via @sejournal, @MattGSouthern; OpenAI Adds WebMCP Site Tools To ChatGPT\u2019s Browser via @sejournal, @MattGSouthern; How To Become A Strategic Partner & Keep Clients Years Longer. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'how to rank in ai overviews': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Google\u2019s Mueller Shares Their Experience With Markdown For AI SEO via @sejournal, @martinibuster; UCP Releases Spec Update With Schema Changes via @sejournal, @MattGSouthern; Claude Searches Web Differently From Claude Code, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -137,8 +137,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/ai-tools-recommend-brands-but-cite-other-sites-data-shows/587160/",
-        "https://www.searchenginejournal.com/why-running-youtube-ads-like-search-will-burn-your-budget/584794/"
+        "https://www.searchenginejournal.com/seo-pulse-judge-questions-google-ai-spam-update-fallout/587325/",
+        "https://www.searchenginejournal.com/add-google-preferred-sources-button-website/586908/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -160,7 +160,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'how to get cited by chatgpt': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Google Starts Rolling Out Hotel Booking In AI Mode via @sejournal, @MattGSouthern; OpenAI Adds WebMCP Site Tools To ChatGPT\u2019s Browser via @sejournal, @MattGSouthern; How To Become A Strategic Partner & Keep Clients Years Longer. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'how to get cited by chatgpt': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Google\u2019s Mueller Shares Their Experience With Markdown For AI SEO via @sejournal, @martinibuster; UCP Releases Spec Update With Schema Changes via @sejournal, @MattGSouthern; Claude Searches Web Differently From Claude Code, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -177,8 +177,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/ai-brand-preference-now-splits-by-generation-claude-leads-gen-z-more-than-7-to-1/586624/",
-        "https://www.searchenginejournal.com/how-to-advertise-in-google-ai-mode-for-ecommerce/582810/"
+        "https://www.searchenginejournal.com/ai-isnt-killing-marketing-accountability-its-exposing-who-never-had-it/586486/",
+        "https://www.searchenginejournal.com/webmcp-connects-ai-agents-actions-inside-websites/587303/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -200,7 +200,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'ai search optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Google Starts Rolling Out Hotel Booking In AI Mode via @sejournal, @MattGSouthern; OpenAI Adds WebMCP Site Tools To ChatGPT\u2019s Browser via @sejournal, @MattGSouthern; How To Become A Strategic Partner & Keep Clients Years Longer. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'ai search optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Google\u2019s Mueller Shares Their Experience With Markdown For AI SEO via @sejournal, @martinibuster; UCP Releases Spec Update With Schema Changes via @sejournal, @MattGSouthern; Claude Searches Web Differently From Claude Code, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -217,8 +217,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/wix-introduces-symphony-an-easy-way-for-local-businesses-to-use-ai-agents/587093/",
-        "https://www.searchenginejournal.com/org-sites-are-34-likelier-to-generate-ecommerce-revenue-than-com/587082/"
+        "https://www.searchenginejournal.com/ai-changing-website-security-seo-teams-should-know/587352/",
+        "https://www.searchenginejournal.com/google-answers-if-updates-come-with-actionable-seo-signals/587432/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -240,7 +240,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'llm seo': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Google Starts Rolling Out Hotel Booking In AI Mode via @sejournal, @MattGSouthern; OpenAI Adds WebMCP Site Tools To ChatGPT\u2019s Browser via @sejournal, @MattGSouthern; How To Become A Strategic Partner & Keep Clients Years Longer. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'llm seo': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Google\u2019s Mueller Shares Their Experience With Markdown For AI SEO via @sejournal, @martinibuster; UCP Releases Spec Update With Schema Changes via @sejournal, @MattGSouthern; Claude Searches Web Differently From Claude Code, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -257,8 +257,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/chatgpt-rebuilt-its-search-tool-i-read-the-new-language-it-speaks/586710/",
-        "https://www.searchenginejournal.com/google-brings-developing-topic-link-carousels-to-ai-mode/587022/"
+        "https://www.searchenginejournal.com/google-updates-site-reputation-abuse-policy-removes-penalties-in-eea/587423/",
+        "https://www.searchenginejournal.com/ai-search-didnt-remove-cognitive-load-it-moved-it/586700/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -280,7 +280,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'schema markup for ai search': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Google Starts Rolling Out Hotel Booking In AI Mode via @sejournal, @MattGSouthern; OpenAI Adds WebMCP Site Tools To ChatGPT\u2019s Browser via @sejournal, @MattGSouthern; How To Become A Strategic Partner & Keep Clients Years Longer. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'schema markup for ai search': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Google\u2019s Mueller Shares Their Experience With Markdown For AI SEO via @sejournal, @martinibuster; UCP Releases Spec Update With Schema Changes via @sejournal, @MattGSouthern; Claude Searches Web Differently From Claude Code, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -297,7 +297,7 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/why-international-seo-needs-machine-recognizable-e-e-a-t/583439/",
+        "https://www.searchenginejournal.com/google-starts-rolling-out-hotel-booking-in-ai-mode/587288/",
         "https://feedpress.me/link/9375/14757949/cannibalization"
       ],
       "internal_links": [
@@ -320,7 +320,7 @@
         "When should I use noindex versus canonical consolidation?",
         "What Core Web Vitals matter most for SEO?"
       ],
-      "serp_analysis": "SERP snapshot for 'technical seo audit': dominant intent is **informational_technical** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Google Starts Rolling Out Hotel Booking In AI Mode via @sejournal, @MattGSouthern; OpenAI Adds WebMCP Site Tools To ChatGPT\u2019s Browser via @sejournal, @MattGSouthern; How To Become A Strategic Partner & Keep Clients Years Longer. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'technical seo audit': dominant intent is **informational_technical** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Google\u2019s Mueller Shares Their Experience With Markdown For AI SEO via @sejournal, @martinibuster; UCP Releases Spec Update With Schema Changes via @sejournal, @MattGSouthern; Claude Searches Web Differently From Claude Code, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     }
