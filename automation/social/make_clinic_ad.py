@@ -91,11 +91,12 @@ def render(out):
     margin = 72
 
     # ── scarcity eyebrow (real: Faiz is solo, capacity is genuinely limited) ──
-    eb_f = font("HankenGrotesk.ttf", 27, [800])
-    eb = "FREE COMPETITOR TEARDOWN  ·  ONLY 3 THIS WEEK"
-    ebw = d.textlength(eb, font=eb_f)
-    d.rounded_rectangle([margin, margin, margin + ebw + 44, margin + 50], 25, fill=TEAL)
-    d.text((margin + 22, margin + 11), eb, font=eb_f, fill=(4, 35, 31))
+    eb_f = font("HankenGrotesk.ttf", 29, [800])
+    eb1 = "FREE COMPETITOR TEARDOWN"
+    d.text((margin, margin + 2), eb1, font=eb_f, fill=TEAL)
+    w1 = d.textlength(eb1, font=eb_f)
+    eb2_f = font("HankenGrotesk.ttf", 27, [600])
+    d.text((margin + w1 + 12, margin + 5), "(only 3 spots this week)", font=eb2_f, fill=MUTED)
 
     # ── headline ──
     hy = margin + 86
@@ -146,14 +147,17 @@ def render(out):
         if i < 2:
             d.line([cx0 + pad, ry - 6, cx1 - pad, ry - 6], fill=(228, 232, 230), width=2)
 
-    d.line([cx0 + pad, ry - 2, cx1 - pad, ry - 2], fill=(228, 232, 230), width=2)
-    yy = ry + 8
-    pcx, pcy = cx0 + pad + 22, yy + 26
+    # red-tinted alert box for the "your clinic" row (adopted from the redesign
+    # — the strongest emphasis idea it had, now rebuilt on-brand).
+    bx0, by0, bx1, by1 = cx0 + pad - 8, ry + 4, cx1 - pad + 8, ry + 100
+    d.rounded_rectangle([bx0, by0, bx1, by1], 16, fill=(252, 227, 225), outline=RED, width=2)
+    yy = by0 + 12
+    pcx, pcy = bx0 + 30, yy + 26
     d.ellipse([pcx - 20, pcy - 20, pcx + 20, pcy + 20], fill=RED)
     d.line([pcx - 8, pcy - 8, pcx + 8, pcy + 8], fill=(255, 255, 255), width=5)
     d.line([pcx - 8, pcy + 8, pcx + 8, pcy - 8], fill=(255, 255, 255), width=5)
-    d.text((cx0 + pad + 58, yy + 1), "Your clinic — not in the top results", font=font("HankenGrotesk.ttf", 32, [800]), fill=RED)
-    d.text((cx0 + pad + 58, yy + 41), "They book a competitor before they ever find you.", font=rate_f, fill=CARD_MUTED)
+    d.text((pcx + 38, yy + 1), "Your clinic — not in the top results.", font=font("HankenGrotesk.ttf", 32, [800]), fill=(181, 45, 40))
+    d.text((pcx + 38, yy + 41), "They book a competitor before they ever find you.", font=rate_f, fill=(150, 78, 74))
 
     # ── hard CTA (on-image directive) ──
     cta_y = cy1 + 44
