@@ -168,3 +168,56 @@ Message me your clinic + city.
   3. *CTA:* "I'll audit your clinic's online presence free — the 3 quickest fixes
      to get more consultations. No cost, no pitch. Drop your clinic name + city."
 - Still upload a **logo + cover image** (owner does this) so the Page reads real.
+
+## Creatives (final)
+- **Feed 4:5:** `assets/social/wa-derma-clinic-feed.png` (mock local pack + hard CTA + scarcity + real logo)
+- **Reels/Stories 9:16:** `assets/social/wa-derma-clinic-reel.png` (same, safe-zone laid out)
+- Generator: `automation/social/make_clinic_ad.py --format feed|reel`
+- Earlier simpler text cards (v1–v3) = secondary A/B variants / organic posts.
+
+---
+
+## WhatsApp follow-up sequence (the 72-hour close flow)
+The ad only *starts* the conversation. This is where taps become clients. When a
+lead messages via CTWA, a **72-hour window** opens where every message is free —
+do the whole close inside it.
+
+**Msg 0 — Auto-greeting** (WhatsApp Business → Settings → Greeting message; fires instantly):
+> Thanks for reaching out 👋 I'll personally run a free visibility teardown of
+> your clinic. Two quick things so I can start:
+> 1️⃣ Your clinic name + city
+> 2️⃣ Your website and/or Instagram link
+> I'll reply within a few hours with the top 3 things costing you patient bookings.
+
+**Msg 1 — On details received** (within a few hours):
+> Got it — looking at [Clinic] in [city] now. Quick one meanwhile: roughly how
+> are most new patients finding you right now — Google, Instagram, or referrals?
+
+**Msg 2 — The teardown (the value drop; a 2-min screen-recording converts even better):**
+> [Name], here's your teardown for [Clinic] 👇
+> 🔴 [Finding 1 — e.g. "Your Google profile is missing the 'Dermatologist'
+>     category, so you don't show for 'skin doctor near me' — a clinic 2 km away does."]
+> 🔴 [Finding 2 — e.g. "You have 38 reviews; the clinic ranking #1 has 412. That
+>     gap alone decides who patients trust first."]
+> 🔴 [Finding 3 — e.g. "Your site loads in ~7s on mobile and has no clear 'Book'
+>     button — most taps leave before booking."]
+> All 3 are fixable. Want me to show you exactly how I'd fix them on a quick 15-min call?
+
+**Msg 3 — Move to the call (soft close):**
+> I keep it simple: a focused 30-day sprint — the 3 fixes above + tracking,
+> defined deliverables, month to month, no lock-in. 15 minutes to walk you
+> through it? I've got [day] or [day] afternoon free.
+
+**No-reply nudges (all FREE, inside 72h):**
+- ~4h, no details yet: "No rush — send your clinic name + city whenever and I'll get your teardown over 👍"
+- Next day, teardown sent, no reply: "Did the teardown make sense? Happy to jump on a quick call and show you the fastest win (usually #1)."
+- Day 3 (last free nudge): "Last nudge 🙂 If getting more patients from Google is on your list this quarter, just say the word — 15 minutes and I'll map it out."
+
+**After 72h:** the free window closes — you can't message first without an
+approved WhatsApp template. So finish the close *inside* 72h; otherwise wait for
+them to re-message. (Log every lead in the CRM the moment they message.)
+
+**Objection quick-replies:**
+- "How much?" → "Depends what your clinic actually needs — that's the 15-min call. No obligation, and the teardown's yours either way."
+- "We already have someone." → "Perfect — treat this as a free second opinion. If they're already on these 3, brilliant. If not, you'll know what to ask them."
+- "Not right now." → "Totally fair — the fixes hold whenever you're ready. Mind if I check back in a month?"
