@@ -542,19 +542,22 @@ background: var(--surface-muted);
 .cta-band {
 position: relative;
 overflow: hidden;
-background: linear-gradient(135deg, #08111f 0%, #0f4f4a 42%, #123f63 100%);
-color: #dbeafe;
+background:
+radial-gradient(ellipse 82% 62% at 12% -12%, rgba(47, 208, 194, 0.13), transparent 60%),
+#0a1220;
+color: #e8f0f2;
+border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 .cta-band > .container {
 position: relative;
 z-index: 1;
 }
 .cta-band p {
-color: #cbd5e1;
+color: rgba(232, 240, 242, 0.72);
 }
 .cta-band .btn-secondary {
 background: rgba(255, 255, 255, 0.08);
-color: #e2e8f0;
+color: #e8f0f2;
 border-color: rgba(255, 255, 255, 0.2);
 }
 .contact-form {
@@ -769,20 +772,54 @@ max-width: none;
 max-width: 18ch;
 }
 .cta-band .cta-kicker {
-color: #93c5fd;
+color: #2fd4c6;
 }
 .cta-band .cta-heading {
-color: #f8fafc;
+color: #f5f1e9;
 }
 .cta-band .cta-card {
-background: rgba(255, 255, 255, 0.07);
-border-color: rgba(255, 255, 255, 0.2);
-box-shadow: none;
+position: relative;
+background: rgba(255, 255, 255, 0.04);
+border: 1px solid rgba(255, 255, 255, 0.14);
+border-radius: var(--radius-lg);
+box-shadow: 0 24px 56px rgba(0, 0, 0, 0.35);
+padding: 1.4rem 1.45rem;
 }
-.cta-band .cta-card h3,
-.cta-band .cta-card p,
+.cta-band .cta-card h3 {
+font-family: var(--font-mono);
+font-size: 0.66rem;
+font-weight: 500;
+letter-spacing: 0.16em;
+text-transform: uppercase;
+color: #2fd4c6;
+margin-bottom: 0.35rem;
+}
+.cta-band .cta-card p {
+display: flex;
+align-items: baseline;
+justify-content: space-between;
+gap: 1rem;
+margin: 0;
+padding: 0.72rem 0;
+border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+color: #e8f0f2;
+text-align: right;
+}
+.cta-band .cta-card p:last-child {
+border-bottom: 0;
+padding-bottom: 0;
+}
+.cta-band .cta-card strong {
+font-family: var(--font-mono);
+font-size: 0.62rem;
+font-weight: 500;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: rgba(232, 240, 242, 0.55);
+white-space: nowrap;
+}
 .cta-band .cta-card a {
-color: #dbeafe;
+color: #7fe6da;
 }
 body.page-inner .hero .signal-board {
 display: none;
