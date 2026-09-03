@@ -20,6 +20,7 @@
   --container: 1180px;
   --font-display: "Fraunces", Georgia, "Times New Roman", serif;
   --font-body: "Hanken Grotesk", "Segoe UI", Roboto, Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   --mesh-a: radial-gradient(ellipse 120% 80% at 0% -20%, rgba(13, 127, 118, 0.22), transparent 58%);
   --mesh-b: radial-gradient(ellipse 90% 60% at 100% 0%, rgba(197, 106, 29, 0.16), transparent 54%);
   --mesh-c: radial-gradient(ellipse 70% 50% at 50% 110%, rgba(12, 20, 36, 0.06), transparent 58%);
@@ -363,22 +364,23 @@ main {
 .kicker {
   display: inline-flex;
   align-items: center;
-  gap: 0.45rem;
+  gap: 0.55rem;
   margin-bottom: 0.85rem;
-  font-family: var(--font-body);
-  font-size: 0.72rem;
-  font-weight: 800;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: var(--primary-dark);
+  letter-spacing: 0.12em;
+  color: var(--primary);
 }
 
 .kicker::before {
   content: "";
-  width: 1.5rem;
-  height: 2px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, var(--primary), var(--accent));
+  width: 6px;
+  height: 6px;
+  border-radius: 1px;
+  transform: rotate(45deg);
+  background: var(--primary);
 }
 
 h1,

@@ -10,8 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="image" href="./assets/logos/seo-with-faiz-logo-dark-mode-technical-precision-revenue-growth.webp" type="image/webp">
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap"></noscript>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"></noscript>
 
   <title>Web Design, Development, SEO &amp; Marketing | SEO With Faiz</title>
   <meta name="description" content="Full-service web studio: custom, 3D, Shopify Plus, WordPress &amp; Magento builds — engineered with technical SEO and performance marketing for enterprise and growth-stage brands.">
@@ -179,73 +179,58 @@
   </header>
 
   <main id="main">
-    <section class="section hero hero--flagship hero-3d" aria-label="Introduction">
-      <canvas class="hero-3d__canvas" data-hero-canvas aria-hidden="true"></canvas>
-      <span class="hero-3d__glow hero-3d__glow--a" aria-hidden="true"></span>
-      <span class="hero-3d__glow hero-3d__glow--b" aria-hidden="true"></span>
-      <div class="container hero-grid" data-hero-scene>
-        <div class="hero-copy">
-          <span class="kicker">Design · Development · SEO · Performance</span>
-          <h1>We design, build, and grow websites that <span class="text-grad">win the customer</span>.</h1>
+    <section class="section hero-lab" aria-label="Introduction">
+      <div class="container hero-lab__grid">
+        <div class="hero-lab__copy">
+          <span class="mono-tag"><i aria-hidden="true"></i>Technical precision · Revenue growth</span>
+          <h1>We design, build, and grow websites that <span class="accent-word">win the customer</span>.</h1>
           <p class="lede">I'm Mohd Faizuddin Ahmed — Faiz. I design and build fast, distinctive websites on custom code, Shopify Plus, WordPress, and Magento, then grow them with the technical SEO and performance marketing that turn visitors into customers. You work with the person doing the work, not an account manager.</p>
           <div class="answer-box" aria-label="Quick answer">
             <p><strong>Quick answer:</strong> SEO With Faiz is a senior, founder-led studio that designs and develops websites — custom, 3D, Shopify Plus, WordPress, and Magento — and grows them with technical SEO and performance marketing, for enterprise and growth-stage brands.</p>
           </div>
-          <div class="badge-row">
-            <span class="badge">Web Design &amp; Dev</span>
-            <span class="badge">3D &amp; Immersive</span>
-            <span class="badge">Technical SEO</span>
-            <span class="badge">Performance Marketing</span>
-          </div>
-          <div class="hero-actions">
+          <div class="hero-lab__actions">
             <a class="btn btn-primary" data-dynamic-cta href="./contact/index.html">Book a strategy call</a>
-            <a class="btn btn-secondary" href="./case-studies/index.html">See our work</a>
-            <a class="btn btn-secondary" href="./services/index.html">Explore services</a>
+            <a class="btn btn-ghost" href="./case-studies/index.html">See the work</a>
           </div>
+          <ul class="hero-lab__caps" aria-label="Core capabilities">
+            <li>Web Design &amp; Dev</li>
+            <li>3D / WebGL</li>
+            <li>Technical SEO</li>
+            <li>Performance Marketing</li>
+          </ul>
         </div>
-        <div class="hero-viz" data-hero-viz role="img" aria-label="Interactive 3D globe representing global delivery">
-          <canvas class="hero-viz__canvas" data-hero-globe aria-hidden="true"></canvas>
-          <span class="hero-viz__hint" aria-hidden="true">Drag to explore</span>
-          <div class="hero-viz__fallback">
-        <aside class="hero-console" data-hero-tilt aria-label="Studio snapshot">
-          <div class="hero-console__inner">
-            <div class="hero-console__head">
-              <span class="kicker">Studio snapshot</span>
-              <span class="hero-console__pulse"><i aria-hidden="true"></i>Live</span>
+        <div class="hero-lab__viz">
+          <div class="instrument" data-hero-viz role="img" aria-label="Interactive 3D globe representing worldwide delivery">
+            <div class="instrument__frame">
+              <span class="instrument__corner instrument__corner--tl" aria-hidden="true"></span>
+              <span class="instrument__corner instrument__corner--tr" aria-hidden="true"></span>
+              <span class="instrument__corner instrument__corner--bl" aria-hidden="true"></span>
+              <span class="instrument__corner instrument__corner--br" aria-hidden="true"></span>
+              <canvas class="instrument__canvas" data-hero-globe aria-hidden="true"></canvas>
+              <div class="instrument__wire" aria-hidden="true">
+                <svg viewBox="0 0 240 240" role="img" aria-label="Wireframe globe">
+                  <circle class="iw-rim" cx="120" cy="120" r="96" />
+                  <ellipse class="iw-line" cx="120" cy="120" rx="66" ry="96" />
+                  <ellipse class="iw-line" cx="120" cy="120" rx="34" ry="96" />
+                  <line class="iw-line" x1="120" y1="24" x2="120" y2="216" />
+                  <ellipse class="iw-line" cx="120" cy="120" rx="96" ry="66" />
+                  <ellipse class="iw-line" cx="120" cy="120" rx="96" ry="34" />
+                  <line class="iw-line" x1="24" y1="120" x2="216" y2="120" />
+                  <circle class="iw-dot" cx="150" cy="86" r="3.2" />
+                  <circle class="iw-dot" cx="92" cy="150" r="3.2" />
+                  <circle class="iw-dot" cx="168" cy="142" r="2.6" />
+                </svg>
+              </div>
+              <span class="instrument__coord instrument__coord--a" aria-hidden="true">17.385&deg; N</span>
+              <span class="instrument__coord instrument__coord--b" aria-hidden="true">78.487&deg; E</span>
+              <span class="instrument__hint" aria-hidden="true">Drag to explore</span>
             </div>
-            <div class="hero-console__viz">
-              <svg viewBox="0 0 320 150" role="img" aria-label="Capability graph connecting design, development, SEO and marketing to a central studio hub">
-                <g>
-                  <line class="eg-link" x1="160" y1="78" x2="40" y2="40" />
-                  <line class="eg-flow" x1="160" y1="78" x2="150" y2="24" />
-                  <line class="eg-link" x1="160" y1="78" x2="280" y2="46" />
-                  <line class="eg-flow" x1="160" y1="78" x2="300" y2="112" />
-                  <line class="eg-link" x1="160" y1="78" x2="170" y2="130" />
-                  <line class="eg-link" x1="160" y1="78" x2="36" y2="112" />
-                </g>
-                <g>
-                  <circle class="eg-node eg-node--live" cx="40" cy="40" r="4" />
-                  <circle class="eg-node" cx="150" cy="24" r="4" />
-                  <circle class="eg-node eg-node--live" cx="280" cy="46" r="4" />
-                  <circle class="eg-node" cx="300" cy="112" r="4" />
-                  <circle class="eg-node eg-node--live" cx="170" cy="130" r="4" />
-                  <circle class="eg-node" cx="36" cy="112" r="4" />
-                  <circle class="eg-node--hub" cx="160" cy="78" r="9" />
-                  <circle cx="160" cy="78" r="3.4" fill="#03141f" />
-                </g>
-              </svg>
-            </div>
-            <ul class="hero-console__list">
-              <li><span>Delivery model</span><strong>End-to-end, senior-led</strong></li>
-              <li><span>Performance baseline</span><strong>Lighthouse 95+</strong></li>
-              <li><span>Markets served</span><strong>US · CA · AU · EU</strong></li>
-              <li><span>Response window</span><strong>24 business hours</strong></li>
-            </ul>
-          </div>
-          <span class="hero-console__chip hero-console__chip--1" aria-hidden="true">3D / WebGL</span>
-          <span class="hero-console__chip hero-console__chip--2" aria-hidden="true">Shopify Plus</span>
-          <span class="hero-console__chip hero-console__chip--3" aria-hidden="true">Next.js</span>
-        </aside>
+            <dl class="instrument__readout">
+              <div><dt>Markets</dt><dd>US · CA · AU · EU</dd></div>
+              <div><dt>Lighthouse</dt><dd>95<span>+</span></dd></div>
+              <div><dt>Response</dt><dd>&lt; 24h</dd></div>
+              <div><dt>Delivery</dt><dd>Senior-led</dd></div>
+            </dl>
           </div>
         </div>
       </div>
@@ -297,7 +282,7 @@
             <div class="bento__icon" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 8l-4 4 4 4" /></svg>
             </div>
-            <span class="bento__eyebrow">Pillar 01</span>
+            <span class="bento__eyebrow">Design &amp; Build</span>
             <h3>Web Design &amp; Development</h3>
             <p>Flagship websites and stores that look world-class and load like a benchmark — from bespoke custom builds and immersive 3D to the platforms your team already runs.</p>
             <ul class="bento__links" aria-label="Web capabilities">
@@ -314,7 +299,7 @@
             <div class="bento__icon" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
             </div>
-            <span class="bento__eyebrow">Pillar 02</span>
+            <span class="bento__eyebrow">Search &amp; AI</span>
             <h3>Search &amp; AI Visibility (SEO)</h3>
             <p>Technical, international, and content SEO — plus answer-engine readiness — so you win the click on Google and in AI overviews.</p>
             <span class="bento__go">Explore SEO →</span>
@@ -323,7 +308,7 @@
             <div class="bento__icon" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
             </div>
-            <span class="bento__eyebrow">Pillar 03</span>
+            <span class="bento__eyebrow">Growth</span>
             <h3>Digital &amp; Performance Marketing</h3>
             <p>Paid media, conversion-rate optimization, and clean analytics that turn traffic into qualified pipeline — reported against revenue, not impressions.</p>
             <span class="bento__go">Explore marketing →</span>
