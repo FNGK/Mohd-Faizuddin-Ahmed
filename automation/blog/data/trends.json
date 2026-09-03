@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-08-31T11:20:57.363612+00:00",
+  "collected_at": "2026-09-03T09:20:17.138991+00:00",
   "feeds": [
     "Google Search Central",
     "Search Engine Journal",
@@ -10,191 +10,186 @@
   "entries": [
     {
       "source": "Search Engine Journal",
-      "title": "Google\u2019s Mueller Shares Their Experience With Markdown For AI SEO via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/googles-mueller-shares-their-experience-with-markdown-for-ai-seo/587671/",
-      "published": "Mon, 31 Aug 2026 10:44:54 +0000",
+      "title": "Google AI Mode Prices Differ From Product Carousel For Same Items via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/google-ai-mode-prices-differ-from-product-carousel-for-same-items/588227/",
+      "published": "Thu, 03 Sep 2026 08:00:14 +0000",
       "tokens": [
-        "mueller",
-        "shares",
-        "their",
-        "experience",
-        "markdown",
-        "via",
-        "sejournal",
-        "martinibuster"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "UCP Releases Spec Update With Schema Changes via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/ucp-releases-spec-update-with-schema-changes/587590/",
-      "published": "Mon, 31 Aug 2026 10:00:27 +0000",
-      "tokens": [
-        "ucp",
-        "releases",
-        "spec",
-        "schema",
-        "changes",
-        "via",
-        "sejournal",
-        "mattgsouthern"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Claude Searches Web Differently From Claude Code, Data Shows via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/claude-code-rarely-searches-web-compared-claude-data/587584/",
-      "published": "Mon, 31 Aug 2026 08:30:36 +0000",
-      "tokens": [
-        "claude",
-        "searches",
-        "web",
-        "differently",
-        "claude",
-        "code",
-        "data",
-        "shows"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Facebook Groups Are Google\u2019s No. 2 Forum Source via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/facebook-groups-are-googles-no-2-forum-source/587545/",
-      "published": "Mon, 31 Aug 2026 07:00:24 +0000",
-      "tokens": [
-        "facebook",
-        "groups",
-        "are",
-        "forum",
-        "source",
-        "via",
-        "sejournal",
-        "mattgsouthern"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Anthropic Warns Hackers Are Stealing Claude Sessions To Hijack Accounts via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/anthropic-warns-hackers-are-stealing-claude-sessions-to-hijack-accounts/587566/",
-      "published": "Sun, 30 Aug 2026 22:45:39 +0000",
-      "tokens": [
-        "anthropic",
-        "warns",
-        "hackers",
-        "are",
-        "stealing",
-        "claude",
-        "sessions",
-        "hijack"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Rank Math WordPress Plugin Accused Of Secretly Taking Admin Access via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/rank-math-wordpress-plugin-accused-of-secretly-taking-admin-access/587554/",
-      "published": "Sun, 30 Aug 2026 11:11:17 +0000",
-      "tokens": [
-        "rank",
-        "math",
-        "wordpress",
-        "plugin",
-        "accused",
-        "secretly",
-        "taking",
-        "admin"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Judge Questions Google AI, Spam Update Fallout \u2013 SEO Pulse via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/seo-pulse-judge-questions-google-ai-spam-update-fallout/587325/",
-      "published": "Sat, 29 Aug 2026 12:30:49 +0000",
-      "tokens": [
-        "judge",
-        "questions",
-        "spam",
-        "fallout",
-        "pulse",
-        "via",
-        "sejournal",
-        "mattgsouthern"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "How To Add Google\u2019s Preferred Sources Button To Your Website via @sejournal, @vahandev",
-      "url": "https://www.searchenginejournal.com/add-google-preferred-sources-button-website/586908/",
-      "published": "Fri, 28 Aug 2026 19:00:53 +0000",
-      "tokens": [
-        "add",
-        "preferred",
-        "sources",
-        "button",
-        "website",
-        "via",
-        "sejournal",
-        "vahandev"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "AI Isn\u2019t Killing Marketing Accountability, It\u2019s Exposing Who Never Had It via @sejournal, @gregjarboe",
-      "url": "https://www.searchenginejournal.com/ai-isnt-killing-marketing-accountability-its-exposing-who-never-had-it/586486/",
-      "published": "Fri, 28 Aug 2026 14:30:07 +0000",
-      "tokens": [
-        "isn",
-        "killing",
-        "marketing",
-        "accountability",
-        "exposing",
-        "who",
-        "never",
-        "had"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "WebMCP Connects AI Agents To Actions Inside Websites via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/webmcp-connects-ai-agents-actions-inside-websites/587303/",
-      "published": "Fri, 28 Aug 2026 12:00:10 +0000",
-      "tokens": [
-        "webmcp",
-        "connects",
-        "agents",
-        "actions",
-        "inside",
-        "websites",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "AI Is Changing Website Security. Here\u2019s What SEO Teams Should Know via @sejournal, @vahandev",
-      "url": "https://www.searchenginejournal.com/ai-changing-website-security-seo-teams-should-know/587352/",
-      "published": "Fri, 28 Aug 2026 11:56:38 +0000",
-      "tokens": [
-        "changing",
-        "website",
-        "security",
-        "here",
-        "teams",
-        "should",
-        "know",
+        "mode",
+        "prices",
+        "differ",
+        "product",
+        "carousel",
+        "same",
+        "items",
         "via"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "Google Answers If Updates Come With Actionable SEO Signals via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/google-answers-if-updates-come-with-actionable-seo-signals/587432/",
-      "published": "Fri, 28 Aug 2026 11:45:08 +0000",
+      "title": "Google Responds To Sitemap SEO Technique That Forces Daily Crawling via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/google-responds-to-sitemap-seo-technique-that-forces-daily-crawling/588222/",
+      "published": "Wed, 02 Sep 2026 22:09:39 +0000",
       "tokens": [
-        "answers",
-        "updates",
-        "come",
-        "actionable",
+        "responds",
+        "sitemap",
+        "technique",
+        "forces",
+        "daily",
+        "crawling",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google Adds Gemini 3.8 Flash To AI Mode via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/google-gemini-3-8-flash-ai-mode/588194/",
+      "published": "Wed, 02 Sep 2026 19:41:19 +0000",
+      "tokens": [
+        "adds",
+        "gemini",
+        "flash",
+        "mode",
+        "via",
+        "sejournal",
+        "mattgsouthern"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "The Next AI Protocol Won\u2019t Save Your SEO Strategy via @sejournal, @billhunt",
+      "url": "https://www.searchenginejournal.com/the-next-ai-protocol-wont-save-your-seo-strategy/585714/",
+      "published": "Wed, 02 Sep 2026 19:00:07 +0000",
+      "tokens": [
+        "next",
+        "protocol",
+        "won",
+        "save",
+        "strategy",
+        "via",
+        "sejournal",
+        "billhunt"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Entities Are The Foundation Of Modern SEO",
+      "url": "https://www.searchenginejournal.com/entities-are-the-foundation-of-modern-seo/587886/",
+      "published": "Wed, 02 Sep 2026 14:31:43 +0000",
+      "tokens": [
+        "entities",
+        "are",
+        "foundation",
+        "modern"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google To Bring New Video Understanding Tech To Ask YouTube via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/google-video-understanding-ask-youtube/588123/",
+      "published": "Wed, 02 Sep 2026 14:08:29 +0000",
+      "tokens": [
+        "bring",
+        "new",
+        "video",
+        "understanding",
+        "tech",
+        "ask",
+        "youtube",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "YouTube Says Bigger Thumbnails Drove More Long-Form Views via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/youtube-bigger-thumbnails-long-form-engagement/588102/",
+      "published": "Wed, 02 Sep 2026 13:11:52 +0000",
+      "tokens": [
+        "youtube",
+        "says",
+        "bigger",
+        "thumbnails",
+        "drove",
+        "more",
+        "long-form",
+        "views"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "What Happens To PPC When You Stop Managing Google Ads Through Google Ads via @sejournal, @siliconvallaeys",
+      "url": "https://www.searchenginejournal.com/what-happens-to-ppc-when-you-stop-managing-google-ads-through-google-ads/586580/",
+      "published": "Wed, 02 Sep 2026 12:00:10 +0000",
+      "tokens": [
+        "happens",
+        "ppc",
+        "stop",
+        "managing",
+        "ads",
+        "through",
+        "ads",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google DeepMind Says Gemini Is Evolving From Chatbot To AI Agent via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/google-deepmind-says-gemini-is-evolving-from-chatbot-to-ai-agent/588077/",
+      "published": "Wed, 02 Sep 2026 11:24:00 +0000",
+      "tokens": [
+        "deepmind",
+        "says",
+        "gemini",
+        "evolving",
+        "chatbot",
+        "agent",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "The Technical Signals AI Search Uses That Most SEOs Still Aren\u2019t Optimizing",
+      "url": "https://www.searchenginejournal.com/the-technical-signals-ai-search-uses-that-most-seos-still-arent-optimizing/586381/",
+      "published": "Tue, 01 Sep 2026 19:00:47 +0000",
+      "tokens": [
+        "technical",
         "signals",
+        "uses",
+        "most",
+        "seos",
+        "still",
+        "aren",
+        "optimizing"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google Details Who Can License Its Search Data In Europe via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/google-details-who-can-license-its-search-data-in-europe/587995/",
+      "published": "Tue, 01 Sep 2026 17:20:25 +0000",
+      "tokens": [
+        "details",
+        "who",
+        "can",
+        "license",
+        "its",
+        "data",
+        "europe",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "WordPress Announces A Proactive Security Initiative via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/wordpress-announces-a-proactive-security-initiative/587942/",
+      "published": "Tue, 01 Sep 2026 12:10:20 +0000",
+      "tokens": [
+        "wordpress",
+        "announces",
+        "proactive",
+        "security",
+        "initiative",
         "via",
         "sejournal",
         "martinibuster"
@@ -202,50 +197,49 @@
     },
     {
       "source": "Search Engine Journal",
-      "title": "Google Updates Site Reputation Abuse (Parasite SEO) Policy via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/google-updates-site-reputation-abuse-policy-removes-penalties-in-eea/587423/",
-      "published": "Fri, 28 Aug 2026 11:18:58 +0000",
+      "title": "Schema For AI Citations: How To Become A Trusted Source via @sejournal, @lorenbaker",
+      "url": "https://www.searchenginejournal.com/schema-ai-citations-trusted-source/586785/",
+      "published": "Tue, 01 Sep 2026 12:00:02 +0000",
       "tokens": [
-        "updates",
-        "site",
-        "reputation",
-        "abuse",
-        "parasite",
-        "policy",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "AI Search Didn\u2019t Remove Cognitive Load, It Moved It via @sejournal, @DuaneForrester",
-      "url": "https://www.searchenginejournal.com/ai-search-didnt-remove-cognitive-load-it-moved-it/586700/",
-      "published": "Thu, 27 Aug 2026 19:00:52 +0000",
-      "tokens": [
-        "didn",
-        "remove",
-        "cognitive",
-        "load",
-        "moved",
+        "schema",
+        "citations",
+        "become",
+        "trusted",
+        "source",
         "via",
         "sejournal",
-        "duaneforrester"
+        "lorenbaker"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "Google Starts Rolling Out Hotel Booking In AI Mode via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/google-starts-rolling-out-hotel-booking-in-ai-mode/587288/",
-      "published": "Thu, 27 Aug 2026 16:00:35 +0000",
+      "title": "How We Earned 1,000+ Links For GEO/SEO via @sejournal, @hethr_campbell",
+      "url": "https://www.searchenginejournal.com/how-we-earned-1000-links-geo-seo-recap/587850/",
+      "published": "Tue, 01 Sep 2026 07:45:17 +0000",
       "tokens": [
-        "starts",
-        "rolling",
-        "out",
-        "hotel",
-        "booking",
-        "mode",
+        "earned",
+        "links",
+        "geo",
         "via",
-        "sejournal"
+        "sejournal",
+        "hethr",
+        "campbell"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "FTC Sues Amazon Over Alleged $20 Billion Advertising Surcharge Scheme via @sejournal, @brookeosmundson",
+      "url": "https://www.searchenginejournal.com/ftc-sues-amazon-over-alleged-20-billion-advertising-surcharge-scheme/587870/",
+      "published": "Mon, 31 Aug 2026 23:49:40 +0000",
+      "tokens": [
+        "ftc",
+        "sues",
+        "amazon",
+        "over",
+        "alleged",
+        "billion",
+        "advertising",
+        "surcharge"
       ]
     },
     {
@@ -380,42 +374,50 @@
   "top_terms": [
     {
       "term": "via",
-      "count": 15
+      "count": 13
     },
     {
       "term": "sejournal",
-      "count": 15
+      "count": 13
     },
     {
       "term": "mattgsouthern",
-      "count": 6
-    },
-    {
-      "term": "martinibuster",
       "count": 5
     },
     {
-      "term": "website",
+      "term": "ads",
       "count": 4
     },
     {
-      "term": "claude",
+      "term": "martinibuster",
       "count": 3
     },
     {
-      "term": "are",
+      "term": "mode",
       "count": 2
     },
     {
-      "term": "add",
+      "term": "gemini",
       "count": 2
     },
     {
-      "term": "vahandev",
+      "term": "strategy",
       "count": 2
     },
     {
-      "term": "updates",
+      "term": "youtube",
+      "count": 2
+    },
+    {
+      "term": "says",
+      "count": 2
+    },
+    {
+      "term": "ppc",
+      "count": 2
+    },
+    {
+      "term": "website",
       "count": 2
     },
     {
@@ -427,115 +429,107 @@
       "count": 2
     },
     {
-      "term": "ads",
-      "count": 2
-    },
-    {
-      "term": "mueller",
+      "term": "prices",
       "count": 1
     },
     {
-      "term": "shares",
+      "term": "differ",
       "count": 1
     },
     {
-      "term": "their",
+      "term": "product",
       "count": 1
     },
     {
-      "term": "experience",
+      "term": "carousel",
       "count": 1
     },
     {
-      "term": "markdown",
+      "term": "same",
       "count": 1
     },
     {
-      "term": "ucp",
+      "term": "items",
       "count": 1
     },
     {
-      "term": "releases",
+      "term": "responds",
       "count": 1
     },
     {
-      "term": "spec",
+      "term": "sitemap",
       "count": 1
     },
     {
-      "term": "schema",
+      "term": "technique",
       "count": 1
     },
     {
-      "term": "changes",
+      "term": "forces",
       "count": 1
     },
     {
-      "term": "searches",
+      "term": "daily",
       "count": 1
     },
     {
-      "term": "web",
+      "term": "crawling",
       "count": 1
     },
     {
-      "term": "differently",
+      "term": "adds",
       "count": 1
     },
     {
-      "term": "code",
+      "term": "flash",
       "count": 1
     },
     {
-      "term": "data",
+      "term": "next",
       "count": 1
     },
     {
-      "term": "shows",
+      "term": "protocol",
       "count": 1
     },
     {
-      "term": "facebook",
+      "term": "won",
       "count": 1
     },
     {
-      "term": "groups",
+      "term": "save",
       "count": 1
     },
     {
-      "term": "forum",
+      "term": "billhunt",
       "count": 1
     },
     {
-      "term": "source",
+      "term": "entities",
       "count": 1
     },
     {
-      "term": "anthropic",
+      "term": "are",
       "count": 1
     },
     {
-      "term": "warns",
+      "term": "foundation",
       "count": 1
     },
     {
-      "term": "hackers",
+      "term": "modern",
       "count": 1
     },
     {
-      "term": "stealing",
+      "term": "bring",
       "count": 1
     },
     {
-      "term": "sessions",
+      "term": "new",
       "count": 1
     },
     {
-      "term": "hijack",
-      "count": 1
-    },
-    {
-      "term": "accounts",
+      "term": "video",
       "count": 1
     }
   ]

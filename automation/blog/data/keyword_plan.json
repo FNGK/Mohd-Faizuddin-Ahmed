@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T11:20:58.911435+00:00",
+  "generated_at": "2026-09-03T09:20:19.419985+00:00",
   "idea_count": 8,
   "gemini_calls_this_run": 0,
   "gemini_enabled": true,
@@ -17,8 +17,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/googles-mueller-shares-their-experience-with-markdown-for-ai-seo/587671/",
-        "https://www.searchenginejournal.com/ucp-releases-spec-update-with-schema-changes/587590/"
+        "https://www.searchenginejournal.com/google-ai-mode-prices-differ-from-product-carousel-for-same-items/588227/",
+        "https://www.searchenginejournal.com/google-responds-to-sitemap-seo-technique-that-forces-daily-crawling/588222/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -31,7 +31,8 @@
       "funnel_stage": "awareness",
       "serp_features": [
         "featured_snippet",
-        "discussion"
+        "local_pack",
+        "video"
       ],
       "paa_questions": [
         "How does answer engine optimization affect organic revenue in 2026?",
@@ -40,7 +41,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'answer engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Google\u2019s Mueller Shares Their Experience With Markdown For AI SEO via @sejournal, @martinibuster; UCP Releases Spec Update With Schema Changes via @sejournal, @MattGSouthern; Claude Searches Web Differently From Claude Code, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'answer engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack, video. Recent titles in the news layer include Google AI Mode Prices Differ From Product Carousel For Same Items via @sejournal, @MattGSouthern; Google Responds To Sitemap SEO Technique That Forces Daily Crawling via @sejournal, @martinibuster; Google Adds Gemini 3.8 Flash To AI Mode via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -57,8 +58,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/claude-code-rarely-searches-web-compared-claude-data/587584/",
-        "https://www.searchenginejournal.com/facebook-groups-are-googles-no-2-forum-source/587545/"
+        "https://www.searchenginejournal.com/google-gemini-3-8-flash-ai-mode/588194/",
+        "https://www.searchenginejournal.com/the-next-ai-protocol-wont-save-your-seo-strategy/585714/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -71,7 +72,8 @@
       "funnel_stage": "awareness",
       "serp_features": [
         "featured_snippet",
-        "discussion"
+        "local_pack",
+        "video"
       ],
       "paa_questions": [
         "How does generative engine optimization affect organic revenue in 2026?",
@@ -80,7 +82,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'generative engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Google\u2019s Mueller Shares Their Experience With Markdown For AI SEO via @sejournal, @martinibuster; UCP Releases Spec Update With Schema Changes via @sejournal, @MattGSouthern; Claude Searches Web Differently From Claude Code, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'generative engine optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack, video. Recent titles in the news layer include Google AI Mode Prices Differ From Product Carousel For Same Items via @sejournal, @MattGSouthern; Google Responds To Sitemap SEO Technique That Forces Daily Crawling via @sejournal, @martinibuster; Google Adds Gemini 3.8 Flash To AI Mode via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -97,8 +99,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/anthropic-warns-hackers-are-stealing-claude-sessions-to-hijack-accounts/587566/",
-        "https://www.searchenginejournal.com/rank-math-wordpress-plugin-accused-of-secretly-taking-admin-access/587554/"
+        "https://www.searchenginejournal.com/entities-are-the-foundation-of-modern-seo/587886/",
+        "https://www.searchenginejournal.com/google-video-understanding-ask-youtube/588123/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -111,7 +113,8 @@
       "funnel_stage": "awareness",
       "serp_features": [
         "featured_snippet",
-        "discussion"
+        "local_pack",
+        "video"
       ],
       "paa_questions": [
         "How does how to rank in ai overviews affect organic revenue in 2026?",
@@ -120,7 +123,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'how to rank in ai overviews': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Google\u2019s Mueller Shares Their Experience With Markdown For AI SEO via @sejournal, @martinibuster; UCP Releases Spec Update With Schema Changes via @sejournal, @MattGSouthern; Claude Searches Web Differently From Claude Code, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'how to rank in ai overviews': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack, video. Recent titles in the news layer include Google AI Mode Prices Differ From Product Carousel For Same Items via @sejournal, @MattGSouthern; Google Responds To Sitemap SEO Technique That Forces Daily Crawling via @sejournal, @martinibuster; Google Adds Gemini 3.8 Flash To AI Mode via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -137,8 +140,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/seo-pulse-judge-questions-google-ai-spam-update-fallout/587325/",
-        "https://www.searchenginejournal.com/add-google-preferred-sources-button-website/586908/"
+        "https://www.searchenginejournal.com/youtube-bigger-thumbnails-long-form-engagement/588102/",
+        "https://www.searchenginejournal.com/what-happens-to-ppc-when-you-stop-managing-google-ads-through-google-ads/586580/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -151,7 +154,8 @@
       "funnel_stage": "awareness",
       "serp_features": [
         "featured_snippet",
-        "discussion"
+        "local_pack",
+        "video"
       ],
       "paa_questions": [
         "How does how to get cited by chatgpt affect organic revenue in 2026?",
@@ -160,7 +164,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'how to get cited by chatgpt': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Google\u2019s Mueller Shares Their Experience With Markdown For AI SEO via @sejournal, @martinibuster; UCP Releases Spec Update With Schema Changes via @sejournal, @MattGSouthern; Claude Searches Web Differently From Claude Code, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'how to get cited by chatgpt': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack, video. Recent titles in the news layer include Google AI Mode Prices Differ From Product Carousel For Same Items via @sejournal, @MattGSouthern; Google Responds To Sitemap SEO Technique That Forces Daily Crawling via @sejournal, @martinibuster; Google Adds Gemini 3.8 Flash To AI Mode via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -177,8 +181,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/ai-isnt-killing-marketing-accountability-its-exposing-who-never-had-it/586486/",
-        "https://www.searchenginejournal.com/webmcp-connects-ai-agents-actions-inside-websites/587303/"
+        "https://www.searchenginejournal.com/google-deepmind-says-gemini-is-evolving-from-chatbot-to-ai-agent/588077/",
+        "https://www.searchenginejournal.com/the-technical-signals-ai-search-uses-that-most-seos-still-arent-optimizing/586381/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -191,7 +195,8 @@
       "funnel_stage": "awareness",
       "serp_features": [
         "featured_snippet",
-        "discussion"
+        "local_pack",
+        "video"
       ],
       "paa_questions": [
         "How does ai search optimization affect organic revenue in 2026?",
@@ -200,7 +205,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'ai search optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Google\u2019s Mueller Shares Their Experience With Markdown For AI SEO via @sejournal, @martinibuster; UCP Releases Spec Update With Schema Changes via @sejournal, @MattGSouthern; Claude Searches Web Differently From Claude Code, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'ai search optimization': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack, video. Recent titles in the news layer include Google AI Mode Prices Differ From Product Carousel For Same Items via @sejournal, @MattGSouthern; Google Responds To Sitemap SEO Technique That Forces Daily Crawling via @sejournal, @martinibuster; Google Adds Gemini 3.8 Flash To AI Mode via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -217,8 +222,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/ai-changing-website-security-seo-teams-should-know/587352/",
-        "https://www.searchenginejournal.com/google-answers-if-updates-come-with-actionable-seo-signals/587432/"
+        "https://www.searchenginejournal.com/google-details-who-can-license-its-search-data-in-europe/587995/",
+        "https://www.searchenginejournal.com/wordpress-announces-a-proactive-security-initiative/587942/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -231,7 +236,8 @@
       "funnel_stage": "awareness",
       "serp_features": [
         "featured_snippet",
-        "discussion"
+        "local_pack",
+        "video"
       ],
       "paa_questions": [
         "How does llm seo affect organic revenue in 2026?",
@@ -240,7 +246,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'llm seo': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Google\u2019s Mueller Shares Their Experience With Markdown For AI SEO via @sejournal, @martinibuster; UCP Releases Spec Update With Schema Changes via @sejournal, @MattGSouthern; Claude Searches Web Differently From Claude Code, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'llm seo': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack, video. Recent titles in the news layer include Google AI Mode Prices Differ From Product Carousel For Same Items via @sejournal, @MattGSouthern; Google Responds To Sitemap SEO Technique That Forces Daily Crawling via @sejournal, @martinibuster; Google Adds Gemini 3.8 Flash To AI Mode via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -257,8 +263,8 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/google-updates-site-reputation-abuse-policy-removes-penalties-in-eea/587423/",
-        "https://www.searchenginejournal.com/ai-search-didnt-remove-cognitive-load-it-moved-it/586700/"
+        "https://www.searchenginejournal.com/schema-ai-citations-trusted-source/586785/",
+        "https://www.searchenginejournal.com/how-we-earned-1000-links-geo-seo-recap/587850/"
       ],
       "internal_links": [
         "../../services/index.html",
@@ -271,7 +277,8 @@
       "funnel_stage": "awareness",
       "serp_features": [
         "featured_snippet",
-        "discussion"
+        "local_pack",
+        "video"
       ],
       "paa_questions": [
         "How does schema markup for ai search affect organic revenue in 2026?",
@@ -280,7 +287,7 @@
         "Does structured data help generative search visibility?",
         "How long should FAQ answers be for featured snippets?"
       ],
-      "serp_analysis": "SERP snapshot for 'schema markup for ai search': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Google\u2019s Mueller Shares Their Experience With Markdown For AI SEO via @sejournal, @martinibuster; UCP Releases Spec Update With Schema Changes via @sejournal, @MattGSouthern; Claude Searches Web Differently From Claude Code, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'schema markup for ai search': dominant intent is **informational** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack, video. Recent titles in the news layer include Google AI Mode Prices Differ From Product Carousel For Same Items via @sejournal, @MattGSouthern; Google Responds To Sitemap SEO Technique That Forces Daily Crawling via @sejournal, @martinibuster; Google Adds Gemini 3.8 Flash To AI Mode via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     },
@@ -297,7 +304,7 @@
       "target_audience": "Marketing leads, founders, and growth managers",
       "cta": "Book a strategy call",
       "external_sources": [
-        "https://www.searchenginejournal.com/google-starts-rolling-out-hotel-booking-in-ai-mode/587288/",
+        "https://www.searchenginejournal.com/ftc-sues-amazon-over-alleged-20-billion-advertising-surcharge-scheme/587870/",
         "https://feedpress.me/link/9375/14757949/cannibalization"
       ],
       "internal_links": [
@@ -311,7 +318,8 @@
       "funnel_stage": "awareness",
       "serp_features": [
         "featured_snippet",
-        "discussion"
+        "local_pack",
+        "video"
       ],
       "paa_questions": [
         "How does technical seo audit affect organic revenue in 2026?",
@@ -320,7 +328,7 @@
         "When should I use noindex versus canonical consolidation?",
         "What Core Web Vitals matter most for SEO?"
       ],
-      "serp_analysis": "SERP snapshot for 'technical seo audit': dominant intent is **informational_technical** at the **awareness** funnel stage. Observed SERP features include featured_snippet, discussion. Recent titles in the news layer include Google\u2019s Mueller Shares Their Experience With Markdown For AI SEO via @sejournal, @martinibuster; UCP Releases Spec Update With Schema Changes via @sejournal, @MattGSouthern; Claude Searches Web Differently From Claude Code, Data Shows via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
+      "serp_analysis": "SERP snapshot for 'technical seo audit': dominant intent is **informational_technical** at the **awareness** funnel stage. Observed SERP features include featured_snippet, local_pack, video. Recent titles in the news layer include Google AI Mode Prices Differ From Product Carousel For Same Items via @sejournal, @MattGSouthern; Google Responds To Sitemap SEO Technique That Forces Daily Crawling via @sejournal, @martinibuster; Google Adds Gemini 3.8 Flash To AI Mode via @sejournal, @MattGSouthern. This draft targets extractable answers, corroboration, and conversion clarity (SXO).",
       "research_source": "heuristic",
       "gemini_enriched": false
     }

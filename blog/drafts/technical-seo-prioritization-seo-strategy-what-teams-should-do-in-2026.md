@@ -58,7 +58,7 @@ humanization_metrics:
   max_shingle_overlap: 0.114
   flesch_ease: 50.21
   fk_grade: 10.44
-last_humanization_check: '2026-08-31T11:20:59.410913+00:00'
+last_humanization_check: '2026-09-03T09:20:19.973188+00:00'
 editor_notes: 'Stale duplicate: same pre-schema pipeline issue. Sibling draft technical-seo-priorities-when-crawl-budget-and-revenue-both-matter.md
   covers the same topic and has been regenerated to current schema/quality bar. Recommend
   archiving/deleting this one once a human confirms.'

@@ -58,7 +58,7 @@ humanization_metrics:
   max_shingle_overlap: 0.101
   flesch_ease: 53.66
   fk_grade: 9.83
-last_humanization_check: '2026-08-31T11:20:59.201039+00:00'
+last_humanization_check: '2026-09-03T09:20:19.746688+00:00'
 editor_notes: 'Superseded: this AI-search-visibility topic is already fully covered
   by 6 verified drafts (ai-search-optimization, answer-engine-optimization, generative-engine-optimization,
   llm-seo, how-to-rank-in-ai-overviews, how-to-get-cited-by-chatgpt). Publishing this
