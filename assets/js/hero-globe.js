@@ -81,26 +81,60 @@
     );
     globe.add(core);
 
-    // --- Point-cloud globe (Fibonacci sphere) ---
-    var COUNT = coarse ? 1500 : 2400;
-    var positions = new Float32Array(COUNT * 3);
+    // --- Point-cloud globe: the teal dots form the continents by sampling an
+    //     equirectangular land mask (assets/textures/earth-land.png). Starts as
+    //     an even sphere; upgrades to the world map once the mask loads. ---
     var golden = Math.PI * (3 - Math.sqrt(5));
-    for (var i = 0; i < COUNT; i++) {
-      var y = 1 - (i / (COUNT - 1)) * 2;
-      var r = Math.sqrt(1 - y * y);
-      var theta = golden * i;
-      positions[i * 3] = Math.cos(theta) * r * R;
-      positions[i * 3 + 1] = y * R;
-      positions[i * 3 + 2] = Math.sin(theta) * r * R;
+    function fib(count, data, cw, ch) {
+      var arr = [];
+      for (var i = 0; i < count; i++) {
+        var y = 1 - (i / (count - 1)) * 2;
+        var rr = Math.sqrt(1 - y * y);
+        var th = golden * i;
+        var x = Math.cos(th) * rr, z = Math.sin(th) * rr;
+        if (data) {
+          var lat = Math.asin(y), lon = Math.atan2(z, x);
+          var pxi = ((lon + Math.PI) / (2 * Math.PI) * cw) | 0;
+          var pyi = ((0.5 - lat / Math.PI) * ch) | 0;
+          if (pxi < 0) pxi = 0; else if (pxi >= cw) pxi = cw - 1;
+          if (pyi < 0) pyi = 0; else if (pyi >= ch) pyi = ch - 1;
+          var idx = (pyi * cw + pxi) * 4;
+          if (data[idx + 3] < 40 || (data[idx] + data[idx + 1] + data[idx + 2]) / 3 < 90) continue;
+        }
+        arr.push(x * R, y * R, z * R);
+      }
+      return new Float32Array(arr);
     }
+    var COUNT = coarse ? 1500 : 2400;
     var pGeo = new THREE.BufferGeometry();
-    pGeo.setAttribute("position", new THREE.BufferAttribute(positions, 3));
+    pGeo.setAttribute("position", new THREE.BufferAttribute(fib(COUNT), 3));
     var dot = makeDotTexture(THREE);
     var points = new THREE.Points(pGeo, new THREE.PointsMaterial({
-      color: TEAL, size: 0.028, map: dot, transparent: true, opacity: 0.9,
+      color: TEAL, size: 0.026, map: dot, transparent: true, opacity: 0.92,
       depthWrite: false, blending: THREE.AdditiveBlending, sizeAttenuation: true
     }));
     globe.add(points);
+
+    (function loadLandMask() {
+      var img = new Image();
+      img.onload = function () {
+        try {
+          var cw = 512, ch = 256;
+          var cv = document.createElement("canvas");
+          cv.width = cw; cv.height = ch;
+          cv.getContext("2d").drawImage(img, 0, 0, cw, ch);
+          var data = cv.getContext("2d").getImageData(0, 0, cw, ch).data;
+          var land = fib(coarse ? 12000 : 26000, data, cw, ch);
+          if (land.length < 900) return;
+          var g = new THREE.BufferGeometry();
+          g.setAttribute("position", new THREE.BufferAttribute(land, 3));
+          points.geometry.dispose();
+          points.geometry = g;
+          points.material.size = coarse ? 0.019 : 0.016;
+        } catch (e) { /* keep even sphere */ }
+      };
+      img.src = "./assets/textures/earth-land.png";
+    })();
 
     // --- Faint wireframe shell ---
     var wire = new THREE.LineSegments(
