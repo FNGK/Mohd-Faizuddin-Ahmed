@@ -1873,3 +1873,94 @@
 .instrument__readout dt { font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); margin: 0 0 0.2rem; }
 .instrument__readout dd { margin: 0; font-weight: 700; color: var(--text); font-size: 1rem; }
 .instrument__readout dd span { color: var(--primary); }
+
+/* =====================================================================
+   Selected work — floating horizontal banner (homepage)
+   ===================================================================== */
+.work-banner {
+  margin-top: 1.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: color-mix(in srgb, var(--surface) 45%, transparent);
+  box-shadow: var(--shadow-md);
+  padding: 1rem 1rem 0.85rem;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.work-rail {
+  display: flex;
+  gap: 0.85rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 0.65rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+.work-rail::-webkit-scrollbar { height: 6px; }
+.work-rail::-webkit-scrollbar-track { background: transparent; }
+.work-rail::-webkit-scrollbar-thumb { background: color-mix(in srgb, var(--border) 90%, transparent); border-radius: 999px; }
+.work-card {
+  flex: 0 0 clamp(220px, 23vw, 264px);
+  scroll-snap-align: start;
+  display: grid;
+  gap: 0.55rem;
+  padding: 0.7rem;
+  border: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--surface) 55%, transparent);
+  color: inherit;
+  transition: transform 0.25s var(--ease-out), border-color 0.25s ease;
+}
+.work-card:hover {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--primary) 42%, var(--border));
+  text-decoration: none;
+}
+.work-card__media {
+  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: calc(var(--radius-md) - 5px);
+  border: 1px solid color-mix(in srgb, var(--border) 55%, transparent);
+  background: color-mix(in srgb, var(--ink) 28%, transparent);
+}
+.work-card__media img { width: 100%; height: 100%; object-fit: cover; border-radius: 0; }
+.work-card__media--logo { display: grid; place-items: center; }
+.work-card__media--logo img { width: auto; height: auto; max-width: 70%; max-height: 70%; object-fit: contain; }
+.work-card__eyebrow { font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--primary); }
+.work-card__title { font-family: var(--font-display); font-size: 1rem; line-height: 1.22; color: var(--text); }
+.work-banner__all {
+  display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.3rem;
+  font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--primary); transition: gap 0.2s ease;
+}
+.work-banner__all:hover { gap: 0.65rem; text-decoration: none; }
+
+/* =====================================================================
+   Trust split — quieter, hand-designed (homepage)
+   ===================================================================== */
+.trust-split .card {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+}
+.trust-split .card h2 { font-size: clamp(1.35rem, 2.4vw, 1.65rem); letter-spacing: -0.02em; margin-bottom: 0.5rem; }
+.trust-split .card > picture { display: block; }
+.trust-split .card > picture img {
+  width: 84px; height: 84px; border-radius: 999px; object-fit: cover;
+  border: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
+  margin-bottom: 0.7rem;
+}
+.trust-split .card ul { list-style: none; padding: 0; margin: 0.7rem 0 0.9rem; display: grid; gap: 0.55rem; }
+.trust-split .card li { position: relative; padding-left: 1.15rem; color: var(--text-muted); }
+.trust-split .card li::before { content: ""; position: absolute; left: 0; top: 0.62em; width: 5px; height: 5px; background: var(--primary); transform: rotate(45deg); }
+.trust-split .card li a { color: var(--text); }
+@media (min-width: 901px) {
+  .trust-split { gap: 3rem; }
+  .trust-split > .card:first-child {
+    padding-right: 3rem;
+    border-right: 1px solid color-mix(in srgb, var(--border) 55%, transparent);
+  }
+}
+.trust-split .cert-logo { background: transparent; border-color: color-mix(in srgb, var(--border) 60%, transparent); }
