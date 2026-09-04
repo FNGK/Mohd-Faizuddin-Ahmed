@@ -40,6 +40,58 @@
 
 ## Blog angles (for the cloud draft factory / editor)
 
+> Note (2026-09-04): 5 new angles added below, researched live off current
+> news rather than generic "2026 playbook" topics (the AI-search-cluster
+> drafts already in blog/drafts/ failed originality_score 38-45 for exactly
+> that reason — see marketing/LOG.md). Each is anchored to a specific,
+> dated, sourced event so a draft can't be written generically — pull the
+> named tools/companies/numbers into the piece, don't paraphrase around
+> them. Full source list in this session's chat; key ones below.
+
+- [buyer-education] What Google's August 2026 spam update (the 3rd spam
+  update of 2026 — more than all of 2025 combined, rolled out Aug 18-21)
+  actually penalized — scaled content abuse, AI-generated content,
+  programmatic pages, thin affiliates — and the honest self-audit questions
+  to run before the next one, not generic "E-E-A-T" advice. (Sources:
+  gsqi.com case studies, coalitiontechnologies.com, brafton.com)
+- [buyer-education/pov] Google's anti-scraping crackdown broke Semrush's
+  live rank-tracking data and killed Scrape Owl outright, while Ahrefs,
+  Sistrix, and MonitorRank kept running clean — what that split reveals
+  about which rank-trackers do real-time SERP scraping vs. cached/API data,
+  and the questions to ask a tool vendor before trusting a ranking
+  dashboard again. (Sources: searchenginejournal.com "Google Causes Global
+  SEO Tool Outages", designrush, stanventures, k6digital)
+- [craft-proof/pov] Cloudflare's Sept 15, 2026 default change — any page
+  carrying ads now auto-blocks "mixed-use" AI crawlers unless the owner
+  explicitly chooses Allow/Charge/Block — and what an enterprise site owner
+  who's never touched robots.txt needs to check THIS WEEK so they don't
+  accidentally block a crawler they actually want (or miss revenue from one
+  they could charge). (Sources: Cloudflare Blog "Content Independence Day"
+  + AI Crawl Control posts, TechCrunch 2026-07-01)
+- [buyer-education] The real math on "AI crawlers are inflating your
+  hosting bill": Anthropic's ClaudeBot crawls a page ~11,122 times for
+  every one reader it refers back; OpenAI's GPTBot ratio is ~1,700:1; bot
+  traffic is now 57.5% of HTML requests industry-wide per Cloudflare's own
+  CEO. A framework for auditing your server logs to find your actual
+  bot-to-referral ratio and deciding where to block vs. charge. (Sources:
+  Cloudflare CEO data via TechCrunch/hellofuture.orange.com, Cloudflare
+  pay-per-crawl docs)
+- [pov] Zero-click search hit 68% of US Google queries in early 2026 (up
+  from 60.45% two years prior, SparkToro), and Google's AI Mode sends
+  referral traffic at just 1.6-2.5% of queries vs. 17-19% for classic blue
+  links (Similarweb) — the actual strategy pivot this data demands (owned
+  answer pages, first-party lead capture, less reliance on click volume),
+  argued with these numbers, not the vague "adapt to AI search" advice
+  everyone else is already selling.
+
+> Note (2026-09-04): with these 5 fresh angles queued, recommend Faiz
+> confirm the 7 stale AI-search-cluster drafts flagged needs_revision
+> (originality_score 38-45: ai-search-optimization, answer-engine-
+> optimization, generative-engine-optimization, how-to-rank-in-ai-overviews,
+> llm-seo, schema-markup-for-ai-search, technical-seo-audit-priorities) can
+> be deleted from blog/drafts/ rather than left to keep re-failing the gate
+> — same standing ask pattern as the 5 stale stubs noted 2026-07-10.
+
 > Note (2026-07-10): the humanization/compliance gate had real bugs (generic
 > non-answering FAQ template, broken title generator, a trim step that could
 > gut whole sections) that kept every draft stuck at `needs_revision` — fixed
