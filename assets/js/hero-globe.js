@@ -66,7 +66,7 @@
 
     var scene = new THREE.Scene();
     var camera = new THREE.PerspectiveCamera(50, W / H, 0.1, 100);
-    camera.position.set(0, 0, 3.2);
+    camera.position.set(0, 0, 3.95);
 
     var globe = new THREE.Group();
     scene.add(globe);
@@ -110,7 +110,7 @@
     pGeo.setAttribute("position", new THREE.BufferAttribute(fib(COUNT), 3));
     var dot = makeDotTexture(THREE);
     var points = new THREE.Points(pGeo, new THREE.PointsMaterial({
-      color: TEAL, size: 0.026, map: dot, transparent: true, opacity: 0.92,
+      color: TEAL, size: 0.026, map: dot, transparent: true, opacity: 0.7,
       depthWrite: false, blending: THREE.AdditiveBlending, sizeAttenuation: true
     }));
     globe.add(points);
@@ -145,11 +145,11 @@
 
     // --- Atmosphere glow (fresnel rim, additive) ---
     var atmo = new THREE.Mesh(
-      new THREE.SphereGeometry(R * 1.18, 48, 48),
+      new THREE.SphereGeometry(R * 1.13, 48, 48),
       new THREE.ShaderMaterial({
         transparent: true, blending: THREE.AdditiveBlending, side: THREE.BackSide, depthWrite: false,
         vertexShader: "varying vec3 vN; void main(){ vN = normalize(normalMatrix * normal); gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0); }",
-        fragmentShader: "varying vec3 vN; void main(){ float i = pow(0.62 - dot(vN, vec3(0.0,0.0,1.0)), 3.0); i = clamp(i, 0.0, 1.0); gl_FragColor = vec4(0.18,0.83,0.78,1.0) * i; }"
+        fragmentShader: "varying vec3 vN; void main(){ float i = pow(0.5 - dot(vN, vec3(0.0,0.0,1.0)), 2.3); i = clamp(i, 0.0, 1.0); gl_FragColor = vec4(0.08,0.40,0.38,1.0) * i; }"
       })
     );
     scene.add(atmo);
