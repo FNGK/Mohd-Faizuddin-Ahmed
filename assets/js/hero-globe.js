@@ -113,7 +113,7 @@
     pGeo.setAttribute("position", new THREE.BufferAttribute(fib(COUNT), 3));
     var dot = makeDotTexture(THREE);
     var points = new THREE.Points(pGeo, new THREE.PointsMaterial({
-      color: TEAL, size: 0.022, map: dot, transparent: true, opacity: 0.46,
+      color: TEAL, size: 0.02, map: dot, transparent: true, opacity: 0.28,
       depthWrite: false, blending: THREE.AdditiveBlending, sizeAttenuation: true
     }));
     globe.add(points);
@@ -122,20 +122,15 @@
       var img = new Image();
       img.onload = function () {
         try {
-          var cw = 512, ch = 256;
-          var cv = document.createElement("canvas");
-          cv.width = cw; cv.height = ch;
-          cv.getContext("2d").drawImage(img, 0, 0, cw, ch);
-          var data = cv.getContext("2d").getImageData(0, 0, cw, ch).data;
-          var land = fib(coarse ? 12000 : 26000, data, cw, ch);
-          if (land.length < 900) return;
-          var g = new THREE.BufferGeometry();
-          g.setAttribute("position", new THREE.BufferAttribute(land, 3));
-          // Raised, brighter continents layered over the faint ocean sphere.
-          globe.add(new THREE.Points(g, new THREE.PointsMaterial({
-            color: TEAL, size: coarse ? 0.024 : 0.021, map: dot, transparent: true, opacity: 0.92,
-            depthWrite: false, blending: THREE.AdditiveBlending, sizeAttenuation: true
-          })));
+          var maskTex = new THREE.Texture(img);
+          maskTex.needsUpdate = true;
+          maskTex.anisotropy = coarse ? 2 : 4;
+          // Solid teal continents raised above the ocean sphere for 3D relief.
+          // The mask's luminance is the alpha (land = opaque, ocean = clear).
+          globe.add(new THREE.Mesh(
+            new THREE.SphereGeometry(R * 1.02, 96, 96),
+            new THREE.MeshBasicMaterial({ color: TEAL, alphaMap: maskTex, transparent: true, opacity: 0.95, depthWrite: false })
+          ));
         } catch (e) { /* keep even sphere */ }
       };
       img.src = "./assets/textures/earth-land.png";
