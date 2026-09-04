@@ -484,41 +484,49 @@ export default {
       return handleCrmApi(request, env, ctx, url);
     }
 
-    // assets.html_handling is "none" (see wrangler.jsonc) so /page.html serves
-    // directly at its own canonical URL instead of Cloudflare's default
-    // redirecting it to /page. That mode requires an exact file path, so
-    // directory requests (/, /services/, etc.) need index.html appended here —
-    // "none" no longer resolves those automatically.
-    if (url.pathname.endsWith('/')) {
+    // Clean, extensionless URLs are canonical. assets.html_handling is "none"
+    // (wrangler.jsonc) so the worker owns all routing below.
+    const p = url.pathname;
+    const isGet = request.method === 'GET' || request.method === 'HEAD';
+
+    // 1) Any .html (or /index.html) request is a legacy/duplicate URL -> 301 to
+    //    the clean canonical: /dir/page.html -> /dir/page, /dir/index.html -> /dir/,
+    //    /index.html -> /. Query/hash preserved.
+    if (isGet && p.endsWith('.html')) {
+      const clean = new URL(url);
+      clean.pathname = p.endsWith('/index.html')
+        ? p.slice(0, -'index.html'.length)
+        : p.slice(0, -'.html'.length);
+      return Response.redirect(clean.toString(), 301);
+    }
+
+    // 2) Directory request (/, /services/, ...) serves its index.html.
+    if (p.endsWith('/')) {
       const indexUrl = new URL(url);
-      indexUrl.pathname = url.pathname + 'index.html';
+      indexUrl.pathname = p + 'index.html';
       return env.ASSETS.fetch(new Request(indexUrl, request));
     }
 
-    // Extensionless page/section slugs (e.g. /case-studies/button-eyes-resort,
-    // /services/web-design-development, /mentions) would 404 under html_handling
-    // "none". External sites linked some of these bare paths, so 301 them to the
-    // real canonical: <slug>.html for a page, or <slug>/ for a directory. We probe
-    // ASSETS and only redirect on a confirmed 200, so genuine 404s stay 404. No
-    // loop is possible: the redirect targets (a .html file, or a trailing-slash
-    // directory) are served by the branches above and never re-enter this one.
-    if ((request.method === 'GET' || request.method === 'HEAD') && !/\.[^/]+$/.test(url.pathname)) {
+    // 3) Clean page URL -> serve <path>.html directly (a rewrite, NOT a redirect;
+    //    ASSETS.fetch bypasses this handler and _redirects has no rules, so no
+    //    loop can form). If it is really a directory missing its slash, 301 to
+    //    <path>/. Genuine misses fall through to the 404 below.
+    if (isGet && !/\.[^/]+$/.test(p)) {
       const htmlUrl = new URL(url);
-      htmlUrl.pathname = url.pathname + '.html';
-      const htmlHit = await env.ASSETS.fetch(new Request(htmlUrl, { method: 'GET' }));
-      if (htmlHit.status === 200) {
-        return Response.redirect(htmlUrl.toString(), 301);
-      }
+      htmlUrl.pathname = p + '.html';
+      const resp = await env.ASSETS.fetch(new Request(htmlUrl, request));
+      if (resp.status === 200) return resp;
       const dirUrl = new URL(url);
-      dirUrl.pathname = url.pathname + '/index.html';
+      dirUrl.pathname = p + '/index.html';
       const dirHit = await env.ASSETS.fetch(new Request(dirUrl, { method: 'GET' }));
       if (dirHit.status === 200) {
         const slashUrl = new URL(url);
-        slashUrl.pathname = url.pathname + '/';
+        slashUrl.pathname = p + '/';
         return Response.redirect(slashUrl.toString(), 301);
       }
     }
 
+    // 4) Static assets (.css/.js/.png/...) and genuine 404s.
     return env.ASSETS.fetch(request);
   },
 };

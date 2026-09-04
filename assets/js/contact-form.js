@@ -17,7 +17,7 @@
   }
 
   function thankYouUrl() {
-    return new URL('../thank-you.html', window.location.href).href;
+    return new URL('../thank-you', window.location.href).href;
   }
 
   function mailtoUrl(payload) {
