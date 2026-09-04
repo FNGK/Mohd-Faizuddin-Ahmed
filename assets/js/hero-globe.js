@@ -101,7 +101,10 @@
           var idx = (pyi * cw + pxi) * 4;
           if (data[idx + 3] < 40 || (data[idx] + data[idx + 1] + data[idx + 2]) / 3 < 90) continue;
         }
-        arr.push(x * R, y * R, z * R);
+        // Land points sit raised above the ocean sphere so continents bulge out
+        // in relief; the even-sphere fallback stays on the surface.
+        var rad = data ? R * 1.05 : R;
+        arr.push(x * rad, y * rad, z * rad);
       }
       return new Float32Array(arr);
     }
@@ -110,7 +113,7 @@
     pGeo.setAttribute("position", new THREE.BufferAttribute(fib(COUNT), 3));
     var dot = makeDotTexture(THREE);
     var points = new THREE.Points(pGeo, new THREE.PointsMaterial({
-      color: TEAL, size: 0.026, map: dot, transparent: true, opacity: 0.7,
+      color: TEAL, size: 0.022, map: dot, transparent: true, opacity: 0.46,
       depthWrite: false, blending: THREE.AdditiveBlending, sizeAttenuation: true
     }));
     globe.add(points);
@@ -128,9 +131,11 @@
           if (land.length < 900) return;
           var g = new THREE.BufferGeometry();
           g.setAttribute("position", new THREE.BufferAttribute(land, 3));
-          points.geometry.dispose();
-          points.geometry = g;
-          points.material.size = coarse ? 0.019 : 0.016;
+          // Raised, brighter continents layered over the faint ocean sphere.
+          globe.add(new THREE.Points(g, new THREE.PointsMaterial({
+            color: TEAL, size: coarse ? 0.024 : 0.021, map: dot, transparent: true, opacity: 0.92,
+            depthWrite: false, blending: THREE.AdditiveBlending, sizeAttenuation: true
+          })));
         } catch (e) { /* keep even sphere */ }
       };
       img.src = "./assets/textures/earth-land.png";
@@ -224,6 +229,7 @@
     }
 
     globe.rotation.x = 0.32;
+    globe.rotation.y = 1.4; // start on a continent-rich face (Africa/Europe), not open ocean
 
     // --- Interaction: drag to rotate + inertia + idle auto-rotate.
     //     On touch devices only horizontal drags rotate (pan-y), so a
@@ -249,7 +255,7 @@
     var tmp = new THREE.Vector3();
     function frame() {
       if (!dragging) {
-        velY += (0.0018 - velY) * 0.02; // ease back to gentle auto-spin
+        velY += (0.0026 - velY) * 0.02; // ease back to gentle auto-spin
         globe.rotation.y += velY;
         globe.rotation.x += velX;
         velX *= 0.94;

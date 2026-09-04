@@ -1771,11 +1771,11 @@
    radial mask so its edges dissolve into the page instead of reading as an object. */
 .hero-lab__stage {
   position: absolute; z-index: 0; pointer-events: none;
-  top: 50%; right: -6%; transform: translateY(-50%);
-  width: min(760px, 66%); aspect-ratio: 1 / 1;
-  opacity: 0.4;
-  -webkit-mask-image: radial-gradient(circle at 56% 50%, #000 40%, transparent 72%);
-  mask-image: radial-gradient(circle at 56% 50%, #000 40%, transparent 72%);
+  top: 44%; right: 2%; transform: translateY(-50%);
+  width: min(560px, 48%); aspect-ratio: 1 / 1;
+  opacity: 0.62;
+  -webkit-mask-image: radial-gradient(circle at 50% 50%, #000 58%, transparent 82%);
+  mask-image: radial-gradient(circle at 50% 50%, #000 58%, transparent 82%);
 }
 .hero-lab__stage .instrument,
 .hero-lab__stage .instrument__frame { width: 100%; height: 100%; }
