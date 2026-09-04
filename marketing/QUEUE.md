@@ -110,3 +110,26 @@
 - What a boutique resort's booking funnel should measure besides room rate (wedge-hospitality)
 - The website audit a sports academy needs before enrollment season (wedge-sports)
 - How AI Overviews choose who to cite — structure lessons from a site built for it
+
+> Added 2026-09-04, from the growth-strategist's deep GA4 + live-site
+> technical audit (see STRATEGY.md focus-themes note, same date). All four
+> are behind-the-studio/craft-proof pillar — self-audit findings, true by
+> construction, zero risk of an unverifiable claim:
+
+- [behind-studio/craft-proof] The sitemap bug that hid 5 blog posts from
+  Google for months — what I found running my own site through the same
+  audit I run for clients, and the one-line root cause (a publish script
+  that never learned sitemap.xml exists). — sitemap.xml fix, this session
+- [craft-proof/buyer-education] The two JSON-LD blocks worth more than a
+  thousand words of "AI SEO" advice — BlogPosting+Person author schema and
+  BreadcrumbList, and why pages with real structured data are ~3x more
+  likely to surface in AI Overviews. — /blog/posts/how-to-get-cited-by-chatgpt-a-step-by-step-guide-for-2026.html
+- [pov/buyer-education] I checked what actually ranks for "Shopify Plus vs
+  Magento" and "crawl budget optimization" right now — DR40-70+ agencies
+  own every head term. Here's the honest math on why a newer studio
+  competes on long-tail and proof, not head-term SEO, for the first year.
+  — /services/technical-seo.html
+- [buyer-education/local-SEO] Companion to the GBP-conversion post: local
+  intent traffic converts 2-5x non-local traffic in most verticals — so
+  the leak usually isn't visibility, it's what happens in the 10 seconds
+  after the tap. — /blog/posts/local-seo-that-turns-map-views-into-booked-jobs-in-2026.html

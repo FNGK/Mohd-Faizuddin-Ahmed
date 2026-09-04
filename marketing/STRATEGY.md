@@ -99,8 +99,103 @@ Next.js case-study angle for 2026-08-25 (see LOG.md / git history
 and the format-over-pillar finding from last data; worth confirming
 tomorrow's post actually goes out and gets logged.
 
+**(2026-09-04 deep technical/SEO audit — requested directly by Faiz, not
+the routine weekly loop):** ran a full non-branded-keyword + competitor +
+technical audit using GA4, live-site crawling (robots.txt, sitemap.xml,
+raw HTML of homepage + a blog post), and SERP checks, because the real
+Google Search Console connector is not authorized this session (Adspirer's
+`google_search_console` tool reports "not connected" — see Asks). Headline
+finding: **Organic Search delivered 7 sessions in the last 90 days**
+(vs. Direct 204, Organic Social 33) — statistically zero, not a slow
+ramp. The flagship blog post's exact unique title returns zero hits on a
+live web search, meaning the site isn't surfacing even for its own
+unindexed-competition title. Root-caused it to two compounding causes, one
+now fixed:
+1. **FIXED THIS RUN: `sitemap.xml` was stale since 2026-07-06.** 5 of the
+   6 published blog posts (`answer-engine-optimization-guide`,
+   `how-to-get-cited-by-chatgpt...`, `local-seo-that-turns-map-views...`,
+   `recovering-after-a-google-core-update...`,
+   `technical-seo-priorities-when-crawl-budget...`) were live (200,
+   correctly linked from `/blog/index.html`) but **absent from the
+   sitemap** — the file that tells Google what to prioritize crawling.
+   Root cause: no script in `automation/blog/` ever writes to
+   `sitemap.xml` — it was hand-authored once and never wired into the
+   publish pipeline (`publish_validator.py` doesn't touch it). Added all 5
+   missing URLs directly (root `sitemap.xml`, now 38 entries, valid XML) —
+   but the pipeline gap is still open; see Asks.
+2. **Not a technical-hygiene problem otherwise.** Verified directly against
+   raw HTML (not the lossy AI-summarized fetch, which first mis-reported
+   10 H1s by flattening h2/h3 sections — corrected via curl+grep): homepage
+   has exactly 1 H1, correct canonical, meta description, Organization +
+   WebSite JSON-LD; the audited blog post has BlogPosting + Person(author)
+   + BreadcrumbList schema, a named byline (E-E-A-T), proper canonical, and
+   ~1,300–1,500 words. robots.txt allows everything. Images ship
+   width/height + lazy-loading. This is a **young-domain / zero-backlink
+   problem, not a broken site** — the domain's oldest sitemap entries date
+   to 2026-05-24, so it's ~3.5 months old with (per this session's checks)
+   no external mentions found anywhere on the web.
+3. **Competitive reality check (non-branded head terms):** ran live SERP
+   checks on "Shopify Plus vs Magento enterprise 2026," "crawl budget
+   optimization for ecommerce," and "AI Overviews SEO strategy 2026" — all
+   three are owned by established DR40–70+ agencies (folio3, elogic,
+   conductor, highervisibility, tripledart, yotpo, position.digital, etc).
+   At current domain authority, competing on these head terms directly is
+   not realistic short-term; the win condition is long-tail specificity +
+   the AEO/GEO wedge (less saturated, and the only channel already
+   converting in GA4 — "AI Assistant" delivered 1 session / 3 keyEvents,
+   a better per-session conversion rate than anything else in the property,
+   even accounting for the keyEvents tracking-bug caveat already on file).
+   One externally-sourced fact worth building content around: pages with
+   comprehensive JSON-LD are ~3x more likely to appear in AI Overviews, and
+   fact density (not word count) is what correlates with AI citation —
+   this site already ships the schema; almost no competitor content in
+   the SERPs checked leads with that build-level specificity.
+4. Found and fixed one smaller thing in passing: `/case-studies/*`,
+   `/services/web-design-development`, and `/mentions` all 404 without the
+   `.html` extension (only `.html` resolves) — internal links are all
+   correctly `.html`-suffixed so this isn't self-inflicted crawl waste, but
+   GA4 shows historical pageviews on the extensionless paths too, meaning
+   something external once linked the bare form. `_redirects` was
+   deliberately left without an index-redirect rule after a prior
+   documented redirect-loop incident (see `_redirects` comments +
+   `worker.js`), so a bare extensionless→`.html` rule needs a careful
+   worker-level check, not a blind `_redirects` add — logged as an Ask for
+   a dev pass rather than changed blind this run.
+
 ## Asks awaiting Faiz (the strategist re-surfaces these weekly)
 
+- [ ] **NEW, URGENT — real Google Search Console data is unavailable to
+  this system.** The Adspirer connector's `google_search_console` tool
+  reports "not connected" (Settings → Connections → Google Search
+  Console). Separately, the Ahrefs MCP's GSC-integration, Site Explorer,
+  Keywords Explorer, Rank Tracker, and Site Audit tools all return
+  `"Insufficient plan"` — every query-level keyword/ranking/competitor
+  tool on that connector is currently 100% unusable. Until one of these is
+  fixed, the team cannot see actual search queries, impressions, or true
+  ranking positions — this 2026-09-04 audit had to substitute GA4 +
+  live-site crawling + SERP spot-checks, which is a real but weaker proxy.
+  Please connect GSC in Adspirer (fastest fix, likely free) and/or check
+  the Ahrefs plan tier.
+- [ ] **NEW, P0 — `sitemap.xml` will go stale again on the next blog
+  publish unless the pipeline is fixed.** This run manually added the 5
+  blog posts missing from the sitemap (see focus-themes note above), but
+  `automation/blog/publish_validator.py` has no step that touches
+  `sitemap.xml` at all. Needs an engineering fix: append each newly
+  published post's `<url>` block to `sitemap.xml` as part of the
+  `--publish` step (or generate the sitemap from `blog/posts/*.html` on
+  every publish instead of hand-maintaining it). Otherwise every future
+  post repeats this exact bug.
+- [ ] **NEW, P1 — extensionless URLs 404 site-wide** (`/case-studies/*`,
+  `/mentions`, `/services/web-design-development` all 404 without
+  `.html`). Not self-inflicted (internal links are correctly
+  `.html`-suffixed) but GA4 shows historical traffic on the bare paths, so
+  something external once linked them. `_redirects` was deliberately left
+  without an index-redirect rule after a documented redirect-loop incident
+  against `worker.js`'s directory-index logic — a fix needs a careful
+  worker-level rewrite (check `url.pathname` for a bare service/case-study
+  slug and serve/301 to the `.html` file, without touching the existing
+  trailing-slash directory-index logic), not a blind `_redirects` line.
+  Flagging for a dev pass rather than changing routing logic unreviewed.
 - [ ] **NEW, URGENT: the Instagram channel is disconnected in Buffer.**
   As of the 2026-09-05 Social Manager run, `list_channels`/`get_channel`
   both report `isDisconnected: true` for `seo_with_faiz`
