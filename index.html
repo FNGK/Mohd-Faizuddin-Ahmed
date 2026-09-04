@@ -180,35 +180,32 @@
 
   <main id="main">
     <section class="section hero-lab" aria-label="Introduction">
-      <div class="hero-lab__stage" aria-hidden="true">
-        <div class="instrument" data-hero-viz role="img" aria-label="Interactive 3D globe representing worldwide delivery">
-          <div class="instrument__frame">
-            <canvas class="instrument__canvas" data-hero-globe aria-hidden="true"></canvas>
-            <div class="instrument__wire" aria-hidden="true">
-              <svg viewBox="0 0 240 240" role="img" aria-label="Wireframe globe">
-                <circle class="iw-rim" cx="120" cy="120" r="96" />
-                <ellipse class="iw-line" cx="120" cy="120" rx="66" ry="96" />
-                <ellipse class="iw-line" cx="120" cy="120" rx="34" ry="96" />
-                <line class="iw-line" x1="120" y1="24" x2="120" y2="216" />
-                <ellipse class="iw-line" cx="120" cy="120" rx="96" ry="66" />
-                <ellipse class="iw-line" cx="120" cy="120" rx="96" ry="34" />
-                <line class="iw-line" x1="24" y1="120" x2="216" y2="120" />
-                <circle class="iw-dot" cx="150" cy="86" r="3.2" />
-                <circle class="iw-dot" cx="92" cy="150" r="3.2" />
-                <circle class="iw-dot" cx="168" cy="142" r="2.6" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container hero-lab__inner">
+      <div class="container hero-lab__grid">
+        <div class="hero-lab__lead">
           <span class="mono-tag"><i aria-hidden="true"></i>Technical precision · Revenue growth</span>
           <h1>We design, build, and grow websites that <span class="accent-word">win the customer</span>.</h1>
           <p class="lede">I'm Mohd Faizuddin Ahmed — Faiz. I design and build fast, distinctive websites on custom code, Shopify Plus, WordPress, and Magento, then grow them with the technical SEO and performance marketing that turn visitors into customers. You work with the person doing the work, not an account manager.</p>
           <p class="answer-box">SEO With Faiz is a senior, founder-led studio that designs and develops websites — custom, 3D, Shopify Plus, WordPress, and Magento — and grows them with technical SEO and performance marketing, for enterprise and growth-stage brands.</p>
-          <div class="hero-lab__actions">
-            <a class="btn btn-primary" data-dynamic-cta href="./contact/index.html">Book a strategy call</a>
-            <a class="btn btn-ghost" href="./case-studies/index.html">See the work</a>
+        </div>
+        <div class="hero-lab__side">
+          <div class="instrument hero-lab__globe" data-hero-viz role="img" aria-label="Interactive 3D globe representing worldwide delivery">
+            <div class="instrument__frame">
+              <canvas class="instrument__canvas" data-hero-globe aria-hidden="true"></canvas>
+              <div class="instrument__wire" aria-hidden="true">
+                <svg viewBox="0 0 240 240" role="img" aria-label="Wireframe globe">
+                  <circle class="iw-rim" cx="120" cy="120" r="96" />
+                  <ellipse class="iw-line" cx="120" cy="120" rx="66" ry="96" />
+                  <ellipse class="iw-line" cx="120" cy="120" rx="34" ry="96" />
+                  <line class="iw-line" x1="120" y1="24" x2="120" y2="216" />
+                  <ellipse class="iw-line" cx="120" cy="120" rx="96" ry="66" />
+                  <ellipse class="iw-line" cx="120" cy="120" rx="96" ry="34" />
+                  <line class="iw-line" x1="24" y1="120" x2="216" y2="120" />
+                  <circle class="iw-dot" cx="150" cy="86" r="3.2" />
+                  <circle class="iw-dot" cx="92" cy="150" r="3.2" />
+                  <circle class="iw-dot" cx="168" cy="142" r="2.6" />
+                </svg>
+              </div>
+            </div>
           </div>
           <ul class="hero-lab__caps" aria-label="Core capabilities">
             <li>Web Design &amp; Dev</li>
@@ -216,12 +213,17 @@
             <li>Technical SEO</li>
             <li>Performance Marketing</li>
           </ul>
+          <div class="hero-lab__actions">
+            <a class="btn btn-primary" data-dynamic-cta href="./contact/index.html">Book a strategy call</a>
+            <a class="btn btn-ghost" href="./case-studies/index.html">See the work</a>
+          </div>
           <dl class="instrument__readout hero-lab__readout">
             <div><dt>Markets</dt><dd>US · CA · AU · EU</dd></div>
             <div><dt>Lighthouse</dt><dd>95<span>+</span></dd></div>
             <div><dt>Response</dt><dd>&lt; 24h</dd></div>
             <div><dt>Delivery</dt><dd>Senior-led</dd></div>
           </dl>
+        </div>
       </div>
     </section>
 
