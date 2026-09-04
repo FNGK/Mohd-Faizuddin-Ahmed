@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-07-14T07:44:52.977900+00:00",
+ "generated_at": "2026-09-04T06:05:18.458936+00:00",
  "drafts": [
   {
    "title": "AI Search Optimization: A 2026 Playbook for Search Teams",
    "slug": "ai-search-optimization-staying-visible-as-ai-reshapes-search-in-2026",
    "date": "2026-07-06",
-   "review_status": "ready",
+   "review_status": "needs_revision",
    "primary_keyword": "ai search optimization",
    "meta_description": "You're working on ai search optimization at the awareness stage. ai search optimization \u2014 SERP-aligned SEO, AEO, GEO, and SXO steps.",
    "file": "ai-search-optimization-staying-visible-as-ai-reshapes-search-in-2026.md"
@@ -32,7 +32,7 @@
    "title": "Answer Engine Optimization: A 2026 Playbook for Search Teams",
    "slug": "answer-engine-optimization-staying-visible-as-ai-reshapes-search-in-2026",
    "date": "2026-06-29",
-   "review_status": "ready",
+   "review_status": "needs_revision",
    "primary_keyword": "answer engine optimization",
    "meta_description": "You're working on answer engine optimization at the awareness stage. answer engine optimization \u2014 SERP-aligned SEO, AEO, GEO, and SXO steps.",
    "file": "answer-engine-optimization-staying-visible-as-ai-reshapes-search-in-2026.md"
@@ -41,7 +41,7 @@
    "title": "Generative Engine Optimization: A 2026 Playbook for Search",
    "slug": "generative-engine-optimization-staying-visible-as-ai-reshapes-search-in",
    "date": "2026-06-29",
-   "review_status": "ready",
+   "review_status": "needs_revision",
    "primary_keyword": "generative engine optimization",
    "meta_description": "You're working on generative engine optimization at the awareness stage. generative engine optimization \u2014 SERP-aligned SEO, AEO, GEO, and SXO steps.",
    "file": "generative-engine-optimization-staying-visible-as-ai-reshapes-search-in.md"
@@ -59,7 +59,7 @@
    "title": "How to Rank in AI Overviews: A Step-by-Step Guide for 2026",
    "slug": "how-to-rank-in-ai-overviews-a-step-by-step-guide-for-2026",
    "date": "2026-07-02",
-   "review_status": "ready",
+   "review_status": "needs_revision",
    "primary_keyword": "how to rank in ai overviews",
    "meta_description": "You're working on how to rank in ai overviews at the awareness stage. how to rank in ai overviews \u2014 SERP-aligned SEO, AEO, GEO, and SXO steps.",
    "file": "how-to-rank-in-ai-overviews-a-step-by-step-guide-for-2026.md"
@@ -68,7 +68,7 @@
    "title": "LLM SEO: Staying Visible as AI Reshapes Search in 2026",
    "slug": "llm-seo-staying-visible-as-ai-reshapes-search-in-2026",
    "date": "2026-07-06",
-   "review_status": "ready",
+   "review_status": "needs_revision",
    "primary_keyword": "llm seo",
    "meta_description": "You're working on llm seo at the awareness stage. llm seo \u2014 SERP-aligned SEO, AEO, GEO, and SXO steps. Actionable for marketing leaders.",
    "file": "llm-seo-staying-visible-as-ai-reshapes-search-in-2026.md"
@@ -81,6 +81,24 @@
    "primary_keyword": "local seo conversion strategy seo strategy",
    "meta_description": "If you run a location-based business, you have probably seen the pattern: impressions climb on Google Maps, calls trickle in, and the CRM still shows  Actionable steps for technical SEO, local growth, and AI-era visibility.'",
    "file": "local-seo-conversion-strategy-seo-strategy-what-teams-should-do-in-2026.md"
+  },
+  {
+   "title": "Schema Markup for AI Search: A 2026 Playbook for Search Teams",
+   "slug": "schema-markup-for-ai-search-staying-visible-as-ai-reshapes-search-in-202",
+   "date": "2026-07-16",
+   "review_status": "needs_revision",
+   "primary_keyword": "schema markup for ai search",
+   "meta_description": "You're working on schema markup for ai search at the awareness stage. schema markup for ai search \u2014 SERP-aligned SEO, AEO, GEO, and SXO steps.",
+   "file": "schema-markup-for-ai-search-staying-visible-as-ai-reshapes-search-in-202.md"
+  },
+  {
+   "title": "Technical SEO Audit: A 2026 Playbook for Search Teams",
+   "slug": "technical-seo-audit-priorities-that-protect-crawl-budget-and-revenue",
+   "date": "2026-07-16",
+   "review_status": "needs_revision",
+   "primary_keyword": "technical seo audit",
+   "meta_description": "You're working on technical seo audit at the awareness stage. technical seo audit \u2014 SERP-aligned SEO, AEO, GEO, and SXO steps.",
+   "file": "technical-seo-audit-priorities-that-protect-crawl-budget-and-revenue.md"
   },
   {
    "title": "Technical SEO Priorities When Crawl Budget and Revenue Both Matter",
