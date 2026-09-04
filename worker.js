@@ -495,6 +495,30 @@ export default {
       return env.ASSETS.fetch(new Request(indexUrl, request));
     }
 
+    // Extensionless page/section slugs (e.g. /case-studies/button-eyes-resort,
+    // /services/web-design-development, /mentions) would 404 under html_handling
+    // "none". External sites linked some of these bare paths, so 301 them to the
+    // real canonical: <slug>.html for a page, or <slug>/ for a directory. We probe
+    // ASSETS and only redirect on a confirmed 200, so genuine 404s stay 404. No
+    // loop is possible: the redirect targets (a .html file, or a trailing-slash
+    // directory) are served by the branches above and never re-enter this one.
+    if ((request.method === 'GET' || request.method === 'HEAD') && !/\.[^/]+$/.test(url.pathname)) {
+      const htmlUrl = new URL(url);
+      htmlUrl.pathname = url.pathname + '.html';
+      const htmlHit = await env.ASSETS.fetch(new Request(htmlUrl, { method: 'GET' }));
+      if (htmlHit.status === 200) {
+        return Response.redirect(htmlUrl.toString(), 301);
+      }
+      const dirUrl = new URL(url);
+      dirUrl.pathname = url.pathname + '/index.html';
+      const dirHit = await env.ASSETS.fetch(new Request(dirUrl, { method: 'GET' }));
+      if (dirHit.status === 200) {
+        const slashUrl = new URL(url);
+        slashUrl.pathname = url.pathname + '/';
+        return Response.redirect(slashUrl.toString(), 301);
+      }
+    }
+
     return env.ASSETS.fetch(request);
   },
 };
