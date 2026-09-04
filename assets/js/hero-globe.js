@@ -53,6 +53,25 @@
   }
   ARM_EVENTS.forEach(function (ev) { window.addEventListener(ev, ignite, { passive: true }); });
 
+  // Warm the 670KB Three.js module cache during idle, BEFORE the first
+  // interaction. Without this, ignite() only begins downloading the module once
+  // the visitor scrolls/moves, so on a cold cache the whole 2-3s wait is that
+  // download+parse happening on the interaction path. Pre-fetching it while the
+  // visitor reads the hero means it's already cached when they interact, and the
+  // globe renders in a few hundred ms. This only downloads/parses the module —
+  // NO WebGL context is created here (that stays gated inside build()), so LCP
+  // is untouched. import() de-dupes, so ignite()'s later import reuses this one.
+  function warmThree() {
+    if (armed) return; // a real interaction already kicked off the import
+    import("./vendor/three.module.min.js").catch(function () {});
+  }
+  function scheduleWarm() {
+    if (window.requestIdleCallback) window.requestIdleCallback(warmThree, { timeout: 3000 });
+    else setTimeout(warmThree, 1500);
+  }
+  if (document.readyState === "complete") scheduleWarm();
+  else window.addEventListener("load", scheduleWarm, { once: true });
+
   function build(THREE) {
     // Reveal the 3D viewport first so the container takes its real
     // (mobile min-height) size before the canvas is measured.
