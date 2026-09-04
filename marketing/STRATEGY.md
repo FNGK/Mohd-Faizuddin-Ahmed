@@ -101,6 +101,15 @@ tomorrow's post actually goes out and gets logged.
 
 ## Asks awaiting Faiz (the strategist re-surfaces these weekly)
 
+- [ ] **NEW, URGENT: the Instagram channel is disconnected in Buffer.**
+  As of the 2026-09-05 Social Manager run, `list_channels`/`get_channel`
+  both report `isDisconnected: true` for `seo_with_faiz`
+  (id `6a49c7a440483446286f476c`). This run skipped Instagram scheduling
+  rather than post into a broken channel — GBP and LinkedIn both went out
+  as normal. IG has had no fresh post since 08-28 as a result. Needs Faiz
+  to reconnect it from the Buffer dashboard (channel → reconnect/re-auth);
+  until then Instagram content stops accumulating and the studio effectively
+  runs on 2 channels instead of 3.
 - [ ] **NEW, URGENT (partially resolving live): the Editor-in-Chief,
   Social Manager, Prospector, and Growth Strategist scheduled roles went
   silent for ~5 weeks** (2026-07-20 → 2026-08-24 — LOG.md's last entry
