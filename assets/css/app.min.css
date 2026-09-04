@@ -1,10 +1,10 @@
 :root {
---bg: #f2ebe0;
---surface: #fffdf8;
---surface-muted: #efe6d8;
+--bg: #ffffff;
+--surface: #ffffff;
+--surface-muted: #f4f6f9;
 --text: #0c1424;
---text-muted: #4f5d72;
---border: #d8ccb8;
+--text-muted: #566072;
+--border: #e5e9ef;
 --primary: #0d7f76;
 --primary-dark: #0a625b;
 --accent: #c56a1d;
@@ -21,9 +21,9 @@
 --font-display: "Fraunces", Georgia, "Times New Roman", serif;
 --font-body: "Hanken Grotesk", "Segoe UI", Roboto, Arial, sans-serif;
 --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
---mesh-a: radial-gradient(ellipse 120% 80% at 0% -20%, rgba(13, 127, 118, 0.22), transparent 58%);
---mesh-b: radial-gradient(ellipse 90% 60% at 100% 0%, rgba(197, 106, 29, 0.16), transparent 54%);
---mesh-c: radial-gradient(ellipse 70% 50% at 50% 110%, rgba(12, 20, 36, 0.06), transparent 58%);
+--mesh-a: linear-gradient(transparent, transparent);
+--mesh-b: linear-gradient(transparent, transparent);
+--mesh-c: linear-gradient(transparent, transparent);
 }
 [data-theme="dark"] {
 --bg: #08111f;

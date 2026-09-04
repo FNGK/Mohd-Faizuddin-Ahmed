@@ -118,6 +118,21 @@
     }));
     globe.add(points);
 
+    // --- Theme-aware colours: light/dark ocean + continents, updated live
+    //     when the site theme toggles (data-theme on <html>/<body>). ---
+    var landMat = null;
+    function isLight() { return (document.documentElement.getAttribute("data-theme") || (document.body && document.body.getAttribute("data-theme"))) === "light"; }
+    function applyTheme() {
+      var light = isLight();
+      core.material.color.setHex(light ? 0xeaf1f1 : 0x061320);
+      points.material.color.setHex(light ? 0x0d7f76 : 0x2fd4c6);
+      if (landMat) landMat.color.setHex(light ? 0x0d7f76 : 0x2fd4c6);
+    }
+    applyTheme();
+    var themeObs = new MutationObserver(applyTheme);
+    themeObs.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+    if (document.body) themeObs.observe(document.body, { attributes: true, attributeFilter: ["data-theme"] });
+
     (function loadLandMask() {
       var img = new Image();
       img.onload = function () {
@@ -127,10 +142,9 @@
           maskTex.anisotropy = coarse ? 2 : 4;
           // Solid teal continents raised above the ocean sphere for 3D relief.
           // The mask's luminance is the alpha (land = opaque, ocean = clear).
-          globe.add(new THREE.Mesh(
-            new THREE.SphereGeometry(R * 1.02, 96, 96),
-            new THREE.MeshBasicMaterial({ color: TEAL, alphaMap: maskTex, transparent: true, opacity: 0.95, depthWrite: false })
-          ));
+          landMat = new THREE.MeshBasicMaterial({ color: TEAL, alphaMap: maskTex, transparent: true, opacity: 0.95, depthWrite: false });
+          globe.add(new THREE.Mesh(new THREE.SphereGeometry(R * 1.02, 96, 96), landMat));
+          applyTheme();
         } catch (e) { /* keep even sphere */ }
       };
       img.src = "./assets/textures/earth-land.png";
