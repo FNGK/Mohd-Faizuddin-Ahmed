@@ -66,7 +66,7 @@
 
     var scene = new THREE.Scene();
     var camera = new THREE.PerspectiveCamera(50, W / H, 0.1, 100);
-    camera.position.set(0, 0, 3.2);
+    camera.position.set(0, 0, 3.35);
 
     var globe = new THREE.Group();
     scene.add(globe);
@@ -81,26 +81,60 @@
     );
     globe.add(core);
 
-    // --- Point-cloud globe (Fibonacci sphere) ---
-    var COUNT = coarse ? 1500 : 2400;
-    var positions = new Float32Array(COUNT * 3);
+    // --- Point-cloud globe: the teal dots form the continents by sampling an
+    //     equirectangular land mask (assets/textures/earth-land.png). Starts as
+    //     an even sphere; upgrades to the world map once the mask loads. ---
     var golden = Math.PI * (3 - Math.sqrt(5));
-    for (var i = 0; i < COUNT; i++) {
-      var y = 1 - (i / (COUNT - 1)) * 2;
-      var r = Math.sqrt(1 - y * y);
-      var theta = golden * i;
-      positions[i * 3] = Math.cos(theta) * r * R;
-      positions[i * 3 + 1] = y * R;
-      positions[i * 3 + 2] = Math.sin(theta) * r * R;
+    function fib(count, data, cw, ch) {
+      var arr = [];
+      for (var i = 0; i < count; i++) {
+        var y = 1 - (i / (count - 1)) * 2;
+        var rr = Math.sqrt(1 - y * y);
+        var th = golden * i;
+        var x = Math.cos(th) * rr, z = Math.sin(th) * rr;
+        if (data) {
+          var lat = Math.asin(y), lon = Math.atan2(z, x);
+          var pxi = ((lon + Math.PI) / (2 * Math.PI) * cw) | 0;
+          var pyi = ((0.5 - lat / Math.PI) * ch) | 0;
+          if (pxi < 0) pxi = 0; else if (pxi >= cw) pxi = cw - 1;
+          if (pyi < 0) pyi = 0; else if (pyi >= ch) pyi = ch - 1;
+          var idx = (pyi * cw + pxi) * 4;
+          if (data[idx + 3] < 40 || (data[idx] + data[idx + 1] + data[idx + 2]) / 3 < 90) continue;
+        }
+        // Land points sit raised above the ocean sphere so continents bulge out
+        // in relief; the even-sphere fallback stays on the surface.
+        var rad = data ? R * 1.05 : R;
+        arr.push(x * rad, y * rad, z * rad);
+      }
+      return new Float32Array(arr);
     }
+    var COUNT = coarse ? 1500 : 2400;
     var pGeo = new THREE.BufferGeometry();
-    pGeo.setAttribute("position", new THREE.BufferAttribute(positions, 3));
+    pGeo.setAttribute("position", new THREE.BufferAttribute(fib(COUNT), 3));
     var dot = makeDotTexture(THREE);
     var points = new THREE.Points(pGeo, new THREE.PointsMaterial({
-      color: TEAL, size: 0.028, map: dot, transparent: true, opacity: 0.9,
+      color: TEAL, size: 0.02, map: dot, transparent: true, opacity: 0.28,
       depthWrite: false, blending: THREE.AdditiveBlending, sizeAttenuation: true
     }));
     globe.add(points);
+
+    (function loadLandMask() {
+      var img = new Image();
+      img.onload = function () {
+        try {
+          var maskTex = new THREE.Texture(img);
+          maskTex.needsUpdate = true;
+          maskTex.anisotropy = coarse ? 2 : 4;
+          // Solid teal continents raised above the ocean sphere for 3D relief.
+          // The mask's luminance is the alpha (land = opaque, ocean = clear).
+          globe.add(new THREE.Mesh(
+            new THREE.SphereGeometry(R * 1.02, 96, 96),
+            new THREE.MeshBasicMaterial({ color: TEAL, alphaMap: maskTex, transparent: true, opacity: 0.95, depthWrite: false })
+          ));
+        } catch (e) { /* keep even sphere */ }
+      };
+      img.src = "./assets/textures/earth-land.png";
+    })();
 
     // --- Faint wireframe shell ---
     var wire = new THREE.LineSegments(
@@ -111,11 +145,11 @@
 
     // --- Atmosphere glow (fresnel rim, additive) ---
     var atmo = new THREE.Mesh(
-      new THREE.SphereGeometry(R * 1.18, 48, 48),
+      new THREE.SphereGeometry(R * 1.13, 48, 48),
       new THREE.ShaderMaterial({
         transparent: true, blending: THREE.AdditiveBlending, side: THREE.BackSide, depthWrite: false,
         vertexShader: "varying vec3 vN; void main(){ vN = normalize(normalMatrix * normal); gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0); }",
-        fragmentShader: "varying vec3 vN; void main(){ float i = pow(0.62 - dot(vN, vec3(0.0,0.0,1.0)), 3.0); i = clamp(i, 0.0, 1.0); gl_FragColor = vec4(0.18,0.83,0.78,1.0) * i; }"
+        fragmentShader: "varying vec3 vN; void main(){ float i = pow(0.5 - dot(vN, vec3(0.0,0.0,1.0)), 2.3); i = clamp(i, 0.0, 1.0); gl_FragColor = vec4(0.08,0.40,0.38,1.0) * i; }"
       })
     );
     scene.add(atmo);
@@ -190,6 +224,7 @@
     }
 
     globe.rotation.x = 0.32;
+    globe.rotation.y = 1.4; // start on a continent-rich face (Africa/Europe), not open ocean
 
     // --- Interaction: drag to rotate + inertia + idle auto-rotate.
     //     On touch devices only horizontal drags rotate (pan-y), so a
@@ -215,7 +250,7 @@
     var tmp = new THREE.Vector3();
     function frame() {
       if (!dragging) {
-        velY += (0.0018 - velY) * 0.02; // ease back to gentle auto-spin
+        velY += (0.0026 - velY) * 0.02; // ease back to gentle auto-spin
         globe.rotation.y += velY;
         globe.rotation.x += velX;
         velX *= 0.94;
