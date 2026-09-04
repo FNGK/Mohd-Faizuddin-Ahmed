@@ -1376,11 +1376,7 @@ transform: none;
 filter: blur(0);
 }
 .text-grad {
-background: linear-gradient(115deg, var(--primary) 0%, var(--accent) 78%);
--webkit-background-clip: text;
-background-clip: text;
--webkit-text-fill-color: transparent;
-color: transparent;
+color: var(--accent);
 }
 .hero { isolation: isolate; }
 .hero::before {
