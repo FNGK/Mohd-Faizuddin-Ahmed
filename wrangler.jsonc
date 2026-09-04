@@ -25,13 +25,18 @@
   "assets": {
     "directory": ".",
     "binding": "ASSETS",
-    // Default "auto-trailing-slash" 307-redirects /page.html -> /page, which
-    // conflicts with every canonical tag, sitemap entry, and internal link on
-    // this site (all use the .html form). "none" disables that redirect so
-    // .html pages serve directly at their declared canonical URL. Directory
-    // paths (/, /services/, etc.) no longer auto-resolve to index.html under
-    // "none" — worker.js explicitly rewrites those before calling ASSETS.fetch.
+    // Clean/extensionless URLs are canonical. "none" disables Cloudflare's own
+    // html_handling redirects so worker.js owns all routing with explicit 301s.
+    // (Cloudflare's built-in "auto-trailing-slash" would give clean URLs too,
+    // but via 307/temporary redirects — weaker for SEO than the worker's
+    // permanent 301 .html -> clean.)
     "html_handling": "none",
+    // Static assets are served BEFORE the worker by default, so a request for a
+    // real file like /services/web-design-development.html would bypass
+    // worker.js entirely and never reach its .html -> clean 301. Run the worker
+    // first so it intercepts every request; genuine static assets (css/js/img)
+    // fall through to env.ASSETS.fetch() in the worker's tail branch.
+    "run_worker_first": true,
     "exclude": [
       "**/.git/**",
       "**/.wrangler/**",
