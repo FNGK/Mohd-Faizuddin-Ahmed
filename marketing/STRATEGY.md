@@ -150,6 +150,35 @@ now fixed:
    fact density (not word count) is what correlates with AI citation —
    this site already ships the schema; almost no competitor content in
    the SERPs checked leads with that build-level specificity.
+**(2026-09-04 correction, same day):** Faiz confirmed GSC is linked —
+through GA4's native Search Console integration, not the standalone
+Adspirer/Ahrefs connectors (both genuinely unauthorized this session,
+confirmed by direct retry). GA4's `organicGoogleSearch*` metrics
+(`Clicks`/`Impressions`/`ClickThroughRate`/`AveragePosition`) pulled real
+data and **materially revise the "statistically zero" framing above**: the
+site does have real, if thin, Google Search presence — 259 impressions,
+10 clicks, 3.86% CTR over May 1–Sep 4 (67 days with any signal). The
+GA4-session-based "7 sessions" figure undercounted because most impressions
+never convert to a countable session at this volume. **The sharper,
+genuinely new finding: impression-weighted average position has gotten
+WORSE over time, not better** — 6.0 (13 days, May–June) vs. 26.7 (28 days,
+August) — and there hasn't been a single click since 2026-08-20 despite
+continued impressions. That's the opposite of the normal young-domain
+trajectory (should improve as Google gains trust) and worth investigating
+directly in GSC's own UI, where query-level detail is visible — GA4's link
+only exposes site-wide daily aggregates via the Data API (no `query`
+dimension came back from metadata, and pairing these metrics with
+`landingPage` or any dimension besides `date` returns "incompatible").
+**Caveat on the trend:** daily volume is often 1-9 impressions, so a single
+matched query can swing one day's "average position" by 50+ points — real
+pattern, but noisy; the timing loosely overlaps Google's Aug 18-21 2026
+spam update (already a queued blog angle) but the degradation was visible
+before that window too, so treat as a hypothesis, not a confirmed cause.
+**Ask added: Faiz should pull the query-level GSC report directly (Search
+Console UI → Performance → Search results, export or screenshot) so the
+team can see WHICH queries are losing position** — that's the one layer
+this system still cannot reach.
+
 4. Found and fixed one smaller thing in passing: `/case-studies/*`,
    `/services/web-design-development`, and `/mentions` all 404 without the
    `.html` extension (only `.html` resolves) — internal links are all
@@ -164,18 +193,24 @@ now fixed:
 
 ## Asks awaiting Faiz (the strategist re-surfaces these weekly)
 
-- [ ] **NEW, URGENT — real Google Search Console data is unavailable to
-  this system.** The Adspirer connector's `google_search_console` tool
-  reports "not connected" (Settings → Connections → Google Search
-  Console). Separately, the Ahrefs MCP's GSC-integration, Site Explorer,
-  Keywords Explorer, Rank Tracker, and Site Audit tools all return
-  `"Insufficient plan"` — every query-level keyword/ranking/competitor
-  tool on that connector is currently 100% unusable. Until one of these is
-  fixed, the team cannot see actual search queries, impressions, or true
-  ranking positions — this 2026-09-04 audit had to substitute GA4 +
-  live-site crawling + SERP spot-checks, which is a real but weaker proxy.
-  Please connect GSC in Adspirer (fastest fix, likely free) and/or check
-  the Ahrefs plan tier.
+- [ ] **UPDATED 2026-09-04 (same day) — GSC IS reachable via GA4's link;
+  the gap is narrower than first thought.** Correction to the original
+  version of this ask: Faiz confirmed GSC is connected through GA4, and
+  `organicGoogleSearch*` metrics (Clicks/Impressions/CTR/AveragePosition)
+  do return real data that way — see the focus-themes correction note
+  above (259 impressions/10 clicks/67 days, average position worsening
+  6.0→26.7 May-June vs. August). What's still missing: **query-level
+  detail** — GA4's Data API only exposes site-wide daily aggregates for
+  these metrics (no `query` dimension, and no pairing with `landingPage`).
+  To see WHICH queries are losing position, Faiz needs to pull that
+  directly from Search Console's own UI (Performance → Search results →
+  export). Separately, the Adspirer standalone `google_search_console`
+  tool and the Ahrefs MCP's GSC-integration/Site Explorer/Keywords
+  Explorer/Rank Tracker/Site Audit tools are still genuinely unauthorized
+  (`"not connected"` / `"Insufficient plan"`, confirmed by direct retry
+  after Faiz's first reconnect attempt) — not blocking now that the GA4
+  path works for aggregates, but still worth fixing for query-level access
+  and competitor data.
 - [ ] **NEW, P0 — `sitemap.xml` will go stale again on the next blog
   publish unless the pipeline is fixed.** This run manually added the 5
   blog posts missing from the sitemap (see focus-themes note above), but
