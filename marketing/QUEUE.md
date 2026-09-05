@@ -29,7 +29,7 @@
 - [platform-truth] "Shopify Plus or Magento? Wrong question. Start with who runs the site on a Tuesday afternoon." — /services/shopify-development.html
 - ~~[case-study/wedge-sports] "A football academy's website built like a flagship — custom Next.js, live at hydlittlestars.com." — /case-studies/little-stars-academy.html~~ (used 2026-08-25 → GBP/IG/LinkedIn — one of the 2 staged case-study angles per the 2026-08-24 strategist note to resume post-gap with proof-anchored content)
 - ~~[pov] "Most agencies describe their audits. I publish one." — /case-studies/button-eyes-resort.html~~ (used 2026-07-17 → GBP/IG/LinkedIn)
-- [behind-studio] "I use AI aggressively and review everything personally. Senior judgment at modern speed — and I'll always tell you which is which." — /about/
+- ~~[behind-studio] "I use AI aggressively and review everything personally. Senior judgment at modern speed — and I'll always tell you which is which." — /about/~~ (used 2026-09-06 → GBP/LinkedIn; wording tightened to "deliberately" to match the live /about/ page's exact phrasing; Instagram skipped, channel still disconnected in Buffer)
 - [buyer-education] "A one-second delay isn't a design flaw, it's a leak in revenue. What Core Web Vitals actually measure." — /services/technical-seo.html
 - [craft-proof] "Why my WebGL globe never loads for Lighthouse — and loads in under a second for you. Progressive enhancement done honestly." — /services/3d-web-design.html
 - [platform-truth] "WordPress isn't slow. Bloated themes, 40 plugins, and cheap hosting are slow." — /services/wordpress-development.html
