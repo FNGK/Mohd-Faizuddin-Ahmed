@@ -90,7 +90,9 @@
         return '<div class="crm-card crm-lead" data-id="' + l.id + '">' +
           '<div>' +
             '<h3>' + esc(l.name) + ' <span class="crm-status" data-s="' + esc(l.status) + '">' + esc(l.status) + '</span></h3>' +
-            '<p><a href="mailto:' + esc(l.email) + '">' + esc(l.email) + '</a>' +
+            '<p>' +
+            (l.email ? '<a href="mailto:' + esc(l.email) + '">' + esc(l.email) + '</a>' : '') +
+            (l.phone ? (l.email ? ' · ' : '') + '<a href="tel:' + esc(l.phone) + '">' + esc(l.phone) + '</a>' : '') +
             (l.website ? ' · <a href="' + esc(l.website) + '" target="_blank" rel="noopener noreferrer">' + esc(l.website) + '</a>' : '') +
             ' · ' + esc(l.region || '') + ' · ' + esc((l.created_at || '').slice(0, 10)) + ' · ' + esc(l.source) + '</p>' +
             (l.goal ? '<p class="goal">' + esc(l.goal) + '</p>' : '') +
@@ -99,6 +101,7 @@
               '<div class="crm-edit-grid">' +
                 '<label>Name<input class="ed-name" value="' + esc(l.name) + '"></label>' +
                 '<label>Email<input class="ed-email" value="' + esc(l.email) + '"></label>' +
+                '<label>Phone<input class="ed-phone" value="' + esc(l.phone || '') + '"></label>' +
                 '<label>Website<input class="ed-website" value="' + esc(l.website || '') + '"></label>' +
                 '<label>Region<input class="ed-region" value="' + esc(l.region || '') + '"></label>' +
               '</div>' +
@@ -151,6 +154,7 @@
               id: parseInt(card.dataset.id, 10),
               name: card.querySelector('.ed-name').value,
               email: card.querySelector('.ed-email').value,
+              phone: card.querySelector('.ed-phone').value,
               website: card.querySelector('.ed-website').value,
               region: card.querySelector('.ed-region').value,
             }),
@@ -181,9 +185,9 @@
   $('mlAdd').addEventListener('click', function () {
     req('/leads/add', {
       method: 'POST',
-      body: JSON.stringify({ name: $('mlName').value, email: $('mlEmail').value, website: $('mlWebsite').value, source: 'outbound' }),
+      body: JSON.stringify({ name: $('mlName').value, email: $('mlEmail').value, phone: $('mlPhone').value, website: $('mlWebsite').value, source: 'outbound' }),
     }).then(function (r) {
-      if (r.ok) { msg('Lead added'); $('mlName').value = ''; $('mlEmail').value = ''; $('mlWebsite').value = ''; loadLeads(); }
+      if (r.ok) { msg('Lead added'); $('mlName').value = ''; $('mlEmail').value = ''; $('mlPhone').value = ''; $('mlWebsite').value = ''; loadLeads(); }
       else { msg('Add failed: ' + (r.data.error || r.status)); }
     });
   });

@@ -263,9 +263,21 @@ async function crmInsertLead(env, submission, request) {
   return { id: res.meta.last_row_id, email: submission.email, ad_consent: adConsent, an_consent: anConsent };
 }
 
+// One-time lazy migration: CRM databases created before the phone column need it
+// added. Doing it here (idempotent — a duplicate-column error is ignored) avoids a
+// manual `wrangler d1 execute` step. Runs at most once per worker instance.
+let crmMigrated = false;
+async function ensureCrmSchema(env) {
+  if (crmMigrated || !env.CRM_DB) return;
+  try { await env.CRM_DB.prepare("ALTER TABLE leads ADD COLUMN phone TEXT DEFAULT ''").run(); }
+  catch (e) { /* column already exists — expected on every run after the first */ }
+  crmMigrated = true;
+}
+
 async function handleCrmApi(request, env, ctx, url) {
   const path = url.pathname.replace(/\/$/, '');
   const method = request.method;
+  await ensureCrmSchema(env);
 
   if (path === '/api/crm/login' && method === 'POST') {
     if (!env.CRM_ACCESS_KEY) return json({ error: 'CRM_ACCESS_KEY secret not configured yet' }, 503);
@@ -331,12 +343,13 @@ async function handleCrmApi(request, env, ctx, url) {
     // Editable detail fields — fix a typo, put a real name on a phone-only lead,
     // replace a placeholder email, etc. Column names come from this fixed
     // whitelist only (never from the request); values are always bound.
-    const EDITABLE = { name: 200, email: 200, website: 300, region: 40, goal: 2000 };
+    const EDITABLE = { name: 200, email: 200, phone: 40, website: 300, region: 40, goal: 2000 };
     for (const f of Object.keys(EDITABLE)) {
       if (body[f] === undefined) continue;
       const v = String(body[f]).slice(0, EDITABLE[f]);
-      // name and email are required on every lead — an edit must never blank them.
-      if ((f === 'name' || f === 'email') && !v.trim()) return json({ error: f + ' cannot be empty' }, 400);
+      // name is required on every lead — an edit must never blank it. email/phone
+      // are interchangeable contact fields now, so either may be left empty.
+      if (f === 'name' && !v.trim()) return json({ error: 'name cannot be empty' }, 400);
       await env.CRM_DB.prepare('UPDATE leads SET ' + f + ' = ? WHERE id = ?').bind(v, id).run();
     }
     return json({ ok: true });
@@ -346,10 +359,11 @@ async function handleCrmApi(request, env, ctx, url) {
     if (!env.CRM_DB) return json({ error: 'storage_pending' }, 503);
     let body;
     try { body = await request.json(); } catch { return json({ error: 'Invalid JSON' }, 400); }
-    if (!body.name || !body.email) return json({ error: 'name and email required' }, 400);
+    if (!body.name) return json({ error: 'name required' }, 400);
+    if (!body.email && !body.phone) return json({ error: 'email or phone required' }, 400);
     await env.CRM_DB.prepare(
-      'INSERT INTO leads (created_at, name, email, website, region, goal, status, ad_consent, an_consent, source) VALUES (?,?,?,?,?,?,?,?,?,?)'
-    ).bind(new Date().toISOString(), String(body.name).slice(0, 200), String(body.email).slice(0, 200), String(body.website || '').slice(0, 300), String(body.region || 'Other').slice(0, 40), String(body.goal || '').slice(0, 2000), 'new', 0, 0, String(body.source || 'manual').slice(0, 60)).run();
+      'INSERT INTO leads (created_at, name, email, phone, website, region, goal, status, ad_consent, an_consent, source) VALUES (?,?,?,?,?,?,?,?,?,?,?)'
+    ).bind(new Date().toISOString(), String(body.name).slice(0, 200), String(body.email || '').slice(0, 200), String(body.phone || '').slice(0, 40), String(body.website || '').slice(0, 300), String(body.region || 'Other').slice(0, 40), String(body.goal || '').slice(0, 2000), 'new', 0, 0, String(body.source || 'manual').slice(0, 60)).run();
     return json({ ok: true });
   }
 

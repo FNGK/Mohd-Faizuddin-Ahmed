@@ -83,10 +83,11 @@
           <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.5rem;">
             <input id="mlName" placeholder="Name" style="padding:.5rem .7rem;border-radius:9px;border:1px solid var(--border,rgba(255,255,255,.2));background:transparent;color:inherit;font:inherit;">
             <input id="mlEmail" placeholder="Email" style="padding:.5rem .7rem;border-radius:9px;border:1px solid var(--border,rgba(255,255,255,.2));background:transparent;color:inherit;font:inherit;">
+            <input id="mlPhone" placeholder="Phone / WhatsApp" style="padding:.5rem .7rem;border-radius:9px;border:1px solid var(--border,rgba(255,255,255,.2));background:transparent;color:inherit;font:inherit;">
             <input id="mlWebsite" placeholder="Website (optional)" style="padding:.5rem .7rem;border-radius:9px;border:1px solid var(--border,rgba(255,255,255,.2));background:transparent;color:inherit;font:inherit;">
             <button id="mlAdd" class="crm-btn crm-btn--primary" type="button">Add lead</button>
           </div>
-          <p class="crm-note" style="margin:.5rem 0 0;">Use this for outbound replies (teardown prospects who answered) so the pipeline tracks them.</p>
+          <p class="crm-note" style="margin:.5rem 0 0;">Use this for outbound prospects and replies so the pipeline tracks them. Give at least an email <em>or</em> a phone/WhatsApp number.</p>
         </div>
         <div id="leadsList"></div>
       </section>

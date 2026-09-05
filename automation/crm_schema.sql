@@ -5,6 +5,7 @@ CREATE TABLE IF NOT EXISTS leads (
   created_at TEXT NOT NULL,
   name TEXT NOT NULL,
   email TEXT NOT NULL,
+  phone TEXT DEFAULT '',
   website TEXT DEFAULT '',
   region TEXT DEFAULT '',
   goal TEXT DEFAULT '',
