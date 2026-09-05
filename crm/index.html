@@ -40,6 +40,10 @@
     .crm-msg { position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%); background: var(--primary, #2fd4c6); color: #04231f; font-weight: 700; padding: .6rem 1.2rem; border-radius: 10px; opacity: 0; transition: opacity .3s; pointer-events: none; }
     .crm-msg.show { opacity: 1; }
     textarea.crm-notes { width: 100%; min-height: 54px; margin-top: .5rem; background: transparent; color: inherit; border: 1px solid var(--border, rgba(255,255,255,.15)); border-radius: 9px; font: inherit; font-size: .85rem; padding: .5rem .7rem; }
+    .crm-edit { margin-top: .7rem; padding-top: .7rem; border-top: 1px solid var(--border, rgba(255,255,255,.12)); }
+    .crm-edit-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: .55rem; margin-bottom: .6rem; }
+    .crm-edit-grid label { display: flex; flex-direction: column; gap: .25rem; font-size: .7rem; color: var(--muted, #a8c3cd); text-transform: uppercase; letter-spacing: .05em; }
+    .crm-edit-grid input { padding: .5rem .7rem; border-radius: 9px; border: 1px solid var(--border, rgba(255,255,255,.2)); background: transparent; color: var(--text, #e8fbf8); font: inherit; font-size: .85rem; }
     .hidden { display: none !important; }
     @media (max-width: 640px) { .crm-lead { grid-template-columns: 1fr; } .crm-controls { align-items: stretch; flex-direction: row; flex-wrap: wrap; } }
   </style>

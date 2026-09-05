@@ -328,8 +328,16 @@ async function handleCrmApi(request, env, ctx, url) {
     if (body.notes !== undefined) {
       await env.CRM_DB.prepare('UPDATE leads SET notes = ? WHERE id = ?').bind(String(body.notes).slice(0, 4000), id).run();
     }
-    if (body.manual_lead) {
-      // Manually add an outbound prospect as a lead (e.g. a teardown reply).
+    // Editable detail fields — fix a typo, put a real name on a phone-only lead,
+    // replace a placeholder email, etc. Column names come from this fixed
+    // whitelist only (never from the request); values are always bound.
+    const EDITABLE = { name: 200, email: 200, website: 300, region: 40, goal: 2000 };
+    for (const f of Object.keys(EDITABLE)) {
+      if (body[f] === undefined) continue;
+      const v = String(body[f]).slice(0, EDITABLE[f]);
+      // name and email are required on every lead — an edit must never blank them.
+      if ((f === 'name' || f === 'email') && !v.trim()) return json({ error: f + ' cannot be empty' }, 400);
+      await env.CRM_DB.prepare('UPDATE leads SET ' + f + ' = ? WHERE id = ?').bind(v, id).run();
     }
     return json({ ok: true });
   }
@@ -342,6 +350,16 @@ async function handleCrmApi(request, env, ctx, url) {
     await env.CRM_DB.prepare(
       'INSERT INTO leads (created_at, name, email, website, region, goal, status, ad_consent, an_consent, source) VALUES (?,?,?,?,?,?,?,?,?,?)'
     ).bind(new Date().toISOString(), String(body.name).slice(0, 200), String(body.email).slice(0, 200), String(body.website || '').slice(0, 300), String(body.region || 'Other').slice(0, 40), String(body.goal || '').slice(0, 2000), 'new', 0, 0, String(body.source || 'manual').slice(0, 60)).run();
+    return json({ ok: true });
+  }
+
+  if (path === '/api/crm/leads/delete' && method === 'POST') {
+    if (!env.CRM_DB) return json({ error: 'storage_pending' }, 503);
+    let body;
+    try { body = await request.json(); } catch { return json({ error: 'Invalid JSON' }, 400); }
+    const id = parseInt(body.id, 10);
+    if (!id) return json({ error: 'id required' }, 400);
+    await env.CRM_DB.prepare('DELETE FROM leads WHERE id = ?').bind(id).run();
     return json({ ok: true });
   }
 

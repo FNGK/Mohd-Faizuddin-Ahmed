@@ -95,12 +95,23 @@
             ' · ' + esc(l.region || '') + ' · ' + esc((l.created_at || '').slice(0, 10)) + ' · ' + esc(l.source) + '</p>' +
             (l.goal ? '<p class="goal">' + esc(l.goal) + '</p>' : '') +
             '<textarea class="crm-notes" placeholder="Notes…">' + esc(l.notes || '') + '</textarea>' +
+            '<div class="crm-edit hidden">' +
+              '<div class="crm-edit-grid">' +
+                '<label>Name<input class="ed-name" value="' + esc(l.name) + '"></label>' +
+                '<label>Email<input class="ed-email" value="' + esc(l.email) + '"></label>' +
+                '<label>Website<input class="ed-website" value="' + esc(l.website || '') + '"></label>' +
+                '<label>Region<input class="ed-region" value="' + esc(l.region || '') + '"></label>' +
+              '</div>' +
+              '<button class="crm-btn crm-btn--primary lead-save-details" type="button">Save details</button>' +
+            '</div>' +
           '</div>' +
           '<div class="crm-controls">' +
             '<select class="lead-status">' + STATUSES.map(function (s) {
               return '<option value="' + s + '"' + (s === l.status ? ' selected' : '') + '>' + s + '</option>';
             }).join('') + '</select>' +
             '<button class="crm-btn crm-btn--primary lead-save" type="button">Save</button>' +
+            '<button class="crm-btn lead-edit" type="button">Edit</button>' +
+            '<button class="crm-btn crm-btn--danger lead-delete" type="button">Delete</button>' +
           '</div>' +
         '</div>';
       }).join('');
@@ -118,6 +129,49 @@
           }).then(function (r2) {
             if (r2.ok) { msg('Lead updated — signals sent to configured tools'); loadLeads(); }
             else { msg('Update failed: ' + (r2.data.error || r2.status)); }
+          });
+        });
+      });
+
+      // Toggle the detail-edit panel (name/email/website/region).
+      box.querySelectorAll('.lead-edit').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var panel = btn.closest('.crm-lead').querySelector('.crm-edit');
+          panel.classList.toggle('hidden');
+          btn.textContent = panel.classList.contains('hidden') ? 'Edit' : 'Cancel';
+        });
+      });
+
+      box.querySelectorAll('.lead-save-details').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var card = btn.closest('.crm-lead');
+          req('/leads', {
+            method: 'POST',
+            body: JSON.stringify({
+              id: parseInt(card.dataset.id, 10),
+              name: card.querySelector('.ed-name').value,
+              email: card.querySelector('.ed-email').value,
+              website: card.querySelector('.ed-website').value,
+              region: card.querySelector('.ed-region').value,
+            }),
+          }).then(function (r2) {
+            if (r2.ok) { msg('Lead details updated'); loadLeads(); }
+            else { msg('Update failed: ' + (r2.data.error || r2.status)); }
+          });
+        });
+      });
+
+      box.querySelectorAll('.lead-delete').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var card = btn.closest('.crm-lead');
+          var nm = (card.querySelector('h3').textContent || '').trim();
+          if (!window.confirm('Delete this lead permanently?\n\n' + nm)) return;
+          req('/leads/delete', {
+            method: 'POST',
+            body: JSON.stringify({ id: parseInt(card.dataset.id, 10) }),
+          }).then(function (r2) {
+            if (r2.ok) { msg('Lead deleted'); loadLeads(); }
+            else { msg('Delete failed: ' + (r2.data.error || r2.status)); }
           });
         });
       });
