@@ -231,16 +231,16 @@ this system still cannot reach.
   slug and serve/301 to the `.html` file, without touching the existing
   trailing-slash directory-index logic), not a blind `_redirects` line.
   Flagging for a dev pass rather than changing routing logic unreviewed.
-- [ ] **URGENT, now 2 consecutive runs — the Instagram channel is still
+- [ ] **URGENT, now 3 consecutive runs — the Instagram channel is still
   disconnected in Buffer.** First flagged 2026-09-05; confirmed again
-  2026-09-06 via `list_channels` (`isDisconnected: true` for
-  `seo_with_faiz`, id `6a49c7a440483446286f476c`). Both runs skipped
-  Instagram scheduling rather than post into a broken channel — GBP and
-  LinkedIn both went out as normal on 09-05 and 09-06. IG has had no fresh
-  post since 08-28 (9 days and counting). Needs Faiz to reconnect it from
-  the Buffer dashboard (channel → reconnect/re-auth); until then Instagram
-  content stops accumulating and the studio effectively runs on 2 channels
-  instead of 3.
+  2026-09-06 and again 2026-09-06 (same-day second run) via `list_channels`
+  (`isDisconnected: true` for `seo_with_faiz`, id
+  `6a49c7a440483446286f476c`). All three runs skipped Instagram scheduling
+  rather than post into a broken channel — GBP and LinkedIn went out as
+  normal each time. IG has had no fresh post since 08-28 (10 days and
+  counting). Needs Faiz to reconnect it from the Buffer dashboard (channel
+  → reconnect/re-auth); until then Instagram content stops accumulating and
+  the studio effectively runs on 2 channels instead of 3.
 - [ ] **NEW, URGENT (partially resolving live): the Editor-in-Chief,
   Social Manager, Prospector, and Growth Strategist scheduled roles went
   silent for ~5 weeks** (2026-07-20 → 2026-08-24 — LOG.md's last entry
