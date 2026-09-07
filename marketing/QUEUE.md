@@ -31,7 +31,7 @@
 - ~~[pov] "Most agencies describe their audits. I publish one." — /case-studies/button-eyes-resort.html~~ (used 2026-07-17 → GBP/IG/LinkedIn)
 - ~~[behind-studio] "I use AI aggressively and review everything personally. Senior judgment at modern speed — and I'll always tell you which is which." — /about/~~ (used 2026-09-06 → GBP/LinkedIn; wording tightened to "deliberately" to match the live /about/ page's exact phrasing; Instagram skipped, channel still disconnected in Buffer)
 - [buyer-education] "A one-second delay isn't a design flaw, it's a leak in revenue. What Core Web Vitals actually measure." — /services/technical-seo.html
-- [craft-proof] "Why my WebGL globe never loads for Lighthouse — and loads in under a second for you. Progressive enhancement done honestly." — /services/3d-web-design.html
+- ~~[craft-proof] "Why my WebGL globe never loads for Lighthouse — and loads in under a second for you. Progressive enhancement done honestly." — /services/3d-web-design.html~~ (used 2026-09-08 → GBP/LinkedIn, reframed around the verified live-page claim — "the homepage globe never even downloads its 3D library on mobile" — rather than the unverified Lighthouse-specific framing in the original angle; Instagram skipped, channel still disconnected in Buffer)
 - [platform-truth] "WordPress isn't slow. Bloated themes, 40 plugins, and cheap hosting are slow." — /services/wordpress-development.html
 - [pov] "'We guarantee #1 rankings' is the fastest way to spot an agency to avoid." — /services/index.html
 - [case-study] "Ten-part public SEO audit of one of India's biggest platforms — the framework, published." — /case-studies/unstop-seo-audit.html
