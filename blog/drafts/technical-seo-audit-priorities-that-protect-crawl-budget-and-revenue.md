@@ -64,10 +64,10 @@ humanization_metrics:
   passive_hits: 0.0
   em_dash_total: 11.0
   em_dash_chains: 0.0
-  max_shingle_overlap: 0.596
+  max_shingle_overlap: 0.597
   flesch_ease: 53.29
   fk_grade: 9.75
-last_humanization_check: '2026-09-03T09:20:19.953807+00:00'
+last_humanization_check: '2026-09-07T09:56:51.384570+00:00'
 ---
 
 ## Quick answer

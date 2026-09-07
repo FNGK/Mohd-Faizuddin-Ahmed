@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-09-03T09:20:17.138991+00:00",
+  "collected_at": "2026-09-07T09:56:48.794437+00:00",
   "feeds": [
     "Google Search Central",
     "Search Engine Journal",
@@ -8,6 +8,180 @@
   ],
   "entry_count": 25,
   "entries": [
+    {
+      "source": "Search Engine Journal",
+      "title": "Search Console AI Reports Go Global, Mueller On Recovery \u2013 SEO Pulse via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/seo-pulse-search-console-ai-reports-go-global-mueller-recovery/588443/",
+      "published": "Sat, 05 Sep 2026 12:30:53 +0000",
+      "tokens": [
+        "console",
+        "reports",
+        "global",
+        "mueller",
+        "recovery",
+        "pulse",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "How To Win More Citations In AI Answers, Live With Ahrefs\u2019 Constance Tan via @sejournal, @hethr_campbell",
+      "url": "https://www.searchenginejournal.com/most-teams-can-measure-ai-visibility-few-can-move-it/588219/",
+      "published": "Fri, 04 Sep 2026 18:08:42 +0000",
+      "tokens": [
+        "win",
+        "more",
+        "citations",
+        "answers",
+        "live",
+        "ahrefs",
+        "constance",
+        "tan"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Getting Your Product Into ChatGPT Isn\u2019t The Hard Part, Getting It Through Checkout Is via @sejournal, @gregjarboe",
+      "url": "https://www.searchenginejournal.com/getting-your-product-into-chatgpt-isnt-the-hard-part-getting-it-through-checkout-is/587470/",
+      "published": "Fri, 04 Sep 2026 14:30:02 +0000",
+      "tokens": [
+        "getting",
+        "product",
+        "chatgpt",
+        "isn",
+        "hard",
+        "part",
+        "getting",
+        "through"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "How To Measure Your Brand\u2019s Visibility In AI Answers (And Fix What You Find)",
+      "url": "https://www.searchenginejournal.com/measure-brand-ai-visibility-hubspot-spa/588040/",
+      "published": "Fri, 04 Sep 2026 13:57:33 +0000",
+      "tokens": [
+        "measure",
+        "brand",
+        "visibility",
+        "answers",
+        "fix",
+        "find"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "People Aren\u2019t Leaving Google For AI. They\u2019re Using Both via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/google-chatgpt-audience-search-queries-clicks/588200/",
+      "published": "Fri, 04 Sep 2026 12:00:01 +0000",
+      "tokens": [
+        "people",
+        "aren",
+        "leaving",
+        "they",
+        "using",
+        "both",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google\u2019s New Weather AI In Search Continues Shift Away From 10 Blue Links via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/googles-new-weather-ai-in-search-continues-shift-away-from-10-blue-links/588392/",
+      "published": "Thu, 03 Sep 2026 21:00:25 +0000",
+      "tokens": [
+        "new",
+        "weather",
+        "continues",
+        "shift",
+        "away",
+        "blue",
+        "links",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Product Pages Get 24% Of AI Citations, Reddit & YouTube 4% via @sejournal, @gregjarboe",
+      "url": "https://www.searchenginejournal.com/product-pages-get-24-of-ai-citations-reddit-youtube-4/587560/",
+      "published": "Thu, 03 Sep 2026 19:00:45 +0000",
+      "tokens": [
+        "product",
+        "pages",
+        "get",
+        "citations",
+        "reddit",
+        "youtube",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "When AI Has Nothing On Your Company, It Describes Someone Else via @sejournal, @DuaneForrester",
+      "url": "https://www.searchenginejournal.com/when-ai-has-nothing-on-your-company-it-describes-someone-else/587876/",
+      "published": "Thu, 03 Sep 2026 14:30:00 +0000",
+      "tokens": [
+        "has",
+        "nothing",
+        "company",
+        "describes",
+        "someone",
+        "else",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Should I Block AI Crawlers At Robots.txt Or Server Level? \u2013 Ask An SEO via @sejournal, @HelenPollitt1",
+      "url": "https://www.searchenginejournal.com/ask-an-seo-should-i-block-ai-crawlers-at-robots-txt-or-server-level/586390/",
+      "published": "Thu, 03 Sep 2026 12:00:18 +0000",
+      "tokens": [
+        "should",
+        "block",
+        "crawlers",
+        "robots",
+        "txt",
+        "server",
+        "level",
+        "ask"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google Says Ranking Recovery Takes Months After SEO Issues Are Fixed via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/google-says-ranking-recovery-takes-months-after-seo-issues-are-fixed/588268/",
+      "published": "Thu, 03 Sep 2026 10:37:14 +0000",
+      "tokens": [
+        "says",
+        "ranking",
+        "recovery",
+        "takes",
+        "months",
+        "after",
+        "issues",
+        "are"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "AI Slop Cleanup Job Listings Up 87%, Report Says via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/ai-slop-cleanup-job-listings-report/588235/",
+      "published": "Thu, 03 Sep 2026 09:30:43 +0000",
+      "tokens": [
+        "slop",
+        "cleanup",
+        "job",
+        "listings",
+        "report",
+        "says",
+        "via",
+        "sejournal"
+      ]
+    },
     {
       "source": "Search Engine Journal",
       "title": "Google AI Mode Prices Differ From Product Carousel For Same Items via @sejournal, @MattGSouthern",
@@ -69,177 +243,6 @@
         "via",
         "sejournal",
         "billhunt"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Entities Are The Foundation Of Modern SEO",
-      "url": "https://www.searchenginejournal.com/entities-are-the-foundation-of-modern-seo/587886/",
-      "published": "Wed, 02 Sep 2026 14:31:43 +0000",
-      "tokens": [
-        "entities",
-        "are",
-        "foundation",
-        "modern"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google To Bring New Video Understanding Tech To Ask YouTube via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/google-video-understanding-ask-youtube/588123/",
-      "published": "Wed, 02 Sep 2026 14:08:29 +0000",
-      "tokens": [
-        "bring",
-        "new",
-        "video",
-        "understanding",
-        "tech",
-        "ask",
-        "youtube",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "YouTube Says Bigger Thumbnails Drove More Long-Form Views via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/youtube-bigger-thumbnails-long-form-engagement/588102/",
-      "published": "Wed, 02 Sep 2026 13:11:52 +0000",
-      "tokens": [
-        "youtube",
-        "says",
-        "bigger",
-        "thumbnails",
-        "drove",
-        "more",
-        "long-form",
-        "views"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "What Happens To PPC When You Stop Managing Google Ads Through Google Ads via @sejournal, @siliconvallaeys",
-      "url": "https://www.searchenginejournal.com/what-happens-to-ppc-when-you-stop-managing-google-ads-through-google-ads/586580/",
-      "published": "Wed, 02 Sep 2026 12:00:10 +0000",
-      "tokens": [
-        "happens",
-        "ppc",
-        "stop",
-        "managing",
-        "ads",
-        "through",
-        "ads",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google DeepMind Says Gemini Is Evolving From Chatbot To AI Agent via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/google-deepmind-says-gemini-is-evolving-from-chatbot-to-ai-agent/588077/",
-      "published": "Wed, 02 Sep 2026 11:24:00 +0000",
-      "tokens": [
-        "deepmind",
-        "says",
-        "gemini",
-        "evolving",
-        "chatbot",
-        "agent",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "The Technical Signals AI Search Uses That Most SEOs Still Aren\u2019t Optimizing",
-      "url": "https://www.searchenginejournal.com/the-technical-signals-ai-search-uses-that-most-seos-still-arent-optimizing/586381/",
-      "published": "Tue, 01 Sep 2026 19:00:47 +0000",
-      "tokens": [
-        "technical",
-        "signals",
-        "uses",
-        "most",
-        "seos",
-        "still",
-        "aren",
-        "optimizing"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Details Who Can License Its Search Data In Europe via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/google-details-who-can-license-its-search-data-in-europe/587995/",
-      "published": "Tue, 01 Sep 2026 17:20:25 +0000",
-      "tokens": [
-        "details",
-        "who",
-        "can",
-        "license",
-        "its",
-        "data",
-        "europe",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "WordPress Announces A Proactive Security Initiative via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/wordpress-announces-a-proactive-security-initiative/587942/",
-      "published": "Tue, 01 Sep 2026 12:10:20 +0000",
-      "tokens": [
-        "wordpress",
-        "announces",
-        "proactive",
-        "security",
-        "initiative",
-        "via",
-        "sejournal",
-        "martinibuster"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Schema For AI Citations: How To Become A Trusted Source via @sejournal, @lorenbaker",
-      "url": "https://www.searchenginejournal.com/schema-ai-citations-trusted-source/586785/",
-      "published": "Tue, 01 Sep 2026 12:00:02 +0000",
-      "tokens": [
-        "schema",
-        "citations",
-        "become",
-        "trusted",
-        "source",
-        "via",
-        "sejournal",
-        "lorenbaker"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "How We Earned 1,000+ Links For GEO/SEO via @sejournal, @hethr_campbell",
-      "url": "https://www.searchenginejournal.com/how-we-earned-1000-links-geo-seo-recap/587850/",
-      "published": "Tue, 01 Sep 2026 07:45:17 +0000",
-      "tokens": [
-        "earned",
-        "links",
-        "geo",
-        "via",
-        "sejournal",
-        "hethr",
-        "campbell"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "FTC Sues Amazon Over Alleged $20 Billion Advertising Surcharge Scheme via @sejournal, @brookeosmundson",
-      "url": "https://www.searchenginejournal.com/ftc-sues-amazon-over-alleged-20-billion-advertising-surcharge-scheme/587870/",
-      "published": "Mon, 31 Aug 2026 23:49:40 +0000",
-      "tokens": [
-        "ftc",
-        "sues",
-        "amazon",
-        "over",
-        "alleged",
-        "billion",
-        "advertising",
-        "surcharge"
       ]
     },
     {
@@ -374,38 +377,50 @@
   "top_terms": [
     {
       "term": "via",
-      "count": 13
+      "count": 14
     },
     {
       "term": "sejournal",
-      "count": 13
+      "count": 14
     },
     {
       "term": "mattgsouthern",
       "count": 5
     },
     {
-      "term": "ads",
-      "count": 4
+      "term": "product",
+      "count": 3
     },
     {
       "term": "martinibuster",
       "count": 3
     },
     {
-      "term": "mode",
+      "term": "recovery",
       "count": 2
     },
     {
-      "term": "gemini",
+      "term": "citations",
       "count": 2
     },
     {
-      "term": "strategy",
+      "term": "answers",
       "count": 2
     },
     {
-      "term": "youtube",
+      "term": "getting",
+      "count": 2
+    },
+    {
+      "term": "gregjarboe",
+      "count": 2
+    },
+    {
+      "term": "find",
+      "count": 2
+    },
+    {
+      "term": "using",
       "count": 2
     },
     {
@@ -413,7 +428,11 @@
       "count": 2
     },
     {
-      "term": "ppc",
+      "term": "mode",
+      "count": 2
+    },
+    {
+      "term": "strategy",
       "count": 2
     },
     {
@@ -429,107 +448,91 @@
       "count": 2
     },
     {
-      "term": "prices",
+      "term": "ads",
+      "count": 2
+    },
+    {
+      "term": "console",
       "count": 1
     },
     {
-      "term": "differ",
+      "term": "reports",
       "count": 1
     },
     {
-      "term": "product",
+      "term": "global",
       "count": 1
     },
     {
-      "term": "carousel",
+      "term": "mueller",
       "count": 1
     },
     {
-      "term": "same",
+      "term": "pulse",
       "count": 1
     },
     {
-      "term": "items",
+      "term": "win",
       "count": 1
     },
     {
-      "term": "responds",
+      "term": "more",
       "count": 1
     },
     {
-      "term": "sitemap",
+      "term": "live",
       "count": 1
     },
     {
-      "term": "technique",
+      "term": "ahrefs",
       "count": 1
     },
     {
-      "term": "forces",
+      "term": "constance",
       "count": 1
     },
     {
-      "term": "daily",
+      "term": "tan",
       "count": 1
     },
     {
-      "term": "crawling",
+      "term": "hethr",
       "count": 1
     },
     {
-      "term": "adds",
+      "term": "campbell",
       "count": 1
     },
     {
-      "term": "flash",
+      "term": "chatgpt",
       "count": 1
     },
     {
-      "term": "next",
+      "term": "isn",
       "count": 1
     },
     {
-      "term": "protocol",
+      "term": "hard",
       "count": 1
     },
     {
-      "term": "won",
+      "term": "part",
       "count": 1
     },
     {
-      "term": "save",
+      "term": "through",
       "count": 1
     },
     {
-      "term": "billhunt",
+      "term": "checkout",
       "count": 1
     },
     {
-      "term": "entities",
+      "term": "measure",
       "count": 1
     },
     {
-      "term": "are",
-      "count": 1
-    },
-    {
-      "term": "foundation",
-      "count": 1
-    },
-    {
-      "term": "modern",
-      "count": 1
-    },
-    {
-      "term": "bring",
-      "count": 1
-    },
-    {
-      "term": "new",
-      "count": 1
-    },
-    {
-      "term": "video",
+      "term": "brand",
       "count": 1
     }
   ]
