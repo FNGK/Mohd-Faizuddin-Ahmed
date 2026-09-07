@@ -134,3 +134,19 @@ not produced by the Social Manager role — flagged to Faiz for
 confirmation, not corrected here. The warm-intent InMail angle below is
 unchanged from 07-20 since there's no fresher on-pipeline performance data
 to update it with; resume the daily cadence once the pipeline restarts.
+
+**2026-09-07 status:** still 0 teardown InMails logged as sent via
+LinkedIn in `PROSPECTS.md` (0 replies) — the Sales Nav/InMail motion has
+still not started; every prospect row in `PROSPECTS.md` remains
+Gmail-channel outreach. Organic posting resumed and is healthy again
+(GBP+LinkedIn shipped 4 days this week: 09-03, 09-05, 09-06, 09-07), but
+this week's reach sat in a flat 20-26 band across all three pillars —
+nothing beat the case-study anchor from 07-13/08-25, so the template
+below stays anchored to Little Stars/HGFC rather than swapping to a new
+theme. One real signal worth feeding into outreach regardless of channel:
+Faiz personally ran a call + sent a full proposal to a prospect ("Hebe")
+via Gmail on 2026-09-06 — outside this playbook's InMail motion, but proof
+that a direct, specific, no-pitch-first approach (this playbook's core
+pattern) converts a conversation into a real proposal. Worth Faiz trying
+the same posture on 1-2 Sales Nav connects this week now that the organic
+cadence is stable again.

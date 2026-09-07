@@ -191,8 +191,33 @@ this system still cannot reach.
    worker-level check, not a blind `_redirects` add — logged as an Ask for
    a dev pass rather than changed blind this run.
 
+**(2026-09-07 weekly review):** pipeline shipped GBP+LinkedIn on schedule
+4 days this week (09-03, 09-05, 09-06, 09-07), rotating buyer-education →
+behind-studio → platform-truth per standing rule. All three posts with
+metrics landed in a flat 20-26 reach band — too thin to call a pillar
+winner or loser, holding rotation. GA4 sessions roughly doubled
+week-over-week (66 vs. 32: Direct 47, Referral 7, Organic Social 6,
+Unassigned 6), homepage taking most of it — a real if small uptick — but
+`keyEvents` is still the unfixed `swf_consent` artifact (standing ask since
+07-20). Gmail: 0 genuine contact-form/strategy-call inquiries again, but
+one real positive signal outside the ledger — Faiz had a live call with a
+prospect ("Hebe") and sent a full plan follow-up 2026-09-06 (see new Ask).
+Rising sessions + zero inquiries is now the established pattern every
+logged week — per the optimization rule, the bottleneck is the offer/CTA
+surface, not reach or volume; worth a dedicated CTA/booking-page review
+rather than more content volume. QUEUE.md holds 14 unused social + 16
+unused blog angles, well above the ≥10/≥5 floor — no refill needed.
+
 ## Asks awaiting Faiz (the strategist re-surfaces these weekly)
 
+- [ ] **NEW — warm live prospect ("Hebe") got a full proposal 2026-09-06,
+  worth a follow-up nudge if no reply within a week.** Gmail shows Faiz had
+  a call with this prospect and personally sent a complete website + local
+  SEO plan (alimdmoaz@gmail.com, subject "Your Hebe website + local SEO
+  plan (as promised)") — outside the Prospector's teardown ledger since
+  Faiz ran this one directly. This is the closest thing to a real pipeline
+  deal right now; flagging so it doesn't go cold the way the 9 July
+  teardowns did after their follow-up.
 - [ ] **UPDATED 2026-09-04 (same day) — GSC IS reachable via GA4's link;
   the gap is narrower than first thought.** Correction to the original
   version of this ask: Faiz confirmed GSC is connected through GA4, and
