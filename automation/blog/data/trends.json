@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-09-07T09:56:48.794437+00:00",
+  "collected_at": "2026-09-10T09:18:16.532374+00:00",
   "feeds": [
     "Google Search Central",
     "Search Engine Journal",
@@ -10,220 +10,107 @@
   "entries": [
     {
       "source": "Search Engine Journal",
-      "title": "Search Console AI Reports Go Global, Mueller On Recovery \u2013 SEO Pulse via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/seo-pulse-search-console-ai-reports-go-global-mueller-recovery/588443/",
-      "published": "Sat, 05 Sep 2026 12:30:53 +0000",
+      "title": "How Freshpet Earned AI\u2019s Trust: A GEO & AI Visibility Playbook via @sejournal, @hethr_campbell",
+      "url": "https://www.searchenginejournal.com/how-freshpet-earned-ais-trust-a-geo-ai-visibility-playbook-recap/588706/",
+      "published": "Thu, 10 Sep 2026 07:45:26 +0000",
       "tokens": [
-        "console",
-        "reports",
-        "global",
-        "mueller",
-        "recovery",
-        "pulse",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "How To Win More Citations In AI Answers, Live With Ahrefs\u2019 Constance Tan via @sejournal, @hethr_campbell",
-      "url": "https://www.searchenginejournal.com/most-teams-can-measure-ai-visibility-few-can-move-it/588219/",
-      "published": "Fri, 04 Sep 2026 18:08:42 +0000",
-      "tokens": [
-        "win",
-        "more",
-        "citations",
-        "answers",
-        "live",
-        "ahrefs",
-        "constance",
-        "tan"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Getting Your Product Into ChatGPT Isn\u2019t The Hard Part, Getting It Through Checkout Is via @sejournal, @gregjarboe",
-      "url": "https://www.searchenginejournal.com/getting-your-product-into-chatgpt-isnt-the-hard-part-getting-it-through-checkout-is/587470/",
-      "published": "Fri, 04 Sep 2026 14:30:02 +0000",
-      "tokens": [
-        "getting",
-        "product",
-        "chatgpt",
-        "isn",
-        "hard",
-        "part",
-        "getting",
-        "through"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "How To Measure Your Brand\u2019s Visibility In AI Answers (And Fix What You Find)",
-      "url": "https://www.searchenginejournal.com/measure-brand-ai-visibility-hubspot-spa/588040/",
-      "published": "Fri, 04 Sep 2026 13:57:33 +0000",
-      "tokens": [
-        "measure",
-        "brand",
+        "freshpet",
+        "earned",
+        "trust",
+        "geo",
         "visibility",
-        "answers",
-        "fix",
-        "find"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "People Aren\u2019t Leaving Google For AI. They\u2019re Using Both via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/google-chatgpt-audience-search-queries-clicks/588200/",
-      "published": "Fri, 04 Sep 2026 12:00:01 +0000",
-      "tokens": [
-        "people",
-        "aren",
-        "leaving",
-        "they",
-        "using",
-        "both",
+        "playbook",
         "via",
         "sejournal"
       ]
     },
     {
       "source": "Search Engine Journal",
-      "title": "Google\u2019s New Weather AI In Search Continues Shift Away From 10 Blue Links via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/googles-new-weather-ai-in-search-continues-shift-away-from-10-blue-links/588392/",
-      "published": "Thu, 03 Sep 2026 21:00:25 +0000",
+      "title": "Le Monde Says AI Overviews Haven\u2019t Hurt Its Audience So Far via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/le-monde-says-ai-overviews-havent-hurt-its-audience-so-far/589018/",
+      "published": "Thu, 10 Sep 2026 07:00:03 +0000",
+      "tokens": [
+        "monde",
+        "says",
+        "overviews",
+        "haven",
+        "hurt",
+        "its",
+        "audience",
+        "far"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "5 AI Models, 4 Signals: What 120K Mentions Reveal About Multi-Location SEO",
+      "url": "https://www.searchenginejournal.com/ai-signals-multi-location-uberall-spa/587988/",
+      "published": "Thu, 10 Sep 2026 05:00:48 +0000",
+      "tokens": [
+        "models",
+        "signals",
+        "mentions",
+        "reveal",
+        "multi-location"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "WordPress Co-Founder Matt Mullenweg Ousted As CEO Of Automattic via @sejournal, @martinibuster",
+      "url": "https://www.searchenginejournal.com/wordpress-co-founder-matt-mullenweg-ousted-from-automattic/589009/",
+      "published": "Wed, 09 Sep 2026 22:16:35 +0000",
+      "tokens": [
+        "wordpress",
+        "co-founder",
+        "matt",
+        "mullenweg",
+        "ousted",
+        "ceo",
+        "automattic",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "ChatGPT Shopping Results Lean Hard On Product Feeds via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/chatgpt-shopping-results-lean-hard-on-product-feeds/589000/",
+      "published": "Wed, 09 Sep 2026 21:39:29 +0000",
+      "tokens": [
+        "chatgpt",
+        "shopping",
+        "results",
+        "lean",
+        "hard",
+        "product",
+        "feeds",
+        "via"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "ChatGPT, Gemini & Claude Lead AI Visibility, Is It Time To Stop Tracking Perplexity? via @sejournal, @gregjarboe",
+      "url": "https://www.searchenginejournal.com/chatgpt-gemini-claude-lead-ai-visibility-is-it-time-to-stop-tracking-perplexity/588378/",
+      "published": "Wed, 09 Sep 2026 19:00:58 +0000",
+      "tokens": [
+        "chatgpt",
+        "gemini",
+        "claude",
+        "lead",
+        "visibility",
+        "time",
+        "stop",
+        "tracking"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "New Google Guide To Regional Search Features & Eligibility via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/google-regional-search-features-eligibility-guide/588975/",
+      "published": "Wed, 09 Sep 2026 16:37:30 +0000",
       "tokens": [
         "new",
-        "weather",
-        "continues",
-        "shift",
-        "away",
-        "blue",
-        "links",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Product Pages Get 24% Of AI Citations, Reddit & YouTube 4% via @sejournal, @gregjarboe",
-      "url": "https://www.searchenginejournal.com/product-pages-get-24-of-ai-citations-reddit-youtube-4/587560/",
-      "published": "Thu, 03 Sep 2026 19:00:45 +0000",
-      "tokens": [
-        "product",
-        "pages",
-        "get",
-        "citations",
-        "reddit",
-        "youtube",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "When AI Has Nothing On Your Company, It Describes Someone Else via @sejournal, @DuaneForrester",
-      "url": "https://www.searchenginejournal.com/when-ai-has-nothing-on-your-company-it-describes-someone-else/587876/",
-      "published": "Thu, 03 Sep 2026 14:30:00 +0000",
-      "tokens": [
-        "has",
-        "nothing",
-        "company",
-        "describes",
-        "someone",
-        "else",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Should I Block AI Crawlers At Robots.txt Or Server Level? \u2013 Ask An SEO via @sejournal, @HelenPollitt1",
-      "url": "https://www.searchenginejournal.com/ask-an-seo-should-i-block-ai-crawlers-at-robots-txt-or-server-level/586390/",
-      "published": "Thu, 03 Sep 2026 12:00:18 +0000",
-      "tokens": [
-        "should",
-        "block",
-        "crawlers",
-        "robots",
-        "txt",
-        "server",
-        "level",
-        "ask"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Says Ranking Recovery Takes Months After SEO Issues Are Fixed via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/google-says-ranking-recovery-takes-months-after-seo-issues-are-fixed/588268/",
-      "published": "Thu, 03 Sep 2026 10:37:14 +0000",
-      "tokens": [
-        "says",
-        "ranking",
-        "recovery",
-        "takes",
-        "months",
-        "after",
-        "issues",
-        "are"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "AI Slop Cleanup Job Listings Up 87%, Report Says via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/ai-slop-cleanup-job-listings-report/588235/",
-      "published": "Thu, 03 Sep 2026 09:30:43 +0000",
-      "tokens": [
-        "slop",
-        "cleanup",
-        "job",
-        "listings",
-        "report",
-        "says",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google AI Mode Prices Differ From Product Carousel For Same Items via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/google-ai-mode-prices-differ-from-product-carousel-for-same-items/588227/",
-      "published": "Thu, 03 Sep 2026 08:00:14 +0000",
-      "tokens": [
-        "mode",
-        "prices",
-        "differ",
-        "product",
-        "carousel",
-        "same",
-        "items",
-        "via"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Responds To Sitemap SEO Technique That Forces Daily Crawling via @sejournal, @martinibuster",
-      "url": "https://www.searchenginejournal.com/google-responds-to-sitemap-seo-technique-that-forces-daily-crawling/588222/",
-      "published": "Wed, 02 Sep 2026 22:09:39 +0000",
-      "tokens": [
-        "responds",
-        "sitemap",
-        "technique",
-        "forces",
-        "daily",
-        "crawling",
-        "via",
-        "sejournal"
-      ]
-    },
-    {
-      "source": "Search Engine Journal",
-      "title": "Google Adds Gemini 3.8 Flash To AI Mode via @sejournal, @MattGSouthern",
-      "url": "https://www.searchenginejournal.com/google-gemini-3-8-flash-ai-mode/588194/",
-      "published": "Wed, 02 Sep 2026 19:41:19 +0000",
-      "tokens": [
-        "adds",
-        "gemini",
-        "flash",
-        "mode",
+        "regional",
+        "features",
+        "eligibility",
         "via",
         "sejournal",
         "mattgsouthern"
@@ -231,18 +118,129 @@
     },
     {
       "source": "Search Engine Journal",
-      "title": "The Next AI Protocol Won\u2019t Save Your SEO Strategy via @sejournal, @billhunt",
-      "url": "https://www.searchenginejournal.com/the-next-ai-protocol-wont-save-your-seo-strategy/585714/",
-      "published": "Wed, 02 Sep 2026 19:00:07 +0000",
+      "title": "How AI Is Reshaping Search Intent \u2013 What 2 Studies Reveal via @sejournal, @ClaraSoteras",
+      "url": "https://www.searchenginejournal.com/how-ai-is-reshaping-search-intent-what-2-studies-reveal/587491/",
+      "published": "Wed, 09 Sep 2026 14:30:47 +0000",
       "tokens": [
-        "next",
-        "protocol",
-        "won",
-        "save",
-        "strategy",
+        "reshaping",
+        "intent",
+        "studies",
+        "reveal",
         "via",
         "sejournal",
-        "billhunt"
+        "clarasoteras"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Brands Are Tracking AI Visibility, But Are They Measuring The Right Things? via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/brands-are-tracking-ai-visibility-but-are-they-measuring-the-right-things/587888/",
+      "published": "Wed, 09 Sep 2026 12:00:30 +0000",
+      "tokens": [
+        "brands",
+        "are",
+        "tracking",
+        "visibility",
+        "but",
+        "are",
+        "they",
+        "measuring"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "The AI Citation Mistake: Optimizing For Google, Not For Sources via @sejournal, @lorenbaker",
+      "url": "https://www.searchenginejournal.com/the-ai-citation-mistake-optimizing-for-google-not-for-sources-webinar/588522/",
+      "published": "Wed, 09 Sep 2026 07:45:41 +0000",
+      "tokens": [
+        "citation",
+        "mistake",
+        "optimizing",
+        "not",
+        "sources",
+        "via",
+        "sejournal",
+        "lorenbaker"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "AI Visibility For Local Businesses: How To Get Recommended By ChatGPT & AI Overviews In 90 Days via @sejournal, @reviewlyAI",
+      "url": "https://www.searchenginejournal.com/ai-overview-recommendation-plan-reviewly-spa/587030/",
+      "published": "Wed, 09 Sep 2026 05:00:35 +0000",
+      "tokens": [
+        "visibility",
+        "local",
+        "businesses",
+        "get",
+        "recommended",
+        "chatgpt",
+        "overviews",
+        "days"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google Ads Introduces Local Customer Optimization via @sejournal, @brookeosmundson",
+      "url": "https://www.searchenginejournal.com/google-ads-introduces-local-customer-optimization/588886/",
+      "published": "Wed, 09 Sep 2026 02:54:24 +0000",
+      "tokens": [
+        "ads",
+        "introduces",
+        "local",
+        "customer",
+        "optimization",
+        "via",
+        "sejournal",
+        "brookeosmundson"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google Rolls Out Redesigned Search Results Across The EEA via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/google-rolls-out-redesigned-search-results-across-the-eea/588870/",
+      "published": "Wed, 09 Sep 2026 00:41:01 +0000",
+      "tokens": [
+        "rolls",
+        "out",
+        "redesigned",
+        "results",
+        "across",
+        "eea",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "UK Site Loses 98% Of News Search Visibility After .com Move via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/uk-publisher-news-search-visibility-com-move/588840/",
+      "published": "Tue, 08 Sep 2026 19:24:24 +0000",
+      "tokens": [
+        "site",
+        "loses",
+        "visibility",
+        "after",
+        "com",
+        "move",
+        "via",
+        "sejournal"
+      ]
+    },
+    {
+      "source": "Search Engine Journal",
+      "title": "Google Says Old Low-Value Pages May Affect Site Recovery via @sejournal, @MattGSouthern",
+      "url": "https://www.searchenginejournal.com/google-says-old-low-value-pages-may-affect-site-recovery/588837/",
+      "published": "Tue, 08 Sep 2026 18:42:36 +0000",
+      "tokens": [
+        "says",
+        "old",
+        "low-value",
+        "pages",
+        "may",
+        "affect",
+        "site",
+        "recovery"
       ]
     },
     {
@@ -385,54 +383,50 @@
     },
     {
       "term": "mattgsouthern",
+      "count": 7
+    },
+    {
+      "term": "visibility",
       "count": 5
     },
     {
-      "term": "product",
+      "term": "chatgpt",
       "count": 3
     },
     {
-      "term": "martinibuster",
+      "term": "ads",
       "count": 3
-    },
-    {
-      "term": "recovery",
-      "count": 2
-    },
-    {
-      "term": "citations",
-      "count": 2
-    },
-    {
-      "term": "answers",
-      "count": 2
-    },
-    {
-      "term": "getting",
-      "count": 2
-    },
-    {
-      "term": "gregjarboe",
-      "count": 2
-    },
-    {
-      "term": "find",
-      "count": 2
-    },
-    {
-      "term": "using",
-      "count": 2
     },
     {
       "term": "says",
       "count": 2
     },
     {
-      "term": "mode",
+      "term": "overviews",
       "count": 2
     },
     {
-      "term": "strategy",
+      "term": "reveal",
+      "count": 2
+    },
+    {
+      "term": "results",
+      "count": 2
+    },
+    {
+      "term": "tracking",
+      "count": 2
+    },
+    {
+      "term": "are",
+      "count": 2
+    },
+    {
+      "term": "local",
+      "count": 2
+    },
+    {
+      "term": "site",
       "count": 2
     },
     {
@@ -448,51 +442,23 @@
       "count": 2
     },
     {
-      "term": "ads",
-      "count": 2
-    },
-    {
-      "term": "console",
+      "term": "freshpet",
       "count": 1
     },
     {
-      "term": "reports",
+      "term": "earned",
       "count": 1
     },
     {
-      "term": "global",
+      "term": "trust",
       "count": 1
     },
     {
-      "term": "mueller",
+      "term": "geo",
       "count": 1
     },
     {
-      "term": "pulse",
-      "count": 1
-    },
-    {
-      "term": "win",
-      "count": 1
-    },
-    {
-      "term": "more",
-      "count": 1
-    },
-    {
-      "term": "live",
-      "count": 1
-    },
-    {
-      "term": "ahrefs",
-      "count": 1
-    },
-    {
-      "term": "constance",
-      "count": 1
-    },
-    {
-      "term": "tan",
+      "term": "playbook",
       "count": 1
     },
     {
@@ -504,35 +470,67 @@
       "count": 1
     },
     {
-      "term": "chatgpt",
+      "term": "monde",
       "count": 1
     },
     {
-      "term": "isn",
+      "term": "haven",
       "count": 1
     },
     {
-      "term": "hard",
+      "term": "hurt",
       "count": 1
     },
     {
-      "term": "part",
+      "term": "its",
       "count": 1
     },
     {
-      "term": "through",
+      "term": "audience",
       "count": 1
     },
     {
-      "term": "checkout",
+      "term": "far",
       "count": 1
     },
     {
-      "term": "measure",
+      "term": "models",
       "count": 1
     },
     {
-      "term": "brand",
+      "term": "signals",
+      "count": 1
+    },
+    {
+      "term": "mentions",
+      "count": 1
+    },
+    {
+      "term": "multi-location",
+      "count": 1
+    },
+    {
+      "term": "wordpress",
+      "count": 1
+    },
+    {
+      "term": "co-founder",
+      "count": 1
+    },
+    {
+      "term": "matt",
+      "count": 1
+    },
+    {
+      "term": "mullenweg",
+      "count": 1
+    },
+    {
+      "term": "ousted",
+      "count": 1
+    },
+    {
+      "term": "ceo",
       "count": 1
     }
   ]
