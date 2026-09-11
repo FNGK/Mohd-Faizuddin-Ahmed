@@ -256,13 +256,13 @@ unused blog angles, well above the ≥10/≥5 floor — no refill needed.
   slug and serve/301 to the `.html` file, without touching the existing
   trailing-slash directory-index logic), not a blind `_redirects` line.
   Flagging for a dev pass rather than changing routing logic unreviewed.
-- [ ] **URGENT, now 4 consecutive runs — the Instagram channel is still
+- [ ] **URGENT, now 5 consecutive runs — the Instagram channel is still
   disconnected in Buffer.** First flagged 2026-09-05; confirmed again
-  2026-09-06 (twice, same-day second run) and again 2026-09-07 via
-  `list_channels` (`isDisconnected: true` for `seo_with_faiz`, id
-  `6a49c7a440483446286f476c`). All four runs skipped Instagram scheduling
+  2026-09-06 (twice, same-day second run), 2026-09-07, 2026-09-08, and again
+  2026-09-11 via `list_channels` (`isDisconnected: true` for `seo_with_faiz`,
+  id `6a49c7a440483446286f476c`). All five runs skipped Instagram scheduling
   rather than post into a broken channel — GBP and LinkedIn went out as
-  normal each time. IG has had no fresh post since 08-28 (11 days and
+  normal each time. IG has had no fresh post since 08-28 (14 days and
   counting). Needs Faiz to reconnect it from the Buffer dashboard (channel
   → reconnect/re-auth); until then Instagram content stops accumulating and
   the studio effectively runs on 2 channels instead of 3.
