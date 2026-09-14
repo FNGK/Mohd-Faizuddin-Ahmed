@@ -63,21 +63,25 @@ Nav alerts you to new matches weekly — that's your daily prospect feed.
 > teardown video of your site — no pitch, just the fixes I'd make first.
 > Want me to record it? — Faiz, seowithfaiz.com
 
-**Warm-intent InMail angle this week (updated 2026-07-20):** the last two
-weeks both show the same pattern — case-study/proof-anchored content
-outperforms everything else (07-13 HGFC LinkedIn post: 65 reach/91
-impressions, the best of any post in 2 weeks; 07-13 Instagram 30-day-sprint
-post: 55 reach/1 share). For prospects in the sports/academy or hospitality
-wedge, lead with a named, verifiable proof point instead of a generic
-booking-funnel hook:
-> Hi [Name] — I rebuilt [Hyderabad Globe FC]'s site (technical SEO +
-> performance) and it now holds a 95+ Lighthouse score on a platform that
-> used to fight every fix. Took a quick look at [business.com] — [ONE
-> specific, verified structural gap]. Happy to send a short breakdown of
-> what I'd fix first, no pitch. — Faiz, seowithfaiz.com
-(Keep the AI-search angle below in reserve for prospects who've posted
-about AI/ChatGPT specifically — it's still a real signal, just not this
-week's strongest.)
+**Warm-intent InMail angle this week (updated 2026-09-14):** platform-truth
+is now a confirmed 2-week top-quartile theme — this week's LinkedIn
+"Shopify or Magento?" post hit 72 reach/110 impressions/1 reaction/1
+comment, the studio's best-performing post in a month, well ahead of the
+same week's case-study and craft-proof posts. For prospects on a platform
+that's plainly the wrong fit for their business (an oversized B2B catalog
+squeezed onto a DTC-shaped platform, or vice versa), lead with the honest
+platform read instead of a generic audit hook:
+> Hi [Name] — took a look at [business.com]. [ONE specific, verified sign
+> the platform doesn't fit — e.g. "you're running a wholesale catalog
+> through a checkout flow built for one-at-a-time DTC orders"]. That's
+> usually a symptom of the platform choice, not the design. Happy to send
+> a short breakdown of what I'd actually recommend for your catalog, no
+> pitch. — Faiz, seowithfaiz.com
+(Keep the case-study/proof-anchored angle — HGFC/Little Stars — in reserve
+for prospects specifically in the sports/academy or hospitality wedge; it
+was the prior 2-week leader and is still a strong fallback. Keep the
+AI-search angle in reserve for prospects who've posted about AI/ChatGPT
+specifically.)
 
 **After a teardown video (moving to the call):**
 > Glad it was useful. If you want, I'll turn the top 3 fixes into a scoped
@@ -150,3 +154,23 @@ that a direct, specific, no-pitch-first approach (this playbook's core
 pattern) converts a conversation into a real proposal. Worth Faiz trying
 the same posture on 1-2 Sales Nav connects this week now that the organic
 cadence is stable again.
+
+**2026-09-14 status:** still 0 teardown InMails logged as sent via
+LinkedIn in `PROSPECTS.md` (0 replies) — the Sales Nav/InMail motion has
+still not started. Organic cadence thinned this week (only 3 of 7 days
+shipped: 09-07, 09-08, 09-12, a 3-day gap 09-09→09-11) but the
+09-07 platform-truth post (Shopify vs. Magento) became the clear 2-week
+reach winner once its data came in — 72 reach/110 impressions/1
+reaction/1 comment, well ahead of the same week's craft-proof (18) and
+buyer-education (2) posts — so the template above now leads with the
+platform-fit angle instead of the case-study anchor (see the new template
+text). The "Hebe" prospect from last week still has not replied 8 days
+after Faiz's proposal — this is the strongest signal the playbook has
+that a direct, no-pitch-first message converts, and it's going cold;
+worth Faiz sending one short follow-up this week, and trying the same
+direct posture on 1-2 fresh Sales Nav connects using the platform-fit
+template. Separately, the Prospector's 3 newest teardown drafts (The
+Federal Inn, Lady Macdonald Country Inn, Justfootball Academy Australia —
+drafted 2026-09-04) are now 10 days unsent in `PROSPECTS.md`; findings
+should still be accurate at 10 days, worth sending this week before they
+go stale like the 5-week-old batch did in August.

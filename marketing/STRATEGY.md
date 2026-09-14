@@ -208,16 +208,44 @@ surface, not reach or volume; worth a dedicated CTA/booking-page review
 rather than more content volume. QUEUE.md holds 14 unused social + 16
 unused blog angles, well above the ≥10/≥5 floor — no refill needed.
 
+**(2026-09-14 weekly review):** **platform-truth is now a confirmed
+2-week top-quartile pillar** — this week's LinkedIn "Shopify or Magento?"
+post hit 72 reach/110 impressions/1 reaction/1 comment, the studio's
+best-performing post in a month, by a wide margin over the same week's
+other two posts (WebGL globe craft-proof, 18 reach; core-update-recovery
+buyer-education, 2 reach). Per the standing optimization rule, 2 more
+platform-truth angles are now queued (Wix vs. custom-build, WordPress vs.
+Magento) — see QUEUE.md. The weak core-update post isn't a pillar signal:
+it's the 4th and final atomization of the same blog post, and every queued
+core-update line is now used, so buyer-education needs a fresh angle next,
+not a pause. GA4 sessions fell week-over-week for the first time on record
+(43 vs. 66: Direct 31, Organic Social 5, Organic Search 3, AI Assistant 2,
+Unassigned 2) — homepage still dominant (32 of 43); not enough signal yet
+to call a trend, but worth watching next week. `keyEvents` remains the
+unfixed `swf_consent` artifact (standing ask since 07-20, now 8 weeks
+open). Gmail: 0 genuine inquiries again; the "Hebe" prospect still hasn't
+replied 8 days after Faiz's 09-06 proposal — escalating the follow-up ask.
+Buffer only shipped on 3 of 7 days this week (09-07, 09-08, 09-12), a
+3-day gap 09-09→09-11 — worth confirming the cadence didn't silently
+lapse. Instagram is disconnected in Buffer for a 6th consecutive run (no
+post since 08-28, 17 days). One genuine piece of good news: the
+extensionless-URL 404s flagged 09-04 are now resolved (curl-verified 200
+across the board) — closing that ask. One escalation: the blog
+compliance-gate regression flagged 08-24 hasn't just persisted, it's
+worsened — Content Factory added 6 fresh AI-search drafts this run (found
+uncommitted, now committed as pipeline output) and all 18 drafts in
+`blog/drafts/` (12 old + 6 new) sit at `needs_revision`, 0 `ready` — the
+blog channel has published nothing new since 07-14, now 8+ weeks.
+
 ## Asks awaiting Faiz (the strategist re-surfaces these weekly)
 
-- [ ] **NEW — warm live prospect ("Hebe") got a full proposal 2026-09-06,
-  worth a follow-up nudge if no reply within a week.** Gmail shows Faiz had
-  a call with this prospect and personally sent a complete website + local
-  SEO plan (alimdmoaz@gmail.com, subject "Your Hebe website + local SEO
-  plan (as promised)") — outside the Prospector's teardown ledger since
-  Faiz ran this one directly. This is the closest thing to a real pipeline
-  deal right now; flagging so it doesn't go cold the way the 9 July
-  teardowns did after their follow-up.
+- [ ] **ESCALATED 2026-09-14 — the "Hebe" prospect still hasn't replied,
+  now 8 days after Faiz's 2026-09-06 proposal.** Checked Gmail directly
+  this run (thread `alimdmoaz@gmail.com` / "Your Hebe website + local SEO
+  plan (as promised)") — no reply found. This was the closest thing to a
+  real pipeline deal; the 9 July teardowns went cold after a similar
+  silent gap. Recommend a short, low-pressure follow-up this week before
+  it does the same.
 - [ ] **UPDATED 2026-09-04 (same day) — GSC IS reachable via GA4's link;
   the gap is narrower than first thought.** Correction to the original
   version of this ask: Faiz confirmed GSC is connected through GA4, and
@@ -245,27 +273,39 @@ unused blog angles, well above the ≥10/≥5 floor — no refill needed.
   `--publish` step (or generate the sitemap from `blog/posts/*.html` on
   every publish instead of hand-maintaining it). Otherwise every future
   post repeats this exact bug.
-- [ ] **NEW, P1 — extensionless URLs 404 site-wide** (`/case-studies/*`,
-  `/mentions`, `/services/web-design-development` all 404 without
-  `.html`). Not self-inflicted (internal links are correctly
-  `.html`-suffixed) but GA4 shows historical traffic on the bare paths, so
-  something external once linked them. `_redirects` was deliberately left
-  without an index-redirect rule after a documented redirect-loop incident
-  against `worker.js`'s directory-index logic — a fix needs a careful
-  worker-level rewrite (check `url.pathname` for a bare service/case-study
-  slug and serve/301 to the `.html` file, without touching the existing
-  trailing-slash directory-index logic), not a blind `_redirects` line.
-  Flagging for a dev pass rather than changing routing logic unreviewed.
-- [ ] **URGENT, now 5 consecutive runs — the Instagram channel is still
+- [x] ~~extensionless URLs 404 site-wide~~ — **resolved, confirmed
+  2026-09-14**: `/case-studies/button-eyes-resort`, `/mentions`, and
+  `/services/web-design-development` all curl-verified 200 (no `.html`
+  needed) this run. Whatever fix landed (not attributable to this pipeline
+  — no `_redirects`/`worker.js` commit found in this session's git log),
+  it worked. No further action needed.
+- [ ] **URGENT, now 6 consecutive runs — the Instagram channel is still
   disconnected in Buffer.** First flagged 2026-09-05; confirmed again
-  2026-09-06 (twice, same-day second run), 2026-09-07, 2026-09-08, and again
-  2026-09-11 via `list_channels` (`isDisconnected: true` for `seo_with_faiz`,
-  id `6a49c7a440483446286f476c`). All five runs skipped Instagram scheduling
-  rather than post into a broken channel — GBP and LinkedIn went out as
-  normal each time. IG has had no fresh post since 08-28 (14 days and
-  counting). Needs Faiz to reconnect it from the Buffer dashboard (channel
-  → reconnect/re-auth); until then Instagram content stops accumulating and
-  the studio effectively runs on 2 channels instead of 3.
+  2026-09-06 (twice, same-day second run), 2026-09-07, 2026-09-08, 2026-09-11,
+  and again 2026-09-14 via `list_channels` (`isDisconnected: true` for
+  `seo_with_faiz`, id `6a49c7a440483446286f476c`). All six runs skipped
+  Instagram scheduling rather than post into a broken channel — GBP and
+  LinkedIn went out as normal each time. IG has had no fresh post since
+  08-28 (17 days and counting). Needs Faiz to reconnect it from the Buffer
+  dashboard (channel → reconnect/re-auth); until then Instagram content
+  stops accumulating and the studio effectively runs on 2 channels instead
+  of 3.
+- [ ] **ESCALATED 2026-09-14 — blog channel has now published nothing new
+  in 8+ weeks, and the drafts backlog got worse, not better.** First
+  flagged as a regression 2026-08-24 (12/12 backlog drafts stuck
+  `needs_revision`). This run found 6 more Content Factory drafts sitting
+  uncommitted in the working tree (committed as pipeline output this run —
+  see LOG-equivalent note in METRICS.md) — all 6 are also
+  `needs_revision`, bringing the backlog to **18/18 needs_revision, 0
+  ready**. The compliance-gate fix from 07-10
+  (`automation/blog/{content_builder,draft_generator,compliance,
+  humanization,intent_content,intent_research,publish_validator}.py`)
+  either regressed again or was never sufficient for this newer batch of
+  AI-search-cluster drafts. This is outside the Growth Strategist's remit
+  but is now the single biggest gap in the content engine — the "Authority
+  + AI-search citations" channel goal has been fully stalled for 2 months.
+  Needs an engineering/editorial pass on why every draft fails the gate,
+  not just a re-run of the pipeline.
 - [ ] **NEW, URGENT (partially resolving live): the Editor-in-Chief,
   Social Manager, Prospector, and Growth Strategist scheduled roles went
   silent for ~5 weeks** (2026-07-20 → 2026-08-24 — LOG.md's last entry
@@ -297,17 +337,10 @@ unused blog angles, well above the ≥10/≥5 floor — no refill needed.
   Faiz posting by hand while the pipeline was down. Needs his confirmation
   either way; if manual, worth deciding whether to leave them, edit them
   toward brand guardrails, or delete — his call, not corrected here.
-- [ ] **Blog draft backlog regressed, and the bot is running, not stalled.**
-  As of 07-20, 7 of the remaining backlog drafts were `review_status:
-  ready`. As of this run, all 12 remaining files in `blog/drafts/` are
-  back to `needs_revision` — despite (or because of) the blog-draft GitHub
-  Action running every 3-4 days throughout the gap (11 "Automate blog
-  draft pipeline updates" commits between 07-20 and 08-24, touching
-  `keyword_plan.json`/`trends.json` and re-scoring every draft each time).
-  Worth an engineering look at whether the compliance-gate fix from 07-10
-  (`automation/blog/*.py`) held, regressed, or was touched by something
-  else during the gap — outside the Growth Strategist's remit but blocking
-  the blog channel entirely.
+- [x] ~~Blog draft backlog regressed, and the bot is running, not
+  stalled~~ — **superseded 2026-09-14 by the escalated entry above** (18/18
+  now `needs_revision`, up from 12/12 on 2026-08-24). Same root cause,
+  worse now; tracking under the escalated ask instead of duplicating here.
 - [ ] **GA4 tracking bug still unresolved, one month later.** First flagged
   2026-07-20: `keyEvents` is 100% the `swf_consent` cookie-banner-click
   event; the property's real configured conversions (`purchase`,
