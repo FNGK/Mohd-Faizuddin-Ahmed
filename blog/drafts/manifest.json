@@ -1,6 +1,24 @@
 {
- "generated_at": "2026-09-04T12:59:25.386947+00:00",
+ "generated_at": "2026-09-07T14:35:43.238823+00:00",
  "drafts": [
+  {
+   "title": "AEO vs GEO vs SEO: What''s the Difference?",
+   "slug": "aeo-vs-geo-vs-seo-whats-the-difference",
+   "date": "2026-09-07",
+   "review_status": "needs_revision",
+   "primary_keyword": "aeo vs geo vs seo",
+   "meta_description": "AEO vs GEO vs SEO, explained without the jargon, what each one means, how they overlap, and which your team should focus on first in AI-driven search.",
+   "file": "aeo-vs-geo-vs-seo-whats-the-difference.md"
+  },
+  {
+   "title": "8 AI Search Optimization Mistakes to Avoid",
+   "slug": "ai-search-optimization-mistakes-to-avoid",
+   "date": "2026-09-07",
+   "review_status": "needs_revision",
+   "primary_keyword": "ai search optimization mistakes",
+   "meta_description": "Eight AI search optimization mistakes that quietly keep you out of ChatGPT, Perplexity, and AI Overviews, with the fix for each. Avoid these before you scale.",
+   "file": "ai-search-optimization-mistakes-to-avoid.md"
+  },
   {
    "title": "AI Search Optimization: A 2026 Playbook for Search Teams",
    "slug": "ai-search-optimization-staying-visible-as-ai-reshapes-search-in-2026",
@@ -9,6 +27,15 @@
    "primary_keyword": "ai search optimization",
    "meta_description": "You're working on ai search optimization at the awareness stage. ai search optimization \u2014 SERP-aligned SEO, AEO, GEO, and SXO steps.",
    "file": "ai-search-optimization-staying-visible-as-ai-reshapes-search-in-2026.md"
+  },
+  {
+   "title": "AI Search Readiness Audit: A Free Template",
+   "slug": "ai-search-readiness-audit-template",
+   "date": "2026-09-07",
+   "review_status": "needs_revision",
+   "primary_keyword": "ai search readiness audit",
+   "meta_description": "A free AI search readiness audit, score your site across entities, content, technical access, and measurement, then fix the lowest-scoring gap first.",
+   "file": "ai-search-readiness-audit-template.md"
   },
   {
    "title": "AI Search Visibility: What to Fix Before You Chase New Formats",
@@ -56,6 +83,15 @@
    "file": "google-core-update-recovery-seo-strategy-what-teams-should-do-in-2026.md"
   },
   {
+   "title": "How to Get Cited by AI: ChatGPT & Perplexity",
+   "slug": "how-to-get-cited-by-chatgpt-and-perplexity",
+   "date": "2026-09-07",
+   "review_status": "needs_revision",
+   "primary_keyword": "get cited by ai",
+   "meta_description": "How to get cited by AI answer engines like ChatGPT and Perplexity, the source traits, entity signals, and access that turn your pages into cited sources.",
+   "file": "how-to-get-cited-by-chatgpt-and-perplexity.md"
+  },
+  {
    "title": "How to Rank in AI Overviews: A Step-by-Step Guide for 2026",
    "slug": "how-to-rank-in-ai-overviews-a-step-by-step-guide-for-2026",
    "date": "2026-07-02",
@@ -63,6 +99,15 @@
    "primary_keyword": "how to rank in ai overviews",
    "meta_description": "You're working on how to rank in ai overviews at the awareness stage. how to rank in ai overviews \u2014 SERP-aligned SEO, AEO, GEO, and SXO steps.",
    "file": "how-to-rank-in-ai-overviews-a-step-by-step-guide-for-2026.md"
+  },
+  {
+   "title": "How to Track AI Search Traffic in GA4 (2026)",
+   "slug": "how-to-track-ai-search-traffic-in-ga4",
+   "date": "2026-09-07",
+   "review_status": "needs_revision",
+   "primary_keyword": "track ai search traffic in ga4",
+   "meta_description": "AI search traffic hides in GA4's Referral bucket. Learn to track AI search traffic in GA4 with a custom channel group, and report what it returns.",
+   "file": "how-to-track-ai-search-traffic-in-ga4.md"
   },
   {
    "title": "LLM SEO: Staying Visible as AI Reshapes Search in 2026",
@@ -90,6 +135,15 @@
    "primary_keyword": "schema markup for ai search",
    "meta_description": "You're working on schema markup for ai search at the awareness stage. schema markup for ai search \u2014 SERP-aligned SEO, AEO, GEO, and SXO steps.",
    "file": "schema-markup-for-ai-search-staying-visible-as-ai-reshapes-search-in-202.md"
+  },
+  {
+   "title": "How to Structure Content for AI Answer Engines",
+   "slug": "structure-content-for-ai-answer-engines",
+   "date": "2026-09-07",
+   "review_status": "needs_revision",
+   "primary_keyword": "structure content for ai search",
+   "meta_description": "AI engines cite passages, not pages. Structure content for AI search with self-contained passages, question-led headings, and clean answers that get lifted.",
+   "file": "structure-content-for-ai-answer-engines.md"
   },
   {
    "title": "Technical SEO Audit: A 2026 Playbook for Search Teams",
