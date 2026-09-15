@@ -279,14 +279,14 @@ blog channel has published nothing new since 07-14, now 8+ weeks.
   needed) this run. Whatever fix landed (not attributable to this pipeline
   — no `_redirects`/`worker.js` commit found in this session's git log),
   it worked. No further action needed.
-- [ ] **URGENT, now 6 consecutive runs — the Instagram channel is still
+- [ ] **URGENT, now 8 consecutive runs — the Instagram channel is still
   disconnected in Buffer.** First flagged 2026-09-05; confirmed again
   2026-09-06 (twice, same-day second run), 2026-09-07, 2026-09-08, 2026-09-11,
-  and again 2026-09-14 via `list_channels` (`isDisconnected: true` for
-  `seo_with_faiz`, id `6a49c7a440483446286f476c`). All six runs skipped
+  2026-09-14, and again 2026-09-15 via `list_channels` (`isDisconnected: true`
+  for `seo_with_faiz`, id `6a49c7a440483446286f476c`). All eight runs skipped
   Instagram scheduling rather than post into a broken channel — GBP and
   LinkedIn went out as normal each time. IG has had no fresh post since
-  08-28 (17 days and counting). Needs Faiz to reconnect it from the Buffer
+  08-28 (18 days and counting). Needs Faiz to reconnect it from the Buffer
   dashboard (channel → reconnect/re-auth); until then Instagram content
   stops accumulating and the studio effectively runs on 2 channels instead
   of 3.
