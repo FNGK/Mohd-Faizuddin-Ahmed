@@ -89,7 +89,7 @@
       box.innerHTML = leads.map(function (l) {
         return '<div class="crm-card crm-lead" data-id="' + l.id + '">' +
           '<div>' +
-            '<h3>' + esc(l.name) + ' <span class="crm-status" data-s="' + esc(l.status) + '">' + esc(l.status) + '</span></h3>' +
+            '<h3><span class="crm-id">#' + esc(l.id) + '</span> ' + esc(l.name) + ' <span class="crm-status" data-s="' + esc(l.status) + '">' + esc(l.status) + '</span></h3>' +
             '<p>' +
             (l.email ? '<a href="mailto:' + esc(l.email) + '">' + esc(l.email) + '</a>' : '') +
             (l.phone ? (l.email ? ' · ' : '') + '<a href="tel:' + esc(l.phone) + '">' + esc(l.phone) + '</a>' : '') +
