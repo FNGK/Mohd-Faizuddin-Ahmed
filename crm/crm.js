@@ -217,6 +217,7 @@
           (decLabel ? ' · your decision: <strong>' + esc(decLabel) + '</strong>' : '') + '</p>' +
           (d.meta_description ? '<p class="crm-note">' + esc(d.meta_description) + '</p>' : '') +
           '<div class="crm-draft-row">' +
+            (d.preview ? '<a class="crm-btn" href="' + esc(d.preview) + '" target="_blank" rel="noopener">Read draft</a>' : '') +
             '<button class="crm-btn crm-btn--primary bd" data-d="approve" type="button">Approve → publish</button>' +
             '<button class="crm-btn bd" data-d="hold" type="button">Hold</button>' +
             '<button class="crm-btn crm-btn--danger bd" data-d="reject" type="button">Reject → revise</button>' +

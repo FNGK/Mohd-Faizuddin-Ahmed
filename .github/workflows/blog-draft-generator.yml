@@ -56,6 +56,10 @@ jobs:
         run: |
           python automation/blog/publish_validator.py --publish
 
+      - name: Refresh CRM draft manifest and previews
+        run: |
+          python automation/blog/generate_drafts_manifest.py
+
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"

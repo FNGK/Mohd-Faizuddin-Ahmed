@@ -1,14 +1,15 @@
 {
- "generated_at": "2026-09-07T14:35:43.238823+00:00",
+ "generated_at": "2026-09-17T11:40:55.777741+00:00",
  "drafts": [
   {
-   "title": "AEO vs GEO vs SEO: What''s the Difference?",
+   "title": "AEO vs GEO vs SEO: What's the Difference?",
    "slug": "aeo-vs-geo-vs-seo-whats-the-difference",
    "date": "2026-09-07",
    "review_status": "needs_revision",
    "primary_keyword": "aeo vs geo vs seo",
    "meta_description": "AEO vs GEO vs SEO, explained without the jargon, what each one means, how they overlap, and which your team should focus on first in AI-driven search.",
-   "file": "aeo-vs-geo-vs-seo-whats-the-difference.md"
+   "file": "aeo-vs-geo-vs-seo-whats-the-difference.md",
+   "preview": "/blog/drafts/preview/aeo-vs-geo-vs-seo-whats-the-difference"
   },
   {
    "title": "8 AI Search Optimization Mistakes to Avoid",
@@ -17,7 +18,8 @@
    "review_status": "needs_revision",
    "primary_keyword": "ai search optimization mistakes",
    "meta_description": "Eight AI search optimization mistakes that quietly keep you out of ChatGPT, Perplexity, and AI Overviews, with the fix for each. Avoid these before you scale.",
-   "file": "ai-search-optimization-mistakes-to-avoid.md"
+   "file": "ai-search-optimization-mistakes-to-avoid.md",
+   "preview": "/blog/drafts/preview/ai-search-optimization-mistakes-to-avoid"
   },
   {
    "title": "AI Search Optimization: A 2026 Playbook for Search Teams",
@@ -26,7 +28,8 @@
    "review_status": "needs_revision",
    "primary_keyword": "ai search optimization",
    "meta_description": "You're working on ai search optimization at the awareness stage. ai search optimization \u2014 SERP-aligned SEO, AEO, GEO, and SXO steps.",
-   "file": "ai-search-optimization-staying-visible-as-ai-reshapes-search-in-2026.md"
+   "file": "ai-search-optimization-staying-visible-as-ai-reshapes-search-in-2026.md",
+   "preview": "/blog/drafts/preview/ai-search-optimization-staying-visible-as-ai-reshapes-search-in-2026"
   },
   {
    "title": "AI Search Readiness Audit: A Free Template",
@@ -35,7 +38,8 @@
    "review_status": "needs_revision",
    "primary_keyword": "ai search readiness audit",
    "meta_description": "A free AI search readiness audit, score your site across entities, content, technical access, and measurement, then fix the lowest-scoring gap first.",
-   "file": "ai-search-readiness-audit-template.md"
+   "file": "ai-search-readiness-audit-template.md",
+   "preview": "/blog/drafts/preview/ai-search-readiness-audit-template"
   },
   {
    "title": "AI Search Visibility: What to Fix Before You Chase New Formats",
@@ -43,8 +47,9 @@
    "date": "2026-05-10",
    "review_status": "needs_revision",
    "primary_keyword": "ai search visibility seo strategy",
-   "meta_description": "Teams hear \"AI search\" and spin up a new hub with vague claims. Searchers and answer engines reward something quieter: **pages that resolve one intent Actionable steps for technical SEO, local growth, and AI-era visibility.'",
-   "file": "ai-search-visibility-seo-strategy-what-teams-should-do-in-2026.md"
+   "meta_description": "Teams hear \"AI search\" and spin up a new hub with vague claims. Searchers and answer engines reward something quieter: **pages that resolve one intent Actionable steps for technical SEO, local growth, and AI-era visibility.",
+   "file": "ai-search-visibility-seo-strategy-what-teams-should-do-in-2026.md",
+   "preview": "/blog/drafts/preview/ai-search-visibility-seo-strategy-what-teams-should-do-in-2026"
   },
   {
    "title": "AI Search Visibility: What to Fix Before You Chase New Formats",
@@ -52,8 +57,9 @@
    "date": "2026-05-21",
    "review_status": "needs_revision",
    "primary_keyword": "ai search visibility seo strategy",
-   "meta_description": "Teams hear \"AI search\" and spin up a new hub with vague claims. Searchers and answer engines reward something quieter: **pages that resolve one intent Actionable steps for technical SEO, local growth, and AI-era visibility.'",
-   "file": "ai-search-visibility-what-to-fix-before-you-chase-new-formats.md"
+   "meta_description": "Teams hear \"AI search\" and spin up a new hub with vague claims. Searchers and answer engines reward something quieter: **pages that resolve one intent Actionable steps for technical SEO, local growth, and AI-era visibility.",
+   "file": "ai-search-visibility-what-to-fix-before-you-chase-new-formats.md",
+   "preview": "/blog/drafts/preview/ai-search-visibility-what-to-fix-before-you-chase-new-formats"
   },
   {
    "title": "Answer Engine Optimization: A 2026 Playbook for Search Teams",
@@ -62,7 +68,8 @@
    "review_status": "needs_revision",
    "primary_keyword": "answer engine optimization",
    "meta_description": "You're working on answer engine optimization at the awareness stage. answer engine optimization \u2014 SERP-aligned SEO, AEO, GEO, and SXO steps.",
-   "file": "answer-engine-optimization-staying-visible-as-ai-reshapes-search-in-2026.md"
+   "file": "answer-engine-optimization-staying-visible-as-ai-reshapes-search-in-2026.md",
+   "preview": "/blog/drafts/preview/answer-engine-optimization-staying-visible-as-ai-reshapes-search-in-2026"
   },
   {
    "title": "Generative Engine Optimization: A 2026 Playbook for Search",
@@ -71,7 +78,8 @@
    "review_status": "needs_revision",
    "primary_keyword": "generative engine optimization",
    "meta_description": "You're working on generative engine optimization at the awareness stage. generative engine optimization \u2014 SERP-aligned SEO, AEO, GEO, and SXO steps.",
-   "file": "generative-engine-optimization-staying-visible-as-ai-reshapes-search-in.md"
+   "file": "generative-engine-optimization-staying-visible-as-ai-reshapes-search-in.md",
+   "preview": "/blog/drafts/preview/generative-engine-optimization-staying-visible-as-ai-reshapes-search-in"
   },
   {
    "title": "Recovering After a Google Core Update Without Burning the Site Down",
@@ -80,7 +88,8 @@
    "review_status": "needs_revision",
    "primary_keyword": "google core update recovery seo strategy",
    "meta_description": "When traffic drops after a Google core update, the first instinct is to rewrite everything. That often swaps a clear problem for a muddy one. **Google Actionable steps for technical SEO, local growth, and AI-era visibility.",
-   "file": "google-core-update-recovery-seo-strategy-what-teams-should-do-in-2026.md"
+   "file": "google-core-update-recovery-seo-strategy-what-teams-should-do-in-2026.md",
+   "preview": "/blog/drafts/preview/google-core-update-recovery-seo-strategy-what-teams-should-do-in-2026"
   },
   {
    "title": "How to Get Cited by AI: ChatGPT & Perplexity",
@@ -89,7 +98,8 @@
    "review_status": "needs_revision",
    "primary_keyword": "get cited by ai",
    "meta_description": "How to get cited by AI answer engines like ChatGPT and Perplexity, the source traits, entity signals, and access that turn your pages into cited sources.",
-   "file": "how-to-get-cited-by-chatgpt-and-perplexity.md"
+   "file": "how-to-get-cited-by-chatgpt-and-perplexity.md",
+   "preview": "/blog/drafts/preview/how-to-get-cited-by-chatgpt-and-perplexity"
   },
   {
    "title": "How to Rank in AI Overviews: A Step-by-Step Guide for 2026",
@@ -98,7 +108,8 @@
    "review_status": "needs_revision",
    "primary_keyword": "how to rank in ai overviews",
    "meta_description": "You're working on how to rank in ai overviews at the awareness stage. how to rank in ai overviews \u2014 SERP-aligned SEO, AEO, GEO, and SXO steps.",
-   "file": "how-to-rank-in-ai-overviews-a-step-by-step-guide-for-2026.md"
+   "file": "how-to-rank-in-ai-overviews-a-step-by-step-guide-for-2026.md",
+   "preview": "/blog/drafts/preview/how-to-rank-in-ai-overviews-a-step-by-step-guide-for-2026"
   },
   {
    "title": "How to Track AI Search Traffic in GA4 (2026)",
@@ -107,7 +118,8 @@
    "review_status": "needs_revision",
    "primary_keyword": "track ai search traffic in ga4",
    "meta_description": "AI search traffic hides in GA4's Referral bucket. Learn to track AI search traffic in GA4 with a custom channel group, and report what it returns.",
-   "file": "how-to-track-ai-search-traffic-in-ga4.md"
+   "file": "how-to-track-ai-search-traffic-in-ga4.md",
+   "preview": "/blog/drafts/preview/how-to-track-ai-search-traffic-in-ga4"
   },
   {
    "title": "LLM SEO: Staying Visible as AI Reshapes Search in 2026",
@@ -116,7 +128,8 @@
    "review_status": "needs_revision",
    "primary_keyword": "llm seo",
    "meta_description": "You're working on llm seo at the awareness stage. llm seo \u2014 SERP-aligned SEO, AEO, GEO, and SXO steps. Actionable for marketing leaders.",
-   "file": "llm-seo-staying-visible-as-ai-reshapes-search-in-2026.md"
+   "file": "llm-seo-staying-visible-as-ai-reshapes-search-in-2026.md",
+   "preview": "/blog/drafts/preview/llm-seo-staying-visible-as-ai-reshapes-search-in-2026"
   },
   {
    "title": "Local SEO That Turns Map Views Into Booked Jobs in 2026",
@@ -124,8 +137,9 @@
    "date": "2026-05-10",
    "review_status": "needs_revision",
    "primary_keyword": "local seo conversion strategy seo strategy",
-   "meta_description": "If you run a location-based business, you have probably seen the pattern: impressions climb on Google Maps, calls trickle in, and the CRM still shows  Actionable steps for technical SEO, local growth, and AI-era visibility.'",
-   "file": "local-seo-conversion-strategy-seo-strategy-what-teams-should-do-in-2026.md"
+   "meta_description": "If you run a location-based business, you have probably seen the pattern: impressions climb on Google Maps, calls trickle in, and the CRM still shows  Actionable steps for technical SEO, local growth, and AI-era visibility.",
+   "file": "local-seo-conversion-strategy-seo-strategy-what-teams-should-do-in-2026.md",
+   "preview": "/blog/drafts/preview/local-seo-conversion-strategy-seo-strategy-what-teams-should-do-in-2026"
   },
   {
    "title": "Schema Markup for AI Search: A 2026 Playbook for Search Teams",
@@ -134,7 +148,8 @@
    "review_status": "needs_revision",
    "primary_keyword": "schema markup for ai search",
    "meta_description": "You're working on schema markup for ai search at the awareness stage. schema markup for ai search \u2014 SERP-aligned SEO, AEO, GEO, and SXO steps.",
-   "file": "schema-markup-for-ai-search-staying-visible-as-ai-reshapes-search-in-202.md"
+   "file": "schema-markup-for-ai-search-staying-visible-as-ai-reshapes-search-in-202.md",
+   "preview": "/blog/drafts/preview/schema-markup-for-ai-search-staying-visible-as-ai-reshapes-search-in-202"
   },
   {
    "title": "How to Structure Content for AI Answer Engines",
@@ -143,7 +158,8 @@
    "review_status": "needs_revision",
    "primary_keyword": "structure content for ai search",
    "meta_description": "AI engines cite passages, not pages. Structure content for AI search with self-contained passages, question-led headings, and clean answers that get lifted.",
-   "file": "structure-content-for-ai-answer-engines.md"
+   "file": "structure-content-for-ai-answer-engines.md",
+   "preview": "/blog/drafts/preview/structure-content-for-ai-answer-engines"
   },
   {
    "title": "Technical SEO Audit: A 2026 Playbook for Search Teams",
@@ -152,7 +168,8 @@
    "review_status": "needs_revision",
    "primary_keyword": "technical seo audit",
    "meta_description": "You're working on technical seo audit at the awareness stage. technical seo audit \u2014 SERP-aligned SEO, AEO, GEO, and SXO steps.",
-   "file": "technical-seo-audit-priorities-that-protect-crawl-budget-and-revenue.md"
+   "file": "technical-seo-audit-priorities-that-protect-crawl-budget-and-revenue.md",
+   "preview": "/blog/drafts/preview/technical-seo-audit-priorities-that-protect-crawl-budget-and-revenue"
   },
   {
    "title": "Technical SEO Priorities When Crawl Budget and Revenue Both Matter",
@@ -160,8 +177,9 @@
    "date": "2026-05-10",
    "review_status": "needs_revision",
    "primary_keyword": "technical seo prioritization seo strategy",
-   "meta_description": "Technical SEO prioritization gets fuzzy when every audit ships fifty red rows. The question that matters for revenue is simpler: **which fixes change  Actionable steps for technical SEO, local growth, and AI-era visibility.'",
-   "file": "technical-seo-prioritization-seo-strategy-what-teams-should-do-in-2026.md"
+   "meta_description": "Technical SEO prioritization gets fuzzy when every audit ships fifty red rows. The question that matters for revenue is simpler: **which fixes change  Actionable steps for technical SEO, local growth, and AI-era visibility.",
+   "file": "technical-seo-prioritization-seo-strategy-what-teams-should-do-in-2026.md",
+   "preview": "/blog/drafts/preview/technical-seo-prioritization-seo-strategy-what-teams-should-do-in-2026"
   }
  ]
 }

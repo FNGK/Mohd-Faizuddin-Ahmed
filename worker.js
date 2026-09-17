@@ -521,6 +521,22 @@ export default {
     const p = url.pathname;
     const isGet = request.method === 'GET' || request.method === 'HEAD';
 
+    // 0) Blog draft previews are for CRM review only: signed-in users get the page
+    //    (never indexed or cached), everyone else is sent to the CRM login.
+    if (p.startsWith('/blog/drafts/preview/')) {
+      if (!(await crmAuthed(request, env))) {
+        return Response.redirect(new URL('/crm/', url).toString(), 302);
+      }
+      if (p.endsWith('.html')) {
+        return Response.redirect(new URL(p.slice(0, -'.html'.length) + url.search, url).toString(), 301);
+      }
+      const asset = await env.ASSETS.fetch(new Request(new URL(p + '.html', url), request));
+      const preview = new Response(asset.body, asset);
+      preview.headers.set('X-Robots-Tag', 'noindex, nofollow');
+      preview.headers.set('Cache-Control', 'private, no-store');
+      return preview;
+    }
+
     // 1) Any .html (or /index.html) request is a legacy/duplicate URL -> 301 to
     //    the clean canonical: /dir/page.html -> /dir/page, /dir/index.html -> /dir/,
     //    /index.html -> /. Query/hash preserved.
