@@ -16,6 +16,7 @@
   initBackToTop();
   initScrollReveal();
   initCounters();
+  initDeferredImages();
   initReadingProgress();
   initAnalyticsEvents();
     initConsent();
@@ -402,6 +403,46 @@
       { threshold: 0.6 }
     );
     counters.forEach(function (el) { observer.observe(el); });
+  }
+
+  // Image groups marked [data-defer-images] (e.g. a swipeable card rail) load
+  // together once the group is within 1250px of the viewport, the distance
+  // Chrome uses for native lazy loading on 4G. Native lazy loading widens that
+  // to 3000px when the connection type is unknown, which pulled far-down rail
+  // images into the initial page load; loading the group at once also means
+  // cards scrolled sideways are ready before they are swiped into view.
+  function initDeferredImages() {
+    const groups = document.querySelectorAll("[data-defer-images]");
+    if (!groups.length) return;
+
+    const load = function (group) {
+      group.querySelectorAll("source[data-srcset]").forEach(function (source) {
+        source.srcset = source.getAttribute("data-srcset");
+        source.removeAttribute("data-srcset");
+      });
+      group.querySelectorAll("img[data-src]").forEach(function (img) {
+        img.src = img.getAttribute("data-src");
+        img.removeAttribute("data-src");
+      });
+    };
+
+    if (!("IntersectionObserver" in window)) {
+      groups.forEach(load);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            observer.unobserve(entry.target);
+            load(entry.target);
+          }
+        });
+      },
+      { rootMargin: "1250px 0px" }
+    );
+    groups.forEach(function (group) { observer.observe(group); });
   }
 
   function getRefHost() {
