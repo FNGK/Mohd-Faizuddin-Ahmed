@@ -2218,8 +2218,12 @@
   background: var(--hv-ink);
   color: var(--text);
 }
-.hero-video__media { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
-.hero-video__player { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
+.hero-video__media {
+  position: absolute; inset: 0; z-index: -1; overflow: hidden;
+  background: var(--hv-ink) url("../video/hero-poster-desktop.webp") 50% 50% / cover no-repeat;
+}
+.hero-video__player { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; opacity: 0; transition: opacity 0.6s ease; }
+.hero-video__player.is-playing { opacity: 1; }
 .hero-video__scrim {
   position: absolute; inset: 0;
   /* an even veil over the whole frame, deepened softly behind the copy, so the
@@ -2267,9 +2271,9 @@
 
 @media (max-width: 760px) {
   /* phones: the video fills the whole hero; copy starts at the top */
-  .hero-video { display: block; min-height: 0; padding-block: 1.5rem 3.5rem; }
-  .hero-video__media { inset: 0; }
-  .hero-video__player { object-position: 66% 30%; }
+  .hero-video { display: block; min-height: calc(100svh - 80px); padding-block: 1.5rem 3.5rem; }
+  .hero-video__media { inset: 0; background-image: url("../video/hero-poster-mobile.webp"); background-position: 50% 42%; }
+  .hero-video__player { object-position: 50% 42%; }
   .hero-video__scrim {
     background:
       linear-gradient(180deg, rgba(5, 11, 22, 0.42) 0%, rgba(5, 11, 22, 0.5) 38%, rgba(5, 11, 22, 0.72) 70%, rgba(5, 11, 22, 0.9) 100%);

@@ -14,7 +14,8 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"></noscript>
 
   <title>Web Design, Development, SEO &amp; Marketing | SEO With Faiz</title>
-  <link rel="preload" as="image" href="./assets/video/hero-poster.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="image" href="./assets/video/hero-poster-desktop.webp" type="image/webp" media="(min-width: 761px)" fetchpriority="high">
+  <link rel="preload" as="image" href="./assets/video/hero-poster-mobile.webp" type="image/webp" media="(max-width: 760px)" fetchpriority="high">
   <meta name="description" content="Full-service web studio: custom, 3D, Shopify Plus, WordPress &amp; Magento builds — engineered with technical SEO and performance marketing for enterprise and growth-stage brands.">
   <link rel="canonical" href="https://seowithfaiz.com/">
   <meta property="og:type" content="website">
@@ -183,9 +184,10 @@
     <section class="hero-prime hero-video" aria-label="Introduction">
       <div class="hero-video__media" aria-hidden="true">
         <video class="hero-video__player" data-hero-video muted loop playsinline preload="none"
-          poster="./assets/video/hero-poster.webp"
-          data-src-lg="./assets/video/hero-720.mp4"
-          data-src-sm="./assets/video/hero-480.mp4"></video>
+          data-src-desktop-webm="./assets/video/hero-loop-desktop.webm"
+          data-src-desktop-mp4="./assets/video/hero-loop-desktop.mp4"
+          data-src-mobile-webm="./assets/video/hero-loop-mobile.webm"
+          data-src-mobile-mp4="./assets/video/hero-loop-mobile.mp4"></video>
         <span class="hero-video__scrim"></span>
       </div>
       <div class="container hero-video__content">
