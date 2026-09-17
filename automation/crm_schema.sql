@@ -23,3 +23,14 @@ CREATE TABLE IF NOT EXISTS blog_decisions (
   decided_at TEXT NOT NULL,
   applied INTEGER DEFAULT 0
 );
+
+-- Per-IP fixed-window counters for the contact form and CRM login
+-- (worker.js rateLimit). The worker creates this table on demand too, so an
+-- existing database needs no manual migration.
+CREATE TABLE IF NOT EXISTS rate_limits (
+  bucket TEXT NOT NULL,
+  ip TEXT NOT NULL,
+  window_start INTEGER NOT NULL,
+  hits INTEGER NOT NULL DEFAULT 0,
+  PRIMARY KEY (bucket, ip, window_start)
+);

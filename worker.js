@@ -274,6 +274,82 @@ async function ensureCrmSchema(env) {
   crmMigrated = true;
 }
 
+// ── Rate limiting for the two endpoints worth abusing ──
+// The contact form (every submission sends an email and fires the CAPI calls)
+// and the CRM login (the only place the access key can be guessed). A fixed
+// window per IP, counted in D1 so the limit holds across colos; if D1 is
+// unavailable the count falls back to this instance's memory, which still
+// slows a flood from one source. Limits are generous enough that a real
+// visitor, or Faiz mistyping the key, never meets them.
+const RATE_LIMITS = {
+  // A rejected submission counts too (the limit is checked before validation),
+  // so the contact allowance leaves room for a visitor correcting mistakes.
+  contact: { limit: 8, windowSec: 600 },
+  crm_login: { limit: 8, windowSec: 600 },
+};
+const rateMemory = new Map();
+let rateSchemaReady = false;
+
+async function ensureRateSchema(env) {
+  if (rateSchemaReady) return;
+  await env.CRM_DB.prepare(
+    'CREATE TABLE IF NOT EXISTS rate_limits (bucket TEXT NOT NULL, ip TEXT NOT NULL, ' +
+    'window_start INTEGER NOT NULL, hits INTEGER NOT NULL DEFAULT 0, PRIMARY KEY (bucket, ip, window_start))'
+  ).run();
+  rateSchemaReady = true;
+}
+
+function rateCountInMemory(key, windowStart) {
+  for (const seen of rateMemory.keys()) {
+    if (Number(seen.slice(seen.lastIndexOf('|') + 1)) < windowStart) rateMemory.delete(seen);
+  }
+  const hits = (rateMemory.get(key) || 0) + 1;
+  rateMemory.set(key, hits);
+  return hits;
+}
+
+// Counts this request and returns null when it may proceed, or a 429 Response.
+async function rateLimit(request, env, ctx, bucket, body) {
+  const rule = RATE_LIMITS[bucket];
+  const ip = request.headers.get('CF-Connecting-IP') || 'unknown';
+  const nowSec = Math.floor(Date.now() / 1000);
+  const windowStart = nowSec - (nowSec % rule.windowSec);
+  let hits;
+  try {
+    if (!env.CRM_DB) throw new Error('no D1 binding');
+    await ensureRateSchema(env);
+    const row = await env.CRM_DB.prepare(
+      'INSERT INTO rate_limits (bucket, ip, window_start, hits) VALUES (?,?,?,1) ' +
+      'ON CONFLICT(bucket, ip, window_start) DO UPDATE SET hits = hits + 1 RETURNING hits'
+    ).bind(bucket, ip, windowStart).first();
+    hits = row && typeof row.hits === 'number' ? row.hits : null;
+    if (hits === null) {
+      // RETURNING unsupported: read the counter back rather than fail open.
+      const stored = await env.CRM_DB.prepare(
+        'SELECT hits FROM rate_limits WHERE bucket = ? AND ip = ? AND window_start = ?'
+      ).bind(bucket, ip, windowStart).first();
+      hits = stored ? stored.hits : 1;
+    }
+    if (ctx && typeof ctx.waitUntil === 'function' && Math.random() < 0.05) {
+      ctx.waitUntil(
+        env.CRM_DB.prepare('DELETE FROM rate_limits WHERE window_start < ?')
+          .bind(windowStart - rule.windowSec).run().catch(function () {})
+      );
+    }
+  } catch (err) {
+    hits = rateCountInMemory(bucket + '|' + ip + '|' + windowStart, windowStart);
+  }
+  if (hits <= rule.limit) return null;
+  return new Response(JSON.stringify(body), {
+    status: 429,
+    headers: {
+      'Content-Type': 'application/json',
+      'Retry-After': String(windowStart + rule.windowSec - nowSec),
+      'Cache-Control': 'no-store',
+    },
+  });
+}
+
 // Serve a static media file with single-range support (206 / 416). The hero
 // videos are ~1-2 MB, so buffering one in the worker to slice it is cheap.
 async function serveMedia(request, env, url) {
@@ -315,6 +391,11 @@ async function handleCrmApi(request, env, ctx, url) {
   await ensureCrmSchema(env);
 
   if (path === '/api/crm/login' && method === 'POST') {
+    // Counted before the key is checked, so guessing costs attempts either way.
+    const limited = await rateLimit(request, env, ctx, 'crm_login', {
+      error: 'Too many sign-in attempts. Please try again in a few minutes.',
+    });
+    if (limited) return limited;
     if (!env.CRM_ACCESS_KEY) return json({ error: 'CRM_ACCESS_KEY secret not configured yet' }, 503);
     let body;
     try { body = await request.json(); } catch { return json({ error: 'Invalid JSON' }, 400); }
@@ -455,6 +536,14 @@ async function handleContact(request, env, ctx) {
   if (request.method !== 'POST') {
     return new Response('Method Not Allowed', { status: 405 });
   }
+
+  // Counted before the honeypot check, so spam bots spend their allowance too.
+  const limited = await rateLimit(request, env, ctx, 'contact', {
+    success: false,
+    message: 'Too many submissions from your network. Please try again in a few minutes, or email win@seowithfaiz.com.',
+    emailDelivered: false,
+  });
+  if (limited) return limited;
 
   let body;
   try {
