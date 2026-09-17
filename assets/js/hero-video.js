@@ -1,8 +1,8 @@
 /* Homepage video hero.
    The still poster is a CSS background on the media box (a different crop for
    phones and desktop), so the right image paints first and is the LCP
-   candidate. The video source is attached only after window load, so the page
-   never waits on a video download:
+   candidate. The video source is attached once the page is idle after load,
+   so the page never waits on a video download:
    - phones get a vertical cut (whole globe in frame), larger screens the 16:9 cut
    - WebM (VP9) is preferred because it loops without a stall; MP4 is the fallback
    Both files are edited so the last frame dissolves into the first, so the loop
@@ -40,20 +40,46 @@
     return video.getAttribute("data-src-" + size + (webm ? "-webm" : "-mp4"));
   }
 
+  var inView = true;
+  // Tracked by hand: video.currentSrc stays empty until the next task after src is set.
+  var attached = false;
+
+  // The button follows what the video is actually doing, so it stays truthful
+  // when the browser starts or blocks playback on its own. Suspending while the
+  // hero is off-screen or the tab is hidden is not a pause the visitor chose,
+  // so it leaves the button alone.
+  video.addEventListener("playing", function () {
+    video.classList.add("is-playing");
+    setToggle(false);
+  });
+  video.addEventListener("pause", function () {
+    if (inView && !document.hidden) setToggle(true);
+  });
+
+  // Play unless the visitor paused by hand, the hero is off-screen or the tab
+  // is hidden. A refused play (e.g. a tab opened in the background) is retried
+  // when the tab becomes visible.
+  function resume() {
+    if (!attached || userPaused || !inView || document.hidden) return;
+    var p = video.play();
+    if (p && p.catch) p.catch(function () { setToggle(true); });
+  }
+
   function attach() {
     video.src = pickSource();
     video.muted = true;
     video.loop = true;
-    video.addEventListener("playing", function () { video.classList.add("is-playing"); }, { once: true });
-    var p = video.play();
-    if (p && p.catch) p.catch(function () { setToggle(true); });
+    attached = true;
+    resume();
   }
 
   if (toggle) {
     toggle.hidden = false;
     toggle.addEventListener("click", function () {
-      if (video.paused) { userPaused = false; video.play(); setToggle(false); }
-      else { userPaused = true; video.pause(); setToggle(true); }
+      // clicked before the video attached: remember the choice for when it does
+      if (!attached) { userPaused = !userPaused; setToggle(userPaused); return; }
+      if (video.paused) { userPaused = false; resume(); }
+      else { userPaused = true; video.pause(); }
     });
   }
 
@@ -61,11 +87,19 @@
   // off-screen, and resume when it returns (unless paused by hand).
   if ("IntersectionObserver" in window) {
     new IntersectionObserver(function (entries) {
-      if (!video.currentSrc || userPaused) return;
-      if (entries[0].isIntersecting) video.play(); else video.pause();
+      inView = entries[0].isIntersecting;
+      if (inView) resume(); else if (!video.paused) video.pause();
     }, { threshold: 0.05 }).observe(video);
   }
+  document.addEventListener("visibilitychange", resume);
 
-  if (document.readyState === "complete") attach();
-  else window.addEventListener("load", attach, { once: true });
+  // Wait for load, then for the main thread to go quiet, so the download and
+  // first decode never compete with the page's own rendering. The poster is
+  // already on screen, so the only visible change is the fade into motion.
+  function whenIdle() {
+    if ("requestIdleCallback" in window) requestIdleCallback(attach, { timeout: 2500 });
+    else setTimeout(attach, 1200);
+  }
+  if (document.readyState === "complete") whenIdle();
+  else window.addEventListener("load", whenIdle, { once: true });
 })();

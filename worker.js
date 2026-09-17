@@ -274,6 +274,41 @@ async function ensureCrmSchema(env) {
   crmMigrated = true;
 }
 
+// Serve a static media file with single-range support (206 / 416). The hero
+// videos are ~1-2 MB, so buffering one in the worker to slice it is cheap.
+async function serveMedia(request, env, url) {
+  const asset = await env.ASSETS.fetch(new Request(url, { method: 'GET' }));
+  if (asset.status !== 200) return asset;
+  const headers = new Headers(asset.headers);
+  headers.set('Accept-Ranges', 'bytes');
+  headers.set('Cache-Control', 'public, max-age=604800');
+  const range = request.headers.get('Range');
+  const m = range && /^bytes=(\d*)-(\d*)$/.exec(range.trim());
+  if (!m) {
+    return new Response(request.method === 'HEAD' ? null : asset.body, { status: 200, headers });
+  }
+  const buf = await asset.arrayBuffer();
+  const size = buf.byteLength;
+  let start;
+  let end;
+  if (m[1] === '') {
+    start = size - parseInt(m[2], 10); // suffix range: the last N bytes
+    end = size - 1;
+    if (start < 0) start = 0;
+  } else {
+    start = parseInt(m[1], 10);
+    end = m[2] === '' ? size - 1 : Math.min(parseInt(m[2], 10), size - 1);
+  }
+  if (Number.isNaN(start) || Number.isNaN(end) || start > end || start >= size) {
+    headers.delete('Content-Length');
+    headers.set('Content-Range', 'bytes */' + size);
+    return new Response(null, { status: 416, headers });
+  }
+  headers.set('Content-Range', 'bytes ' + start + '-' + end + '/' + size);
+  headers.set('Content-Length', String(end - start + 1));
+  return new Response(request.method === 'HEAD' ? null : buf.slice(start, end + 1), { status: 206, headers });
+}
+
 async function handleCrmApi(request, env, ctx, url) {
   const path = url.pathname.replace(/\/$/, '');
   const method = request.method;
@@ -520,6 +555,12 @@ export default {
     // (wrangler.jsonc) so the worker owns all routing below.
     const p = url.pathname;
     const isGet = request.method === 'GET' || request.method === 'HEAD';
+
+    // Hero video files need byte-range responses: Safari and iOS will not play
+    // media without 206 Partial Content, and Workers Assets always answers 200.
+    if (isGet && p.startsWith('/assets/video/')) {
+      return serveMedia(request, env, url);
+    }
 
     // 0) Blog draft previews are for CRM review only: signed-in users get the page
     //    (never indexed or cached), everyone else is sent to the CRM login.
