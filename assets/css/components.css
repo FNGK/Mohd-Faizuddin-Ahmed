@@ -2266,14 +2266,13 @@
 .hero-video__toggle.is-paused .i-play { display: block; }
 
 @media (max-width: 760px) {
-  /* phones: the eyebrow and headline sit on the video; the lede and actions follow below */
-  .hero-video { --hv-band: 118vw; display: block; min-height: 0; padding-block: 0 2.5rem; }
-  .hero-video__media { bottom: auto; height: var(--hv-band); overflow: visible; }
-  .hero-video__player { object-position: 66% 50%; }
-  .hero-video__scrim { inset: 0 0 -4px 0; background: linear-gradient(180deg, rgba(5, 11, 22, 0.35) 0%, rgba(5, 11, 22, 0.05) 30%, rgba(5, 11, 22, 0.6) 62%, #050b16 97%); }
-  .hero-video__headline { min-height: var(--hv-band); display: flex; flex-direction: column; justify-content: flex-end; padding-bottom: 1.1rem; }
-  .hero-video__headline .hero-prime__eyebrow { margin-bottom: 0.8rem; }
-  .hero-video__headline h1 { margin-bottom: 0; }
-  .hero-video .lede { margin-top: 0.4rem; }
-  .hero-video__toggle { top: 0.9rem; right: 1rem; bottom: auto; }
+  /* phones: the video fills the whole hero; copy starts at the top */
+  .hero-video { display: block; min-height: 0; padding-block: 1.5rem 3.5rem; }
+  .hero-video__media { inset: 0; }
+  .hero-video__player { object-position: 66% 30%; }
+  .hero-video__scrim {
+    background:
+      linear-gradient(180deg, rgba(5, 11, 22, 0.42) 0%, rgba(5, 11, 22, 0.5) 38%, rgba(5, 11, 22, 0.72) 70%, rgba(5, 11, 22, 0.9) 100%);
+  }
+  .hero-video__toggle { top: auto; bottom: 1rem; right: 1rem; }
 }
