@@ -279,17 +279,16 @@ blog channel has published nothing new since 07-14, now 8+ weeks.
   needed) this run. Whatever fix landed (not attributable to this pipeline
   — no `_redirects`/`worker.js` commit found in this session's git log),
   it worked. No further action needed.
-- [ ] **URGENT, now 8 consecutive runs — the Instagram channel is still
-  disconnected in Buffer.** First flagged 2026-09-05; confirmed again
-  2026-09-06 (twice, same-day second run), 2026-09-07, 2026-09-08, 2026-09-11,
-  2026-09-14, and again 2026-09-15 via `list_channels` (`isDisconnected: true`
-  for `seo_with_faiz`, id `6a49c7a440483446286f476c`). All eight runs skipped
-  Instagram scheduling rather than post into a broken channel — GBP and
-  LinkedIn went out as normal each time. IG has had no fresh post since
-  08-28 (18 days and counting). Needs Faiz to reconnect it from the Buffer
-  dashboard (channel → reconnect/re-auth); until then Instagram content
-  stops accumulating and the studio effectively runs on 2 channels instead
-  of 3.
+- [x] ~~Instagram channel disconnected in Buffer~~ — **resolved 2026-09-17**:
+  after 20 days dark / 9 consecutive skipped runs (first flagged 2026-09-05),
+  Faiz reconnected it from the Buffer dashboard. Confirmed via `list_channels`
+  (`isDisconnected: false`) the same day, and a matching Wix platform-truth
+  Instagram post (mirroring today's already-shipped GBP/LinkedIn angle) was
+  generated and scheduled for 2026-09-18 17:30 IST — the first Instagram
+  content since 08-28. No fresh time/format signal exists yet (only the 2
+  stale pre-disconnect posts on record), so the next few runs should treat
+  Instagram's reach/engagement data as a fresh baseline, not a continuation
+  of the pre-outage numbers.
 - [ ] **ESCALATED 2026-09-14 — blog channel has now published nothing new
   in 8+ weeks, and the drafts backlog got worse, not better.** First
   flagged as a regression 2026-08-24 (12/12 backlog drafts stuck
