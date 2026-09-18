@@ -74,6 +74,20 @@
     const topbar = document.querySelector(".topbar");
     if (!topbar) return;
 
+    // Watch a 1px marker 12px down the page instead of reading scrollY: the read
+    // during start-up forced a synchronous layout of the whole page, and the
+    // observer does no work while the visitor scrolls.
+    if ("IntersectionObserver" in window) {
+      const marker = document.createElement("div");
+      marker.setAttribute("aria-hidden", "true");
+      marker.style.cssText = "position:absolute;top:12px;left:0;width:1px;height:1px;pointer-events:none";
+      document.body.appendChild(marker);
+      new IntersectionObserver(function (entries) {
+        topbar.classList.toggle("is-scrolled", !entries[0].isIntersecting);
+      }).observe(marker);
+      return;
+    }
+
     const sync = function () {
       topbar.classList.toggle("is-scrolled", window.scrollY > 12);
     };

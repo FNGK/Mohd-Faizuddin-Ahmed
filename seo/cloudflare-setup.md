@@ -94,7 +94,7 @@ Expect `201` and an email in Gmail.
 
 ## 7. GitHub Pages / old URLs
 
-Indexed `fngk.github.io/Mohd-Faizuddin-Ahmed/*` URLs still use in-repo `canonical-redirect.js` (client redirect). Prefer **Google Search Console** → property `seowithfaiz.com` → remove old GH property over time.
+Indexed `fngk.github.io/Mohd-Faizuddin-Ahmed/*` URLs still use the in-repo inline head bootstrap (client redirect; formerly `canonical-redirect.js`). Prefer **Google Search Console** → property `seowithfaiz.com` → remove old GH property over time.
 
 ## 8. Automations (GitHub Actions — optional)
 

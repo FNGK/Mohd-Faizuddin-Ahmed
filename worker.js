@@ -357,7 +357,9 @@ async function serveMedia(request, env, url) {
   if (asset.status !== 200) return asset;
   const headers = new Headers(asset.headers);
   headers.set('Accept-Ranges', 'bytes');
-  headers.set('Cache-Control', 'public, max-age=604800');
+  // A year: the hero files never change under a given name. A replacement video
+  // or poster must get a new filename (and the HTML/CSS references updated).
+  headers.set('Cache-Control', 'public, max-age=31536000, immutable');
   const range = request.headers.get('Range');
   const m = range && /^bytes=(\d*)-(\d*)$/.exec(range.trim());
   if (!m) {

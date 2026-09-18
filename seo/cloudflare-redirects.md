@@ -27,7 +27,7 @@ Hosting is **Cloudflare Pages**. Redirects are split between the repo and the da
 
 ### Legacy GitHub Pages URLs
 
-`https://fngk.github.io/Mohd-Faizuddin-Ahmed/*` is **not** in your Cloudflare zone. The repo still ships `assets/js/canonical-redirect.js` for browser redirects from old indexed links. Prefer **Search Console** with `seowithfaiz.com` as the primary property.
+`https://fngk.github.io/Mohd-Faizuddin-Ahmed/*` is **not** in your Cloudflare zone. The repo still ships the inline head bootstrap (`automation/inject_head_bootstrap.py`, formerly `assets/js/canonical-redirect.js`) for browser redirects from old indexed links. Prefer **Search Console** with `seowithfaiz.com` as the primary property.
 
 ## DNS (Cloudflare Pages — not GitHub Pages)
 
