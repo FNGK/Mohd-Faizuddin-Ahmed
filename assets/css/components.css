@@ -1740,11 +1740,6 @@
 }
 
 /* =====================================================================
-   Mono utility face (work banner, hero eyebrow)
-   ===================================================================== */
-:root { --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-
-/* =====================================================================
    Selected work — floating horizontal banner (homepage)
    ===================================================================== */
 .work-banner {
@@ -2017,7 +2012,10 @@
 
 @media (max-width: 760px) {
   /* phones: the video fills the whole hero; copy starts at the top */
-  .hero-video { display: block; min-height: calc(100svh - 80px); padding-block: 1.5rem 3.5rem; }
+  /* Anchored to the top at a fixed offset. align-content also applies to block
+     containers, so the base rule's centring would otherwise move the copy
+     whenever its height changes (e.g. when the brand fonts wrap differently). */
+  .hero-video { display: block; align-content: start; min-height: calc(100svh - 80px); padding-block: 3.2rem 3.5rem; }
   .hero-video__media { inset: 0; background-image: url("../video/hero-poster-mobile.webp"); background-position: 50% 42%; }
   .hero-video__player { object-position: 50% 42%; }
   .hero-video__scrim {

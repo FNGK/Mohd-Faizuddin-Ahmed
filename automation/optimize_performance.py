@@ -14,11 +14,8 @@ SKIP = {
     ROOT / "automation" / "blog" / "admin" / "review.html",
 }
 
-FONT_URL = (
-    "https://fonts.googleapis.com/css2?"
-    "family=Fraunces:opsz,wght@9..144,500;600;700;800&"
-    "family=Manrope:wght@400;500;600;700;800&display=swap"
-)
+# Fonts are self-hosted (assets/fonts + @font-face in site.css) since 2026-09-18,
+# so this script no longer writes any Google Fonts tags; see self_host_fonts.py.
 
 LOGO_LIGHT = "seo-with-faiz-logo-technical-precision-revenue-growth.png"
 LOGO_DARK = "seo-with-faiz-logo-dark-mode-technical-precision-revenue-growth.png"
@@ -82,16 +79,9 @@ def prefix_for(path: Path) -> str:
 def performance_head(prefix: str, *, preload_logo: bool) -> str:
     lines = [
         f'  <link rel="icon" href="{prefix}assets/logos/seowithfaiz-icon.svg" type="image/svg+xml">',
-        '  <link rel="preconnect" href="https://fonts.googleapis.com">',
-        '  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>',
-        f'  <link rel="preload" as="style" href="{FONT_URL}" onload="this.onload=null;this.rel=\'stylesheet\'">',
-        f'  <noscript><link rel="stylesheet" href="{FONT_URL}"></noscript>',
     ]
     if preload_logo:
-        lines.insert(
-            4,
-            f'  <link rel="preload" as="image" href="{prefix}assets/logos/{LOGO_LIGHT}">',
-        )
+        lines.append(f'  <link rel="preload" as="image" href="{prefix}assets/logos/{LOGO_LIGHT}">')
     return "\n".join(lines) + "\n"
 
 
