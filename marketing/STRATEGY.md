@@ -237,16 +237,66 @@ uncommitted, now committed as pipeline output) and all 18 drafts in
 `blog/drafts/` (12 old + 6 new) sit at `needs_revision`, 0 `ready` — the
 blog channel has published nothing new since 07-14, now 8+ weeks.
 
+**(2026-09-21 weekly review):** **platform-truth led for the 3rd straight
+week.** LinkedIn "WordPress isn't slow" was the week's best post (31
+reach/43 impressions), the Wix platform-truth post was #2 (16/22), and the
+buyer-education/technical-SEO posts were bottom (crawl-budget 9 reach; Core
+Web Vitals 2 on LinkedIn, 5 on Instagram, both under 24h old at pull).
+Absolute reach on the top post is drifting down (72 → 31), so rank order is
+stable but the ceiling is not rising. Rules applied: (1) platform-truth →
+4 fresh angles queued (Shopify's "probably not" list, template-outgrown
+signal, custom-Next.js-vs-lean-WordPress across the two wedges, plus
+WordPress-vs-Magento already queued). (2) **buyer-education has now been
+bottom-quartile 2 weeks running → paused 2026-09-21 → 2026-10-05**; its 5
+queued angles are flagged PAUSED in QUEUE.md. Honest caveat: last week's
+low was angle fatigue (the 4th atomization of one post) and this week's CWV
+post hadn't matured, so the evidence is thin — the pause is cheap and
+reversible; revisit on 10-05 with a fresh, non-atomized buyer-education
+angle. (3) `online_followers` errored again → no best-time signal, Buffer
+slots unchanged.
+
+**New, real signal — Google Search is recovering, reversing the 09-04
+finding.** GA4's Search Console link now shows weekly impressions 18 → 21 →
+68 → 78 (the last figure is only 5 days, 09-14→09-18) across the four weeks
+from 08-24, impression-weighted average position ≈40 → ≈41 → ≈11 → ≈13, and
+the first 2 clicks since 08-20 (09-09 and 09-10). Timing loosely follows the
+09-04 sitemap fix (gains begin 09-08) but that is a hypothesis, not proven,
+and volumes are tiny — single-digit clicks, so one query can swing a day.
+Does not change strategy; it does mean build-in-public lever #4 (own-site
+receipts) will have something real to show soon. **Do not publish it yet:**
+"18 → 68 impressions" fails the Skeptic Test as a headline; hold until
+clicks are meaningful. One blog angle queued for that day.
+
+**Traffic caveat.** GA4 sessions read 77 vs 42 the week before (+83%), but
+64 of 77 are Direct and the landing pages include `/crm` (3),
+`/blog/drafts/preview/...` (2) and 9 "(not set)" — Faiz's own CRM and
+draft-preview work with no internal-traffic filter on the property. External
+signal is small: Organic Social 4, Organic Search 2, AI Assistant 1.
+`keyEvents` (22) is again 100% the `swf_consent` cookie-banner event. Net:
+0 inquiries in 7 of 7 logged weeks, and with no real conversion event the
+funnel cannot be measured at all — the standing read (offer/CTA surface plus
+missing tracking is the bottleneck, not reach) stands.
+
 ## Asks awaiting Faiz (the strategist re-surfaces these weekly)
 
-- [ ] **ESCALATED 2026-09-14 — the "Hebe" prospect still hasn't replied,
-  now 8 days after Faiz's 2026-09-06 proposal.** Checked Gmail directly
+- [ ] **ESCALATED AGAIN 2026-09-21 — the "Hebe" prospect: 15 days since
+  Faiz's 2026-09-06 proposal, still no inbound reply.** Re-checked Gmail
+  this run: the only thread is Faiz's own sent message. If no follow-up has
+  gone out since 09-14, this is the one to send today. (Original 09-14
+  note follows.) Checked Gmail directly
   this run (thread `alimdmoaz@gmail.com` / "Your Hebe website + local SEO
   plan (as promised)") — no reply found. This was the closest thing to a
   real pipeline deal; the 9 July teardowns went cold after a similar
   silent gap. Recommend a short, low-pressure follow-up this week before
   it does the same.
-- [ ] **UPDATED 2026-09-04 (same day) — GSC IS reachable via GA4's link;
+- [ ] **UPDATED 2026-09-21 — the ranking-decline worry has reversed; the
+  query-level ask is now lower priority, not urgent.** GA4's Search Console
+  data shows impressions 18 → 21 → 68 → 78 over four weeks, average
+  position ≈40 → ≈11-13, and 2 clicks on 09-09/09-10 (see the 2026-09-21
+  focus-themes note). Still worth pulling the query-level report from
+  Search Console's UI when convenient to see WHICH queries are gaining —
+  but no longer a "something is broken" item. Original 09-04 text follows.
+  **UPDATED 2026-09-04 (same day) — GSC IS reachable via GA4's link;
   the gap is narrower than first thought.** Correction to the original
   version of this ask: Faiz confirmed GSC is connected through GA4, and
   `organicGoogleSearch*` metrics (Clicks/Impressions/CTR/AveragePosition)
@@ -340,20 +390,37 @@ blog channel has published nothing new since 07-14, now 8+ weeks.
   stalled~~ — **superseded 2026-09-14 by the escalated entry above** (18/18
   now `needs_revision`, up from 12/12 on 2026-08-24). Same root cause,
   worse now; tracking under the escalated ask instead of duplicating here.
-- [ ] **GA4 tracking bug still unresolved, one month later.** First flagged
+- [ ] **2026-09-21: still unresolved, now 9 weeks — plus a second GA4 fix.**
+  This week's 22 keyEvents were again 100% `swf_consent`. Also add an
+  **internal-traffic filter** (Admin → Data streams → Configure tag
+  settings → Define internal traffic): `/crm` and `/blog/drafts/preview`
+  visits and unattributed sessions are inflating Direct (64 of 77 sessions
+  this week), so even the session numbers are unreliable for decisions.
+  **GA4 tracking bug still unresolved, one month later.** First flagged
   2026-07-20: `keyEvents` is 100% the `swf_consent` cookie-banner-click
   event; the property's real configured conversions (`purchase`,
   `close_convert_lead`, `qualify_lead`) fired zero times again this week.
   Every "X sessions" report from this system remains sessions-only data
   until a genuine contact-form-submit or strategy-call-booked event is
   marked as the GA4 key event.
-- [ ] **Prospector's 3 unsent drafts are now 5+ weeks stale.** 1824 House
-  Inn + Barn, Locker Soccer Academy, and Steamboat Inn have sat at
-  `drafted` in `PROSPECTS.md` since 2026-07-16 without being sent. The 9
-  sent 2026-07-12 got zero replies after a follow-up — recommend either
-  sending these 3 now (the teardown findings should still be accurate) or
-  discarding them and having the Prospector re-verify before a fresh
-  batch, since site content can change over 5+ weeks.
+- [ ] **UPDATED 2026-09-21 — the old "3 unsent drafts" item is superseded**
+  (`PROSPECTS.md` shows 1824 House, Locker Soccer and Steamboat Inn were
+  sent 2026-07-17 with a follow-up on 2026-09-04, then closed out with no
+  reply). **What's actually open now:** 4 fresh teardown drafts from
+  2026-09-14 (Buck Creek BnB, The Old Mill Inn, Soccer Friends USA, FTBL
+  Academy) and 6 threaded follow-up drafts from the same day (Chow's
+  Gymnastics, AC Independence, Benn Conger Inn, The Federal Inn, Lady
+  Macdonald Country Inn, Justfootball Academy) are still `drafted` 7 days
+  later. Zero of the 18 teardowns sent to date has produced a reply, so the
+  volume isn't the problem; if these 4 go out, send them as the platform-fit
+  opening (see LINKEDIN-PLAYBOOK) rather than another generic audit hook.
+- [ ] **NEW 2026-09-21 — Hyderabad Globe FC's Wix Premium plan expired.**
+  Wix emailed Faiz's Gmail: renewal payment failed 2026-09-18, plan expired
+  2026-09-21 ("no longer Premium"). The case study now points at the new
+  build (live, 200) and doesn't mention Wix, so this may just be the retired
+  old site — but HGFC is the proof asset behind this week's posts, so
+  confirm the club's public domain isn't still resolving to the lapsed Wix
+  plan (lapsed Wix Premium can disconnect a custom domain and show ads).
 - [x] ~~Unauthorized Instagram posts~~ — **resolved/corrected 2026-07-09: Faiz
   confirmed he posted these himself**, not a compromise. Leaving one note
   for awareness, not urgency: the 8 posts (2026-07-05–06, paid-ads/PPC

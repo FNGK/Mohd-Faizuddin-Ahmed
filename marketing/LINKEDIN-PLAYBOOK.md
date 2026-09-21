@@ -63,14 +63,26 @@ Nav alerts you to new matches weekly — that's your daily prospect feed.
 > teardown video of your site — no pitch, just the fixes I'd make first.
 > Want me to record it? — Faiz, seowithfaiz.com
 
-**Warm-intent InMail angle this week (updated 2026-09-14):** platform-truth
-is now a confirmed 2-week top-quartile theme — this week's LinkedIn
-"Shopify or Magento?" post hit 72 reach/110 impressions/1 reaction/1
-comment, the studio's best-performing post in a month, well ahead of the
-same week's case-study and craft-proof posts. For prospects on a platform
-that's plainly the wrong fit for their business (an oversized B2B catalog
-squeezed onto a DTC-shaped platform, or vice versa), lead with the honest
-platform read instead of a generic audit hook:
+**Warm-intent InMail angle this week (updated 2026-09-21):** platform-truth
+is now a confirmed **3-week** top-quartile theme. This week's winner was
+the LinkedIn post "WordPress isn't slow" (31 reach/43 impressions), ahead of
+the Wix platform-truth post (16/22) and the buyer-education posts (9 and 2);
+two weeks ago "Shopify or Magento?" hit 72 reach/110 impressions. Absolute
+reach is drifting down, but platform-truth still ranks first every week, so
+lead with an honest platform read instead of a generic audit hook. Two
+variants — pick by what the prospect actually runs.
+
+*Variant 1 — prospect is on WordPress and the site is slow (the hospitality
+wedge's most common case; Button Eyes is the proof — WordPress kept lean):*
+> Hi [Name] — took a look at [business.com]. It's on WordPress and it's
+> slow: [ONE specific, verified sign — e.g. "a page-builder theme plus N
+> plugins loading on the homepage"]. That's almost never WordPress itself;
+> it's usually the theme, overlapping plugins and the hosting. Happy to
+> send a short breakdown of which of the three is costing you most, no
+> pitch. — Faiz, seowithfaiz.com
+
+*Variant 2 — prospect is on a platform that plainly doesn't fit (an
+oversized B2B catalog squeezed onto a DTC-shaped platform, or vice versa):*
 > Hi [Name] — took a look at [business.com]. [ONE specific, verified sign
 > the platform doesn't fit — e.g. "you're running a wholesale catalog
 > through a checkout flow built for one-at-a-time DTC orders"]. That's
@@ -174,3 +186,19 @@ Federal Inn, Lady Macdonald Country Inn, Justfootball Academy Australia —
 drafted 2026-09-04) are now 10 days unsent in `PROSPECTS.md`; findings
 should still be accurate at 10 days, worth sending this week before they
 go stale like the 5-week-old batch did in August.
+
+**2026-09-21 status:** still 0 teardown InMails logged as sent via
+LinkedIn in `PROSPECTS.md` (0 replies; no `channel:linkedin` rows exist) —
+the Sales Nav/InMail motion has still not started, now 10+ weeks after
+LinkedIn was connected. Every one of the 18 teardowns sent to date went by
+Gmail and none has replied, so the opening line — not the volume — is the
+thing to test; the new WordPress variant above is the first opening derived
+from what LinkedIn readers actually reacted to. Organic LinkedIn cadence:
+posts on 09-15, 09-16, 09-18, 09-19 (gaps 09-14, 09-17, 09-20); top post was
+WordPress platform-truth (31 reach), weakest was the Core Web Vitals
+buyer-education post (2 reach, <24h old at pull). Buyer-education is paused
+through 2026-10-05 per the bottom-quartile rule, so the next LinkedIn
+posts pull from the platform-truth/case-study/wedge queue. "Hebe" is still
+the only live conversation (15 days, no reply to Faiz's 09-06 proposal) —
+a short follow-up there beats any new InMail this week. Prospector drafts
+waiting on Faiz: 4 fresh teardowns + 6 threaded follow-ups from 09-14.

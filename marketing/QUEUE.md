@@ -6,6 +6,27 @@
 
 ## Social angles (GBP / Instagram / LinkedIn)
 
+> **2026-09-21 refill (strategist) — CONSUME THIS BLOCK FIRST, in this
+> order** (pillars alternate; no two in a row; last shipped pillar was
+> case-study/wedge-sports on 09-21). **Buyer-education is PAUSED through
+> 2026-10-05** (bottom-quartile 2 weeks running) — skip anything below
+> marked `PAUSED`. Platform-truth is the 3-week reach leader, so it gets the
+> most slots. Each angle is anchored only to wording already on the live
+> page linked; the Social Manager still re-verifies against the page before
+> shipping and drops or reframes anything it can't confirm (as has been
+> done on earlier angles). No prices, no buttoneyes.in.
+
+- [platform-truth] "Shopify's own 'probably not' list: a tiny store where basic Shopify is enough, or a content-first site where WordPress wins. A recommendation that talks you out of the bigger build is the honest kind." — /services/shopify-development.html
+- [craft-proof] "Structured data on this site is part of the build, not a plugin setting: Organization and WebSite markup on the homepage; on blog posts, BlogPosting with a named author plus BreadcrumbList." (verified 2026-09-04 on the homepage and one post — re-curl the specific post before claiming it for the others) — https://seowithfaiz.com/ and /blog/
+- [wedge-hospitality] "A resort site's job in the first seconds: clear room presentation, honest policy communication, and a path to the booking engine with no surprises. The Button Eyes rebuild treated each of those as its own decision." — /case-studies/button-eyes-resort.html
+- [pov] "Technical SEO order of operations: crawl clarity and speed discipline before new content volume. Publishing more onto a site Google can't read cleanly just adds more pages it can't read." — /services/technical-seo.html
+- [platform-truth] "'You've outgrown a template' is a real signal, not a sales line: custom checkout, Scripts and Functions, B2B. If you haven't hit any of those, stay on the template." — /services/shopify-development.html
+- [wedge-sports] "Most agencies can't publish client numbers, so how do you judge their work? The Hyderabad Globe FC case study publishes the live site, the source repository and the Lighthouse proof — and keeps client analytics private, because they belong to the client." — /case-studies/hyderabad-globe-fc.html
+- [behind-studio] "I look at your site before I scope anything — a senior diagnostic first — and engagements begin as a focused 30-day sprint, month to month, no lock-in. If it doesn't earn month two, you shouldn't buy it." — /services/technical-seo.html and /contact/index.html
+- [platform-truth] "Custom Next.js for a football academy, lean WordPress for a boutique resort: same senior partner, two different platform answers. The deciding question both times was who updates the site and how often." — /case-studies/little-stars-academy.html and /case-studies/button-eyes-resort.html
+- [wedge-sports] "'Architecture around real questions': the Little Stars build starts from what parents actually need answered before they enrol, not from the club's org chart." — /case-studies/little-stars-academy.html
+- [wedge-hospitality/platform-truth] "The editorial-control test for a boutique property's platform: can the team manage rooms, experiences and offers without a developer on call? Button Eyes runs on WordPress kept lean for exactly that reason." — /case-studies/button-eyes-resort.html
+
 - ~~[atomized] "Ranking #1 on the map pack and having an empty booking calendar can both be true at once. Ranking and booking are two different jobs — most local SEO treats them as one." — https://seowithfaiz.com/blog/posts/local-seo-that-turns-map-views-into-booked-jobs-in-2026.html~~ (used 2026-07-16 → GBP/IG/LinkedIn)
 - ~~[atomized] "Local SEO isn't a rankings problem. It's a conversion problem wearing a rankings costume." — https://seowithfaiz.com/blog/posts/local-seo-that-turns-map-views-into-booked-jobs-in-2026.html~~ (used 2026-07-18 → GBP/IG/LinkedIn)
 - ~~[atomized] "Pull 30 days of Google Business Profile insights and compare calls, direction requests, and website taps against actual booked jobs — the mismatch tells you exactly where your profile-to-phone leak is." — https://seowithfaiz.com/blog/posts/local-seo-that-turns-map-views-into-booked-jobs-in-2026.html~~ (used 2026-08-28 → GBP/IG/LinkedIn)
@@ -14,10 +35,10 @@
 - ~~[atomized] "After a core update: segment traffic loss by template (not URL), fix crawl and indexation issues first, then rebuild topical authority on whichever template lost the most." — https://seowithfaiz.com/blog/posts/recovering-after-a-google-core-update-without-burning-the-site-down.html~~ (used 2026-09-11 → GBP/LinkedIn, scheduled for 2026-09-12; Instagram skipped, channel still disconnected in Buffer)
 - ~~[atomized] "Most crawl-budget audits ship fifty red rows. Only the ones tied to your money pages matter this month." — https://seowithfaiz.com/blog/posts/technical-seo-priorities-when-crawl-budget-and-revenue-both-matter.html~~ (used 2026-09-15 → GBP/LinkedIn, scheduled for 2026-09-16; Instagram skipped, channel still disconnected in Buffer)
 - ~~[atomized] "Core Web Vitals are a tie-breaker, not a religion. A slow careers page costs you less than a slow product page with a perfect Lighthouse score on the wrong URL." — https://seowithfaiz.com/blog/posts/technical-seo-priorities-when-crawl-budget-and-revenue-both-matter.html~~ (used 2026-09-18 → GBP/IG/LinkedIn, scheduled for 2026-09-19)
-- [atomized] "Fix crawl budget in the right order: segment your crawl export by template, sort by internal links + organic sessions + conversion rate, then work the overlap list — not the longest list of hreflang warnings." — https://seowithfaiz.com/blog/posts/technical-seo-priorities-when-crawl-budget-and-revenue-both-matter.html
-- [atomized] "If two pages on your site compete for the same question, ChatGPT won't cite either one cleanly. AI summaries hate duplication as much as blue-link results do." — https://seowithfaiz.com/blog/posts/how-to-get-cited-by-chatgpt-a-step-by-step-guide-for-2026.html
-- [atomized] "You don't need an 'AI SEO' strategy. You need one page per question that states the answer in the first two sentences." — https://seowithfaiz.com/blog/posts/how-to-get-cited-by-chatgpt-a-step-by-step-guide-for-2026.html
-- [atomized] "Want ChatGPT to cite you? List every question your sales team already answers from call notes and tickets, map each one to a single URL you control, and answer it in plain English before the caveats." — https://seowithfaiz.com/blog/posts/how-to-get-cited-by-chatgpt-a-step-by-step-guide-for-2026.html
+- [PAUSED to 2026-10-05 — buyer-education] [atomized] "Fix crawl budget in the right order: segment your crawl export by template, sort by internal links + organic sessions + conversion rate, then work the overlap list — not the longest list of hreflang warnings." — https://seowithfaiz.com/blog/posts/technical-seo-priorities-when-crawl-budget-and-revenue-both-matter.html
+- [PAUSED to 2026-10-05 — buyer-education] [atomized] "If two pages on your site compete for the same question, ChatGPT won't cite either one cleanly. AI summaries hate duplication as much as blue-link results do." — https://seowithfaiz.com/blog/posts/how-to-get-cited-by-chatgpt-a-step-by-step-guide-for-2026.html
+- [PAUSED to 2026-10-05 — buyer-education] [atomized] "You don't need an 'AI SEO' strategy. You need one page per question that states the answer in the first two sentences." — https://seowithfaiz.com/blog/posts/how-to-get-cited-by-chatgpt-a-step-by-step-guide-for-2026.html
+- [PAUSED to 2026-10-05 — buyer-education] [atomized] "Want ChatGPT to cite you? List every question your sales team already answers from call notes and tickets, map each one to a single URL you control, and answer it in plain English before the caveats." — https://seowithfaiz.com/blog/posts/how-to-get-cited-by-chatgpt-a-step-by-step-guide-for-2026.html
 - ~~[craft-proof] "A 3D WebGL globe and a 96+ Lighthouse score on the same page. The trick isn't the 3D — it's WHEN it loads." — /services/3d-web-design.html~~ (used 2026-07-08)
 - ~~[buyer-education] "Your customers stopped clicking and started asking. What AI answers say about you is the new first impression." — /blog/ (AEO post)~~ (used 2026-07-09 → /blog/posts/answer-engine-optimization-guide.html)
 - ~~[wedge-hospitality] "Every booking your website loses goes to an OTA that charges 15–25% commission. Direct-booking economics start with the site, not the ad budget." — /case-studies/button-eyes-resort.html~~ (used 2026-07-10)
@@ -30,7 +51,7 @@
 - ~~[case-study/wedge-sports] "A football academy's website built like a flagship — custom Next.js, live at hydlittlestars.com." — /case-studies/little-stars-academy.html~~ (used 2026-08-25 → GBP/IG/LinkedIn — one of the 2 staged case-study angles per the 2026-08-24 strategist note to resume post-gap with proof-anchored content)
 - ~~[pov] "Most agencies describe their audits. I publish one." — /case-studies/button-eyes-resort.html~~ (used 2026-07-17 → GBP/IG/LinkedIn)
 - ~~[behind-studio] "I use AI aggressively and review everything personally. Senior judgment at modern speed — and I'll always tell you which is which." — /about/~~ (used 2026-09-06 → GBP/LinkedIn; wording tightened to "deliberately" to match the live /about/ page's exact phrasing; Instagram skipped, channel still disconnected in Buffer)
-- [buyer-education] "A one-second delay isn't a design flaw, it's a leak in revenue. What Core Web Vitals actually measure." — /services/technical-seo.html
+- [PAUSED to 2026-10-05 — buyer-education] "A one-second delay isn't a design flaw, it's a leak in revenue. What Core Web Vitals actually measure." — /services/technical-seo.html
 - ~~[craft-proof] "Why my WebGL globe never loads for Lighthouse — and loads in under a second for you. Progressive enhancement done honestly." — /services/3d-web-design.html~~ (used 2026-09-08 → GBP/LinkedIn, reframed around the verified live-page claim — "the homepage globe never even downloads its 3D library on mobile" — rather than the unverified Lighthouse-specific framing in the original angle; Instagram skipped, channel still disconnected in Buffer)
 - ~~[platform-truth] "WordPress isn't slow. Bloated themes, 40 plugins, and cheap hosting are slow." — /services/wordpress-development.html~~ (used 2026-09-14 → GBP/LinkedIn, scheduled for 2026-09-15; reframed to drop the unverified "40 plugins" figure — live page's own FAQ says "bloated themes, too many plugins, and slow hosting," used verbatim instead; Instagram skipped, channel still disconnected in Buffer)
 - [pov] "'We guarantee #1 rankings' is the fastest way to spot an agency to avoid." — /services/index.html
@@ -112,6 +133,11 @@
 - What a boutique resort's booking funnel should measure besides room rate (wedge-hospitality)
 - The website audit a sports academy needs before enrollment season (wedge-sports)
 - How AI Overviews choose who to cite — structure lessons from a site built for it
+
+> Added 2026-09-21 (build-in-public — HOLD until Search Console shows
+> meaningful clicks, not just impressions; the 09-21 numbers are 2 clicks):
+
+- [behind-studio/build-in-public] What a brand-new domain's first months in Google Search Console actually look like: impressions 18 → 21 → 68 across three weeks, average position falling from ~40 to ~11, and the exact fixes (a sitemap that had hidden 5 posts, structured data, clean canonicals) made in between. Own-site data only, small numbers shown as small numbers. — sitemap.xml fix (2026-09-04) + GA4 Search Console data. Publish only once clicks make the headline hold up.
 
 > Added 2026-09-04, from the growth-strategist's deep GA4 + live-site
 > technical audit (see STRATEGY.md focus-themes note, same date). All four
