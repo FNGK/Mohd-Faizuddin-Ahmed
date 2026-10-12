@@ -1,0 +1,55 @@
+name: Self Audit
+
+# The deterministic FLOOR of the daily self-audit (the evidence layer). Runs
+# automation/audit/self_audit.py and commits the report to marketing/audit/.
+# Pure stdlib Python, no secrets, no permissions prompt — this is the
+# "automated every day, no permission needed" half of the system.
+#
+# The JUDGMENT layer (the Neil-Patel bar + applying fixes + the weekly
+# meta-audit) runs in the Claude marketing routine, which reads the committed
+# report this job produces. Keeping the floor in version-controlled Python next
+# to the system it audits is deliberate: the evidence is reproducible and the
+# auditor can't fabricate a finding a human can't re-run.
+
+on:
+  schedule:
+    - cron: "0 3 * * *"      # 03:00 UTC daily (~08:30 IST), before the social routine
+  workflow_dispatch:          # manual run from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: self-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # continue-on-error: findings are the output, not a failure. A clean run
+      # (zero findings, "within standard") is a valid, expected day.
+      - name: Run self-audit
+        continue-on-error: true
+        run: |
+          python automation/audit/self_audit.py | tee "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit the report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add marketing/audit
+          if git diff --staged --quiet; then
+            echo "Audit report unchanged."
+          else
+            git commit -m "Self-audit: daily report ($(date -u +%Y-%m-%d))"
+            git push
+          fi
