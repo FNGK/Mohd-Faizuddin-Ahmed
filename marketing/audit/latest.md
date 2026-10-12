@@ -1,6 +1,6 @@
-# Self-audit — 2026-10-12T12:23:05
+# Self-audit — 2026-10-12T12:49:35
 
-**Verdict:** action_required  |  **Findings:** 2  |  **Checks run:** 9  |  **Skipped:** 0
+**Verdict:** action_required  |  **Findings:** 2  |  **Checks run:** 10  |  **Skipped:** 0
 
 ## Findings (evidence-backed, most severe first)
 

@@ -336,9 +336,39 @@ def check_self_integrity(r: Report):
                   "Restore/create the missing file, or correct the skill reference that points to it.")
 
 
+def check_creative_review(r: Report):
+    """Enforce that the Creative Quality Gate (Elite Audit #8) actually ran:
+    every shipped post should have a logged PASS/KILL verdict. Image clumsiness
+    itself is a VISION judgment the daily routine makes by looking at the file;
+    this deterministic check just guarantees that judgment was recorded, so a
+    clumsy image can't slip out un-reviewed and kills are learned from."""
+    r.checks_run += 1
+    log = MARKETING / "LOG.md"
+    clog = AUDIT_DIR / "CREATIVE-LOG.md"
+    if not log.exists():
+        return r.skip("creative_review", "marketing/LOG.md not found")
+    last_ship = latest_date_in(read(log))
+    if not last_ship:
+        return r.skip("creative_review", "no dated entries in LOG.md")
+    if not clog.exists():
+        return r.finding("creative_review", "medium", "PLAUSIBLE",
+                         "No CREATIVE-LOG.md — Creative Quality Gate verdicts are not being recorded.",
+                         {"expected": "marketing/audit/CREATIVE-LOG.md",
+                          "last_shipped": last_ship.isoformat()},
+                         "Log a PASS/KILL verdict per shipped image/slide so the gate is provably run.")
+    last_review = latest_date_in(read(clog))
+    if not last_review or last_review < last_ship:
+        r.finding("creative_review", "medium", "PLAUSIBLE",
+                  "Shipped posts postdate the last logged Creative Quality Gate verdict.",
+                  {"last_shipped": last_ship.isoformat(),
+                   "last_creative_verdict": last_review.isoformat() if last_review else None,
+                   "source": "marketing/audit/CREATIVE-LOG.md"},
+                  "VIEW each recent image against Elite Audit #8; log PASS/KILL in CREATIVE-LOG.md (note blog-only days).")
+
+
 CHECKS = [check_cadence, check_queue_depth, check_banned_and_prices,
           check_internal_links, check_image_dupes, check_metrics_fresh,
-          check_self_integrity]
+          check_creative_review, check_self_integrity]
 
 
 def main():

@@ -50,7 +50,7 @@ import json
 import math
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 ROOT = Path(__file__).resolve().parents[2]
 FONTS = Path(__file__).resolve().parent / "fonts"
@@ -106,17 +106,50 @@ def gradient_bg():
     return im.convert("RGBA")
 
 
-def load_bg(slide):
-    """AI image if present and readable, else a procedural gradient."""
-    p = slide.get("image")
-    if p:
-        fp = Path(p) if Path(p).is_absolute() else ROOT / p
-        if fp.exists():
-            try:
-                return cover_resize(Image.open(fp).convert("RGBA"), W, H)
-            except Exception:
-                pass
-    return gradient_bg()
+# Design-led backgrounds (no photo): premium, varied-but-coherent. Dark tones
+# so white type pops; a soft accent glow rotates per slide for &Walsh-style
+# colour confidence without a clumsy stock photo.
+DESIGN_TONES = [(6, 14, 27), (9, 20, 30), (13, 14, 26), (7, 22, 24)]      # navy·slate·plum·teal-black
+GLOW_ACCENTS = [(47, 212, 198), (242, 184, 92), (236, 120, 110), (150, 132, 240)]  # teal·amber·coral·violet
+
+
+def design_bg(idx):
+    top = DESIGN_TONES[idx % len(DESIGN_TONES)]
+    bot = tuple(max(0, c - 5) for c in top)
+    im = Image.new("RGB", (W, H))
+    px = im.load()
+    for y in range(H):
+        t = y / (H - 1)
+        c = tuple(round(top[i] + (bot[i] - top[i]) * t) for i in range(3))
+        for x in range(W):
+            px[x, y] = c
+    base = im.convert("RGBA")
+    acc = GLOW_ACCENTS[idx % len(GLOW_ACCENTS)]
+    glow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    ImageDraw.Draw(glow).ellipse([W - 540, -340, W + 320, 520], fill=(*acc, 48))
+    base = Image.alpha_composite(base, glow.filter(ImageFilter.GaussianBlur(170)))
+    ov = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    od = ImageDraw.Draw(ov)
+    for yy in range(64, H, 54):
+        for xx in range(64, W, 54):
+            od.ellipse([xx, yy, xx + 2, yy + 2], fill=(255, 255, 255, 10))
+    return Image.alpha_composite(base, ov)
+
+
+def load_bg(slide, idx):
+    """Priority: design-led background (style=='design' or no image) → clean,
+    on-brand, never clumsy. A real photo (screenshot/work/proof) is used only
+    when explicitly supplied and readable."""
+    if slide.get("style") != "design":
+        p = slide.get("image")
+        if p:
+            fp = Path(p) if Path(p).is_absolute() else ROOT / p
+            if fp.exists():
+                try:
+                    return cover_resize(Image.open(fp).convert("RGBA"), W, H)
+                except Exception:
+                    pass
+    return design_bg(idx)
 
 
 def zone_scrim(base, top_frac, strength=210):
@@ -309,17 +342,40 @@ def slide_cta(base, s):
     return base, d
 
 
+def slide_list(base, s):
+    """A scannable checklist/framework slide — the B2B 'mini-whitepaper' workhorse."""
+    base = zone_scrim(flat_veil(base, 30), 0.0, 60)
+    d = ImageDraw.Draw(base)
+    maxw = W - MARGIN * 2
+    y = int(H * 0.12)
+    if s.get("kicker"):
+        kicker(d, s["kicker"], MARGIN, y)
+        y += 72
+    f, lines, lh = fit_block(d, s.get("headline", ""), FR, 62, 42, 600, maxw, 190)
+    for ln in lines:
+        d.text((MARGIN, y), ln, font=f, fill=INK)
+        y += lh
+    y += 30
+    for i, item in enumerate(s.get("items", [])[:5], 1):
+        d.ellipse([MARGIN, y + 6, MARGIN + 34, y + 40], outline=TEAL, width=3)
+        d.text((MARGIN + 9, y + 7), str(i), font=HK(22, 800), fill=TEAL)
+        end = draw_block(d, item, HK(33, 500), INK, MARGIN + 56, y + 2, maxw - 56, 1.22)
+        y = end + 22
+    return base, d
+
+
 LAYOUTS = {
     "cover": slide_cover,
     "point": slide_point,
     "stat": slide_stat,
     "quote": slide_quote,
     "cta": slide_cta,
+    "list": slide_list,
 }
 
 
 def render_slide(s, idx, total, handle):
-    base = load_bg(s)
+    base = load_bg(s, idx)
     layout = LAYOUTS.get(s.get("kind", "point"), slide_point)
     base, d = layout(base, s)
     signature(base, d, handle, idx, total)
