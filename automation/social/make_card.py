@@ -9,6 +9,13 @@ Usage:
       --statement "The trick isn't the 3D. It's when it loads." \
       --support "Craft notes from the studio" \
       --out assets/social/2026-07-07-3d-loading.png
+
+  # Canva AI imagery per post (preferred): layer text over a unique hero
+  python automation/social/make_card.py \
+      --statement "..." --support "Point of view" \
+      --bg /tmp/canva-hero.jpg \
+      --out assets/social/2026-07-07-slug.png
+  # --bg applies an auto legibility scrim; omit it to fall back to the gradient.
 """
 from __future__ import annotations
 
@@ -75,20 +82,49 @@ def wrap(draw, text, fnt, max_w):
     return lines
 
 
-def render(statement: str, support: str, out: Path):
-    base = gradient_bg().convert("RGBA")
-    overlay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    d = ImageDraw.Draw(overlay)
-    dot_grid(d)
+def cover_resize(img, w, h):
+    """Scale + center-crop an image to exactly w x h (CSS object-fit: cover)."""
+    sw, sh = img.size
+    scale = max(w / sw, h / sh)
+    nw, nh = round(sw * scale), round(sh * scale)
+    img = img.resize((nw, nh), Image.LANCZOS)
+    left, top = (nw - w) // 2, (nh - h) // 2
+    return img.crop((left, top, left + w, top + h))
 
-    # teal glow, top-right
-    glow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    gd = ImageDraw.Draw(glow)
-    gd.ellipse([W - 460, -260, W + 260, 460], fill=(47, 212, 198, 46))
-    from PIL import ImageFilter
-    glow = glow.filter(ImageFilter.GaussianBlur(140))
-    base = Image.alpha_composite(base, glow)
-    base = Image.alpha_composite(base, overlay)
+
+def scrim(base):
+    """Darken an AI background so the bright statement text stays legible on
+    any generated image, with a bottom-weighted ramp for the brand bar zone."""
+    base = Image.alpha_composite(base, Image.new("RGBA", (W, H), (6, 14, 27, 120)))
+    grad = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    gp = grad.load()
+    for y in range(H):
+        t = max(0.0, (y / (H - 1) - 0.5) / 0.5)  # 0 at mid -> 1 at bottom
+        a = int(160 * t)
+        if a:
+            row = (6, 14, 27, a)
+            for x in range(W):
+                gp[x, y] = row
+    return Image.alpha_composite(base, grad)
+
+
+def render(statement: str, support: str, out: Path, bg: Path | None = None):
+    if bg is not None:
+        # Canva AI imagery mode: unique on-brand hero per post, text over it.
+        base = scrim(cover_resize(Image.open(bg).convert("RGBA"), W, H))
+    else:
+        # Legacy procedural card (fallback when no AI background is supplied).
+        base = gradient_bg().convert("RGBA")
+        overlay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        d = ImageDraw.Draw(overlay)
+        dot_grid(d)
+        glow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        gd = ImageDraw.Draw(glow)
+        gd.ellipse([W - 460, -260, W + 260, 460], fill=(47, 212, 198, 46))
+        from PIL import ImageFilter
+        glow = glow.filter(ImageFilter.GaussianBlur(140))
+        base = Image.alpha_composite(base, glow)
+        base = Image.alpha_composite(base, overlay)
     d = ImageDraw.Draw(base)
 
     margin = 96
@@ -146,8 +182,16 @@ def main():
     ap.add_argument("--statement", required=True)
     ap.add_argument("--support", default="From the studio")
     ap.add_argument("--out", required=True)
+    ap.add_argument("--bg", default=None,
+                    help="Optional Canva AI-generated background image. When set, "
+                         "the statement is composited over it (with a legibility "
+                         "scrim) instead of the procedural gradient.")
     a = ap.parse_args()
-    render(a.statement, a.support, ROOT / a.out if not Path(a.out).is_absolute() else Path(a.out))
+    out = ROOT / a.out if not Path(a.out).is_absolute() else Path(a.out)
+    bg = None
+    if a.bg:
+        bg = Path(a.bg) if Path(a.bg).is_absolute() else ROOT / a.bg
+    render(a.statement, a.support, out, bg=bg)
 
 
 if __name__ == "__main__":
