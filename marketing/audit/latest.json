@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T12:49:35",
+  "generated_at": "2026-10-13T09:56:20",
   "verdict": "action_required",
   "checks_run": 10,
   "findings_count": 2,
@@ -8,10 +8,10 @@
       "check": "cadence",
       "severity": "high",
       "confidence": "CONFIRMED",
-      "summary": "No shipped piece logged in 21 days (last 2026-09-21).",
+      "summary": "No shipped piece logged in 22 days (last 2026-09-21).",
       "evidence": {
         "last_shipped": "2026-09-21",
-        "days_idle": 21,
+        "days_idle": 22,
         "threshold": 3,
         "source": "marketing/LOG.md"
       },
@@ -26,19 +26,19 @@
         "hits": [
           {
             "where": "blog/drafts/aeo-vs-geo-vs-seo-whats-the-difference.md",
-            "line": 131,
+            "line": 133,
             "word": "unlock",
             "snippet": "nd GEO are not competitors to SEO; they're what you unlock when your SEO foundation is strong and your p"
           },
           {
             "where": "blog/drafts/structure-content-for-ai-answer-engines.md",
-            "line": 102,
+            "line": 104,
             "word": "cheap",
             "snippet": "and the payoff is unproven for many sites, but it's cheap to add and aligned with where things are headi"
           },
           {
             "where": "blog/drafts/structure-content-for-ai-answer-engines.md",
-            "line": 155,
+            "line": 157,
             "word": "cheap",
             "snippet": "impact is still unproven for many sites, but it is cheap to add and aligned with where AI search is hea"
           }
