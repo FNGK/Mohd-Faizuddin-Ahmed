@@ -1,21 +1,34 @@
 {
-  "generated_at": "2026-10-13T09:56:20",
+  "generated_at": "2026-10-14T08:17:00",
   "verdict": "action_required",
   "checks_run": 10,
-  "findings_count": 2,
+  "findings_count": 3,
   "findings": [
     {
       "check": "cadence",
       "severity": "high",
       "confidence": "CONFIRMED",
-      "summary": "No shipped piece logged in 22 days (last 2026-09-21).",
+      "summary": "No shipped piece logged in 23 days (last 2026-09-21).",
       "evidence": {
         "last_shipped": "2026-09-21",
-        "days_idle": 22,
+        "days_idle": 23,
         "threshold": 3,
         "source": "marketing/LOG.md"
       },
       "suggested_fix": "Schedule the next queued angle today; investigate why the routine stopped logging."
+    },
+    {
+      "check": "metrics_fresh",
+      "severity": "medium",
+      "confidence": "PLAUSIBLE",
+      "summary": "METRICS.md last updated 9 days ago (2026-10-05).",
+      "evidence": {
+        "last_row": "2026-10-05",
+        "days_stale": 9,
+        "threshold": 8,
+        "source": "marketing/METRICS.md"
+      },
+      "suggested_fix": "Growth Strategist: pull GA4 + Buffer/Meta this week and append a row (never delete rows)."
     },
     {
       "check": "voice_watchlist",
