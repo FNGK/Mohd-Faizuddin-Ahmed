@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T07:24:04",
+  "generated_at": "2026-10-18T07:38:52",
   "verdict": "action_required",
   "checks_run": 10,
   "findings_count": 3,
@@ -8,10 +8,10 @@
       "check": "cadence",
       "severity": "high",
       "confidence": "CONFIRMED",
-      "summary": "No shipped piece logged in 26 days (last 2026-09-21).",
+      "summary": "No shipped piece logged in 27 days (last 2026-09-21).",
       "evidence": {
         "last_shipped": "2026-09-21",
-        "days_idle": 26,
+        "days_idle": 27,
         "threshold": 3,
         "source": "marketing/LOG.md"
       },
@@ -21,10 +21,10 @@
       "check": "metrics_fresh",
       "severity": "medium",
       "confidence": "PLAUSIBLE",
-      "summary": "METRICS.md last updated 12 days ago (2026-10-05).",
+      "summary": "METRICS.md last updated 13 days ago (2026-10-05).",
       "evidence": {
         "last_row": "2026-10-05",
-        "days_stale": 12,
+        "days_stale": 13,
         "threshold": 8,
         "source": "marketing/METRICS.md"
       },
