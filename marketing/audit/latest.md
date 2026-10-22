@@ -1,19 +1,19 @@
-# Self-audit — 2026-10-21T08:10:42
+# Self-audit — 2026-10-22T08:11:38
 
 **Verdict:** action_required  |  **Findings:** 3  |  **Checks run:** 10  |  **Skipped:** 0
 
 ## Findings (evidence-backed, most severe first)
 
 ### 1. [high/CONFIRMED] cadence
-No shipped piece logged in 30 days (last 2026-09-21).
+No shipped piece logged in 31 days (last 2026-09-21).
 
-- **Evidence:** `{"last_shipped": "2026-09-21", "days_idle": 30, "threshold": 3, "source": "marketing/LOG.md"}`
+- **Evidence:** `{"last_shipped": "2026-09-21", "days_idle": 31, "threshold": 3, "source": "marketing/LOG.md"}`
 - **Suggested fix:** Schedule the next queued angle today; investigate why the routine stopped logging.
 
 ### 2. [medium/PLAUSIBLE] metrics_fresh
-METRICS.md last updated 16 days ago (2026-10-05).
+METRICS.md last updated 17 days ago (2026-10-05).
 
-- **Evidence:** `{"last_row": "2026-10-05", "days_stale": 16, "threshold": 8, "source": "marketing/METRICS.md"}`
+- **Evidence:** `{"last_row": "2026-10-05", "days_stale": 17, "threshold": 8, "source": "marketing/METRICS.md"}`
 - **Suggested fix:** Growth Strategist: pull GA4 + Buffer/Meta this week and append a row (never delete rows).
 
 ### 3. [low/PLAUSIBLE] voice_watchlist
